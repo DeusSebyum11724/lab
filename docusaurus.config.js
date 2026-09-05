@@ -24,7 +24,7 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Edulab58',
-  tagline: 'Fizica, pas cu pas',
+  tagline: 'Fizică pentru clasele VI–VIII',
   favicon: 'img/favicon.ico',
 
   url: 'https://deussebyum11724.github.io',
