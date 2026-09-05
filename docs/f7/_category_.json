@@ -1,5 +1,8 @@
 {
-  "label": "Clasa a VII-a",
-  "position": 7,
-  "link": { "type": "generated-index", "description": "Fizică pentru clasa a VII-a" }
+  "label": "Curs VII",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "f7/index"
+  }
 }

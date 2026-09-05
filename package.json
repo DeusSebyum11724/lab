@@ -9,6 +9,7 @@
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
+    "predeploy": "node update-deploy-date.js",
     "deploy": "docusaurus deploy",
     "swizzle": "docusaurus swizzle"
   },
@@ -16,8 +17,11 @@
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/preset-classic": "^3.7.0",
     "@easyops-cn/docusaurus-search-local": "^0.55.2",
+    "@gsap/react": "^2.1.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "framer-motion": "^12.43.0",
+    "gsap": "^3.15.0",
     "katex": "^0.16.22",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
@@ -29,5 +33,7 @@
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/types": "3.7.0"
   },
-  "engines": { "node": ">=18.0" }
+  "engines": {
+    "node": ">=18.0"
+  }
 }

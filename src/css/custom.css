@@ -850,9 +850,27 @@ main {
   color: var(--kl-violet-deep);
 }
 
-/* paginarea implicită dispare: o înlocuiește bara de jos */
+/* PAGINAREA RĂMÂNE VIZIBILĂ, spre deosebire de edumat58.
+   Acolo regula era `display: none`, fiindcă locul ei îl ia `LessonBar`, bara
+   de jos a lecției (componentă legată de voce și de EduPAȘI). Edulab58 n-are
+   bara aceea, așa că ascunderea paginării ar fi lăsat lecțiile fără nicio cale
+   înainte-înapoi. Se reactivează `display: none` în ziua în care apare o bară
+   proprie. */
 .pagination-nav {
-  display: none;
+  margin-top: 2rem;
+}
+.pagination-nav__link {
+  border-color: var(--kl-line);
+  background: var(--kl-cream-2);
+}
+.pagination-nav__link:hover {
+  border-color: var(--kl-violet);
+}
+.pagination-nav__sublabel {
+  color: var(--kl-ink3);
+}
+.pagination-nav__label {
+  color: var(--kl-violet-deep);
 }
 .theme-doc-markdown {
   padding-bottom: 4.5rem;
