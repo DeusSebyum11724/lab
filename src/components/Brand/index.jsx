@@ -55,7 +55,7 @@ const MARCA = [
 ];
 const CAPAT = 172 / 177;
 
-export function KulturosferaLine({ latime = '100%', marime = 11 }) {
+export function KulturosferaLine({ latime = '100%', marime = 11, style }) {
   const H = marime;
   return (
     <span
@@ -64,6 +64,7 @@ export function KulturosferaLine({ latime = '100%', marime = 11 }) {
         display: 'block',
         width: latime,
         height: H,
+        ...style,
       }}
     >
       {/* barele: pornesc din centrul pătratului și merg până la următorul */}
@@ -116,44 +117,48 @@ export function KulturosferaLine({ latime = '100%', marime = 11 }) {
   );
 }
 
-export function KulturosferaSignature({ culoare = '#ffffff', inaltime = 30, style }) {
+/**
+ * Semnătura Kulturosfera — sfera ornamentală, numele și linia celor patru
+ * culori, în lockup-ul orizontal al casei.
+ *
+ * PROPORȚIILE SUNT MĂSURATE, NU ALESE. Sursa e componenta reală care desenează
+ * lockup-ul ăsta pe ecran: `components/community/arena-online/ArenaFx.tsx`
+ * (edulink112), unde stă scris în clase Tailwind:
+ *
+ *   sfera          h-10        =  40px
+ *   spațiu         gap-2.5     =  10px   → 0.25 din sferă
+ *   numele         text-base   =  16px   → 0.40 din sferă, Inter 800, 0.2em
+ *   linia sub nume mt-1.5      =   6px   → 0.15 din sferă
+ *   linia, lățime  w-28        = 112px   → 2.80 din sferă
+ *
+ * DE CE NU E LINIA CÂT CUVÂNTUL. Asta a fost greșeala versiunii anterioare:
+ * întinsesem linia pe toată lățimea numelui, cu `width: 100%`. În lockup-ul
+ * adevărat linia e SCURTĂ — 112px sub un cuvânt de vreo 160px, adică vreo două
+ * treimi din el. Nu e un accident de font, e desenul mărcii.
+ *
+ * Înălțimea liniei iese din raportul ei propriu, 177/17 = 10.41 (vezi
+ * `KulturosferaLine`), nu dintr-un al doilea număr ales de mână.
+ */
+export function KulturosferaSignature({ culoare = '#ffffff', inaltime = 40, style }) {
+  const S = inaltime;
+  const latimeLinie = S * 2.8;
+
   return (
-    <span style={{ display: 'inline-flex', alignItems: 'center', gap: inaltime * 0.42, ...style }}>
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: S * 0.25, ...style }}>
       <img
-        src={useBaseUrl("/img/kulturosfera_logo_white.png")}
+        src={useBaseUrl('/img/kulturosfera_logo_white.png')}
         alt=""
         aria-hidden="true"
-        height={inaltime}
-        style={{ height: inaltime, width: 'auto', display: 'block', userSelect: 'none' }}
+        style={{ height: S, width: S, display: 'block', userSelect: 'none', flexShrink: 0 }}
       />
-      {/*
-        Numele și linia stau într-o coloană care se strânge pe conținut
-        (`inline-flex` + `alignItems: stretch`), iar linia primește `width: 100%`.
-        Așa linia iese EXACT cât cuvântul, la orice mărime.
 
-        Prima versiune dădea liniei o lățime calculată (`inaltime * 4.6`) și
-        ieșea mai scurtă decât numele — autorul: „linia cu patrate e mai mica si
-        mai scurta decat titlul kulturosfera". Un număr fix nu poate urmări
-        lățimea unui cuvânt care depinde de font, greutate și tracking.
-      */}
-      <span
-        style={{
-          // `fit-content` e cheia: fără el coloana se întinde cât permite
-          // părintele, iar linia cu `width: 100%` se raportează la HERO, nu la
-          // cuvânt — așa au ieșit pătratele uriașe din prima încercare.
-          display: 'inline-flex',
-          flexDirection: 'column',
-          alignItems: 'stretch',
-          width: 'fit-content',
-          gap: inaltime * 0.2,
-        }}
-      >
+      <span style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start' }}>
         <span
           style={{
             color: culoare,
             fontFamily: "'Inter', system-ui, sans-serif",
             fontWeight: 800,
-            fontSize: inaltime * 0.5,
+            fontSize: S * 0.4,
             letterSpacing: '0.2em',
             lineHeight: 1,
             whiteSpace: 'nowrap',
@@ -161,7 +166,11 @@ export function KulturosferaSignature({ culoare = '#ffffff', inaltime = 30, styl
         >
           KULTUROSFERA
         </span>
-        <KulturosferaLine latime="100%" marime={inaltime * 0.38} />
+        <KulturosferaLine
+          latime={latimeLinie}
+          marime={latimeLinie / 10.41}
+          style={{ marginTop: S * 0.15 }}
+        />
       </span>
     </span>
   );

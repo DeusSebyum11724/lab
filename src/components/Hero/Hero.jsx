@@ -418,7 +418,7 @@ export default function Hero() {
                 {/* Semnătura casei, deasupra numelui platformei: emblema,
                     numele KULTUROSFERA și linia celor patru culori dedesubt. */}
                 <div className={styles.semnatura}>
-                    <KulturosferaSignature culoare="#ffffff" inaltime={30} />
+                    <KulturosferaSignature culoare="#ffffff" inaltime={54} />
                 </div>
 
                 <h1 className={styles.heroTitle} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
