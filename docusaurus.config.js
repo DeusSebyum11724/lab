@@ -103,7 +103,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/edulab58-social.jpg',
-      colorMode: { defaultMode: 'light', respectPrefersColorScheme: true },
+      // `respectPrefersColorScheme` era `true` și asta rupea prima impresie:
+      // un vizitator cu sistemul pe întuneric primea un Edulab58 negru, o
+      // înfățișare pe care edumat58 n-o are niciodată (acolo:
+      // `disableSwitch: true`, `respectPrefersColorScheme: false`). Situl se
+      // deschide acum întotdeauna pe crem, ca fratele lui. Comutatorul rămâne
+      // — n-am scos nimic —, doar că modul întunecat e o alegere a omului, nu
+      // starea implicită.
+      colorMode: {
+        defaultMode: 'light',
+        respectPrefersColorScheme: false,
+        disableSwitch: false,
+      },
       navbar: {
         title: 'Edulab58',
         logo: { alt: 'Edulab58', src: 'img/logo.svg' },
@@ -114,20 +125,23 @@ const config = {
         // pagina „Despre" — iar clasele sunt trei, fiindcă la fizică gimnaziul
         // începe în clasa a VI-a.
         //
-        // O SINGURĂ ABATERE DE RUTĂ față de edumat58, și e forțată. Acolo
-        // clasa duce la `/docs/category/curs-v`, o pagină pe care Docusaurus o
-        // generează DOAR dacă în categoria aceea există cel puțin o lecție.
-        // Aici clasele sunt încă goale, deci pagina nu se genera și cele trei
-        // rubrici ar fi dat 404 (build-ul cu `onBrokenLinks: 'throw'` chiar
-        // pica). Fiecare clasă are acum o pagină de deschidere proprie —
-        // `docs/f6/index.mdx` → `/docs/f6` — care listează capitolele programei
+        // Rutele sunt cele de pe edumat58: `/docs/category/curs-vi`, pagina de
+        // categorie generată din `docs/f6/_category_.json`. Docusaurus o
+        // generează însă DOAR dacă în categoria aceea există cel puțin un
+        // document — cu clasele goale, cele trei rubrici dădeau 404 și build-ul
+        // pica (`onBrokenLinks: 'throw'`). De aceea fiecare clasă are o pagină
+        // de deschidere, `docs/f6/index.mdx`, care listează capitolele programei
         // și rămâne folositoare și după ce apar lecțiile.
+        //
+        // Rubrica „Fizică" (`type: 'docSidebar'`) a fost scoasă: deschidea
+        // bara laterală la primul ei document, care e chiar „Despre" — două
+        // rubrici alăturate care duceau la aceeași pagină. Bara laterală se
+        // deschide oricum din orice pagină de curs.
         items: [
-          { type: 'docSidebar', sidebarId: 'fizicaSidebar', position: 'left', label: 'Fizică' },
           { to: '/docs/despre', label: 'Despre', position: 'left' },
-          { position: 'left', label: 'Curs VI', to: '/docs/f6' },
-          { position: 'left', label: 'Curs VII', to: '/docs/f7' },
-          { position: 'left', label: 'Curs VIII', to: '/docs/f8' },
+          { position: 'left', label: 'Curs VI', to: '/docs/category/curs-vi' },
+          { position: 'left', label: 'Curs VII', to: '/docs/category/curs-vii' },
+          { position: 'left', label: 'Curs VIII', to: '/docs/category/curs-viii' },
 
           // Butonul-ochi (mod proiecție), copiat din navbarul edumat58. Stilul
           // lui e deja în custom.css (`.ui-eye-btn`), iar comportamentul în
@@ -184,9 +198,9 @@ const config = {
           {
             title: 'Cursuri',
             items: [
-              { label: 'Clasa a VI-a', to: '/docs/f6' },
-              { label: 'Clasa a VII-a', to: '/docs/f7' },
-              { label: 'Clasa a VIII-a', to: '/docs/f8' },
+              { label: 'Clasa a VI-a', to: '/docs/category/curs-vi' },
+              { label: 'Clasa a VII-a', to: '/docs/category/curs-vii' },
+              { label: 'Clasa a VIII-a', to: '/docs/category/curs-viii' },
             ],
           },
           {
@@ -196,6 +210,20 @@ const config = {
               { label: 'Despre', to: '/docs/despre' },
               { label: 'Kulturosfera', href: 'https://www.kulturosfera.com' },
               { label: 'edumat58', href: 'https://edumat58.github.io/curs/' },
+            ],
+          },
+          {
+            // Al treilea grup al lui edumat58. Adresele nu sunt inventate: ies
+            // din `organizationName` + `projectName` declarate mai sus, aceleași
+            // pe care le folosește și fluxul de publicare din
+            // `.github/workflows/deploy-docusaurus.yml`.
+            title: 'Comunitate',
+            items: [
+              { label: 'GitHub', href: 'https://github.com/edulab58/lab' },
+              {
+                label: 'Raportează o problemă',
+                href: 'https://github.com/edulab58/lab/issues',
+              },
             ],
           },
         ],

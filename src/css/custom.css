@@ -736,7 +736,7 @@ main {
     border-top: 1px solid var(--kl-line);
   }
 
-  /* RÂNDUL 2: linkurile principale (Fizică, clasele VI–VIII, Despre). */
+  /* RÂNDUL 2: linkurile principale (Despre, clasele VI–VIII). */
   .navbar__items:not(.navbar__items--right) .navbar__item {
     order: 4;
   }

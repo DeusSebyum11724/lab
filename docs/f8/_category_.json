@@ -2,7 +2,7 @@
   "label": "Curs VIII",
   "position": 4,
   "link": {
-    "type": "doc",
-    "id": "f8/index"
+    "type": "generated-index",
+    "description": "Cursuri de fizică pentru clasa a VIII-a"
   }
 }

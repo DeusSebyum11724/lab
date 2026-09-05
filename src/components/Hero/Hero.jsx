@@ -89,287 +89,197 @@ export default function Hero() {
         };
 
         // =====================================================================
-        //  PENDULUL LUI FOUCAULT — piesa centrală: fizică + Kulturosfera
-        //  Aceeași armătură ca astrolabul (inele gravate, gradații, inele
-        //  punctate, sateliți, nucleu). Se schimbă doar ce era matematică pură:
-        //  cercul unitate devine pendulul văzut de sus, poligonul devine
-        //  rozeta lăsată de bilă pe nisip, iar sinusul devine înregistrarea în
-        //  timp a oscilației.
+        //  PATRU FIGURI DIN PROGRAMĂ
+        //
+        //  Prima versiune păstra armătura astrolabului — inele gravate cu
+        //  gradații — și adăuga o spirală și figuri Lissajous. Autorul: „tot de
+        //  mate sunt". Avea dreptate de două ori: Lissajous și spirala SUNT
+        //  curbe matematice, iar un pendul văzut de sus e tot un cerc gradat,
+        //  adică exact silueta astrolabului.
+        //
+        //  Acum fiecare figură e un capitol din programa de gimnaziu
+        //  (OMEN 3393/2017), nu o formă frumoasă:
+        //    lentila convergentă  -> Elemente de optică geometrică, clasa a VIII-a
+        //    liniile de câmp      -> Fenomene electrice și magnetice, clasa a VI-a
+        //    circuitul            -> Electrocinetică, clasa a VIII-a
+        //    interferența         -> Unde mecanice, clasa a VII-a
+        //
+        //  Limbajul de desen rămâne al casei: linii albe subțiri, trasare în
+        //  primele ~2,5 secunde prin `draw01`, steluțele Kulturosfera ca accent.
         // =====================================================================
-        const drawFoucault = () => {
+
+        // --- LENTILA CONVERGENTĂ: raze paralele care se string în focar ------
+        // Piesa centrală. Am ales-o fiindcă e singura care leagă trei lucruri:
+        // e din programă, e recunoscută instant ca fizică, și explică paleta —
+        // violetul mărcii e chiar capătul spectrului pe care îl produce optica.
+        const drawLentila = () => {
             const cx = width * 0.78, cy = height * 0.33;
-            const R = Math.min(width, height) * 0.21;
+            const R = Math.min(width, height) * 0.2;
+            const h = R * 0.92;              // semi-înălțimea lentilei
+            const f = R * 1.15;              // distanța focală
+            const bulge = R * 0.3;           // bombarea fețelor
 
-            // 1) inelele gravate concentrice, cu trasare la intrare
-            //    (la Foucault ele sunt cadranul desenat pe podea, sub bilă)
-            [1, 0.78, 0.5].forEach((f, i) => {
-                const p = draw01(0.2 + i * 0.25);
-                if (p <= 0) return;
+            // axa optică
+            const a0 = draw01(0.15, 0.9);
+            if (a0 > 0) {
+                ctx.strokeStyle = W(0.13); ctx.lineWidth = 1;
+                ctx.setLineDash([5, 6]);
                 ctx.beginPath();
-                ctx.arc(cx, cy, R * f, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * p);
-                ctx.strokeStyle = W(0.34 - i * 0.06);
-                ctx.lineWidth = i === 0 ? 1.5 : 1;
-                ctx.stroke();
-            });
+                ctx.moveTo(cx - R * 2.1 * a0, cy); ctx.lineTo(cx + R * 2.1 * a0, cy);
+                ctx.stroke(); ctx.setLineDash([]);
+            }
 
-            // 2) gradațiile de pe inelul exterior (la fiecare π/12, marcaj la π/2)
-            //    FĂRĂ derivă: la astrolab gradațiile alunecau (`+ t * 0.02`);
-            //    aici podeaua stă pe loc și planul de oscilație e cel care se
-            //    rotește. Asta E experimentul — dacă driftează și cadranul, nu
-            //    mai ai față de ce măsura precesia.
-            const pTicks = draw01(0.9);
-            for (let k = 0; k < 24 * pTicks; k++) {
-                const ang = (k * Math.PI) / 12;
-                const major = k % 6 === 0;
-                const r1 = R, r2 = R + (major ? 10 : 5);
+            // corpul lentilei: două arce care se ating la margini
+            const a1 = draw01(0.35, 1.0);
+            if (a1 > 0) {
+                ctx.strokeStyle = W(0.5); ctx.lineWidth = 1.6;
                 ctx.beginPath();
-                ctx.moveTo(cx + r1 * Math.cos(ang), cy + r1 * Math.sin(ang));
-                ctx.lineTo(cx + r2 * Math.cos(ang), cy + r2 * Math.sin(ang));
-                ctx.strokeStyle = W(major ? 0.4 : 0.22);
-                ctx.lineWidth = major ? 1.5 : 1;
+                ctx.moveTo(cx, cy - h * a1);
+                ctx.quadraticCurveTo(cx + bulge, cy, cx, cy + h * a1);
+                ctx.moveTo(cx, cy - h * a1);
+                ctx.quadraticCurveTo(cx - bulge, cy, cx, cy + h * a1);
                 ctx.stroke();
             }
 
-            // 3) inele punctate contra-rotative (ADN-ul familiei) — neatinse
-            const dashRing = (r, rot, dashes, alpha) => {
-                for (let k = 0; k < dashes; k++) {
-                    const a0 = rot + (k * Math.PI * 2) / dashes;
+            // razele: paralele la intrare, frânte de lentilă, adunate în focar
+            const a2 = draw01(0.8, 1.3);
+            if (a2 > 0) {
+                for (let i = -3; i <= 3; i++) {
+                    if (i === 0) continue;
+                    const y = cy + (i / 3) * h * 0.82;
+                    // pulsul care alunecă pe rază — arată SENSUL luminii
+                    const puls = ((t * 0.35 + i * 0.13) % 1);
+                    ctx.strokeStyle = W(0.1 + 0.16 * a2);
+                    ctx.lineWidth = 1.1;
                     ctx.beginPath();
-                    ctx.arc(cx, cy, r, a0, a0 + 0.06);
-                    ctx.strokeStyle = W(alpha);
-                    ctx.lineWidth = 1.25;
+                    ctx.moveTo(cx - R * 2.05 * a2, y);
+                    ctx.lineTo(cx, y);
+                    ctx.lineTo(cx + f * a2, cy);   // convergența spre focar
                     ctx.stroke();
-                }
-            };
-            if (draw01(1.2) > 0) {
-                dashRing(R * 0.89, t * 0.12, 36, 0.3);
-                dashRing(R * 0.64, -t * 0.18, 24, 0.26);
-            }
 
-            // --- cinematica pendulului, o singură dată pentru punctele 4-6 ---
-            // ω = pulsația oscilației (aceeași viteză ca raza astrolabului),
-            // φ = unghiul planului de oscilație, care precesează LENT.
-            const omega = 0.7;
-            const phi = t * 0.055;
-            // elongația: bila trece prin centru și iese pe partea cealaltă,
-            // deci `s` are voie să fie negativ — de aici diametrul, nu raza.
-            const s = Math.cos(omega * t);
-            const amp = R * 0.78;
-            const bx = cx + amp * s * Math.cos(phi);
-            const by = cy + amp * s * Math.sin(phi);
-
-            // 4) ROZETA: urma lăsată de bilă. Ia locul poligonului înscris
-            //    (3→4→5→6) din astrolab — aceeași grosime, aceeași alfă, același
-            //    moment de intrare, dar figura e cea reală: un diametru care se
-            //    rotește puțin la fiecare dus-întors desenează o rozetă.
-            const pRoz = draw01(1.5);
-            if (pRoz > 0) {
-                // Prima variantă desena 46 de secunde de urmă cu o singură alfă
-                // și ieșea un asterisc: zece petale la fel de tari, care se
-                // băteau cu tija. Urma se STINGE cu vârsta, ca nisipul măturat —
-                // așa se citește ca o dâră, nu ca o stea desenată peste desen.
-                const span = 34;            // secunde de urmă păstrate
-                const felii = 8;            // trepte de stingere
-                const perFelie = 26;        // eșantioane pe treaptă
-                const punct = (tau) => {
-                    const rr = R * 0.62 * Math.cos(omega * tau);
-                    const aa = tau * 0.055;
-                    return [cx + rr * Math.cos(aa), cy + rr * Math.sin(aa)];
-                };
-                for (let f = 0; f < felii; f++) {
-                    const t0 = t - span + (f * span) / felii;
-                    const dt = span / felii / perFelie;
-                    ctx.beginPath();
-                    for (let k = 0; k <= perFelie; k++) {
-                        const [x, y] = punct(t0 + k * dt);
-                        k === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+                    // bobița de lumină pe segmentul de dinainte de lentilă
+                    const px = cx - R * 2.05 + puls * R * 2.05;
+                    if (a2 > 0.6 && px < cx) {
+                        ctx.fillStyle = W(0.35 * (1 - puls));
+                        ctx.beginPath(); ctx.arc(px, y, 1.6, 0, Math.PI * 2); ctx.fill();
                     }
-                    // de la 0.04 (cea mai veche) la 0.26 (proaspătă)
-                    ctx.strokeStyle = W((0.04 + (f / (felii - 1)) * 0.22) * pRoz);
-                    ctx.lineWidth = 1.25;
+                }
+            }
+
+            // focarul, marcat cu steaua Kulturosfera
+            const a3 = draw01(1.9, 0.7);
+            if (a3 > 0) {
+                ctx.fillStyle = W(0.5 * a3);
+                star4(cx + f, cy, 9 * a3, 2.6 * a3, t * 0.25);
+                ctx.fill();
+            }
+        };
+
+        // --- LINIILE DE CÂMP ALE UNUI MAGNET BARĂ ---------------------------
+        // Clasa a VI-a. Buclele care ies din polul nord și intră în sud —
+        // forma cea mai recognoscibilă din tot capitolul de magnetism.
+        const drawCampMagnetic = () => {
+            const cx = width * 0.2, cy = height * 0.72;
+            const L = Math.min(width, height) * 0.085;
+            const a = draw01(1.1, 1.4);
+            if (a <= 0) return;
+
+            // bara
+            ctx.strokeStyle = W(0.32); ctx.lineWidth = 1.5;
+            ctx.strokeRect(cx - L, cy - L * 0.26, L * 2, L * 0.52);
+            ctx.beginPath(); ctx.moveTo(cx, cy - L * 0.26); ctx.lineTo(cx, cy + L * 0.26); ctx.stroke();
+
+            // buclele, tot mai largi
+            for (let k = 1; k <= 4; k++) {
+                const spread = L * (0.55 + k * 0.5);
+                const rise = L * (0.4 + k * 0.62);
+                const av = a * Math.max(0, Math.min(1, (a - k * 0.12) / 0.6));
+                if (av <= 0) continue;
+                ctx.strokeStyle = W(0.055 + 0.05 / k);
+                ctx.lineWidth = 1;
+                for (const sgn of [-1, 1]) {
+                    ctx.beginPath();
+                    ctx.moveTo(cx + L, cy);
+                    ctx.bezierCurveTo(
+                        cx + L + spread * av, cy + sgn * rise,
+                        cx - L - spread * av, cy + sgn * rise,
+                        cx - L, cy
+                    );
                     ctx.stroke();
                 }
             }
+        };
 
-            // 5) PENDULUL: tija în plan, unghiul de precesie, proiecțiile, bila.
-            //    Structura punctului 5 din astrolab, cu aceleași alfe și grosimi.
-            const pPen = draw01(1.8);
-            if (pPen > 0) {
-                ctx.globalAlpha = pPen;
-                // axa de oscilație: diametrul pe care se plimbă bila
-                ctx.beginPath();
-                ctx.moveTo(cx - amp * Math.cos(phi), cy - amp * Math.sin(phi));
-                ctx.lineTo(cx + amp * Math.cos(phi), cy + amp * Math.sin(phi));
-                ctx.strokeStyle = W(0.28); ctx.lineWidth = 1; ctx.stroke();
-                // tija, de la verticala pivotului la bilă
-                ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(bx, by);
-                ctx.strokeStyle = W(0.75); ctx.lineWidth = 1.5; ctx.stroke();
-                // arcul unghiului de precesie — cât s-a rotit planul de la start
-                ctx.beginPath(); ctx.arc(cx, cy, R * 0.16, 0, phi % (Math.PI * 2));
-                ctx.strokeStyle = W(0.5); ctx.lineWidth = 1.25; ctx.stroke();
-                // proiecțiile punctate pe axele cadranului
-                ctx.setLineDash([3, 5]);
-                ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(bx, cy);
-                ctx.moveTo(bx, by); ctx.lineTo(cx, by);
-                ctx.strokeStyle = W(0.4); ctx.lineWidth = 1; ctx.stroke();
-                ctx.setLineDash([]);
-                // bila: punct plin plus conturul ei — are masă, se vede că are
-                ctx.beginPath(); ctx.arc(bx, by, 3.5, 0, Math.PI * 2);
-                ctx.fillStyle = W(0.95); ctx.fill();
-                ctx.beginPath(); ctx.arc(bx, by, 7, 0, Math.PI * 2);
-                ctx.strokeStyle = W(0.35); ctx.lineWidth = 1; ctx.stroke();
-                // axele cadranului
-                ctx.beginPath();
-                ctx.moveTo(cx - R * 0.82, cy); ctx.lineTo(cx + R * 0.82, cy);
-                ctx.moveTo(cx, cy - R * 0.82); ctx.lineTo(cx, cy + R * 0.82);
-                ctx.strokeStyle = W(0.14); ctx.lineWidth = 1; ctx.stroke();
-                ctx.globalAlpha = 1;
-            }
+        // --- CIRCUIT SIMPLU cu curent care circulă --------------------------
+        // Clasa a VIII-a, electrocinetică. Sursă, rezistor, bec — desenate cu
+        // simbolurile din manual, nu stilizate.
+        const drawCircuit = () => {
+            const x0 = width * 0.09, y0 = height * 0.2;
+            const w = Math.min(width, height) * 0.16, h = w * 0.62;
+            const a = draw01(1.5, 1.2);
+            if (a <= 0) return;
 
-            // 6) ÎNREGISTRAREA: elongația în timp, care pleacă spre stânga.
-            //    La astrolab era sinusul emanat din cercul unitate; aici e
-            //    banda unui înregistrator — același desen, altă citire.
-            const pBanda = draw01(2.1);
-            if (pBanda > 0) {
-                const len = width * 0.30 * pBanda;
+            ctx.strokeStyle = W(0.26); ctx.lineWidth = 1.3;
+            ctx.beginPath(); ctx.rect(x0, y0, w * a, h * a); ctx.stroke();
+
+            if (a > 0.85) {
+                // sursa: două bare inegale, ca în simbolul de baterie
                 ctx.beginPath();
-                for (let d = 0; d <= len; d += 4) {
-                    const y = cy + amp * Math.cos(omega * t - d * 0.016);
-                    const x = cx - R * 0.95 - d;
-                    d === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-                }
-                ctx.strokeStyle = W(0.5);
-                ctx.lineWidth = 1.5;
+                ctx.moveTo(x0 + w * 0.42, y0 - 5); ctx.lineTo(x0 + w * 0.42, y0 + 5);
+                ctx.moveTo(x0 + w * 0.52, y0 - 9); ctx.lineTo(x0 + w * 0.52, y0 + 9);
                 ctx.stroke();
-                // legătura punctată dintre bilă și începutul înregistrării
-                ctx.setLineDash([3, 5]);
+                // rezistorul: dreptunghi pe latura dreaptă
+                ctx.strokeRect(x0 + w - 4, y0 + h * 0.34, 8, h * 0.32);
+                // becul: cerc cu cruce
+                const bx = x0 + w * 0.5, by = y0 + h;
+                ctx.beginPath(); ctx.arc(bx, by, 7, 0, Math.PI * 2); ctx.stroke();
                 ctx.beginPath();
-                ctx.moveTo(bx, by);
-                ctx.lineTo(cx - R * 0.95, cy + amp * Math.cos(omega * t));
-                ctx.strokeStyle = W(0.3); ctx.lineWidth = 1; ctx.stroke();
-                ctx.setLineDash([]);
-            }
+                ctx.moveTo(bx - 5, by - 5); ctx.lineTo(bx + 5, by + 5);
+                ctx.moveTo(bx + 5, by - 5); ctx.lineTo(bx - 5, by + 5);
+                ctx.stroke();
 
-            // 7) sateliți-steluțe Kulturosfera pe orbite diferite
-            const pSat = draw01(2.0);
-            if (pSat > 0) {
-                ctx.globalAlpha = pSat;
-                [ { r: R * 0.89, sp: 0.25, size: 7, ph: 0 },
-                  { r: R * 0.64, sp: -0.4, size: 5, ph: 2.1 },
-                  { r: R * 1.06, sp: 0.14, size: 4, ph: 4.4 } ].forEach((s) => {
-                    const a = s.ph + t * s.sp;
-                    const sx = cx + s.r * Math.cos(a), sy = cy + s.r * Math.sin(a);
-                    star4(sx, sy, s.size, s.size * 0.32, a);
-                    ctx.fillStyle = W(0.9);
-                    ctx.fill();
-                });
-                ctx.globalAlpha = 1;
-            }
-
-            // 8) nucleul: steaua concavă a emblemei, respirând
-            const pCore = draw01(2.3);
-            if (pCore > 0) {
-                const breathe = 1 + Math.sin(t * 0.9) * 0.06;
-                ctx.globalAlpha = pCore;
-                star4(cx, cy, 13 * breathe, 4.2 * breathe, 0);
-                ctx.fillStyle = W(0.95);
-                ctx.fill();
-                ctx.globalAlpha = 1;
+                // curentul: un punct care face ocolul buclei
+                const per = (t * 0.22) % 1;
+                const P = 2 * (w + h);
+                let d = per * P, px, py;
+                if (d < w) { px = x0 + d; py = y0; }
+                else if (d < w + h) { px = x0 + w; py = y0 + (d - w); }
+                else if (d < 2 * w + h) { px = x0 + w - (d - w - h); py = y0 + h; }
+                else { px = x0; py = y0 + h - (d - 2 * w - h); }
+                ctx.fillStyle = W(0.55);
+                ctx.beginPath(); ctx.arc(px, py, 2.2, 0, Math.PI * 2); ctx.fill();
             }
         };
 
-        // --- spirala logaritmică, stânga sus ---------------------------------
-        // Geometria e cea din edumat58, neatinsă (r = 3·e^0.18s). Acolo o citeai
-        // ca spirală de aur; aici e drumul unei particule încărcate care pierde
-        // energie într-un câmp magnetic. Același desen, altă lectură — n-am avut
-        // niciun motiv să-i schimb o cifră.
-        const drawSpiral = () => {
-            const p = draw01(0.6);
-            if (p <= 0) return;
-            const cx = width * 0.13, cy = height * 0.24;
-            const rot = t * 0.05;
-            const maxS = Math.PI * 6 * p;
-            ctx.beginPath();
-            ctx.strokeStyle = W(0.18);
-            ctx.lineWidth = 1.25;
-            for (let s = 0; s < maxS; s += 0.05) {
-                const r = 3 * Math.exp(0.18 * s);
-                if (r > Math.min(width, height) * 0.15) break;
-                const x = cx + r * Math.cos(s + rot), y = cy + r * Math.sin(s + rot);
-                s === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-            }
-            ctx.stroke();
-            // reperele de pe spirală, marcate cu steluța Kulturosfera
-            for (let k = 1; k <= 4; k++) {
-                const s = k * Math.PI / 2;
-                if (s > maxS) break;
-                const r = 3 * Math.exp(0.18 * s);
-                star4(cx + r * Math.cos(s + rot), cy + r * Math.sin(s + rot), 3.4, 1.1, 0);
-                ctx.fillStyle = W(0.5);
-                ctx.fill();
-            }
-        };
-
-        // --- Lissajous cu cometă, stânga jos ---------------------------------
-        const drawLissajous = () => {
-            const p = draw01(1.0);
-            if (p <= 0) return;
-            const cx = width * 0.17, cy = height * 0.72;
-            const R = Math.min(width, height) * 0.10;
-            const a = 3, b = 2 + Math.sin(t * 0.1) * 0.25;
-            const delta = t * 0.32;
-            ctx.beginPath();
-            ctx.strokeStyle = W(0.3);
-            ctx.lineWidth = 1.25;
-            const maxS = Math.PI * 2 * p;
-            for (let s = 0; s <= maxS; s += 0.01) {
-                const x = cx + R * Math.sin(a * s + delta), y = cy + R * Math.sin(b * s);
-                s === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-            }
-            ctx.stroke();
-            const s0 = (t * 0.85) % (Math.PI * 2);
-            for (let k = 0; k < 10; k++) {
-                const s = s0 - k * 0.02;
-                const x = cx + R * Math.sin(a * s + delta), y = cy + R * Math.sin(b * s);
-                ctx.beginPath(); ctx.arc(x, y, 2.8 - k * 0.2, 0, Math.PI * 2);
-                ctx.fillStyle = W(Math.max(0, 0.9 - k * 0.09)); ctx.fill();
-            }
-        };
-
-        // --- unda Fourier de jos, cu călători --------------------------------
-        const fourierY = (x) =>
-            Math.sin(x * 0.008 + t) * 30 +
-            Math.sin(x * 0.016 + t * 1.7) * 14 +
-            Math.sin(x * 0.032 + t * 2.3) * 6;
-
-        const drawWave = () => {
-            const p = draw01(0.4);
-            if (p <= 0) return;
-            const baseY = height * 0.85;
-            const lim = width * p;
-            ctx.beginPath();
-            ctx.strokeStyle = W(0.4);
-            ctx.lineWidth = 1.75;
-            for (let x = 0; x <= lim; x += 4) {
-                const y = baseY + fourierY(x);
-                x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-            }
-            ctx.stroke();
-            for (let i = 0; i < 4; i++) {
-                const px = ((t * 80 + (i * width) / 4) % (width + 40)) - 20;
-                if (px > lim) continue;
-                ctx.beginPath(); ctx.arc(px, baseY + fourierY(px), 2.8, 0, Math.PI * 2);
-                ctx.fillStyle = W(0.85); ctx.fill();
+        // --- INTERFERENȚA A DOUĂ SURSE --------------------------------------
+        // Clasa a VII-a, unde mecanice. Două pietre în apă: cercurile care se
+        // suprapun sunt chiar figura din manual.
+        const drawInterferenta = () => {
+            const y = height * 0.86;
+            const s1 = width * 0.42, s2 = width * 0.58;
+            const a = draw01(2.0, 1.5);
+            if (a <= 0) return;
+            for (const sx of [s1, s2]) {
+                for (let k = 0; k < 7; k++) {
+                    const r = ((t * 16 + k * 34) % 240) * a;
+                    const fade = 1 - r / 240;
+                    if (fade <= 0) continue;
+                    ctx.strokeStyle = W(0.055 * fade);
+                    ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.arc(sx, y, r, Math.PI, 2 * Math.PI); ctx.stroke();
+                }
+                ctx.fillStyle = W(0.3 * a);
+                ctx.beginPath(); ctx.arc(sx, y, 2, 0, Math.PI * 2); ctx.fill();
             }
         };
 
         const frame = () => {
             ctx.clearRect(0, 0, width, height);
             drawGrid();
-            drawSpiral();
-            drawLissajous();
-            drawWave();
-            drawFoucault();
+            drawCampMagnetic();
+            drawCircuit();
+            drawInterferenta();
+            drawLentila();
         };
 
         const animate = () => {
