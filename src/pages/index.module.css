@@ -1,0 +1,149 @@
+/* ══ HERO ══════════════════════════════════════════════════════════════════
+   Singurul loc din pagină cu culoare tare. Restul e alb, ca pe edumat58. */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(152deg, var(--kl-hero-1) 0%, var(--kl-hero-2) 100%);
+  padding: 5rem 1.5rem 5.5rem;
+  text-align: center;
+}
+
+/* Grila din spate: dă textură unei suprafețe mari de culoare, care altfel ar
+   arăta ca un banner. Se stinge spre margini, ca să nu taie blocul. */
+.grila {
+  position: absolute;
+  inset: -1px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.075) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, #000 30%, transparent 100%);
+  animation: kl-respira 14s ease-in-out infinite;
+}
+
+/* Grila respiră foarte încet. E singura mișcare continuă din pagină și e sub
+   pragul la care ochiul o urmărește — dă senzația de suprafață vie, nu de
+   element care cere atenție. */
+@keyframes kl-respira {
+  0%, 100% { transform: scale(1); opacity: .9; }
+  50%      { transform: scale(1.045); opacity: 1; }
+}
+
+.heroIn { position: relative; max-width: 52rem; margin: 0 auto; }
+
+.semnatura { display: flex; justify-content: center; margin-bottom: 1.75rem; opacity: .85; }
+.wordmark { display: flex; justify-content: center; color: #fff; }
+.tagline {
+  margin: 1.75rem 0 2.5rem;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.72);
+}
+
+/* --- intrarea: patru trepte decalate ----------------------------------- */
+@keyframes kl-intra { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+.intra1, .intra2, .intra3, .intra4 {
+  animation: kl-intra .7s cubic-bezier(.22,1,.36,1) both;
+}
+.intra1 { animation-delay: .05s; }
+.intra2 { animation-delay: .16s; }
+.intra3 { animation-delay: .30s; }
+.intra4 { animation-delay: .42s; }
+
+/* --- pastilele --------------------------------------------------------- */
+.butoane { display: flex; flex-direction: column; gap: .8rem; align-items: center; }
+
+.pastilaPlina, .pastilaGoala {
+  display: inline-block;
+  min-width: 17.5rem;
+  padding: .95rem 2rem;
+  border-radius: 50px;
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  transition: transform .22s cubic-bezier(.22,1,.36,1), background .22s ease, box-shadow .22s ease;
+}
+.pastilaPlina { background: #fff; color: var(--kl-violet); }
+.pastilaGoala { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.22); }
+
+.pastilaPlina:hover {
+  color: var(--kl-violet-deep); text-decoration: none;
+  transform: translateY(-3px); box-shadow: 0 10px 24px -10px rgba(0,0,0,.45);
+}
+.pastilaGoala:hover {
+  background: rgba(255,255,255,.2); color: #fff; text-decoration: none;
+  transform: translateY(-3px);
+}
+.pastilaPlina:active, .pastilaGoala:active { transform: translateY(-1px); }
+
+/* ══ PAGINA ═══════════════════════════════════════════════════════════════ */
+
+.pagina { max-width: 54rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+
+.supratitlu {
+  font-size: .6875rem; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--kl-violet); margin: 0 0 .4rem;
+}
+.titluSectiune {
+  font-size: clamp(1.9rem, 4.5vw, 2.5rem);
+  letter-spacing: -.025em; margin: 0 0 3rem;
+}
+
+/**
+ * Domeniile.
+ *
+ * NU SUNT CARDURI. Pe edumat58 secțiunile „Algebră / Geometrie" au fundal
+ * transparent, fără chenar și fără colț rotunjit — text curgător, cu titlul în
+ * accentul cel mai închis. Versiunea mea cu cutii într-o grilă `auto-fit` lăsa
+ * o celulă goală la lățime mare, randată ca un bloc gri.
+ *
+ * Aici: un rând pe domeniu, numărul la stânga ca ancoră tipografică, o linie
+ * subțire între ele. Trei elemente nu au nevoie de trei coloane.
+ */
+.domenii { display: flex; flex-direction: column; }
+
+.domeniu {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1.25rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--kl-line);
+  /* VIZIBIL IMPLICIT. Ascunderea o pune JS, prin `.ascuns`, și numai după ce a
+     confirmat că poate anima. Invers — ascuns în CSS, dezvăluit de JS — a fost
+     bug: dacă observatorul nu se declanșa, textul nu apărea niciodată. */
+  transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1);
+}
+.domeniu:last-child { border-bottom: 1px solid var(--kl-line); }
+.ascuns { opacity: 0; transform: translateY(20px); }
+
+.numar {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--kl-violet);
+  font-variant-numeric: tabular-nums;
+  padding-top: .2rem;
+}
+
+.domeniuTitlu {
+  font-size: 1.35rem; font-weight: 700; letter-spacing: -.015em;
+  margin: 0 0 .4rem; color: var(--kl-violet-deep);
+}
+.domeniuText { font-size: 1rem; color: var(--kl-ink2); margin: 0; line-height: 1.65; max-width: 46ch; }
+
+@media (max-width: 32rem) {
+  .domeniu { grid-template-columns: 2.5rem 1fr; gap: 1rem; }
+}
+
+/* Mișcarea redusă: totul apare pe loc, nimic nu se animă. */
+@media (prefers-reduced-motion: reduce) {
+  .intra1, .intra2, .intra3, .intra4 { animation: none; }
+  .grila { animation: none; }
+  .ascuns { opacity: 1; transform: none; }
+  .domeniu { transition: none; }
+  .pastilaPlina, .pastilaGoala { transition: none; }
+}
