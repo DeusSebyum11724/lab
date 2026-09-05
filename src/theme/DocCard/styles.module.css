@@ -1,7 +1,7 @@
 /* COPIAT din edumat58 (`src/theme/DocCard/styles.module.css`).
    Grid: [iconita] [titlu + descriere] [CTA ->].
    Doua curatenii: blocul variantei pentru lectiile adaptate a fost taiat,
-   iar accentul portocaliu al matematicii a devenit violetul Edulab58. */
+   iar accentul portocaliu al matematicii a devenit burgundyul Edulab58. */
 
 .cardContainer {
   --ifm-link-color: var(--ifm-font-color-base);
@@ -24,7 +24,7 @@
 }
 
 .cardContainer:hover {
-  border-color: var(--kl-violet, #4a2fa8);
+  border-color: var(--kl-vin, #700929);
   box-shadow: 0 4px 14px rgba(28, 26, 22, 0.1);
   background: #fffcf5;
 }
@@ -44,8 +44,8 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  color: var(--kl-violet-deep, #3a2483);
-  background: rgba(74, 47, 168, 0.09);
+  color: var(--kl-vin-deep, #55071f);
+  background: rgba(112, 9, 41, 0.09);
   font-family: Inter, var(--ifm-font-family-base), system-ui, sans-serif;
   font-size: 0.75rem;
   font-weight: 900;
@@ -88,7 +88,7 @@
   display: inline-flex;
   gap: 0.45rem;
   align-items: center;
-  color: var(--kl-violet-deep, #3a2483);
+  color: var(--kl-vin-deep, #55071f);
   font-size: 0.75rem;
   font-weight: 900;
   white-space: nowrap;

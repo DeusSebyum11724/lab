@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
-import { EdulabWordmark } from '@site/src/components/Brand';
+import { EdulabWordmark, KulturosferaSignature } from '@site/src/components/Brand';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './Hero.module.css';
 import KulturosferaButton from '../KulturosferaButton';
-import SplitText from '../SplitText/SplitText';
 
 /**
  * Heroul Edulab58 — PORTAT din `curs/src/components/Hero/Hero.jsx`, nu rescris.
@@ -108,140 +108,175 @@ export default function Hero() {
         //  primele ~2,5 secunde prin `draw01`, steluțele Kulturosfera ca accent.
         // =====================================================================
 
-        // --- LENTILA CONVERGENTĂ: raze paralele care se string în focar ------
-        // Piesa centrală. Am ales-o fiindcă e singura care leagă trei lucruri:
-        // e din programă, e recunoscută instant ca fizică, și explică paleta —
-        // violetul mărcii e chiar capătul spectrului pe care îl produce optica.
+        // --- LENTILA CONVERGENTĂ, cu dispersie ---------------------------
+        // Piesa centrală. Raze paralele intră, lentila le frânge, se string în
+        // focar — iar dincolo de focar se DESPART în spectru, fiindcă indicele
+        // de refracție depinde de culoare. Dispersia e singurul loc din tot
+        // heroul unde apare culoare: restul e linie albă.
+        const SPECTRU = ['#b8556b', '#e8a3b3', '#f0d9a0', '#a8d3b0', '#8fc4d6', '#7fb0c9'];
+
         const drawLentila = () => {
             const cx = width * 0.78, cy = height * 0.33;
             const R = Math.min(width, height) * 0.2;
-            const h = R * 0.92;              // semi-înălțimea lentilei
-            const f = R * 1.15;              // distanța focală
-            const bulge = R * 0.3;           // bombarea fețelor
+            // lentila „respiră": curbura variază lent, deci focarul se plimbă —
+            // exact relația dintre raza de curbură și distanța focală.
+            const puls = 1 + 0.06 * Math.sin(t * 0.5);
+            const h = R * 0.92, bulge = R * 0.3 * puls, f = R * 1.15 / puls;
 
-            // axa optică
             const a0 = draw01(0.15, 0.9);
             if (a0 > 0) {
-                ctx.strokeStyle = W(0.13); ctx.lineWidth = 1;
-                ctx.setLineDash([5, 6]);
+                ctx.strokeStyle = W(0.13); ctx.lineWidth = 1; ctx.setLineDash([5, 6]);
                 ctx.beginPath();
-                ctx.moveTo(cx - R * 2.1 * a0, cy); ctx.lineTo(cx + R * 2.1 * a0, cy);
+                ctx.moveTo(cx - R * 2.1 * a0, cy); ctx.lineTo(cx + R * 2.4 * a0, cy);
                 ctx.stroke(); ctx.setLineDash([]);
             }
 
-            // corpul lentilei: două arce care se ating la margini
             const a1 = draw01(0.35, 1.0);
             if (a1 > 0) {
                 ctx.strokeStyle = W(0.5); ctx.lineWidth = 1.6;
                 ctx.beginPath();
-                ctx.moveTo(cx, cy - h * a1);
-                ctx.quadraticCurveTo(cx + bulge, cy, cx, cy + h * a1);
-                ctx.moveTo(cx, cy - h * a1);
-                ctx.quadraticCurveTo(cx - bulge, cy, cx, cy + h * a1);
+                ctx.moveTo(cx, cy - h * a1); ctx.quadraticCurveTo(cx + bulge, cy, cx, cy + h * a1);
+                ctx.moveTo(cx, cy - h * a1); ctx.quadraticCurveTo(cx - bulge, cy, cx, cy + h * a1);
                 ctx.stroke();
             }
 
-            // razele: paralele la intrare, frânte de lentilă, adunate în focar
             const a2 = draw01(0.8, 1.3);
             if (a2 > 0) {
-                for (let i = -3; i <= 3; i++) {
+                for (let i = -4; i <= 4; i++) {
                     if (i === 0) continue;
-                    const y = cy + (i / 3) * h * 0.82;
-                    // pulsul care alunecă pe rază — arată SENSUL luminii
-                    const puls = ((t * 0.35 + i * 0.13) % 1);
-                    ctx.strokeStyle = W(0.1 + 0.16 * a2);
-                    ctx.lineWidth = 1.1;
+                    const y = cy + (i / 4) * h * 0.85;
+                    ctx.strokeStyle = W(0.09 + 0.15 * a2); ctx.lineWidth = 1.1;
                     ctx.beginPath();
-                    ctx.moveTo(cx - R * 2.05 * a2, y);
-                    ctx.lineTo(cx, y);
-                    ctx.lineTo(cx + f * a2, cy);   // convergența spre focar
+                    ctx.moveTo(cx - R * 2.05 * a2, y); ctx.lineTo(cx, y);
+                    ctx.lineTo(cx + f * a2, cy);
                     ctx.stroke();
 
-                    // bobița de lumină pe segmentul de dinainte de lentilă
-                    const px = cx - R * 2.05 + puls * R * 2.05;
-                    if (a2 > 0.6 && px < cx) {
-                        ctx.fillStyle = W(0.35 * (1 - puls));
-                        ctx.beginPath(); ctx.arc(px, y, 1.6, 0, Math.PI * 2); ctx.fill();
+                    // pachetul de lumină care parcurge raza: intră, se frânge,
+                    // trece prin focar. Un singur punct, dar face drumul întreg.
+                    const u = ((t * 0.3 + i * 0.11) % 1);
+                    if (a2 > 0.55) {
+                        let px, py;
+                        if (u < 0.55) { px = cx - R * 2.05 + (u / 0.55) * R * 2.05; py = y; }
+                        else { const v = (u - 0.55) / 0.45; px = cx + v * f; py = y + (cy - y) * v; }
+                        ctx.fillStyle = W(0.45 * Math.sin(u * Math.PI));
+                        ctx.beginPath(); ctx.arc(px, py, 2, 0, Math.PI * 2); ctx.fill();
                     }
                 }
             }
 
-            // focarul, marcat cu steaua Kulturosfera
+            // DISPERSIA: dincolo de focar fasciculul se desface în spectru.
+            const a4 = draw01(2.1, 1.4);
+            if (a4 > 0) {
+                SPECTRU.forEach((col, k) => {
+                    const ang = (k - (SPECTRU.length - 1) / 2) * 0.052;
+                    const len = R * 1.5 * a4;
+                    ctx.strokeStyle = col + '66';
+                    ctx.lineWidth = 1.6;
+                    ctx.beginPath();
+                    ctx.moveTo(cx + f, cy);
+                    ctx.lineTo(cx + f + Math.cos(ang) * len, cy + Math.sin(ang) * len);
+                    ctx.stroke();
+                });
+            }
+
             const a3 = draw01(1.9, 0.7);
             if (a3 > 0) {
-                ctx.fillStyle = W(0.5 * a3);
+                ctx.fillStyle = W(0.55 * a3);
                 star4(cx + f, cy, 9 * a3, 2.6 * a3, t * 0.25);
                 ctx.fill();
             }
         };
 
-        // --- LINIILE DE CÂMP ALE UNUI MAGNET BARĂ ---------------------------
-        // Clasa a VI-a. Buclele care ies din polul nord și intră în sud —
-        // forma cea mai recognoscibilă din tot capitolul de magnetism.
+        // --- CÂMPUL MAGNETIC, cu ace de busolă care se orientează ---------
+        // Clasa a VI-a. Buclele sunt figura din manual; acele arată CE FACE
+        // câmpul — se rotesc lin până se aliniază pe tangenta liniei de câmp.
         const drawCampMagnetic = () => {
-            const cx = width * 0.2, cy = height * 0.72;
+            const cx = width * 0.19, cy = height * 0.7;
             const L = Math.min(width, height) * 0.085;
             const a = draw01(1.1, 1.4);
             if (a <= 0) return;
 
-            // bara
-            ctx.strokeStyle = W(0.32); ctx.lineWidth = 1.5;
+            // bara, cu polii marcați
+            ctx.strokeStyle = W(0.34); ctx.lineWidth = 1.5;
             ctx.strokeRect(cx - L, cy - L * 0.26, L * 2, L * 0.52);
             ctx.beginPath(); ctx.moveTo(cx, cy - L * 0.26); ctx.lineTo(cx, cy + L * 0.26); ctx.stroke();
 
-            // buclele, tot mai largi
-            for (let k = 1; k <= 4; k++) {
-                const spread = L * (0.55 + k * 0.5);
-                const rise = L * (0.4 + k * 0.62);
-                const av = a * Math.max(0, Math.min(1, (a - k * 0.12) / 0.6));
+            // liniile de câmp, cu un impuls care le parcurge
+            for (let k = 1; k <= 5; k++) {
+                const spread = L * (0.5 + k * 0.46), rise = L * (0.36 + k * 0.58);
+                const av = Math.max(0, Math.min(1, (a - k * 0.1) / 0.6));
                 if (av <= 0) continue;
-                ctx.strokeStyle = W(0.055 + 0.05 / k);
-                ctx.lineWidth = 1;
+                const val = 0.05 + 0.05 / k + 0.035 * Math.sin(t * 1.1 - k * 0.6);
+                ctx.strokeStyle = W(Math.max(0.02, val)); ctx.lineWidth = 1;
                 for (const sgn of [-1, 1]) {
                     ctx.beginPath();
                     ctx.moveTo(cx + L, cy);
-                    ctx.bezierCurveTo(
-                        cx + L + spread * av, cy + sgn * rise,
-                        cx - L - spread * av, cy + sgn * rise,
-                        cx - L, cy
-                    );
+                    ctx.bezierCurveTo(cx + L + spread * av, cy + sgn * rise,
+                                      cx - L - spread * av, cy + sgn * rise, cx - L, cy);
                     ctx.stroke();
+                }
+            }
+
+            // acele de busolă: se aliniază pe direcția câmpului, cu o mică
+            // oscilație amortizată în jurul poziției de echilibru
+            if (a > 0.7) {
+                for (let i = 0; i < 7; i++) {
+                    const ang0 = Math.PI * (0.18 + i * 0.11);
+                    const rr = L * 2.5;
+                    const px = cx + Math.cos(ang0) * rr * 1.25;
+                    const py = cy - Math.sin(ang0) * rr * 0.75;
+                    const dir = Math.atan2(cy - py, cx - px) + Math.PI / 2
+                              + 0.16 * Math.sin(t * 1.6 - i * 0.5) * Math.exp(-Math.max(0, t - 6) * 0.3);
+                    ctx.strokeStyle = W(0.3); ctx.lineWidth = 1.4;
+                    ctx.beginPath();
+                    ctx.moveTo(px - Math.cos(dir) * 7, py - Math.sin(dir) * 7);
+                    ctx.lineTo(px + Math.cos(dir) * 7, py + Math.sin(dir) * 7);
+                    ctx.stroke();
+                    ctx.fillStyle = W(0.42);
+                    ctx.beginPath(); ctx.arc(px + Math.cos(dir) * 7, py + Math.sin(dir) * 7, 1.9, 0, 7); ctx.fill();
                 }
             }
         };
 
-        // --- CIRCUIT SIMPLU cu curent care circulă --------------------------
-        // Clasa a VIII-a, electrocinetică. Sursă, rezistor, bec — desenate cu
-        // simbolurile din manual, nu stilizate.
+        // --- CIRCUIT: mai mulți purtători, becul care pulsează --------------
+        // Clasa a VIII-a. Becul se aprinde în ritmul curentului care trece prin
+        // el, iar rezistorul se încălzește — cele două efecte din programă.
         const drawCircuit = () => {
-            const x0 = width * 0.09, y0 = height * 0.2;
-            const w = Math.min(width, height) * 0.16, h = w * 0.62;
+            const x0 = width * 0.085, y0 = height * 0.19;
+            const w = Math.min(width, height) * 0.17, h = w * 0.6;
             const a = draw01(1.5, 1.2);
             if (a <= 0) return;
 
             ctx.strokeStyle = W(0.26); ctx.lineWidth = 1.3;
             ctx.beginPath(); ctx.rect(x0, y0, w * a, h * a); ctx.stroke();
+            if (a <= 0.85) return;
 
-            if (a > 0.85) {
-                // sursa: două bare inegale, ca în simbolul de baterie
-                ctx.beginPath();
-                ctx.moveTo(x0 + w * 0.42, y0 - 5); ctx.lineTo(x0 + w * 0.42, y0 + 5);
-                ctx.moveTo(x0 + w * 0.52, y0 - 9); ctx.lineTo(x0 + w * 0.52, y0 + 9);
-                ctx.stroke();
-                // rezistorul: dreptunghi pe latura dreaptă
-                ctx.strokeRect(x0 + w - 4, y0 + h * 0.34, 8, h * 0.32);
-                // becul: cerc cu cruce
-                const bx = x0 + w * 0.5, by = y0 + h;
-                ctx.beginPath(); ctx.arc(bx, by, 7, 0, Math.PI * 2); ctx.stroke();
-                ctx.beginPath();
-                ctx.moveTo(bx - 5, by - 5); ctx.lineTo(bx + 5, by + 5);
-                ctx.moveTo(bx + 5, by - 5); ctx.lineTo(bx - 5, by + 5);
-                ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(x0 + w * 0.42, y0 - 5); ctx.lineTo(x0 + w * 0.42, y0 + 5);
+            ctx.moveTo(x0 + w * 0.52, y0 - 9); ctx.lineTo(x0 + w * 0.52, y0 + 9);
+            ctx.stroke();
 
-                // curentul: un punct care face ocolul buclei
-                const per = (t * 0.22) % 1;
-                const P = 2 * (w + h);
-                let d = per * P, px, py;
+            // rezistorul, cu efectul termic sugerat de o aură care pulsează
+            const cald = 0.5 + 0.5 * Math.sin(t * 1.3);
+            ctx.strokeStyle = W(0.2 + 0.2 * cald);
+            ctx.strokeRect(x0 + w - 4, y0 + h * 0.34, 8, h * 0.32);
+
+            // becul: cerc cu cruce, cu strălucire ritmată
+            const bx = x0 + w * 0.5, by = y0 + h;
+            const glow = 0.35 + 0.35 * Math.sin(t * 1.3 - 0.7);
+            ctx.strokeStyle = W(0.25 + 0.3 * glow); ctx.lineWidth = 1.4;
+            ctx.beginPath(); ctx.arc(bx, by, 7, 0, Math.PI * 2); ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(bx - 5, by - 5); ctx.lineTo(bx + 5, by + 5);
+            ctx.moveTo(bx + 5, by - 5); ctx.lineTo(bx - 5, by + 5);
+            ctx.stroke();
+            ctx.fillStyle = W(0.1 * glow);
+            ctx.beginPath(); ctx.arc(bx, by, 13, 0, Math.PI * 2); ctx.fill();
+
+            // TREI purtători de sarcină, egal distanțați pe buclă
+            const P = 2 * (w + h);
+            for (let n = 0; n < 3; n++) {
+                let d = ((t * 0.2 + n / 3) % 1) * P, px, py;
                 if (d < w) { px = x0 + d; py = y0; }
                 else if (d < w + h) { px = x0 + w; py = y0 + (d - w); }
                 else if (d < 2 * w + h) { px = x0 + w - (d - w - h); py = y0 + h; }
@@ -251,26 +286,94 @@ export default function Hero() {
             }
         };
 
-        // --- INTERFERENȚA A DOUĂ SURSE --------------------------------------
-        // Clasa a VII-a, unde mecanice. Două pietre în apă: cercurile care se
-        // suprapun sunt chiar figura din manual.
+        // --- INTERFERENȚA: cu liniile nodale ------------------------------
+        // Clasa a VII-a. Cercurile sunt fronturile de undă; liniile care pleacă
+        // în evantai sunt locurile unde undele se anulează — franjele care fac
+        // figura să fie interferență, nu două pietre aruncate separat.
         const drawInterferenta = () => {
-            const y = height * 0.86;
-            const s1 = width * 0.42, s2 = width * 0.58;
+            const y = height * 0.87;
+            const s1 = width * 0.4, s2 = width * 0.6, mid = (s1 + s2) / 2;
             const a = draw01(2.0, 1.5);
             if (a <= 0) return;
+
             for (const sx of [s1, s2]) {
-                for (let k = 0; k < 7; k++) {
-                    const r = ((t * 16 + k * 34) % 240) * a;
-                    const fade = 1 - r / 240;
+                for (let k = 0; k < 8; k++) {
+                    const r = ((t * 18 + k * 32) % 260) * a;
+                    const fade = 1 - r / 260;
                     if (fade <= 0) continue;
-                    ctx.strokeStyle = W(0.055 * fade);
-                    ctx.lineWidth = 1;
+                    ctx.strokeStyle = W(0.05 * fade); ctx.lineWidth = 1;
                     ctx.beginPath(); ctx.arc(sx, y, r, Math.PI, 2 * Math.PI); ctx.stroke();
                 }
-                ctx.fillStyle = W(0.3 * a);
-                ctx.beginPath(); ctx.arc(sx, y, 2, 0, Math.PI * 2); ctx.fill();
+                ctx.fillStyle = W(0.32 * a);
+                ctx.beginPath(); ctx.arc(sx, y, 2.2, 0, Math.PI * 2); ctx.fill();
             }
+
+            if (a > 0.8) {
+                ctx.setLineDash([3, 7]);
+                for (let m = -2; m <= 2; m++) {
+                    if (m === 0) continue;
+                    const spread = m * 0.36;
+                    ctx.strokeStyle = W(0.07); ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(mid, y);
+                    ctx.lineTo(mid + Math.sin(spread) * 260, y - Math.cos(spread) * 260);
+                    ctx.stroke();
+                }
+                ctx.setLineDash([]);
+            }
+        };
+
+        // --- PÂRGHIA: colțul din dreapta-jos ------------------------------
+        // Clasa a VII-a, mecanisme simple. Era singurul colț gol al scenei.
+        // Bara se înclină încet până se echilibrează, iar brațele se schimbă:
+        // arată LEGEA pârghiei, nu doar forma ei — greutatea mică pe brațul
+        // lung ridică greutatea mare de pe brațul scurt.
+        const drawParghia = () => {
+            const cx = width * 0.84, cy = height * 0.8;
+            const Lb = Math.min(width, height) * 0.14;
+            const a = draw01(2.4, 1.5);
+            if (a <= 0) return;
+
+            // oscilație amortizată spre echilibru
+            const damp = Math.exp(-Math.max(0, t - 4.2) * 0.42);
+            const ang = 0.3 * Math.sin(t * 1.15) * damp + 0.055 * Math.sin(t * 0.4);
+            const c = Math.cos(ang), sn = Math.sin(ang);
+
+            // punctul de sprijin: triunghi
+            ctx.strokeStyle = W(0.34); ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy); ctx.lineTo(cx - 11, cy + 17); ctx.lineTo(cx + 11, cy + 17);
+            ctx.closePath(); ctx.stroke();
+
+            // bara, cu brațe inegale — scurt la stânga, lung la dreapta
+            const bs = Lb * 0.62 * a, bl = Lb * 1.25 * a;
+            const x1 = cx - bs * c, y1 = cy - bs * sn;
+            const x2 = cx + bl * c, y2 = cy + bl * sn;
+            ctx.strokeStyle = W(0.42); ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+
+            // gradațiile de pe braț — unitățile de lungime ale legii pârghiei
+            if (a > 0.7) {
+                ctx.strokeStyle = W(0.14); ctx.lineWidth = 1;
+                for (let k = 1; k <= 4; k++) {
+                    const f = (k / 4) * bl;
+                    const gx = cx + f * c, gy = cy + f * sn;
+                    ctx.beginPath();
+                    ctx.moveTo(gx - sn * 3.5, gy + c * 3.5);
+                    ctx.lineTo(gx + sn * 3.5, gy - c * 3.5);
+                    ctx.stroke();
+                }
+            }
+
+            // greutățile: mare pe brațul scurt, mică pe cel lung
+            const greutate = (gx, gy, w2, h2) => {
+                ctx.strokeStyle = W(0.36); ctx.lineWidth = 1.4;
+                ctx.beginPath();
+                ctx.moveTo(gx, gy); ctx.lineTo(gx, gy + 9);
+                ctx.stroke();
+                ctx.strokeRect(gx - w2 / 2, gy + 9, w2, h2);
+            };
+            if (a > 0.85) { greutate(x1, y1, 16, 13); greutate(x2, y2, 9, 8); }
         };
 
         const frame = () => {
@@ -279,6 +382,7 @@ export default function Hero() {
             drawCampMagnetic();
             drawCircuit();
             drawInterferenta();
+            drawParghia();
             drawLentila();
         };
 
@@ -307,6 +411,16 @@ export default function Hero() {
             <canvas ref={canvasRef} className={styles.canvasBackground} />
             <div className={styles.heroOverlay}></div>
             <div className={clsx('container', styles.heroContent)}>
+                {/* SEMNĂTURA KULTUROSFERA, deasupra numelui platformei.
+                    Emblema + linia celor patru pătrate colorate — aceeași
+                    construcție ca pe edumat58, unde semnătura casei stă lângă
+                    numele platformei, nu în locul lui. */}
+                {/* Semnătura casei, deasupra numelui platformei: emblema,
+                    numele KULTUROSFERA și linia celor patru culori dedesubt. */}
+                <div className={styles.semnatura}>
+                    <KulturosferaSignature culoare="#ffffff" inaltime={30} />
+                </div>
+
                 <h1 className={styles.heroTitle} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
                     <span style={{ color: '#fff' }}>
                         <EdulabWordmark width={420} style={{ width: 'min(420px, 86vw)' }} />
@@ -315,16 +429,7 @@ export default function Hero() {
                         {siteConfig.title}
                     </span>
                 </h1>
-                <SplitText
-                    text={siteConfig.tagline}
-                    className={styles.heroSubtitle}
-                    delay={50}
-                    animationFrom={{ opacity: 0, transform: 'translate3d(0,40px,0)' }}
-                    animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-                    easing="easeOutCubic"
-                    threshold={0.1}
-                    rootMargin="-100px"
-                />
+
                 <br></br>
                 <br></br>
                 <div className={styles.buttons}>

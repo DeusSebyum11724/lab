@@ -1,4 +1,5 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 /**
  * Wordmark-ul Edulab58.
@@ -21,23 +22,147 @@ export function EdulabWordmark({ width = 160, style }) {
   );
 }
 
-/** Linia de brand Kulturosfera - cele patru culori oficiale. Portata neschimbata. */
-export function KulturosferaLine({ width = 64 }) {
+/**
+ * Linia de brand Kulturosfera — patru pătrate colorate legate prin bare.
+ *
+ * RAPORTURILE SUNT CELE ALE ORIGINALULUI, extrase din `viewBox="0 0 177 17"`
+ * al lui `KulturosferaLine` din edumat58, nu reconstruite din cap:
+ *
+ *   pătrat       latura 17/17 = 1.000 din înălțime,  colț rotunjit 2.5/17 = 0.147
+ *   bara         grosime  5/17 = 0.294,  centrată pe verticală (y = 6/17)
+ *   capăt drept  lățime   5/17 = 0.294,  ÎNĂLȚIME PLINĂ 17/17 = 1.000, rx 1.5/17
+ *   poziții      0%, 24.29%, 49.15%, 74.01%, capătul la 97.18%
+ *
+ * Două greșeli ale versiunii mele anterioare, corectate aici: capătul din
+ * dreapta era scund (0.56 din înălțime) în loc de plin, iar pătratele erau
+ * așezate uniform la 0/25/50/75% în loc de pasul real, care NU e uniform —
+ * primul interval e 43, următoarele două 44, ultimul 46.
+ *
+ * DE CE NU UN `viewBox` FIX. La lățimea cuvântului „KULTUROSFERA" raportul
+ * 10.41:1 ar impune pătrate de două ori cât litera. Aici pătratele păstrează
+ * mărimea și proporțiile originalului, iar barele dintre ele se lungesc.
+ *
+ * PRIMUL PĂTRAT E VERDE `#005340`. `Brand/index.jsx` din edumat58 are acolo
+ * `#003058`, dar e depășit: sursa autoritară e `theme/index.ts` din edulink112
+ * (`brand.green`, `brand.red`, `brand.turquoise`, `brand.gray`), confirmată de
+ * `components/preloader/preloader.tsx`. În marcă NU există pătrat albastru.
+ */
+const MARCA = [
+  { c: '#005340', x: 0 / 177 },
+  { c: '#d23d2d', x: 43 / 177 },
+  { c: '#0197b0', x: 87 / 177 },
+  { c: '#545454', x: 131 / 177 },
+];
+const CAPAT = 172 / 177;
+
+export function KulturosferaLine({ latime = '100%', marime = 11 }) {
+  const H = marime;
   return (
-    <svg viewBox="0 0 177 17" width={width} aria-hidden="true">
-      <rect x="0" y="6" width="43" height="5" fill="#003058" />
-      <rect x="43" y="6" width="44" height="5" fill="#d23d2d" />
-      <rect x="87" y="6" width="44" height="5" fill="#0197b0" />
-      <rect x="131" y="6" width="46" height="5" fill="#545454" />
-      {[
-        { x: 0, c: '#003058' },
-        { x: 43, c: '#d23d2d' },
-        { x: 87, c: '#0197b0' },
-        { x: 131, c: '#545454' },
-      ].map((s) => (
-        <rect key={s.x} x={s.x} y="0" width="17" height="17" rx="2.5" fill={s.c} />
+    <span
+      style={{
+        position: 'relative',
+        display: 'block',
+        width: latime,
+        height: H,
+      }}
+    >
+      {/* barele: pornesc din centrul pătratului și merg până la următorul */}
+      {MARCA.map((s, i) => {
+        const pana = i < MARCA.length - 1 ? MARCA[i + 1].x : CAPAT;
+        return (
+          <span
+            key={`b-${s.c}`}
+            style={{
+              position: 'absolute',
+              left: `${s.x * 100}%`,
+              width: `${(pana - s.x) * 100}%`,
+              top: (H - H * 0.294) / 2,
+              height: H * 0.294,
+              background: s.c,
+            }}
+          />
+        );
+      })}
+
+      {/* pătratele, de mărime fixă — rămân pătrate la orice lățime */}
+      {MARCA.map((s) => (
+        <span
+          key={s.c}
+          style={{
+            position: 'absolute',
+            left: `${s.x * 100}%`,
+            top: 0,
+            width: H,
+            height: H,
+            background: s.c,
+            borderRadius: H * 0.147,
+          }}
+        />
       ))}
-      <rect x="172" y="0" width="5" height="17" rx="1.5" fill="#545454" />
-    </svg>
+
+      {/* capătul din dreapta: îngust, dar de înălțime PLINĂ */}
+      <span
+        style={{
+          position: 'absolute',
+          left: `${CAPAT * 100}%`,
+          top: 0,
+          width: H * 0.294,
+          height: H,
+          background: MARCA[3].c,
+          borderRadius: H * 0.088,
+        }}
+      />
+    </span>
+  );
+}
+
+export function KulturosferaSignature({ culoare = '#ffffff', inaltime = 30, style }) {
+  return (
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: inaltime * 0.42, ...style }}>
+      <img
+        src={useBaseUrl("/img/kulturosfera_logo_white.png")}
+        alt=""
+        aria-hidden="true"
+        height={inaltime}
+        style={{ height: inaltime, width: 'auto', display: 'block', userSelect: 'none' }}
+      />
+      {/*
+        Numele și linia stau într-o coloană care se strânge pe conținut
+        (`inline-flex` + `alignItems: stretch`), iar linia primește `width: 100%`.
+        Așa linia iese EXACT cât cuvântul, la orice mărime.
+
+        Prima versiune dădea liniei o lățime calculată (`inaltime * 4.6`) și
+        ieșea mai scurtă decât numele — autorul: „linia cu patrate e mai mica si
+        mai scurta decat titlul kulturosfera". Un număr fix nu poate urmări
+        lățimea unui cuvânt care depinde de font, greutate și tracking.
+      */}
+      <span
+        style={{
+          // `fit-content` e cheia: fără el coloana se întinde cât permite
+          // părintele, iar linia cu `width: 100%` se raportează la HERO, nu la
+          // cuvânt — așa au ieșit pătratele uriașe din prima încercare.
+          display: 'inline-flex',
+          flexDirection: 'column',
+          alignItems: 'stretch',
+          width: 'fit-content',
+          gap: inaltime * 0.2,
+        }}
+      >
+        <span
+          style={{
+            color: culoare,
+            fontFamily: "'Inter', system-ui, sans-serif",
+            fontWeight: 800,
+            fontSize: inaltime * 0.5,
+            letterSpacing: '0.2em',
+            lineHeight: 1,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          KULTUROSFERA
+        </span>
+        <KulturosferaLine latime="100%" marime={inaltime * 0.38} />
+      </span>
+    </span>
   );
 }

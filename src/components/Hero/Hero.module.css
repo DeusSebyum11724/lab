@@ -12,7 +12,7 @@
      luminozitate HSL, ca raporturile dintre ele să rămână cele din edumat58;
      primul și ultimul au căzut exact pe tokenii deja aleși. Alb pe ele:
      7.90 / 10.23 / 11.93 — toate peste 4.5. */
-  background: linear-gradient(135deg, #5537bc 0%, #442c97 55%, #3a2483 100%);
+  background: linear-gradient(135deg, #8d0d34 0%, #620925 55%, #55071f 100%);
   color: #fff;
 }
 
@@ -47,7 +47,7 @@
   margin-bottom: 2rem;
   line-height: 1.1;
   color: #ffffff;
-  /* Halo în accent, ca originalul: nuanța deschisă a familiei (--kl-violet-light). */
+  /* Halo în accent, ca originalul: nuanța deschisă a familiei (--kl-vin-light). */
   text-shadow: 0 4px 10px rgba(122, 95, 214, 0.45);
 }
 
@@ -73,7 +73,7 @@
   background: #ffffff;
   /* White button */
   border: 2px solid #ffffff;
-  color: #4a2fa8 !important;
+  color: #700929 !important;
   /* Accentul închis: 9.28:1 pe alb. Portocaliul originalului (#ED8F03) dădea
      2.16:1 pe butonul alb — nu l-am tradus, l-am corectat. */
   font-weight: 800;
@@ -125,4 +125,19 @@
     padding: 0 10px;
     line-height: 1.4;
   }
+}
+/* Semnătura Kulturosfera, deasupra numelui platformei: emblema mică + linia
+   celor patru pătrate. Stă pe un rând, centrată, cu opacitate ușor redusă —
+   e semnătura casei, nu titlul paginii. */
+.semnatura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.75rem;
+  opacity: 0.88;
+}
+.semnatura img {
+  display: block;
+  user-select: none;
 }

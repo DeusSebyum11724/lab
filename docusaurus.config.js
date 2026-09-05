@@ -27,9 +27,9 @@ const config = {
   tagline: 'Fizica, pas cu pas',
   favicon: 'img/favicon.ico',
 
-  url: 'https://edulab58.github.io',
+  url: 'https://deussebyum11724.github.io',
   baseUrl: '/lab/',
-  organizationName: 'edulab58',
+  organizationName: 'DeusSebyum11724',
   projectName: 'lab',
 
   onBrokenLinks: 'throw',
@@ -102,7 +102,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/edulab58-social.jpg',
+      image: 'img/logo-512.png',
       // `respectPrefersColorScheme` era `true` și asta rupea prima impresie:
       // un vizitator cu sistemul pe întuneric primea un Edulab58 negru, o
       // înfățișare pe care edumat58 n-o are niciodată (acolo:
@@ -111,13 +111,25 @@ const config = {
       // — n-am scos nimic —, doar că modul întunecat e o alegere a omului, nu
       // starea implicită.
       colorMode: {
+        // Fără schemă de noapte, ca pe edumat58. Comutatorul dispare din navbar
+        // și `respectPrefersColorScheme` e oprit, altfel un sistem pe dark ar
+        // servi tot varianta întunecată, doar fără buton de întors.
         defaultMode: 'light',
+        disableSwitch: true,
         respectPrefersColorScheme: false,
-        disableSwitch: false,
       },
       navbar: {
-        title: 'Edulab58',
-        logo: { alt: 'Edulab58', src: 'img/logo.svg' },
+        // Titlul e gol: îl desenează `src/theme/Navbar/Logo` cu wordmarkul.
+        title: '',
+        logo: {
+          alt: 'Edulab58',
+          src: 'img/logo.png',
+          // Raportul REAL al fișierului e 874x1021 (portret, cartea e mai
+          // înaltă decât lată). Pusesem 34x34 și l-am turtit. Lățimea se
+          // calculează din înălțime: 36 * 874/1021 = 31.
+          width: 31,
+          height: 36,
+        },
         // ORDINEA E CEA DE PE edumat58, nu una nouă. Acolo, în stânga, vin
         // întâi rubricile generale (Meniu, EduPAȘI, Ghidul părintelui,
         // Automatisme) și abia apoi clasele: „Curs V", „Curs VI", „Curs VII",
