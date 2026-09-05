@@ -14,7 +14,7 @@ import Hero from '@site/src/components/Hero/Hero';
  */
 export default function Home() {
   return (
-    <Layout title="Edulab58" description="Fizica, pas cu pas">
+    <Layout title="Edulab58" description="Fizică pentru clasele VI–VIII">
       <Hero />
     </Layout>
   );
