@@ -226,7 +226,7 @@ for (const L of word) {
 const W = x - GAP + 6
 
 console.log(
-  `<svg viewBox="0 0 ${W} 108" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img" aria-label="edulab58">
+  `<svg viewBox="0 0 ${W} 108" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img" aria-label="edulab58">
 ${groups.join('\n')}
 </svg>`
 )
