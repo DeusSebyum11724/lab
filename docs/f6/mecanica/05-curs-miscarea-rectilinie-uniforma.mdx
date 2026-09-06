@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
-sidebar_label: "C3 — Mișcarea rectilinie uniformă"
+sidebar_label: "C3 — Mișcare rectilinie și mișcare uniformă"
 slug: /f6/mecanica/c3
 title: "C3 — Mișcare rectilinie și mișcare uniformă"
 description: "Mișcarea rectilinie, mișcarea uniformă, mișcarea rectilinie uniformă și felul în care viteza depinde de referențial."
 ---
 
-import { FigTrenPasager } from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C3 — Mișcare rectilinie și mișcare uniformă
 
@@ -64,7 +64,16 @@ este de $2\ \text{km/h}$ în referențialul trenului; viteza trenului este de
 $160\ \text{km/h}$ în referențialul terestru. În referențialul terestru,
 pasagerul are viteza de $162\ \text{km/h}$.
 
-<FigTrenPasager />
+<FiguraManual
+  src="c08-tren-pasager.png"
+  lat={621}
+  inalt={216}
+  eticheta="Un tren merge cu 160 km pe oră față de sol, iar un pasager merge prin tren cu 2 km pe oră față de tren."
+  legenda="Viteza unui corp depinde de referențialul în care se studiază mișcarea."
+>
+  <Et x={238} y={34}  w={174} h={22} corp={12} culoare="#595757">față de sol</Et>
+  <Et x={238} y={152} w={192} h={19} corp={12} culoare="#4e4b4b">față de tren</Et>
+</FiguraManual>
 
 :::tip De reținut
 
@@ -77,7 +86,7 @@ referențial, un număr de kilometri pe oră nu înseamnă nimic.
 
 :::note Ora următoare
 
-**LP3 — Compunerea vitezelor.** Trenuri care se depășesc, o barcă dusă de
+**LP3 — Mișcare rectilinie și mișcare uniformă** Trenuri care se depășesc, o barcă dusă de
 curent, un avion care întrece un tren — și o muscă foarte harnică.
 
 :::

@@ -1,14 +1,14 @@
 ---
 sidebar_position: 4
-sidebar_label: "LP2 — Calculul vitezei medii"
+sidebar_label: "LP2 — Viteza medie"
 slug: /f6/mecanica/lp2
-title: "LP2 — Calculul vitezei medii"
+title: "LP2 — Viteza medie"
 description: "Lucrare practică: viteze medii calculate din distanță și timp, treceri m/s ↔ km/h și probleme de sosire."
 ---
 
-import { FigTraseuAutostrada } from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP2 — Calculul vitezei medii
+# LP2 — Viteza medie
 
 :::info Ora de lucru practic
 
@@ -110,7 +110,19 @@ O mașină circulă pe autostradă ca să meargă de la orașul A la orașul B, 
 20 de kilometri sunt în lucru și mașina nu circulă mai repede de
 $40\ \text{km/h}$.
 
-<FigTraseuAutostrada />
+<FiguraManual
+  src="c08-autostrada.png"
+  lat={691}
+  inalt={147}
+  eticheta="Traseu de 40 km între orașul A și orașul B: primii 20 km liberi, ultimii 20 km în lucru."
+  legenda="Schema traseului mașinii."
+>
+  <Et x={24}  y={9}   w={80}  h={20} corp={16} culoare="#ef4541">orașul A</Et>
+  <Et x={579} y={21}  w={79}  h={20} corp={15} culoare="#31b34a">orașul B</Et>
+  <Et x={118} y={45}  w={204} h={20} corp={10} culoare="#f15753">porțiune liberă, 20 km</Et>
+  <Et x={372} y={45}  w={156} h={15} corp={10} culoare="#43ba5a">20 km în lucru</Et>
+  <Et x={174} y={114} w={74}  h={12} corp={9}  culoare="#706e6e">autostradă</Et>
+</FiguraManual>
 
 **1.** Cât timp îi trebuie ca să facă drumul?
 

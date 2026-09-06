@@ -1,16 +1,12 @@
 ---
 sidebar_position: 1
-sidebar_label: "C1 — Traiectoria și referențialul"
+sidebar_label: "C1 — Traiectoria și corpul de referință"
 slug: /f6/mecanica/c1
 title: "C1 — Traiectoria și corpul de referință"
 description: "Traiectoria unui corp, referențialul, referențialul terestru și felul în care aceeași mișcare are traiectorii diferite."
 ---
 
-import {
-  FigTraiectoriiMar,
-  FigEliceAvion,
-  FigElicePunct,
-} from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C1 — Traiectoria și corpul de referință
 
@@ -115,7 +111,18 @@ va vedea mărul descriind cu totul altă traiectorie.
 
 Traiectoria pe care o vede observatorul B se numește **parabolă**.
 
-<FigTraiectoriiMar />
+<FiguraManual
+  src="c08-traiectorii-mar.png"
+  lat={813}
+  inalt={266}
+  eticheta="Mărul care cade din vârful catargului: pentru observatorul de pe punte traiectoria e o dreaptă, pentru observatorul din barcă e o parabolă."
+  legenda="După observator, traiectoria e ori o dreaptă, ori o parabolă. Corabia din stânga stă pe loc în referențialul observatorului, cea din dreapta se îndreaptă spre stânga în referențialul lui."
+>
+  <Et x={25}  y={15} w={205} h={20} corp={12} culoare="#3f3c3c">traiectoria văzută de A</Et>
+  <Et x={504} y={9}  w={203} h={21} corp={11} culoare="#3f3c3c">traiectoria văzută de B</Et>
+  <Et x={344} y={80} w={85}  h={22} corp={11} culoare="#3f3c3c">parabolă</Et>
+  <Et x={8}   y={95} w={58}  h={17} corp={12} culoare="#3f3c3c">dreaptă</Et>
+</FiguraManual>
 
 Se vede de aici cât este de important să spunem **față de ce** studiem o
 mișcare. Tocmai de aceea, în exemplele de mai sus, am precizat de fiecare dată
@@ -142,12 +149,30 @@ de decolare. Să reprezentăm traiectoria vârfului unei pale a elicei 1.
 
 **În referențialul avionului**, vârful palei descrie un cerc.
 
-<FigEliceAvion />
+<FiguraManual
+  src="c08-elice-avion.png"
+  lat={600}
+  inalt={140}
+  eticheta="Avion cu două elice; în referențialul avionului, vârful unei pale descrie un cerc."
+  legenda="Traiectoria vârfului palei în referențialul legat de avion."
+>
+  <Et x={325} y={9}  w={245} h={22} corp={11} culoare="#4e5052" fond="#daf0f4" alinia="dreapta">traiectoria vârfului</Et>
+  <Et x={385} y={35} w={179} h={17} corp={11} culoare="#4e5052" fond="#daf0f4" alinia="dreapta">palei în</Et>
+  <Et x={433} y={60} w={131} h={17} corp={12} culoare="#4e5052" fond="#daf0f4" alinia="dreapta">referențialul</Et>
+  <Et x={501} y={86} w={70}  h={17} corp={11} culoare="#4e5052" fond="#daf0f4" alinia="dreapta">avionului</Et>
+</FiguraManual>
 
 **În referențialul elicei 1**, vârful palei este, firește, imobil în orice
 clipă. Traiectoria lui este deci un punct P.
 
-<FigElicePunct />
+<FiguraManual
+  src="c08-elice-punct.png"
+  lat={369}
+  inalt={67}
+  latime={320}
+  eticheta="Elice cu două pale; în referențialul elicei, vârful palei stă pe loc și traiectoria lui e un punct."
+  legenda="Traiectoria vârfului palei în propriul ei referențial este un punct."
+/>
 
 :::tip De reținut
 
@@ -161,7 +186,7 @@ referențial.
 
 :::note Ora următoare
 
-**LP1 — Traiectorii și referențiale.** Recunoașterea referențialului în care e
+**LP1 — Traiectoria și corpul de referință** Recunoașterea referențialului în care e
 adevărată o afirmație și citirea traiectoriilor de pe o înregistrare făcută
 punct cu punct.
 

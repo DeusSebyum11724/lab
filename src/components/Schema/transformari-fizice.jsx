@@ -234,59 +234,6 @@ export function FigStariMacroscopic() {
    C2 — schimbările de stare
    ———————————————————————————————————————————————————————————————— */
 
-/**
- * Cele șase schimbări de stare.
- *
- * Cu `energetic`, săgețile care duc spre mai multă dezordine se colorează
- * altfel decât cele care duc spre mai multă ordine — culoarea spune atunci
- * cine primește și cine cedează energie.
- */
-export function FigSchimbariDeStare({ energetic }) {
-  const cEndo = energetic ? CULORI.iese : CULORI.fir;
-  const cExo = energetic ? CULORI.intra : CULORI.fir;
-  const mEndo = energetic ? 'sch-endo' : 'sch-ink';
-  const mExo = energetic ? 'sch-exo' : 'sch-ink';
-  return (
-    <Schema
-      vb="0 0 480 272"
-      latime={470}
-      eticheta="Diagrama celor șase schimbări de stare între solid, lichid și gaz"
-      legenda={
-        energetic
-          ? 'Săgețile spre dezordine (roșu) cer energie; săgețile spre ordine (verde) eliberează energie.'
-          : 'Cele șase schimbări de stare și numele lor.'
-      }
-    >
-      <Sageti prefix="sch" />
-
-      <Cutie x={240} y={40} text="gaz" />
-      <Cutie x={240} y={136} text="lichid" />
-      <Cutie x={240} y={232} text="solid" />
-
-      {/* endoterme: în sus, pe stânga */}
-      <Sageata d="M 168 212 L 168 158" culoare={cEndo} marker={mEndo} />
-      <Sageata d="M 168 116 L 168 62" culoare={cEndo} marker={mEndo} />
-      <Text x={158} y={189} ancora="end" marime={13} culoare={cEndo}>topire</Text>
-      <Text x={158} y={93} ancora="end" marime={13} culoare={cEndo}>vaporizare</Text>
-
-      {/* exoterme: în jos, pe dreapta */}
-      <Sageata d="M 312 160 L 312 214" culoare={cExo} marker={mExo} />
-      <Sageata d="M 312 64 L 312 118" culoare={cExo} marker={mExo} />
-      <Text x={322} y={189} ancora="start" marime={13} culoare={cExo}>solidificare</Text>
-      <Text x={322} y={93} ancora="start" marime={13} culoare={cExo}>condensare</Text>
-
-      {/* solid → gaz și gaz → solid, pe ocolite */}
-      <Sageata d="M 180 232 L 72 232 L 72 40 L 177 40" culoare={cEndo} marker={mEndo} />
-      <Sageata d="M 300 40 L 408 40 L 408 232 L 303 232" culoare={cExo} marker={mExo} />
-      <TextV x={54} y={136} culoare={cEndo}>sublimare</TextV>
-      <TextV x={426} y={136} culoare={cExo}>desublimare</TextV>
-
-      <Text x={240} y={90} ancora="middle" marime={12} culoare={CULORI.slab}>mai multă ordine ↓</Text>
-      <Text x={240} y={188} ancora="middle" marime={12} culoare={CULORI.slab}>mai multă dezordine ↑</Text>
-    </Schema>
-  );
-}
-
 /** Topire și dizolvare: două fenomene care se confundă în vorbirea de zi cu zi. */
 export function FigTopireDizolvare() {
   return (

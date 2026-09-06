@@ -1,18 +1,14 @@
 ---
 sidebar_position: 6
-sidebar_label: "LP3 — Compunerea vitezelor"
+sidebar_label: "LP3 — Mișcare rectilinie și mișcare uniformă"
 slug: /f6/mecanica/lp3
-title: "LP3 — Compunerea vitezelor"
+title: "LP3 — Mișcare rectilinie și mișcare uniformă"
 description: "Lucrare practică: viteze care se adună și viteze care se scad, după cum sensurile sunt aceleași sau opuse."
 ---
 
-import {
-  FigCompunereaMiscarilor,
-  FigAvionSiTGV,
-  FigMuscaSiDiligenta,
-} from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP3 — Compunerea vitezelor
+# LP3 — Mișcare rectilinie și mișcare uniformă
 
 :::info Ora de lucru practic
 
@@ -51,7 +47,21 @@ Justifică sau respinge afirmațiile următoare:
 
 **4.** $B_1$ este în mișcare față de $B_2$.
 
-<FigCompunereaMiscarilor />
+<FiguraManual
+  src="c08-bar-ambulant.png"
+  lat={787}
+  inalt={520}
+  eticheta="Două trenuri paralele; în fiecare, un călător așezat și un barman care împinge un cărucior, iar pe marginea căii o vacă."
+  legenda="Sistemele desenate sunt în mișcare de translație unele față de altele."
+>
+  <Et x={73}  y={63}  w={181} h={20} corp={12} culoare="#3282bf">călătorul V₁, așezat</Et>
+  <Et x={304} y={49}  w={80}  h={19} corp={11} culoare="#ef4541">trenul T₁</Et>
+  <Et x={444} y={59}  w={163} h={19} corp={11} culoare="#31b34a">barmanul B₁</Et>
+  <Et x={425} y={283} w={345} h={21} corp={11} culoare="#6f4b28">vaca V privește trenurile trecând</Et>
+  <Et x={54}  y={347} w={123} h={21} corp={11} culoare="#3282bf">călătorul V₂</Et>
+  <Et x={207} y={339} w={82}  h={19} corp={11} culoare="#ef4541">trenul T₂</Et>
+  <Et x={475} y={348} w={167} h={22} corp={11} culoare="#31b34a">barmanul B₂</Et>
+</FiguraManual>
 
 <details>
 <summary>Rezolvare</summary>
@@ -189,7 +199,13 @@ $$
 **(c)** Pozițiile celor două vehicule la momentul de plecare și după un minut
 sunt trecute pe figura de mai jos.
 
-<FigAvionSiTGV />
+<FiguraManual
+  src="c08-avion-tgv.png"
+  lat={672}
+  inalt={310}
+  eticheta="Pozițiile avionului și ale trenului la momentul zero și după un minut, cu distanțele parcurse."
+  legenda="Pozițiile celor două vehicule la momentul de plecare și după un minut."
+/>
 
 **(d)** La capătul unui minut, avionul a parcurs, **în referențialul trenului**,
 distanța $d'_A = d_A - d_T$. Distanța asta este:
@@ -236,7 +252,16 @@ face cale întoarsă și se întoarce spre prima, apoi iar cale întoarsă, și 
 așa… Ea zboară cu viteza $v' = 50\ \text{km/h}$. Ce distanță a parcurs în clipa
 în care cele două diligențe se întâlnesc?
 
-<FigMuscaSiDiligenta />
+<FiguraManual
+  src="c08-musca.png"
+  lat={620}
+  inalt={160}
+  eticheta="Două diligențe pornesc una spre cealaltă, de la 75 km distanță, fiecare cu 25 km pe oră; o muscă zboară între ele."
+  legenda="Musca zboară cu viteză constantă între cele două diligențe."
+>
+  <Et x={15}  y={32} w={66} h={17} corp={14} culoare="#ef4541">orașul A</Et>
+  <Et x={529} y={44} w={65} h={17} corp={13} culoare="#31b34a">orașul B</Et>
+</FiguraManual>
 
 <details>
 <summary>Rezolvare</summary>

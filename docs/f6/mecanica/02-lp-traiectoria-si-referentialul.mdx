@@ -1,14 +1,14 @@
 ---
 sidebar_position: 2
-sidebar_label: "LP1 — Traiectorii și referențiale"
+sidebar_label: "LP1 — Traiectoria și corpul de referință"
 slug: /f6/mecanica/lp1
-title: "LP1 — Traiectorii și referențiale"
+title: "LP1 — Traiectoria și corpul de referință"
 description: "Lucrare practică: în ce referențial e adevărată o afirmație și cum se citesc traiectoriile de pe o înregistrare punct cu punct."
 ---
 
-import { FigRoataDeBicicleta } from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP1 — Traiectorii și referențiale
+# LP1 — Traiectoria și corpul de referință
 
 :::info Ora de lucru practic
 
@@ -200,7 +200,17 @@ studiază traiectoriile a două puncte ale uneia dintre roțile lui: centrul C �
 un punct A aflat pe anvelopă. Traiectoriile sunt studiate în două referențiale
 diferite, $R_1$ și $R_2$. Mai jos sunt înregistrările corespunzătoare.
 
-<FigRoataDeBicicleta />
+<FiguraManual
+  src="c08-roata.png"
+  lat={818}
+  inalt={970}
+  eticheta="Două înregistrări ale pozițiilor punctelor A și C ale unei roți de bicicletă, în referențialul șoselei și în referențialul bicicletei."
+  legenda="Pozițiile succesive ale punctelor A și C, înregistrate la intervale de timp egale."
+>
+  <Et x={62} y={204} w={192} h={18} corp={13} culoare="#444141">Referențialul de studiu: R₁</Et>
+  <Et x={17} y={882} w={111} h={17} corp={14} culoare="#4f4d4d">Referențialul</Et>
+  <Et x={17} y={911} w={75}  h={17} corp={15} culoare="#545252">de studiu: R₂</Et>
+</FiguraManual>
 
 **1.** Completează cu creionul traiectoriile diferitelor puncte.
 
@@ -222,7 +232,17 @@ terestru?
 
 **1.** Traiectoriile celor două puncte sunt trecute pe figurile următoare.
 
-<FigRoataDeBicicleta rezolvare />
+<FiguraManual
+  src="c08-roata-rezolvare.png"
+  lat={710}
+  inalt={588}
+  eticheta="Traiectoriile punctelor A și C ale roții: o cicloidă și o dreaptă în referențialul șoselei, un cerc și un punct fix în referențialul bicicletei."
+  legenda="Traiectoriile punctelor A și C, trasate peste cele două înregistrări."
+>
+  <Et x={44}  y={171} w={233} h={21} corp={12} culoare="#545451" fond="#edf6eb">Referențialul de studiu: R₁</Et>
+  <Et x={149} y={527} w={111} h={16} corp={15} culoare="#52524f" fond="#edf6eb">Referențialul</Et>
+  <Et x={149} y={554} w={121} h={24} corp={14} culoare="#545451" fond="#edf6eb">de studiu: R₂</Et>
+</FiguraManual>
 
 **2.** Tehnica folosită se numește **cronofotografie**.
 

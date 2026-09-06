@@ -1,15 +1,13 @@
 ---
 sidebar_position: 5
-sidebar_label: "C3 — Transferurile de energie"
+sidebar_label: "C3 — Transferurile de energie la schimbările de stare"
 slug: /f8/termice/c3
 title: "C3 — Transferurile de energie la schimbările de stare"
 description: "Transformări endotermice și exotermice, energia masică de schimbare de stare, formula E = m·L și notația științifică."
 ---
 
-import {
-  FigSchimbariDeStare,
-  FigEndoExo,
-} from '@site/src/components/Schema/transformari-fizice';
+import { FigEndoExo } from '@site/src/components/Schema/transformari-fizice';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C3 — Transferurile de energie la schimbările de stare
 
@@ -84,7 +82,34 @@ exotermice**.
 
 :::
 
-<FigSchimbariDeStare energetic />
+<FiguraManual
+  src="c16-schimbari-de-stare.png"
+  lat={592}
+  inalt={401}
+  eticheta="Diagrama celor șase schimbări de stare între solid, lichid și gaz, cu săgețile care urcă spre dezordine în stânga și cele care coboară spre ordine în dreapta"
+  legenda="Săgețile din stânga urcă spre stări mai dezordonate — sunt transformările endotermice. Cele din dreapta coboară spre stări mai ordonate — sunt transformările exotermice."
+>
+  <Et x={261} y={201} w={75} h={21} corp={16} fond="#a4dce6" alinia="centru">Lichid</Et>
+  <Et x={265} y={357} w={63} h={17} corp={18} fond="#b5ddbd" alinia="centru">Solid</Et>
+  <Et x={43} y={136} w={29} h={110} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>sublimare</span>
+  </Et>
+  <Et x={115} y={65} w={38} h={111} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>vaporizare</span>
+  </Et>
+  <Et x={119} y={252} w={25} h={61} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>topire</span>
+  </Et>
+  <Et x={429} y={72} w={37} h={111} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>condensare</span>
+  </Et>
+  <Et x={515} y={145} w={28} h={121} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>desublimare</span>
+  </Et>
+  <Et x={419} y={212} w={52} h={114} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>solidificare</span>
+  </Et>
+</FiguraManual>
 
 ---
 
@@ -233,7 +258,7 @@ fost dus decât până la topire.
 
 :::note Ora următoare
 
-**LP3 — Calcule de energie la schimbările de stare.** Recunoașterea
+**LP3 — Transferurile de energie la schimbările de stare** Recunoașterea
 transformărilor endotermice și exotermice, calcule cu $E = m \times L$, aflarea
 masei când se cunoaște energia și trecerea de la jouli la kilowattore.
 

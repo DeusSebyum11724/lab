@@ -1,26 +1,18 @@
 ---
 sidebar_position: 4
-sidebar_label: "LP2 — Cum schimbă forța mișcarea"
+sidebar_label: "LP2 — Efectul unei forțe asupra mișcării"
 slug: /f7/interactiunea/lp2
-title: "LP2 — Cum schimbă forța mișcarea"
+title: "LP2 — Efectul unei forțe asupra mișcării"
 description: "Lucrare practică: mișcarea pe orizontală și pe verticală a unui corp aruncat, citirea unei cronofotografii și a unei înregistrări."
 ---
 
-import {
-  FigBilaVerticala,
-  FigBila45,
-  FigTraiectorieBila45,
-  FigCronofotoBila,
-  FigInregistrareBergson,
-  FigGraficBergson,
-} from '@site/src/components/Schema/forte';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP2 — Cum schimbă forța mișcarea
+# LP2 — Efectul unei forțe asupra mișcării
 
 :::info Ora de lucru practic
 
-Se lucrează pe noțiunile din **[C2 — Efectul unei forțe asupra
-mișcării](./03-curs-efectele-fortei.mdx)**. Patru probe, cu timpul de lucru al
+Se lucrează pe noțiunile din **[C2 — Efectul unei forțe asupra mișcării](./03-curs-efectele-fortei.mdx)**. Patru probe, cu timpul de lucru al
 fiecăreia; în total 50 de minute.
 
 | # | Proba | Dificultate | Timp |
@@ -76,12 +68,24 @@ dar nu schimbă viteza.
 Se aruncă în aer o bilă, cu o viteză verticală de 10 m/s. Ea cade înapoi după
 un timp $t = 2{,}0$ s.
 
-<FigBilaVerticala />
+<FiguraManual
+  src="c09-bila-verticala.png"
+  lat={250}
+  inalt={210}
+  eticheta="O bilă aruncată vertical în sus urcă și apoi coboară pe aceeași verticală"
+  legenda="Bila e aruncată drept în sus cu 10 m/s. Urcă, se oprește o clipă și cade înapoi: atinge solul după 2,0 s."
+/>
 
 Se aruncă acum bila sub un unghi de 45° față de orizontală: pe orizontală ea
 pleacă cu 10 m/s, iar pe verticală tot cu 10 m/s.
 
-<FigBila45 />
+<FiguraManual
+  src="c09-bila-45.png"
+  lat={260}
+  inalt={179}
+  eticheta="Viteza de aruncare, înclinată la 45 de grade, cu partea ei orizontală și cea verticală"
+  legenda="De data aceasta bila e aruncată sub 45°: pe orizontală pleacă cu 10 m/s, iar pe verticală tot cu 10 m/s."
+/>
 
 **1.** Cum se numește traiectoria bilei în primul caz?
 
@@ -100,7 +104,16 @@ mai repede).
 
 **2.** Bila descrie traiectoria din figura de mai jos.
 
-<FigTraiectorieBila45 />
+<FiguraManual
+  src="c09-traiectorie-bila-45.png"
+  lat={370}
+  inalt={190}
+  eticheta="Traiectoria curbată a bilei aruncate sub 45 de grade"
+  legenda="Traiectoria bilei aruncate sub 45°: urcă, se rotunjește la vârf și coboară."
+>
+  <Et x={231} y={28} w={91} h={16} corp={11} culoare="#454442" fond="#edf6eb">traiectoria</Et>
+  <Et x={232} y={49} w={87} h={15} corp={11} culoare="#454442" fond="#edf6eb">bilei</Et>
+</FiguraManual>
 
 **3.** Bila este supusă unei singure forțe: greutatea ei, care este verticală.
 Din curs știm că viteza este schimbată pe direcția forței și **nu este
@@ -129,7 +142,13 @@ pusă în mișcare, exercitând foarte scurt asupra ei o forță orizontală. Se
 cronofotografie cu ajutorul unei camere fixe față de masă, al cărei câmp acoperă
 toată scena.
 
-<FigCronofotoBila />
+<FiguraManual
+  src="c09-cronofoto-bila.png"
+  lat={690}
+  inalt={500}
+  eticheta="Cronofotografia unei bile care rulează pe o masă și apoi cade de pe marginea ei"
+  legenda="Bila rulează pe masă (M₀ – M₂), apoi cade de pe marginea mesei (M₂ – M₆). Între două poziții trece mereu același timp."
+/>
 
 Se deosebesc două faze:
 
@@ -181,7 +200,13 @@ deci în această fază bila are o mișcare **rectilinie uniformă**.
 **2. a. și c.** În figura de mai jos sunt reprezentate proiecțiile punctelor
 $M_3$ – $M_6$ pe axa $Ox$ și pe axa $Oz$.
 
-<FigCronofotoBila proiectii />
+<FiguraManual
+  src="c09-cronofoto-bila-proiectii.png"
+  lat={690}
+  inalt={480}
+  eticheta="Proiecțiile punctelor M₃ – M₆ pe axa Ox și pe axa Oz"
+  legenda="Proiecțiile pe orizontală rămân egal depărtate — mișcarea pe Ox e uniformă; proiecțiile pe verticală se depărtează tot mai mult — mișcarea pe Oz e accelerată."
+/>
 
 **b.** Punctele proiectate pe $Ox$ sunt egal depărtate, deci mișcarea proiectată
 pe axa $Ox$ este o **mișcare rectilinie uniformă**.
@@ -209,7 +234,13 @@ verticală a mișcării să fie o mișcare accelerată.
 
 Se consideră înregistrarea de mai jos a unui mobil pe pernă de aer.
 
-<FigInregistrareBergson />
+<FiguraManual
+  src="c09-inregistrare-bergson.png"
+  lat={810}
+  inalt={95}
+  eticheta="Un șir de puncte aliniate, cu distanțe care scad de la stânga la dreapta"
+  legenda="Pozițiile mobilului, marcate la fiecare 50 ms. Punctele sunt aliniate, dar distanțele dintre ele scad."
+/>
 
 Punctele sunt despărțite de o durată fixă $\tau = 50$ ms.
 
@@ -267,7 +298,13 @@ bune.
 (momentul) și pe verticală coloana a patra (viteza). Se obține graficul
 următor.
 
-<FigGraficBergson />
+<FiguraManual
+  src="c09-grafic-bergson.png"
+  lat={730}
+  inalt={430}
+  eticheta="Graficul vitezei mobilului în funcție de timp, format din puncte așezate pe o dreaptă"
+  legenda="Punctele se așază pe o dreaptă care coboară: viteza mobilului scade regulat în timp."
+/>
 
 Se constată că acest grafic este o **dreaptă**: viteza scade deci regulat în
 timp.

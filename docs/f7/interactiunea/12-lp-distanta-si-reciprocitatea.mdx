@@ -1,18 +1,15 @@
 ---
 sidebar_position: 12
-sidebar_label: "LP6 — Distanța și reciprocitatea"
+sidebar_label: "LP6 — Efectul distanței și reciprocitatea"
 slug: /f7/interactiunea/lp6
-title: "LP6 — Distanța și reciprocitatea"
+title: "LP6 — Efectul distanței și reciprocitatea"
 description: "Lucrare practică: de câte ori se schimbă forța gravitațională, racheta spre Marte, stelele duble și perechea Soare–Pământ."
 ---
 
-import {
-  FigRacheta,
-  FigDouaStele,
-  FigSoareTerra,
-} from '@site/src/components/Schema/gravitatie';
+import { FigRacheta } from '@site/src/components/Schema/gravitatie';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP6 — Distanța și reciprocitatea
+# LP6 — Efectul distanței și reciprocitatea
 
 :::info Ora de lucru practic
 
@@ -167,7 +164,13 @@ Se consideră o stea dublă. Cele două stele care o alcătuiesc au masele
 $M_1 = 2{,}5\,M_S$ și $M_2 = 0{,}80\,M_S$, unde $M_S$ este masa Soarelui. Ele
 sunt despărțite de o distanță $d = 0{,}12$ U.A. (unități astronomice).
 
-<FigDouaStele />
+<FiguraManual
+  src="c10-doua-stele.png"
+  lat={532}
+  inalt={137}
+  eticheta="Două stele de mase M₂ și M₁, despărțite de distanța d, atrăgându-se reciproc"
+  legenda="Forțele pe care cele două stele le exercită una asupra celeilalte."
+/>
 
 **1.** Ce forță, exprimată în newtoni, exercită steaua mai masivă asupra celei
 mai puțin masive?
@@ -231,7 +234,16 @@ deosebesc numai prin sens.
 
 Se consideră sistemul Pământ–Soare.
 
-<FigSoareTerra />
+<FiguraManual
+  src="c10-soare-terra.png"
+  lat={594}
+  inalt={150}
+  eticheta="Soarele și Pământul, despărțiți de 1,50 × 10⁸ km"
+  legenda="Sistemul Soare–Pământ (scara nu este respectată)."
+>
+  <Et x={531} y={107} w={52} h={16} corp={11} culoare="#7c5c3d">Pământul</Et>
+  <Et x={17}  y={123} w={55} h={16} corp={10} culoare="#f7921f">Soarele</Et>
+</FiguraManual>
 
 Se presupune că repartizarea masei Soarelui și a Pământului este cu simetrie
 sferică.
@@ -281,7 +293,13 @@ $$
 
 De unde desenul următor:
 
-<FigSoareTerra cuforte />
+<FiguraManual
+  src="c10-soare-terra-forte.png"
+  lat={659}
+  inalt={76}
+  eticheta="Soarele și Pământul, fiecare cu săgeata forței pe care o resimte, îndreptată spre celălalt"
+  legenda="Forța exercitată de Soare asupra Pământului și forța exercitată de Pământ asupra Soarelui au aceeași valoare."
+/>
 
 Cele două săgeți au aceeași lungime, fiindcă forțele au aceeași valoare. Punctul
 de aplicație al fiecăreia este centrul astrului asupra căruia se exercită.

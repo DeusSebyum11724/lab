@@ -4,11 +4,16 @@ import { Schema, Fir, Text, Simbol, CULORI } from './index';
 /**
  * FIGURILE LECȚIILOR DESPRE INTERACȚIUNEA GRAVITAȚIONALĂ.
  *
- * Manualul-sursă e un PDF scanat, deci figurile lui nu se pot extrage — se
- * redesenează în cod. Ce se păstrează intact e informația figurii: cine atrage
- * pe cine, în ce sens arată fiecare săgeată, ce distanțe și ce valori sunt
- * date. Ce s-a schimbat e doar așezarea în pagină, ca figura să încapă pe un
- * ecran de telefon.
+ * Aici au mai rămas numai figurile care NU EXISTĂ în manual: schemele făcute
+ * pentru o probă de laborator pe care cartea o pune în cuvinte, fără desen.
+ * Toate figurile care există și în carte au trecut pe decupaj din scan — vezi
+ * `FiguraManual.jsx` și fișierele `c10-*.png` din `static/img/manual/`,
+ * fiindcă decupajul e singurul care păstrează geometria „întocmai".
+ *
+ * Pentru figurile de mai jos se păstrează intactă informația: cine atrage pe
+ * cine, în ce sens arată fiecare săgeată, ce distanțe și ce valori sunt date.
+ * Ce s-a schimbat e doar așezarea în pagină, ca figura să încapă pe un ecran
+ * de telefon.
  *
  * Aici nu e vorba de scheme de circuit, ci de corpuri și de forțe, deci
  * primitivele din `index.jsx` nu ajung. Cele care lipsesc — săgeata de forță,
@@ -117,71 +122,8 @@ function Racheta({ x, y }) {
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   C5 — INTERACȚIUNEA GRAVITAȚIONALĂ
-   ══════════════════════════════════════════════════════════════════════════ */
-
-/** Forța cu care masa punctiformă A o atrage pe masa punctiformă B. */
-export function FigMasePunctiforme() {
-  const Y = 66;
-  const A = 130;
-  const B = 340;
-  return (
-    <Schema
-      vb="0 0 460 140"
-      latime={440}
-      eticheta="Două mase punctiforme A și B, despărțite de distanța d; forța exercitată de A asupra lui B este îndreptată de la B spre A"
-      legenda="Forța exercitată de masa punctiformă A asupra masei punctiforme B."
-    >
-      <Fir d={`M 20 ${Y} L 440 ${Y}`} punctat culoare={CULORI.slab} />
-      <Punct x={A} y={Y} />
-      <Punct x={B} y={Y} />
-      <Text x={A} y={Y - 20} ancora="middle">A</Text>
-      <Text x={B} y={Y - 20} ancora="middle">B</Text>
-      <Simbol x={A} y={Y + 24}>m_A</Simbol>
-      <Simbol x={B} y={Y + 24}>m_B</Simbol>
-
-      <Sageata x1={B - 10} y1={Y - 30} x2={B - 60} y2={Y - 30} />
-      <Simbol x={B - 35} y={Y - 38} culoare={FORTA}>F_A/B</Simbol>
-
-      <Cota x1={A} x2={B} y={Y + 48} simbol="d" sub />
-    </Schema>
-  );
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
    C6 — EFECTUL DISTANȚEI ȘI RECIPROCITATEA
    ══════════════════════════════════════════════════════════════════════════ */
-
-/** Cele două forțe: valori egale, sensuri opuse. */
-export function FigActiuneReactiune() {
-  const Y = 66;
-  const A = 130;
-  const B = 340;
-  return (
-    <Schema
-      vb="0 0 460 140"
-      latime={440}
-      eticheta="Masele A și B se atrag reciproc: forța asupra lui A e îndreptată spre B, forța asupra lui B e îndreptată spre A"
-      legenda="Cele două forțe au valori egale și sensuri opuse."
-    >
-      <Fir d={`M 20 ${Y} L 440 ${Y}`} punctat culoare={CULORI.slab} />
-      <Punct x={A} y={Y} />
-      <Punct x={B} y={Y} />
-      <Text x={A} y={Y - 20} ancora="middle">A</Text>
-      <Text x={B} y={Y - 20} ancora="middle">B</Text>
-      <Simbol x={A} y={Y + 24}>m_A</Simbol>
-      <Simbol x={B} y={Y + 24}>m_B</Simbol>
-
-      <Sageata x1={A + 10} y1={Y - 30} x2={A + 60} y2={Y - 30} />
-      <Simbol x={A + 35} y={Y - 38} culoare={FORTA}>F_B/A</Simbol>
-
-      <Sageata x1={B - 10} y1={Y - 30} x2={B - 60} y2={Y - 30} />
-      <Simbol x={B - 35} y={Y - 38} culoare={FORTA}>F_A/B</Simbol>
-
-      <Cota x1={A} x2={B} y={Y + 48} simbol="d" sub />
-    </Schema>
-  );
-}
 
 /** Aceleași două mase, la distanța d, 2d și 3d. */
 export function FigEfectulDistantei() {
@@ -239,43 +181,6 @@ export function FigBilaCade() {
   );
 }
 
-/** Doi aștri sferici se atrag ca și cum masele lor ar fi în centre. */
-export function FigAstriSferici() {
-  return (
-    <Schema
-      vb="0 0 420 240"
-      latime={420}
-      eticheta="Sus: doi aștri sferici care se atrag. Jos: aceleași mase, punctiforme, așezate în centrele aștrilor"
-      legenda="Interacțiunea gravitațională dintre doi aștri sferici e aceeași ca între două mase punctiforme aflate în centrele lor."
-    >
-      {/* aștrii sferici */}
-      <Astru x={110} y={72} r={26} />
-      <Astru x={300} y={72} r={42} />
-      <Simbol x={110} y={34}>m_A</Simbol>
-      <Simbol x={300} y={18}>m_B</Simbol>
-      <Sageata x1={142} y1={66} x2={186} y2={66} />
-      <Simbol x={164} y={54} culoare={FORTA} marime={12}>F_B/A</Simbol>
-      <Sageata x1={252} y1={66} x2={208} y2={66} />
-      <Simbol x={230} y={54} culoare={FORTA} marime={12}>F_A/B</Simbol>
-
-      {/* legăturile spre masele punctiforme */}
-      <Fir d="M 110 100 L 110 168" punctat culoare={CULORI.slab} />
-      <Fir d="M 300 116 L 300 168" punctat culoare={CULORI.slab} />
-
-      {/* masele punctiforme */}
-      <Fir d="M 40 186 L 380 186" punctat culoare={CULORI.slab} />
-      <Punct x={110} y={186} />
-      <Punct x={300} y={186} />
-      <Simbol x={110} y={210}>m_A</Simbol>
-      <Simbol x={300} y={210}>m_B</Simbol>
-      <Sageata x1={142} y1={180} x2={186} y2={180} />
-      <Simbol x={164} y={168} culoare={FORTA} marime={12}>F_B/A</Simbol>
-      <Sageata x1={252} y1={180} x2={208} y2={180} />
-      <Simbol x={230} y={168} culoare={FORTA} marime={12}>F_A/B</Simbol>
-    </Schema>
-  );
-}
-
 /** Un corp de masă m la suprafața unui astru de masă M și rază R. */
 export function FigCorpPeAstru() {
   const CX = 180;
@@ -327,97 +232,6 @@ export function FigDoiElevi() {
       <Sageata x1={A + 10} y1={Y - 16} x2={A + 52} y2={Y - 16} />
       <Sageata x1={B - 10} y1={Y - 16} x2={B - 52} y2={Y - 16} />
       <Cota x1={A} x2={B} y={Y + 34} simbol="d" dupa={" = 1 m"} sub />
-    </Schema>
-  );
-}
-
-/** Stânca și drumețul, la 30 de metri unul de altul. */
-export function FigStancaDrumet() {
-  const Y = 78;
-  const D = 110;
-  const S = 330;
-  return (
-    <Schema
-      vb="0 0 460 170"
-      latime={440}
-      eticheta="Un drumeț de 60 kg și o stâncă de 20 de tone, aflați la 30 de metri unul de altul, cu forțele cu care se atrag"
-      legenda="Forța cu care stânca atrage drumețul are aceeași valoare ca forța cu care drumețul atrage stânca."
-    >
-      <Fir d={`M 24 ${Y} L 436 ${Y}`} punctat culoare={CULORI.slab} />
-      <Punct x={D} y={Y} />
-      <Astru x={S} y={Y} r={26} />
-      <Text x={D} y={Y - 40} ancora="middle" marime={12}>drumețul · m = 60 kg</Text>
-      <Text x={S} y={Y - 42} ancora="middle" marime={12}>stânca · M = 20 t</Text>
-
-      <Sageata x1={D + 10} y1={Y - 20} x2={D + 56} y2={Y - 20} />
-      <Simbol x={D + 33} y={Y - 28} culoare={FORTA} marime={12}>F_S/D</Simbol>
-      <Sageata x1={S - 30} y1={Y - 20} x2={S - 76} y2={Y - 20} />
-      <Simbol x={S - 53} y={Y - 28} culoare={FORTA} marime={12}>F_D/S</Simbol>
-
-      <Cota x1={D} x2={S} y={Y + 44} simbol="d" dupa={" = 30 m"} sub />
-    </Schema>
-  );
-}
-
-/** Cele două stele ale unei stele duble. */
-export function FigDouaStele() {
-  const Y = 82;
-  const A = 140;
-  const B = 330;
-  return (
-    <Schema
-      vb="0 0 460 170"
-      latime={440}
-      eticheta="Două stele de mase M₂ și M₁, despărțite de distanța d, atrăgându-se reciproc"
-      legenda="Forțele pe care cele două stele le exercită una asupra celeilalte."
-    >
-      <Fir d={`M 24 ${Y} L 436 ${Y}`} punctat culoare={CULORI.slab} />
-      <Astru x={A} y={Y} r={24} />
-      <Astru x={B} y={Y} r={18} />
-      <Simbol x={A} y={Y - 38}>M_2</Simbol>
-      <Simbol x={B} y={Y - 32}>M_1</Simbol>
-
-      <Sageata x1={A + 28} y1={Y} x2={A + 74} y2={Y} />
-      <Simbol x={A + 51} y={Y - 10} culoare={FORTA} marime={12}>F_1→2</Simbol>
-      <Sageata x1={B - 22} y1={Y} x2={B - 68} y2={Y} />
-      <Simbol x={B - 45} y={Y - 10} culoare={FORTA} marime={12}>F_2→1</Simbol>
-
-      <Cota x1={A} x2={B} y={Y + 42} simbol="d" sub />
-    </Schema>
-  );
-}
-
-/** Sistemul Soare–Pământ; cu `cuforte` apar și cele două forțe. */
-export function FigSoareTerra({ cuforte }) {
-  const Y = 84;
-  const S = 110;
-  const T = 370;
-  return (
-    <Schema
-      vb="0 0 460 160"
-      latime={440}
-      eticheta="Soarele și Pământul, despărțiți de 1,50 × 10⁸ km"
-      legenda={
-        cuforte
-          ? 'Forța exercitată de Soare asupra Pământului și forța exercitată de Pământ asupra Soarelui au aceeași valoare.'
-          : 'Sistemul Soare–Pământ (scara nu este respectată).'
-      }
-    >
-      <Fir d={`M 24 ${Y} L 436 ${Y}`} punctat culoare={CULORI.slab} />
-      <Astru x={S} y={Y} r={24} />
-      <Astru x={T} y={Y} r={13} />
-      <Text x={S} y={Y + 46} ancora="middle" marime={12}>Soarele</Text>
-      <Text x={T} y={Y + 46} ancora="middle" marime={12}>Pământul</Text>
-      <Cota x1={S} x2={T} y={30} simbol="d" dupa={" = 1,50 × 10⁸ km"} />
-
-      {cuforte && (
-        <>
-          <Sageata x1={S + 28} y1={Y} x2={S + 74} y2={Y} />
-          <Simbol x={S + 51} y={Y - 10} culoare={FORTA}>F_2</Simbol>
-          <Sageata x1={T - 17} y1={Y} x2={T - 63} y2={Y} />
-          <Simbol x={T - 40} y={Y - 10} culoare={FORTA}>F_1</Simbol>
-        </>
-      )}
     </Schema>
   );
 }

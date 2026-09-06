@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-sidebar_label: "C4 — Acțiuni reciproce"
+sidebar_label: "C4 — Principiul acțiunilor reciproce"
 slug: /f7/interactiunea/c4
 title: "C4 — Principiul acțiunilor reciproce"
 description: "Cele două forțe ale unei interacțiuni, tensiunea unei corzi și compunerea forțelor desenate la scară."
@@ -8,10 +8,9 @@ description: "Cele două forțe ale unei interacțiuni, tensiunea unei corzi și
 
 import {
   FigActiuniReciproce,
-  FigTensiuneCoarda,
-  FigTrasDeFranghie,
   FigCompunereForte,
 } from '@site/src/components/Schema/forte';
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
 
 # C4 — Principiul acțiunilor reciproce
 
@@ -60,12 +59,24 @@ compensează, trebuie să te uiți numai la forțele aplicate **aceluiași** cor
 O coardă întinsă exercită asupra a ceea ce o întinde, la fiecare dintre
 capetele ei, o forță numită **tensiune**, paralelă cu coarda.
 
-<FigTensiuneCoarda />
+<FiguraManual
+  src="c09-tensiune-coarda.png"
+  lat={355}
+  inalt={131}
+  eticheta="O coardă întinsă între două suporturi, cu tensiunile de la cele două capete"
+  legenda="Coarda întinsă trage la fiecare capăt, paralel cu ea. Cele două tensiuni au aceeași valoare și aceeași direcție, dar sensuri opuse."
+/>
 
 Tensiunea corzii la cele două capete ale ei are aceeași valoare și aceeași
 direcție, dar sensuri opuse.
 
-<FigTrasDeFranghie />
+<FiguraManual
+  src="c09-tras-de-franghie.png"
+  lat={653}
+  inalt={204}
+  eticheta="Două echipe trag de aceeași frânghie, în sensuri opuse"
+  legenda="Frânghia trage fiecare echipă spre mijloc. Tensiunea are aceeași valoare la cele două capete, oricâți oameni ar fi de o parte și de alta."
+/>
 
 :::tip De reținut
 
@@ -111,7 +122,7 @@ trage într-un sens să fie egal cu ce trage în celălalt.
 
 :::note Ora următoare
 
-**LP4 — Compunerea forțelor și acțiunile reciproce.** Bilanțul forțelor unei
+**LP4 — Principiul acțiunilor reciproce** Bilanțul forțelor unei
 mașini care rulează uniform, maimuța agățată de liană și mobilul pe pernă de
 aer.
 

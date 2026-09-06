@@ -1,21 +1,19 @@
 ---
 sidebar_position: 6
-sidebar_label: "LP3 — Calcule de energie"
+sidebar_label: "LP3 — Transferurile de energie la schimbările de stare"
 slug: /f8/termice/lp3
-title: "LP3 — Calcule de energie la schimbările de stare"
+title: "LP3 — Transferurile de energie la schimbările de stare"
 description: "Lucrare practică: transformări endotermice și exotermice, calcule cu E = m·L, aflarea masei și trecerea de la jouli la kilowattore."
 ---
 
-import {
-  FigSchimbariDeStare,
-  FigCometa,
-} from '@site/src/components/Schema/transformari-fizice';
+import { FigCometa } from '@site/src/components/Schema/transformari-fizice';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP3 — Calcule de energie la schimbările de stare
+# LP3 — Transferurile de energie la schimbările de stare
 
 :::info Ora de lucru practic
 
-Se lucrează pe noțiunile din **[C3 — Transferurile de energie](./05-curs-transferuri-energetice.mdx)**.
+Se lucrează pe noțiunile din **[C3 — Transferurile de energie la schimbările de stare](./05-curs-transferuri-energetice.mdx)**.
 Patru probe, cu timpul de lucru al fiecăreia; în total 50 de minute.
 
 | # | Proba | Dificultate | Timp |
@@ -64,7 +62,34 @@ Mai mult, cantitatea de energie cerută este exact cea eliberată la ducere.
 **3.** Sunt **endotermice** topirea, vaporizarea și sublimarea. Sunt
 **exotermice** solidificarea, condensarea și desublimarea.
 
-<FigSchimbariDeStare energetic />
+<FiguraManual
+  src="c16-schimbari-de-stare.png"
+  lat={592}
+  inalt={401}
+  eticheta="Diagrama celor șase schimbări de stare între solid, lichid și gaz, cu săgețile care urcă spre dezordine în stânga și cele care coboară spre ordine în dreapta"
+  legenda="Săgețile din stânga urcă spre stări mai dezordonate — sunt transformările endotermice. Cele din dreapta coboară spre stări mai ordonate — sunt transformările exotermice."
+>
+  <Et x={261} y={201} w={75} h={21} corp={16} fond="#a4dce6" alinia="centru">Lichid</Et>
+  <Et x={265} y={357} w={63} h={17} corp={18} fond="#b5ddbd" alinia="centru">Solid</Et>
+  <Et x={43} y={136} w={29} h={110} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>sublimare</span>
+  </Et>
+  <Et x={115} y={65} w={38} h={111} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>vaporizare</span>
+  </Et>
+  <Et x={119} y={252} w={25} h={61} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(-90deg)' }}>topire</span>
+  </Et>
+  <Et x={429} y={72} w={37} h={111} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>condensare</span>
+  </Et>
+  <Et x={515} y={145} w={28} h={121} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>desublimare</span>
+  </Et>
+  <Et x={419} y={212} w={52} h={114} corp={17} fond="transparent" alinia="centru">
+    <span style={{ position: 'absolute', left: '50%', top: '50%', whiteSpace: 'nowrap', transform: 'translate(-50%, -50%) rotate(90deg)' }}>solidificare</span>
+  </Et>
+</FiguraManual>
 
 </details>
 

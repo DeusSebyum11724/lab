@@ -1,18 +1,14 @@
 ---
 sidebar_position: 8
-sidebar_label: "LP4 — Desenarea vectorilor-viteză"
+sidebar_label: "LP4 — Vectorul-viteză"
 slug: /f6/mecanica/lp4
-title: "LP4 — Desenarea vectorilor-viteză"
+title: "LP4 — Vectorul-viteză"
 description: "Lucrare practică: viteze instantanee citite de pe cronofotografii și vectori-viteză desenate la scară."
 ---
 
-import {
-  FigCursaDeAlergare,
-  FigBalci,
-  FigMobilPernaAer,
-} from '@site/src/components/Schema/miscare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP4 — Desenarea vectorilor-viteză
+# LP4 — Vectorul-viteză
 
 :::info Ora de lucru practic
 
@@ -111,7 +107,14 @@ alergătorului și celălalt pe pantoful lui drept, dau imaginea de mai jos, fă
 la scara $1/30$: un milimetru pe figură corespunde la $30\ \text{mm}$ pe corpul
 studiat.
 
-<FigCursaDeAlergare />
+<FiguraManual
+  src="c08-alergator.png"
+  lat={439}
+  inalt={343}
+  latime={390}
+  eticheta="Cronofotografia unui alergător: pozițiile unui reper de pe guler și ale unui reper de pe pantoful drept, la intervale de 50 de milisecunde."
+  legenda="Pozițiile reperelor A (pe guler) și B (pe pantoful drept), înregistrate la fiecare 50 ms. Un milimetru pe figură corespunde la 30 mm pe alergător."
+/>
 
 **1.** Care dintre cele două repere luminoase, A sau B, atinge viteza instantanee
 cea mai mare în referențialul terestru?
@@ -187,7 +190,14 @@ două nacele diferite. Ne așezăm în referențialul terestru. Valentina descri
 cerc de rază $R = 5{,}0\ \text{m}$, iar Florin descrie un cerc de rază
 $R = 3{,}0\ \text{m}$. Caruselul face în total 20 de ture, care durează 5 minute.
 
-<FigBalci />
+<FiguraManual
+  src="c08-balci.png"
+  lat={237}
+  inalt={210}
+  latime={230}
+  eticheta="Vedere de sus a caruselului: Valentina se rotește pe cercul mare, Florin pe cercul mic."
+  legenda="Vedere de sus a traiectoriilor celor doi copii."
+/>
 
 **1.** Calculează vitezele medii ale Valentinei și ale lui Florin.
 
@@ -230,7 +240,14 @@ $$
 Valentinei au, după scara dată în enunț, lungimea de $2{,}1\ \text{cm}$, iar cele
 care arată viteza lui Florin au lungimea de $1{,}3\ \text{cm}$.
 
-<FigBalci rezolvare />
+<FiguraManual
+  src="c08-balci-rezolvare.png"
+  lat={435}
+  inalt={391}
+  latime={330}
+  eticheta="Săgețile-viteză ale Valentinei și ale lui Florin, desenate în pozițiile date."
+  legenda="Săgețile-viteză ale celor doi copii în pozițiile date."
+/>
 
 </details>
 
@@ -246,7 +263,13 @@ intervale de timp egale $\tau = 10\ \text{ms}$, pozițiile succesive $M_i$ ale
 punctului M aflat în centrul mobilului. Prima parte a mișcării se face cu firul
 întins, apoi firul se rupe. Înregistrarea obținută este reprodusă mai jos.
 
-<FigMobilPernaAer />
+<FiguraManual
+  src="c08-perna-aer.png"
+  lat={760}
+  inalt={350}
+  eticheta="Înregistrarea a șaisprezece poziții succesive ale unui mobil pe pernă de aer, legat cu un fir de punctul fix O."
+  legenda="Pozițiile succesive ale punctului M, înregistrate la intervale de 10 ms."
+/>
 
 **1.** Se constată, privind înregistrarea, că mișcarea punctului M se poate
 descompune în două faze deosebite.
@@ -302,7 +325,13 @@ $0{,}80 : 0{,}4 = 2{,}0\ \text{cm}$.
 
 Săgețile-viteză cerute sunt trecute pe figura de mai jos.
 
-<FigMobilPernaAer rezolvare />
+<FiguraManual
+  src="c08-perna-aer-rezolvare.png"
+  lat={773}
+  inalt={329}
+  eticheta="Traiectoria mobilului pe pernă de aer, cu săgețile-viteză în M5 și în M15."
+  legenda="Traiectoria mobilului și săgețile-viteză în M₅ și în M₁₅."
+/>
 
 </details>
 

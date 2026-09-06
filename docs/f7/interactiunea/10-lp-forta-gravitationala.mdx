@@ -1,8 +1,8 @@
 ---
 sidebar_position: 10
-sidebar_label: "LP5 — Calculul forței gravitaționale"
+sidebar_label: "LP5 — Interacțiunea gravitațională"
 slug: /f7/interactiunea/lp5
-title: "LP5 — Calculul forței gravitaționale"
+title: "LP5 — Interacțiunea gravitațională"
 description: "Lucrare practică: notația științifică și calculul forței gravitaționale dintre corpuri obișnuite."
 ---
 
@@ -10,10 +10,10 @@ import {
   FigSatelit,
   FigDoiElevi,
   FigBilePetanque,
-  FigStancaDrumet,
 } from '@site/src/components/Schema/gravitatie';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
-# LP5 — Calculul forței gravitaționale
+# LP5 — Interacțiunea gravitațională
 
 :::info Ora de lucru practic
 
@@ -321,7 +321,18 @@ $d = 30$ de metri de stâncă.
 
 *Dată:* $G = 6{,}67 \times 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2$.
 
-<FigStancaDrumet />
+<FiguraManual
+  src="c10-stanca-drumet.png"
+  lat={698}
+  inalt={312}
+  eticheta="Un drumeț și o stâncă aflați la 30 de metri unul de altul, cu cele două forțe cu care se atrag"
+  legenda="Forța cu care stânca atrage drumețul are aceeași valoare ca forța cu care drumețul atrage stânca."
+>
+  <Et x={12}  y={199} w={108} h={16} corp={11} culoare="#57585a" fond="#edf6eb">drumețul</Et>
+  <Et x={430} y={147} w={63}  h={15} corp={11} culoare="#57585a" fond="#bbbdbf">stânca</Et>
+  <Et x={326} y={129} w={34}  h={11} corp={11} culoare="#35b44e" fond="#edf6eb">D→S</Et>
+  <Et x={214} y={225} w={36}  h={11} corp={11} culoare="#ef6d68" fond="#edf6eb">S→D</Et>
+</FiguraManual>
 
 <details>
 <summary>Rezolvare</summary>
