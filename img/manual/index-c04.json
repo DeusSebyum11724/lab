@@ -1,0 +1,546 @@
+[
+ {
+  "fisier": "c04-01.png",
+  "pagina_pdf": 128,
+  "pagina_carte": 51,
+  "latime": 282,
+  "inaltime": 230,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-02.png",
+  "pagina_pdf": 128,
+  "pagina_carte": 51,
+  "latime": 228,
+  "inaltime": 64,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-03.png",
+  "pagina_pdf": 128,
+  "pagina_carte": 51,
+  "latime": 852,
+  "inaltime": 62,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-04.png",
+  "pagina_pdf": 130,
+  "pagina_carte": 52,
+  "latime": 1154,
+  "inaltime": 336,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-05.png",
+  "pagina_pdf": 130,
+  "pagina_carte": 52,
+  "latime": 226,
+  "inaltime": 61,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-06.png",
+  "pagina_pdf": 132,
+  "pagina_carte": 53,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-07.png",
+  "pagina_pdf": 132,
+  "pagina_carte": 53,
+  "latime": 992,
+  "inaltime": 982,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-08.png",
+  "pagina_pdf": 134,
+  "pagina_carte": 54,
+  "latime": 1154,
+  "inaltime": 398,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-09.png",
+  "pagina_pdf": 134,
+  "pagina_carte": 54,
+  "latime": 799,
+  "inaltime": 319,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-10.png",
+  "pagina_pdf": 136,
+  "pagina_carte": 55,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-11.png",
+  "pagina_pdf": 138,
+  "pagina_carte": 56,
+  "latime": 1154,
+  "inaltime": 404,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-12.png",
+  "pagina_pdf": 138,
+  "pagina_carte": 56,
+  "latime": 226,
+  "inaltime": 61,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-13.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-14.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 948,
+  "inaltime": 352,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-15.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 970,
+  "inaltime": 182,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-16.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 924,
+  "inaltime": 148,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-17.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 694,
+  "inaltime": 69,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-18.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 669,
+  "inaltime": 143,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-19.png",
+  "pagina_pdf": 140,
+  "pagina_carte": 57,
+  "latime": 694,
+  "inaltime": 69,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-20.png",
+  "pagina_pdf": 142,
+  "pagina_carte": 58,
+  "latime": 1154,
+  "inaltime": 386,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-21.png",
+  "pagina_pdf": 142,
+  "pagina_carte": 58,
+  "latime": 705,
+  "inaltime": 464,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-22.png",
+  "pagina_pdf": 142,
+  "pagina_carte": 58,
+  "latime": 686,
+  "inaltime": 185,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-23.png",
+  "pagina_pdf": 144,
+  "pagina_carte": 59,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-24.png",
+  "pagina_pdf": 144,
+  "pagina_carte": 59,
+  "latime": 987,
+  "inaltime": 68,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-25.png",
+  "pagina_pdf": 146,
+  "pagina_carte": 60,
+  "latime": 1154,
+  "inaltime": 300,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-26.png",
+  "pagina_pdf": 146,
+  "pagina_carte": 60,
+  "latime": 723,
+  "inaltime": 510,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-27.png",
+  "pagina_pdf": 146,
+  "pagina_carte": 60,
+  "latime": 831,
+  "inaltime": 61,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-28.png",
+  "pagina_pdf": 148,
+  "pagina_carte": 61,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-29.png",
+  "pagina_pdf": 148,
+  "pagina_carte": 61,
+  "latime": 992,
+  "inaltime": 71,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-30.png",
+  "pagina_pdf": 148,
+  "pagina_carte": 61,
+  "latime": 992,
+  "inaltime": 562,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-31.png",
+  "pagina_pdf": 150,
+  "pagina_carte": 62,
+  "latime": 1154,
+  "inaltime": 366,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-32.png",
+  "pagina_pdf": 152,
+  "pagina_carte": 63,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-33.png",
+  "pagina_pdf": 152,
+  "pagina_carte": 63,
+  "latime": 992,
+  "inaltime": 71,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-34.png",
+  "pagina_pdf": 152,
+  "pagina_carte": 63,
+  "latime": 743,
+  "inaltime": 307,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-35.png",
+  "pagina_pdf": 152,
+  "pagina_carte": 63,
+  "latime": 992,
+  "inaltime": 107,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-36.png",
+  "pagina_pdf": 152,
+  "pagina_carte": 63,
+  "latime": 376,
+  "inaltime": 287,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-37.png",
+  "pagina_pdf": 154,
+  "pagina_carte": 64,
+  "latime": 1154,
+  "inaltime": 370,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-38.png",
+  "pagina_pdf": 154,
+  "pagina_carte": 64,
+  "latime": 832,
+  "inaltime": 98,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-39.png",
+  "pagina_pdf": 154,
+  "pagina_carte": 64,
+  "latime": 832,
+  "inaltime": 96,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-40.png",
+  "pagina_pdf": 154,
+  "pagina_carte": 64,
+  "latime": 832,
+  "inaltime": 98,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-41.png",
+  "pagina_pdf": 154,
+  "pagina_carte": 64,
+  "latime": 786,
+  "inaltime": 297,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-42.png",
+  "pagina_pdf": 156,
+  "pagina_carte": 65,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-43.png",
+  "pagina_pdf": 156,
+  "pagina_carte": 65,
+  "latime": 992,
+  "inaltime": 683,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-44.png",
+  "pagina_pdf": 156,
+  "pagina_carte": 65,
+  "latime": 992,
+  "inaltime": 98,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-45.png",
+  "pagina_pdf": 156,
+  "pagina_carte": 65,
+  "latime": 832,
+  "inaltime": 98,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-46.png",
+  "pagina_pdf": 158,
+  "pagina_carte": 66,
+  "latime": 1154,
+  "inaltime": 347,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-47.png",
+  "pagina_pdf": 158,
+  "pagina_carte": 66,
+  "latime": 719,
+  "inaltime": 346,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-48.png",
+  "pagina_pdf": 158,
+  "pagina_carte": 66,
+  "latime": 832,
+  "inaltime": 99,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-49.png",
+  "pagina_pdf": 160,
+  "pagina_carte": 67,
+  "latime": 1154,
+  "inaltime": 97,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-50.png",
+  "pagina_pdf": 160,
+  "pagina_carte": 67,
+  "latime": 942,
+  "inaltime": 804,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-51.png",
+  "pagina_pdf": 160,
+  "pagina_carte": 67,
+  "latime": 729,
+  "inaltime": 365,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-52.png",
+  "pagina_pdf": 162,
+  "pagina_carte": 68,
+  "latime": 1154,
+  "inaltime": 316,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-53.png",
+  "pagina_pdf": 164,
+  "pagina_carte": 69,
+  "latime": 1154,
+  "inaltime": 95,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-54.png",
+  "pagina_pdf": 164,
+  "pagina_carte": 69,
+  "latime": 992,
+  "inaltime": 69,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-55.png",
+  "pagina_pdf": 164,
+  "pagina_carte": 69,
+  "latime": 992,
+  "inaltime": 442,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-56.png",
+  "pagina_pdf": 166,
+  "pagina_carte": 70,
+  "latime": 1154,
+  "inaltime": 481,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-57.png",
+  "pagina_pdf": 166,
+  "pagina_carte": 70,
+  "latime": 832,
+  "inaltime": 70,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-58.png",
+  "pagina_pdf": 166,
+  "pagina_carte": 70,
+  "latime": 832,
+  "inaltime": 279,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-59.png",
+  "pagina_pdf": 168,
+  "pagina_carte": 71,
+  "latime": 1154,
+  "inaltime": 95,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-60.png",
+  "pagina_pdf": 168,
+  "pagina_carte": 71,
+  "latime": 992,
+  "inaltime": 1232,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-61.png",
+  "pagina_pdf": 170,
+  "pagina_carte": 72,
+  "latime": 1154,
+  "inaltime": 352,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-62.png",
+  "pagina_pdf": 170,
+  "pagina_carte": 72,
+  "latime": 832,
+  "inaltime": 96,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-63.png",
+  "pagina_pdf": 170,
+  "pagina_carte": 72,
+  "latime": 832,
+  "inaltime": 195,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-64.png",
+  "pagina_pdf": 172,
+  "pagina_carte": 73,
+  "latime": 1154,
+  "inaltime": 95,
+  "text_fr": false
+ },
+ {
+  "fisier": "c04-65.png",
+  "pagina_pdf": 172,
+  "pagina_carte": 73,
+  "latime": 992,
+  "inaltime": 583,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-66.png",
+  "pagina_pdf": 174,
+  "pagina_carte": 74,
+  "latime": 1154,
+  "inaltime": 323,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-67.png",
+  "pagina_pdf": 174,
+  "pagina_carte": 74,
+  "latime": 832,
+  "inaltime": 359,
+  "text_fr": true
+ },
+ {
+  "fisier": "c04-68.png",
+  "pagina_pdf": 174,
+  "pagina_carte": 74,
+  "latime": 229,
+  "inaltime": 60,
+  "text_fr": false
+ }
+]
