@@ -6,7 +6,6 @@ title: "LP8 — Legea lui Ohm și rezistența"
 description: "Lucrare practică: calculul rezistenței dintr-un punct al caracteristicii, lucrul cu miliamperii și studiul unui circuit cu ramificații."
 ---
 
-import { FigStudiulCircuitului } from '@site/src/components/Schema/dipoli-electrici';
 import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
 
 # LP8 — Legea lui Ohm și rezistența
@@ -232,7 +231,14 @@ Se consideră circuitul reprezentat mai jos. Se dau $R_2 = 100\ \Omega$,
 $R = 50\ \Omega$ și $U_2 = 4{,}0\ \text{V}$. Ampermetrul indică o valoare de
 $100\ \text{mA}$.
 
-<FigStudiulCircuitului />
+<FiguraManual
+  src="c03-studiu-circuit.png"
+  lat={367}
+  inalt={273}
+  latime={330}
+  eticheta="Generator, un conductor ohmic R pe ramura din stânga, apoi două ramuri în derivație: una cu R1 și ampermetrul, alta cu R2"
+  legenda="Se dau R₂ = 100 Ω, R = 50 Ω, U₂ = 4,0 V, iar ampermetrul indică 100 mA."
+/>
 
 **1.** Determină valoarea lui $I_2$.
 

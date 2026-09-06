@@ -6,7 +6,6 @@ title: "C8 — Legea lui Ohm și rezistența"
 description: "Legea lui Ohm U = R·I, ohmul, convenția receptor și măsurarea unei rezistențe cu voltmetrul și ampermetrul."
 ---
 
-import { FigCaracteristicaExercitiuTip } from '@site/src/components/Schema/dipoli-electrici';
 import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C8 — Legea lui Ohm și rezistența
@@ -154,7 +153,17 @@ $$
 **1.** Caracteristica acestui dipol fiind o dreaptă care trece prin origine,
 este vorba, prin definiție, de un **conductor ohmic**.
 
-<FigCaracteristicaExercitiuTip />
+<FiguraManual
+  src="c03-caract-exercitiu.png"
+  lat={515}
+  inalt={324}
+  latime={300}
+  eticheta="Dreaptă prin origine care trece prin punctul de coordonate 20,0 mA și 4,00 V"
+  legenda="Caracteristica dipolului din exercițiul-tip: o dreaptă prin origine, dusă prin punctul M."
+>
+  <Et x={30}  y={109} w={42} h={16} corp={16} alinia="dreapta" fond="#daf0f4">4,00</Et>
+  <Et x={334} y={287} w={42} h={20} corp={17} alinia="centru"  fond="#daf0f4">20,0</Et>
+</FiguraManual>
 
 **2.** Rezistența unui conductor ohmic se obține din legea lui Ohm, aplicată în
 punctul dat de enunț. Intensitatea $20{,}0\ \text{mA}$ se scrie mai întâi în
