@@ -1,0 +1,60 @@
+/*
+ * Cadrul unei figuri decupate din manual, cu etichete traduse peste ea.
+ *
+ * `container-type: inline-size` e piesa care face totul să meargă: etichetele
+ * își iau mărimea literei în `cqw`, adică în procente din lățimea cadrului.
+ * Așa textul românesc se scalează odată cu imaginea de dedesubt și rămâne, la
+ * orice mărime, cât litera din figură.
+ */
+
+.figura {
+  margin: 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.cadru {
+  container-type: inline-size;
+}
+
+.strat {
+  position: relative;
+  width: 100%;
+}
+
+.imagine {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * Eticheta stă peste cuvântul francez și îl acoperă cu o pată de fundal.
+ * `align-items: center` o ține pe linia de bază a originalului chiar când
+ * cuvântul românesc are altă înălțime.
+ */
+.eticheta {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 0.08em;
+  box-sizing: border-box;
+}
+
+.text {
+  display: inline-block;
+}
+
+.legenda {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--kl-ink2);
+  text-align: center;
+  max-width: 34rem;
+  margin: 0;
+}

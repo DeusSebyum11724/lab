@@ -1,0 +1,279 @@
+---
+sidebar_position: 12
+sidebar_label: "LP6 — Construcția grafică"
+slug: /f8/optica/lp6
+title: "LP6 — Construcția grafică a imaginii"
+description: "Lucrare practică: scheme obiect–imagine, construcția imaginii cu rigla pe hârtie milimetrică și punerea la punct a unui ecran."
+---
+
+import { FigSablonConstructie } from '@site/src/components/Schema/lentile';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP6 — Construcția grafică a imaginii
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C6 — Construcția imaginii unui obiect](./11-curs-constructia-imaginii.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 55 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care schemă este corectă | — | 10 min |
+| 2 | Construiește imaginea | ★ | 10 min |
+| 3 | Găsește obiectul | ★ | 10 min |
+| 4 | Punerea la punct | ★★★ | 25 min |
+
+Se lucrează cu rigla, pe hârtie milimetrică. Șablonul de mai jos se copiază de
+fiecare dată de la capăt.
+
+<FigSablonConstructie />
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Care schemă este corectă
+
+**Timp de lucru: 10 minute.**
+
+Care dintre schemele următoare este corectă? Justifică.
+
+<FiguraManual
+  src="c07-scheme-qcm.png"
+  lat={764}
+  inalt={489}
+  eticheta="Patru scheme obiect–imagine notate a, b, c și d, fiecare cu obiectul AB și imaginea A prim B prim"
+  legenda="Cele patru scheme propuse."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul este **d**. Se poate verifica, trasând cele trei raze particulare —
+cele care trec prin F, prin $\mathrm{F'}$ și prin O — că $\mathrm{B'}$ este
+într-adevăr imaginea lui B.
+
+Cazul **a** este vădit greșit: am văzut la curs că imaginea este răsturnată, iar
+aici ea este dreaptă.
+
+Cazul **b** este și el greșit: raza care pleacă din B paralel cu axa optică și
+care trece prin $\mathrm{F'}$ la ieșirea din lentilă nu poate trece prin
+$\mathrm{B'}$.
+
+Pentru cazul **c** se vede că dreapta $(\mathrm{BO})$ nu trece prin
+$\mathrm{B'}$, ceea ce înseamnă că raza care nu se deviază la trecerea prin
+centrul optic nu ajunge în vârful imaginii.
+
+</details>
+
+---
+
+## 2. Construiește imaginea
+
+**★ &nbsp;·&nbsp; 10 minute**
+
+Se consideră sistemul de mai jos, reprezentat la scara 1:1. Lentila subțire are
+distanța focală $f = 2\ \text{cm}$.
+
+<FiguraManual
+  src="c07-ex2.png"
+  lat={636}
+  inalt={220}
+  eticheta="Obiectul AB și lentila subțire, desenate pe hârtie milimetrică, fără imagine"
+  legenda="Sistemul, reprezentat la scara 1:1."
+/>
+
+**1.** Reprezintă, printr-o construcție grafică, imaginea $\mathrm{A'B'}$ a
+obiectului AB.
+
+<details>
+<summary>Rezolvare</summary>
+
+Începem prin a marca focarul obiect F, la 2 cm în stânga lentilei, și focarul
+imagine $\mathrm{F'}$, la 2 cm în dreapta ei.
+
+Trasăm apoi, așa cum am văzut la curs, o rază care pleacă din B paralel cu axa
+optică — desenată aici cu roșu. Ea trece prin focarul imagine $\mathrm{F'}$.
+
+Trasăm apoi o rază care pleacă din B și trece prin centrul optic O — desenată
+aici cu albastru. Ea nu este deviată.
+
+Cele două raze se taie în $\mathrm{B'}$.
+
+<FiguraManual
+  src="c07-ex2-rezolvare.png"
+  lat={690}
+  inalt={232}
+  eticheta="Construcția imaginii: raza roșie paralelă cu axa, raza albastră prin centrul optic și raza verde prin focarul obiect"
+  legenda="Construcția imaginii A′B′ cu cele trei raze particulare."
+/>
+
+Deducem de aici poziția lui $\mathrm{A'}$, folosind faptul că $\mathrm{A'}$ și
+$\mathrm{B'}$ se află în același plan perpendicular pe axa optică — altfel spus,
+aici, pe aceeași verticală.
+
+Deși nu e neapărat necesară, se poate adăuga și a treia rază particulară, cea
+care trece prin focarul obiect F, desenată aici cu verde. Ea iese din lentilă
+paralel cu axa optică și trebuie să taie celelalte două raze tot în
+$\mathrm{B'}$ — asta ne asigură că am construit corect. În practică, două raze
+dintre cele trei sunt de-ajuns pentru construcția imaginii.
+
+</details>
+
+---
+
+## 3. Găsește obiectul
+
+**★ &nbsp;·&nbsp; 10 minute**
+
+O lentilă subțire dă din obiectul AB imaginea $\mathrm{A'B'}$ reprezentată mai
+jos.
+
+<FiguraManual
+  src="c07-ex3.png"
+  lat={546}
+  inalt={258}
+  eticheta="Lentila cu focarele F și F prim și imaginea A prim B prim, fără obiect"
+  legenda="Imaginea A′B′ dată de lentilă."
+/>
+
+Găsește, printr-o construcție grafică, poziția obiectului AB.
+
+<details>
+<summary>Rezolvare</summary>
+
+Trasăm raza care trece prin $\mathrm{F'}$ și ajunge în $\mathrm{B'}$ — desenată
+cu roșu în figura de mai jos. Fiindcă raza asta trece prin $\mathrm{F'}$, ea
+trebuie să fi fost paralelă cu axa optică înainte să ajungă la lentilă.
+
+Trasăm de asemenea raza care trece prin centrul optic O și prin punctul
+$\mathrm{B'}$ — desenată cu albastru. Despre ea știm că nu a fost deviată la
+traversarea lentilei.
+
+<FiguraManual
+  src="c07-ex3-rezolvare.png"
+  lat={546}
+  inalt={251}
+  eticheta="Construcția obiectului: raza roșie prin focarul imagine, raza albastră prin centrul optic și raza verde prin focarul obiect"
+  legenda="Construcția care dă poziția obiectului AB."
+/>
+
+Raza roșie și raza albastră se taie în B, obiectul a cărui imagine este
+$\mathrm{B'}$. Deducem de aici poziția lui A, care este intersecția axei optice
+cu planul perpendicular pe ea care trece prin B.
+
+Construcția grafică a obiectului, când ni se dă imaginea, seamănă foarte mult,
+ca principiu, cu construcția imaginii când ni se dă obiectul. Și aici se poate
+trasa a treia rază particulară, cea care trece prin focarul obiect, desenată cu
+verde, ca să ne asigurăm că trece într-adevăr prin punctul B.
+
+</details>
+
+---
+
+## 4. Punerea la punct
+
+**★★★ &nbsp;·&nbsp; 25 minute**
+
+Se consideră o lentilă subțire cu distanța focală $f = 20\ \text{cm}$ și de rază
+$R$. Pe axa optică, la distanța $d_1 = 30\ \text{cm}$ de lentilă, se așază o
+sursă de lumină punctiformă.
+
+**1.** La ce distanță $d_2$ de lentilă trebuie așezat un ecran ca să se vadă pe
+el un punct luminos? Vei da o valoare aproximativă a distanței ăsteia, făcând pe
+hârtie milimetrică o construcție grafică la scara 1:10.
+
+**2.** Se deplasează acum ecranul cu distanța $d$ în direcția lentilei. Explică
+de ce se observă o pată circulară pe ecran și scrie raza $r$ a petei în funcție
+de $d$, $R$ și $d_2$. Fă aplicația numerică cu $R = 5\ \text{cm}$ și
+$d = 10\ \text{cm}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Numim A sursa punctiformă. Ca să vedem un punct luminos pe ecran, trebuie
+ca ecranul să se afle în poziția imaginii $\mathrm{A'}$ a lui A.
+
+Așa cum am văzut la curs, nu se poate determina direct, printr-o construcție
+grafică, imaginea unui punct așezat pe axa optică. Ca să ieșim din încurcătură,
+luăm un punct B din planul perpendicular pe axa optică care trece prin A,
+construim imaginea $\mathrm{B'}$ a lui B și deducem apoi imaginea $\mathrm{A'}$
+a lui A.
+
+<FiguraManual
+  src="c07-ex6-constructie.png"
+  lat={717}
+  inalt={246}
+  eticheta="Construcție la scara 1:10 pe hârtie milimetrică, cu cele trei raze care dau punctul B prim"
+  legenda="Construcția la scara 1:10 care dă poziția imaginii."
+/>
+
+Ca să găsim $\mathrm{B'}$ ne trebuie două raze dintre cele trei reprezentate.
+Raza desenată cu roșu este paralelă cu axa optică și trece deci prin
+$\mathrm{F'}$ la ieșirea din lentilă. Raza desenată cu albastru trece prin
+centrul optic O și nu este deci deviată. În sfârșit, raza desenată cu verde
+trece prin focarul obiect F și iese din lentilă paralel cu axa optică.
+
+Fiindcă lucrăm la scara 1:10, punctele F și $\mathrm{F'}$ trebuie să fie, pe
+construcție, la 20 mm de lentilă, iar punctul A la 30 mm de ea. Măsurăm pe
+construcția grafică o distanță de circa 60 mm între O și $\mathrm{A'}$. Asta
+înseamnă că ecranul trebuie așezat la
+
+$$
+d_2 \approx 60\ \text{cm}
+$$
+
+de lentilă, ca să se vadă pe el un punct luminos.
+
+**2.** Ecranul nu mai este acum în $\mathrm{A'}$. El taie mănunchiul de raze
+care pleacă din A după segmentul $[\mathrm{DD'}]$.
+
+<FiguraManual
+  src="c07-ex6-pata.png"
+  lat={705}
+  inalt={258}
+  eticheta="Mănunchiul de raze care pleacă din A, tăiat de ecran înaintea punctului A prim, pe segmentul DD prim"
+  legenda="Ecranul, mutat cu distanța d, taie mănunchiul de raze după segmentul [DD′]."
+>
+  <Et x={574} y={195} w={21} h={56} corp={11} fond="#edf6eb" alinia="centru">
+    <span style={{ display: 'inline-block', transform: 'rotate(-90deg)' }}>ecran</span>
+  </Et>
+</FiguraManual>
+
+Figura este o secțiune. În realitate, mănunchiul de raze care pleacă din A are,
+la dreapta lentilei, formă de con, iar pe ecran se vede o pată **circulară** de
+rază $\mathrm{O'D}$.
+
+Dreptele $(\mathrm{OC})$ și $(\mathrm{O'D})$ sunt paralele, deci putem aplica
+teorema lui Thales în triunghiul $\mathrm{COA'}$. Ea se scrie aici:
+
+$$
+\frac{\mathrm{O'D}}{\mathrm{OC}} = \frac{\mathrm{A'O'}}{\mathrm{A'O}}
+$$
+
+adică, cu notațiile din enunț:
+
+$$
+\frac{r}{R} = \frac{d}{d_2}
+$$
+
+de unde deducem:
+
+$$
+r = R \times \frac{d}{d_2}
+$$
+
+Aplicația numerică dă:
+
+$$
+r = 5 \times \frac{10}{60} = 0{,}8\ \text{cm}
+$$
+
+Se vede deci pe ecran o pată de $0{,}8\ \text{cm}$ rază.
+
+</details>
+
+---

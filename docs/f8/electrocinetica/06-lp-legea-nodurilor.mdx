@@ -1,0 +1,335 @@
+---
+sidebar_position: 6
+sidebar_label: "LP3 — Verificarea legii nodurilor"
+slug: /f8/electrocinetica/lp3
+title: "LP3 — Verificarea legii nodurilor"
+description: "Lucrare practică: legea nodurilor pe circuite cu ramificații și probleme numerice de intensitate."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Verificarea legii nodurilor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C3 — Legea nodurilor](./05-curs-legea-nodurilor.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 45 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care situație este posibilă | — | 10 min |
+| 2 | Calculul unor intensități | ★★ | 10 min |
+| 3 | Calcul de intensitate | ★★★ | 10 min |
+| 4 | Legea nodurilor | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Care situație este posibilă
+
+**Timp de lucru: 10 minute.**
+
+Dintre situațiile următoare, una singură este posibilă. Care?
+
+<FiguraManual
+  src="c01-situatii-posibile.png"
+  lat={760}
+  inalt={569}
+  latime={560}
+  eticheta="Patru situații cu doi curenți care intră și doi care ies dintr-o pereche de noduri"
+  legenda="a, b, c, d — patru repartiții de curenți. Una singură respectă legea nodurilor."
+>
+</FiguraManual>
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **c**. Trebuie ca suma intensităților ramurilor din stânga să fie
+egală cu suma intensităților curenților din ramurile din dreapta.
+
+Să detaliem afirmația asta. Numim A nodul din stânga și B nodul din dreapta.
+Aplicăm legea nodurilor în nodul A. Curenții care merg spre nod sunt $I_1$ și
+$I_2$, iar cel care pleacă din el este $I$. Avem deci:
+
+$$
+I = I_1 + I_2
+$$
+
+Aplicăm acum legea nodurilor în nodul B. Curentul care merge spre nod este $I$,
+iar cei care pleacă sunt $I_3$ și $I_4$. Avem deci:
+
+$$
+I_3 + I_4 = I
+$$
+
+Fiindcă $I = I_1 + I_2$ și $I = I_3 + I_4$, avem într-adevăr:
+
+$$
+I_1 + I_2 = I_3 + I_4
+$$
+
+egalitate pe care numai figura **c** o satisface: $2 + 3 = 4 + 1$.
+
+Aici natura componentelor contează prea puțin: becul și rezistorul se comportă
+la fel față de legea nodurilor.
+
+Un alt fel de a proceda este să observăm că fiecare dintre circuitele propuse
+este echivalent cu un circuit care are un **nod unic**:
+
+<FiguraManual
+  src="c01-nod-unic.png"
+  lat={315}
+  inalt={211}
+  latime={300}
+  eticheta="Patru ramuri care se întâlnesc într-un singur nod: doi curenți intră, doi ies"
+  legenda="Același circuit, redesenat cu un nod unic: I₁ + I₂ = I₃ + I₄."
+>
+</FiguraManual>
+
+și atunci se vede că trebuie neapărat să avem $I_1 + I_2 = I_3 + I_4$.
+
+</details>
+
+---
+
+## 2. Calculul unor intensități
+
+**Liceul Henri IV, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+În becurile $L_2$, $L_3$ și $L_4$, intensitățile curentului electric sunt
+respectiv $I_2 = 50\ \text{mA}$, $I_3 = 14\ \text{mA}$ și
+$I_4 = 9{,}0\ \text{mA}$.
+
+<FiguraManual
+  src="c01-cinci-becuri.png"
+  lat={655}
+  inalt={289}
+  latime={520}
+  eticheta="Circuit cu cinci becuri: L1 și L5 pe ramura de sus, L2, L3 și L4 pe ramuri verticale"
+  legenda="Se cunosc I₂ = 50 mA, I₃ = 14 mA și I₄ = 9,0 mA."
+>
+</FiguraManual>
+
+**1.** Care este valoarea intensității curentului care circulă prin becul $L_5$?
+
+**2.** Care este valoarea intensității curentului care circulă prin becul $L_1$?
+
+**3.** Care este valoarea intensității curentului din ramura principală (cea a
+pilei)?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Intensitatea este peste tot aceeași într-o ramură dată, deci intensitatea
+care parcurge becul $L_5$ este $I_4$, adică **$9{,}0\ \text{mA}$**.
+
+**2.** Căutăm intensitatea $I_1$. Aplicăm legea nodurilor în punctul B. Ea se
+scrie:
+
+$$
+I_1 = I_3 + I_4
+$$
+
+adică:
+
+$$
+I_1 = 14 + 9{,}0 = 23\ \text{mA}
+$$
+
+**3.** Căutăm valoarea intensității $I$. Legea nodurilor în punctul A se scrie:
+
+$$
+I = I_1 + I_2
+$$
+
+adică:
+
+$$
+I = 23 + 50 = 73\ \text{mA}
+$$
+
+</details>
+
+---
+
+## 3. Calcul de intensitate
+
+**Liceul Louis-le-Grand, Paris** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră circuitul reprezentat mai jos. Ampermetrul de pe ramura becului dă
+o citire de trei ori mai mare decât celălalt ampermetru. Știind că
+$I = 2{,}5\ \text{A}$ și $I_2 = 0{,}50\ \text{A}$, determină intensitatea
+curentului care circulă prin bec.
+
+<FiguraManual
+  src="c01-doua-ampermetre.png"
+  lat={506}
+  inalt={240}
+  latime={420}
+  eticheta="Circuit cu trei ramuri paralele; pe prima și pe a treia e câte un ampermetru"
+  legenda="Ampermetrul de pe ramura becului arată de trei ori mai mult decât celălalt. Se dau I = 2,5 A și I₂ = 0,50 A."
+>
+</FiguraManual>
+
+<details>
+<summary>Rezolvare</summary>
+
+Reproducem și adnotăm figura dată în enunț. Numim $I'$ intensitatea din
+porțiunea de fir dintre nodurile A și B. Legea nodurilor în A se scrie:
+
+$$
+I = I_1 + I'
+$$
+
+Pe de altă parte, legea nodurilor în B se scrie:
+
+$$
+I' = I_2 + I_3
+$$
+
+Înlocuind $I'$ cu expresia asta în prima egalitate, avem:
+
+$$
+I = I_1 + I_2 + I_3
+$$
+
+Putem scrie egalitatea asta și direct, dacă observăm că circuitul este echivalent
+cu circuitul următor și aplicăm legea nodurilor în C:
+
+<FiguraManual
+  src="c01-echivalent-nod-c.png"
+  lat={512}
+  inalt={384}
+  latime={420}
+  eticheta="Același circuit redesenat cu un singur nod C, din care pleacă trei ramuri"
+  legenda="Același circuit, redesenat cu un singur nod C. Legea nodurilor în C dă direct I = I₁ + I₂ + I₃."
+>
+</FiguraManual>
+
+Ampermetrul din stânga măsoară intensitatea $I_1$, iar cel din dreapta măsoară
+intensitatea $I_3$. Indicațiile din enunț implică:
+
+$$
+I_3 = 3\,I_1
+$$
+
+deci:
+
+$$
+I = \frac{I_3}{3} + I_2 + I_3 = \frac{4}{3}\,I_3 + I_2
+$$
+
+deci:
+
+$$
+I_3 = \frac{3}{4}\,(I - I_2)
+$$
+
+Aplicația numerică dă:
+
+$$
+I_3 = \frac{3}{4} \times 2{,}0 = 1{,}5\ \text{A}
+$$
+
+Intensitatea curentului prin bec este **$1{,}5\ \text{A}$**.
+
+</details>
+
+---
+
+## 4. Legea nodurilor
+
+**Liceul Chateaubriand, Rennes** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **15 minute**
+
+**1.** Enunță legea nodurilor.
+
+**2.** Un circuit electric are înfățișarea de mai jos.
+
+<FiguraManual
+  src="c01-ultimul-circuit.png"
+  lat={651}
+  inalt={291}
+  latime={520}
+  eticheta="Circuit cu trei rezistoare verticale și unul orizontal pe ramura de jos, între nodurile A și B"
+  legenda="Se dau relațiile I₁ = I₄, I₂ = 4·I₄ și I = 3,7 A."
+>
+</FiguraManual>
+
+Se dau relațiile:
+
+$$
+I_1 = I_4 \qquad I_2 = 4\,I_4 \qquad I = 3{,}7\ \text{A}
+$$
+
+Deduce valoarea intensității curentului din fiecare ramură.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Suma intensităților curenților care merg spre nod este egală cu suma
+intensităților curenților care pleacă din nod.
+
+**2.** Am trecut intensitatea $I$ și în partea de jos-stânga, fiindcă
+intensitatea este aceeași într-o ramură dată (vezi cursul).
+
+Legea nodurilor în nodul A se scrie:
+
+$$
+I = I_1 + I_2
+$$
+
+iar în nodul B se scrie:
+
+$$
+I_2 = I_3 + I_4
+$$
+
+Dar $I_2 = 4I_4$, deci:
+
+$$
+4I_4 = I_3 + I_4
+$$
+
+de unde deducem:
+
+$$
+3I_4 = I_3
+$$
+
+Avem deci:
+
+$$
+I = I_1 + I_3 + I_4 = I_4 + I_3 + I_4 = 5I_4
+$$
+
+adică:
+
+$$
+I_4 = I_1 = \frac{I}{5}, \qquad I_3 = 3\,\frac{I}{5}, \qquad I_2 = 4\,\frac{I}{5}
+$$
+
+Putem verifica faptul că avem într-adevăr:
+
+$$
+I = I_1 + I_2 = \frac{I}{5} + 4\,\frac{I}{5}
+$$
+
+Aplicația numerică dă:
+
+$$
+I_1 = I_4 = 0{,}74\ \text{A}
+$$
+$$
+I_2 = 4 \times 0{,}74 = 3{,}0\ \text{A}
+$$
+$$
+I_3 = 3 \times 0{,}74 = 2{,}2\ \text{A}
+$$
+
+</details>
+
+---

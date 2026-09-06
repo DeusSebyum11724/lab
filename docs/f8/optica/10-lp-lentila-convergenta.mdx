@@ -1,0 +1,133 @@
+---
+sidebar_position: 10
+sidebar_label: "LP5 — Recunoașterea lentilelor"
+slug: /f8/optica/lp5
+title: "LP5 — Recunoașterea lentilelor și distanța focală"
+description: "Lucrare practică: deosebirea lentilelor convergente, verificarea unui drum de raze și măsurarea distanței focale cu o sursă îndepărtată."
+---
+
+import { FigDistantaFocala } from '@site/src/components/Schema/lentile';
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP5 — Recunoașterea lentilelor și distanța focală
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C5 — Lentila subțire convergentă](./09-curs-lentila-convergenta.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Găsește intrusul | — | 5 min |
+| 2 | Care construcție este corectă | — | 10 min |
+| 3 | Măsurarea distanței focale | ★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Găsește intrusul
+
+**Timp de lucru: 5 minute.**
+
+Găsește intrusul dintre cele patru lentile de mai jos.
+
+<FiguraManual
+  src="c07-intrus-lentile.png"
+  lat={756}
+  inalt={138}
+  eticheta="Patru lentile văzute în secțiune, notate a, b, c și d, așezate pe aceeași axă"
+  legenda="Cele patru lentile, văzute în secțiune."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+Intrusul este lentila **c**: este singura mai groasă pe margini decât în centru.
+Nu este deci o lentilă convergentă.
+
+</details>
+
+---
+
+## 2. Care construcție este corectă
+
+**Timp de lucru: 10 minute.**
+
+Care dintre construcțiile următoare este corectă? Justifică.
+
+<FiguraManual
+  src="c07-constructii-qcm.png"
+  lat={764}
+  inalt={535}
+  eticheta="Patru construcții de raze prin focarul obiect, notate a, b, c și d"
+  legenda="Cele patru construcții propuse."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+Este vorba de construcția **c**: razele trec prin focarul obiect, deci ies din
+lentila subțire paralel cu axa optică.
+
+Din motivul ăsta, alegerile **a** și **d** nu sunt valabile: razele lor trec
+prin focarul obiect, dar nu ies paralele cu axa optică.
+
+Construcția **b** este greșită fiindcă focarele nu sunt așezate la aceeași
+distanță de lentilă.
+
+</details>
+
+---
+
+## 3. Măsurarea distanței focale
+
+**★ &nbsp;·&nbsp; 15 minute**
+
+Ai pe masă o lentilă subțire convergentă prinsă într-un suport, un ecran alb și
+o riglă gradată. Trebuie să afli distanța focală a lentilei, fără să știi
+dinainte nimic despre ea.
+
+Așază lentila în dreptul unei ferestre, cu fața spre o clădire depărtată sau
+spre un copac de peste drum. Pune ecranul în spatele lentilei și plimbă-l
+înainte și înapoi până când pe el apare o pată luminoasă cât mai mică și cât mai
+clară. Măsoară apoi cu rigla distanța de la lentilă la ecran.
+
+<FigDistantaFocala />
+
+**1.** De ce dă distanța asta chiar distanța focală a lentilei?
+
+**2.** Repetă măsurătoarea de trei ori, mutând de fiecare dată ecranul de la
+capăt, și trece rezultatele în tabel.
+
+| Măsurătoarea | 1 | 2 | 3 |
+|---|---|---|---|
+| Distanța lentilă–ecran (cm) | | | |
+
+**3.** Ce valoare dai, până la urmă, pentru distanța focală?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Clădirea de peste drum este foarte departe față de lentilă. Razele care
+pleacă dintr-un punct al ei și ajung la lentilă sunt deci aproape paralele între
+ele și paralele cu axa optică: e cazul-limită al sursei „la infinit” din curs.
+
+Or, orice rază care cade pe lentilă paralel cu axa optică trece, la ieșire, prin
+focarul imagine $\mathrm{F'}$. Toate razele fasciculului se strâng deci în
+$\mathrm{F'}$, iar acolo, pe ecran, se vede o pată luminoasă foarte mică.
+
+Distanța de la lentilă la ecran este atunci $\mathrm{OF'}$, adică exact distanța
+focală $f$.
+
+**2.** Cele trei măsurători nu ies identice: ochiul nu prinde de fiecare dată
+aceeași poziție a ecranului ca fiind „cea mai clară”.
+
+**3.** Ca valoare a distanței focale se ia media celor trei măsurători.
+
+</details>
+
+---

@@ -1,0 +1,46 @@
+/*
+ * Cadrul figurilor de circuit.
+ *
+ * Figura stă pe hârtia albă a lecției, fără chenar și fără fundal propriu:
+ * schema e desen liniar, iar o casetă în jurul ei ar adăuga un al doilea
+ * dreptunghi peste dreptunghiurile rezistoarelor.
+ *
+ * Lățimea se dă din `latime` pe fiecare figură, în linie, fiindcă ea ține de
+ * figura aceea (un nod cu cinci ramuri cere mai mult loc decât un ampermetru
+ * singur). Aici rămâne doar ce e comun.
+ */
+
+.figura {
+  margin: 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.desen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.legenda {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--kl-ink2);
+  text-align: center;
+  max-width: 34rem;
+  margin: 0;
+}
+
+/*
+ * Pe telefon figura primește toată lățimea coloanei. `max-width` din stilul în
+ * linie o ține mică pe ecran lat, dar sub el n-are voie s-o strângă mai mult
+ * decât încape textul de pe ea: sub ~330px etichetele se ating între ele.
+ * Figurile late scapă prin derulare orizontală proprie, nu prin micșorare.
+ */
+@media (max-width: 420px) {
+  .figura {
+    margin: 1.2rem 0;
+  }
+}

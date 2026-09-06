@@ -1,0 +1,195 @@
+---
+sidebar_position: 6
+sidebar_label: "LP3 — Ecoul și viteza sunetului"
+slug: /f7/unde/lp3
+title: "LP3 — Ecoul și viteza sunetului"
+description: "Lucrare practică: liliacul, submarinul și măsurarea vitezei sunetului cu două microfoane."
+---
+
+import {
+  FigEcou,
+  FigMontajVitezaSunet,
+  FigTraseeVitezaSunet,
+} from '@site/src/components/Schema/sunete';
+
+# LP3 — Ecoul și viteza sunetului
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C3 — Viteza sunetului și ecoul](./05-curs-viteza-sunetului.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Liliacul | ★ | 5 min |
+| 3 | Submarinul | ★ | 5 min |
+| 4 | Viteza sunetului | ★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+<FigEcou />
+
+**1.** Cât face sunetul într-o secundă, în aer?
+
+**2.** Un sunet pleacă spre un perete aflat la $170\ \text{m}$ și se întoarce.
+Cât timp trece între strigăt și ecou?
+
+**3.** De ce se împarte la 2 în relația $d = \dfrac{v \cdot \Delta t}{2}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** $340$ de metri: viteza sunetului în aer, în condiții normale, este
+$c_s = 340\ \text{m/s}$.
+
+**2.** Unda parcurge distanța de două ori, adică
+$2 \times 170 = 340\ \text{m}$. Timpul este:
+
+$$
+\Delta t = \frac{340}{340} = 1\ \text{s}
+$$
+
+**3.** Fiindcă intervalul de timp măsurat este timpul de **dus-întors**: unda
+face distanța $d$ o dată la ducere și o dată la întoarcere, deci drumul total
+este $2d$.
+
+</details>
+
+---
+
+## 2. Liliacul
+
+**Liceul Robert Doisneau, Corbeil-Essonnes** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+
+Un liliac, ca să repereze obstacolele sau prada, emite ultrasunete a căror
+frecvență limită este de $120\ \text{kHz}$.
+
+**1.** Amintește ce este un ultrasunet.
+
+**2.** Când liliacul se află la distanța $d = 1{,}0\ \text{m}$ de un obstacol,
+care este intervalul de timp $t$ dintre emisia salvei de ultrasunete și
+recepția ei?
+
+**Se dă:** viteza sunetului $c_s = 340\ \text{m/s}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Ultrasunetele sunt unde sonore a căror frecvență este mai mare decât
+frecvența maximă pe care o aude urechea omului. Ultrasunetele se propagă deci
+cu viteza sunetului.
+
+**2.** Salva de ultrasunete trebuie să facă un dus-întors între liliac și
+obstacol, deci trebuie să parcurgă distanța $2d$. Pune pentru asta timpul:
+
+$$
+t = \frac{2d}{c_s} = \frac{2{,}0}{340} = 0{,}0059\ \text{s} = 5{,}9\ \text{ms}
+$$
+
+Întârzierea dintre emisie și recepție este deci de $5{,}9$ milisecunde.
+
+</details>
+
+---
+
+## 3. Submarinul
+
+**Liceul Marie Curie, Versailles** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+
+Ca să măsurăm la ce distanță de fund se află un submarin nemișcat, trimitem pe
+verticală, spre fund, un fascicul de ultrasunete. Captăm un semnal reflectat la
+$0{,}730\ \text{s}$ după emisie. La ce distanță de fund se află submarinul,
+știind că viteza sunetului în apă este $c_s = 1\,500\ \text{m/s}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+Fie $d$ distanța la care se află submarinul față de fund. Semnalul reflectat a
+parcurs de două ori distanța aceasta — o ducere spre fund și o întoarcere de la
+fund — în intervalul de timp $\Delta t = 0{,}730\ \text{s}$. Trebuie deci să
+scriem:
+
+$$
+2d = c_s \times \Delta t
+$$
+
+adică:
+
+$$
+d = \frac{c_s \times \Delta t}{2} = \frac{0{,}73 \times 1\,500}{2} \approx 550\ \text{m}
+$$
+
+</details>
+
+---
+
+## 4. Viteza sunetului
+
+**Liceul Gustave Eiffel, Cachan** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **15 minute**
+
+Se face experimentul reprezentat în figura de mai jos.
+
+<FigMontajVitezaSunet />
+
+Osciloscopul este un osciloscop cu memorie, care se declanșează atunci când un
+semnal e detectat pe calea 2 și care păstrează pe ecran traseele obținute.
+
+**1.** Cum se poate măsura viteza sunetului cu ajutorul unui asemenea
+experiment?
+
+**2.** Se obțin traseele următoare.
+
+<FigTraseeVitezaSunet />
+
+Baza de timp este de $0{,}5\ \text{ms}$ pe diviziune. Microfoanele sunt
+depărtate cu $78\ \text{cm}$. Care este viteza sunetului?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Semnalul sonor produs de ciocan va ajunge la microfoanele 1 și 2 în
+momente diferite, fiindcă cele două receptoare nu se află la aceeași distanță
+de locul de unde pleacă zgomotul.
+
+Trebuie deci măsurată întârzierea $t$ dintre recepția sunetului de către cele
+două microfoane și distanța $d$ dintre ele, cu rigla gradată, ca să deducem
+viteza sunetului în aer, cu:
+
+$$
+c_s = \frac{d}{t}
+$$
+
+Întârzierea se măsoară uitându-ne la distanța dintre traseele celor două căi și
+înmulțind-o cu baza de timp.
+
+**2.** Constatăm că cele două trasee urcă — ceea ce corespunde recepției
+semnalului sonor — la $4{,}5$ diviziuni depărtare, ceea ce înseamnă, ținând
+cont de baza de timp, o întârziere:
+
+$$
+t = 4{,}5 \times 0{,}5 = 2{,}25\ \text{ms} = 0{,}00225\ \text{s}
+$$
+
+Acesta este timpul în care sunetul parcurge distanța $d = 0{,}78\ \text{m}$,
+ceea ce ne permite să scriem:
+
+$$
+c_s = \frac{d}{t} = \frac{0{,}78}{0{,}00225} \approx 347\ \text{m/s}
+$$
+
+Ținând cont de precizia cu care s-a măsurat întârzierea, reținem că în
+condițiile experimentului avem $c_s \approx 350\ \text{m/s}$.
+
+</details>
+
+---

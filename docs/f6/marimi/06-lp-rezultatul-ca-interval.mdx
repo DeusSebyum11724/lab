@@ -1,0 +1,214 @@
+---
+sidebar_position: 6
+sidebar_label: "LP3 — Toleranța și codul culorilor"
+slug: /f6/marimi/lp3
+title: "LP3 — Toleranța și codul culorilor"
+description: "Lucrare practică: scrierea corectă a unui rezultat, citirea inelelor colorate ale unui rezistor și identificarea unei sticle după indicele ei de refracție."
+---
+
+import { FigRezistorMasurat } from '@site/src/components/Schema/masurare';
+
+# LP3 — Toleranța și codul culorilor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C3 — Rezultatul scris ca interval](./05-curs-rezultatul-ca-interval.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 45 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Cum se scrie un rezultat | — | 10 min |
+| 2 | Rezistorul cu inele colorate | ★★ | 15 min |
+| 3 | Ce sticlă este? | ★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Cum se scrie un rezultat
+
+**Timp de lucru: 10 minute.**
+
+Patru grupe de elevi măsoară temperatura $\vartheta$ din sala de clasă, la o oră
+de lucrări practice. Media valorilor obținute este $21{,}39\ ^\circ\text{C}$,
+iar semi-amplitudinea seriei este $0{,}6\ ^\circ\text{C}$. Care dintre scrierile
+următoare este cea corectă?
+
+**a.** $\vartheta = (21{,}39 \pm 0{,}6)\ ^\circ\text{C}$
+
+**b.** $\vartheta = (0{,}6 \pm 21{,}4)\ ^\circ\text{C}$
+
+**c.** $\vartheta = (21{,}4 \pm 0{,}6)$
+
+**d.** $\vartheta = (21{,}39 \pm 0{,}4)\ ^\circ\text{C}$
+
+**e.** $\vartheta = (21{,}4 \pm 0{,}6)\ ^\circ\text{C}$
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **e**.
+
+Incertitudinea este semi-amplitudinea, adică $0{,}6\ ^\circ\text{C}$. Ea are o
+singură zecimală, deci valoarea trebuie scrisă și ea cu o singură zecimală:
+$21{,}4\ ^\circ\text{C}$.
+
+Celelalte scrieri sunt greșite:
+
+- **a** păstrează două zecimale la valoare, deși incertitudinea are numai una;
+- **b** inversează valoarea cu incertitudinea — ar însemna că temperatura sălii
+  este de $0{,}6\ ^\circ\text{C}$;
+- **c** are numerele corecte, dar îi lipsește unitatea de măsură;
+- **d** păstrează două zecimale la valoare și schimbă pe deasupra și
+  incertitudinea.
+
+</details>
+
+---
+
+## 2. Rezistorul cu inele colorate
+
+**★★** &nbsp;·&nbsp; **15 minute**
+
+Conductorul ohmic a cărui rezistență au măsurat-o cei zece elevi are înfățișarea
+următoare:
+
+<FigRezistorMasurat />
+
+Inelele lui sunt, în ordine, **maro**, **verde**, **galben** și **auriu**.
+
+**1.** Care este valoarea nominală a rezistenței lui?
+
+**2.** Care este toleranța și între ce limite se află atunci rezistența
+adevărată?
+
+**3.** Sunt măsurătorile elevilor, $R = (155{,}5 \pm 2{,}1)\ \text{k}\Omega$,
+compatibile cu aceste limite?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Citim inelele în ordine, cu ajutorul tabelelor din curs. Primul inel,
+maro, corespunde cifrei $1$; al doilea, verde, corespunde cifrei $5$; al
+treilea, galben, corespunde unei înmulțiri cu $10\ \text{k}\Omega$. Asta ne dă:
+
+$$
+R_0 = 15 \times 10 = 150\ \text{k}\Omega
+$$
+
+**2.** Al patrulea inel este auriu, deci toleranța este de $\pm 5\ \%$. Or
+$5\ \%$ din $150\ \text{k}\Omega$ înseamnă:
+
+$$
+\frac{5}{100} \times 150 = 7{,}5\ \text{k}\Omega
+$$
+
+Valoarea adevărată a rezistenței trebuie deci să fie cuprinsă între:
+
+$$
+150 - 7{,}5 = 142{,}5\ \text{k}\Omega
+$$
+
+și
+
+$$
+150 + 7{,}5 = 157{,}5\ \text{k}\Omega
+$$
+
+**3.** Valoarea găsită de elevi, $155{,}5\ \text{k}\Omega$, se află între
+$142{,}5\ \text{k}\Omega$ și $157{,}5\ \text{k}\Omega$. Măsurătorile lor sunt
+așadar compatibile cu limitele garantate de producător.
+
+</details>
+
+---
+
+## 3. Ce sticlă este?
+
+**★★** &nbsp;·&nbsp; **20 minute**
+
+Vrem să identificăm un tip de sticlă măsurându-i indicele de refracție. Reluăm
+cele șapte măsurători independente din prima oră de lucru practic:
+
+$$
+1{,}67 \quad 1{,}61 \quad 1{,}61 \quad 1{,}59 \quad 1{,}65 \quad 1{,}56 \quad 1{,}68
+$$
+
+a căror medie este $\overline{n} \approx 1{,}624$.
+
+Ni se dă pe deasupra o listă cu diferite tipuri de sticlă și cu valoarea
+indicelui lor de refracție:
+
+| Denumirea sticlei | Indicele de refracție |
+|---|---|
+| BK7 | 1,5168 |
+| K5 | 1,5225 |
+| BaK50 | 1,5677 |
+| SK2 | 1,6074 |
+| SSK4 | 1,6177 |
+| LaK10 | 1,7200 |
+
+**1.** Care este amplitudinea măsurătorilor? Dar semi-amplitudinea lor?
+
+**2.** Scrie rezultatul acestei serii de măsurători sub forma unui interval.
+
+**3.** Sunt aceste măsurători compatibile cu una sau cu mai multe dintre
+sticlele din tabelul de mai sus? Dacă da, cu care?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cea mai mare valoare măsurată este $1{,}68$, iar cea mai mică este
+$1{,}56$. Amplitudinea seriei este deci:
+
+$$
+A = 1{,}68 - 1{,}56 = 0{,}12
+$$
+
+iar semi-amplitudinea ei:
+
+$$
+\frac{A}{2} = \frac{0{,}12}{2} = 0{,}06
+$$
+
+**2.** Incertitudinea este $0{,}06$, cu două zecimale; scriem atunci și valoarea
+cu două zecimale, adică $1{,}62$ în loc de $1{,}624$:
+
+$$
+n = 1{,}62 \pm 0{,}06
+$$
+
+Indicele de refracție este un raport de două lungimi, deci nu are unitate de
+măsură.
+
+**3.** Scrierea de mai sus înseamnă că indicele de refracție al sticlei se află
+între:
+
+$$
+1{,}62 - 0{,}06 = 1{,}56 \qquad \text{și} \qquad 1{,}62 + 0{,}06 = 1{,}68
+$$
+
+Ne uităm care dintre valorile din tabel cad în acest interval:
+
+| Sticla | Indicele | În interval? |
+|---|---|---|
+| BK7 | 1,5168 | nu, prea mic |
+| K5 | 1,5225 | nu, prea mic |
+| BaK50 | 1,5677 | da |
+| SK2 | 1,6074 | da |
+| SSK4 | 1,6177 | da |
+| LaK10 | 1,7200 | nu, prea mare |
+
+Măsurătorile noastre sunt deci compatibile cu sticlele **BaK50**, **SK2** și
+**SSK4**, iar cele mai apropiate de valoarea medie găsită sunt **SK2** și
+**SSK4**.
+
+Sticlele BK7, K5 și LaK10 sunt excluse: indicele lor cade în afara intervalului
+măsurat.
+
+</details>
+
+---

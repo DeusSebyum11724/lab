@@ -1,0 +1,184 @@
+---
+sidebar_position: 13
+sidebar_label: "C7 — Mărirea"
+slug: /f8/optica/c7
+title: "C7 — Mărirea și modelul ochiului"
+description: "Mărirea γ: modulul spune de câte ori e mai mare imaginea, semnul spune dacă e răsturnată. Ochiul, ca lentilă și ecran."
+---
+
+import { FigMarireThales } from '@site/src/components/Schema/lentile';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C7 — Mărirea și modelul ochiului
+
+:::info Planul orei
+
+1. Mărirea
+2. Semnul măririi
+3. Mărirea și triunghiurile asemenea
+4. Rezolvarea exercițiului-tip
+5. Modelul ochiului
+
+:::
+
+---
+
+## 1. Mărirea
+
+După poziția obiectului și după distanța focală a lentilei, imaginea poate fi
+mai mare sau mai mică. Ca să măsurăm efectul ăsta, introducem noțiunea de
+**mărire**.
+
+:::danger Definiția 2
+
+Se numește **mărire**, și se notează cu $\gamma$ (litera grecească „gama”),
+mărimea pentru care:
+
+$$
+|\gamma| = \frac{\mathrm{A'B'}}{\mathrm{AB}}
+$$
+
+:::
+
+Modulul măririi este deci câtul dintre mărimea imaginii și mărimea obiectului.
+
+- Dacă $|\gamma| > 1$, imaginea este mai mare decât obiectul.
+- Dacă $|\gamma| \lt 1$, imaginea este mai mică decât obiectul.
+
+:::warning Atenție
+
+Mărirea, fiind câtul a două lungimi, este un număr fără unitate de măsură.
+Trebuie bineînțeles ca cele două lungimi să fie evaluate în aceleași unități —
+de exemplu amândouă în milimetri — ca să iasă un rezultat corect.
+
+:::
+
+---
+
+## 2. Semnul măririi
+
+Prin convenție, $\gamma$ este **pozitiv** dacă imaginea este în același sens cu
+obiectul — se spune atunci că imaginea este *dreaptă* — și **negativ** dacă
+imaginea este în sens opus obiectului — se spune atunci că imaginea este
+*răsturnată*.
+
+:::tip De reținut
+
+Modulul lui $\gamma$ spune de câte ori este imaginea mai mare sau mai mică decât
+obiectul. Semnul lui $\gamma$ spune dacă imaginea este dreaptă sau răsturnată.
+
+:::
+
+Așa, dacă $\gamma \lt 0$, imaginea este răsturnată: ea stă, față de obiect, „cu
+capul în jos".
+
+---
+
+## 3. Mărirea și triunghiurile asemenea
+
+Raza care trece prin centrul optic O nu este deviată: ea leagă vârful B al
+obiectului de vârful $\mathrm{B'}$ al imaginii, trecând prin O.
+
+<FigMarireThales />
+
+Dreptele $(\mathrm{AB})$ și $(\mathrm{A'B'})$ sunt paralele — amândouă sunt
+perpendiculare pe axa optică. Triunghiurile $\mathrm{OAB}$ și
+$\mathrm{OA'B'}$ sunt deci asemenea, iar teorema lui Thales, așa cum ai
+învățat-o la matematică, se scrie aici:
+
+$$
+\frac{\mathrm{OA'}}{\mathrm{OA}} = \frac{\mathrm{A'B'}}{\mathrm{AB}} = |\gamma|
+$$
+
+Relația asta este utilă: dacă știm mărirea și distanța de la obiect la lentilă,
+aflăm distanța de la lentilă la imagine, și invers.
+
+---
+
+## 4. Rezolvarea exercițiului-tip
+
+Reluăm montajul de la ora **C5**, reprezentat la scara 1:1, și răspundem la
+ultima întrebare: **care este mărirea dată de montajul ăsta?**
+
+<FiguraManual
+  src="c07-montaj-tip.png"
+  lat={770}
+  inalt={534}
+  eticheta="Montaj optic pe hârtie milimetrică: obiectul AB în stânga, lentila în mijloc, imaginea A′B′ în dreapta"
+  legenda="Montajul optic, reprezentat la scara 1:1."
+/>
+
+Mărirea este dată de:
+
+$$
+|\gamma| = \frac{\mathrm{A'B'}}{\mathrm{AB}}
+$$
+
+Aici avem $\mathrm{A'B'} = 15\ \text{mm}$ și $\mathrm{AB} = 30\ \text{mm}$, deci
+mărirea este:
+
+$$
+|\gamma| = \frac{15}{30} = \frac{1}{2}
+$$
+
+Imaginea este răsturnată, deci:
+
+$$
+\gamma = -\frac{1}{2}
+$$
+
+---
+
+## 5. Modelul ochiului
+
+Ochiul este un organ extrem de perfecționat. El cuprinde numeroase elemente;
+vederea în secțiune de mai jos le arată pe cele principale.
+
+<FiguraManual
+  src="c07-ochi.png"
+  lat={416}
+  inalt={312}
+  eticheta="Secțiune prin ochi: corneea, irisul, pupila, cristalinul, umoarea apoasă, umoarea vitroasă, retina și nervul optic"
+  legenda="Ochiul văzut în secțiune."
+>
+  <Et x={281} y={8}   w={77} h={16} corp={11}>umoare</Et>
+  <Et x={141} y={22}  w={30} h={18} corp={11}>iris</Et>
+  <Et x={282} y={37}  w={56} h={16} corp={11}>vitroasă</Et>
+  <Et x={46}  y={81}  w={66} h={16} corp={11}>cornee</Et>
+  <Et x={350} y={81}  w={57} h={16} corp={11}>retină</Et>
+  <Et x={11}  y={193} w={69} h={21} corp={11}>pupilă</Et>
+  <Et x={79}  y={248} w={76} h={16} corp={11}>umoare</Et>
+  <Et x={338} y={253} w={42} h={16} corp={11}>nerv</Et>
+  <Et x={205} y={267} w={87} h={17} corp={11}>cristalin</Et>
+  <Et x={79}  y={281} w={80} h={17} corp={11}>apoasă</Et>
+  <Et x={321} y={281} w={74} h={22} corp={11}>optic</Et>
+</FiguraManual>
+
+**Cristalinul** joacă rolul unei lentile subțiri convergente. Razele care ies
+din el ajung la **retină**, unde se formează imaginile obiectelor aflate în fața
+ochiului. Retina joacă, într-un fel, rolul unui ecran.
+
+Un model foarte simplificat al ochiului este deci următorul.
+
+<FiguraManual
+  src="c07-model-ochi.png"
+  lat={384}
+  inalt={196}
+  eticheta="Modelul ochiului: o lentilă subțire convergentă în locul cristalinului și un ecran în locul retinei"
+  legenda="Modelul simplificat al ochiului."
+>
+  <Et x={12}  y={10}  w={263} h={22} corp={11}>lentilă subțire convergentă</Et>
+  <Et x={293} y={10}  w={53}  h={16} corp={11}>ecran</Et>
+  <Et x={104} y={169} w={87}  h={17} corp={11}>cristalin</Et>
+  <Et x={291} y={164} w={57}  h={16} corp={11}>retină</Et>
+</FiguraManual>
+
+---
+
+:::note Ora următoare
+
+**LP7 — Măsurarea măririi.** Obținem imaginea pe ecran, măsurăm obiectul și
+imaginea, calculăm mărirea și studiem cazul obiectului așezat la distanța dublă
+față de distanța focală.
+
+:::

@@ -1,0 +1,271 @@
+---
+sidebar_position: 14
+sidebar_label: "LP7 — Măsurarea măririi"
+slug: /f8/optica/lp7
+title: "LP7 — Măsurarea măririi"
+description: "Lucrare practică: imaginea prinsă pe ecran, măsurarea obiectului și a imaginii, calculul măririi și cazul obiectului așezat la distanța dublă față de distanța focală."
+---
+
+import { FigMontajEcran } from '@site/src/components/Schema/lentile';
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP7 — Măsurarea măririi
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C7 — Mărirea și modelul ochiului](./13-curs-marirea.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 40 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Imaginea prinsă pe ecran | ★ | 10 min |
+| 2 | Mărirea citită de pe construcție | — | 5 min |
+| 3 | Mărirea | ★★ | 10 min |
+| 4 | Un caz particular | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Imaginea prinsă pe ecran
+
+**★ &nbsp;·&nbsp; 10 minute**
+
+Pe bancul optic sunt așezate, în ordine: un obiect luminos în formă de săgeată,
+lentila subțire convergentă pe suportul ei și un ecran alb.
+
+<FigMontajEcran />
+
+Plimbă ecranul înainte și înapoi până când imaginea săgeții se vede clar pe el.
+
+**1.** Cum arată imaginea față de obiect?
+
+**2.** Măsoară cu rigla înălțimea AB a săgeții-obiect și înălțimea
+$\mathrm{A'B'}$ a imaginii de pe ecran, amândouă în milimetri, și trece-le în
+tabel.
+
+| | AB (mm) | A′B′ (mm) | $\vert\gamma\vert$ | Semnul lui $\gamma$ |
+|---|---|---|---|---|
+| Măsurătoarea 1 | | | | |
+| Măsurătoarea 2 | | | | |
+
+**3.** Calculează mărirea și scrie-o cu semnul ei.
+
+**4.** Mută lentila mai aproape de obiect, prinde din nou imaginea pe ecran și
+completează al doilea rând al tabelului. Ce s-a schimbat?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Imaginea este răsturnată: săgeata de pe ecran arată în jos, în timp ce
+obiectul arată în sus.
+
+**2.** Cele două lungimi se măsoară amândouă în milimetri, fiindcă mărirea este
+câtul lor și nu are unitate de măsură: dacă una ar fi în centimetri și cealaltă
+în milimetri, rezultatul ar fi greșit de zece ori.
+
+**3.** Mărirea se calculează cu:
+
+$$
+|\gamma| = \frac{\mathrm{A'B'}}{\mathrm{AB}}
+$$
+
+Fiindcă imaginea este răsturnată, $\gamma$ este negativ: se scrie
+$\gamma = -|\gamma|$.
+
+**4.** Apropiind lentila de obiect, ecranul trebuie dus mai departe ca să se
+vadă imaginea clar, iar imaginea de pe ecran devine mai mare: modulul măririi
+crește. Semnul rămâne negativ — imaginea este răsturnată în toate cazurile
+astea.
+
+</details>
+
+---
+
+## 2. Mărirea citită de pe construcție
+
+**Timp de lucru: 5 minute.**
+
+Reia construcția de la ora trecută, cea făcută la scara 1:1 pentru lentila cu
+distanța focală $f = 2\ \text{cm}$, și dă o estimare a măririi.
+
+<FiguraManual
+  src="c07-ex2-rezolvare.png"
+  lat={690}
+  inalt={232}
+  eticheta="Construcția de la ora trecută: obiectul AB, imaginea A′B′ și cele trei raze particulare"
+  legenda="Construcția de la ora trecută, la scara 1:1."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+Măsurăm pe construcție valorile următoare:
+
+$$
+\mathrm{AB} \approx 10\ \text{mm}
+$$
+
+și
+
+$$
+\mathrm{A'B'} \approx 7\ \text{mm}
+$$
+
+ceea ce ne permite să deducem valoarea aproximativă a măririi:
+
+$$
+|\gamma| = \frac{\mathrm{A'B'}}{\mathrm{AB}} \approx 0{,}7
+$$
+
+Imaginea este răsturnată, deci $\gamma \approx -0{,}7$.
+
+</details>
+
+---
+
+## 3. Mărirea
+
+**★★ &nbsp;·&nbsp; 10 minute**
+
+O lentilă subțire dă dintr-un obiect AB de mărime $l = 15\ \text{cm}$ o imagine
+răsturnată $\mathrm{A'B'}$ de mărime $l' = 30\ \text{cm}$.
+
+**1.** Care este valoarea măririi?
+
+**2.** Știind că obiectul AB se află la 50 cm în fața lentilei, la ce distanță de
+ea se află imaginea $\mathrm{A'B'}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Avem $\mathrm{AB} = l = 15\ \text{cm}$ și, fiindcă imaginea este
+răsturnată:
+
+$$
+\mathrm{A'B'} = l' = 30\ \text{cm}
+$$
+
+Deducem de aici valoarea măririi:
+
+$$
+|\gamma| = \frac{\mathrm{A'B'}}{\mathrm{AB}} = \frac{30}{15} = 2
+$$
+
+Imaginea este răsturnată, deci $\gamma = -2$.
+
+**2.** Reprezentăm situația în figura de mai jos, unde trasăm raza care trece
+prin centrul optic O.
+
+<FiguraManual
+  src="c07-ex4.png"
+  lat={595}
+  inalt={279}
+  eticheta="Obiectul AB, imaginea răsturnată A′B′ și raza care trece prin centrul optic O"
+  legenda="Raza care trece prin centrul optic leagă B de B′."
+/>
+
+Dreptele $(\mathrm{AB})$ și $(\mathrm{A'B'})$ sunt paralele. Triunghiurile
+$\mathrm{OAB}$ și $\mathrm{OA'B'}$ sunt deci asemenea, iar teorema lui Thales se
+scrie aici:
+
+$$
+\frac{\mathrm{OB'}}{\mathrm{OB}} = \frac{\mathrm{OA'}}{\mathrm{OA}} = \frac{\mathrm{A'B'}}{\mathrm{AB}}
+$$
+
+Avem deci:
+
+$$
+\mathrm{OA'} = \mathrm{OA} \times \frac{\mathrm{A'B'}}{\mathrm{AB}} = \mathrm{OA} \times \frac{l'}{l}
+$$
+
+Aplicația numerică dă:
+
+$$
+\mathrm{OA'} = 50 \times 2 = 100\ \text{cm} = 1{,}0\ \text{m}
+$$
+
+Imaginea se află deci la un metru de lentilă.
+
+</details>
+
+---
+
+## 4. Un caz particular
+
+**Liceul Louis-le-Grand, Paris** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **15 minute**
+
+Se consideră o lentilă subțire cu distanța focală $f$ și un obiect AB așezat la
+distanța $2f$ de lentilă.
+
+**1.** Arată, printr-o construcție grafică, că mărirea este egală cu $-1$.
+
+**2.** Arată că imaginea $\mathrm{A'B'}$ se află tot la distanța $2f$ de lentilă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Construim imaginea $\mathrm{A'B'}$ a obiectului AB, ca în figura de mai
+jos. Raza desenată cu roșu este paralelă cu axa optică și trece deci prin
+focarul imagine când iese din lentilă. Raza desenată cu albastru trece prin
+centrul optic O și nu este deviată. În sfârșit, raza desenată cu verde trece
+prin focarul obiect F și iese din lentilă paralel cu axa optică.
+
+<FiguraManual
+  src="c07-ex5.png"
+  lat={715}
+  inalt={235}
+  eticheta="Obiectul AB așezat la distanța 2f de lentilă și imaginea A′B′, de aceeași mărime, la distanța 2f de cealaltă parte"
+  legenda="Obiectul la distanța 2f: imaginea are aceeași mărime și este răsturnată."
+/>
+
+Numim C punctul prin care raza $(\mathrm{BF})$ intră în lentilă, iar
+$\mathrm{C'}$ punctul prin care intră în lentilă raza care pleacă din B paralel
+cu axa optică. Fiindcă dreapta $(\mathrm{CB'})$ este paralelă cu axa optică,
+avem:
+
+$$
+\mathrm{OC} = \mathrm{A'B'}
+$$
+
+Prin urmare, ca să aflăm mărimea imaginii, e de-ajuns să aflăm distanța
+$\mathrm{OC}$. Dreptele $(\mathrm{AB})$ și $(\mathrm{OC})$ sunt paralele, deci
+putem aplica teorema lui Thales în triunghiul $\mathrm{ABF}$. Ea se scrie aici:
+
+$$
+\frac{\mathrm{FA}}{\mathrm{FO}} = \frac{\mathrm{AB}}{\mathrm{OC}}
+$$
+
+Dar obiectul se află la distanța $2f$ de lentila subțire, deci
+$\mathrm{FA} = \mathrm{FO} = f$. Prin urmare:
+
+$$
+\frac{\mathrm{AB}}{\mathrm{OC}} = 1
+$$
+
+sau, altfel spus:
+
+$$
+\mathrm{AB} = \mathrm{OC}
+$$
+
+Distanțele $\mathrm{AB}$ și $\mathrm{A'B'}$ sunt deci egale. Imaginea fiind
+răsturnată, mărirea este egală cu $-1$.
+
+**2.** Dreptele $(\mathrm{AB})$ și $(\mathrm{A'B'})$ fiind paralele, putem
+aplica teorema lui Thales în triunghiul $\mathrm{OAB}$. Ea se scrie:
+
+$$
+\frac{\mathrm{OA'}}{\mathrm{OA}} = \frac{\mathrm{A'B'}}{\mathrm{AB}} = 1
+$$
+
+unde am folosit răspunsul de la întrebarea precedentă. Avem deci
+$\mathrm{OA'} = \mathrm{OA} = 2f$. Imaginea se află, așadar, tot la distanța
+$2f$ de lentila subțire.
+
+</details>
+
+---

@@ -1,0 +1,322 @@
+---
+sidebar_position: 18
+sidebar_label: "LP9 — Amprente luminoase"
+slug: /f8/optica/lp9
+title: "LP9 — Amprente luminoase"
+description: "Lucrare practică: identificarea elementelor dintr-un amestec de gaze, culoarea și temperatura stelelor, citirea unui profil spectral și etalonarea unui spectroscop."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP9 — Amprente luminoase
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C9 — Spectre termice și spectre de linii](./17-curs-spectre-termice.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Elementele dintr-un amestec | ★ | 10 min |
+| 2 | Culori de stele | ★ | 10 min |
+| 3 | Profilul spectral al stelei χ Ori | ★★ | 15 min |
+| 4 | Etalonarea unui spectroscop | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Elementele dintr-un amestec
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră spectrul unui vapori la presiune joasă, al unui amestec de gaze:
+
+<FiguraManual
+  src="c06-amestec-tip.png"
+  lat={630}
+  inalt={180}
+  latime={420}
+  eticheta="Spectrul de linii al unui amestec de gaze la presiune joasă"
+  legenda="Spectrul amestecului de gaze."
+>
+  <Et x={488} y={18}  w={70}  h={20} corp={13} fond="#daf0f4">Spectrul</Et>
+  <Et x={488} y={45}  w={109} h={20} corp={13} fond="#daf0f4">amestecului</Et>
+  <Et x={341} y={135} w={205} h={20} corp={12} fond="#daf0f4">lungimea de undă (nm)</Et>
+</FiguraManual>
+
+Se dau, pe de altă parte, spectrele câtorva elemente:
+
+<FiguraManual
+  src="c06-spectre-elemente.png"
+  lat={610}
+  inalt={455}
+  latime={420}
+  eticheta="Spectrele de linii de emisie ale mercurului, sodiului, neonului, heliului și hidrogenului"
+  legenda="Spectrele de emisie ale câtorva elemente."
+>
+  <Et x={492} y={19}  w={80}  h={17} corp={13} fond="#daf0f4">Mercur</Et>
+  <Et x={493} y={97}  w={73}  h={16} corp={13} fond="#daf0f4">Sodiu</Et>
+  <Et x={501} y={173} w={56}  h={18} corp={13} fond="#daf0f4">Neon</Et>
+  <Et x={492} y={253} w={72}  h={16} corp={13} fond="#daf0f4">Heliu</Et>
+  <Et x={492} y={332} w={105} h={20} corp={13} fond="#daf0f4">Hidrogen</Et>
+  <Et x={342} y={418} w={206} h={21} corp={13} fond="#daf0f4">lungimea de undă (nm)</Et>
+</FiguraManual>
+
+**1.** Cum se numește tipul ăsta de spectru?
+
+**2.** Ce elemente pot fi identificate în amestec?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Spectrele astea se numesc **spectre de linii de emisie**.
+
+**2.** În spectrul amestecului regăsim liniile **heliului** și pe cele ale
+**neonului**. Putem deci identifica în amestec cele două elemente.
+
+</details>
+
+---
+
+## 2. Culori de stele
+
+**Liceul Victor Hugo, Besançon** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră spectrele următoarelor cinci stele: Soarele, Deneb, Alnilam, Atria
+și Betelgeuse. Fiecare dintre ele prezintă un maxim de emisie la lungimea de
+undă $\lambda_m$, ceea ce îi dă o culoare: mai degrabă roșie pentru cele care
+au maximul de emisie la lungime de undă mare și, dimpotrivă, albastră pentru
+cele care au maximul de emisie la lungime de undă mică.
+
+Se măsoară următoarele valori:
+
+| Steaua | Soarele | Deneb | Alnilam | Atria | Betelgeuse |
+|---|---|---|---|---|---|
+| $\lambda_m$ (nm) | 500 | 310 | 110 | 630 | 905 |
+
+**1.** Care dintre stelele astea au maximul de emisie în ultraviolet?
+
+**2.** Care dintre ele are maximul de emisie în infraroșu?
+
+**3.** În ce domeniu al spectrului își au celelalte stele domeniul de emisie?
+
+**4.** Care pare cea mai roșie?
+
+**5.** Care pare cea mai albastră?
+
+**6.** Care dintre stelele astea are cea mai joasă temperatură la suprafață?
+
+**7.** Care are cea mai înaltă temperatură la suprafață?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Limita ultravioletelor apropiate este 390 nm, deci **Deneb** (310 nm) și
+**Alnilam** (110 nm) au maximul de emisie în ultraviolet.
+
+**2.** Limita infraroșiilor apropiate este 780 nm, deci **Betelgeuse** (905 nm)
+are maximul de emisie în infraroșu.
+
+**3.** Celelalte stele — Soarele (500 nm) și Atria (630 nm) — au maximul de
+emisie în **spectrul vizibil**.
+
+**4.** Cea care pare cea mai roșie este cea care are maximul de emisie la cea
+mai mare lungime de undă. Este vorba de **Betelgeuse**.
+
+**5.** Cea care pare cea mai albastră este cea al cărei spectru e cel mai bogat
+în radiații de lungime de undă mică, deci cea care are maximul de emisie la cea
+mai mică lungime de undă. Este vorba de **Alnilam**.
+
+**6.** Steaua cu suprafața cea mai rece este cea care pare cea mai roșie:
+**Betelgeuse**.
+
+**7.** Steaua cu suprafața cea mai caldă este cea care pare cea mai albastră:
+**Alnilam**.
+
+</details>
+
+---
+
+## 3. Profilul spectral al stelei χ Ori
+
+**Liceul François Couperin, Fontainebleau** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Profilul spectral al stelei χ Ori, din constelația Orion, este dat în figura de
+mai jos: curba reprezintă intensitatea luminoasă relativă în funcție de
+lungimea de undă a radiațiilor emise de steaua asta.
+
+Lungimea de undă este exprimată aici în **ångströmi**, o unitate veche, folosită
+și azi în astronomie: **1 ångström = 0,1 nm**.
+
+<FiguraManual
+  src="c06-profil-chi-ori.png"
+  lat={440}
+  inalt={304}
+  latime={400}
+  eticheta="Profilul spectral al stelei chi Ori: intensitatea luminoasă relativă în funcție de lungimea de undă"
+  legenda="Profilul spectral al stelei χ Ori. Pe verticală, intensitatea luminoasă relativă."
+>
+  <Et x={53} y={277} w={344} h={21} corp={13} alinia="centru">Lungimea de undă (în ångströmi)</Et>
+</FiguraManual>
+
+**1.** Estimează grafic valoarea lungimii de undă $\lambda_{\max}$ care
+corespunde maximului de intensitate luminoasă. Scrie rezultatul și în
+nanometri.
+
+**2.** Soarele are maximul de emisie la 500 nm. Este χ Ori mai caldă sau mai
+rece la suprafață decât Soarele? Ce culoare îi bănuiești?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Prin citire grafică, determinăm $\lambda_{\max}$:
+
+<FiguraManual
+  src="c06-profil-chi-ori-varf.png"
+  lat={602}
+  inalt={443}
+  latime={420}
+  eticheta="Același profil spectral, cu o săgeată coborâtă din vârful curbei până pe axa lungimilor de undă"
+  legenda="Citirea grafică: vârful curbei cade la 4 750 ångströmi."
+>
+  <Et x={158} y={409} w={344} h={22} corp={13} alinia="centru" fond="#edf6eb">Lungimea de undă (în ångströmi)</Et>
+</FiguraManual>
+
+$\lambda_{\max} = 4\,750$ ångströmi, adică **475 nm**.
+
+Fiindcă un ångström este a zecea parte dintr-un nanometru, împărțim la 10:
+$4\,750 : 10 = 475$.
+
+**2.** Maximul de emisie al stelei χ Ori este la 475 nm, adică la o lungime de
+undă **mai mică** decât cea a Soarelui, care este la 500 nm. Cu cât temperatura
+unei stele este mai mare, cu atât culoarea percepută corespunde unor lungimi de
+undă mai mici. Este vorba deci de o stea puțin mai caldă la suprafață decât
+Soarele.
+
+Cei 475 nm cad în domeniul albastrului, deci steaua bate spre albastru.
+
+</details>
+
+---
+
+## 4. Etalonarea unui spectroscop
+
+**Liceul du Parc, Lyon** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **15 minute**
+
+Se observă cu un spectroscop spectrul unei lămpi cu vapori de mercur. Se obțin
+linii la următoarele abscise:
+
+| $x$ (mm) | 2,5 | 18 | 73 | 89,5 | 107,5 |
+|---|---|---|---|---|---|
+
+Se dau, pe de altă parte, lungimile de undă ale principalelor linii ale
+mercurului în domeniul vizibil:
+
+| $\lambda$ (nm) | 405 | 436 | 546 | 579 | 615 |
+|---|---|---|---|---|---|
+
+**1.** Liniile detectate la etalonarea cu lampa cu vapori de mercur sunt linii
+de absorbție sau de emisie? Justifică.
+
+**2.** Știind că radiațiile albastre sunt de partea absciselor mici,
+identifică ce lungime de undă corespunde fiecărei linii observate de spectroscop
+și trasează curba de etalonare a spectroscopului.
+
+**3.** Se observă spectrul unei stele cu același spectroscop și se detectează
+linii **de absorbție** — linii întunecate — la următoarele abscise:
+
+| $x$ (mm) | 5,0 | 17 | 33 | 43 | 94,5 |
+|---|---|---|---|---|---|
+
+**a.** Descrie cum arată spectrul observat.
+
+**b.** Care sunt lungimile de undă ale liniilor observate?
+
+**c.** Deduci de aici care dintre elementele propuse mai jos sunt detectate în
+spectrul ăsta.
+
+**Date:**
+
+- lungimile de undă ale liniilor hidrogenului (nm): 410, 434 și 486;
+- lungimea de undă a unei linii a magneziului (nm): 518;
+- lungimile de undă ale liniilor fierului (nm): 466 și 495.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** O lampă cu vapori de mercur conține un gaz diluat, excitat de trecerea
+unui curent electric, care emite la lungimi de undă bine precizate: este un
+**spectru de emisie**.
+
+**2.** Radiațiile albastre din spectrul vizibil sunt de partea lungimilor de
+undă mici și, după enunț, tot de partea absciselor mici. Deducem deci
+corespondența următoare:
+
+| $x$ (mm) | 2,5 | 18 | 73 | 89,5 | 107,5 |
+|---|---|---|---|---|---|
+| $\lambda$ (nm) | 405 | 436 | 546 | 579 | 615 |
+| culoarea | albastru | | | | roșu |
+
+și tragem de aici curba de etalonare de mai jos.
+
+<FiguraManual
+  src="c06-curba-etalonare.png"
+  lat={620}
+  inalt={350}
+  latime={420}
+  eticheta="Curba de etalonare a spectroscopului: lungimea de undă în funcție de abscisa liniei"
+  legenda="Curba de etalonare: cele cinci puncte se așază pe o dreaptă."
+/>
+
+Cele cinci puncte se așază pe o dreaptă. Citind pe ea, o creștere de 10 mm a
+abscisei înseamnă o creștere de 20 nm a lungimii de undă.
+
+**3. a.** Spectrul observat arată așa:
+
+<FiguraManual
+  src="c06-spectru-absorbtie.png"
+  lat={620}
+  inalt={118}
+  latime={420}
+  eticheta="Spectrul observat al stelei: un fond continuu colorat, tăiat de linii întunecate"
+  legenda="Spectrul observat: un fond continuu, tăiat de linii întunecate."
+/>
+
+Este un spectru continuu, colorat, tăiat de linii întunecate.
+
+**b.** Ca să deducem lungimile de undă ale liniilor de absorbție, folosim curba
+de etalonare stabilită mai înainte.
+
+<FiguraManual
+  src="c06-curba-etalonare-2.png"
+  lat={640}
+  inalt={342}
+  latime={420}
+  eticheta="Aceeași curbă de etalonare, cu abscisele liniilor observate duse pe curbă până la axa lungimilor de undă"
+  legenda="Citirea pe curba de etalonare a lungimilor de undă ale liniilor observate."
+/>
+
+Deducem de aici că, până la erorile de trasare, lungimile de undă ale liniilor
+spectrului ăstuia sunt:
+
+| $\lambda$ (nm) | 410 | 434 | 466 | 486 | 589 |
+|---|---|---|---|---|---|
+
+**c.** Dintre elementele propuse în enunț vedem că sunt prezente liniile
+**hidrogenului** (la toate cele trei lungimi de undă date în enunț) și o linie
+a **fierului** (la lungimea de undă de 466 nm). Precizăm că fierul nu este
+prezent în stea, de vreme ce numai una dintre cele două linii ale lui apare. Nu
+regăsim linia magneziului, care nu este deci detectat în atmosfera stelei
+ăsteia.
+
+Există printre liniile observate una care nu corespunde niciunui element
+sugerat în enunț: linia de la 589 nm, care corespunde de fapt elementului
+**sodiu**.
+
+</details>
+
+---

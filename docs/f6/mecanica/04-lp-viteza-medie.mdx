@@ -1,0 +1,281 @@
+---
+sidebar_position: 4
+sidebar_label: "LP2 — Calculul vitezei medii"
+slug: /f6/mecanica/lp2
+title: "LP2 — Calculul vitezei medii"
+description: "Lucrare practică: viteze medii calculate din distanță și timp, treceri m/s ↔ km/h și probleme de sosire."
+---
+
+import { FigTraseuAutostrada } from '@site/src/components/Schema/miscare';
+
+# LP2 — Calculul vitezei medii
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C2 — Viteza medie](./03-curs-viteza-medie.mdx)**.
+Cinci probe, cu timpul de lucru al fiecăreia; în total 55 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Viteza unui înotător | ★ | 5 min |
+| 2 | Clasare după viteza medie | — | 5 min |
+| 3 | Traseu pe autostradă | ★★ | 15 min |
+| 4 | Sosirea alergătorilor | ★★ | 15 min |
+| 5 | Cursa de automobile | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Viteza unui înotător
+
+**Liceul Watteau, Valenciennes** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+
+**1.** Un campion de natație parcurge 100 de metri liber în 48 de secunde.
+
+**(a)** Care este viteza lui medie în metri pe secundă?
+
+**(b)** Care este viteza lui medie în kilometri pe oră?
+
+**2.** O cameră montată pe șine urmărește înotătorul, așa fel încât el să apară
+tot timpul în centrul imaginii.
+
+**(a)** Care este viteza înotătorului în referențialul camerei?
+
+**(b)** Care este viteza spectatorilor în referențialul camerei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1. (a)** Distanța parcursă este $d = 100\ \text{m}$, în timpul
+$t = 48\ \text{s}$. Viteza medie a înotătorului este deci:
+
+$$
+v = \frac{d}{t} = \frac{100}{48} = 2{,}1\ \text{m/s}
+$$
+
+**(b)** Trecem acum viteza asta în kilometri pe oră:
+
+$$
+v = 2{,}1 \times 3{,}6 = 7{,}5\ \text{km/h}
+$$
+
+Ca să treci din metri pe secundă în kilometri pe oră, înmulțești cu $3{,}6$.
+
+**2. (a)** Mișcarea camerei în referențialul bazinului este făcută tocmai ca
+înotătorul să pară fix. Înotătorul are deci viteza **nulă** în referențialul
+camerei.
+
+**(b)** Viteza camerei față de bazin, adică față de spectatori, este
+$7{,}5\ \text{km/h}$; prin urmare viteza spectatorilor în referențialul camerei
+este tot $7{,}5\ \text{km/h}$.
+
+</details>
+
+---
+
+## 2. Clasare după viteza medie
+
+**Timp de lucru: 5 minute.**
+
+Fără să folosești calculatorul și fără să faci calculele, așază vehiculele
+următoare în ordinea crescătoare a vitezei medii.
+
+**a.** O mașină care parcurge o distanță de 35 km într-o oră.
+
+**b.** Un camion care parcurge o distanță de 40 km într-o oră și jumătate.
+
+**c.** O mașină care parcurge o distanță de 20 km într-o jumătate de oră.
+
+**d.** Un biciclist care parcurge o distanță de 1 km în două minute.
+
+<details>
+<summary>Rezolvare</summary>
+
+În ordinea crescătoare a vitezei: **b**, **d**, **a** și **c**.
+
+</details>
+
+---
+
+## 3. Traseu pe autostradă
+
+**Liceul Richelieu, Rueil-Malmaison** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+O mașină circulă pe autostradă ca să meargă de la orașul A la orașul B, aflat la
+40 km. Pe primii 20 de kilometri merge cu $120\ \text{km/h}$; în schimb, ultimii
+20 de kilometri sunt în lucru și mașina nu circulă mai repede de
+$40\ \text{km/h}$.
+
+<FigTraseuAutostrada />
+
+**1.** Cât timp îi trebuie ca să facă drumul?
+
+**2.** Care a fost viteza ei medie pe tot drumul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Să descompunem drumul în două părți:
+
+- porțiunea fără lucrări, de lungime $l_1 = 20\ \text{km}$, parcursă cu viteza
+  $v_1 = 120\ \text{km/h}$, într-un timp $t_1$;
+- porțiunea cu lucrări, de lungime $l_2 = 20\ \text{km}$, parcursă cu viteza
+  $v_2 = 40\ \text{km/h}$, într-un timp $t_2$.
+
+Avem pur și simplu $t_1 = l_1/v_1$ și $t_2 = l_2/v_2$, adică:
+
+$$
+t_1 = \frac{20}{120} = \frac{1}{6}\ \text{h} = 10\ \text{min}
+$$
+$$
+t_2 = \frac{20}{40} = \frac{1}{2}\ \text{h} = 30\ \text{min}
+$$
+
+Timpul total pentru a face drumul este deci:
+
+$$
+t = t_1 + t_2 = 10 + 30 = 40\ \text{min} = \frac{2}{3}\ \text{h}
+$$
+
+**2.** Viteza medie pe tot drumul este, prin definiție:
+
+$$
+v = \frac{l_1 + l_2}{t} = \frac{40}{\dfrac{2}{3}} = 60\ \text{km/h}
+$$
+
+Viteza medie a mașinii pe drum a fost deci de $60\ \text{km/h}$. Privind
+numerele din enunț, ne-am fi putut aștepta, naiv, la o viteză medie de
+$\frac{1}{2}(120 + 40) = 80\ \text{km/h}$. Rezultatul nu este însă atât de
+simplu. Într-un fel, vitezele mici au un rol mult mai important atunci când se
+calculează o viteză medie. De aceea, cea mai mică încetinire dintr-o călătorie
+cu mașina face media să scadă mult.
+
+</details>
+
+---
+
+## 4. Sosirea alergătorilor
+
+**Liceul Saint-Louis, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+La sosirea unei curse de 400 de metri, câștigătorul face timpul de
+$44{,}12\ \text{s}$. Ultimul alergător face, el, timpul de $45{,}91\ \text{s}$.
+Când câștigătorul trece linia de sosire, la ce distanță în urma lui se află
+ultimul alergător? Se presupune că viteza acestuia din urmă a fost constantă pe
+tot parcursul.
+
+<details>
+<summary>Rezolvare</summary>
+
+Numim $t_1 = 44{,}12\ \text{s}$ timpul făcut de primul alergător și
+$t_2 = 45{,}91\ \text{s}$ timpul făcut de ultimul alergător. Viteza acestuia din
+urmă, presupusă constantă pe parcursul lui, este dată de:
+
+$$
+v_2 = \frac{L}{t_2}
+$$
+
+unde $L = 400\ \text{m}$ este lungimea parcursului. La capătul timpului $t_1$ el
+a parcurs deci distanța:
+
+$$
+D = v_2 \times t_1 = L\,\frac{t_1}{t_2}
+$$
+
+și se află deci la distanța $d$ de linia de sosire, adică de primul alergător:
+
+$$
+d = L - D = L - L\,\frac{t_1}{t_2} = L\left(1 - \frac{t_1}{t_2}\right)
+$$
+
+Aplicația numerică dă:
+
+$$
+d = 400 \times \left(1 - \frac{44{,}12}{45{,}91}\right) = 15{,}60\ \text{m}
+$$
+
+Ultimul alergător se află la $15{,}60\ \text{m}$ de primul atunci când acesta
+trece linia de sosire.
+
+</details>
+
+---
+
+## 5. Cursa de automobile
+
+**Liceul Henri IV, Paris** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **15 minute**
+
+La sosirea unei curse de mașini, doi piloți, A și B, sunt în frunte. A este la
+701 metri de linia de sosire și merge cu viteza $v_A = 272\ \text{km/h}$.
+
+B este, la rândul lui, la 50 de metri în urma lui A și merge cu viteza
+$v_B = 285\ \text{km/h}$. Se presupune că cei doi piloți își păstrează viteza
+constantă până trec linia de sosire.
+
+**1.** Care pilot câștigă cursa și cât timp trece între trecerile lor prin linia
+de sosire?
+
+**2.** Cât ar trebui să fie viteza lui A pentru ca cei doi piloți să ajungă la
+egalitate?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Calculăm timpul de care are nevoie pilotul A ca să treacă linia de
+sosire:
+
+$$
+t_A = \frac{d_A}{v_A}
+$$
+
+unde $d_A = 701\ \text{m}$ este distanța care îl desparte de linia de sosire,
+iar $v_A = 272\ \text{km/h}$ este viteza lui, presupusă constantă. Ca să facem
+calculul, trebuie mai întâi să trecem viteza în metri pe secundă — ca să treci
+din kilometri pe oră în metri pe secundă, împarți la $3{,}6$:
+
+$$
+v_A = \frac{272}{3{,}6} = 75{,}6\ \text{m/s} \qquad
+t_A = \frac{701}{75{,}6} = 9{,}27\ \text{s}
+$$
+
+La fel avem, pentru pilotul B, care se află la $751\ \text{m}$ de linia de
+sosire:
+
+$$
+v_B = \frac{285}{3{,}6} = 79{,}2\ \text{m/s} \qquad
+t_B = \frac{751}{79{,}2} = 9{,}48\ \text{s}
+$$
+
+Pilotul B are nevoie de mai mult timp ca să treacă linia de sosire, deci
+**pilotul A câștigă cursa**. Timpul care desparte trecerile lor prin linia de
+sosire este:
+
+$$
+\tau = t_B - t_A = 0{,}21\ \text{s}
+$$
+
+adică douăzeci și una de sutimi de secundă.
+
+**2.** Ca cei doi piloți să ajungă la egalitate, ar trebui ca $t_A = t_B$, adică:
+
+$$
+\frac{d_A}{v_A} = t_B \qquad\text{deci}\qquad
+v_A = \frac{d_A}{t_B} = \frac{701}{9{,}48} = 73{,}9\ \text{m/s}
+$$
+
+Scriem acum rezultatul în kilometri pe oră:
+
+$$
+v_A = 73{,}9 \times 3{,}6 = 266\ \text{km/h}
+$$
+
+Ar trebui ca viteza pilotului A să fie de $266\ \text{km/h}$ pentru ca cele două
+mașini să ajungă la egalitate.
+
+</details>
+
+---

@@ -1,0 +1,127 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Curentul electric"
+slug: /f8/electrocinetica/c1
+title: "C1 — Curentul electric, nodul și ramura"
+description: "Purtătorii de sarcină mobili, nodul și ramura unui circuit, sensul curentului electric."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C1 — Curentul electric, nodul și ramura
+
+:::info Planul orei
+
+1. Generalități despre curentul electric
+2. Nodul și ramura
+3. Sensul curentului electric
+
+:::
+
+---
+
+## 1. Generalități despre curentul electric
+
+Ceea ce caracterizează un corp conductor de curent electric este existența
+unor **purtători de sarcină mobili**, care se pot deplasa în ansamblu, dând
+astfel naștere unui curent electric.
+
+**Exemple**
+
+- Într-un **metal** există electroni care se pot deplasa liber în tot volumul
+  metalului. Acești electroni au sarcină electrică (negativă). Un metal este
+  deci un conductor.
+- Un **electrolit** este o soluție care conține ioni. Acești ioni se pot
+  deplasa liber în electrolit. Prin urmare, un electrolit conduce și el
+  curentul.
+
+:::tip De reținut
+
+Un corp conduce curentul electric dacă are purtători de sarcină care se pot
+mișca liber prin el: electroni în metale, ioni în electroliți.
+
+:::
+
+---
+
+## 2. Nodul și ramura
+
+:::danger Definiția 1
+
+Numim **nod** al unui circuit electric orice punct al circuitului din care
+pleacă cel puțin **trei** conductoare.
+
+:::
+
+**Exemplu:** în circuitul următor,
+
+<FiguraManual
+  src="c01-noduri.png"
+  lat={390}
+  inalt={232}
+  latime={340}
+  eticheta="Circuit cu punctele A, D sus și B, C jos; A și B sunt noduri, C și D nu sunt"
+  legenda="Punctele A și B sunt noduri; punctele C și D nu sunt."
+>
+</FiguraManual>
+
+punctele A și B sunt noduri, punctele C și D nu sunt.
+
+:::danger Definiția 2
+
+Numim **ramură** a unui circuit orice porțiune de circuit situată între două
+noduri consecutive.
+
+:::
+
+---
+
+## 3. Sensul curentului electric
+
+Spunem că sensul curentului este sensul mișcării sarcinilor **pozitive**. Dacă
+purtătorii de sarcină ai conductorului au exclusiv sarcini negative, sensul
+curentului este sensul **opus** celui al mișcării acestor purtători.
+
+<FiguraManual
+  src="c01-sensul-curentului.png"
+  lat={658}
+  inalt={241}
+  latime={520}
+  eticheta="Două conductoare: în primul se mișcă purtători pozitivi și negativi, în al doilea doar electroni"
+  legenda="Sensul curentului e sensul de mișcare al sarcinilor pozitive. Când purtătorii sunt exclusiv negativi, sensul curentului e opus mișcării lor."
+>
+  <Et x={76}  y={214} w={103} h={16} corp={7} culoare="#595757">Sensul curentului</Et>
+  <Et x={403} y={214} w={102} h={16} corp={7} culoare="#595959">Sensul curentului</Et>
+</FiguraManual>
+
+:::warning Atenție
+
+Într-un fir metalic se mișcă numai electroni, care sunt negativi. Sensul
+curentului este acolo **invers** față de sensul în care merg electronii.
+
+:::
+
+Când vrem să arătăm sensul curentului într-o ramură de circuit, desenăm o
+săgeată pe ramura aceea.
+
+<FiguraManual
+  src="c01-sageata-ramura.png"
+  lat={460}
+  inalt={140}
+  latime={420}
+  eticheta="O ramură de circuit cu o săgeată care arată sensul curentului"
+  legenda="Ca să arătăm sensul curentului într-o ramură, desenăm o săgeată pe ramura aceea."
+>
+  <Et x={54}  y={10}  w={183} h={16} corp={11} culoare="#43403f">Ramura circuitului</Et>
+  <Et x={138} y={112} w={199} h={16} corp={11} culoare="#4e4c4c" alinia="centru">Sensul curentului</Et>
+</FiguraManual>
+
+---
+
+:::note Ora următoare
+
+**LP1 — Noduri, ramuri și sensul curentului.** Numărarea nodurilor și a
+ramurilor pe scheme date și găsirea sensului curentului din mișcarea
+purtătorilor de sarcină.
+
+:::

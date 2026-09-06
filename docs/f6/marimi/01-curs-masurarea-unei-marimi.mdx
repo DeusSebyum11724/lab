@@ -1,0 +1,185 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Măsurarea unei mărimi fizice"
+slug: /f6/marimi/c1
+title: "C1 — Măsurarea unei mărimi fizice"
+description: "Ce înseamnă a măsura, de ce două măsurători ale aceleiași mărimi nu dau același rezultat și de ce media este cea mai bună valoare pe care o putem da."
+---
+
+import { FigSerieSunet } from '@site/src/components/Schema/masurare';
+
+# C1 — Măsurarea unei mărimi fizice
+
+:::info Planul orei
+
+1. Introducere
+2. A măsura o mărime fizică
+3. O serie de măsurători ale aceleiași mărimi
+4. Media
+5. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Rezistența $R$ a unui conductor ohmic este măsurată pe rând de zece elevi,
+fiecare având propriul multimetru. Ei obțin măsurătorile următoare:**
+
+$$
+155{,}1\ \text{k}\Omega, \quad 153{,}1\ \text{k}\Omega, \quad 155{,}7\ \text{k}\Omega, \quad 155{,}8\ \text{k}\Omega, \quad 156{,}1\ \text{k}\Omega,
+$$
+
+$$
+154{,}3\ \text{k}\Omega, \quad 156{,}8\ \text{k}\Omega, \quad 157{,}2\ \text{k}\Omega, \quad 155{,}8\ \text{k}\Omega, \quad 154{,}9\ \text{k}\Omega.
+$$
+
+**1.** Care este cea mai bună valoare pe care o putem da rezistenței acestui
+conductor?
+
+**2.** După părerea ta, care este cauza împrăștierii rezultatelor măsurate de
+elevi?
+
+Ca să răspundem, trebuie mai întâi să vedem ce se întâmplă când măsurăm de mai
+multe ori aceeași mărime. Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul
+orei.
+
+---
+
+## 2. A măsura o mărime fizică
+
+O **mărime fizică** este o însușire a unui corp sau a unui fenomen pe care o
+putem măsura: lungimea unei mese, masa unui corp, durata unei căderi,
+temperatura camerei, viteza sunetului în aer, rezistența unui conductor.
+
+A măsura o mărime înseamnă a o compara cu o **unitate de măsură**. De aceea
+rezultatul unei măsurători nu este niciodată un simplu număr: el este un număr
+urmat de o unitate. „Viteza sunetului este 340” nu spune nimic; „viteza
+sunetului este $340\ \text{m/s}$” spune totul.
+
+Măsurătoarea se face cu un **instrument** — rigla, cântarul, cronometrul,
+termometrul, multimetrul — după un **mod de lucru** dinainte stabilit. Modul de
+lucru se numește *protocol experimental*: ce aparat folosim, cum îl așezăm, ce
+citim și când citim.
+
+:::tip De reținut
+
+Un rezultat de măsurare se scrie întotdeauna ca **valoare numerică + unitate de
+măsură**.
+
+:::
+
+---
+
+## 3. O serie de măsurători ale aceleiași mărimi
+
+La o oră de lucrări practice, mai multe grupe de elevi măsoară viteza sunetului
+în aer. Ele obțin valorile următoare:
+
+$$
+380\ \text{m/s}, \quad 340\ \text{m/s}, \quad 350\ \text{m/s}, \quad 320\ \text{m/s},
+$$
+
+$$
+330\ \text{m/s}, \quad 340\ \text{m/s}, \quad 360\ \text{m/s}, \quad 350\ \text{m/s}.
+$$
+
+Toate aceste rezultate **nu sunt egale**, fiindcă precizia dispozitivului
+experimental folosit de elevi este limitată.
+
+Spunem că măsurătorile unei mărimi fizice — aici viteza sunetului — au o
+**împrăștiere**.
+
+:::danger Definiția 1
+
+**Împrăștierea** unei serii de măsurători este felul în care rezultatele se
+răsfiră în jurul valorii adevărate, în loc să cadă toate în același punct.
+
+:::
+
+Împrăștierea aceasta depinde de protocolul experimental. Cu cât aparatele sunt
+mai precise și modul de lucru mai îngrijit, cu atât rezultatele cad mai
+strâns unele lângă altele.
+
+În cazul experienței elevilor, se vede bine că viteza sunetului în condițiile
+măsurării este foarte probabil cuprinsă între $320\ \text{m/s}$ și
+$380\ \text{m/s}$, și verosimil pe undeva pe la mijlocul acestui interval.
+
+:::warning Atenție
+
+Faptul că cele opt grupe au obținut opt numere diferite nu înseamnă că șapte
+dintre ele au greșit. Toate au măsurat corect; instrumentul lor este cel care
+nu poate face deosebirea între $340\ \text{m/s}$ și $350\ \text{m/s}$.
+
+:::
+
+---
+
+## 4. Media
+
+Primul indicator care ne vine în minte este **media**. Media măsurătorilor este
+aici:
+
+$$
+\overline{c} = \frac{380 + 340 + 350 + 320 + 330 + 340 + 360 + 350}{8} = 346{,}25\ \text{m/s}
+$$
+
+<FigSerieSunet />
+
+Pe axa de mai sus, fiecare punct este una dintre cele opt măsurători, iar linia
+întreruptă arată media lor. Se vede că media cade chiar pe la mijlocul
+grămezii de puncte: măsurătorile prea mari și cele prea mici se compensează
+între ele.
+
+:::danger Definiția 2
+
+**Media** unei serii de măsurători este suma tuturor valorilor măsurate,
+împărțită la numărul lor:
+
+$$
+\overline{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+$$
+
+:::
+
+:::tip De reținut
+
+Când măsurăm de mai multe ori aceeași mărime, **media** măsurătorilor este cea
+mai bună valoare pe care o putem da mărimii respective.
+
+:::
+
+---
+
+## 5. Rezolvarea exercițiului-tip
+
+**1.** Media celor zece valori măsurate de elevi este:
+
+$$
+\overline{R} = \frac{155{,}1 + 153{,}1 + 155{,}7 + 155{,}8 + 156{,}1 + 154{,}3 + 156{,}8 + 157{,}2 + 155{,}8 + 154{,}9}{10}
+$$
+
+$$
+\overline{R} = \frac{1554{,}8}{10} = 155{,}48\ \text{k}\Omega
+$$
+
+Scriem deocamdată toate cifrele. Este posibil ca unele dintre ele să nu fie de
+încredere: vom vedea în orele următoare cât de mult ne putem bizui pe ele.
+
+**2.** Împrăștierea valorilor măsurate de elevi se datorează **erorilor de
+măsurare ale multimetrelor lor**.
+
+Ar fi greșit să răspundem că ea ține de precizia pe care o dă producătorul
+rezistorului: aici elevii măsoară **un singur** rezistor, care are o valoare
+foarte precisă a lui. Dacă zece elevi ar fi măsurat zece rezistoare diferite,
+răspunsul ar fi fost altul.
+
+---
+
+:::note Ora următoare
+
+**LP1 — Media unei serii de măsurători.** Serii de măsurători repetate, media ca
+cea mai bună valoare estimată și primele probleme de calcul.
+
+:::

@@ -411,16 +411,12 @@ export default function Hero() {
             <canvas ref={canvasRef} className={styles.canvasBackground} />
             <div className={styles.heroOverlay}></div>
             <div className={clsx('container', styles.heroContent)}>
-                {/* SEMNĂTURA KULTUROSFERA, deasupra numelui platformei.
-                    Emblema + linia celor patru pătrate colorate — aceeași
-                    construcție ca pe edumat58, unde semnătura casei stă lângă
-                    numele platformei, nu în locul lui. */}
-                {/* Semnătura casei, deasupra numelui platformei: emblema,
-                    numele KULTUROSFERA și linia celor patru culori dedesubt. */}
-                <div className={styles.semnatura}>
-                    <KulturosferaSignature culoare="#ffffff" inaltime={54} />
-                </div>
-
+                {/* Semnătura Kulturosfera a stat aici, deasupra numelui
+                    platformei. A fost scoasă la cererea autorului: eroul se
+                    deschide direct cu wordmarkul edulab58. Marca gazdei rămâne
+                    în navbar și în subsol, unde e locul ei; componenta
+                    `KulturosferaSignature` din `src/components/Brand` e în
+                    continuare folosită de butonul „Descoperă Kulturosfera”. */}
                 <h1 className={styles.heroTitle} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
                     <span style={{ color: '#fff' }}>
                         <EdulabWordmark width={420} style={{ width: 'min(420px, 86vw)' }} />

@@ -1,0 +1,275 @@
+---
+sidebar_position: 12
+sidebar_label: "LP6 — Legea ochiurilor"
+slug: /f8/electrocinetica/lp6
+title: "LP6 — Legea ochiurilor pe circuite date"
+description: "Lucrare practică: egalități corecte scrise cu legea ochiurilor și calculul tensiunilor care lipsesc."
+---
+
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP6 — Legea ochiurilor pe circuite date
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C6 — Legea ochiurilor](./11-curs-legea-ochiurilor.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 25 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care egalități sunt corecte | ★ | 10 min |
+| 2 | Calculul unor tensiuni | ★ | 5 min |
+| 3 | Calcularea unor tensiuni | ★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Care egalități sunt corecte
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Pentru fiecare dintre circuitele următoare, arată care este sau care sunt
+egalitățile corecte, folosind legea ochiurilor.
+
+### Circuitul (a)
+
+<FiguraManual
+  src="c02-egalitati-a.png"
+  lat={361}
+  latime={253}
+  inalt={329}
+  eticheta="Circuit cu o pilă în stânga, un bec pe ramura din mijloc, două rezistoare în dreapta și un rezistor jos"
+  legenda="Circuitul (a). Atenție: rezistorul din dreapta-jos nu are săgeată de tensiune."
+/>
+
+**a.** $U_1 = U_2$ &nbsp;&nbsp; **b.** $U_1 + U_2 + U_4 = U_3$ &nbsp;&nbsp;
+**c.** $U_1 + U_2 = U_4$ &nbsp;&nbsp; **d.** $U_3 = U_4$ &nbsp;&nbsp;
+**e.** $U_1 + U_2 = U_3$
+
+### Circuitul (b)
+
+<FiguraManual
+  src="c02-egalitati-b.png"
+  lat={325}
+  latime={227}
+  inalt={405}
+  eticheta="Circuit cu trei ramuri între aceleași două noduri: bec și rezistor sus, pilă și rezistor la mijloc, un rezistor jos, plus un rezistor vertical în dreapta"
+  legenda="Circuitul (b). Rezistorul vertical din dreapta nu are săgeată de tensiune."
+/>
+
+**a.** $U_1 + U_2 = U_3$ &nbsp;&nbsp; **b.** $U_1 + U_2 - U_4 = U_5$
+&nbsp;&nbsp; **c.** $U_1 = U_3$ &nbsp;&nbsp; **d.** $U_3 = U_4 + U_5$
+
+### Circuitul (c)
+
+<FiguraManual
+  src="c02-egalitati-c.png"
+  lat={356}
+  latime={249}
+  inalt={305}
+  eticheta="Circuit cu o pilă și un rezistor pe ramura din stânga, un rezistor pe ramura din mijloc și câte un rezistor pe ocolul din dreapta"
+  legenda="Circuitul (c)."
+/>
+
+**a.** $U_2 + U_3 + U_4 = 0$ &nbsp;&nbsp; **b.** $U + U_1 = 0$ &nbsp;&nbsp;
+**c.** $U + U_2 = U_1$ &nbsp;&nbsp; **d.** $U_2 = U_3 + U_4$
+
+<details>
+<summary>Rezolvare</summary>
+
+**(a)** Răspunsul **e**.
+
+Ochiul din stânga trece prin pilă, prin ramura din mijloc și prin rezistorul de
+jos. Parcurgându-l în sensul acelor de ceasornic, $U_1$ și $U_2$ merg în sensul
+parcurgerii, iar $U_3$ în sens contrar. Deci $U_1 + U_2 = U_3$.
+
+Răspunsurile **c** și **d** sunt greșite, fiindcă lipsește tensiunea de la
+bornele dipolului din dreapta-jos al circuitului: săgeata $U_4$ este trecută
+numai pe rezistorul de sus.
+
+**(b)** Răspunsul **b**.
+
+Cele trei ramuri se întind între aceleași două noduri. Ochiul format din ramura
+de sus și din cea din mijloc are toate componentele cu săgeată; parcurgându-l,
+$U_1$ și $U_2$ merg într-un sens, iar $U_4$ și $U_5$ în celălalt, deci
+$U_1 + U_2 = U_4 + U_5$, adică $U_1 + U_2 - U_4 = U_5$.
+
+Răspunsurile **a** și **d** sunt greșite fiindcă, și aici, lipsește tensiunea de
+la bornele dipolului din dreapta-jos al circuitului: rezistorul vertical din
+dreapta nu are săgeată.
+
+**(c)** Răspunsul **a**.
+
+Ochiul format din ramura din mijloc și din ocolul prin dreapta are toate
+componentele cu săgeată. Parcurgându-l, toate cele trei săgeți se așază în
+același sens, iar atunci suma lor este nulă: $U_2 + U_3 + U_4 = 0$.
+
+</details>
+
+---
+
+## 2. Calculul unor tensiuni
+
+**Liceul Pasteur, Neuilly** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+
+Se consideră circuitul de mai jos. Un generator este legat la trei dipoli $D_2$,
+$D_3$ și $D_4$. Se măsoară $U_2 = 6{,}00\ \text{V}$ și
+$U_3 = 12{,}5\ \text{V}$.
+
+<FiguraManual
+  src="c02-calcul-tensiuni.png"
+  lat={530}
+  latime={371}
+  inalt={283}
+  eticheta="Generator legat la dipolul D2 în serie și la dipolii D3 și D4 în derivație, între punctele P, A, B și M"
+  legenda="Se măsoară U₂ = 6,00 V și U₃ = 12,5 V. Se cer U₁ și U₄."
+/>
+
+Determină valoarea tensiunilor $U_1$ și $U_4$.
+
+<details>
+<summary>Rezolvare</summary>
+
+Scriind legea ochiurilor în ochiul din stânga, obținem:
+
+$$
+U_1 = U_2 + U_3 = 6 + 12{,}5 = 18{,}5\ \text{V}
+$$
+
+Aplicarea legii ochiurilor în ochiul din dreapta este foarte simplă și dă:
+
+$$
+U_4 = U_3 = 12{,}5\ \text{V}
+$$
+
+**Observație:** putem verifica egalitățile astea folosind legea de aditivitate a
+tensiunilor:
+
+$$
+U_1 = U_{PM} = U_{PA} + U_{AM} = U_2 + U_3
+$$
+
+și:
+
+$$
+U_4 = U_{BM} = U_{BA} + U_{AM} = 0 + U_3
+$$
+
+($B$ și $A$ sunt legate numai prin fir, deci $U_{BA} = 0$.)
+
+</details>
+
+---
+
+## 3. Calcularea unor tensiuni
+
+**Liceul Marcellin Berthelot, Toulouse** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră montajul următor.
+
+<FiguraManual
+  src="c02-calculare-tensiuni.png"
+  lat={462}
+  latime={323}
+  inalt={432}
+  eticheta="Montaj cu un generator sus, două rezistoare pe ramura din mijloc, două pe ramura de jos și tensiunea u₅ între ele"
+  legenda="Montajul probei. Tensiunea U₅ este măsurată pe firul dintre cele două ramuri."
+/>
+
+Avem $U = 12{,}0\ \text{V}$, $U_1 = 2{,}00\ \text{V}$ și
+$U_4 = 2{,}40\ \text{V}$.
+
+**1.** Dă expresiile lui $U_2$, $U_3$ și $U_5$ în funcție de $U$, $U_1$ și $U_4$.
+
+**2.** Calculează numeric valorile lui $U_2$, $U_3$ și $U_5$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Folosim legea ochiurilor în **ochiul de sus**. Dacă îl parcurgem în
+sensul acelor de ceasornic, întâlnim două tensiuni care au sensul parcurgerii:
+$U_1$ și $U_2$. Dacă, dimpotrivă, îl parcurgem în sensul contrar acelor de
+ceasornic, întâlnim o singură tensiune de același sens, tensiunea $U$.
+
+Avem deci:
+
+$$
+U_1 + U_2 = U
+$$
+
+și astfel:
+
+$$
+U_2 = U - U_1
+$$
+
+La fel, putem scrie, luând **ochiul mare** — cel care trece prin ramura de sus a
+circuitului, cea cu generatorul, și prin ramura de jos:
+
+$$
+U + U_3 = U_4
+$$
+
+(atenție la sensul săgeților!) Putem deci scrie:
+
+$$
+U_3 = U_4 - U
+$$
+
+În sfârșit, pentru $U_5$ ne folosim de punctele marcate mai jos.
+
+<FiguraManual
+  src="c02-calculare-tensiuni-puncte.png"
+  lat={461}
+  latime={323}
+  inalt={434}
+  eticheta="Același montaj, cu punctele A, B, C, D, E, F, G și H marcate pe schemă"
+  legenda="Aceeași schemă, cu punctele de la A la H marcate."
+/>
+
+Săgeata lui $U_5$ merge de la $G$ la $D$, deci $U_5 = U_{DG}$; săgeata lui $U_4$
+merge de la $H$ la $G$, deci $U_4 = U_{GH}$. Cu regula literelor:
+
+$$
+U_5 + U_4 = U_{DG} + U_{GH} = U_{DH}
+$$
+
+Punctele $E$ și $H$ sunt legate numai prin fir, deci $U_{DH} = U_{DE} = U_2$.
+Avem prin urmare:
+
+$$
+U_4 + U_5 = U_2 = U - U_1
+$$
+
+adică:
+
+$$
+U_5 = U - U_1 - U_4
+$$
+
+**2.** Aplicația numerică dă, înlocuind valorile lui $U$, $U_1$ și $U_4$ cu cele
+date în enunț:
+
+$$
+U_2 = 12{,}0 - 2{,}0 = 10{,}0\ \text{V}
+$$
+$$
+U_3 = 2{,}4 - 12{,}0 = -9{,}6\ \text{V}
+$$
+$$
+U_5 = 12{,}0 - 2{,}0 - 2{,}4 = 7{,}6\ \text{V}
+$$
+
+Tensiunile din enunț fiind date cu precizia de o zecime de volt, cu precizia
+asta scriem și rezultatele.
+
+Tensiunea $U_3$ iese negativă: asta înseamnă doar că săgeata ei a fost desenată
+în sens invers față de cel în care merge tensiunea în realitate.
+
+</details>
+
+---

@@ -1,0 +1,206 @@
+---
+sidebar_position: 11
+sidebar_label: "C6 — Legea ochiurilor"
+slug: /f8/electrocinetica/c6
+title: "C6 — Legea ochiurilor"
+description: "Într-un ochi de circuit, suma tensiunilor orientate într-un sens este egală cu suma celor orientate în celălalt sens."
+---
+
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# C6 — Legea ochiurilor
+
+:::info Planul orei
+
+1. Introducere
+2. Enunțul legii ochiurilor
+3. Cele două grupuri de tensiuni
+4. Toate componentele trebuie să aibă săgeată
+5. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+<FiguraManual
+  src="c02-exercitiu-tip.png"
+  lat={447}
+  latime={313}
+  inalt={352}
+  eticheta="Circuit cu o pilă, două rezistoare în ramura din mijloc, un rezistor orizontal și un bec"
+  legenda="Se cunosc U = 6,0 V, U₁ = 3,0 V și U₃ = 1,4 V. Se cer U₂ și U₄."
+/>
+
+**Generatorul dă o tensiune constantă $U = 6{,}0\ \text{V}$. Se mai măsoară
+$U_1 = 3{,}0\ \text{V}$ și $U_3 = 1{,}4\ \text{V}$.**
+
+**1.** Arată, printr-o schemă, cum trebuie legat voltmetrul ca să măsoare
+tensiunea $U_3$.
+
+**2.** Folosind legea ochiurilor, determină tensiunile $U_2$ și $U_4$.
+
+Ora aceasta introduce legea ochiurilor, care se aplică tensiunilor pe care le
+putem măsura între bornele componentelor unui ochi de circuit.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei, când vom avea tot
+ce ne trebuie pentru el.
+
+---
+
+## 2. Enunțul legii ochiurilor
+
+:::tip De reținut
+
+**În orice ochi al unui circuit, suma tensiunilor orientate într-un sens este
+egală cu suma tensiunilor orientate în celălalt sens.**
+
+:::
+
+---
+
+## 3. Cele două grupuri de tensiuni
+
+Ce înțelegem prin „tensiunile orientate într-un sens”? Când parcurgem un ochi —
+într-un sens ales de noi, care poate fi la fel de bine sensul acelor de
+ceasornic sau sensul invers — întâlnim săgeți de tensiune care au **același sens
+cu parcurgerea** și altele care au **sensul opus**.
+
+Să considerăm circuitul de mai jos.
+
+<FiguraManual
+  src="c02-ochi-sase-tensiuni.png"
+  lat={439}
+  latime={307}
+  inalt={307}
+  eticheta="Ochi de circuit cu șase tensiuni; bucla roșie din mijloc arată sensul de parcurgere, în sensul acelor de ceasornic"
+  legenda="Cu roșu, tensiunile care merg în sensul parcurgerii; cu verde, cele care merg invers."
+/>
+
+Am arătat un sens de parcurgere — aici, sensul acelor de ceasornic — printr-o
+buclă roșie cu săgeți, desenată în partea centrală. Parcurgând ochiul acesta,
+întâlnim săgeți de tensiune care au sensul parcurgerii: sunt săgețile $U_2$,
+$U_3$ și $U_6$, pe care le-am desenat tot cu roșu. Celelalte săgeți ($U_1$,
+$U_4$ și $U_5$) au sensul opus celui de parcurgere. Pe acelea le-am desenat cu
+verde.
+
+Legea ochiurilor ne spune că suma tensiunilor „din grupul roșu” este egală cu
+suma tensiunilor „din grupul verde”:
+
+$$
+\textcolor{#c0392b}{U_2} + \textcolor{#c0392b}{U_3} + \textcolor{#c0392b}{U_6}
+= \textcolor{#1c7c4a}{U_1} + \textcolor{#1c7c4a}{U_4} + \textcolor{#1c7c4a}{U_5}
+$$
+
+**Observație:** dacă toate săgețile de tensiune au același sens, atunci suma lor
+este nulă, fiindcă nu mai există nicio tensiune în celălalt sens.
+
+---
+
+## 4. Toate componentele trebuie să aibă săgeată
+
+:::warning Atenție
+
+Este important să existe săgeți de tensiune pentru **toate** componentele
+ochiului.
+
+:::
+
+Să considerăm cele două circuite de mai jos.
+
+<FiguraManual
+  src="c02-toate-sagetile.png"
+  lat={368}
+  latime={258}
+  inalt={287}
+  eticheta="Circuit cu bec, rezistor și pilă în ramura de sus, un rezistor în dreapta și un rezistor pe ramura de jos, fiecare cu săgeata lui de tensiune"
+  legenda="Toate componentele ochiului au săgeată de tensiune: legea se poate scrie."
+/>
+
+<FiguraManual
+  src="c02-toate-sagetile-lipsa.png"
+  lat={368}
+  latime={258}
+  inalt={287}
+  eticheta="Același circuit, dar cu două rezistoare pe ramura de jos, dintre care cel din stânga nu are săgeată de tensiune"
+  legenda="Rezistorul din stânga-jos nu are săgeată de tensiune: legea ochiurilor nu se poate scrie aici."
+/>
+
+Pe primul circuit, toate componentele au săgeată de tensiune. Săgeata care are
+sensul acelor de ceasornic este $U_1$, iar toate celelalte săgeți au sensul
+contrar, deci putem scrie:
+
+$$
+U_2 + U + U_3 + U_4 = U_1
+$$
+
+Pe al doilea circuit, deși seamănă mult cu primul, nu putem scrie aceeași
+egalitate: lipsește săgeata de tensiune de la componenta din stânga-jos.
+
+**Observație:** faptul că nu există săgeată de tensiune de-a lungul porțiunilor
+de circuit unde sunt numai fire conductoare nu are nicio importanță, fiindcă
+tensiunea la bornele unui conductor perfect este nulă. Putem, dacă vrem, să
+scriem și tensiunile acelea, dar ele valorează zero și nu schimbă nimic în
+sumele tensiunilor.
+
+---
+
+## 5. Rezolvarea exercițiului-tip
+
+**1.** Voltmetrul trebuie legat în derivație, cu borna **COM** la coada săgeții
+și borna **V** de partea vârfului săgeții, așa cum e arătat mai jos.
+
+<FiguraManual
+  src="c02-exercitiu-tip-rezolvare.png"
+  lat={444}
+  latime={311}
+  inalt={325}
+  eticheta="Același circuit, cu voltmetrul legat în derivație pe rezistorul tensiunii u₃"
+  legenda="Voltmetrul se leagă în derivație: borna V spre vârful săgeții lui U₃, borna COM spre coada ei."
+/>
+
+**2.** În **ochiul din stânga** nu există decât o singură tensiune care merge în
+sensul acelor de ceasornic ($U$) și două tensiuni care merg în sens contrar
+($U_1$ și $U_2$), deci avem:
+
+$$
+U = U_1 + U_2
+$$
+
+de unde deducem:
+
+$$
+U_2 = U - U_1 = 6{,}0 - 3{,}0 = 3{,}0\ \text{V}
+$$
+
+În **ochiul din dreapta** nu există decât tensiunea $U_1$ care merge în sensul
+acelor de ceasornic, în timp ce $U_3$ și $U_4$ merg în sens contrar.
+
+:::warning Atenție
+
+Sensul unei tensiuni depinde de ochi. Astfel, $U_1$ are sensul acelor de
+ceasornic în ochiul din dreapta, dar sensul contrar în ochiul din stânga.
+
+:::
+
+Putem deci scrie:
+
+$$
+U_1 = U_3 + U_4
+$$
+
+deci:
+
+$$
+U_4 = U_1 - U_3 = 3{,}0 - 1{,}4 = 1{,}6\ \text{V}
+$$
+
+---
+
+:::note Ora următoare
+
+**LP6 — Legea ochiurilor pe circuite date.** Recunoașterea egalităților corecte
+și calculul tensiunilor care lipsesc.
+
+:::

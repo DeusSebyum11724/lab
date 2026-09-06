@@ -1,0 +1,139 @@
+---
+sidebar_position: 11
+sidebar_label: "C6 — Distanța și reciprocitatea"
+slug: /f7/interactiunea/c6
+title: "C6 — Efectul distanței și reciprocitatea"
+description: "De ce forța gravitațională scade de patru ori când distanța se dublează, și de ce cele două corpuri se atrag cu forțe egale."
+---
+
+import {
+  FigEfectulDistantei,
+  FigActiuneReactiune,
+} from '@site/src/components/Schema/gravitatie';
+
+# C6 — Efectul distanței și reciprocitatea
+
+:::info Planul orei
+
+1. Ce spune pătratul de la numitor
+2. Efectul distanței, în cifre
+3. Cele două forțe au aceeași valoare
+4. Cum se citește o formulă
+
+:::
+
+---
+
+## 1. Ce spune pătratul de la numitor
+
+Formula din ora trecută era:
+
+$$
+F_{A/B} = \frac{G \times m_A \times m_B}{d^2}
+$$
+
+La numitor nu stă distanța $d$, ci **pătratul** ei. Nu e un amănunt de scriere:
+de aici vine tot comportamentul forței gravitaționale.
+
+Dacă la numitor ar sta $d$, atunci dublarea distanței ar înjumătăți forța. Dar
+la numitor stă $d^2$, iar când $d$ se dublează, $d^2$ se face de $2^2 = 4$ ori
+mai mare. Forța, care are $d^2$ la numitor, se face de **4 ori mai mică**.
+
+---
+
+## 2. Efectul distanței, în cifre
+
+<FigEfectulDistantei />
+
+:::tip De reținut
+
+Când depărtăm corpurile unul de altul, fără să le schimbăm masele:
+
+- distanța se **dublează** → forța se face de **4 ori** mai mică
+  (fiindcă $2^2 = 4$);
+- distanța se **triplează** → forța se face de **9 ori** mai mică
+  (fiindcă $3^2 = 9$);
+- distanța se face de **10 ori** mai mare → forța se face de **100 de ori**
+  mai mică (fiindcă $10^2 = 100$).
+
+Și invers: dacă apropiem corpurile la **jumătate** de distanță, forța se face de
+4 ori **mai mare**.
+
+:::
+
+Cu masele lucrurile stau altfel, fiindcă ele sunt la numărător și nu sunt
+ridicate la pătrat: dacă una dintre mase se dublează, forța se dublează pur și
+simplu; dacă amândouă se dublează, forța se face de $2 \times 2 = 4$ ori mai
+mare.
+
+---
+
+## 3. Cele două forțe au aceeași valoare
+
+În formula forței, schimbăm între ele indicele A și indicele B. Obținem forța pe
+care corpul B o exercită asupra corpului A:
+
+$$
+F_{B/A} = \frac{G \times m_B \times m_A}{d^2} = F_{A/B}
+$$
+
+Numărătorul e același, fiindcă $m_A \times m_B$ și $m_B \times m_A$ sunt același
+produs. Numitorul e și el același: distanța de la A la B e aceeași cu distanța
+de la B la A.
+
+<FigActiuneReactiune />
+
+:::danger Definiția 1
+
+Cele două corpuri se atrag reciproc, cu **forțe de valori egale și de sensuri
+opuse**:
+
+$$
+F_{A/B} = F_{B/A}
+$$
+
+:::
+
+Regăsim aici **principiul acțiunilor reciproce**, pe care îl știm deja, de data
+aceasta pentru o forță care se exercită **la distanță**.
+
+:::warning Atenție
+
+Faptul că cele două forțe au aceeași valoare nu depinde de mase. Pământul atrage
+mărul cu exact aceeași forță cu care mărul atrage Pământul. Ce le deosebește nu
+sunt forțele, ci **efectul** lor: mărul, ușor, cade; Pământul, uriaș, rămâne
+practic pe loc.
+
+:::
+
+---
+
+## 4. Cum se citește o formulă
+
+O formulă de fizică nu e doar o rețetă de calcul. Ea spune și cum se schimbă
+rezultatul când se schimbă datele — și asta se poate verifica **fără să
+calculăm nimic**, doar comparând două situații.
+
+Dacă, de pildă, măsurăm forța la două distanțe diferite și constatăm că
+$F \times d^2$ dă același număr de ambele dăți, în timp ce $F \times d$ dă
+numere diferite, atunci formula cu $d^2$ la numitor este cea potrivită, iar cea
+cu $d$ nu.
+
+:::tip De reținut
+
+- $F$ este **invers proporțională cu $d^2$**: produsul $F \times d^2$ rămâne
+  același când distanța se schimbă.
+- $F$ este **direct proporțională cu fiecare masă**: dacă o masă se face de $k$
+  ori mai mare, forța se face tot de $k$ ori mai mare.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP6 — Distanța și reciprocitatea.** Un tabel de „de câte ori se schimbă
+forța dacă…", apoi racheta care se apropie de Marte, cele două stele ale unei
+stele duble și perechea Soare–Pământ.
+
+:::

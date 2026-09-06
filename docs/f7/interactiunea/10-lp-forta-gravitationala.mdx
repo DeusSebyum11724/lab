@@ -1,0 +1,354 @@
+---
+sidebar_position: 10
+sidebar_label: "LP5 — Calculul forței gravitaționale"
+slug: /f7/interactiunea/lp5
+title: "LP5 — Calculul forței gravitaționale"
+description: "Lucrare practică: notația științifică și calculul forței gravitaționale dintre corpuri obișnuite."
+---
+
+import {
+  FigSatelit,
+  FigDoiElevi,
+  FigBilePetanque,
+  FigStancaDrumet,
+} from '@site/src/components/Schema/gravitatie';
+
+# LP5 — Calculul forței gravitaționale
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C5 — Interacțiunea gravitațională](./09-curs-interactiunea-gravitationala.mdx)**.
+Cinci probe, cu timpul de lucru al fiecăreia; în total 45 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Notația științifică | — | 10 min |
+| 2 | Orbita joasă | ★ | 5 min |
+| 3 | Forța dintre doi elevi | ★ | 10 min |
+| 4 | Bile de petanque | ★★ | 10 min |
+| 5 | Forța gravitațională | ★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Notația științifică
+
+**Timp de lucru: 10 minute.**
+
+Numerele din capitolul acesta nu se pot scrie comod. Masa Soarelui are treizeci
+și una de cifre, constanta $G$ are zece zerouri după virgulă. Fizica le scrie de
+aceea altfel.
+
+:::danger Definiția 1
+
+Un număr scris în **notație științifică** are forma:
+
+$$
+a \times 10^{n}
+$$
+
+unde $a$ este un număr între 1 și 10 (o singură cifră înaintea virgulei), iar
+$n$ este un număr întreg.
+
+:::
+
+**Cum se citește puterea lui 10.**
+
+- $10^{n}$, cu $n$ pozitiv, este 1 urmat de $n$ zerouri: $10^{3} = 1\,000$,
+  $10^{6} = 1\,000\,000$.
+- $10^{-n}$ este 1 împărțit la $10^{n}$: $10^{-3} = 0{,}001$,
+  $10^{-6} = 0{,}000\,001$.
+
+Ca să treci de la scrierea obișnuită la cea științifică, muți virgula până
+rămâne **o singură cifră** înaintea ei și numeri cu câte locuri ai mutat-o.
+Mutată spre stânga, exponentul iese pozitiv; mutată spre dreapta, iese negativ.
+
+| Mărimea | Scrisă obișnuit | Scrisă științific |
+|---|---|---|
+| constanta $G$ | $0{,}000\,000\,000\,066\,7$ | $6{,}67 \times 10^{-11}$ |
+| raza Pământului | $6\,400\,000$ m | $6{,}4 \times 10^{6}$ m |
+| distanța Pământ–Soare | $150\,000\,000\,000$ m | $1{,}50 \times 10^{11}$ m |
+| masa Lunii | $73\,700\,000\,000\,000\,000\,000\,000$ kg | $7{,}37 \times 10^{22}$ kg |
+| masa Pământului | $6\,000\,000\,000\,000\,000\,000\,000\,000$ kg | $6{,}0 \times 10^{24}$ kg |
+
+**Cum se calculează cu ele.** Se lucrează separat cu numerele din față și
+separat cu puterile lui 10:
+
+$$
+10^{a} \times 10^{b} = 10^{a+b} \qquad
+\frac{10^{a}}{10^{b}} = 10^{a-b} \qquad
+\left(x \times 10^{a}\right)^{2} = x^{2} \times 10^{2a}
+$$
+
+**Exemplu lucrat.**
+
+$$
+\frac{6{,}67 \times 10^{-11} \times 6{,}0 \times 10^{24}}{\left(6{,}4 \times 10^{6}\right)^{2}}
+= \frac{40{,}0 \times 10^{13}}{41{,}0 \times 10^{12}}
+= \frac{4{,}00 \times 10^{14}}{4{,}10 \times 10^{13}} \approx 9{,}8
+$$
+
+**Exerciții.** Scrie în notație științifică:
+
+**a.** $20\,000\,\text{kg}$ &nbsp;&nbsp; **b.** $0{,}715\ \text{kg}$
+&nbsp;&nbsp; **c.** $3\,388\ \text{km}$, în metri &nbsp;&nbsp;
+**d.** $0{,}000\,000\,089\ \text{N}$
+
+Apoi calculează, lăsând rezultatul în notație științifică:
+
+**e.** $\left(2 \times 10^{4}\right)^{2}$ &nbsp;&nbsp;
+**f.** $\dfrac{4{,}7 \times 10^{8}}{6\,282}$
+
+<details>
+<summary>Rezolvare</summary>
+
+**a.** $20\,000 = 2 \times 10^{4}\ \text{kg}$. Virgula, care stă la sfârșit, se
+mută cu patru locuri spre stânga.
+
+**b.** $0{,}715 = 7{,}15 \times 10^{-1}\ \text{kg}$. Virgula se mută cu un loc
+spre dreapta, deci exponentul e negativ.
+
+**c.** $3\,388\ \text{km} = 3\,388\,000\ \text{m} = 3{,}388 \times 10^{6}\ \text{m}$.
+
+**d.** $0{,}000\,000\,089 = 8{,}9 \times 10^{-8}\ \text{N}$: virgula se mută cu
+opt locuri spre dreapta.
+
+**e.** $\left(2 \times 10^{4}\right)^{2} = 2^{2} \times 10^{8} = 4 \times 10^{8}$.
+
+**f.** Scriem întâi numitorul în notație științifică:
+$6\,282 = 6{,}282 \times 10^{3}$. Atunci:
+
+$$
+\frac{4{,}7 \times 10^{8}}{6{,}282 \times 10^{3}}
+= \frac{4{,}7}{6{,}282} \times 10^{5} = 0{,}75 \times 10^{5} = 7{,}5 \times 10^{4}
+$$
+
+La ultimul pas am mutat virgula cu un loc spre dreapta în număr și am scăzut
+1 din exponent, ca să rămână o singură cifră înaintea virgulei.
+
+</details>
+
+---
+
+## 2. Orbita joasă
+
+**Liceul d'Arsonval, Brive** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+
+Un satelit artificial al Pământului descrie o orbită circulară la altitudinea
+$h = 800\ \text{km}$, în 1 h și 44,7 min.
+
+<FigSatelit />
+
+**1.** Care este viteza acestui satelit?
+
+**2.** Durata de viață utilă a satelitului este de 15 ani. Câte orbite descrie
+el în tot timpul misiunii sale?
+
+*Date:*
+
+- Raza Pământului este $R = 6\,378\ \text{km}$.
+- Lungimea unui cerc de rază $R$ este $2\pi R$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Satelitul descrie un cerc de rază $R + h$, deci de lungime
+$2\pi (R + h)$, într-un timp:
+
+$$
+t = 3\,600 + 44{,}7 \times 60 = 6\,282\ \text{s}
+$$
+
+Viteza lui este deci:
+
+$$
+v = \frac{2\pi (R + h)}{t}
+= \frac{2\pi \times (6\,378 + 800) \times 10^{3}}{6\,282}
+= 7{,}18 \times 10^{3}\ \text{m/s}
+$$
+
+**2.** Notăm $T = 15$ ani durata de viață utilă a satelitului. Numărul total de
+orbite pe care le descrie este dat de:
+
+$$
+N = \frac{T}{t}
+$$
+
+Trebuie bineînțeles ca $T$ și $t$ să fie exprimate în aceleași unități.
+Transformăm deci $T$ în secunde:
+
+$$
+T = 15 \times 365 \times 24 \times 3\,600 = 4{,}7 \times 10^{8}\ \text{s}
+$$
+
+Satelitul efectuează deci:
+
+$$
+N = \frac{4{,}7 \times 10^{8}}{6\,282} \approx 7{,}5 \times 10^{4}\ \text{orbite}
+$$
+
+</details>
+
+---
+
+## 3. Forța dintre doi elevi
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Doi elevi au fiecare masa de 50 kg și stau la un metru unul de altul.
+
+<FigDoiElevi />
+
+**1.** Calculează valoarea forței gravitaționale cu care fiecare îl atrage pe
+celălalt.
+
+**2.** Calculează greutatea unui elev, luând $g = 9{,}8\ \text{N/kg}$.
+
+**3.** De câte ori este greutatea mai mare decât forța de la punctul 1? Se simte
+atracția dintre cei doi elevi?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Aplicăm formula din curs, cu $m_A = m_B = 50\ \text{kg}$ și
+$d = 1\ \text{m}$:
+
+$$
+F = \frac{G \times m_A \times m_B}{d^{2}}
+= \frac{6{,}67 \times 10^{-11} \times 50 \times 50}{1^{2}}
+$$
+
+La numărător: $50 \times 50 = 2\,500 = 2{,}5 \times 10^{3}$, deci:
+
+$$
+F = 6{,}67 \times 2{,}5 \times 10^{-11+3} = 16{,}7 \times 10^{-8}
+= 1{,}7 \times 10^{-7}\ \text{N}
+$$
+
+**2.** Greutatea fiecărui elev este:
+
+$$
+P = m \times g = 50 \times 9{,}8 = 490\ \text{N}
+$$
+
+**3.** Facem raportul:
+
+$$
+\frac{P}{F} = \frac{490}{1{,}7 \times 10^{-7}} \approx 2{,}9 \times 10^{9}
+$$
+
+Greutatea este de aproape **trei miliarde de ori** mai mare decât atracția
+dintre cei doi elevi. Forța aceea nu se simte în niciun fel — și nici nu poate
+fi măsurată cu un dinamometru de clasă.
+
+</details>
+
+---
+
+## 4. Bile de petanque
+
+**Liceul Colbert, Lorient** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră două bile de petanque de masă $m = 715\ \text{g}$, așezate pe sol,
+cu centrele lor la distanța $d = 25\ \text{cm}$.
+
+<FigBilePetanque />
+
+**1.** Care este greutatea fiecărei bile?
+
+**2.** Calculează valoarea forței de interacțiune gravitațională $F$ dintre cele
+două bile.
+
+**3.** Compară forța aceasta cu greutatea lor.
+
+*Date:*
+
+- $g = 9{,}81\ \text{N/kg}$
+- $G = 6{,}67 \times 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Greutatea fiecărei bile este dată de:
+
+$$
+P = m \times g = 0{,}715 \times 9{,}81 = 7{,}01\ \text{N}
+$$
+
+**2.** Valoarea forței de interacțiune gravitațională dintre cele două bile este
+dată de:
+
+$$
+F = \frac{G \times m \times m}{d^{2}} = \frac{G \times m^{2}}{d^{2}}
+$$
+
+Aplicația numerică — avem grijă să transformăm mai întâi totul în unitățile
+Sistemului Internațional, adică masa în kilograme și distanța în metri:
+
+$$
+F = \frac{6{,}67 \times 10^{-11} \times 0{,}715^{2}}{0{,}25^{2}}
+= 5{,}5 \times 10^{-10}\ \text{N}
+$$
+
+**3.** Forța aceasta este mult mai mică decât greutatea lor. Mai exact, avem:
+
+$$
+\frac{F}{P} = 7{,}8 \times 10^{-11} \qquad \text{sau} \qquad
+\frac{P}{F} = 1{,}3 \times 10^{10}
+$$
+
+Greutatea este de treisprezece miliarde de ori mai mare decât forța de
+interacțiune gravitațională dintre bile.
+
+</details>
+
+---
+
+## 5. Forța gravitațională
+
+**Liceul Pasteur, Neuilly** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+În exercițiul acesta se consideră că atât stânca, cât și drumețul sunt
+echivalente cu mase punctiforme egale cu masele lor și așezate în centrele lor.
+
+Calculează valoarea forței de interacțiune gravitațională dintre o stâncă de
+masă $M = 20$ tone și un drumeț de masă $m = 60\ \text{kg}$, care trece la
+$d = 30$ de metri de stâncă.
+
+*Dată:* $G = 6{,}67 \times 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2$.
+
+<FigStancaDrumet />
+
+<details>
+<summary>Rezolvare</summary>
+
+Numim $F_{S/D}$ forța gravitațională exercitată de stâncă asupra drumețului, și
+$F_{D/S}$ forța exercitată de drumeț asupra stâncii. Cele două au aceeași
+valoare și sensuri contrare.
+
+Valoarea acestor forțe este dată de:
+
+$$
+F = F_{S/D} = F_{D/S} = \frac{G \times M \times m}{d^{2}}
+$$
+
+*Aplicația numerică.* Transformăm masa stâncii în unitatea de masă a Sistemului
+Internațional (fiindcă în sistemul acesta de unități ne e dată valoarea lui
+$G$), adică $M = 2{,}0 \times 10^{4}\ \text{kg}$:
+
+$$
+F = \frac{6{,}67 \times 10^{-11} \times 2{,}0 \times 10^{4} \times 60}{30^{2}}
+\approx 8{,}9 \times 10^{-8}\ \text{N}
+$$
+
+Forța aceasta este cu totul neglijabilă față de greutatea drumețului
+($P \approx 60 \times 10 = 600\ \text{N}$). Drumețul nu simte deci atracția
+aceasta.
+
+</details>
+
+---

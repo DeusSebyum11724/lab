@@ -1,0 +1,309 @@
+---
+sidebar_position: 8
+sidebar_label: "LP4 — Desenarea vectorilor-viteză"
+slug: /f6/mecanica/lp4
+title: "LP4 — Desenarea vectorilor-viteză"
+description: "Lucrare practică: viteze instantanee citite de pe cronofotografii și vectori-viteză desenate la scară."
+---
+
+import {
+  FigCursaDeAlergare,
+  FigBalci,
+  FigMobilPernaAer,
+} from '@site/src/components/Schema/miscare';
+
+# LP4 — Desenarea vectorilor-viteză
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C4 — Vectorul-viteză](./07-curs-vectorul-vitezei.mdx)**.
+Patru probe, cu timpul de lucru al fiecăreia; în total 65 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Precizia unei cronometrări | ★★ | 15 min |
+| 2 | Cursa de alergare | ★★ | 15 min |
+| 3 | Bâlciul | ★★ | 15 min |
+| 4 | Mobil pe pernă de aer | ★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Precizia unei cronometrări
+
+**Liceul Paul Claudel, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+**1.** Un campion la 200 de metri parcurge distanța asta în
+$20{,}12\ \text{secunde}$. Care este viteza lui medie în metri pe secundă?
+
+**2.** Trece viteza asta în kilometri pe oră.
+
+**3.** Ce distanță parcurge alergătorul într-o sutime de secundă, adică în
+timpul care dă precizia cronometrării?
+
+**4.** Atletul este filmat cu o cameră obișnuită, care ia 25 de imagini pe
+secundă. Filmul se dă cu încetinitorul. Ce distanță parcurge atletul între două
+imagini alăturate? Pare filmul cu încetinitorul curgător? Cum s-ar putea îndrepta
+lucrul ăsta?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Viteza alergătorului este dată de:
+
+$$
+v = \frac{l}{t}
+$$
+
+unde $l = 200\ \text{m}$ este distanța parcursă, iar $t = 20{,}12\ \text{s}$ este
+timpul făcut pentru a o parcurge. Aplicația numerică dă:
+
+$$
+v = \frac{200}{20{,}12} = 9{,}940\ \text{m/s}
+$$
+
+**2.** Viteza asta, scrisă în kilometri pe oră, este:
+
+$$
+v = 9{,}940 \times 3{,}6 = 35{,}78\ \text{km/h}
+$$
+
+**3.** Fie $\tau = 0{,}01\ \text{s}$ precizia cronometrării. Distanța $d$
+parcursă de atlet în timpul ăsta este:
+
+$$
+d = \tau \times v = 0{,}01 \times 9{,}940 = 0{,}0994\ \text{m} = 9{,}94\ \text{cm}
+$$
+
+**4.** Timpul care desparte două imagini este:
+
+$$
+t' = \frac{1}{25} = 0{,}04\ \text{s}
+$$
+
+În timpul ăsta, atletul parcurge distanța $d'$ dată de:
+
+$$
+d' = t' \times v = 0{,}04 \times 9{,}940 = 0{,}3976\ \text{m} \approx 40\ \text{cm}
+$$
+
+Atletul parcurge deci o distanță însemnată — cam cât grosimea corpului lui —
+între două imagini alăturate. Filmul cu încetinitorul este deci departe de a
+părea curgător și avem mai degrabă impresia că atletul „sare” dintr-o poziție în
+alta de la o imagine la alta. Ca să îndreptăm lucrul ăsta, e nevoie de o cameră
+care ia imagini într-un ritm mult mai des: cel puțin 100 de imagini pe secundă.
+
+</details>
+
+---
+
+## 2. Cursa de alergare
+
+**Liceul Paul Sabatier, Carcassonne** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Se face cronofotografia unui alergător, luând câte o imagine la fiecare
+$50\ \text{ms}$. Două repere luminoase A și B, așezate unul pe gulerul
+alergătorului și celălalt pe pantoful lui drept, dau imaginea de mai jos, făcută
+la scara $1/30$: un milimetru pe figură corespunde la $30\ \text{mm}$ pe corpul
+studiat.
+
+<FigCursaDeAlergare />
+
+**1.** Care dintre cele două repere luminoase, A sau B, atinge viteza instantanee
+cea mai mare în referențialul terestru?
+
+**2.** Cât este viteza instantanee a punctului B la momentul $t_5$? O vom scrie
+în kilometri pe oră.
+
+**3.** La ce moment sau la ce momente este pantoful drept al alergătorului în
+contact cu solul?
+
+**4.** Din întrebarea dinainte, deduce viteza medie a alergătorului pe un pas.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se constată că cea mai mare distanță de la un punct la următorul se atinge
+pe înregistrarea punctului B, între momentele $t_4$ și $t_5$, precum și între
+$t_5$ și $t_6$. Prin urmare, punctul **B** este cel care atinge viteza
+instantanee cea mai mare în referențialul terestru.
+
+**2.** Măsurăm pe figură distanța de la imaginea punctului B la momentul $t_4$
+până la imaginea punctului B la momentul $t_6$. Găsim $d = 1{,}5\ \text{cm}$. Din
+ea scoatem o estimare a vitezei instantanee $v_5$ la momentul de mijloc $t_5$:
+
+$$
+v_5 \approx \frac{d}{t_6 - t_4} \approx \frac{1{,}5 \times 30 \times 0{,}01}{0{,}1} = 4{,}5\ \text{m/s}
+$$
+
+Factorul 30 de la numărător vine din schimbarea de scară, iar factorul
+$0{,}01$ trece centimetrii în metri. Momentele $t_4$ și $t_6$ sunt despărțite de
+două perioade ale cronofotografiei, adică $0{,}1\ \text{s}$, pe care le trecem la
+numitor. Estimarea obținută se trece acum în kilometri pe oră:
+
+$$
+v_5 \approx 4{,}5 \times 3{,}6 \approx 16{,}2\ \text{km/h}
+$$
+
+**3.** Când pantoful este în contact cu solul, viteza lui instantanee în
+referențialul solului, adică în referențialul terestru, este aproape nulă.
+Pantoful este deci în contact cu solul la momentele în care distanța dintre două
+puncte alăturate ale cronofotografiei este cea mai mică. Asta se întâmplă la
+momentele $t_2$ și $t_8$.
+
+Firește, momentele astea de contact sunt și momentele în care înălțimea punctului
+B este cea mai mică.
+
+**4.** Distanța care desparte imaginile punctului B la momentele $t_2$ și $t_8$,
+pe care o putem măsura pe figură, este $D \approx 25\ \text{mm}$. Pe corpul
+studiat, distanța asta înseamnă $25 \times 30 = 750\ \text{mm}$, adică
+$0{,}75\ \text{m}$. Deducem de aici, ca și mai înainte, viteza medie a
+alergătorului între momentele $t_2$ și $t_8$:
+
+$$
+v = \frac{D}{t_8 - t_2} \approx \frac{0{,}75}{0{,}3} = 2{,}5\ \text{m/s}
+$$
+
+Trecem viteza asta în kilometri pe oră:
+
+$$
+v \approx 2{,}5 \times 3{,}6 \approx 9\ \text{km/h}
+$$
+
+</details>
+
+---
+
+## 3. Bâlciul
+
+**Liceul Hoche, Versailles** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Într-un bâlci, doi copii, Valentina și Florin, sunt pe un carusel și se află în
+două nacele diferite. Ne așezăm în referențialul terestru. Valentina descrie un
+cerc de rază $R = 5{,}0\ \text{m}$, iar Florin descrie un cerc de rază
+$R = 3{,}0\ \text{m}$. Caruselul face în total 20 de ture, care durează 5 minute.
+
+<FigBalci />
+
+**1.** Calculează vitezele medii ale Valentinei și ale lui Florin.
+
+**2.** Pe figura de mai sus, desenează săgețile-viteză ale Valentinei în
+pozițiile V și V′, și ale lui Florin în pozițiile F și F′. Vom lua scara
+$1\ \text{cm}$ pentru $1\ \text{m/s}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Lungimea unui cerc de rază $R$ este $2\pi R$, deci la fiecare tură fiecare
+copil parcurge distanța $2\pi R$, adică în total $20 \times 2\pi R = 40\pi R$,
+fiindcă acest carusel face douăzeci de ture. Cele douăzeci de ture durează în
+total un timp $T = 5\ \text{min} = 5 \times 60 = 300\ \text{s}$. Viteza unui
+copil se obține pur și simplu din relația
+
+$$
+\text{viteza} = \frac{\text{distanța}}{\text{timpul}}
+$$
+
+adică:
+
+$$
+v = \frac{40\pi R}{T}
+$$
+
+Aplicația numerică pentru Valentina dă:
+
+$$
+v = \frac{40\pi \times 5}{300} \approx 2{,}1\ \text{m/s}
+$$
+
+iar aplicația numerică pentru Florin dă:
+
+$$
+v = \frac{40\pi \times 3}{300} \approx 1{,}3\ \text{m/s}
+$$
+
+**2.** Săgeata-viteză este tangentă la traiectorie. Săgețile care arată viteza
+Valentinei au, după scara dată în enunț, lungimea de $2{,}1\ \text{cm}$, iar cele
+care arată viteza lui Florin au lungimea de $1{,}3\ \text{cm}$.
+
+<FigBalci rezolvare />
+
+</details>
+
+---
+
+## 4. Mobil pe pernă de aer
+
+**Liceul Victor Duruy, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **20 minute**
+
+Pe o masă orizontală, un mobil pe pernă de aer S este legat de un punct fix O
+printr-un fir care nu se întinde. Se lansează mobilul și se înregistrează, la
+intervale de timp egale $\tau = 10\ \text{ms}$, pozițiile succesive $M_i$ ale
+punctului M aflat în centrul mobilului. Prima parte a mișcării se face cu firul
+întins, apoi firul se rupe. Înregistrarea obținută este reprodusă mai jos.
+
+<FigMobilPernaAer />
+
+**1.** Se constată, privind înregistrarea, că mișcarea punctului M se poate
+descompune în două faze deosebite.
+
+**(a)** Arată sub forma $M_i M_j$ cele două părți care corespund acestor două
+faze.
+
+**(b)** Pentru fiecare dintre ele, spune ce fel de mișcare este.
+
+**2.** Evaluează vitezele mobilului în punctele $M_5$ și $M_{15}$. Desenează-le
+pe înregistrare. Vom lua ca scară a vitezei: $1\ \text{cm}$ reprezintă
+$0{,}4\ \text{m/s}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1. (a)** Prima parte a mișcării corespunde punctelor de la $M_1$ la $M_9$, iar
+a doua parte a mișcării corespunde punctelor de la $M_9$ la $M_{16}$.
+
+**(b)** În prima parte, mișcarea este **circulară**, cu centrul în O, și
+**uniformă**, fiindcă unghiul sub care se văd din O două poziții vecine este
+același de fiecare dată.
+
+În a doua parte, mișcarea este **rectilinie** — punctele corespunzătoare sunt
+așezate pe o dreaptă — și **uniformă**, fiindcă distanța de la un punct la
+următorul este constantă.
+
+**2.** Ca să evaluăm viteza în punctul $M_5$, măsurăm distanța care desparte
+punctele $M_4$ și $M_6$, apoi împărțim la intervalul de timp $2\tau$ care
+desparte trecerile prin punctele astea. Găsim:
+
+$$
+d(M_4, M_6) \approx 1{,}6\ \text{cm}
+$$
+
+deci avem:
+
+$$
+v_5 = \frac{d(M_4, M_6)}{2\tau} \approx \frac{0{,}016}{0{,}020} \approx 0{,}80\ \text{m/s}
+$$
+
+Săgeata care arată viteza în $M_5$ trebuie deci să aibă lungimea
+$0{,}80 : 0{,}4 = 2{,}0\ \text{cm}$.
+
+În același fel avem:
+
+$$
+v_{15} = \frac{d(M_{14}, M_{16})}{2\tau} \approx \frac{0{,}016}{0{,}020} \approx 0{,}80\ \text{m/s}
+$$
+
+Săgeata care arată viteza în $M_{15}$ trebuie deci să aibă tot lungimea
+$0{,}80 : 0{,}4 = 2{,}0\ \text{cm}$.
+
+Săgețile-viteză cerute sunt trecute pe figura de mai jos.
+
+<FigMobilPernaAer rezolvare />
+
+</details>
+
+---

@@ -1,0 +1,171 @@
+---
+sidebar_position: 5
+sidebar_label: "C3 — Legea refracției"
+slug: /f8/optica/c3
+title: "C3 — Legea refracției"
+description: "Legea refracției n₁·sin i₁ = n₂·sin i₂, citirea tabelului sinusurilor și sensul în care se deviază raza."
+---
+
+import { FigApropiereDeNormala } from '@site/src/components/Schema/reflexie-refractie';
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Legea refracției
+
+:::info Planul orei
+
+1. Introducere
+2. Legea refracției
+3. Tabelul sinusurilor
+4. În ce sens se deviază raza
+5. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+<FiguraManual
+  src="c05-prisma-enunt.png"
+  lat={601}
+  inalt={218}
+  eticheta="Prismă cu unghi de 45 de grade, scufundată în apă, atinsă de o rază orizontală"
+  legenda="Raza ajunge cu incidență normală pe fața din stânga a prismei."
+/>
+
+**Se consideră prisma de mai sus, cu indicele de refracție $1{,}58$, scufundată
+în apă, cu indicele de refracție $1{,}33$. Trasează mersul razei luminoase. Se
+va ține cont de eventualele raze reflectate.**
+
+Exercițiul acesta cere noțiunea de refracție a luminii, adică devierea razei
+atunci când ea ajunge într-un mediu cu indice diferit. Ca să-l rezolvăm, ne
+trebuie legea care leagă între ele unghiurile de o parte și de alta a dioptrului.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei, când vom avea tot
+ce ne trebuie pentru el.
+
+---
+
+## 2. Legea refracției
+
+:::tip De reținut — legile refracției
+
+1. Raza refractată și raza incidentă sunt în planul de incidență.
+2. Unghiul de incidență $i_1$ și unghiul razei refractate $i_2$ verifică relația
+
+$$
+n_1 \times \sin(i_1) = n_2 \times \sin(i_2)
+$$
+
+:::
+
+Aceasta este relația pe care ai găsit-o singur la lucrarea practică precedentă:
+raportul sinusurilor nu depinde de unghi, ci numai de cele două medii.
+
+---
+
+## 3. Tabelul sinusurilor
+
+Ca să folosim legea refracției avem nevoie de sinusurile unghiurilor. Le luăm de
+aici:
+
+| Unghi | sin | Unghi | sin |
+|---|---|---|---|
+| 0° | 0,000 | 50° | 0,766 |
+| 5° | 0,087 | 55° | 0,819 |
+| 10° | 0,174 | 60° | 0,866 |
+| 15° | 0,259 | 65° | 0,906 |
+| 20° | 0,342 | 70° | 0,940 |
+| 25° | 0,423 | 75° | 0,966 |
+| 30° | 0,500 | 80° | 0,985 |
+| 35° | 0,574 | 85° | 0,996 |
+| 40° | 0,643 | 90° | 1,000 |
+| 45° | 0,707 | | |
+
+**În sens direct**, când știm unghiul: pentru $35^\circ$ citim pe rândul lui
+$\sin 35^\circ = 0{,}574$.
+
+**În sens invers**, când calculul ne-a dat un sinus și vrem unghiul: căutăm
+numărul în coloana sinusurilor și citim unghiul de pe același rând. Dacă numărul
+cade între două rânduri, unghiul cade și el între cele două unghiuri. De pildă,
+dacă am obținut $\sin i = 0{,}800$, vedem că numărul e între
+$\sin 50^\circ = 0{,}766$ și $\sin 55^\circ = 0{,}819$, mai aproape de al
+doilea: unghiul este de aproximativ $53^\circ$.
+
+:::warning Atenție
+
+Unghiurile se dau și se citesc numai în **grade**. Sinusul unui unghi nu trece
+niciodată de $1$ — cea mai mare valoare din tabel este $\sin 90^\circ = 1{,}000$.
+
+:::
+
+---
+
+## 4. În ce sens se deviază raza
+
+Legea refracției spune și încotro se abate raza, fără niciun calcul.
+
+<FigApropiereDeNormala />
+
+:::tip De reținut
+
+- Când lumina trece într-un mediu cu indice **mai mare**, raza se **apropie** de
+  normală: $i_2$ este mai mic decât $i_1$.
+- Când lumina trece într-un mediu cu indice **mai mic**, raza se **depărtează**
+  de normală: $i_2$ este mai mare decât $i_1$.
+
+:::
+
+O rază care cade perpendicular pe dioptru, adică cu $i_1 = 0^\circ$, nu se
+deviază deloc: din lege obținem $\sin i_2 = 0$, deci $i_2 = 0^\circ$.
+
+---
+
+## 5. Rezolvarea exercițiului-tip
+
+<FiguraManual
+  src="c05-prisma-rezolvare.png"
+  lat={468}
+  inalt={291}
+  latime={320}
+  eticheta="Raza incidentă pe fața oblică a prismei dă o rază refractată și una reflectată"
+  legenda="Raza incidentă pe fața oblică a prismei dă naștere unei raze refractate și unei raze reflectate."
+/>
+
+Raza lovește perpendicular fața din stânga a prismei, deci nu suferă acolo
+nicio deviere. Ea ajunge pe fața oblică, iar acolo se pune întrebarea care sunt
+raza refractată și raza reflectată.
+
+Notăm cu $i$ unghiul razei refractate. Scriind legea refracției, avem:
+
+$$
+n_{\text{prismă}} \times \sin 45^\circ = n_{\text{apă}} \times \sin i
+$$
+
+adică
+
+$$
+\sin i = \frac{1{,}58 \times \sin 45^\circ}{1{,}33}
+= \frac{1{,}58 \times 0{,}707}{1{,}33} = 0{,}840
+$$
+
+Citim invers în tabel: $0{,}840$ este între $\sin 55^\circ = 0{,}819$ și
+$\sin 60^\circ = 0{,}866$, mai aproape de primul. Prin urmare
+
+$$
+i = 57^\circ
+$$
+
+Pe de altă parte, raza reflectată face un unghi de $45^\circ$ cu normala la
+dioptru și pleacă deci vertical, în direcția feței de jos, pe care o atinge cu
+incidență normală. Ea traversează așadar dioptrul de jos fără să fie deviată.
+Această rază este reprezentată punctat pe figură.
+
+---
+
+:::note Ora următoare
+
+**LP3 — Probleme de refracție.** Diamantul, dioptrul sticlă/apă, proiectorul din
+bazin, lama cu fețe paralele, acvariul și moneda din vas.
+
+:::

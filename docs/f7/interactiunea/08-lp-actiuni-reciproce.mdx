@@ -1,0 +1,247 @@
+---
+sidebar_position: 8
+sidebar_label: "LP4 — Compunerea forțelor"
+slug: /f7/interactiunea/lp4
+title: "LP4 — Compunerea forțelor și acțiunile reciproce"
+description: "Lucrare practică: bilanțul forțelor unei mașini desenat la scară, maimuța agățată de liană, mobilul pe pernă de aer și traiectoria unui corp aruncat."
+---
+
+import {
+  FigMasina,
+  FigCompunereMasina,
+  FigMaimutaLiana,
+  FigMobilArc,
+  FigInregistrareMobil,
+  FigTraiectorieBalistica,
+} from '@site/src/components/Schema/forte';
+
+# LP4 — Compunerea forțelor și acțiunile reciproce
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C4 — Principiul acțiunilor
+reciproce](./07-curs-actiuni-reciproce.mdx)**. Patru probe, cu timpul de lucru
+al fiecăreia; în total 55 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Mașina pe șosea | ★★ | 15 min |
+| 2 | Maimuța și liana | ★★ | 10 min |
+| 3 | Mobilul pe pernă de aer | ★★★ | 15 min |
+| 4 | Corpul aruncat oblic | ★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Mașina pe șosea
+
+**Liceul Saint-Martin, Pontoise** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Mașina reprezentată mai jos, cu greutatea de 6000 N, rulează cu viteză
+constantă pe o șosea dreaptă. Forța exercitată de aer asupra caroseriei este
+orizontală, îndreptată spre spate, și are valoarea de 2000 N.
+
+<FigMasina />
+
+Reprezintă pe o schemă greutatea, forța exercitată de aer și reacțiunea șoselei.
+Se ia scara **1 cm pentru 1000 N**.
+
+*Indicație:* se va presupune că reacțiunea șoselei este aplicată pe jumătate pe
+puntea din față și pe jumătate pe puntea din spate.
+
+<details>
+<summary>Rezolvare</summary>
+
+Mașina are o mișcare rectilinie uniformă, deci, prin principiul inerției,
+forțele care i se aplică **se compensează**. Reacțiunea $R$ a șoselei trebuie
+așadar să echilibreze, ea singură, greutatea $P$ și forța $F$ a aerului
+împreună.
+
+Greutatea este verticală și îndreptată în jos, de 6000 N. Forța aerului este
+orizontală și îndreptată spre spate, de 2000 N. Prin urmare, reacțiunea șoselei
+trebuie să aibă o parte verticală în sus de 6000 N și o parte orizontală
+îndreptată spre înainte de 2000 N.
+
+La scara aleasă, asta înseamnă 6 cm în sus și 2 cm înainte. Reacțiunea este
+diagonala dreptunghiului construit pe ele.
+
+<FigCompunereMasina />
+
+Valoarea ei se află cu teorema lui Pitagora:
+
+$$
+R^2 = 6000^2 + 2000^2 = 40\,000\,000, \qquad R \approx 6300 \ \text{N},
+$$
+
+adică o săgeată de aproximativ 6,3 cm.
+
+Reacțiunea fiind aplicată pe jumătate pe fiecare punte, pe fiecare dintre ele
+avem:
+
+$$
+R_1 = R_2 = \frac{R}{2} \approx 3150 \ \text{N},
+$$
+
+adică 3 cm în sus și 1 cm înainte, pentru fiecare punte.
+
+<FigMasina forte />
+
+Se vede astfel că reacțiunea șoselei are o parte verticală și o parte
+orizontală îndreptată spre înainte, care se datorează tracțiunii motorului.
+
+</details>
+
+---
+
+## 2. Maimuța și liana
+
+**Liceul Saint-Sernin, Toulouse** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+O maimuță este agățată de o liană, care este ea însăși prinsă de două ramuri.
+
+<FigMaimutaLiana />
+
+**1.** Care sunt forțele exercitate asupra maimuței?
+
+**2.** Care sunt forțele exercitate de liană asupra ramurii în punctul A și
+asupra celeilalte ramuri în punctul B?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Maimuța este supusă la două forțe: **greutatea** ei $P$ și **reacțiunea**
+$R$ a lianei. La echilibru, aceste două forțe se anulează, așa cum e reprezentat
+în figura de mai jos.
+
+<FigMaimutaLiana etapa={1} />
+
+**2.** Forța $F_A$ exercitată de liană asupra ramurii în punctul A este egală cu
+tensiunea lianei în acel punct. Ea este îndreptată de-a lungul lianei. Același
+raționament se aplică și forței $F_B$ exercitate de liană asupra ramurii în
+punctul B.
+
+<FigMaimutaLiana etapa={2} />
+
+De notat că, la echilibru, forțele exercitate **asupra lianei** sunt cele opuse
+lui $F_A$, lui $F_B$ și lui $R$ — în virtutea principiului acțiunilor reciproce
+—, iar compunerea acestor trei forțe dă zero.
+
+</details>
+
+---
+
+## 3. Mobilul pe pernă de aer
+
+**Liceul Montalembert, Nogent-sur-Marne** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **15 minute**
+
+Se consideră un mobil pe pernă de aer. El este legat, pe de o parte, de un
+resort prins de un punct fix și, pe de altă parte, de o coardă pe care o poate
+întinde un operator.
+
+<FigMobilArc />
+
+**1.** La început, mobilul este în repaus. Ce se poate spune despre forțele care
+se exercită asupra lui? Fă o reprezentare schematică a lor.
+
+**2.** Operatorul întinde coarda atât de tare, încât sistemul de prindere al
+resortului în A se rupe. Ce se întâmplă? Ce caracteristici are mișcarea
+mobilului după rupere?
+
+**3.** Această mișcare poate fi studiată cu ajutorul înregistrării de mai jos.
+
+<FigInregistrareMobil />
+
+**a.** Arată că mișcarea prevăzută la întrebarea precedentă se verifică.
+
+**b.** Ce se întâmplă în dreptul punctului B?
+
+**c.** Ce se întâmplă în dreptul punctului C? Care ar putea fi motivul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Studiem mișcarea față de Pământ, deci putem aplica principiul inerției.
+Fiindcă mobilul este în repaus, forțele care se exercită asupra lui se
+compensează. Ele sunt:
+
+- greutatea lui $P$, verticală și îndreptată în jos;
+- reacțiunea $R$ a pernei de aer, verticală și îndreptată în sus;
+- tensiunea $T_1$ a resortului, orizontală și îndreptată spre stânga;
+- tensiunea $T_2$ a corzii, orizontală și îndreptată spre dreapta.
+
+<FigMobilArc forte />
+
+Forțele orizontale se anulează două câte două, iar forțele verticale la fel.
+
+**2.** Când sistemul de prindere al resortului se rupe, mobilul este accelerat
+brusc spre dreapta de tensiunea corzii. Foarte repede coarda se destinde, iar
+mobilul nu mai este supus decât greutății lui și reacțiunii pernei de aer,
+forțe care sunt amândouă verticale și se compensează. Prin aplicarea
+principiului inerției, el capătă deci o **mișcare rectilinie uniformă**.
+
+**3. a.** Punctele înregistrării, până în punctul B, sunt aliniate și egal
+depărtate. Așa cum era prevăzut, mișcarea este rectilinie și uniformă.
+
+<FigInregistrareMobil analiza />
+
+**b.** Puțin după punctul B, mobilul își schimbă direcția. El are atunci tot o
+mișcare rectilinie uniformă, cu aceeași viteză ca înainte, dar spre stânga și în
+sus. Este deci de crezut că puțin după punctul B mobilul lovește marginea mesei
+de experiență. În timpul ciocnirii, reacțiunea marginii îi dă pentru o clipă o
+accelerare puternică, care îl trimite înapoi spre stânga.
+
+**c.** Puțin după punctul C, mișcarea încetează să fie uniformă. Prin aplicarea
+principiului inerției, asta înseamnă că forțele care acționează asupra mobilului
+nu se mai compensează. Fiindcă mișcarea încetinește, o forță i se opune. Ea
+poate fi reacțiunea mesei, dacă mecanismul pernei de aer nu mai funcționează,
+sau prezența unui obstacol pe masă, cu care mobilul intră în contact.
+
+</details>
+
+---
+
+## 4. Corpul aruncat oblic
+
+**Liceul Saint François de Sales, Évreux** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Dintr-un punct O aflat la suprafața Pământului se aruncă, cu viteza $V$, un
+corp de dimensiuni mici, într-o direcție care face unghiul $\alpha$ cu
+orizontala. Se neglijează frecările aerului. Se face o cronofotografie a
+experienței, la intervale de timp regulate.
+
+<FigTraiectorieBalistica />
+
+**1.** Folosind principiul inerției, arată că acest corp nu este supus unor
+forțe care se compensează.
+
+**2.** Într-un punct oarecare al traiectoriei, reprezintă și numește forța care
+acționează asupra corpului.
+
+**3.** Se proiectează mișcarea corpului pe axa perpendiculară pe forța găsită la
+întrebarea precedentă. Ce are deosebit mișcarea astfel proiectată?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Dacă acest corp ar fi supus unor forțe care se compensează, el ar avea o
+traiectorie rectilinie uniformă, ceea ce nu este cazul aici: traiectoria nu este
+nici rectilinie, nici uniformă.
+
+**2.** Forța care acționează asupra corpului într-un punct oarecare al
+traiectoriei este **greutatea** lui, verticală și îndreptată în jos. Este
+singura forță, de vreme ce se neglijează frecările aerului.
+
+<FigTraiectorieBalistica forte />
+
+**3.** Proiecțiile diferitelor puncte ale traiectoriei pe axa orizontală sunt
+reprezentate pe figura de mai sus. Greutatea neavând nicio proiecție pe această
+axă, mișcarea proiectată este **rectilinie uniformă**, ceea ce se constată
+observând că punctele proiectate sunt egal depărtate.
+
+</details>
+
+---

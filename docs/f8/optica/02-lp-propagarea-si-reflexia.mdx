@@ -1,0 +1,183 @@
+---
+sidebar_position: 2
+sidebar_label: "LP1 — Legile reflexiei"
+slug: /f8/optica/lp1
+title: "LP1 — Legile reflexiei"
+description: "Lucrare practică: verificarea legilor reflexiei pe discul gradat și oglinda înclinată la 45 de grade."
+---
+
+import {
+  FigMontajReflexie,
+  FigOglinda45,
+} from '@site/src/components/Schema/reflexie-refractie';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Legile reflexiei
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C1 — Propagarea luminii și reflexia](./01-curs-propagarea-si-reflexia.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 10 min |
+| 2 | Verificarea legilor reflexiei | ★ | 10 min |
+| 3 | Oglinda înclinată la 45° | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 10 minute.**
+
+### Întrebarea 1
+
+Pe o oglindă, razele luminoase se:
+
+**a.** refractă &nbsp;&nbsp; **b.** reflectă
+
+### Întrebarea 2
+
+Adevărat sau fals?
+
+**a.** Într-un mediu omogen, lumina se propagă în linie dreaptă.
+
+**b.** O rază este întotdeauna trimisă înapoi de o oglindă exact în direcția din
+care vine.
+
+### Întrebarea 3
+
+Față de ce se măsoară unghiul de incidență?
+
+### Întrebarea 4
+
+Ce conține planul de incidență?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Pe o oglindă razele luminoase se reflectă — asta se
+întâmplă întotdeauna pe o oglindă.
+
+**2. a.** *Adevărat.* Într-un mediu omogen lumina se propagă în linie dreaptă.
+
+**2. b.** *Fals.* Raza este trimisă înapoi în direcția simetrică față de
+normală. Numai raza care cade perpendicular pe oglindă se întoarce pe drumul ei.
+
+**3.** Față de **normală**, adică față de perpendiculara pe suprafață dusă prin
+punctul de incidență. Nu față de suprafață.
+
+**4.** Planul de incidență conține raza incidentă și normala la suprafață. După
+prima lege a reflexiei, tot în el se află și raza reflectată.
+
+</details>
+
+---
+
+## 2. Verificarea legilor reflexiei
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Se așază o oglindă plană pe diametrul unui disc gradat și se trimite spre
+centrul discului o rază subțire, obținută cu o sursă și două diafragme.
+Unghiurile se citesc pe gradațiile discului, de o parte și de alta a normalei.
+
+<FigMontajReflexie />
+
+**1.** Rotește discul astfel încât unghiul de incidență să ia pe rând valorile
+din tabelul de mai jos și citește de fiecare dată unghiul de reflexie.
+
+| $i_1$ | 10° | 20° | 30° | 40° | 50° |
+|---|---|---|---|---|---|
+| $r$ | … | … | … | … | … |
+
+**2.** Ce constați? Scrie concluzia sub forma unei relații între $i_1$ și $r$.
+
+**3.** Așază raza incidentă chiar pe normală, adică perpendicular pe oglindă.
+Ce se întâmplă cu raza reflectată?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Măsurătorile dau, în limita preciziei raportorului:
+
+| $i_1$ | 10° | 20° | 30° | 40° | 50° |
+|---|---|---|---|---|---|
+| $r$ | 10° | 20° | 30° | 40° | 50° |
+
+**2.** Unghiul de reflexie este egal, de fiecare dată, cu unghiul de incidență:
+
+$$
+r = i_1
+$$
+
+Aceasta este a doua lege a reflexiei. Prima lege se verifică și ea: raza
+reflectată rămâne tot timpul în planul discului, adică în planul de incidență.
+
+**3.** Unghiul de incidență este atunci $0^\circ$, deci și unghiul de reflexie
+este $0^\circ$: raza se întoarce exact pe drumul pe care a venit. Este singurul
+caz în care asta se întâmplă.
+
+</details>
+
+---
+
+## 3. Oglinda înclinată la 45°
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+O rază luminoasă orizontală cade pe o oglindă plană care face cu ea un unghi de
+$45^\circ$.
+
+<FiguraManual
+  src="c05-oglinda45.png"
+  lat={417}
+  inalt={184}
+  latime={300}
+  eticheta="Rază orizontală care cade pe o oglindă înclinată la 45 de grade"
+  legenda="Raza incidentă este orizontală, iar oglinda face cu ea un unghi de 45°."
+>
+  <Et x={13} y={128} w={63} h={17} corp={12} culoare="#5c5a5a">oglindă</Et>
+</FiguraManual>
+
+**1.** Cât este unghiul de incidență?
+
+**2.** Desenează raza reflectată.
+
+**3.** Adevărat sau fals: raza reflectată este perpendiculară pe raza incidentă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Normala este perpendiculară pe oglindă. Fiindcă oglinda face $45^\circ$
+cu raza incidentă, normala face și ea $45^\circ$ cu ea: unghiul de incidență
+este
+
+$$
+i_1 = 45^\circ
+$$
+
+**2.** Unghiul de reflexie este egal cu cel de incidență, deci raza reflectată
+face tot $45^\circ$ cu normala, de cealaltă parte a ei. Ea pleacă vertical:
+
+<FigOglinda45 curezolvare />
+
+**3.** *Adevărat.* Unghiul $\alpha$ pe care raza reflectată îl face cu raza
+incidentă este
+
+$$
+\alpha = 180^\circ - 45^\circ \times 2 = 90^\circ
+$$
+
+O oglindă înclinată la $45^\circ$ întoarce deci raza cu un unghi drept. Pe asta
+se bazează periscopul.
+
+</details>
+
+---

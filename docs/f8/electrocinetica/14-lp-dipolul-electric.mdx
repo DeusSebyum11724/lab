@@ -1,0 +1,242 @@
+---
+sidebar_position: 14
+sidebar_label: "LP7 — Caracteristica unui dipol"
+slug: /f8/electrocinetica/lp7
+title: "LP7 — Caracteristica unui dipol"
+description: "Lucrare practică: recunoașterea dipolilor după caracteristică și trasarea caracteristicii unui conductor ohmic."
+---
+
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP7 — Caracteristica unui dipol
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C7 — Dipolul electric și caracteristica lui](./13-curs-dipolul-electric.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 40 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 10 min |
+| 2 | Identifică dipolii | ★★ | 10 min |
+| 3 | Norul de puncte | ★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 10 minute.**
+
+### Întrebarea 1
+
+Câte borne are un dipol?
+
+**a.** una &nbsp;&nbsp; **b.** două &nbsp;&nbsp; **c.** trei
+
+### Întrebarea 2
+
+Pe o caracteristică intensitate–tensiune, ce mărime se trece pe axa absciselor
+și ce mărime pe axa ordonatelor?
+
+### Întrebarea 3
+
+Ce formă are caracteristica unui conductor ohmic?
+
+### Întrebarea 4
+
+Iată din nou caracteristica dipolului D din curs.
+
+<FiguraManual
+  src="c03-caracteristica.png"
+  lat={693}
+  inalt={345}
+  eticheta="Dipolul D și caracteristica lui intensitate-tensiune, o curbă crescătoare care trece prin origine"
+  legenda="Caracteristica intensitate–tensiune a dipolului D: intensitățile pe abscisă, tensiunile pe ordonată."
+/>
+
+Ce tensiune se măsoară la bornele lui când este străbătut de un curent de
+intensitate $1\ \text{A}$? Este dipolul D un conductor ohmic?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Un dipol are exact două borne, prin care se leagă în
+circuit.
+
+**2.** Pe axa absciselor se trec intensitățile, iar pe axa ordonatelor
+tensiunile. Dacă axele sunt puse invers, graficul se numește caracteristică
+tensiune–intensitate.
+
+**3.** Caracteristica unui conductor ohmic este o dreaptă care trece prin
+origine. Tensiunea de la bornele lui este deci proporțională cu intensitatea
+curentului care îl străbate.
+
+**4.** Se citește pe grafic: la $I = 1\ \text{A}$ îi corespunde
+$U = 2\ \text{V}$.
+
+Dipolul D **nu** este un conductor ohmic: caracteristica lui nu este o dreaptă.
+Se vede și din citirea a doua făcută în curs — la $I = 0{,}7\ \text{A}$ avem
+$U = 1\ \text{V}$. Dacă dipolul ar fi fost conductor ohmic, la o intensitate
+puțin mai mare decât $0{,}7\ \text{A}$ tensiunea ar fi crescut tot puțin, nu
+s-ar fi dublat.
+
+</details>
+
+---
+
+## 2. Identifică dipolii
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Mai jos sunt reprezentate caracteristicile tensiune–intensitate a cinci dipoli
+diferiți.
+
+<FiguraManual
+  src="c03-cinci-caract.png"
+  lat={777}
+  inalt={903}
+  eticheta="Cinci caracteristici tensiune-intensitate: o dreaptă oblică, o dreaptă verticală, o dreaptă orizontală și două curbe în trepte"
+  legenda="Caracteristicile tensiune–intensitate ale celor cinci dipoli, în dezordine."
+/>
+
+Cei cinci dipoli sunt, în dezordine:
+
+**1.** o diodă &nbsp;&nbsp; **2.** un conductor ohmic &nbsp;&nbsp;
+**3.** un întrerupător deschis &nbsp;&nbsp; **4.** o diodă Zener &nbsp;&nbsp;
+**5.** un întrerupător închis
+
+Identifică fiecărei caracteristici dipolul care îi corespunde.
+
+*Indicații:* o diodă este un dipol care lasă curentul să treacă într-un singur
+sens (sensul direct). O diodă Zener se comportă ca o diodă obișnuită în sensul
+direct, dar lasă curentul să treacă și în celălalt sens, cu condiția ca
+tensiunea de la bornele ei, luată fără semn, să fie mai mare decât un anumit
+prag.
+
+<details>
+<summary>Rezolvare</summary>
+
+Începem cu identificările cele mai ușoare, ca să restrângem numărul de
+posibilități pentru dipolii mai puțin evidenți — dioda și dioda Zener, pe care
+nu le-am mai întâlnit.
+
+Conductorul ohmic (dipolul **2**) îi corespunde, evident, caracteristica
+**a**, fiindcă e vorba de o dreaptă care trece prin origine.
+
+Un întrerupător deschis (dipolul **3**) se comportă ca un izolator: nu lasă
+curentul să treacă, oricare ar fi tensiunea de la bornele lui. Ne așteptăm deci
+ca la caracteristica lui să avem peste tot $I = 0$. Asta corespunde
+caracteristicii **c**.
+
+Dimpotrivă, un întrerupător închis (dipolul **5**) se comportă ca un conductor
+perfect: tensiunea de la bornele lui este nulă, oricare ar fi intensitatea
+curentului care îl parcurge. Ne așteptăm deci ca la caracteristica lui să avem
+peste tot $U = 0$. Asta corespunde caracteristicii **b**.
+
+Ne rămân dioda obișnuită și dioda Zener (dipolii **1** și **4**), pentru
+caracteristicile **d** și **e**.
+
+Dioda obișnuită nu lasă curentul să treacă decât într-un sens. Ne așteptăm deci
+ca pe caracteristica ei intensitățile să aibă toate același semn — altfel ar
+însemna că prin dipol poate trece curent în ambele sensuri. Este cazul
+caracteristicii **e**, pe care $I$ este mereu pozitiv sau nul, oricare ar fi
+valoarea lui $U$.
+
+Prin eliminare, dioda Zener trebuie să fie caracteristica **d**. Să verificăm
+totuși că această caracteristică se potrivește cu indicațiile din enunț.
+Caracteristicile celor două diode sunt foarte asemănătoare, în afară de partea
+din stânga: pe **d** se vede că, atunci când tensiunea este negativă și destul
+de mare luată fără semn, apare o ramură verticală — adică intensitatea nu mai
+este nulă. Dioda Zener lasă atunci curentul să treacă, exact cum spune enunțul.
+
+</details>
+
+---
+
+## 3. Norul de puncte
+
+★★ &nbsp;·&nbsp; **20 minute**
+
+Ca să aflăm cât mai precis raportul dintre tensiune și intensitate pentru un
+conductor ohmic, facem mai multe măsurători ale tensiunii $U$ de la bornele lui
+atunci când este parcurs de un curent de intensitate $I$. Măsurătorile sunt
+trecute în tabelul următor.
+
+| $U$ (V) | 1,6 | 4,9 | 4,0 | 6,0 | 8,7 | 8,5 | 11,9 |
+|---|---|---|---|---|---|---|---|
+| $I$ (A) | 0,4 | 0,9 | 1,1 | 1,5 | 2,0 | 2,4 | 2,8 |
+
+| $U$ (V) | 11,6 | 13,8 | 15,6 | 18,7 | 20,1 | 19,0 | 23,2 |
+|---|---|---|---|---|---|---|---|
+| $I$ (A) | 3,1 | 3,7 | 4,1 | 4,5 | 4,7 | 5,1 | 5,6 |
+
+**1.** Fă o schemă a montajului.
+
+**2.** Trece pe un grafic, cu $I$ pe abscisă și $U$ pe ordonată, punctele de
+măsurare.
+
+**3.** Trasează dreapta care trece cât mai bine printre toate punctele și
+deduce din ea raportul $U/I$ al conductorului ohmic.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Ca să măsurăm tensiunea de la bornele conductorului ohmic, montăm
+voltmetrul în derivație, iar ampermetrul se montează în serie, ca în figura
+următoare.
+
+<FiguraManual
+  src="c03-masurare-scurt.png"
+  lat={453}
+  inalt={190}
+  latime={300}
+  eticheta="Ampermetru în serie și voltmetru în derivație la bornele conductorului ohmic R"
+  legenda="Voltmetrul se montează în derivație, ampermetrul în serie."
+/>
+
+**2.** Graficul cerut arată așa:
+
+<FiguraManual
+  src="c03-nor.png"
+  lat={460}
+  inalt={297}
+  latime={300}
+  eticheta="Nor de paisprezece puncte de măsurare, aproape aliniate, într-un grafic cu I pe abscisă și U pe ordonată"
+  legenda="Cele paisprezece perechi de valori (I, U) trecute pe grafic."
+/>
+
+**3.** Punctele nu sunt perfect aliniate: fiecare măsurătoare are micile ei
+erori. Trasăm cu rigla dreapta care trece cât mai aproape de toate punctele.
+Fiindcă dipolul este un conductor ohmic, dreapta trebuie să treacă prin
+origine.
+
+<FiguraManual
+  src="c03-nor-dreapta.png"
+  lat={460}
+  inalt={299}
+  latime={300}
+  eticheta="Norul de puncte cu dreapta trasată printre ele"
+  legenda="Dreapta trasată printre puncte; panta ei dă rezistența."
+/>
+
+Citim acum un punct de pe dreapta trasată — nu de pe un punct de măsurare, ci
+de pe dreaptă, fiindcă ea ține seama de toate măsurătorile deodată. La
+$I = 5{,}0\ \text{A}$ îi corespunde $U = 20\ \text{V}$, deci:
+
+$$
+\frac{U}{I} = \frac{20}{5{,}0} = 4{,}0
+$$
+
+Raportul $U/I$ are aceeași valoare, $4{,}0$, în orice punct al dreptei — asta e
+tot una cu a spune că $U$ este proporțional cu $I$. Mărimea aceasta, care
+caracterizează conductorul ohmic, se numește **rezistență**; o studiem ora
+următoare.
+
+</details>
+
+---

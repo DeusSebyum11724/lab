@@ -1,0 +1,161 @@
+---
+sidebar_position: 5
+sidebar_label: "C3 — Legea nodurilor"
+slug: /f8/electrocinetica/c3
+title: "C3 — Legea nodurilor"
+description: "Suma intensităților curenților care ajung într-un nod este egală cu suma celor care pleacă din el."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Legea nodurilor
+
+:::info Planul orei
+
+1. Introducere
+2. Legea nodurilor
+3. O aplicație imediată
+4. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+<FiguraManual
+  src="c01-exercitiu-tip.png"
+  lat={810}
+  inalt={284}
+  eticheta="Circuit cu patru ramuri paralele alimentate de o pilă; curenții I, I₁, I₂, I₃ și I₄"
+  legenda="Se cunosc I₁ = 1 A, I₃ = 2 A și I = 5 A. Se cer I₂ și I₄."
+>
+</FiguraManual>
+
+**Determină intensitățile curenților $I_2$ și $I_4$ din circuitul de mai sus,
+știind că $I_1 = 1\ \text{A}$, $I_3 = 2\ \text{A}$ și $I = 5\ \text{A}$.**
+
+Exercițiul acesta cere noțiunea de curent electric și pe cea de intensitate.
+Ca să-l rezolvăm, trebuie să cunoaștem legea nodurilor, căreia i se supun
+intensitățile din orice circuit electric.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei, când vom avea tot
+ce ne trebuie pentru el.
+
+---
+
+## 2. Legea nodurilor
+
+Am văzut că într-un circuit simplu, adică unul care nu are decât o singură
+ramură, intensitatea este peste tot aceeași.
+
+Dacă circuitul are mai multe ramuri, legate prin noduri, intensitățile
+curenților care circulă prin fiecare ramură se supun legii nodurilor.
+
+:::tip De reținut
+
+**Suma intensităților curenților care ajung într-un nod este egală cu suma
+intensităților curenților care pleacă din el.**
+
+:::
+
+În figura următoare, cu verde sunt ramurile în care curentul se îndreaptă spre
+nod, iar cu roșu cele în care curentul pleacă din nod.
+
+<FiguraManual
+  src="c01-legea-nodurilor.png"
+  lat={370}
+  inalt={335}
+  latime={330}
+  eticheta="Un nod din care pleacă cinci ramuri: doi curenți intră, trei ies"
+  legenda="Cu verde, ramurile în care curentul se îndreaptă spre nod; cu roșu, cele în care pleacă din nod."
+>
+</FiguraManual>
+
+$$
+\textcolor{#1c7c4a}{I_1} + \textcolor{#1c7c4a}{I_3}
+= \textcolor{#c0392b}{I_2} + \textcolor{#c0392b}{I_4} + \textcolor{#c0392b}{I_5}
+$$
+
+---
+
+## 3. O aplicație imediată
+
+În figura de mai jos am reprezentat pe circuit câteva obiecte a căror denumire
+exactă și a căror funcție le vom vedea mai târziu. Ne punem întrebarea cât
+valorează $I$.
+
+<FiguraManual
+  src="c01-aplicatie-nod.png"
+  lat={382}
+  inalt={226}
+  latime={340}
+  eticheta="Un rezistor și un bec care alimentează același nod, iar din nod pleacă un curent prin diodă"
+  legenda="Legea nodurilor se scrie aici I + I₁ = I₂."
+>
+</FiguraManual>
+
+Legea nodurilor se scrie aici:
+
+$$
+I + I_1 = I_2
+$$
+
+deci:
+
+$$
+I = I_2 - I_1 = 3 - 1 = 2\ \text{A}
+$$
+
+---
+
+## 4. Rezolvarea exercițiului-tip
+
+<FiguraManual
+  src="c01-exercitiu-tip.png"
+  lat={810}
+  inalt={284}
+  eticheta="Circuit cu patru ramuri paralele alimentate de o pilă; curenții I, I₁, I₂, I₃ și I₄"
+  legenda="În nodul din stânga intră I și ies I₁ și I₂; în nodul din dreapta intră I₂ și ies I₃ și I₄."
+>
+</FiguraManual>
+
+Legea nodurilor enunțată la secțiunea precedentă ne permite să rezolvăm
+exercițiul-tip. Ca să aflăm valorile intensităților $I_2$ și $I_4$, trebuie să
+aplicăm legea nodurilor în nodul din stânga și, respectiv, în cel din dreapta
+ale ramurii de sus a circuitului.
+
+**În nodul din stânga**, legea nodurilor se scrie:
+
+$$
+\underbrace{I}_{\text{curentul care ajunge}} = \underbrace{I_1 + I_2}_{\text{curenții care pleacă}}
+$$
+
+Făcând aplicația numerică, obținem:
+
+$$
+5 = 1 + I_2
+$$
+
+adică $I_2 = 4\ \text{A}$.
+
+**În nodul din dreapta**, la fel, legea nodurilor se scrie:
+
+$$
+\underbrace{I_2}_{\text{curentul care ajunge}} = \underbrace{I_3 + I_4}_{\text{curenții care pleacă}}
+$$
+
+ceea ce dă, după toate calculele:
+
+$$
+I_4 = 4 - 2 = 2\ \text{A}
+$$
+
+---
+
+:::note Ora următoare
+
+**LP3 — Verificarea legii nodurilor.** Circuite cu ramificații, calculul
+intensităților care lipsesc și probleme numerice.
+
+:::

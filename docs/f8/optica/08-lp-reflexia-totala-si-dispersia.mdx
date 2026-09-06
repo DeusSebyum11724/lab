@@ -1,0 +1,439 @@
+---
+sidebar_position: 8
+sidebar_label: "LP4 — Unghiul limită și spectrele"
+slug: /f8/optica/lp4
+title: "LP4 — Unghiul limită și spectrele"
+description: "Lucrare practică: determinarea experimentală a unghiului limită, spectrul dat de semicilindru și studiul unei prisme dispersive."
+---
+
+import { FigSemidiscInvers } from '@site/src/components/Schema/reflexie-refractie';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP4 — Unghiul limită și spectrele
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C4 — Reflexia totală și dispersia](./07-curs-reflexia-totala-si-dispersia.mdx)**.
+Cinci probe, cu timpul de lucru al fiecăreia; în total 55 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Unghiul limită | ★★ | 10 min |
+| 3 | Spectrul luminii albe | ★★★ | 10 min |
+| 4 | Studiul unei prisme simplificate | ★★★ | 20 min |
+| 5 | Dispersia cu un semicilindru | ★★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## Tabelul sinusurilor
+
+| Unghi | sin | Unghi | sin |
+|---|---|---|---|
+| 0° | 0,000 | 50° | 0,766 |
+| 5° | 0,087 | 55° | 0,819 |
+| 10° | 0,174 | 60° | 0,866 |
+| 15° | 0,259 | 65° | 0,906 |
+| 20° | 0,342 | 70° | 0,940 |
+| 25° | 0,423 | 75° | 0,966 |
+| 30° | 0,500 | 80° | 0,985 |
+| 35° | 0,574 | 85° | 0,996 |
+| 40° | 0,643 | 90° | 1,000 |
+| 45° | 0,707 | | |
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+### Întrebarea 1
+
+Într-un mediu dispersiv, viteza luminii:
+
+**a.** depinde de lungimea de undă &nbsp;&nbsp; **b.** depinde de unghiul de
+incidență &nbsp;&nbsp; **c.** este egală cu viteza luminii în vid
+
+### Întrebarea 2
+
+La ce trecere se poate produce reflexia totală: din aer în sticlă sau din sticlă
+în aer?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **a**. Un mediu dispersiv este un mediu în care indicele de
+refracție depinde de lungimea de undă. Viteza luminii în mediu se scrie
+$v = c/n$; cum $c$ este constantă, iar $n$ depinde de lungimea de undă, și $v$
+depinde de lungimea de undă.
+
+**2.** Din **sticlă în aer**, adică dintr-un mediu cu indice mai mare într-unul
+cu indice mai mic. La trecerea din aer în sticlă raza se apropie de normală și
+există întotdeauna rază refractată.
+
+</details>
+
+---
+
+## 2. Unghiul limită
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Semidiscul de plexiglas se folosește acum invers: lumina intră prin fața curbă,
+fără să se abată acolo, și ajunge pe fața plană dinspre interiorul
+plexiglasului. Unghiul de incidență se citește tot pe discul gradat.
+
+<FigSemidiscInvers />
+
+**1.** Mărește încet unghiul de incidență și completează tabelul, măsurând de
+fiecare dată unghiul razei care iese în aer.
+
+| $i_1$ | 30° | 35° | 40° | 42° | 45° |
+|---|---|---|---|---|---|
+| $i_2$ | … | … | … | … | … |
+
+**2.** Ce se întâmplă cu raza refractată când unghiul de incidență devine prea
+mare? Dar cu raza reflectată?
+
+**3.** Cât este unghiul limită al plexiglasului?
+
+**Se dă:** indicele plexiglasului $n = 1{,}5$ și $\sin 42^\circ = 0{,}669$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Măsurătorile dau:
+
+| $i_1$ | 30° | 35° | 40° | 42° | 45° |
+|---|---|---|---|---|---|
+| $i_2$ | 49° | 59° | 75° | rade suprafața | nu mai există |
+
+Ele se potrivesc cu legea refracției. Pentru $i_1 = 30^\circ$, de pildă:
+
+$$
+\sin i_2 = 1{,}5 \times \sin 30^\circ = 1{,}5 \times 0{,}500 = 0{,}750
+$$
+
+care e între $\sin 45^\circ = 0{,}707$ și $\sin 50^\circ = 0{,}766$, deci
+$i_2 = 49^\circ$.
+
+Pentru $i_1 = 42^\circ$ calculul ar da
+
+$$
+\sin i_2 = 1{,}5 \times 0{,}669 = 1{,}004
+$$
+
+adică un sinus mai mare decât $1$: nu mai există niciun unghi cu sinusul acesta.
+
+**2.** Raza refractată se apropie tot mai mult de suprafață, apoi dispare cu
+totul. Raza reflectată, în schimb, devine tot mai puternică; peste unghiul
+limită ea rămâne singură și este strălucitoare, fiindcă primește toată lumina.
+
+<FigSemidiscInvers total />
+
+**3.** Raza refractată se stinge undeva între $40^\circ$ și $42^\circ$: unghiul
+limită al plexiglasului este de aproximativ $42^\circ$.
+
+</details>
+
+---
+
+## 3. Spectrul luminii albe
+
+**Liceul Saint-Exupéry, Lyon** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **10 minute**
+
+Un fascicul de lumină albă ajunge pe fața plană a unui semicilindru de sticlă,
+cu incidența $i$ nenulă. De cealaltă parte a semicilindrului se pune un ecran
+alb, ca în figura de mai jos.
+
+<FiguraManual
+  src="c05-semicilindru.png"
+  lat={537}
+  inalt={302}
+  latime={360}
+  eticheta="Semicilindru de sticlă și ecran alb pe care se formează spectrul"
+  legenda="Fasciculul de lumină albă ajunge pe fața plană a semicilindrului cu incidență nenulă; ecranul alb se află de partea cealaltă."
+>
+  <Et x={435} y={78}  w={57}  h={22} corp={11} culoare="#5355a6">Ecran</Et>
+  <Et x={9}   y={201} w={81}  h={17} corp={11} culoare="#585555">fascicul</Et>
+  <Et x={9}   y={227} w={105} h={17} corp={11} culoare="#373334">de lumină</Et>
+  <Et x={8}   y={256} w={77}  h={16} corp={12} culoare="#373334">albă</Et>
+  <Et x={258} y={207} w={51}  h={11} corp={11} culoare="#447bc5" fond="#f8fcfe">sticlă</Et>
+  <Et x={371} y={248} w={139} h={22} corp={11} culoare="#373334">semicilindru</Et>
+  <Et x={371} y={277} w={121} h={17} corp={12} culoare="#373334">centrat în O</Et>
+</FiguraManual>
+
+Știind că indicele de refracție al sticlei variază ușor de la roșu la violet —
+el este mai mic pentru roșu și mai mare pentru violet —, spune ce se vede pe
+ecran. De care parte se află roșul?
+
+<details>
+<summary>Rezolvare</summary>
+
+La trecerea dioptrului aer/sticlă, razele de culori diferite care alcătuiesc
+fasciculul de lumină albă sunt refractate. Fiindcă lumina albă conține un
+amestec al tuturor culorilor, de la roșu la violet, și fiindcă indicele de
+refracție al sticlei este diferit pentru fiecare culoare, razele de culori
+diferite sunt despărțite și cad în puncte diferite ale ecranului. Pe ecran se
+observă deci **spectrul** luminii albe.
+
+Ca să știm de care parte se află roșul, trebuie să vedem care culoare este cel
+mai puternic și care cel mai slab refractată. Roșul este culoarea pentru care
+sticla are indicele de refracție cel mai mic. Razele roșii sunt deci cel mai
+puțin refractate, adică roșul se observă cel mai departe de axa normală la
+planul de incidență. Invers, violetul, care este cel mai puternic refractat, se
+observă cel mai aproape de această axă.
+
+<FiguraManual
+  src="c05-semicilindru-rezolvare.png"
+  lat={525}
+  inalt={274}
+  latime={360}
+  eticheta="Roșul și violetul separate de semicilindru și proiectate pe ecran"
+  legenda="Roșul este cel mai puțin refractat, deci cade cel mai departe de axă; violetul, cel mai puternic refractat, cade cel mai aproape de ea."
+>
+  <Et x={373} y={3}   w={58} h={21} corp={11} culoare="#484c9f" fond="#edf6eb">Ecran</Et>
+  <Et x={422} y={81}  w={56} h={15} corp={11} culoare="#ef5759" fond="#edf6eb" cursiv>roșu</Et>
+  <Et x={9}   y={193} w={75} h={17} corp={11} culoare="#474644" fond="#edf6eb">lumină</Et>
+  <Et x={8}   y={221} w={78} h={17} corp={12} culoare="#696a67" fond="#edf6eb">albă</Et>
+</FiguraManual>
+
+De observat că razele ies prin fața curbă mergând chiar pe câte o rază a
+cercului, adică perpendicular pe suprafață: acolo ele nu mai sunt deviate a doua
+oară.
+
+</details>
+
+---
+
+## 4. Studiul unei prisme simplificate
+
+**Liceul Montaigne, Bordeaux** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **20 minute**
+
+Un fascicul de lumină albă ajunge pe o prismă, așa cum arată figura de mai jos.
+Prisma este făcută dintr-un material transparent M, al cărui indice de refracție
+depinde ușor de lungimea de undă:
+
+$$
+n(\lambda) = 1{,}200 + \frac{70{,}00}{\lambda}
+$$
+
+unde $\lambda$ este lungimea de undă, exprimată în nanometri.
+
+<FiguraManual
+  src="c05-prisma-simplificata.png"
+  lat={368}
+  inalt={155}
+  latime={300}
+  eticheta="Prismă din materialul M atinsă de un fascicul de lumină albă sub incidență normală"
+  legenda="Fasciculul ajunge pe prismă sub incidență normală."
+>
+  <Et x={54}  y={8}   w={110} h={17} corp={11} culoare="#4a4748">fascicul de</Et>
+  <Et x={53}  y={32}  w={76}  h={17} corp={12} culoare="#706e6e">lumină</Et>
+  <Et x={53}  y={55}  w={77}  h={17} corp={11} culoare="#373334">albă</Et>
+  <Et x={54}  y={118} w={23}  h={15} corp={11} culoare="#6a6868">aer</Et>
+  <Et x={206} y={124} w={91}  h={17} corp={11} culoare="#3871c1" fond="#f5fbfe">mediul M</Et>
+</FiguraManual>
+
+**1.** Ce conține lumina albă?
+
+**2.** Se consideră, dintre toate undele pe care le poartă lumina albă, o undă
+cu lungimea de undă $\lambda_a = 650{,}0$ nm. Ce culoare are? Care este indicele
+$n_a$ al materialului pentru unda aceasta? Cu ce unghi iese ea din prismă?
+Trasează raza.
+
+**3.** Se consideră acum o undă cu lungimea de undă $\lambda_b = 400{,}0$ nm. Ce
+culoare are? Care este indicele $n_b$ al materialului pentru unda aceasta? Cu ce
+unghi iese ea din prismă? Trasează raza.
+
+**4.** Ce se vede dacă proiectăm fasciculul emergent pe un ecran?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Lumina albă este un amestec echilibrat al tuturor radiațiilor din
+spectrul vizibil. Toate lungimile de undă ale spectrului vizibil sunt
+reprezentate în lumina albă.
+
+**2.** Lungimea de undă a acestei unde o așază în partea roșie a spectrului
+vizibil: este o radiație de culoare **roșie**. Pentru această lungime de undă,
+indicele materialului este, folosind formula din enunț:
+
+$$
+n_a = 1{,}200 + \frac{70}{650} = 1{,}308
+$$
+
+Unghiul de incidență al razei pe fața oblică este de $45^\circ$ — raza a intrat
+perpendicular pe fața din stânga, deci nu a fost deviată acolo. Scriind legea
+refracției, obținem:
+
+$$
+1{,}308 \times \sin 45^\circ = 1{,}00 \times \sin(i'_a)
+$$
+
+adică
+
+$$
+\sin(i'_a) = 1{,}308 \times 0{,}707 = 0{,}925
+$$
+
+Citind invers în tabel, valoarea este între $\sin 65^\circ = 0{,}906$ și
+$\sin 70^\circ = 0{,}940$, aproape de al doilea. Măsurat cu grijă, unghiul de
+ieșire este
+
+$$
+i'_a = 67{,}7^\circ
+$$
+
+**3.** Este o radiație de culoare **violetă**, aflată la capătul celălalt al
+spectrului vizibil. Indicele $n_b$ al materialului pentru unda aceasta este:
+
+$$
+n_b = 1{,}200 + \frac{70}{400} = 1{,}375
+$$
+
+Scriind la fel legea refracției:
+
+$$
+\sin(i'_b) = 1{,}375 \times 0{,}707 = 0{,}972
+$$
+
+Valoarea este între $\sin 75^\circ = 0{,}966$ și $\sin 80^\circ = 0{,}985$, deci
+unghiul de ieșire este
+
+$$
+i'_b = 76{,}5^\circ
+$$
+
+Cele două raze emergente sunt reprezentate pe aceeași figură:
+
+<FiguraManual
+  src="c05-prisma-simplificata-rezolvare.png"
+  lat={550}
+  inalt={270}
+  latime={380}
+  eticheta="Razele roșie și violetă ies din prismă sub unghiuri diferite"
+  legenda="Razele roșie și violetă ies din prismă sub unghiuri diferite: fasciculul alb se desface."
+>
+  <Et x={95}  y={65}  w={76} h={17} corp={12} culoare="#575754" fond="#edf6eb">lumină</Et>
+  <Et x={95}  y={88}  w={77} h={17} corp={12} culoare="#686965" fond="#edf6eb">albă</Et>
+  <Et x={462} y={143} w={58} h={17} corp={11} culoare="#ee4a50" fond="#edf6eb">roșu</Et>
+  <Et x={265} y={239} w={92} h={16} corp={11} culoare="#3871c1" fond="#fafcfe">mediul M</Et>
+</FiguraManual>
+
+**4.** Dacă proiectăm fasciculul emergent pe un ecran, vedem că radiațiile nu
+ajung toate în același loc: ele sunt întinse după lungimea lor de undă. Pe ecran
+se vede deci spectrul luminii albe, adică toate culorile curcubeului.
+
+Exercițiul acesta arată că un mediu dispersiv — adică unul în care indicele
+depinde de lungimea de undă — permite „trierea la ieșire” a radiațiilor după
+lungimea lor de undă și deci obținerea spectrelor. Acesta este principiul unei
+prisme de sticlă obișnuite.
+
+</details>
+
+---
+
+## 5. Dispersia cu un semicilindru
+
+**Liceul Arago, Paris** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **10 minute**
+
+Se folosește un semicilindru dintr-un material transparent. Indicele lui de
+refracție crește odată cu lungimea de undă, după cum arată măsurătorile:
+
+| Culoarea | Lungimea de undă | Indicele $n$ |
+|---|---|---|
+| violet | 400 nm | 1,42 |
+| roșu | 700 nm | 1,51 |
+
+**1.** Este acest material dispersiv? Justifică.
+
+**2.** Dă o estimare a vitezei de propagare a luminii violete ($\lambda = 400$
+nm) în acest mediu.
+
+**3.** Dă o estimare a vitezei de propagare a luminii roșii ($\lambda = 700$ nm)
+în acest mediu.
+
+**4.** Se trimite un fascicul subțire de lumină albă, cu incidența de 30 de
+grade, pe fața plană a acestui semicilindru, chiar în centrul lui, așa încât să
+se formeze un spectru. De care parte se află lumina roșie?
+
+<FiguraManual
+  src="c05-dispersie-semicilindru.png"
+  lat={325}
+  inalt={203}
+  latime={280}
+  eticheta="Fascicul de lumină albă care cade cu 30 de grade pe fața plană a semicilindrului și iese desfăcut într-un spectru"
+  legenda="Fasciculul intră cu 30° pe fața plană și iese desfăcut. α este unghiul de deschidere al spectrului."
+/>
+
+**Se dă:** $c = 300\ 000$ km/s.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Materialul din care e făcut semicilindrul **este dispersiv**, fiindcă
+indicele lui de refracție depinde de lungimea de undă: $1{,}42$ în violet și
+$1{,}51$ în roșu.
+
+**2.** O estimare a vitezei de propagare $v_v$ a luminii violete în acest mediu
+se obține folosind indicele de refracție la 400 nm, adică $n_v = 1{,}42$:
+
+$$
+v_v = \frac{c}{n_v} = \frac{300\ 000}{1{,}42} \approx 211\ 000\ \text{km/s}
+$$
+
+**3.** Calculul e la fel pentru lumina roșie, cu indicele $n_r = 1{,}51$:
+
+$$
+v_r = \frac{c}{n_r} = \frac{300\ 000}{1{,}51} \approx 199\ 000\ \text{km/s}
+$$
+
+**4.** Scriem legea refracției pentru raza roșie care trece dioptrul
+aer/material:
+
+$$
+1{,}00 \times \sin 30^\circ = 1{,}51 \times \sin(i_r)
+$$
+
+adică
+
+$$
+\sin(i_r) = \frac{0{,}500}{1{,}51} = 0{,}331
+$$
+
+La fel pentru raza violetă:
+
+$$
+\sin(i_v) = \frac{0{,}500}{1{,}42} = 0{,}352
+$$
+
+Cele două sinusuri sunt aproape egale: amândouă cad între
+$\sin 15^\circ = 0{,}259$ și $\sin 20^\circ = 0{,}342$, respectiv puțin peste,
+adică în jur de $19^\circ$ și $21^\circ$. Măsurate cu grijă, unghiurile sunt
+$19{,}3^\circ$ pentru roșu și $20{,}6^\circ$ pentru violet, iar fasciculul se
+desface pe un unghi de numai $1{,}3^\circ$.
+
+Vedem că lumina roșie este mai puternic deviată decât lumina violetă, adică
+merge mai aproape de normală: **roșul se află în partea de sus a fasciculului**
+la ieșirea din semicilindru.
+
+<FiguraManual
+  src="c05-dispersie-semicilindru-rezolvare.png"
+  lat={465}
+  inalt={261}
+  latime={340}
+  eticheta="Fasciculul alb iese din semicilindru desfăcut: raza roșie deasupra, raza violetă dedesubt"
+  legenda="Desfacerea culorilor la ieșirea din semicilindru: roșul deasupra, violetul dedesubt."
+>
+  <Et x={384} y={146} w={57} h={16} corp={11} culoare="#ef4541" fond="#edf6eb">roșu</Et>
+</FiguraManual>
+
+</details>
+
+---

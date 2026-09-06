@@ -1,0 +1,170 @@
+---
+sidebar_position: 4
+sidebar_label: "LP2 — Propagarea sunetului"
+slug: /f7/unde/lp2
+title: "LP2 — Propagarea sunetului"
+description: "Lucrare practică: soneria sub clopotul vidat, microfonul ca traductor și sunetul care merge prin fontă și prin apă."
+---
+
+import {
+  FigClopotVidat,
+  FigMicrofonOsciloscop,
+  FigConductaFonta,
+} from '@site/src/components/Schema/sunete';
+
+# LP2 — Propagarea sunetului
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C2 — Sunetul ca undă](./03-curs-sunetul-ca-unda.mdx)**.
+Trei probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Soneria de sub clopot | — | 10 min |
+| 2 | Microfonul ca traductor | — | 10 min |
+| 3 | Unde sonore | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Soneria de sub clopot
+
+**Timp de lucru: 10 minute.**
+
+O sonerie electrică se pune sub un clopot de sticlă, legat printr-un tub la o
+pompă de vid. Soneria sună tot timpul. Pornim pompa și scoatem încet aerul de
+sub clopot.
+
+<FigClopotVidat />
+
+**1.** Ce se aude pe măsură ce aerul iese de sub clopot?
+
+**2.** Explică ce se întâmplă, folosind felul în care se propagă unda sonoră.
+
+**3.** Ciocănelul soneriei se vede lovind clopoțelul și când nu se mai aude
+nimic. Ce ne spune asta?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Soneria se aude tot mai încet pe măsură ce pompa scoate aerul, iar când
+clopotul e aproape gol nu se mai aude aproape nimic.
+
+**2.** Sunetul se propagă fiindcă straturile de aer sunt comprimate și destinse
+pe rând și pun în mișcare, din aproape în aproape, straturile vecine. Când
+scoatem aerul, straturile acestea dispar: nu mai are ce să transmită vibrația
+de la sonerie până la pereții clopotului. Unda sonoră are nevoie de un suport
+material ca să se propage, iar în vid nu se propagă.
+
+**3.** Că soneria vibrează în continuare — sursa funcționează. Ce lipsește nu e
+vibrația, ci **mediul** prin care ea s-ar transmite. Sunetul nu e ceva care
+pleacă de la sursă de unul singur, ci o vibrație a materiei din jurul sursei.
+
+</details>
+
+---
+
+## 2. Microfonul ca traductor
+
+**Timp de lucru: 10 minute.**
+
+Legăm un microfon la calea Y a unui osciloscop folosit în mod baleiaj și
+așezăm în fața microfonului, pe rând, un diapazon și apoi vocea unui coleg.
+
+<FigMicrofonOsciloscop />
+
+**1.** Ce mărime fizică arată osciloscopul pe verticală? Dar pe orizontală?
+
+**2.** Microfonul „aude” sunetul. Ce transformare face el?
+
+**3.** Traseul de pe ecran se repetă identic cu el însuși la intervale de timp
+regulate. Cum se numește un asemenea semnal și ce mărime îi putem măsura pe
+ecran?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Pe verticală, osciloscopul arată **tensiunea**; pe orizontală, **timpul**,
+fiindcă în mod baleiaj spotul mătură ecranul de la stânga la dreapta pe măsură
+ce trece timpul. Traseul este deci reprezentarea tensiunii în funcție de timp.
+
+**2.** Microfonul transformă semnalul sonor — adică variațiile de presiune ale
+aerului din fața lui — într-o **tensiune variabilă**, pe care osciloscopul o
+poate analiza.
+
+**3.** Un semnal care se reproduce identic cu el însuși la intervale de timp
+regulate este un **semnal periodic**. Pe ecran îi putem măsura **perioada**,
+numărând diviziunile dintre două repetări și înmulțind cu baza de timp; din ea
+scoatem apoi frecvența, cu $f = \dfrac{1}{T}$.
+
+</details>
+
+---
+
+## 3. Unde sonore
+
+**Liceul Jean Sturm, Strasbourg** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Pe o conductă de fontă care conține apă se așază un senzor de presiune. Se dă o
+lovitură pe conductă, la distanța $d$ de senzor. Se detectează două semnale,
+despărțite de un interval de timp $t = 0{,}46\ \text{s}$. Cât valorează
+distanța $d$?
+
+<FigConductaFonta />
+
+**Se dau:**
+
+- viteza sunetului în apă: $c_1 = 1\,500\ \text{m/s}$
+- viteza sunetului în fontă: $c_2 = 5\,000\ \text{m/s}$
+
+<details>
+<summary>Rezolvare</summary>
+
+Cele două semnale corespund unul transmiterii șocului prin fontă, celălalt
+transmiterii lui prin apă.
+
+Timpul $t_1$ pe care îl pune semnalul ca să se propage din zona șocului până la
+senzor **prin apă** se scrie:
+
+$$
+t_1 = \frac{d}{c_1}
+$$
+
+La fel, timpul $t_2$ de propagare a sunetului **prin fontă** este dat de:
+
+$$
+t_2 = \frac{d}{c_2}
+$$
+
+Fonta duce sunetul mai repede, deci semnalul prin fontă ajunge primul. Diferența
+dintre cele două momente de sosire este:
+
+$$
+t = t_1 - t_2 = \frac{d}{c_1} - \frac{d}{c_2}
+$$
+
+Aducem la același numitor:
+
+$$
+\frac{1}{1\,500} - \frac{1}{5\,000}
+= \frac{5\,000 - 1\,500}{1\,500 \times 5\,000}
+= \frac{3\,500}{7\,500\,000}
+$$
+
+Deducem:
+
+$$
+d = t \times \frac{1\,500 \times 5\,000}{5\,000 - 1\,500}
+= 0{,}46 \times \frac{7\,500\,000}{3\,500} \approx 990\ \text{m}
+$$
+
+Distanța este deci de aproape un kilometru.
+
+</details>
+
+---
