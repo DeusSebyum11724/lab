@@ -4,13 +4,15 @@ import { Schema, Text } from './index';
 /**
  * FIGURILE CAPITOLULUI „MĂSURARE ȘI ERORI”.
  *
- * Manualul-sursă e un PDF scanat, deci figurile se REDESENEAZĂ. Aici nu sunt
- * scheme de circuit, ci histograme, axe de valori și rezistoare cu inele
- * colorate — de aceea primitivele din `index.jsx` (fir, nod, rezistor…) nu
- * ajung, iar simbolurile noi se definesc mai jos, în fișierul capitolului.
+ * Aici au mai rămas doar figurile care NU au corespondent în manual: seria de
+ * măsurători pusă pe o axă, amplitudinea ei și cei doi senzori GPS. Manualul
+ * dă senzorii numai printr-un tabel de cifre, iar seria de măsurători nici
+ * măcar atât — figurile astea au fost gândite pentru lecția românească, deci
+ * n-au ce decupa și rămân desenate.
  *
- * Culorile inelelor unui rezistor NU sunt decor: ele SUNT codul. De aceea se
- * desenează cu culorile lor adevărate, nu cu paleta paginii.
+ * Histogramele și rezistoarele, care în manual sunt desenate, au trecut la
+ * decupaj din carte cu etichete românești puse peste (`FiguraManual`): acolo
+ * geometria trebuia să fie întocmai cea din carte.
  */
 
 const UMPLUT = '#f6d9c6';
@@ -38,85 +40,6 @@ function Linie({ d, culoare = CONTUR, grosime = GROS, punctat }) {
       strokeLinecap="round"
       strokeDasharray={punctat ? '4 4' : undefined}
     />
-  );
-}
-
-/**
- * Corpul unei histograme, desenat într-un sistem local cu originea în colțul
- * de jos-stânga al axelor. E scos separat fiindcă lecția are nevoie și de
- * histograme mari, singure în pagină, și de patru histograme mici alăturate.
- */
-function CorpHistograma({
-  ox = 0,
-  oy = 0,
-  frecvente,
-  marcaje,
-  maxY,
-  pasY = 1,
-  unitate = 34,
-  pas = 46,
-  titlu,
-  titluX,
-  titluY = 'Numărul de măsurători',
-  fontEt = 11,
-  pasEticheta = 1,
-}) {
-  const nx = frecvente.length;
-  const H = maxY * unitate;
-  const L = nx * pas;
-  const tickuri = [];
-  for (let v = 0; v <= maxY + 1e-9; v += pasY) tickuri.push(Math.round(v * 100) / 100);
-  return (
-    <g transform={`translate(${ox},${oy})`}>
-      {titlu && (
-        <Text x={L / 2} y={-H - 38} ancora="middle" marime={13}>
-          {titlu}
-        </Text>
-      )}
-      {titluY && (
-        <Text x={-44} y={-H - 18} ancora="start" marime={fontEt}>
-          {titluY}
-        </Text>
-      )}
-      {frecvente.map((f, i) =>
-        f > 0 ? (
-          <rect
-            key={i}
-            x={i * pas}
-            y={-f * unitate}
-            width={pas}
-            height={f * unitate}
-            fill={UMPLUT}
-            stroke={CONTUR}
-            strokeWidth={GROS}
-          />
-        ) : null,
-      )}
-      <Linie d={`M -12 0 L ${L + 22} 0`} />
-      <VarfAxa x={L + 22} y={0} dir="dreapta" />
-      <Linie d={`M 0 8 L 0 ${-H - 14}`} />
-      <VarfAxa x={0} y={-H - 14} dir="sus" />
-      {tickuri.map((v) => (
-        <g key={v}>
-          <Linie d={`M -4 ${-v * unitate} L 0 ${-v * unitate}`} />
-          <Text x={-8} y={-v * unitate + 4} ancora="end" marime={fontEt}>
-            {v}
-          </Text>
-        </g>
-      ))}
-      {marcaje.map((m, i) =>
-        i % pasEticheta === 0 ? (
-          <Text key={i} x={i * pas} y={18} ancora="middle" marime={fontEt}>
-            {m}
-          </Text>
-        ) : null,
-      )}
-      {titluX && (
-        <Text x={L / 2} y={42} ancora="middle" marime={fontEt}>
-          {titluX}
-        </Text>
-      )}
-    </g>
   );
 }
 
@@ -235,251 +158,7 @@ export function FigAmplitudine() {
   );
 }
 
-/* ══ 3. Histogramele vitezei sunetului ════════════════════════════════════ */
-
-export function FigHistogramaSunet10() {
-  return (
-    <Schema
-      vb="0 0 430 178"
-      latime={430}
-      eticheta="Histograma măsurătorilor vitezei sunetului, pe intervale de 10 m/s"
-      legenda="Histograma celor opt măsurători, pe intervale de 10 m/s."
-    >
-      <CorpHistograma
-        ox={66}
-        oy={120}
-        frecvente={[1, 1, 2, 2, 1, 0, 1]}
-        marcaje={['320', '330', '340', '350', '360', '370', '380', '390']}
-        maxY={2}
-        pasY={1}
-        unitate={40}
-        pas={46}
-        titluX="Viteza sunetului măsurată (m/s)"
-      />
-    </Schema>
-  );
-}
-
-export function FigHistogramaSunet20() {
-  return (
-    <Schema
-      vb="0 0 300 218"
-      latime={300}
-      eticheta="Histograma acelorași măsurători, pe intervale de 20 m/s"
-      legenda="Aceleași opt măsurători, grupate acum pe intervale de 20 m/s."
-    >
-      <CorpHistograma
-        ox={66}
-        oy={158}
-        frecvente={[2, 4, 2]}
-        marcaje={['320', '340', '360', '380']}
-        maxY={4}
-        pasY={1}
-        unitate={30}
-        pas={60}
-        titluX="Viteza sunetului măsurată (m/s)"
-      />
-    </Schema>
-  );
-}
-
-/* ══ 4. Histograma celor zece măsurători de rezistență ════════════════════ */
-
-export function FigHistogramaRezistenta() {
-  return (
-    <Schema
-      vb="0 0 420 218"
-      latime={420}
-      eticheta="Histograma celor zece măsurători de rezistență, pe intervale de un kiloohm"
-      legenda="Histograma celor zece măsurători ale rezistenței, pe intervale de 1 kΩ."
-    >
-      <CorpHistograma
-        ox={66}
-        oy={158}
-        frecvente={[0, 1, 2, 4, 2, 1, 0]}
-        marcaje={['152', '153', '154', '155', '156', '157', '158', '159']}
-        maxY={4}
-        pasY={1}
-        unitate={30}
-        pas={44}
-        titluX="Rezistența măsurată (kΩ)"
-      />
-    </Schema>
-  );
-}
-
-/* ══ 5. Rezistorul: corpul și inelele ═════════════════════════════════════ */
-
-function CorpRezistor({ yFir = 60, inele, xCorp = 130 }) {
-  return (
-    <g>
-      <path
-        d={`M 30 ${yFir} L 400 ${yFir}`}
-        stroke="#9aa0a6"
-        strokeWidth={5}
-        strokeLinecap="round"
-        fill="none"
-      />
-      <rect
-        x={xCorp}
-        y={yFir - 26}
-        width={170}
-        height={52}
-        rx={14}
-        fill="#e6c6a4"
-        stroke="#b08b62"
-        strokeWidth={1.4}
-      />
-      {inele.map((in_, i) => (
-        <rect
-          key={i}
-          x={in_.x}
-          y={yFir - 26}
-          width={14}
-          height={52}
-          fill={in_.c}
-        />
-      ))}
-    </g>
-  );
-}
-
-export function FigRezistorMasurat() {
-  return (
-    <Schema
-      vb="0 0 430 105"
-      latime={400}
-      eticheta="Rezistorul măsurat de elevi, cu inelele maro, verde, galben și auriu"
-      legenda="Rezistorul măsurat de elevi: inelele lui sunt, în ordine, maro, verde, galben și auriu."
-    >
-      <CorpRezistor
-        inele={[
-          { x: 148, c: '#7a4a24' },
-          { x: 172, c: '#1c7c4a' },
-          { x: 196, c: '#f1c40f' },
-          { x: 272, c: '#c9a227' },
-        ]}
-      />
-    </Schema>
-  );
-}
-
-export function FigCodCulori() {
-  const b = [175, 199, 223, 299];
-  return (
-    <Schema
-      vb="0 0 460 180"
-      latime={460}
-      eticheta="Ce înseamnă fiecare inel colorat de pe un rezistor"
-      legenda="Cele patru inele ale unui rezistor: primele două dau cifrele, al treilea multiplicatorul, iar ultimul precizia."
-    >
-      <g transform="translate(20,0)">
-        <CorpRezistor
-          yFir={55}
-          xCorp={150}
-          inele={[
-            { x: 168, c: '#bdbdbd' },
-            { x: 192, c: '#bdbdbd' },
-            { x: 216, c: '#bdbdbd' },
-            { x: 292, c: '#bdbdbd' },
-          ]}
-        />
-        <Linie d={`M ${b[0]} 84 L ${b[0]} 114 L 140 114`} culoare={SLAB} grosime={1.2} />
-        <Text x={136} y={118} ancora="end" marime={11}>
-          prima cifră
-        </Text>
-        <Linie d={`M ${b[1]} 84 L ${b[1]} 136 L 140 136`} culoare={SLAB} grosime={1.2} />
-        <Text x={136} y={140} ancora="end" marime={11}>
-          a doua cifră
-        </Text>
-        <Linie d={`M ${b[2]} 84 L ${b[2]} 158 L 140 158`} culoare={SLAB} grosime={1.2} />
-        <Text x={136} y={162} ancora="end" marime={11}>
-          multiplicatorul
-        </Text>
-        <Linie d={`M ${b[3]} 84 L ${b[3]} 114 L 350 114`} culoare={SLAB} grosime={1.2} />
-        <Text x={354} y={118} ancora="start" marime={11}>
-          precizia
-        </Text>
-      </g>
-    </Schema>
-  );
-}
-
-/* ══ 6. Cele patru serii de măsurători ale frecvenței ═════════════════════ */
-
-export function FigPatruSerii() {
-  return (
-    <Schema
-      vb="0 0 520 400"
-      latime={520}
-      eticheta="Patru histograme ale unor serii de măsurători ale frecvenței unui sunet"
-      legenda="Patru serii de măsurători ale frecvenței sunetului scos de un instrument muzical."
-    >
-      <CorpHistograma
-        ox={58}
-        oy={140}
-        titlu="Seria 1"
-        frecvente={[1, 14, 30, 36, 16, 3]}
-        marcaje={['219,7', '219,8', '219,9', '220,0', '220,1', '220,2', '220,3']}
-        maxY={40}
-        pasY={10}
-        unitate={2.2}
-        pas={30}
-        pasEticheta={2}
-        fontEt={9}
-        titluY="Nr. de măsurători"
-        titluX="Frecvența măsurată (Hz)"
-      />
-      <CorpHistograma
-        ox={300}
-        oy={140}
-        titlu="Seria 2"
-        frecvente={[1, 1, 4, 2, 2]}
-        marcaje={['348,4', '348,6', '348,8', '349,0', '349,2', '349,4']}
-        maxY={4}
-        pasY={1}
-        unitate={22}
-        pas={34}
-        pasEticheta={2}
-        fontEt={9}
-        titluY="Nr. de măsurători"
-        titluX="Frecvența măsurată (Hz)"
-      />
-      <CorpHistograma
-        ox={58}
-        oy={330}
-        titlu="Seria 3"
-        frecvente={[2, 22, 14, 7, 2]}
-        marcaje={['439,8', '439,9', '440,0', '440,1', '440,2', '440,3']}
-        maxY={25}
-        pasY={5}
-        unitate={3.4}
-        pas={34}
-        pasEticheta={2}
-        fontEt={9}
-        titluY="Nr. de măsurători"
-        titluX="Frecvența măsurată (Hz)"
-      />
-      <CorpHistograma
-        ox={300}
-        oy={330}
-        titlu="Seria 4"
-        frecvente={[5, 22, 48, 81, 69, 45, 27, 6]}
-        marcaje={['436', '437', '438', '439', '440', '441', '442', '443', '444']}
-        maxY={80}
-        pasY={20}
-        unitate={1.05}
-        pas={22}
-        pasEticheta={2}
-        fontEt={9}
-        titluY="Nr. de măsurători"
-        titluX="Frecvența măsurată (Hz)"
-      />
-    </Schema>
-  );
-}
-
-/* ══ 7. Cei doi senzori GPS ═══════════════════════════════════════════════ */
+/* ══ 3. Cei doi senzori GPS ═══════════════════════════════════════════════ */
 
 export function FigSenzoriGPS() {
   return (
@@ -516,7 +195,7 @@ export function FigSenzoriGPS() {
   );
 }
 
-/* ══ 8. Măsurătorile senzorului imobil, puse pe axă ═══════════════════════ */
+/* ══ 4. Măsurătorile senzorului imobil, puse pe axă ═══════════════════════ */
 
 const pozGPS = (v) => 45 + v * 8.5;
 

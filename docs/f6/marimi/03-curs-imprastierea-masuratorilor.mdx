@@ -6,11 +6,8 @@ title: "C2 — Împrăștierea măsurătorilor"
 description: "Amplitudinea și semi-amplitudinea unei serii de măsurători, histograma ca indicator grafic și de ce rezultatul nu poate fi mai precis decât instrumentul."
 ---
 
-import {
-  FigAmplitudine,
-  FigHistogramaSunet10,
-  FigHistogramaSunet20,
-} from '@site/src/components/Schema/masurare';
+import { FigAmplitudine } from '@site/src/components/Schema/masurare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C2 — Împrăștierea măsurătorilor
 
@@ -127,7 +124,15 @@ Trecem apoi fiecare dintre aceste numere pe un grafic alcătuit din
 dreptunghiuri pline. Baza fiecărui dreptunghi este unul dintre intervale, iar
 înălțimea lui este numărul de măsurători care cad în intervalul acela:
 
-<FigHistogramaSunet10 />
+<FiguraManual
+  src="c20-hist10.png"
+  lat={741}
+  inalt={384}
+  eticheta="Histograma măsurătorilor vitezei sunetului, pe intervale de 10 m/s"
+  legenda="Histograma celor opt măsurători, pe intervale de 10 m/s."
+>
+  <Et x={7} y={6} w={199} h={17} corp={17} culoare="#1a1a1a">Numărul de măsurători</Et>
+</FiguraManual>
 
 :::warning Atenție
 
@@ -145,7 +150,18 @@ O histogramă depinde de intervalele alese. Dacă am fi hotărât să luăm inte
 de altă lățime, histograma ar fi ieșit altfel. Iată aceleași opt măsurători,
 grupate de data asta pe intervale de $20\ \text{m/s}$:
 
-<FigHistogramaSunet20 />
+<FiguraManual
+  src="c20-hist20.png"
+  lat={650}
+  inalt={463}
+  eticheta="Histograma acelorași măsurători, pe intervale de 20 m/s"
+  legenda="Aceleași opt măsurători, grupate acum pe intervale de 20 m/s."
+>
+  <Et x={7} y={6} w={199} h={17} corp={17} culoare="#1a1a1a">Numărul de măsurători</Et>
+  <Et x={154} y={436} w={425} h={21} corp={15} culoare="#1a1a1a" alinia="centru">
+    Viteza sunetului măsurată (m/s)
+  </Et>
+</FiguraManual>
 
 De regulă, este bine ca lățimea intervalelor să fie o mică parte din
 amplitudine. Aici amplitudinea este de $60\ \text{m/s}$, iar o lățime de

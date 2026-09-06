@@ -6,11 +6,7 @@ title: "LP3 — Principiul inerției"
 description: "Lucrare practică: schiorul care coboară, cele trei faze ale mișcării unui automobil, paletul de hochei cu și fără frecare."
 ---
 
-import {
-  FigSchior,
-  FigGraficVitezaMasina,
-  FigPalet,
-} from '@site/src/components/Schema/forte';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP3 — Principiul inerției
 
@@ -70,7 +66,15 @@ nulă, ea schimbă negreșit valoarea vitezei.
 
 Un schior coboară o pârtie înzăpezită, cu pantă constantă, cu viteză constantă.
 
-<FigSchior />
+<FiguraManual
+  src="c09-schior.png"
+  lat={375}
+  inalt={225}
+  eticheta="Un schior coboară o pârtie înclinată, cu viteză constantă"
+  legenda="Schiorul coboară cu viteză constantă o pârtie înzăpezită, cu pantă constantă."
+>
+  <Et x={90} y={106} w={47} h={20} corp={12} culoare="#4b4848">pârtia</Et>
+</FiguraManual>
 
 **1.** Fă inventarul forțelor care se exercită asupra schiorului.
 
@@ -91,7 +95,13 @@ poate aplica principiul inerției. Greutatea $P$ și reacțiunea $R$ **se
 compensează**. Reacțiunea pârtiei este deci opusă greutății, așa cum e
 reprezentată în figura de mai jos.
 
-<FigSchior forte />
+<FiguraManual
+  src="c09-schior-forte.png"
+  lat={410}
+  inalt={260}
+  eticheta="Un schior coboară o pârtie înclinată, cu greutatea și reacțiunea pârtiei desenate"
+  legenda="Schiorul coboară cu viteză constantă pe o pârtie dreaptă: greutatea P și reacțiunea R a pârtiei se compensează. Reacțiunea are o parte perpendiculară pe pârtie (N) și una de frecare, paralelă cu pârtia (F)."
+/>
 
 Se constată că reacțiunea pârtiei nu este perpendiculară pe ea, deci alunecarea
 schiurilor se face cu frecări: $F$ nu este nulă. Lucrul acesta e cât se poate de
@@ -127,7 +137,17 @@ Pământ, adică în timpul **fazei a doua** a drumului.
 
 **2.** Viteza în funcție de timp arată ca în figura de mai jos.
 
-<FigGraficVitezaMasina />
+<FiguraManual
+  src="c09-grafic-viteza-masina.png"
+  lat={510}
+  inalt={270}
+  eticheta="Graficul vitezei automobilului în funcție de timp"
+  legenda="Viteza automobilului în funcție de timp: crește 9 s, rămâne constantă 12 s, apoi scade până la oprire, în 5 s."
+>
+  <Et x={28}  y={13}  w={60} h={12} corp={10} culoare="#636461" fond="#edf6eb">viteza</Et>
+  <Et x={19}  y={31}  w={82} h={20} corp={11} culoare="#464543" fond="#edf6eb">(km/h)</Et>
+  <Et x={383} y={218} w={82} h={19} corp={12} culoare="#4a4947" fond="#edf6eb">timpul (s)</Et>
+</FiguraManual>
 
 </details>
 
@@ -227,7 +247,16 @@ reacțiunii $R$ a gheții, verticală și îndreptată în sus. Fiind nemișcat 
 în repaus față de Pământ), aceste două forțe **se compensează**: compunerea lor
 dă zero.
 
-<FigPalet />
+<FiguraManual
+  src="c09-palet.png"
+  lat={610}
+  inalt={270}
+  eticheta="Un palet de hochei nemișcat pe gheață, cu greutatea și reacțiunea gheții"
+  legenda="Paletul stă nemișcat pe gheață: greutatea P și reacțiunea R a gheții se compensează."
+>
+  <Et x={454} y={83}  w={48} h={21} corp={14} culoare="#474644" fond="#edf6eb">paletul</Et>
+  <Et x={17}  y={102} w={52} h={21} corp={11} culoare="#343231" fond="#edf6eb">gheața</Et>
+</FiguraManual>
 
 **2.** Dacă lovim paletul tangențial la gheață, îi dăm o viteză orizontală. Dacă
 neglijăm frecările cu gheața, reacțiunea acesteia asupra paletului este aceeași
@@ -241,7 +270,15 @@ strict verticală) și reacțiunea gheții nu se mai compensează, iar forța ca
 rezultă din compunerea lor tinde să încetinească mișcarea paletului, care
 sfârșește prin a se opri.
 
-<FigPalet frecare />
+<FiguraManual
+  src="c09-palet-frecare.png"
+  lat={620}
+  inalt={280}
+  eticheta="Paletul alunecă pe gheață, iar reacțiunea gheții este înclinată"
+  legenda="Când frecările nu mai sunt neglijabile, reacțiunea gheții se înclină: are și o parte orizontală, care se opune mișcării. Greutatea și reacțiunea nu se mai compensează, iar paletul încetinește."
+>
+  <Et x={341} y={28} w={49} h={21} corp={14} culoare="#474644" fond="#edf6eb">paletul</Et>
+</FiguraManual>
 
 </details>
 

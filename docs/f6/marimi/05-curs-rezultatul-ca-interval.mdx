@@ -6,7 +6,7 @@ title: "C3 — Incertitudinea de măsurare"
 description: "Scrierea unui rezultat sub forma valoare ± incertitudine, rotunjirea corectă și felul în care producătorii indică precizia prin toleranță și prin codul culorilor."
 ---
 
-import { FigCodCulori } from '@site/src/components/Schema/masurare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C3 — Incertitudinea de măsurare
 
@@ -148,7 +148,27 @@ Un rezistor e prea mic ca să i se scrie valoarea pe el cu cifre. De aceea
 producătorii folosesc un **cod al culorilor**: pe corpul piesei sunt pictate
 patru inele colorate.
 
-<FigCodCulori />
+<FiguraManual
+  src="c20-codculori.png"
+  lat={733}
+  inalt={258}
+  latime={460}
+  eticheta="Ce înseamnă fiecare inel colorat de pe un rezistor"
+  legenda="Cele patru inele ale unui rezistor: primele două dau cifrele, al treilea multiplicatorul, iar ultimul precizia."
+>
+  <Et x={102} y={145} w={138} h={16} corp={16} culoare="#3b3d3e" fond="#daf0f4" alinia="dreapta">
+    Prima cifră
+  </Et>
+  <Et x={102} y={188} w={160} h={16} corp={16} culoare="#3b3d3e" fond="#daf0f4" alinia="dreapta">
+    A doua cifră
+  </Et>
+  <Et x={20} y={231} w={167} h={21} corp={16} culoare="#3b3d3e" fond="#daf0f4" alinia="dreapta">
+    Multiplicator
+  </Et>
+  <Et x={478} y={145} w={85} h={16} corp={16} culoare="#3b3d3e" fond="#daf0f4">
+    Precizia
+  </Et>
+</FiguraManual>
 
 Primele două inele dau cele două cifre ale valorii nominale:
 

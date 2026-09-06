@@ -6,14 +6,8 @@ title: "LP4 — Principiul acțiunilor reciproce"
 description: "Lucrare practică: bilanțul forțelor unei mașini desenat la scară, maimuța agățată de liană, mobilul pe pernă de aer și traiectoria unui corp aruncat."
 ---
 
-import {
-  FigMasina,
-  FigCompunereMasina,
-  FigMaimutaLiana,
-  FigMobilArc,
-  FigInregistrareMobil,
-  FigTraiectorieBalistica,
-} from '@site/src/components/Schema/forte';
+import { FigCompunereMasina } from '@site/src/components/Schema/forte';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP4 — Principiul acțiunilor reciproce
 
@@ -44,7 +38,13 @@ Mașina reprezentată mai jos, cu greutatea de 6000 N, rulează cu viteză
 constantă pe o șosea dreaptă. Forța exercitată de aer asupra caroseriei este
 orizontală, îndreptată spre spate, și are valoarea de 2000 N.
 
-<FigMasina />
+<FiguraManual
+  src="c09-masina.png"
+  lat={435}
+  inalt={167}
+  eticheta="Un automobil care rulează cu viteză constantă pe o șosea orizontală"
+  legenda="Automobilul rulează cu viteză constantă pe o șosea dreaptă și orizontală."
+/>
 
 Reprezintă pe o schemă greutatea, forța exercitată de aer și reacțiunea șoselei.
 Se ia scara **1 cm pentru 1000 N**.
@@ -87,7 +87,13 @@ $$
 
 adică 3 cm în sus și 1 cm înainte, pentru fiecare punte.
 
-<FigMasina forte />
+<FiguraManual
+  src="c09-masina-forte.png"
+  lat={482}
+  inalt={166}
+  eticheta="Bilanțul forțelor asupra automobilului, cu construcția reacțiunii șoselei alături"
+  legenda="Bilanțul forțelor: greutatea P, forța F a aerului (îndreptată spre spate) și reacțiunea șoselei, aplicată jumătate pe puntea din față (R₁) și jumătate pe cea din spate (R₂)."
+/>
 
 Se vede astfel că reacțiunea șoselei are o parte verticală și o parte
 orizontală îndreptată spre înainte, care se datorează tracțiunii motorului.
@@ -102,7 +108,13 @@ orizontală îndreptată spre înainte, care se datorează tracțiunii motorului
 
 O maimuță este agățată de o liană, care este ea însăși prinsă de două ramuri.
 
-<FigMaimutaLiana />
+<FiguraManual
+  src="c09-maimuta-liana.png"
+  lat={640}
+  inalt={315}
+  eticheta="O maimuță agățată de mijlocul unei liane prinse de două ramuri"
+  legenda="Maimuța e agățată de mijlocul unei liane, prinsă de două ramuri, în A și în B."
+/>
 
 **1.** Care sunt forțele exercitate asupra maimuței?
 
@@ -116,14 +128,26 @@ asupra celeilalte ramuri în punctul B?
 $R$ a lianei. La echilibru, aceste două forțe se anulează, așa cum e reprezentat
 în figura de mai jos.
 
-<FigMaimutaLiana etapa={1} />
+<FiguraManual
+  src="c09-maimuta-liana-1.png"
+  lat={660}
+  inalt={290}
+  eticheta="Maimuța agățată de liană, cu greutatea în jos și reacțiunea lianei în sus"
+  legenda="Maimuța e în echilibru: greutatea P și reacțiunea R a lianei au aceeași valoare și sensuri opuse."
+/>
 
 **2.** Forța $F_A$ exercitată de liană asupra ramurii în punctul A este egală cu
 tensiunea lianei în acel punct. Ea este îndreptată de-a lungul lianei. Același
 raționament se aplică și forței $F_B$ exercitate de liană asupra ramurii în
 punctul B.
 
-<FigMaimutaLiana etapa={2} />
+<FiguraManual
+  src="c09-maimuta-liana-2.png"
+  lat={660}
+  inalt={310}
+  eticheta="Cele trei forțe care se exercită asupra lianei, în A, în B și la mijloc"
+  legenda="Liana trage de fiecare ramură, în A și în B, cu o forță îndreptată de-a lungul ei. Cele trei forțe care se exercită asupra lianei se compensează."
+/>
 
 De notat că, la echilibru, forțele exercitate **asupra lianei** sunt cele opuse
 lui $F_A$, lui $F_B$ și lui $R$ — în virtutea principiului acțiunilor reciproce
@@ -141,7 +165,18 @@ Se consideră un mobil pe pernă de aer. El este legat, pe de o parte, de un
 resort prins de un punct fix și, pe de altă parte, de o coardă pe care o poate
 întinde un operator.
 
-<FigMobilArc />
+<FiguraManual
+  src="c09-mobil-arc.png"
+  lat={630}
+  inalt={215}
+  eticheta="Un mobil pe pernă de aer, legat în stânga de un resort și în dreapta de o coardă ținută de un operator"
+  legenda="Mobilul pe pernă de aer e legat în stânga de un resort prins de un punct fix, iar în dreapta de o coardă pe care o poate întinde un operator."
+>
+  <Et x={347} y={13} w={69}  h={17} corp={12} culoare="#363333">mobil pe</Et>
+  <Et x={325} y={37} w={114} h={19} corp={11} culoare="#363333">pernă de aer</Et>
+  <Et x={217} y={61} w={67}  h={15} corp={12} culoare="#4a4747">resortul</Et>
+  <Et x={29}  y={94} w={95}  h={22} corp={12} culoare="#363333">punct fix</Et>
+</FiguraManual>
 
 **1.** La început, mobilul este în repaus. Ce se poate spune despre forțele care
 se exercită asupra lui? Fă o reprezentare schematică a lor.
@@ -152,7 +187,13 @@ mobilului după rupere?
 
 **3.** Această mișcare poate fi studiată cu ajutorul înregistrării de mai jos.
 
-<FigInregistrareMobil />
+<FiguraManual
+  src="c09-inregistrare-mobil.png"
+  lat={300}
+  inalt={215}
+  eticheta="Înregistrarea pozițiilor succesive ale unui mobil pe pernă de aer"
+  legenda="Înregistrarea pozițiilor mobilului, luate la intervale egale de timp. B și C sunt două puncte în care se întâmplă ceva."
+/>
 
 **a.** Arată că mișcarea prevăzută la întrebarea precedentă se verifică.
 
@@ -172,7 +213,17 @@ compensează. Ele sunt:
 - tensiunea $T_1$ a resortului, orizontală și îndreptată spre stânga;
 - tensiunea $T_2$ a corzii, orizontală și îndreptată spre dreapta.
 
-<FigMobilArc forte />
+<FiguraManual
+  src="c09-mobil-arc-forte.png"
+  lat={660}
+  inalt={230}
+  eticheta="Bilanțul forțelor care se exercită asupra mobilului pe pernă de aer"
+  legenda="Mobilul stă pe loc: forțele orizontale se anulează două câte două (T₁ și T₂), iar forțele verticale la fel (P și R)."
+>
+  <Et x={396} y={16} w={69}  h={17} corp={11} culoare="#353332" fond="#edf6eb">mobil pe</Et>
+  <Et x={397} y={40} w={114} h={19} corp={11} culoare="#353332" fond="#edf6eb">pernă de aer</Et>
+  <Et x={157} y={60} w={66}  h={14} corp={11} culoare="#464543" fond="#edf6eb">resortul</Et>
+</FiguraManual>
 
 Forțele orizontale se anulează două câte două, iar forțele verticale la fel.
 
@@ -185,7 +236,16 @@ principiului inerției, el capătă deci o **mișcare rectilinie uniformă**.
 **3. a.** Punctele înregistrării, până în punctul B, sunt aliniate și egal
 depărtate. Așa cum era prevăzut, mișcarea este rectilinie și uniformă.
 
-<FigInregistrareMobil analiza />
+<FiguraManual
+  src="c09-inregistrare-mobil-analiza.png"
+  lat={310}
+  inalt={210}
+  eticheta="Aceeași înregistrare, cu partea în care punctele sunt aliniate și egal depărtate"
+  legenda="Până în B punctele sunt aliniate și egal depărtate: mișcarea e rectilinie și uniformă. După C ele se apropie tot mai mult: mișcarea încetinește."
+>
+  <Et x={146} y={150} w={82} h={13} corp={8} culoare="#686a66" fond="#edf6eb">puncte aliniate</Et>
+  <Et x={146} y={166} w={85} h={13} corp={8} culoare="#686a66" fond="#edf6eb">și egal depărtate</Et>
+</FiguraManual>
 
 **b.** Puțin după punctul B, mobilul își schimbă direcția. El are atunci tot o
 mișcare rectilinie uniformă, cu aceeași viteză ca înainte, dar spre stânga și în
@@ -212,7 +272,13 @@ corp de dimensiuni mici, într-o direcție care face unghiul $\alpha$ cu
 orizontala. Se neglijează frecările aerului. Se face o cronofotografie a
 experienței, la intervale de timp regulate.
 
-<FigTraiectorieBalistica />
+<FiguraManual
+  src="c09-traiectorie-balistica.png"
+  lat={520}
+  inalt={295}
+  eticheta="Pozițiile succesive ale unui corp aruncat oblic, la intervale egale de timp"
+  legenda="Corpul e aruncat din O cu viteza V, sub unghiul α față de orizontală. Pozițiile sunt înregistrate la intervale egale de timp."
+/>
 
 **1.** Folosind principiul inerției, arată că acest corp nu este supus unor
 forțe care se compensează.
@@ -234,7 +300,13 @@ nici rectilinie, nici uniformă.
 traiectoriei este **greutatea** lui, verticală și îndreptată în jos. Este
 singura forță, de vreme ce se neglijează frecările aerului.
 
-<FigTraiectorieBalistica forte />
+<FiguraManual
+  src="c09-traiectorie-balistica-forte.png"
+  lat={580}
+  inalt={280}
+  eticheta="Aceleași poziții, cu greutatea desenată și cu proiecțiile lor pe orizontală"
+  legenda="Singura forță este greutatea, verticală și îndreptată în jos. Proiecțiile pozițiilor pe orizontală sunt egal depărtate: pe orizontală mișcarea rămâne rectilinie uniformă."
+/>
 
 **3.** Proiecțiile diferitelor puncte ale traiectoriei pe axa orizontală sunt
 reprezentate pe figura de mai sus. Greutatea neavând nicio proiecție pe această

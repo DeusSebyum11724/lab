@@ -6,11 +6,20 @@ title: "LP2 — Împrăștierea măsurătorilor"
 description: "Lucrare practică: citirea histogramelor, construirea unui tabel de frecvențe și amplitudinea măsurătorilor unui senzor GPS."
 ---
 
-import {
-  FigPatruSerii,
-  FigHistogramaRezistenta,
-  FigSenzoriGPS,
-} from '@site/src/components/Schema/masurare';
+import { FigSenzoriGPS } from '@site/src/components/Schema/masurare';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+{/* Cele patru histograme din manual au titlul axei verticale scris pe verticală.
+    Eticheta românească se pune la fel: scoasă din fluxul petei care acoperă
+    cuvântul francez, ca să nu o lățească, și rotită cu un sfert de tur. */}
+
+export const verticala = {
+  position: 'absolute',
+  left: '50%',
+  top: '50%',
+  transform: 'translate(-50%, -50%) rotate(-90deg)',
+  whiteSpace: 'nowrap',
+};
 
 # LP2 — Împrăștierea măsurătorilor
 
@@ -39,7 +48,43 @@ răspunsul tău.
 Se consideră cele patru histograme de mai jos, fiecare corespunzând unei serii
 de măsurători ale frecvenței sunetului scos de un instrument muzical.
 
-<FigPatruSerii />
+<FiguraManual
+  src="c20-patruserii.png"
+  lat={899}
+  inalt={649}
+  latime={520}
+  eticheta="Patru histograme ale unor serii de măsurători ale frecvenței unui sunet"
+  legenda="Patru serii de măsurători ale frecvenței sunetului scos de un instrument muzical."
+>
+  <Et x={219} y={14} w={67} h={17} corp={17} culoare="#1a1a1a">Seria 1</Et>
+  <Et x={650} y={4} w={69} h={17} corp={17} culoare="#1a1a1a">Seria 2</Et>
+  <Et x={212} y={337} w={68} h={17} corp={17} culoare="#1a1a1a">Seria 3</Et>
+  <Et x={683} y={336} w={69} h={17} corp={17} culoare="#1a1a1a">Seria 4</Et>
+  <Et x={136} y={280} w={244} h={21} corp={15} culoare="#1a1a1a" alinia="centru">
+    Frecvența măsurată (Hz)
+  </Et>
+  <Et x={553} y={280} w={245} h={21} corp={15} culoare="#1a1a1a" alinia="centru">
+    Frecvența măsurată (Hz)
+  </Et>
+  <Et x={93} y={621} w={245} h={21} corp={15} culoare="#1a1a1a" alinia="centru">
+    Frecvența măsurată (Hz)
+  </Et>
+  <Et x={561} y={621} w={244} h={21} corp={15} culoare="#1a1a1a" alinia="centru">
+    Frecvența măsurată (Hz)
+  </Et>
+  <Et x={22} y={66} w={14} h={151} corp={12} culoare="#1a1a1a">
+    <span style={verticala}>Număr de măsurători</span>
+  </Et>
+  <Et x={483} y={60} w={14} h={151} corp={12} culoare="#1a1a1a">
+    <span style={verticala}>Număr de măsurători</span>
+  </Et>
+  <Et x={6} y={390} w={14} h={150} corp={12} culoare="#1a1a1a">
+    <span style={verticala}>Număr de măsurători</span>
+  </Et>
+  <Et x={471} y={381} w={14} h={150} corp={12} culoare="#1a1a1a">
+    <span style={verticala}>Număr de măsurători</span>
+  </Et>
+</FiguraManual>
 
 **a.** Fără să faci vreun calcul, spune ce serie de măsurători are media cea mai
 mică.
@@ -126,7 +171,20 @@ măsurătorilor.
 
 **2.** Histograma cerută are înfățișarea următoare:
 
-<FigHistogramaRezistenta />
+<FiguraManual
+  src="c20-histrez.png"
+  lat={755}
+  inalt={417}
+  eticheta="Histograma celor zece măsurători de rezistență, pe intervale de un kiloohm"
+  legenda="Histograma celor zece măsurători ale rezistenței, pe intervale de 1 kΩ."
+>
+  <Et x={32} y={10} w={199} h={17} corp={17} culoare="#1a1a1a" fond="#daf0f4">
+    Numărul de măsurători
+  </Et>
+  <Et x={212} y={382} w={355} h={21} corp={15} culoare="#1a1a1a" fond="#daf0f4" alinia="centru">
+    Rezistența măsurată (kΩ)
+  </Et>
+</FiguraManual>
 
 Pe hârtie milimetrică, se ia un centimetru pentru fiecare interval pe axa
 orizontală și un centimetru pentru fiecare măsurătoare pe axa verticală.
