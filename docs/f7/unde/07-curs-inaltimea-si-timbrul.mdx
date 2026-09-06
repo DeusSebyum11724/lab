@@ -6,10 +6,7 @@ title: "C4 — Înălțimea și timbrul sunetului"
 description: "Înălțimea sunetului și frecvența, domeniul audibil, infrasunete și ultrasunete, timbrul și producerea sunetelor."
 ---
 
-import {
-  FigSunetJosInalt,
-  FigTimbre,
-} from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C4 — Înălțimea și timbrul sunetului
 
@@ -33,7 +30,18 @@ Cu cât frecvența lui este mai mică, cu atât sunetul este mai **jos**.
 
 :::
 
-<FigSunetJosInalt />
+<FiguraManual
+  src="c04-sunet-jos-inalt.png"
+  lat={687}
+  inalt={500}
+  eticheta="Două grafice pe același interval de 10 milisecunde: sunetul de 250 Hz face două perioade și jumătate, cel de 2900 Hz face aproape treizeci"
+  legenda="Pe același interval de timp, sunetul înalt încape de mult mai multe ori decât cel jos."
+>
+  <Et x={165} y={2}   w={345} h={22} corp={12} culoare="#2e2c2c" alinia="centru">Sunet jos (frecvența de 250 Hz)</Et>
+  <Et x={278} y={203} w={118} h={22} corp={12} culoare="#5f5e5e">Timpul (ms)</Et>
+  <Et x={165} y={277} w={344} h={21} corp={12} culoare="#272525" alinia="centru">Sunet înalt (frecvența de 2900 Hz)</Et>
+  <Et x={278} y={476} w={118} h={22} corp={12} culoare="#565656">Timpul (ms)</Et>
+</FiguraManual>
 
 Pe același interval de timp — aici, 10 milisecunde — sunetul jos de
 $250\ \text{Hz}$ face doar câteva perioade, iar sunetul înalt de
@@ -73,7 +81,20 @@ Două sunete pot avea aceeași înălțime, dar timbre diferite: așa se face c�
 deosebim foarte bine aceeași notă „la” cântată de un flaut, de o trompetă sau
 de un pian. Sunetele acestea au aceeași frecvență, dar timbre diferite.
 
-<FigTimbre />
+<FiguraManual
+  src="c04-timbre.png"
+  lat={698}
+  inalt={633}
+  eticheta="Trei grafice ale tensiunii în funcție de timp, pentru flaut, pian și trompetă, cu aceeași perioadă dar cu forme diferite"
+  legenda="Flautul, pianul și trompeta cântă aceeași notă: perioada e aceeași, dar alura curbei pe o perioadă e alta — asta e timbrul."
+>
+  <Et x={508} y={7}   w={55}  h={18} corp={12} culoare="#2b2828" alinia="dreapta">Flaut</Et>
+  <Et x={222} y={183} w={118} h={22} corp={12} culoare="#605d5d">Timpul (ms)</Et>
+  <Et x={503} y={216} w={60}  h={17} corp={12} culoare="#221f1f" alinia="dreapta">Pian</Et>
+  <Et x={222} y={392} w={118} h={22} corp={12} culoare="#595656">Timpul (ms)</Et>
+  <Et x={453} y={426} w={110} h={22} corp={12} culoare="#242121" alinia="dreapta">Trompetă</Et>
+  <Et x={222} y={603} w={118} h={22} corp={12} culoare="#5c5a5a">Timpul (ms)</Et>
+</FiguraManual>
 
 :::warning Atenție
 

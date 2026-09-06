@@ -6,11 +6,7 @@ title: "LP1 — Perioada și frecvența"
 description: "Lucrare practică: compararea semnalelor de pe ecranul osciloscopului, măsurarea perioadei în diviziuni și calculul frecvenței."
 ---
 
-import {
-  FigPatruSemnale,
-  FigOscilatorCeas,
-  FigTensiuneDreptunghiulara,
-} from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP1 — Perioada și frecvența
 
@@ -75,7 +71,18 @@ ca o perioadă să apară limpede pe ecran.
 Se consideră oscilogramele următoare. Baza de timp, sensibilitatea și reglajul
 zeroului osciloscopului sunt aceleași pentru fiecare.
 
-<FigPatruSemnale />
+<FiguraManual
+  src="c04-patru-semnale.png"
+  lat={773}
+  inalt={566}
+  eticheta="Patru oscilograme: o sinusoidă, un șir de impulsuri rotunjite, un semnal în dinți de fierăstrău și un șir de impulsuri dese"
+  legenda="Baza de timp, sensibilitatea și reglajul zeroului sunt aceleași pentru toate patru."
+>
+  <Et x={26}  y={217} w={105} h={18} corp={12} culoare="#2c2929" fond="#fcceb0">Semnalul 1</Et>
+  <Et x={418} y={217} w={105} h={18} corp={12} culoare="#2c2929" fond="#fcceb0">Semnalul 2</Et>
+  <Et x={27}  y={499} w={105} h={19} corp={12} culoare="#2c2929" fond="#fcceb0">Semnalul 3</Et>
+  <Et x={431} y={501} w={105} h={18} corp={12} culoare="#2c2929" fond="#fcceb0">Semnalul 4</Et>
+</FiguraManual>
 
 Adevărat sau fals?
 
@@ -171,7 +178,14 @@ Observăm oscilograma de mai jos. Reglajele osciloscopului sunt:
 - baza de timp: $50\ \mu\text{s}$ pe diviziune;
 - sensibilitatea verticală: $2\ \text{V}$ pe diviziune.
 
-<FigOscilatorCeas />
+<FiguraManual
+  src="c04-oscilator-ceas.png"
+  lat={357}
+  inalt={267}
+  latime={430}
+  eticheta="Ecran de osciloscop cu o sinusoidă care se repetă la fiecare șase diviziuni"
+  legenda="Oscilograma oscilatorului dintr-un ceas electronic."
+/>
 
 Răspunde cu adevărat sau fals la afirmațiile următoare. În fiecare caz,
 justifică răspunsul în cel mult trei rânduri.
@@ -222,7 +236,14 @@ $0{,}1\ \text{ms}$ pe diviziune.
 
 Observăm pe ecranul unui osciloscop tensiunea variabilă reprezentată mai jos.
 
-<FigTensiuneDreptunghiulara />
+<FiguraManual
+  src="c04-tensiune-dreptunghiulara.png"
+  lat={357}
+  inalt={268}
+  latime={430}
+  eticheta="Ecran de osciloscop cu o tensiune dreptunghiulară, care sare între două valori simetrice față de axa timpului"
+  legenda="Osciloscopul fusese reglat dinainte astfel încât traseul să cadă pe axa de la mijlocul ecranului."
+/>
 
 Înainte de a aplica tensiunea aceasta, osciloscopul fusese reglat astfel încât
 traseul să cadă pe axa de la mijlocul ecranului.

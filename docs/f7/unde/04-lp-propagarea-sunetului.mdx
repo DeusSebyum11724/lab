@@ -8,9 +8,9 @@ description: "Lucrare practică: soneria sub clopotul vidat, microfonul ca tradu
 
 import {
   FigClopotVidat,
-  FigMicrofonOsciloscop,
   FigConductaFonta,
 } from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP2 — Sunetul ca undă
 
@@ -76,7 +76,16 @@ pleacă de la sursă de unul singur, ci o vibrație a materiei din jurul sursei.
 Legăm un microfon la calea Y a unui osciloscop folosit în mod baleiaj și
 așezăm în fața microfonului, pe rând, un diapazon și apoi vocea unui coleg.
 
-<FigMicrofonOsciloscop />
+<FiguraManual
+  src="c04-microfon-osciloscop.png"
+  lat={789}
+  inalt={350}
+  eticheta="Sursă de sunet, microfon și osciloscop legate în lanț; pe ecranul osciloscopului apare un traseu neregulat"
+  legenda="Microfonul transformă sunetul într-o tensiune variabilă, pe care osciloscopul o arată în funcție de timp."
+>
+  <Et x={356} y={16} w={128} h={22} corp={11} culoare="#363333">Osciloscop</Et>
+  <Et x={561} y={33} w={69}  h={17} corp={12} culoare="#363333">Calea Y</Et>
+</FiguraManual>
 
 **1.** Ce mărime fizică arată osciloscopul pe verticală? Dar pe orizontală?
 

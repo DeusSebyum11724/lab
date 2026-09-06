@@ -6,10 +6,7 @@ title: "C1 — Perioada și frecvența"
 description: "Fenomenul periodic, perioada, frecvența și relația dintre ele; citirea unui semnal pe ecranul osciloscopului."
 ---
 
-import {
-  FigOscilograma,
-  FigAluraExercitiuTip,
-} from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # C1 — Perioada și frecvența
 
@@ -149,7 +146,20 @@ Ca să vedem un semnal periodic, folosim osciloscopul **în mod baleiaj**: spotu
 mătură atunci ecranul pe orizontală, pe măsură ce trece timpul, iar tensiunea
 periodică de vizualizat îl deviază pe verticală.
 
-<FigOscilograma />
+<FiguraManual
+  src="c04-oscilograma.png"
+  lat={886}
+  inalt={610}
+  eticheta="Ecran de osciloscop cu un semnal sinusoidal; sunt marcate perioada T, tensiunea maximă, tensiunea minimă și cele două diviziuni ale grilei"
+  legenda="Traseul osciloscopului dă reprezentarea tensiunii în funcție de timp."
+>
+  <Et x={193} y={18}  w={150} h={21} corp={12} culoare="#2c2929">tensiunea U (t)</Et>
+  <Et x={428} y={78}  w={103} h={18} corp={12} culoare="#2c2929" fond="#fcceb0">perioada T</Et>
+  <Et x={85}  y={188} w={54}  h={16} corp={12} culoare="#f1514b" fond="#fcceb0">traseul</Et>
+  <Et x={673} y={311} w={79}  h={20} corp={13} culoare="#2c2929">timpul t</Et>
+  <Et x={674} y={444} w={180} h={18} corp={12} culoare="#2c2929">diviziune verticală</Et>
+  <Et x={216} y={567} w={198} h={17} corp={11} culoare="#4b4848">diviziune orizontală</Et>
+</FiguraManual>
 
 Spotul mătură ecranul de la stânga la dreapta cu o viteză pe care o putem regla
 de la osciloscop. Ea se exprimă în unități de timp pe diviziune și se numește
@@ -199,7 +209,13 @@ $$
 
 **4.** Indicațiile de mai sus permit trasarea curbei următoare:
 
-<FigAluraExercitiuTip />
+<FiguraManual
+  src="c04-alura-exercitiu.png"
+  lat={641}
+  inalt={487}
+  eticheta="Ecran de osciloscop cu o sinusoidă de patru diviziuni pe perioadă și două diviziuni amplitudine"
+  legenda="Alura tensiunii pe ecran: o perioadă ocupă 4 diviziuni, iar spotul urcă și coboară câte 2 diviziuni."
+/>
 
 ---
 

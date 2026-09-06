@@ -6,11 +6,8 @@ title: "LP3 — Viteza sunetului și ecoul"
 description: "Lucrare practică: liliacul, submarinul și măsurarea vitezei sunetului cu două microfoane."
 ---
 
-import {
-  FigEcou,
-  FigMontajVitezaSunet,
-  FigTraseeVitezaSunet,
-} from '@site/src/components/Schema/sunete';
+import { FigEcou } from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP3 — Viteza sunetului și ecoul
 
@@ -139,7 +136,19 @@ $$
 
 Se face experimentul reprezentat în figura de mai jos.
 
-<FigMontajVitezaSunet />
+<FiguraManual
+  src="c04-montaj-viteza-sunet.png"
+  lat={497}
+  inalt={202}
+  latime={560}
+  eticheta="Osciloscop legat la două microfoane așezate pe o riglă gradată; în dreapta, un ciocan lovește"
+  legenda="Cele două microfoane primesc sunetul la momente diferite, fiindcă nu sunt la aceeași depărtare de locul loviturii."
+>
+  <Et x={198} y={46}  w={95}  h={15} corp={11} culoare="#3a3737" alinia="centru">microfon 1</Et>
+  <Et x={252} y={67}  w={95}  h={16} corp={11} culoare="#363333" alinia="centru">microfon 2</Et>
+  <Et x={383} y={69}  w={71}  h={14} corp={10} culoare="#603812" alinia="centru">ciocan</Et>
+  <Et x={225} y={176} w={120} h={19} corp={10} culoare="#f79725" alinia="centru">riglă gradată</Et>
+</FiguraManual>
 
 Osciloscopul este un osciloscop cu memorie, care se declanșează atunci când un
 semnal e detectat pe calea 2 și care păstrează pe ecran traseele obținute.
@@ -149,7 +158,14 @@ experiment?
 
 **2.** Se obțin traseele următoare.
 
-<FigTraseeVitezaSunet />
+<FiguraManual
+  src="c04-trasee-viteza-sunet.png"
+  lat={322}
+  inalt={238}
+  latime={400}
+  eticheta="Două trasee pe același ecran: fiecare stă jos și apoi urcă brusc, al doilea mai la dreapta decât primul"
+  legenda="Fiecare traseu urcă în clipa în care microfonul lui primește sunetul."
+/>
 
 Baza de timp este de $0{,}5\ \text{ms}$ pe diviziune. Microfoanele sunt
 depărtate cu $78\ \text{cm}$. Care este viteza sunetului?

@@ -6,10 +6,7 @@ title: "LP5 — Nivelul sonor"
 description: "Lucrare practică: citirea scării decibelilor, semnalul unei corzi de chitară și măsurarea nivelului sonor cu sonometrul."
 ---
 
-import {
-  FigScaraNivelSonor,
-  FigSemnalChitara,
-} from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP5 — Nivelul sonor
 
@@ -35,7 +32,24 @@ răspunsul tău.
 
 **Timp de lucru: 5 minute.**
 
-<FigScaraNivelSonor />
+<FiguraManual
+  src="c04-scara-nivel-sonor.png"
+  lat={775}
+  inalt={375}
+  eticheta="Bandă gradată de la 0 la 120 de decibeli, cu pragul de audibilitate la 0 dB și pragul de durere la 120 dB"
+  legenda="Nivelul sonor se măsoară în decibeli. Peste 80 dB, o expunere lungă pune auzul în pericol."
+>
+  <Et x={318} y={6}   w={184} h={17} corp={13} culoare="#2a2727" alinia="centru">pragul de durere</Et>
+  <Et x={483} y={52}  w={245} h={23} corp={12} culoare="#323131">Intensitate sonoră (W/m²)</Et>
+  <Et x={517} y={202} w={197} h={20} corp={12} culoare="#323131">Nivel sonor (dB)</Et>
+  <Et x={7}   y={231} w={88}  h={17} corp={12} culoare="#2a2727">pragul de</Et>
+  <Et x={6}   y={260} w={115} h={17} corp={13} culoare="#2a2727">audibilitate</Et>
+  <Et x={165} y={254} w={127} h={15} corp={11} culoare="#403f3f">conversație</Et>
+  <Et x={102} y={295} w={170} h={22} corp={12} culoare="#2f2c2c">cameră liniștită</Et>
+  <Et x={450} y={266} w={186} h={22} corp={12} culoare="#323131">avion la decolare</Et>
+  <Et x={450} y={313} w={176} h={19} corp={11} culoare="#393737">ciocan pneumatic</Et>
+  <Et x={192} y={347} w={292} h={22} corp={11} culoare="#323131" alinia="centru">concert de muzică clasică</Et>
+</FiguraManual>
 
 **1.** Ce nivel sonor corespunde pragului de audibilitate? Dar pragului de
 durere?
@@ -74,7 +88,17 @@ sunet înalt poate fi foarte slab, iar un sunet jos poate fi asurzitor.
 S-a înregistrat sunetul produs de o chitară atunci când se ciupește una dintre
 corzile ei. Iată semnalul sonor produs de coardă.
 
-<FigSemnalChitara />
+<FiguraManual
+  src="c04-semnal-chitara.png"
+  lat={737}
+  inalt={336}
+  eticheta="Grafic al amplitudinii semnalului în funcție de timp, între 0 și 0,200 secunde; tiparul se repetă de zece ori"
+  legenda="Semnalul sonor produs de coarda ciupită a unei chitare."
+>
+  <Et x={7}   y={6}   w={95} h={20} corp={13} culoare="#3d3939">Amplitudinea</Et>
+  <Et x={14}  y={28}  w={82} h={19} corp={12} culoare="#3e3b3b">semnalului</Et>
+  <Et x={614} y={310} w={88} h={20} corp={12} culoare="#5a5858">Timpul (s)</Et>
+</FiguraManual>
 
 **1.** Este semnalul periodic?
 

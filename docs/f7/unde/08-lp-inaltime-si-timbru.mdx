@@ -6,13 +6,7 @@ title: "LP4 — Înălțimea și timbrul sunetului"
 description: "Lucrare practică: sirena cu 20 de găuri, trei instrumente care cântă aceeași notă și citirea înregistrărilor numerice."
 ---
 
-import {
-  FigTimbre,
-  FigSirena,
-  FigInregistrareChitara,
-  FigInregistrareBas,
-  FigInregistrareVioara,
-} from '@site/src/components/Schema/sunete';
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 # LP4 — Înălțimea și timbrul sunetului
 
@@ -59,7 +53,20 @@ Cu cât nivelul sonor al unui sunet este mai mare, cu atât sunetul este mai
 (adică de frecvență). Flautul, pianul și trompeta cântă aceeași notă, cu aceeași
 perioadă, dar alura curbei pe o perioadă e alta la fiecare:
 
-<FigTimbre />
+<FiguraManual
+  src="c04-timbre.png"
+  lat={698}
+  inalt={633}
+  eticheta="Trei grafice ale tensiunii în funcție de timp, pentru flaut, pian și trompetă, cu aceeași perioadă dar cu forme diferite"
+  legenda="Flautul, pianul și trompeta cântă aceeași notă: perioada e aceeași, dar alura curbei pe o perioadă e alta — asta e timbrul."
+>
+  <Et x={508} y={7}   w={55}  h={18} corp={12} culoare="#2b2828" alinia="dreapta">Flaut</Et>
+  <Et x={222} y={183} w={118} h={22} corp={12} culoare="#605d5d">Timpul (ms)</Et>
+  <Et x={503} y={216} w={60}  h={17} corp={12} culoare="#221f1f" alinia="dreapta">Pian</Et>
+  <Et x={222} y={392} w={118} h={22} corp={12} culoare="#595656">Timpul (ms)</Et>
+  <Et x={453} y={426} w={110} h={22} corp={12} culoare="#242121" alinia="dreapta">Trompetă</Et>
+  <Et x={222} y={603} w={118} h={22} corp={12} culoare="#5c5a5a">Timpul (ms)</Et>
+</FiguraManual>
 
 **2.** Răspunsul **b**. Nivelul sonor și înălțimea sunt noțiuni independente:
 un sunet jos poate fi foarte puternic, iar un sunet înalt poate fi abia auzit.
@@ -75,7 +82,18 @@ un sunet jos poate fi foarte puternic, iar un sunet înalt poate fi abia auzit.
 Discul unei sirene are 20 de găuri așezate la fel de des pe marginea lui; el se
 rotește în fața unui jet de aer cu viteza de 3 000 de rotații pe minut.
 
-<FigSirena />
+<FiguraManual
+  src="c04-sirena.png"
+  lat={359}
+  inalt={340}
+  latime={420}
+  eticheta="Disc care se rotește, cu douăzeci de găuri așezate la fel de des pe margine, și un jet de aer îndreptat spre ele"
+  legenda="La fiecare rotație a discului, jetul de aer trece prin 20 de găuri: aerul e întrerupt de 20 de ori."
+>
+  <Et x={267} y={83}  w={82}  h={17} corp={12} culoare="#393837" fond="#edf6eb">Jet de aer</Et>
+  <Et x={35}  y={281} w={105} h={16} corp={12} culoare="#3d3c3a" fond="#edf6eb">20 de găuri</Et>
+  <Et x={34}  y={308} w={219} h={22} corp={12} culoare="#3d3c3a" fond="#edf6eb">așezate la fel de des</Et>
+</FiguraManual>
 
 **1.** Care este frecvența sunetului emis?
 
@@ -156,11 +174,29 @@ Tensiunea electrică detectată la nivelul interfeței informatice, notată
 $U_{AM}$, este proporțională cu presiunea acustică a sunetului. Tensiunea
 aceasta, în funcție de timp, este reprezentată în documentele următoare.
 
-<FigInregistrareChitara />
+<FiguraManual
+  src="c04-inregistrare-chitara.png"
+  lat={722}
+  inalt={358}
+  eticheta="Grafic al tensiunii în funcție de timp, cu un tipar care se repetă la fiecare cinci milisecunde; vârful cel mai înalt cade la 4 ms și se repetă la 9 ms"
+  legenda="Documentul 1 — înregistrarea numerică a unui sunet al chitarei."
+/>
 
-<FigInregistrareBas />
+<FiguraManual
+  src="c04-inregistrare-bas.png"
+  lat={722}
+  inalt={358}
+  eticheta="Grafic al tensiunii în funcție de timp, cu același interval de repetare de cinci milisecunde, dar cu altă formă a curbei"
+  legenda="Documentul 2 — înregistrarea numerică a unui sunet al basului."
+/>
 
-<FigInregistrareVioara />
+<FiguraManual
+  src="c04-inregistrare-vioara.png"
+  lat={722}
+  inalt={358}
+  eticheta="Grafic al tensiunii în funcție de timp, cu un tipar care se repetă mult mai des decât la chitară"
+  legenda="Documentul 3 — înregistrarea numerică a unui sunet al viorii."
+/>
 
 **1.** Descrie principiul emisiei unui sunet de către coarda unei chitare.
 
