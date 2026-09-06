@@ -110,18 +110,30 @@ function Particula({ x, y, r = 9 }) {
 
 /** Vas închis, cu capac: același vas pentru toate cele trei stări. */
 function Vas({ x, y, w = 104, h = 108 }) {
-  const st = x - w / 2;
-  const dr = x + w / 2;
-  const jos = y + h;
+  /* Borcan cu capac, nu dreptunghi gol. Peretii coboara usor spre interior,
+     ca la paharul si cana din figura vecina — altfel cele trei vase arata ca
+     niste cutii desenate cu rigla, iar figura iese mai saraca decat cele de
+     langa ea. Capacul e o bara mai groasa, sprijinita pe doua umeri scurti,
+     ca vasul sa se citeasca drept INCHIS: asta e chiar ce deosebeste gazul,
+     care umple tot vasul, de un vas deschis din care ar iesi. */
+  const sus = w / 2;
+  const jos = w / 2 - 5;
+  const yJ = y + h;
   return (
     <g>
+      {/* corpul */}
       <path
-        d={`M ${st} ${y} L ${st} ${jos} L ${dr} ${jos} L ${dr} ${y}`}
-        fill="none"
+        d={`M ${x - sus} ${y + 6} L ${x - jos} ${yJ} L ${x + jos} ${yJ} L ${x + sus} ${y + 6}`}
+        fill="#ffffff"
         stroke={CULORI.contur}
         strokeWidth={1.8}
+        strokeLinejoin="round"
       />
-      <path d={`M ${st - 9} ${y} L ${dr + 9} ${y}`} stroke={CULORI.contur} strokeWidth={2.4} />
+      {/* gatul si capacul */}
+      <path d={`M ${x - sus} ${y + 6} L ${x - sus} ${y}`} stroke={CULORI.contur} strokeWidth={1.8} />
+      <path d={`M ${x + sus} ${y + 6} L ${x + sus} ${y}`} stroke={CULORI.contur} strokeWidth={1.8} />
+      <rect x={x - sus - 9} y={y - 5} width={w + 18} height={7} rx={2}
+            fill={CULORI.umplutura} stroke={CULORI.contur} strokeWidth={1.6} />
     </g>
   );
 }
@@ -205,19 +217,23 @@ export function FigStariMacroscopic() {
     >
       <Sageti prefix="vas" />
 
+      {/* a. SOLID — un bloc cu forma lui, care nu se muleaza pe vas */}
       <Vas x={80} y={38} />
-      <rect x={52} y={106} width={56} height={38} rx="3" fill={CULORI.umplutura} stroke={CULORI.contur} strokeWidth={1.6} />
+      <path d="M 58 108 L 62 138 L 100 140 L 104 110 Z"
+            fill={CULORI.umplutura} stroke={CULORI.contur} strokeWidth={1.6} strokeLinejoin="round" />
 
+      {/* b. LICHID — se muleaza pe fundul vasului si are suprafata plana */}
       <Vas x={240} y={38} />
-      <path d="M 188 98 L 292 98 L 292 146 L 188 146 Z" fill={CULORI.umplutura} stroke="none" />
-      <path d="M 188 98 L 292 98" stroke={CULORI.contur} strokeWidth={1.8} fill="none" />
+      <path d="M 191 100 L 193 146 L 287 146 L 289 100 Z" fill={CULORI.umplutura} stroke="none" />
+      <path d="M 191 100 L 289 100" stroke={CULORI.contur} strokeWidth={2} fill="none" />
 
+      {/* c. GAZ — particule imprastiate pana in colturi */}
       <Vas x={400} y={38} />
       {[
-        [366, 58], [418, 50], [440, 74], [380, 86], [412, 100], [356, 112],
-        [436, 122], [392, 130], [370, 140], [424, 142],
+        [366, 58], [418, 50], [438, 76], [380, 86], [412, 100], [358, 112],
+        [434, 122], [392, 128], [372, 140], [422, 140], [400, 68], [356, 92],
       ].map(([x, y]) => (
-        <circle key={`v${x}-${y}`} cx={x} cy={y} r={4.5} fill={CULORI.contur} />
+        <circle key={`v${x}-${y}`} cx={x} cy={y} r={4.2} fill={CULORI.contur} />
       ))}
 
       <Text x={80} y={172} ancora="middle" marime={15}>a.</Text>

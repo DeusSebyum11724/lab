@@ -36,7 +36,6 @@ import { Schema, Fir, Text, CULORI } from './index';
 
 const R_ROSU = '#c0392b';
 const R_ALBASTRU = '#1f6fb2';
-const STICLA = CULORI.umplutura;
 
 /** Un centimetru, în unitățile figurilor desenate la scară. */
 const CM = 26;
@@ -187,62 +186,6 @@ function Cota({ x1, x2, y, eticheta, culoare = CULORI.fir }) {
       <Varf x={x2} y={y} unghi={0} culoare={culoare} marime={6} />
       <Punct x={(x1 + x2) / 2} y={y - 7}>{eticheta}</Punct>
     </g>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  GEOMETRIA COMUNĂ A CONSTRUCȚIILOR                                  */
-/*  O = 250, axa la y = 140, f = 70, B = (60, 80),                      */
-/*  imaginea iese exact în B′ = (361, 175).                             */
-/* ------------------------------------------------------------------ */
-
-const G = { O: 250, y: 140, F: 180, F2: 320, xB: 60, yB: 80, xB2: 361, yB2: 175, sus: 45, jos: 235 };
-
-function CadruConstructie({ children }) {
-  return (
-    <>
-      <Axa x1={20} x2={440} y={G.y} />
-      {children}
-      <Lentila x={G.O} y1={G.sus} y2={G.jos} />
-    </>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  C7 — MĂRIREA ȘI MODELUL OCHIULUI                                   */
-/* ------------------------------------------------------------------ */
-
-/** Triunghiurile asemenea din care iese mărirea. */
-export function FigMarireThales() {
-  return (
-    <Schema
-      vb="0 0 460 260"
-      latime={460}
-      eticheta="Triunghiurile OAB și OA prim B prim, hașurate, sunt asemenea"
-      legenda="Figura 16 — Raza care trece prin O face din OAB și OA′B′ două triunghiuri asemenea."
-    >
-      <polygon
-        points={`${G.xB},${G.y} ${G.xB},${G.yB} ${G.O},${G.y}`}
-        fill={STICLA}
-        opacity={0.55}
-      />
-      <polygon
-        points={`${G.O},${G.y} ${G.xB2},${G.yB2} ${G.xB2},${G.y}`}
-        fill={STICLA}
-        opacity={0.55}
-      />
-      <CadruConstructie>
-        <Segment x1={G.xB} y1={G.yB} x2={G.O} y2={G.y} culoare={R_ALBASTRU} varf={0.5} />
-        <Segment x1={G.O} y1={G.y} x2={G.xB2} y2={G.yB2} culoare={R_ALBASTRU} varf={0.55} />
-      </CadruConstructie>
-      <SageataObiect x={G.xB} yAxa={G.y} yVarf={G.yB} />
-      <SageataObiect x={G.xB2} yAxa={G.y} yVarf={G.yB2} />
-      <Punct x={G.xB - 8} y={G.yB + 4} ancora="end">B</Punct>
-      <Punct x={G.xB - 8} y={G.y + 20} ancora="end">A</Punct>
-      <Punct x={G.xB2 + 4} y={G.y - 10} ancora="start">A′</Punct>
-      <Punct x={G.xB2 + 9} y={G.yB2 + 14} ancora="start">B′</Punct>
-      <Punct x={G.O - 6} y={G.y - 9} ancora="end">O</Punct>
-    </Schema>
   );
 }
 
