@@ -1,0 +1,217 @@
+---
+sidebar_position: 7
+sidebar_label: "C3 — Viteza sunetului"
+slug: /f7/unde/c3
+title: "C3 — Viteza sunetului"
+description: "Măsurarea vitezei sunetului cu două microfoane, valoarea de 340 m/s în aer, ce o schimbă și ce nu, ecoul și măsurarea distanțelor."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Viteza sunetului
+
+:::info Planul orei
+
+1. Introducere
+2. Măsurarea vitezei sunetului în aer
+3. Calculul
+4. Ce nu schimbă viteza sunetului
+5. Ce o schimbă: mediul
+6. Ecoul și măsurarea distanțelor
+7. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**La un foc de artificii, vezi jerba luminoasă înainte de a auzi bubuitura
+exploziei.**
+
+**1.** Ce distanță desparte cele două microfoane?
+
+**2.** Cât timp îi trebuie semnalului sonor ca să străbată această distanță?
+
+**3.** Calculează, din rezultatele tale, viteza de propagare a sunetului în aer,
+în m/s.
+
+**4.** Știind că viteza luminii în aer este de $300\,000$ km/s, lămurește de ce
+vedem explozia rachetei înainte de a o auzi.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Măsurarea vitezei sunetului în aer
+
+**Materialul:** două tije de metal, o șină, două microfoane (senzori sonori), un
+cronometru numeric.
+
+**Cum se lucrează:**
+
+- se așază pe șină cele două microfoane, la $1$ metru unul de altul;
+- se leagă cronometrul la microfoane;
+- se face o pocnitură scurtă cu tijele, în fața primului microfon;
+- se citește timpul arătat de cronometru.
+
+<FiguraManual
+  src="h33-microfoane.png"
+  lat={1145}
+  inalt={368}
+  latime={620}
+  eticheta="O șină lungă cu două microfoane la un metru unul de altul, un cronometru numeric între ele și două tije de metal lovite deasupra; cronometrul arată 0,0029 secunde"
+  legenda="Sunetul scos de tije se propagă între cele două microfoane."
+/>
+
+Cronometrul numeric măsoară timpul de care are nevoie sunetul ca să străbată
+distanța dintre cele două microfoane. El arată $0{,}0029$ secunde.
+
+---
+
+## 3. Calculul
+
+$$
+v = \frac{d}{t} = \frac{1\ \text{m}}{0{,}0029\ \text{s}} \approx 345\ \text{m/s}
+$$
+
+Valoarea cunoscută a vitezei sunetului în aer, la $15\ ^\circ\text{C}$, este de
+$340$ m/s. Rezultatul măsurat se potrivește bine cu ea; deosebirea de câțiva
+metri pe secundă vine din nesiguranțele măsurării și din temperatura camerei.
+
+:::tip De reținut
+
+$$
+\text{viteza sunetului în aer} \approx 340\ \text{m/s}
+$$
+
+:::
+
+Ia seama: $340$ de metri pe secundă înseamnă peste $1\,200$ de kilometri pe oră.
+Sunetul e repede pentru noi — dar, cum vom vedea, foarte încet față de lumină.
+
+---
+
+## 4. Ce nu schimbă viteza sunetului
+
+Două lucruri, pe care mulți le cred hotărâtoare, **nu schimbă nimic**:
+
+**Frecvența.** În secolul al XVII-lea, învățatul francez Pierre Gassendi
+(1592–1655) a scris: sunetul fie că e făcut de o mașinărie mare, cum e un tun —
+sunet grav — fie de una mică, cum e o muschetă — sunet înalt — **viteza rămâne
+aceeași**.
+
+**Tăria.** În $1738$, experiențele făcute de Jacques-Philippe Maraldi și de
+abatele de La Caille au arătat că un sunet „tare” se deplasează cu aceeași
+viteză ca unul „slab”.
+
+:::warning Atenție
+
+Dacă viteza ar depinde de frecvență, o orchestră ascultată de departe ar suna
+dezacordat: notele înalte ar sosi înaintea celor grave. Faptul că nu se întâmplă
+este o dovadă de fiecare zi.
+
+:::
+
+---
+
+## 5. Ce o schimbă: mediul
+
+| Mediul | Vid | Aer | Apă | Sticlă |
+|---|---|---|---|---|
+| Masa volumică (g/L) | — | 1,3 | 1 000 | 2 530 |
+| Viteza sunetului (m/s) | — | 340 | 1 500 | 5 300 |
+
+În vid nu există viteză a sunetului, fiindcă nu există sunet.
+
+Se vede o regulă: cu cât mediul e mai dens și mai legat, cu atât sunetul merge
+mai repede prin el. În apă e de patru ori mai iute decât în aer, iar în sticlă
+de peste cincisprezece ori.
+
+<FiguraManual
+  src="h33-colladon.png"
+  lat={479}
+  inalt={390}
+  latime={360}
+  eticheta="Gravură veche: doi oameni în două bărci pe un lac; unul lovește un clopot scufundat, celălalt ascultă cu un cornet acustic scufundat"
+  legenda="Colladon și Sturm măsoară viteza sunetului în apă, pe lacul Léman, în 1826."
+/>
+
+Cei doi au găsit atunci $1\,435$ m/s — o valoare foarte apropiată de cea
+folosită azi.
+
+---
+
+## 6. Ecoul și măsurarea distanțelor
+
+Când un semnal sonor întâlnește un obstacol, el este **întors** înapoi, spre
+locul de unde a plecat: acesta este **ecoul**.
+
+Vapoarele folosesc **sonarul**: un aparat așezat sub carenă, care trimite un
+semnal de frecvență foarte înaltă și măsoară timpul scurs până când semnalul se
+întoarce.
+
+:::warning Atenție
+
+Semnalul face drumul **de două ori**: dus și întors. De aceea:
+
+$$
+d = \frac{v \times t}{2}
+$$
+
+Cine uită împărțirea la doi găsește o adâncime de două ori mai mare decât cea
+adevărată.
+
+:::
+
+---
+
+## 7. Rezolvarea exercițiului-tip
+
+**1.** Cele două microfoane sunt așezate la $1$ metru unul de altul.
+
+**2.** Cronometrul arată $t = 0{,}0029$ secunde.
+
+**3.**
+
+$$
+v = \frac{d}{t} = \frac{1}{0{,}0029} \approx 345\ \text{m/s}
+$$
+
+Valoarea se potrivește cu cea cunoscută, $340$ m/s.
+
+**4.** Fiindcă lumina merge **mult** mai repede decât sunetul:
+
+$$
+v_{\text{lumină}} = 300\,000\ \text{km/s}
+\qquad
+v_{\text{sunet}} = 340\ \text{m/s} = 0{,}34\ \text{km/s}
+$$
+
+$$
+\frac{300\,000}{0{,}34} \approx 880\,000
+$$
+
+Lumina este de aproape **un milion de ori** mai rapidă. Pentru o rachetă
+explodată la $1$ kilometru, lumina ajunge la noi într-un timp de care nu ne
+putem da seama, iar sunetul abia după
+
+$$
+t = \frac{d}{v} = \frac{1\,000\ \text{m}}{340\ \text{m/s}} \approx 3\ \text{s}
+$$
+
+De aici și obiceiul de a număra secundele dintre fulger și tunet: **fiecare trei
+secunde înseamnă aproximativ un kilometru**.
+
+---
+
+:::note Ora următoare
+
+**LP3 — Viteza sunetului.** Patru probe: măsurarea cu microfoanele, fulgerul și
+tunetul, sonarul și epava Titanicului, și ce nu schimbă viteza.
+
+Înainte de ea, treci prin
+**[S3 — Viteza sunetului](./08-s-viteza-sunetului.mdx)**: formulele lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

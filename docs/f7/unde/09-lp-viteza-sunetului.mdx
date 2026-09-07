@@ -1,0 +1,225 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Viteza sunetului"
+slug: /f7/unde/lp3
+title: "LP3 — Viteza sunetului"
+description: "Lucrare practică: măsurarea cu două microfoane, fulgerul și tunetul, sonarul și epava Titanicului, ce nu schimbă viteza."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Viteza sunetului
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Viteza sunetului](./07-curs-viteza-sunetului.mdx)**, cu formulele din
+**[S3](./08-s-viteza-sunetului.mdx)** la îndemână. Patru probe; în total 50 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Măsurarea cu microfoanele | ★ | 10 min |
+| 2 | Fulgerul și tunetul | ★★ | 10 min |
+| 3 | Ce nu schimbă viteza | ★★ | 10 min |
+| 4 | Epava Titanicului | ★★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Măsurarea cu microfoanele
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="h33-microfoane.png"
+  lat={1145}
+  inalt={368}
+  latime={620}
+  eticheta="O șină lungă cu două microfoane la un metru unul de altul și un cronometru numeric care arată 0,0029 secunde"
+  legenda="Măsurarea vitezei sunetului în aer."
+/>
+
+**1.** Ce distanță desparte microfoanele? Ce timp arată cronometrul?
+
+**2.** Calculează viteza sunetului în aer.
+
+**3.** Compară rezultatul cu valoarea cunoscută, $340$ m/s. De unde vine
+deosebirea?
+
+**4.** De ce s-a folosit o pocnitură scurtă, și nu un fluierat lung?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** $d = 1\ \text{m}$ și $t = 0{,}0029\ \text{s}$.
+
+**2.**
+
+$$
+v = \frac{d}{t} = \frac{1}{0{,}0029} \approx 345\ \text{m/s}
+$$
+
+**3.** Valoarea găsită e cu aproximativ $5$ m/s mai mare. Deosebirea vine din
+**nesiguranțele măsurării** — poziția exactă a microfoanelor, pornirea
+cronometrului — și din **temperatura** camerei, care nu este neapărat
+$15\ ^\circ\text{C}$.
+
+**4.** Fiindcă cronometrul trebuie să prindă un **început limpede** al sunetului.
+O pocnitură scurtă are un început ascuțit, ușor de reperat de fiecare microfon.
+Un fluierat lung crește încet și n-ar da un moment de pornire precis.
+
+</details>
+
+---
+
+## 2. Fulgerul și tunetul
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+**1.** De ce vedem fulgerul înainte de a auzi tunetul, deși ele se produc în
+aceeași clipă?
+
+**2.** Numeri $6$ secunde între fulger și tunet. La ce depărtare a căzut
+trăsnetul?
+
+**3.** Un coleg spune că regula „trei secunde, un kilometru” e o aproximare. Cât
+de bună este ea?
+
+**4.** Ai putea afla, în același fel, depărtarea până la un foc de artificii?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Fiindcă lumina merge de aproape un milion de ori mai repede decât
+sunetul. Lumina fulgerului ajunge practic pe loc; sunetul are nevoie de timp.
+
+**2.**
+
+$$
+d = v \times t = 340\ \text{m/s} \times 6\ \text{s} = 2\,040\ \text{m}
+$$
+
+Aproximativ **2 kilometri**.
+
+**3.** Este foarte bună. În trei secunde sunetul face
+
+$$
+340 \times 3 = 1\,020\ \text{m}
+$$
+
+adică un kilometru cu o eroare de $2\%$ — mult sub precizia cu care poți număra
+secundele în cap.
+
+**4.** **Da**, întocmai la fel: vezi jerba, numeri secundele până la bubuitură și
+înmulțești cu $340$. Metoda merge pentru orice fenomen care dă deodată lumină și
+sunet.
+
+</details>
+
+---
+
+## 3. Ce nu schimbă viteza
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Un tun scoate un sunet grav, o pușcă unul înalt. Ajung ele la ureche în
+același timp, de la aceeași depărtare?
+
+**2.** Un sunet tare merge mai repede decât unul slab?
+
+**3.** Ce dovadă de fiecare zi arată că viteza nu depinde de frecvență?
+
+**4.** Ce **schimbă**, atunci, viteza sunetului?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Da**, ajung în același timp. Pierre Gassendi a arătat aceasta încă din
+secolul al XVII-lea: viteza sunetului în aer **nu depinde de frecvența** lui.
+
+**2.** **Nu.** Experiențele lui Maraldi și ale abatelui de La Caille, din
+$1738$, au arătat că un sunet „tare” merge cu aceeași viteză ca unul „slab”.
+
+**3.** O **orchestră ascultată de departe**. Dacă notele înalte ar merge mai
+repede decât cele grave, muzica ar sosi la noi desfăcută și dezacordată. Se aude
+însă la fel de închegată de la orice depărtare.
+
+**4.** **Mediul** de propagare: $340$ m/s în aer, $1\,500$ m/s în apă,
+$5\,300$ m/s în sticlă. Și, într-o mai mică măsură, **temperatura** mediului.
+
+</details>
+
+---
+
+## 4. Epava Titanicului
+
+★★★ &nbsp;·&nbsp; **20 minute**
+
+Pe $15$ aprilie $1912$, la prima lui călătorie, pachebotul Titanic a lovit un
+aisberg și s-a scufundat. Epava a fost găsită în $1985$.
+
+**Sonarul.** Când un semnal sonor lovește un obstacol, el este întors înapoi:
+acesta este ecoul. Vapoarele au sub carenă un sonar, care trimite un semnal de
+frecvență foarte înaltă — un **ultrasunet**, neauzit de om — și măsoară timpul
+scurs până la întoarcerea lui.
+
+| Mediul | Vid | Aer | Apă | Sticlă |
+|---|---|---|---|---|
+| Viteza sunetului (m/s) | — | 340 | 1 500 | 5 300 |
+
+Un vapor aflat deasupra epavei trimite semnalul și primește ecoul după
+$5{,}07$ secunde.
+
+**1.** La ce adâncime se află epava? Scrie toată judecata.
+
+**2.** De ce se folosesc ultrasunete, și nu sunete auzite?
+
+**3.** Cât ar fi durat aceeași măsurătoare dacă epava ar fi fost în aer, la
+aceeași depărtare?
+
+**4.** Sonarul se folosește și ca să fie găsite bancuri de pești. Ce s-ar
+întâmpla cu măsurătoarea dacă un banc de pești ar trece între vapor și epavă?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Semnalul face drumul **de două ori**: până la epavă și înapoi.
+
+$$
+\text{drum total} = v \times t = 1\,500 \times 5{,}07 = 7\,605\ \text{m}
+$$
+
+$$
+d = \frac{7\,605}{2} \approx 3\,800\ \text{m}
+$$
+
+Epava se află la aproximativ **3 800 de metri** adâncime.
+
+**2.** Din două pricini. Întâi, ultrasunetele pot fi trimise într-un
+**fascicul îngust**, îndreptat drept în jos, deci se știe de unde vine ecoul.
+Apoi, un semnal auzit de om ar face vaporul de nesuportat pentru echipaj și ar
+tulbura orice altă ascultare.
+
+**3.**
+
+$$
+t = \frac{2 \times 3\,800}{340} \approx 22{,}4\ \text{s}
+$$
+
+De aproape patru ori și jumătate mai mult, fiindcă sunetul merge în apă de
+$\dfrac{1\,500}{340} \approx 4{,}4$ ori mai repede decât în aer.
+
+**4.** Bancul de pești ar întoarce el însuși o parte din semnal, mult mai
+devreme. Sonarul ar primi **două ecouri**: unul apropiat, de la pești, și unul
+depărtat, de la epavă. Dacă s-ar lua în seamă numai primul ecou, adâncimea
+găsită ar fi mult prea mică.
+
+Tocmai de aceea sonarele arată tot ce se întoarce, nu doar primul semnal — iar
+cine citește trebuie să știe ce caută.
+
+</details>
