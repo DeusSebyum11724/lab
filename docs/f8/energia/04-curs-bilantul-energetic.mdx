@@ -1,0 +1,203 @@
+---
+sidebar_position: 4
+sidebar_label: "C2 — Bilanțul energetic și randamentul"
+slug: /f8/energia/c2
+title: "C2 — Bilanțul energetic și randamentul"
+description: "Lanțul energetic al unui aparat, conservarea energiei scrisă ca egalitate, randamentul și de ce el nu poate trece de 100%."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C2 — Bilanțul energetic și randamentul
+
+:::info Planul orei
+
+1. Introducere
+2. Lanțul energetic
+3. Bilanțul energetic
+4. Un aparat cu randament de 100%
+5. Un aparat cu randament mic
+6. Cum se calculează randamentul
+7. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Cifra scrisă pe eticheta „energie” a unui aparat atârnă de randamentul lui.**
+
+**1.** Ce prefacere de energie are loc într-o placă de păr?
+
+**2.** Ce forme de energie „utilă” și „nefolositoare” se obțin de la o celulă
+fotovoltaică? Care sunt procentele lor?
+
+**3.** Scrie bilanțurile energetice ale celor două aparate.
+
+**4.** Lămurește cum se calculează randamentul.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Lanțul energetic
+
+Un **lanț energetic** arată, printr-o schemă, ce formă de energie intră într-un
+aparat și ce forme ies din el.
+
+- **săgeata care intră** — energia primită;
+- **ovalul** — aparatul care face prefacerea;
+- **săgețile care ies** — formele obținute.
+
+---
+
+## 3. Bilanțul energetic
+
+:::danger Definiția 1
+
+**Bilanțul energetic** scrie, sub formă de egalitate, că energia primită este
+egală cu suma energiilor obținute:
+
+$$
+E_{\text{primită}} = E_{\text{utilă}} + E_{\text{nefolositoare}}
+$$
+
+:::
+
+Aceasta este **conservarea energiei**, scrisă pentru un aparat: nimic nu se
+pierde, nimic nu apare din nimic.
+
+---
+
+## 4. Un aparat cu randament de 100%
+
+O placă de păr preface energia electrică în energie termică.
+
+<FiguraManual
+  src="h28-lant-fier.png"
+  lat={760}
+  inalt={128}
+  latime={560}
+  eticheta="Lanț energetic: o săgeată albastră intră într-un oval, iar o săgeată roșie iese din el; alături, egalitatea dintre cele două energii"
+  legenda="Lanțul energetic al unei plăci de păr."
+>
+  <Et x={23}  y={15} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={13}  y={44} w={96}  h={23} corp={19} alinia="centru">electrică</Et>
+  <Et x={335} y={15} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={323} y={44} w={101} h={23} corp={19} alinia="centru">termică</Et>
+  <Et x={165} y={79} w={110} h={18} corp={17} fond="#c9dae0" alinia="centru">Placa de păr</Et>
+  <Et x={508} y={66} w={232} h={28} corp={19} fond="#fde9c5" alinia="centru">E electrică = E termică</Et>
+</FiguraManual>
+
+Cum **toată** energia electrică primită este prefăcută în energie termică, se
+spune că randamentul plăcii de păr este de $100\%$.
+
+---
+
+## 5. Un aparat cu randament mic
+
+O celulă fotovoltaică preface energia luminoasă primită în energie electrică
+„utilă”, dar și în energie termică „nefolositoare”.
+
+<FiguraManual
+  src="h28-lant-panou.png"
+  lat={585}
+  inalt={296}
+  latime={520}
+  eticheta="Lanț energetic: o săgeată portocalie pleacă de la un pătrat galben spre un oval, iar din oval ies două săgeți, una albastră și una roșie"
+  legenda="Lanțul energetic al unei celule fotovoltaice."
+>
+  <Et x={138} y={36}  w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={128} y={65}  w={98}  h={18} corp={19} alinia="centru">luminoasă</Et>
+  <Et x={30}  y={102}  w={62}  h={18} corp={17} fond="#fff880" alinia="centru">Soarele</Et>
+  <Et x={306} y={83}  w={72}  h={18} corp={17} fond="#c9dae0" alinia="centru">Celulă</Et>
+  <Et x={269} y={109}  w={147} h={23} corp={17} fond="#c9dae0" alinia="centru">fotovoltaică</Et>
+  <Et x={456} y={8}   w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={447} y={34}  w={95}  h={23} corp={19} alinia="centru">electrică</Et>
+  <Et x={458} y={161} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={446} y={191} w={100} h={23} corp={19} alinia="centru">termică</Et>
+  <Et x={94}  y={247} w={390} h={28} corp={19} fond="#fde9c5" alinia="centru">E luminoasă = E electrică + E termică</Et>
+</FiguraManual>
+
+Astăzi, pentru $100$ de jouli de energie luminoasă se obțin aproximativ
+$20$ de jouli de energie electrică și $80$ de jouli de energie termică. Se
+spune atunci că randamentul celulei fotovoltaice este de $20\%$.
+
+---
+
+## 6. Cum se calculează randamentul
+
+:::danger Definiția 2
+
+**Randamentul** este raportul dintre energia utilă și energia primită, scris în
+procente:
+
+$$
+\text{randament} = \frac{E_{\text{utilă}}}{E_{\text{primită}}} \times 100
+$$
+
+:::
+
+Pentru celula fotovoltaică:
+
+$$
+\frac{20}{100} \times 100 = 20\%
+$$
+
+:::warning Atenție
+
+Randamentul **nu poate trece niciodată de 100%**. Un aparat nu poate da mai
+multă energie decât primește — asta ar însemna că energie apare din nimic.
+
+Randamentul de $100\%$ al plăcii de păr nu este o excepție: acolo **toată**
+energia obținută este cea căutată, fiindcă aparatul a fost făcut anume ca să
+încălzească.
+
+:::
+
+---
+
+## 7. Rezolvarea exercițiului-tip
+
+**1.** Într-o placă de păr, energia **electrică** se preface în energie
+**termică**.
+
+**2.** De la o celulă fotovoltaică se obțin: energie **electrică**, care este
+utilă — aproximativ $20\%$ — și energie **termică**, care este nefolositoare —
+aproximativ $80\%$.
+
+**3.** Bilanțurile:
+
+$$
+E_{\text{electrică}} = E_{\text{termică}}
+\qquad \text{(placa de păr)}
+$$
+
+$$
+E_{\text{luminoasă}} = E_{\text{electrică}} + E_{\text{termică}}
+\qquad \text{(celula fotovoltaică)}
+$$
+
+**4.** Randamentul se calculează împărțind energia **utilă** la energia
+**primită** și înmulțind cu $100$:
+
+$$
+\text{randament} = \frac{E_{\text{utilă}}}{E_{\text{primită}}} \times 100
+$$
+
+Pentru placa de păr: $\dfrac{100}{100} \times 100 = 100\%$. Pentru celula
+fotovoltaică: $\dfrac{20}{100} \times 100 = 20\%$.
+
+---
+
+:::note Ora următoare
+
+**LP2 — Bilanțul energetic și randamentul.** Patru probe: citirea lanțurilor,
+scrierea bilanțului, calculul randamentului și becul care se încălzește.
+
+Înainte de ea, treci prin
+**[S2 — Bilanțul energetic și randamentul](./05-s-bilantul-energetic.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

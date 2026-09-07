@@ -1,0 +1,172 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Bilanțul energetic și randamentul"
+slug: /f8/energia/s2
+title: "S2 — Bilanțul energetic și randamentul"
+description: "Suport de curs: lanțul energetic, bilanțul ca egalitate, formula randamentului și un exercițiu rezolvat pas cu pas."
+---
+
+# S2 — Bilanțul energetic și randamentul
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Bilanțul energetic și randamentul](./04-curs-bilantul-energetic.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-bilantul-energetic.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele
+
+$$
+E_{\text{primită}} = E_{\text{utilă}} + E_{\text{nefolositoare}}
+$$
+
+$$
+\text{randament} = \frac{E_{\text{utilă}}}{E_{\text{primită}}} \times 100
+$$
+
+| Mărimea | Unitatea |
+|---|---|
+| energia | joulul ($\text{J}$) |
+| randamentul | procente ($\%$), fără unitate |
+
+---
+
+## 2. Cum se citește un lanț energetic
+
+| Elementul | Ce înseamnă |
+|---|---|
+| săgeata care **intră** | energia primită |
+| **ovalul** | aparatul care face prefacerea |
+| săgețile care **ies** | formele obținute |
+
+Suma săgeților care ies este întotdeauna egală cu săgeata care intră. Aceasta
+este conservarea energiei.
+
+---
+
+## 3. Două exemple
+
+| Aparatul | Bilanțul | Randamentul |
+|---|---|---|
+| placa de păr | $E_{\text{electrică}} = E_{\text{termică}}$ | $100\%$ |
+| celula fotovoltaică | $E_{\text{luminoasă}} = E_{\text{electrică}} + E_{\text{termică}}$ | $20\%$ |
+
+Pentru celula fotovoltaică, din $100$ de jouli de lumină ies aproximativ $20$ de
+jouli de energie electrică și $80$ de jouli de energie termică.
+
+---
+
+## 4. De reținut
+
+- Randamentul **nu poate trece de 100%**. Un aparat nu poate da mai mult decât
+  primește.
+- Un randament de $100\%$ nu înseamnă „aparat desăvârșit”, ci că **toată**
+  energia obținută este cea căutată. La o placă de păr, căldura *este* scopul.
+- Energia „nefolositoare” nu dispare: ea încălzește aparatul și mediul din jur.
+
+**Greșeala care se face cel mai des:** se împarte energia utilă la cea
+nefolositoare, în loc de energia primită. Semnul care dă de gol: se obțin
+randamente peste $100\%$, ceea ce e cu neputință.
+
+---
+
+## 5. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un bec cu filament primește $60$ de jouli de energie electrică într-o secundă
+și dă din ea $3$ jouli de energie luminoasă. Un bec cu LED primește $8$ jouli și
+dă tot $3$ jouli de lumină.
+
+**1.** Scrie bilanțul energetic al fiecărui bec.
+
+**2.** Calculează randamentul fiecăruia.
+
+**3.** Care dintre ele încălzește mai mult camera? Cu cât?
+
+**4.** Amândouă luminează la fel. De ce este LED-ul mai bun?
+
+### Pasul 1 — Ce se dă
+
+| Becul | Energia primită | Energia luminoasă |
+|---|---|---|
+| cu filament | $60$ J | $3$ J |
+| cu LED | $8$ J | $3$ J |
+
+### Pasul 2 — Ce se cere
+
+Cele două bilanțuri, cele două randamente, o comparație și o încheiere.
+
+### Pasul 3 — Bilanțurile
+
+Energia primită se împarte între lumină și căldură:
+
+$$
+E_{\text{electrică}} = E_{\text{luminoasă}} + E_{\text{termică}}
+$$
+
+De aici, energia termică se află prin scădere:
+
+$$
+E_{\text{termică}}^{\text{filament}} = 60 - 3 = 57\ \text{J}
+$$
+
+$$
+E_{\text{termică}}^{\text{LED}} = 8 - 3 = 5\ \text{J}
+$$
+
+### Pasul 4 — Randamentele
+
+$$
+\text{randament}_{\text{filament}} = \frac{3}{60} \times 100 = 5\%
+$$
+
+$$
+\text{randament}_{\text{LED}} = \frac{3}{8} \times 100 \approx 37{,}5\%
+$$
+
+### Pasul 5 — Care încălzește mai mult
+
+Becul cu filament dă $57$ de jouli de căldură pe secundă, cel cu LED numai $5$.
+
+$$
+\frac{57}{5} \approx 11
+$$
+
+Becul cu filament încălzește camera de aproximativ **unsprezece ori** mai mult.
+
+### Pasul 6 — De ce este LED-ul mai bun
+
+Fiindcă dă **aceeași lumină** pornind de la mult mai puțină energie electrică:
+$8$ jouli în loc de $60$. Din energia primită, o parte mult mai mare ajunge
+lumină.
+
+$$
+\frac{60}{8} = 7{,}5
+$$
+
+Becul cu filament cere de **șapte ori și jumătate** mai multă energie pentru
+același folos.
+
+*Verificare*: cele două căi duc la același loc. Fie compari randamentele
+($5\%$ față de $37{,}5\%$, adică de $7{,}5$ ori), fie energiile primite ($60$
+față de $8$, tot de $7{,}5$ ori). Se potrivesc.
+
+### Răspuns
+
+Bilanțuri: $60 = 3 + 57$ și $8 = 3 + 5$. Randamente: $5\%$ și $37{,}5\%$. Becul
+cu filament încălzește camera de vreo unsprezece ori mai mult și cere de șapte
+ori și jumătate mai multă energie pentru aceeași lumină.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Bilanțul energetic și randamentul](./06-lp-bilantul-energetic.mdx).**
+
+:::

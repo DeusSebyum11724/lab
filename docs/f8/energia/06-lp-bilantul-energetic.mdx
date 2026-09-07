@@ -1,0 +1,248 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Bilanțul energetic și randamentul"
+slug: /f8/energia/lp2
+title: "LP2 — Bilanțul energetic și randamentul"
+description: "Lucrare practică: citirea lanțurilor energetice, scrierea bilanțului, calculul randamentului și randamente cu neputință."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Bilanțul energetic și randamentul
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Bilanțul energetic și randamentul](./04-curs-bilantul-energetic.mdx)**,
+cu formulele din **[S2](./05-s-bilantul-energetic.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Citește lanțurile | ★ | 10 min |
+| 2 | Scrie bilanțul | ★★ | 10 min |
+| 3 | Calculează randamentul | ★★ | 15 min |
+| 4 | Randamente cu neputință | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Citește lanțurile
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="h28-lant-fier.png"
+  lat={760}
+  inalt={128}
+  latime={560}
+  eticheta="Lanț energetic: o săgeată albastră intră într-un oval, iar o săgeată roșie iese din el"
+  legenda="Lanțul energetic al unei plăci de păr."
+>
+  <Et x={23}  y={15} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={13}  y={44} w={96}  h={23} corp={19} alinia="centru">electrică</Et>
+  <Et x={335} y={15} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={323} y={44} w={101} h={23} corp={19} alinia="centru">termică</Et>
+  <Et x={165} y={79} w={110} h={18} corp={17} fond="#c9dae0" alinia="centru">Placa de păr</Et>
+  <Et x={508} y={66} w={232} h={28} corp={19} fond="#fde9c5" alinia="centru">E electrică = E termică</Et>
+</FiguraManual>
+
+<FiguraManual
+  src="h28-lant-panou.png"
+  lat={585}
+  inalt={296}
+  latime={520}
+  eticheta="Lanț energetic: o săgeată portocalie pleacă de la un pătrat galben spre un oval, iar din oval ies două săgeți"
+  legenda="Lanțul energetic al unei celule fotovoltaice."
+>
+  <Et x={138} y={36}  w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={128} y={65}  w={98}  h={18} corp={19} alinia="centru">luminoasă</Et>
+  <Et x={30}  y={102} w={62}  h={18} corp={17} fond="#fff880" alinia="centru">Soarele</Et>
+  <Et x={306} y={83}  w={72}  h={18} corp={17} fond="#c9dae0" alinia="centru">Celulă</Et>
+  <Et x={269} y={109} w={147} h={23} corp={17} fond="#c9dae0" alinia="centru">fotovoltaică</Et>
+  <Et x={456} y={22}  w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={447} y={34}  w={95}  h={23} corp={19} alinia="centru">electrică</Et>
+  <Et x={458} y={161} w={78}  h={26} corp={19} alinia="centru">Energie</Et>
+  <Et x={446} y={191} w={100} h={23} corp={19} alinia="centru">termică</Et>
+  <Et x={94}  y={247} w={390} h={28} corp={19} fond="#fde9c5" alinia="centru">E luminoasă = E electrică + E termică</Et>
+</FiguraManual>
+
+**1.** Ce formă de energie intră în fiecare aparat? Ce forme ies?
+
+**2.** De ce are al doilea lanț două săgeți la ieșire, iar primul una singură?
+
+**3.** Scrie bilanțul fiecăruia.
+
+**4.** Care dintre cele două aparate are randamentul mai mare?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În placa de păr intră energie **electrică** și iese energie **termică**.
+În celula fotovoltaică intră energie **luminoasă** și ies energie **electrică**
+și energie **termică**.
+
+**2.** Fiindcă celula fotovoltaică dă **două** forme de energie: cea electrică,
+utilă, și cea termică, nefolositoare. Placa de păr dă o singură formă — și
+tocmai aceea îi este utilă.
+
+**3.**
+
+$$
+E_{\text{electrică}} = E_{\text{termică}}
+\qquad
+E_{\text{luminoasă}} = E_{\text{electrică}} + E_{\text{termică}}
+$$
+
+**4.** **Placa de păr**, cu $100\%$. Celula fotovoltaică are aproximativ $20\%$.
+
+</details>
+
+---
+
+## 2. Scrie bilanțul
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Scrie bilanțul energetic al fiecărui aparat, arătând ce formă este utilă și ce
+formă este nefolositoare.
+
+**a.** un ventilator &nbsp;·&nbsp; **b.** un bec &nbsp;·&nbsp; **c.** un
+radiator electric &nbsp;·&nbsp; **d.** un uscător de păr
+
+<details>
+<summary>Rezolvare</summary>
+
+**a.** $E_{\text{electrică}} = E_{\text{cinetică}} + E_{\text{termică}}$ —
+utilă: cinetica; nefolositoare: termica.
+
+**b.** $E_{\text{electrică}} = E_{\text{luminoasă}} + E_{\text{termică}}$ —
+utilă: luminoasa; nefolositoare: termica.
+
+**c.** $E_{\text{electrică}} = E_{\text{termică}}$ — totul e util; randamentul
+este de $100\%$.
+
+**d.** $E_{\text{electrică}} = E_{\text{termică}} + E_{\text{cinetică}}$ —
+**amândouă** sunt utile: fără aer cald și fără suflare n-ar usca nimic.
+
+Ultimul arată limpede că „utilă” nu ține de forma energiei, ci de treaba
+aparatului.
+
+</details>
+
+---
+
+## 3. Calculează randamentul
+
+★★ &nbsp;·&nbsp; **15 minute**
+
+| Aparatul | Energia primită | Energia utilă |
+|---|---|---|
+| motor electric | 500 J | 425 J |
+| bec cu filament | 60 J | 3 J |
+| bec cu LED | 8 J | 3 J |
+| celulă fotovoltaică | 100 J | 20 J |
+
+**1.** Calculează randamentul fiecăruia.
+
+**2.** Calculează, pentru fiecare, energia nefolositoare.
+
+**3.** Așază aparatele în ordinea randamentului, de la cel mai mare la cel mai
+mic.
+
+**4.** Ce se întâmplă cu energia nefolositoare, în toate cele patru cazuri?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+\frac{425}{500} \times 100 = 85\%
+\qquad
+\frac{3}{60} \times 100 = 5\%
+$$
+
+$$
+\frac{3}{8} \times 100 \approx 37{,}5\%
+\qquad
+\frac{20}{100} \times 100 = 20\%
+$$
+
+**2.** Prin scădere: $500-425 = 75$ J; $60-3 = 57$ J; $8-3 = 5$ J;
+$100-20 = 80$ J.
+
+**3.** motorul electric ($85\%$), becul cu LED ($37{,}5\%$), celula
+fotovoltaică ($20\%$), becul cu filament ($5\%$).
+
+**4.** În toate cazurile ea se preface în **energie termică** și încălzește
+aparatul și mediul din jur. Nu se pierde: se împrăștie sub o formă pe care n-o
+mai putem folosi la fel de ușor.
+
+</details>
+
+---
+
+## 4. Randamente cu neputință
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Patru elevi dau următoarele rezultate:
+
+| Elevul | Energia primită | Energia utilă | Randamentul scris |
+|---|---|---|---|
+| Ana | 200 J | 150 J | 75% |
+| Bogdan | 200 J | 150 J | 133% |
+| Carmen | 80 J | 100 J | 125% |
+| Dan | 50 J | 50 J | 100% |
+
+**1.** Verifică fiecare randament prin calcul.
+
+**2.** Care rezultate sunt greșite? Ce greșeală a făcut fiecare?
+
+**3.** Rezultatul Carmenei este greșit chiar dacă socoteala ei e bună. De ce?
+
+**4.** Rezultatul lui Dan este de $100\%$. Este el cu putință? Dă un exemplu.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+\text{Ana: } \frac{150}{200} \times 100 = 75\% \quad \checkmark
+$$
+
+$$
+\text{Bogdan: } \frac{150}{200} \times 100 = 75\% \ne 133\%
+$$
+
+$$
+\text{Dan: } \frac{50}{50} \times 100 = 100\% \quad \checkmark
+$$
+
+**2.** **Bogdan** a împărțit pe dos: $\dfrac{200}{150} \times 100 \approx 133\%$.
+El a împărțit energia primită la cea utilă, în loc de invers.
+
+**Carmen** a scris date cu neputință: energia utilă ($100$ J) mai mare decât cea
+primită ($80$ J).
+
+**3.** Fiindcă **datele** ei sunt cu neputință, nu socoteala. Un aparat nu poate
+da mai multă energie decât primește: asta ar însemna că energie apare din nimic,
+adică încălcarea conservării energiei.
+
+Undeva la măsurare s-a strecurat o greșeală — sau aparatul primește energie și
+pe altă cale, neluată în seamă.
+
+**4.** **Da**, este cu putință, dar numai când **toată** energia obținută este
+cea căutată. Exemplu: un **radiator electric** sau o **placă de păr** — acolo
+scopul este chiar încălzirea, deci nimic nu se risipește.
+
+Ia seama: chiar și atunci energia „pleacă” în cameră. Randamentul de $100\%$ nu
+înseamnă că nimic nu se împrăștie, ci că împrăștierea *este* folosul căutat.
+
+</details>
