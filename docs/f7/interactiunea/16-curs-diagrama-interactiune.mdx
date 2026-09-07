@@ -1,0 +1,175 @@
+---
+sidebar_position: 16
+sidebar_label: "C6 — Diagrama obiect-interacțiune"
+slug: /f7/interactiunea/c6
+title: "C6 — Diagrama obiect-interacțiune"
+description: "Interacțiunea dintre două corpuri, deosebirea dintre contact și distanță, construirea diagramei și trecerea de la interacțiune la forță."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C6 — Diagrama obiect-interacțiune
+
+:::info Planul orei
+
+1. Introducere
+2. Ce este o interacțiune
+3. Interacțiuni de contact și la distanță
+4. Cum se construiește diagrama
+5. De la interacțiune la forță
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Luna este singurul satelit natural al Pământului și astrul cel mai apropiat de
+planeta noastră.**
+
+**1.** De ce nu scapă Luna în spațiu și rămâne pe orbita ei în jurul
+Pământului?
+
+**2.** Ce fenomen arată că și Luna lucrează asupra Pământului?
+
+**3.** Există o interacțiune între Pământ și Lună? Lămurește-ți răspunsul.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Ce este o interacțiune
+
+:::danger Definiția 1
+
+Două corpuri sunt în **interacțiune** atunci când lucrează **unul asupra
+celuilalt**, deopotrivă.
+
+:::
+
+Cuvântul de căpetenie este „deopotrivă”. O interacțiune nu merge într-o singură
+parte: dacă un corp lucrează asupra altuia, și celălalt lucrează asupra lui.
+
+Luna se mișcă în cerc în jurul Pământului fiindcă Pământul o atrage și o ține pe
+orbita ei. Fenomenul seamănă cu ce se întâmplă când un atlet trage de firul unui
+ciocan ca să-l împiedice să se depărteze: dacă atracția ar înceta, Luna n-ar mai
+ocoli Pământul și ar scăpa în spațiu.
+
+Dar și Luna atrage Pământul. Dovada se vede în fiecare zi la malul mării:
+**mareele** — urcarea și coborârea nivelului apelor de-a lungul zilei — se
+datorează în cea mai mare parte atracției pe care Luna o face asupra
+Pământului.
+
+---
+
+## 3. Interacțiuni de contact și la distanță
+
+:::danger Definiția 2
+
+O **interacțiune de contact** este aceea în cursul căreia cele două corpuri **se
+ating**. O **interacțiune la distanță** este aceea în care cele două corpuri
+**nu se ating**.
+
+:::
+
+| Interacțiune de contact | Interacțiune la distanță |
+|---|---|
+| penarul și resortul de care e atârnat | Pământul și Luna |
+| mâna și mingea aruncată | magnetul și piroana |
+| roțile mașinii și șoseaua | Pământul și un corp care cade |
+
+---
+
+## 4. Cum se construiește diagrama
+
+O **diagramă obiect-interacțiune** îngăduie să fie înfățișate interacțiunile
+dintre obiectul cercetat și celelalte obiecte din jurul lui.
+
+Ca să o construiești, trebuie:
+
+- să **alegi obiectul cercetat**;
+- să înfățișezi prin **ovale** obiectul cercetat și pe cele care lucrează asupra
+  lui;
+- să recunoști **felul** fiecărei interacțiuni și să o înfățișezi printr-o
+  **săgeată dublă** — cu linie plină pentru contact, cu linie întreruptă pentru
+  distanță.
+
+<FiguraManual
+  src="h17-diagrama.png"
+  lat={466}
+  inalt={518}
+  latime={380}
+  eticheta="Diagramă cu trei ovale: sus persoana care sare, jos coarda elastică și Pământul; săgeți duble le leagă, una plină și una întreruptă"
+  legenda="Diagrama obiect-interacțiune pentru o persoană care sare cu coarda elastică."
+>
+  <Et x={184} y={47}  w={96}  h={17} corp={17} fond="#dcf0c1" alinia="centru">Persoana</Et>
+  <Et x={184} y={76}  w={95}  h={20} corp={17} fond="#dcf0c0" alinia="centru">care sare</Et>
+  <Et x={36}  y={311} w={138} h={23} corp={17} fond="#fde5b8" alinia="centru">Coarda elastică</Et>
+  <Et x={316} y={312} w={82}  h={17} corp={17} fond="#fde5b8" alinia="centru">Pământul</Et>
+  <Et x={167} y={430} w={212} h={18} corp={17}>Interacțiune de contact</Et>
+  <Et x={167} y={465} w={212} h={18} corp={17}>Interacțiune la distanță</Et>
+</FiguraManual>
+
+Persoana care sare cu coarda elastică se atinge de coardă — interacțiune de
+contact — și este atrasă de Pământ fără să-l atingă — interacțiune la distanță.
+
+---
+
+## 5. De la interacțiune la forță
+
+O interacțiune se vede numai prin urmările ei. Fiecare **acțiune** dintr-o
+interacțiune se modelează printr-o **forță**, desenată ca un segment cu săgeată.
+
+<FiguraManual
+  src="h17-forta.png"
+  lat={453}
+  inalt={445}
+  latime={340}
+  eticheta="Persoana atârnată de coarda elastică, cu o săgeată roșie îndreptată în sus; trei linii arată direcția, sensul și punctul de aplicație"
+  legenda="Înfățișarea forței cu care coarda trage de persoană."
+>
+  <Et x={114} y={29}  w={90}  h={17} corp={17}>Direcția</Et>
+  <Et x={148} y={87}  w={56}  h={17} corp={17}>Sensul</Et>
+  <Et x={30}  y={207} w={176} h={23} corp={17}>Punctul de aplicație</Et>
+  <Et x={288} y={126} w={162} h={42} corp={14} alinia="centru"><i>F</i> coardă/persoană</Et>
+</FiguraManual>
+
+O forță are patru însușiri: **punctul de aplicație**, **direcția**, **sensul**
+și **valoarea**. Valoarea se măsoară cu dinamometrul și se scrie în **newtoni**
+($\text{N}$).
+
+Efectul acestei interacțiuni se vede în amândouă părțile: coarda **schimbă
+mișcarea** persoanei care sare, iar persoana **deformează** coarda.
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.** Luna nu scapă în spațiu fiindcă **Pământul o atrage**. Această atracție o
+ține pe orbita ei circulară, așa cum firul ținut de atlet ține ciocanul.
+
+**2.** **Mareele.** Urcarea și coborârea nivelului mărilor și oceanelor de-a
+lungul zilei se datorează în cea mai mare parte atracției pe care Luna o face
+asupra Pământului. Ele sunt dovada că și Luna lucrează asupra Pământului.
+
+**3.** **Da.** Pământul atrage Luna, iar Luna atrage Pământul: cele două corpuri
+lucrează unul asupra celuilalt, deopotrivă. Este o interacțiune, și anume o
+interacțiune **la distanță**, fiindcă cele două corpuri nu se ating.
+
+Diagrama obiect-interacțiune are două ovale — Pământul și Luna — legate printr-o
+săgeată dublă cu linie întreruptă.
+
+---
+
+:::note Ora următoare
+
+**LP6 — Diagrama obiect-interacțiune.** Patru probe: contact sau distanță,
+diagrama unei cărți pe masă, cele patru însușiri ale unei forțe și diagrama
+greșită.
+
+Înainte de ea, treci prin
+**[S6 — Diagrama obiect-interacțiune](./17-s-diagrama-interactiune.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::
