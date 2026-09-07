@@ -71,10 +71,15 @@ export function FiguraManual({ src, lat, inalt, latime, legenda, eticheta, child
  *
  * `alinia` spune de unde se măsoară: 'stanga' (implicit), 'centru' sau
  * 'dreapta'. Un cuvânt românesc mai lung decât cel francez crește într-acolo.
+ *
+ * `raza` rotunjește colțurile petei. E nevoie de ea la figurile în care cuvântul
+ * stă într-o casetă colorată și o umple: acolo pata nu poate fi mai mică decât
+ * caseta, așa că acoperă caseta toată și trebuie să-i ia și forma. Caseta iese
+ * plată în loc de umbrită, dar restul figurii rămâne neatins.
  */
 export function Et({
   x, y, w, h, corp, culoare = '#1c1a16', fond = '#ffffff',
-  alinia = 'stanga', cursiv, children, _lat, _inalt,
+  alinia = 'stanga', cursiv, raza, children, _lat, _inalt,
 }) {
   const pc = (v, total) => `${(v / total) * 100}%`;
   const inaltimeLitera = corp || h * 0.72;
@@ -95,6 +100,10 @@ export function Et({
         // exact ca literele din imaginea de dedesubt, care se scalează cu ea.
         fontSize: `${((inaltimeLitera * 1.38) / _lat) * 100}cqw`,
         fontStyle: cursiv ? 'italic' : 'normal',
+        // `raza` e pentru cuvintele scrise în casete colorate: acolo pata nu poate
+        // fi mai mică decât caseta (cuvântul o umple), deci acoperă caseta întreagă
+        // și îi împrumută forma. Se dă în pixelii decupajului, ca x și y.
+        borderRadius: raza ? `${(raza / _lat) * 100}cqw` : undefined,
         justifyContent:
           alinia === 'centru' ? 'center' : alinia === 'dreapta' ? 'flex-end' : 'flex-start',
       }}

@@ -1,0 +1,177 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Reprezentarea grafică a măsurătorilor"
+slug: /f6/introducere/s3
+title: "S3 — Reprezentarea grafică a măsurătorilor"
+description: "Suport de curs: cei cinci pași ai construirii unui grafic, alegerea scării, greșelile de evitat și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Reprezentarea grafică a măsurătorilor
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Reprezentarea grafică a măsurătorilor](./07-curs-reprezentarea-grafica.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-reprezentarea-grafica.mdx)**.
+
+:::
+
+---
+
+## 1. Cei cinci pași
+
+| Pasul | Ce se face |
+|---|---|
+| 1 | se trag cu rigla două axe perpendiculare, fiecare cu săgeată |
+| 2 | se numește fiecare axă: **mărimea** și **unitatea** ei |
+| 3 | se gradează axele după **scara** dată sau aleasă |
+| 4 | se marchează fiecare pereche de măsurători printr-o **cruce** |
+| 5 | se trage curba cu mâna liberă și se dă un **titlu** |
+
+<FiguraManual
+  src="h-grafic-temperatura.png"
+  lat={682}
+  inalt={398}
+  latime={520}
+  eticheta="Grafic pe hârtie de caiet: temperatura urcă de la 20 la 100 de grade în primele cinci minute, apoi rămâne la 100"
+  legenda="Graficul isprăvit."
+>
+  <Et x={154} y={10}  w={372} h={26} corp={20} culoare="#ec008c" alinia="centru">Cum se schimbă temperatura apei</Et>
+  <Et x={232} y={38}  w={214} h={23} corp={20} culoare="#ec008c" alinia="centru">în funcție de timp</Et>
+  <Et x={77}  y={70}  w={220} h={25} corp={20}>Temperatura (în °C)</Et>
+  <Et x={274} y={188} w={239} h={18} corp={16}>Trage curba cu mâna liberă</Et>
+  <Et x={274} y={211} w={236} h={22} corp={16}>și nu uita să dai un titlu</Et>
+  <Et x={274} y={234} w={179} h={24} corp={16}>graficului tău.</Et>
+  <Et x={475} y={308} w={172} h={24} corp={20}>Timpul (în min)</Et>
+</FiguraManual>
+
+---
+
+## 2. Cele două axe
+
+| Axa | Numele ei | Ce se pune pe ea |
+|---|---|---|
+| orizontală | axa **absciselor** | mărimea care se schimbă de la sine, de obicei timpul |
+| verticală | axa **ordonatelor** | mărimea care depinde de cealaltă |
+
+---
+
+## 3. Cum se alege scara
+
+1. Se caută în tabel **valoarea cea mai mare** de pe fiecare axă.
+2. Se împarte lungimea pe care o ai la îndemână — de pildă $10$ centimetri — la
+   acea valoare.
+3. Se rotunjește la o valoare comodă: $1$ cm pentru $1$, pentru $2$, pentru
+   $5$, pentru $10$, pentru $20$ de unități.
+
+O scară comodă are gradații care cad pe pătratele caietului. O scară de $1$ cm
+pentru $17\ ^\circ\text{C}$ e adevărată, dar de necitit.
+
+---
+
+## 4. Cele trei greșeli de evitat
+
+| Greșeala | De ce e greșită |
+|---|---|
+| linie frântă între cruci | măsurătorile au nesiguranțe; curba trebuie netezită |
+| axe prea scurte | ultimele măsurători nu mai încap pe grafic |
+| axă fără nume sau fără unitate | graficul nu se mai poate citi de altcineva |
+
+**Greșeala care se face cel mai des:** se trage curba prin fiecare cruce, cu
+orice preț, ieșind un traseu șerpuit. Curba trebuie să treacă **cât mai aproape
+de cât mai multe** cruci, nu neapărat prin fiecare.
+
+Rigla se folosește numai dacă crucile sunt așezate **în linie dreaptă**.
+
+---
+
+## 5. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un elev măsoară masa mai multor bucăți de aluminiu și volumul fiecăreia:
+
+| Volumul (în cm³) | 2 | 4 | 6 | 8 | 10 |
+|---|---|---|---|---|---|
+| Masa (în g) | 5,4 | 10,8 | 16,2 | 21,6 | 27,0 |
+
+**1.** Ce mărime se pune pe fiecare axă?
+
+**2.** Alege o scară potrivită pentru o foaie de $10$ centimetri pe fiecare
+direcție.
+
+**3.** Ce formă are curba? Ce se poate citi de aici?
+
+**4.** Cât ar cântări o bucată de $7$ centimetri cubi?
+
+### Pasul 1 — Axele
+
+Masa **depinde** de volumul luat, deci:
+
+- pe axa **orizontală** — volumul, în centimetri cubi;
+- pe axa **verticală** — masa, în grame.
+
+### Pasul 2 — Scara
+
+Valorile cele mai mari sunt $10$ cm³ și $27$ g.
+
+$$
+\frac{10\ \text{cm}}{10\ \text{cm}^3} = 1\ \text{cm pentru } 1\ \text{cm}^3
+$$
+
+$$
+\frac{10\ \text{cm}}{27\ \text{g}} \approx 0{,}37\ \text{cm pentru } 1\ \text{g}
+$$
+
+A doua valoare nu e comodă. Se rotunjește la o scară cuminte: **$1$ centimetru
+pentru $5$ grame**. Atunci $27$ de grame cer $5{,}4$ centimetri — încap
+lejer.
+
+### Pasul 3 — Forma curbei
+
+Se marchează cele cinci cruci și se vede că ele sunt **așezate în linie
+dreaptă**, iar dreapta trece prin **origine**.
+
+Aici — și numai aici — se folosește rigla, fiindcă punctele sunt aliniate.
+
+O dreaptă care trece prin origine înseamnă **proporționalitate**: masa este
+proporțională cu volumul. Se verifică prin împărțiri:
+
+$$
+\frac{5{,}4}{2} = 2{,}7
+\qquad
+\frac{27{,}0}{10} = 2{,}7
+$$
+
+Câtul constant, $2{,}7$ g/cm³, este chiar **masa volumică** a aluminiului.
+
+### Pasul 4 — Citirea pentru 7 centimetri cubi
+
+Se caută $7$ pe axa orizontală, se urcă până la dreaptă și se citește pe axa
+verticală: aproximativ $19$ grame.
+
+*Verificare prin calcul*:
+
+$$
+m = \rho \times V = 2{,}7\ \text{g/cm}^3 \times 7\ \text{cm}^3 = 18{,}9\ \text{g}
+$$
+
+Citirea de pe grafic și calculul se potrivesc — semn că graficul a fost bine
+construit.
+
+### Răspuns
+
+Volumul pe abscisă, masa pe ordonată; scara $1$ cm pentru $1$ cm³ și $1$ cm
+pentru $5$ g; curba este o dreaptă prin origine, deci masa e proporțională cu
+volumul; o bucată de $7$ cm³ cântărește aproximativ $19$ grame.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Reprezentarea grafică a măsurătorilor](./09-lp-reprezentarea-grafica.mdx).**
+
+:::

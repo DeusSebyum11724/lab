@@ -1,0 +1,164 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Multiplii, submultiplii și puterile lui zece"
+slug: /f6/introducere/s2
+title: "S2 — Multiplii, submultiplii și puterile lui zece"
+description: "Suport de curs: tabelul prefixelor, regulile de calcul cu puteri, notația științifică și un exercițiu rezolvat pas cu pas."
+---
+
+# S2 — Multiplii, submultiplii și puterile lui zece
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Multiplii, submultiplii și puterile lui zece](./04-curs-multipli-si-submultipli.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-multipli-si-submultipli.mdx)**.
+
+:::
+
+---
+
+## 1. Tabelul prefixelor
+
+| Prefixul | Simbolul | Puterea | Prefixul | Simbolul | Puterea |
+|---|---|---|---|---|---|
+| giga | $\text{G}$ | $10^{9}$ | deci | $\text{d}$ | $10^{-1}$ |
+| mega | $\text{M}$ | $10^{6}$ | centi | $\text{c}$ | $10^{-2}$ |
+| kilo | $\text{k}$ | $10^{3}$ | mili | $\text{m}$ | $10^{-3}$ |
+| hecto | $\text{h}$ | $10^{2}$ | micro | $\mu$ | $10^{-6}$ |
+| deca | $\text{da}$ | $10^{1}$ | nano | $\text{n}$ | $10^{-9}$ |
+
+Unitatea singură înseamnă $10^{0}$, adică $1$.
+
+---
+
+## 2. Regulile de calcul
+
+$$
+10^{a} \times 10^{b} = 10^{a+b}
+\qquad
+\frac{10^{a}}{10^{b}} = 10^{a-b}
+\qquad
+(10^{a})^{b} = 10^{a \times b}
+$$
+
+$$
+10^{n} = \underbrace{100\dots0}_{n \text{ zerouri}}
+\qquad
+10^{-n} = \underbrace{0{,}0\dots01}_{n \text{ cifre după virgulă}}
+$$
+
+---
+
+## 3. Notația științifică
+
+$$
+a \times 10^{n}, \quad \text{cu } 1 \le a < 10
+$$
+
+Cum se ajunge la ea, în doi pași:
+
+1. se mută virgula până când numărul din față are **o singură cifră înainte de
+   virgulă**;
+2. se potrivește puterea lui zece: pentru **fiecare pas la stânga** exponentul
+   **crește** cu $1$; pentru fiecare pas la dreapta, **scade** cu $1$.
+
+| Numărul | Pașii virgulei | Notația științifică |
+|---|---|---|
+| $4\,500$ | 3 la stânga | $4{,}5 \times 10^{3}$ |
+| $0{,}00072$ | 4 la dreapta | $7{,}2 \times 10^{-4}$ |
+| $87{,}3$ | 1 la stânga | $8{,}73 \times 10^{1}$ |
+
+**Greșeala care se face cel mai des:** se confundă $\text{M}$ cu $\text{m}$.
+$\text{M}$ este **mega** ($10^{6}$), $\text{m}$ este **mili** ($10^{-3}$). Între
+ele sunt nouă puteri de zece — un miliard.
+
+---
+
+## 4. De reținut
+
+- Un prefix are **același înțeles** oricare ar fi mărimea: „kilo” înseamnă o mie,
+  fie la grame, fie la metri, fie la wați.
+- $15 \times 10^{-6}$ **nu** este scriere științifică: $15$ nu e cuprins între
+  $1$ și $10$. Se scrie $1{,}5 \times 10^{-5}$.
+- $\mu$ este litera grecească *miu*; ea se citește „micro”.
+
+---
+
+## 5. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un fir de cupru are diametrul de $250$ de micrometri. Lungimea unui cablu este
+de $3{,}5$ kilometri.
+
+**1.** Scrie diametrul în metri, în notație științifică.
+
+**2.** Scrie lungimea cablului în metri, în notație științifică.
+
+**3.** De câte ori este cablul mai lung decât diametrul firului?
+
+### Pasul 1 — Ce se dă
+
+$$
+d = 250\ \mu\text{m}
+\qquad
+L = 3{,}5\ \text{km}
+$$
+
+### Pasul 2 — Diametrul în metri
+
+Prefixul „micro” înseamnă $10^{-6}$:
+
+$$
+d = 250 \times 10^{-6}\ \text{m}
+$$
+
+Numărul $250$ nu este cuprins între $1$ și $10$; se scrie
+$250 = 2{,}5 \times 10^{2}$:
+
+$$
+d = 2{,}5 \times 10^{2} \times 10^{-6}\ \text{m}
+= 2{,}5 \times 10^{2-6}\ \text{m}
+= 2{,}5 \times 10^{-4}\ \text{m}
+$$
+
+*Verificare*: $2{,}5 \times 10^{-4} = 0{,}00025$ metri, adică un sfert de
+milimetru. Se potrivește cu grosimea unui fir subțire.
+
+### Pasul 3 — Lungimea în metri
+
+Prefixul „kilo” înseamnă $10^{3}$:
+
+$$
+L = 3{,}5 \times 10^{3}\ \text{m}
+$$
+
+Aici numărul din față era deja cuprins între $1$ și $10$, deci nu a mai fost
+nimic de mutat.
+
+### Pasul 4 — De câte ori
+
+$$
+\frac{L}{d} = \frac{3{,}5 \times 10^{3}}{2{,}5 \times 10^{-4}}
+= \frac{3{,}5}{2{,}5} \times 10^{3-(-4)}
+= 1{,}4 \times 10^{7}
+$$
+
+*Ia seama la semn*: scăzând un exponent negativ, el se adună:
+$3 - (-4) = 3 + 4 = 7$.
+
+### Răspuns
+
+$d = 2{,}5 \times 10^{-4}$ m, $L = 3{,}5 \times 10^{3}$ m, iar cablul este de
+$1{,}4 \times 10^{7}$ ori mai lung decât gros — adică de paisprezece milioane de
+ori.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Multiplii, submultiplii și puterile lui zece](./06-lp-multipli-si-submultipli.mdx).**
+
+:::

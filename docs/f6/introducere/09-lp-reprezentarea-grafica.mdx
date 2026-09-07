@@ -1,0 +1,195 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Reprezentarea grafică a măsurătorilor"
+slug: /f6/introducere/lp3
+title: "LP3 — Reprezentarea grafică a măsurătorilor"
+description: "Lucrare practică: axele și scara, graficul de construit, citirea unui grafic și greșelile de desen."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Reprezentarea grafică a măsurătorilor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Reprezentarea grafică a măsurătorilor](./07-curs-reprezentarea-grafica.mdx)**,
+cu pașii din **[S3](./08-s-reprezentarea-grafica.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Axele și scara | ★ | 10 min |
+| 2 | Citește graficul | ★★ | 10 min |
+| 3 | Construiește graficul | ★★ | 15 min |
+| 4 | Patru grafice greșite | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Axele și scara
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Cum se numește axa orizontală? Dar cea verticală?
+
+**2.** Ce se scrie pe fiecare axă, în afară de gradații?
+
+**3.** Într-un tabel, temperatura urcă până la $80\ ^\circ\text{C}$, iar
+timpul până la $12$ minute. Ai o foaie de $12$ centimetri pe fiecare direcție.
+Alege o scară potrivită pentru fiecare axă.
+
+**4.** De ce nu se trage niciodată o linie frântă între cruci?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Axa orizontală este axa **absciselor**; cea verticală, axa
+**ordonatelor**.
+
+**2.** Se scriu **mărimea** și **unitatea** ei — de pildă „Temperatura (în °C)”.
+Fără ele, graficul nu se poate citi de altcineva.
+
+**3.** Pentru timp: $12$ centimetri pentru $12$ minute, deci **$1$ cm pentru
+$1$ min**. Pentru temperatură: $12$ centimetri pentru $80\ ^\circ\text{C}$ ar
+însemna $1$ cm pentru $6{,}7\ ^\circ\text{C}$ — necomod. Se ia **$1$ cm pentru
+$10\ ^\circ\text{C}$**, iar cele $80$ de grade ocupă $8$ centimetri.
+
+**4.** Fiindcă fiecare măsurătoare are o mică nesiguranță. O linie frântă ar lua
+fiecare cruce drept adevăr desăvârșit și ar înfățișa schimbări bruște care nu
+există. Curba netedă ține seama de nesiguranțe.
+
+</details>
+
+---
+
+## 2. Citește graficul
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="h-grafic-temperatura.png"
+  lat={682}
+  inalt={398}
+  latime={520}
+  eticheta="Grafic: temperatura apei urcă de la 20 la 100 de grade în cinci minute, apoi rămâne la 100"
+  legenda="Temperatura apei încălzite, în funcție de timp."
+>
+  <Et x={154} y={10}  w={372} h={26} corp={20} culoare="#ec008c" alinia="centru">Cum se schimbă temperatura apei</Et>
+  <Et x={232} y={38}  w={214} h={23} corp={20} culoare="#ec008c" alinia="centru">în funcție de timp</Et>
+  <Et x={77}  y={70}  w={220} h={25} corp={20}>Temperatura (în °C)</Et>
+  <Et x={274} y={188} w={239} h={18} corp={16}>Trage curba cu mâna liberă</Et>
+  <Et x={274} y={211} w={236} h={22} corp={16}>și nu uita să dai un titlu</Et>
+  <Et x={274} y={234} w={179} h={24} corp={16}>graficului tău.</Et>
+  <Et x={475} y={308} w={172} h={24} corp={20}>Timpul (în min)</Et>
+</FiguraManual>
+
+**1.** Care era temperatura apei la începutul încălzirii?
+
+**2.** După cât timp a ajuns apa la $70\ ^\circ\text{C}$?
+
+**3.** Ce se întâmplă cu temperatura după minutul al cincilea?
+
+**4.** Ce fenomen fizic arată porțiunea orizontală a curbei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La minutul $0$, curba pornește de la $20\ ^\circ\text{C}$ — temperatura
+camerei.
+
+**2.** Se caută $70$ pe axa verticală, se merge orizontal până la curbă și se
+coboară pe axa timpului: **3 minute**.
+
+**3.** Temperatura **rămâne la $100\ ^\circ\text{C}$**, deși încălzirea urmează.
+Curba devine orizontală.
+
+**4.** **Fierberea.** În timpul fierberii, energia primită nu mai ridică
+temperatura, ci trece apa din stare lichidă în stare de vapori. Porțiunea
+orizontală se numește **palier de temperatură**.
+
+</details>
+
+---
+
+## 3. Construiește graficul
+
+★★ &nbsp;·&nbsp; **15 minute**
+
+Un elev încălzește apă sărată și notează:
+
+| Timpul (în min) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|---|
+| Temperatura (în °C) | 18 | 34 | 50 | 68 | 84 | 100 | 103 | 103 | 103 |
+
+**1.** Construiește graficul, cu scara $1$ cm pentru $1$ min și $1$ cm pentru
+$20\ ^\circ\text{C}$.
+
+**2.** Dă-i un titlu.
+
+**3.** La ce temperatură fierbe apa sărată?
+
+**4.** Compară cu apa curată. Ce încheiere tragi?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se trag două axe cu rigla, se numesc — „Timpul (în min)” pe orizontală,
+„Temperatura (în °C)” pe verticală — și se gradează după scara dată. Cele nouă
+perechi se marchează cu cruci, apoi se trage curba cu mâna liberă. Ea urcă până
+la minutul $6$ și devine orizontală.
+
+**2.** De pildă: „Cum se schimbă temperatura apei sărate în funcție de timp”.
+
+**3.** Palierul se citește la **$103\ ^\circ\text{C}$**.
+
+**4.** Apa curată fierbe la $100\ ^\circ\text{C}$, apa sărată la
+$103\ ^\circ\text{C}$. Încheierea: **sarea dizolvată ridică temperatura de
+fierbere**.
+
+Ia seama că amândouă graficele au aceeași formă — urcare, apoi palier. Ceea ce
+se schimbă este **înălțimea palierului**, și tocmai ea este răspunsul.
+
+</details>
+
+---
+
+## 4. Patru grafice greșite
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Patru elevi au înfățișat aceleași măsurători. Arată ce e greșit la fiecare.
+
+**a.** Axele sunt trase cu mâna, fără riglă, iar gradațiile nu sunt egal
+depărtate.
+
+**b.** Pe axe scrie doar „timp” și „temperatură”, fără unități.
+
+**c.** Crucile sunt legate două câte două prin segmente drepte, ieșind o linie
+frântă.
+
+**d.** Scara aleasă pe verticală este $1$ cm pentru $200\ ^\circ\text{C}$, deși
+temperatura cea mai mare din tabel este $100\ ^\circ\text{C}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a.** Axele se trag **cu rigla**, iar gradațiile trebuie să fie **egal
+depărtate**. Altfel distanțele de pe grafic nu mai înseamnă valori, iar forma
+curbei devine mincinoasă.
+
+**b.** Lipsesc **unitățile**. „Temperatură: 100” nu spune nimic: $100$ grade
+Celsius, $100$ kelvini și $100$ grade Fahrenheit sunt trei lucruri deosebite.
+
+**c.** Linia frântă ia fiecare măsurătoare drept adevăr desăvârșit și inventează
+schimbări bruște de direcție. Curba se trage **cu mâna liberă**, netezind.
+
+**d.** Scara este mult prea mare pentru datele avute: toată curba s-ar înghesui
+în jumătate de centimetru, iar din grafic nu s-ar mai putea citi nimic. Scara se
+alege **după valoarea cea mai mare din tabel**, ca desenul să umple foaia.
+
+</details>
