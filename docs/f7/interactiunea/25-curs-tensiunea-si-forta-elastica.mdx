@@ -1,0 +1,271 @@
+---
+sidebar_position: 25
+sidebar_label: "C9 — Tensiunea în fir. Forța elastică"
+slug: /f7/interactiunea/c9
+title: "C9 — Tensiunea în fir. Forța elastică și dinamometrul"
+description: "Tensiunea într-un fir întins, forța elastică și constanta elastică a unui resort, măsurarea forțelor cu dinamometrul."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C9 — Tensiunea în fir. Forța elastică și dinamometrul
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Tensiunea în fir
+3. Firul care susține un corp
+4. Forța elastică
+5. Constanta elastică
+6. Experiment: forța elastică și deformarea
+7. Dinamometrul
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Privește imaginile de mai jos. În fiecare dintre cazuri corpurile se pot
+înlocui cu alte corpuri având mase mai mari decât acestea. Ce s-ar putea
+întâmpla?
+
+<FiguraManual
+  src="ro-fire-intinse.png"
+  lat={640}
+  inalt={240}
+  latime={560}
+  eticheta="Stânga: o sportivă urcă pe o frânghie întinsă. Dreapta: rufe colorate atârnate pe o sârmă de rufe, pe cer senin"
+  legenda="Fire întinse. Amândouă susțin o greutate, și amândouă se pot rupe."
+/>
+
+**2.** Care sunt forțele care produc întinderea arcului și a praștiei, respectiv
+lansarea săgeții și a pietrei? Ce se întâmplă cu arcul și cu praștia după ce ai
+tras cu ele?
+
+<FiguraManual
+  src="ro-arc-prastie.png"
+  lat={439}
+  inalt={442}
+  latime={380}
+  eticheta="Un băiat întinde coarda unui arc cu săgeată; alt băiat întinde elasticul unei praștii"
+  legenda="Arc și praștie întinse. Amândouă își revin singure la forma dinainte."
+/>
+
+---
+
+## 2. Tensiunea în fir
+
+În orice secțiune a unui fir sau cablu întins de o forță — de pildă greutatea
+corpului suspendat — acționează două forțe egale în modul, dar opuse ca sens,
+acțiunea și reacțiunea, cu care o parte a firului acționează asupra celeilalte
+părți.
+
+:::danger Definiția 1
+
+Oricare din aceste două forțe se numește **tensiune în fir**, notată cu $T$.
+
+:::
+
+<FiguraManual
+  src="ro-tensiune-fir.png"
+  lat={433}
+  inalt={361}
+  latime={420}
+  eticheta="Stânga: un fir prins de tavan susține o bilă roșie; tensiunea T este îndreptată în sus, iar greutatea G în jos. Dreapta: aceeași bucată de fir, cu tensiunile T și −T la cele două capete"
+  legenda="Tensiunea în fir. Forțele perechi acțiune – reacțiune apar în fiecare secțiune a firului."
+/>
+
+Dacă greutatea proprie a firului este **neglijabilă**, tensiunea va avea aceeași
+valoare în orice secțiune a firului.
+
+---
+
+## 3. Firul care susține un corp
+
+Corpul suspendat de un fir inextensibil acționează asupra acestuia cu greutatea
+lui, tensionându-l. La capătul de jos al firului apar două forțe egale în modul
+și opuse ca sens.
+
+:::tip De reținut
+
+Când corpul este **în repaus**, tensiunea în fir este numeric egală cu greutatea
+corpului suspendat:
+
+$$
+\vec{G} = -\vec{T} \qquad\text{scalar:}\qquad G = T
+$$
+
+Cei doi vectori au sensuri opuse, dar numeric sunt egali.
+
+:::
+
+De aici răspunsul la prima întrebare a orei: dacă atârnăm un corp mai greu,
+tensiunea crește. Când ea trece de cât poate duce firul, firul se rupe.
+
+---
+
+## 4. Forța elastică
+
+Ai văzut că interacțiunea dintre corpuri poate avea efecte dinamice sau statice,
+iar efectele statice sunt **deformări plastice sau elastice**. Deformările
+elastice dispar după încetarea acțiunii care le-a produs — așa cum se întâmplă
+în cazul arcului cu săgeți sau al praștiei.
+
+Sub acțiunea unei forțe de deformare, corpul cu proprietăți elastice — fir,
+resort, elastic — suferă o modificare a lungimii sale. Conform principiului
+acțiunii și reacțiunii, asupra corpului deformator se exercită o forță de
+reacțiune egală și de sens opus, sub acțiunea căreia corpul revine la forma
+inițială.
+
+:::danger Definiția 2
+
+Forța cu care un corp elastic deformat se opune deformării și sub acțiunea
+căreia el revine la forma inițială se numește **forță elastică**, notată $F_e$.
+Ea este proporțională cu deformarea produsă și de sens opus ei:
+
+$$
+F_e = k \cdot \Delta l \qquad\text{vectorial:}\qquad \vec{F}_e = -k \cdot \Delta\vec{l}
+$$
+
+:::
+
+Aici $\Delta l$ este **deformarea** resortului — alungire sau comprimare.
+
+---
+
+## 5. Constanta elastică
+
+Mărimea $k$ este constanta de proporționalitate dintre forța elastică și
+deformare și se numește **constantă elastică**.
+
+| Mărimea | Simbol | Unitatea în SI |
+|---|---|---|
+| forța elastică | $F_e$ | newton, $\text{N}$ |
+| deformarea | $\Delta l$ | metru, $\text{m}$ |
+| constanta elastică | $k$ | $\text{N/m}$ |
+
+Constanta elastică spune **cât de tare** este resortul: un resort cu
+$k = 500\ \text{N/m}$ cere de cinci ori mai multă forță decât unul cu
+$k = 100\ \text{N/m}$ pentru aceeași alungire.
+
+<FiguraManual
+  src="ro-forta-elastica.png"
+  lat={427}
+  inalt={231}
+  latime={430}
+  eticheta="Stânga: un resort nedeformat, de lungime l₀, cu un corp atârnat. Dreapta: același resort alungit până la lungimea l; alungirea Δl e marcată, forța elastică e îndreptată în sus, greutatea în jos"
+  legenda="Forța elastică. Resortul se alungește până când forța lui elastică ajunge să echilibreze greutatea."
+/>
+
+**Un exemplu.** Un corp cu masa $m = 200\ \text{g}$, suspendat de un resort cu
+$k = 100\ \text{N/m}$, îl alungește cu:
+
+$$
+G = F_e \quad\Longrightarrow\quad m g = k \, \Delta l \quad\Longrightarrow\quad \Delta l = \frac{m g}{k}
+$$
+
+$$
+\Delta l = \frac{0{,}2 \times 10}{100} = 0{,}02\ \text{m} = 2\ \text{cm}
+$$
+
+---
+
+## 6. Experiment: forța elastică și deformarea
+
+**Scop:** determinarea dependenței forței elastice de deformare, prin
+comprimare.
+
+**Materiale necesare:** resort, paralelipiped din lemn, suprafață lucioasă.
+
+**Mod de lucru.**
+
+1. Fixează resortul, așezat pe suprafața lucioasă, la unul dintre capete.
+2. Comprimă resortul cu ajutorul corpului paralelipipedic din lemn.
+3. Încetează acțiunea asupra corpului, lăsându-l liber.
+4. Comprimă resortul din ce în ce mai mult cu ajutorul corpului, apoi
+   eliberează-l.
+
+**Constatări.** Compară forțele de împingere și deformările în cele două cazuri.
+Experimentul arată că forța de revenire a resortului deformat **crește cu
+deformarea** și este **opusă** acesteia.
+
+---
+
+## 7. Dinamometrul
+
+Cum măsurăm o forță? Cu un instrument care se sprijină chiar pe legea de mai
+sus.
+
+<FiguraManual
+  src="ro-aparate-forta.png"
+  lat={315}
+  inalt={334}
+  latime={320}
+  eticheta="Stânga: un aparat de măsurat forța musculară a picioarelor, cu lanț și cadran. Dreapta: un aparat de parc de distracții care măsoară forța pumnului"
+  legenda="Amândouă aparatele măsoară o forță — unul în medicină, celălalt în parcul de distracții."
+/>
+
+:::danger Definiția 3
+
+**Dinamometrul** funcționează pe principiul măsurării deformării unui element
+elastic — un resort — sub acțiunea unei forțe exterioare.
+
+:::
+
+Dinamometrul este alcătuit dintr-un suport pe care sunt fixate: un **resort
+elastic**, o **tijă cu cârlig**, un **indicator** și o **scală gradată**.
+
+<FiguraManual
+  src="ro-dinamometru.png"
+  lat={900}
+  inalt={578}
+  latime={720}
+  eticheta="Schema unui dinamometru școlar, cu părțile numite: orificiu pentru suspendare, resort elastic, capătul scalei corespunzător stării nedeformate, scală gradată, tijă mobilă cu cârlig, capătul scalei corespunzător deformării maxime, cârlig. Alături, un al doilea dinamometru văzut întreg"
+  legenda="Dinamometrul și părțile lui."
+/>
+
+Dinamometrele școlare au scalele etalonate în **newtoni** și divizate în zecimi
+de newton. Atunci când se agață un corp de cârlig, resortul se alungește, iar
+acul indicator se oprește în dreptul unei diviziuni care reprezintă valoarea
+forței.
+
+:::note Alte feluri de dinamometre
+
+În afara **dinamometrului școlar**, bazat pe deformarea elastică, există și
+**dinamometre hidraulice**, bazate pe măsurarea presiunii, și **dinamometre
+electromecanice**, bazate pe relația dintre deformare și variația unor mărimi
+electrice.
+
+:::
+
+<FiguraManual
+  src="ro-dinamometru-hidraulic.png"
+  lat={284}
+  inalt={464}
+  latime={230}
+  eticheta="O mână strânge un dinamometru hidraulic albastru cu cadran rotund"
+  legenda="Dinamometru hidraulic."
+/>
+
+<FiguraManual
+  src="ro-dinamometru-electro.png"
+  lat={220}
+  inalt={294}
+  latime={200}
+  eticheta="Un dinamometru electromecanic negru cu afișaj digital și cârlig metalic"
+  legenda="Dinamometru electromecanic."
+/>
+
+---
+
+:::note Ora următoare
+
+**LP9 — Tensiunea și forța elastică.** Trei probe: enunțuri de judecat, un
+resort de etalonat și două probleme cu resorturi.
+
+Înainte de ea, treci prin
+**[S9 — Tensiunea în fir. Forța elastică](./26-s-tensiunea-si-forta-elastica.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

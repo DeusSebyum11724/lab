@@ -1,0 +1,202 @@
+---
+sidebar_position: 27
+sidebar_label: "LP9 — Tensiunea și forța elastică"
+slug: /f7/interactiunea/lp9
+title: "LP9 — Tensiunea și forța elastică"
+description: "Lucrare practică: enunțuri adevărat-fals, un resort de măsurat cu dinamometrul și două probleme cu resorturi, dintre care una pe Lună."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP9 — Tensiunea și forța elastică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C9 — Tensiunea în fir. Forța elastică și dinamometrul](./25-curs-tensiunea-si-forta-elastica.mdx)**,
+cu formulele din **[S9](./26-s-tensiunea-si-forta-elastica.mdx)** la îndemână.
+Trei probe; în total 36 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Adevărat sau fals | — | 10 min |
+| 2 | Un resort de măsurat | ★ | 12 min |
+| 3 | Același resort, altă planetă | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$ pe Pământ. Rezolvarea fiecărei probe e
+ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Adevărat sau fals
+
+— &nbsp;·&nbsp; **10 minute**
+
+Notează cu **A** (adevărat) sau **F** (fals) și justifică pe scurt fiecare
+alegere.
+
+**a)** Alungirea unui resort este proporțională cu forța de deformare aplicată.
+
+**b)** Tensiunea într-un fir de masă neglijabilă este numeric egală cu greutatea
+unui corp suspendat de el, aflat în repaus.
+
+**c)** Constanta elastică a unui resort crește dacă atârni de el un corp mai
+greu.
+
+**d)** Dinamometrul măsoară masa unui corp.
+
+**e)** Forța elastică are același sens cu deformarea.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) A.** Asta e chiar legea forței elastice: $F_e = k \, \Delta l$. Dublezi
+forța, se dublează alungirea.
+
+**b) A.** Corpul stă pe loc, deci forțele care acționează asupra lui se
+echilibrează: tensiunea din fir, în sus, egalează greutatea, în jos. Firul fiind
+de masă neglijabilă, tensiunea e aceeași în tot firul.
+
+**c) F.** Constanta elastică ține de **resort** — de materialul lui, de grosimea
+sârmei, de numărul de spire. Corpul atârnat nu o schimbă. Se schimbă doar
+alungirea.
+
+**d) F.** Dinamometrul măsoară **forțe** și are scala gradată în newtoni. Din
+forța măsurată se poate afla masa, dar numai dacă știi $g$ — iar $g$ e altul pe
+Lună decât pe Pământ.
+
+**e) F.** Forța elastică este întotdeauna **opusă** deformării. Dacă tragi de
+resort în jos, el trage înapoi în sus; dacă îl comprimi, el împinge înapoi.
+
+</details>
+
+---
+
+## 2. Un resort de măsurat
+
+★ &nbsp;·&nbsp; **12 minute**
+
+Un corp cu masa $m = 200\ \text{g}$ este suspendat de un resort, pe care îl
+alungește cu $\Delta l = 4\ \text{mm}$.
+
+**1.** Reprezintă forțele care acționează asupra corpului suspendat.
+
+**2.** Calculează constanta elastică a resortului.
+
+**3.** Apoi corpul se așază pe o suprafață orizontală și este tras uniform prin
+intermediul aceluiași resort. Știind că forța de frecare are valoarea
+$F_f = 10\ \text{N}$, calculează alungirea resortului în timpul mișcării pe
+plan orizontal.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Asupra corpului suspendat acționează două forțe: **greutatea**
+$\vec{G}$, verticală în jos, și **forța elastică** $\vec{F}_e$ a resortului,
+verticală în sus. Corpul stă pe loc, deci ele se echilibrează.
+
+**2.** Trecem în unități SI: $m = 0{,}2\ \text{kg}$,
+$\Delta l = 4\ \text{mm} = 0{,}004\ \text{m}$.
+
+$$
+G = m g = 0{,}2 \times 10 = 2\ \text{N}
+$$
+
+La echilibru $F_e = G$, deci:
+
+$$
+k = \frac{F_e}{\Delta l} = \frac{2}{0{,}004} = 500\ \text{N/m}
+$$
+
+**3.** Pe orizontală, corpul e tras **uniform**, deci forța din resort
+echilibrează frecarea:
+
+$$
+F_e' = F_f = 10\ \text{N}
+$$
+
+Resortul e același, deci $k$ e același:
+
+$$
+\Delta l' = \frac{F_e'}{k} = \frac{10}{500} = 0{,}02\ \text{m} = 2\ \text{cm}
+$$
+
+Resortul se alungește de cinci ori mai mult decât atunci când corpul atârna —
+fiindcă frecarea e de cinci ori mai mare decât greutatea corpului.
+
+</details>
+
+---
+
+## 3. Același resort, altă planetă
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+**1.** Alungirea unui resort de care se suspendă pe Pământ un corp de masă
+$0{,}1\ \text{kg}$ este de $2\ \text{cm}$. Cunoscând
+$g_P = 10\ \text{N/kg}$ pe Pământ și $g_L = 1{,}62\ \text{N/kg}$ pe Lună, află
+alungirea resortului pe Lună.
+
+**2.** Un elev vrea să afle densitatea materialului dintr-o jucărie în formă de
+cub cu latura de $10\ \text{cm}$. El suspendă cubul de un resort cu
+$k = 100\ \text{N/m}$ și măsoară cu rigla alungirea:
+$\Delta l = 5\ \text{cm}$. Ce densitate are materialul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Întâi aflăm constanta resortului, din măsurătoarea de pe Pământ.
+$\Delta l = 2\ \text{cm} = 0{,}02\ \text{m}$:
+
+$$
+G_P = m g_P = 0{,}1 \times 10 = 1\ \text{N}
+$$
+
+$$
+k = \frac{G_P}{\Delta l} = \frac{1}{0{,}02} = 50\ \text{N/m}
+$$
+
+Pe Lună, resortul e același — deci $k$ rămâne $50\ \text{N/m}$. Se schimbă doar
+greutatea corpului:
+
+$$
+G_L = m g_L = 0{,}1 \times 1{,}62 = 0{,}162\ \text{N}
+$$
+
+$$
+\Delta l_L = \frac{G_L}{k} = \frac{0{,}162}{50} = 0{,}00324\ \text{m} \approx 3{,}2\ \text{mm}
+$$
+
+Alungirea scade de aproximativ șase ori — de tot atâtea ori de câte ori e mai
+mică accelerația gravitațională pe Lună. **Masa corpului nu s-a schimbat**;
+greutatea lui, da.
+
+**2.** Forța elastică echilibrează greutatea cubului. Cu
+$\Delta l = 5\ \text{cm} = 0{,}05\ \text{m}$:
+
+$$
+G = F_e = k \, \Delta l = 100 \times 0{,}05 = 5\ \text{N}
+$$
+
+$$
+m = \frac{G}{g} = \frac{5}{10} = 0{,}5\ \text{kg}
+$$
+
+Volumul cubului, cu latura $l = 10\ \text{cm} = 0{,}1\ \text{m}$:
+
+$$
+V = l^3 = 0{,}1^3 = 0{,}001\ \text{m}^3
+$$
+
+Densitatea:
+
+$$
+\rho = \frac{m}{V} = \frac{0{,}5}{0{,}001} = 500\ \text{kg/m}^3
+$$
+
+Este de două ori mai mică decât a apei, deci jucăria ar pluti — probabil e din
+lemn ușor sau din plastic expandat.
+
+</details>

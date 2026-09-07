@@ -1,0 +1,160 @@
+---
+sidebar_position: 26
+sidebar_label: "S9 — Tensiunea în fir. Forța elastică"
+slug: /f7/interactiunea/s9
+title: "S9 — Tensiunea în fir. Forța elastică"
+description: "Suport de curs: formulele tensiunii și ale forței elastice, cum se citește constanta elastică dintr-un grafic și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S9 — Tensiunea în fir. Forța elastică
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C9 — Tensiunea în fir. Forța elastică și dinamometrul](./25-curs-tensiunea-si-forta-elastica.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP9](./27-lp-tensiunea-si-forta-elastica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Tensiunea în fir, corp în repaus | $T$ | $T = G = m g$ | newton, $\text{N}$ |
+| Forța elastică | $F_e$ | $F_e = k \cdot \Delta l$ | newton, $\text{N}$ |
+| Constanta elastică | $k$ | $k = \dfrac{F_e}{\Delta l}$ | $\text{N/m}$ |
+| Deformarea | $\Delta l$ | $\Delta l = \dfrac{F_e}{k}$ | metru, $\text{m}$ |
+| Deformarea la un corp suspendat | $\Delta l$ | $\Delta l = \dfrac{m g}{k}$ | metru, $\text{m}$ |
+
+---
+
+## 2. Cum se citește $k$ dintr-un grafic
+
+Dacă atârni pe rând corpuri de mase diferite și măsurezi de fiecare dată
+alungirea, punctele obținute se așază pe o **dreaptă care trece prin origine**.
+
+- pe axa orizontală: deformarea $\Delta l$, în metri;
+- pe axa verticală: forța deformatoare $F$, în newtoni.
+
+Constanta elastică este raportul dintre o forță și alungirea ei — același
+pentru orice punct al dreptei:
+
+$$
+k = \frac{F}{\Delta l}
+$$
+
+Cu cât dreapta e mai abruptă, cu atât resortul e mai tare.
+
+:::warning Atenție la unități
+
+$\Delta l$ se trece **în metri** înainte de a împărți. O alungire de
+$2\ \text{cm}$ înseamnă $0{,}02\ \text{m}$. Uitat, factorul ăsta strică
+răspunsul de o sută de ori.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Tensiunea e aceeași în orice secțiune a firului, dacă greutatea firului e
+  neglijabilă.
+- $T = G$ **numai** când corpul suspendat stă pe loc.
+- Forța elastică e mereu **opusă** deformării: la alungire trage înapoi, la
+  comprimare împinge înainte.
+- $k$ ține de resort, nu de corpul atârnat de el. Schimbi corpul — $k$ rămâne.
+- Un resort atârnat pe Lună are aceeași constantă elastică, dar se alungește mai
+  puțin: greutatea corpului e mai mică acolo, nu resortul e altul.
+- Dinamometrul măsoară **forțe**, nu mase. El arată newtoni.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+La ora de fizică, doi elevi au suspendat pe rând corpuri cu mase diferite de un
+resort elastic și au trecut datele obținute în tabel. Se ia
+$g = 10\ \text{N/kg}$.
+
+| $m$ ($\text{g}$) | 200 | 400 | 600 | 800 |
+|---|---|---|---|---|
+| $\Delta l$ ($\text{cm}$) | 1 | 2 | 3 | 4 |
+
+**a)** Ce constantă de elasticitate are resortul folosit de ele?
+
+**b)** Ce formă are graficul care exprimă dependența alungirii resortului de
+greutatea suspendată de el?
+
+### Pasul 1 — Ce se dă
+
+Patru perechi de valori (masă, alungire) și $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Ce se cere
+
+$k$, apoi forma graficului.
+
+### Pasul 3 — Trecem în unități SI
+
+Masele în kilograme și alungirile în metri:
+
+| $m$ ($\text{kg}$) | $0{,}2$ | $0{,}4$ | $0{,}6$ | $0{,}8$ |
+|---|---|---|---|---|
+| $\Delta l$ ($\text{m}$) | $0{,}01$ | $0{,}02$ | $0{,}03$ | $0{,}04$ |
+
+### Pasul 4 — Calculăm greutățile
+
+Fiecare corp întinde resortul cu greutatea lui, $G = m g$:
+
+| $G$ ($\text{N}$) | $2$ | $4$ | $6$ | $8$ |
+|---|---|---|---|---|
+| $\Delta l$ ($\text{m}$) | $0{,}01$ | $0{,}02$ | $0{,}03$ | $0{,}04$ |
+
+### Pasul 5 — Constanta elastică
+
+La echilibru, forța elastică egalează greutatea: $F_e = G = k \, \Delta l$, deci
+$k = G / \Delta l$. Luăm prima pereche:
+
+$$
+k = \frac{2}{0{,}01} = 200\ \text{N/m}
+$$
+
+Verificăm și cu ultima:
+
+$$
+k = \frac{8}{0{,}04} = 200\ \text{N/m}
+$$
+
+Toate patru dau aceeași valoare, cum trebuie: $k$ e o constantă a resortului.
+
+### Pasul 6 — Graficul
+
+Punctele $(0{,}01;\ 2)$, $(0{,}02;\ 4)$, $(0{,}03;\ 6)$ și $(0{,}04;\ 8)$ se
+așază pe o **dreaptă care trece prin origine**: dacă nu atârni nimic, resortul
+nu se alungește deloc.
+
+Panta dreptei este chiar constanta elastică.
+
+### Pasul 7 — Verificarea
+
+Când greutatea se dublează, de la $2\ \text{N}$ la $4\ \text{N}$, alungirea se
+dublează și ea, de la $1\ \text{cm}$ la $2\ \text{cm}$. E semnul
+proporționalității directe — deci datele se potrivesc cu legea.
+
+### Răspuns
+
+$k = 200\ \text{N/m}$, iar graficul este o dreaptă prin origine.
+
+---
+
+:::note Ora următoare
+
+**[LP9 — Tensiunea și forța elastică](./27-lp-tensiunea-si-forta-elastica.mdx).**
+Trei probe, în total 36 de minute.
+
+:::

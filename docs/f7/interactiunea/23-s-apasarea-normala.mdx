@@ -1,0 +1,157 @@
+---
+sidebar_position: 23
+sidebar_label: "S8 — Forța de apăsare normală. Legile frecării"
+slug: /f7/interactiunea/s8
+title: "S8 — Forța de apăsare normală. Legile frecării"
+description: "Suport de curs: formulele apăsării normale și ale frecării, cele trei legi și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S8 — Forța de apăsare normală. Legile frecării
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C8 — Forța de apăsare normală. Legile frecării](./22-curs-apasarea-normala.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP8](./24-lp-apasarea-normala.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Forța de apăsare normală | $F_N$ | $F_N = N$ | newton, $\text{N}$ |
+| Reacțiunea normală, pe orizontală | $N$ | $N = G = m g$ | newton, $\text{N}$ |
+| Reacțiunea normală, pe plan înclinat | $N$ | $N = G_n$ | newton, $\text{N}$ |
+| Forța de frecare la alunecare | $F_f$ | $F_f = \mu \cdot N$ | newton, $\text{N}$ |
+| Coeficientul de frecare | $\mu$ | $\mu = \dfrac{F_f}{N}$ | fără unitate |
+
+---
+
+## 2. Cine acționează asupra cui
+
+| Forța | Asupra cui acționează | Din partea cui |
+|---|---|---|
+| greutatea $\vec{G}$ | corpului | Pământului |
+| apăsarea normală $\vec{F}_N$ | suprafeței | corpului |
+| reacțiunea normală $\vec{N}$ | corpului | suprafeței |
+| frecarea $\vec{F}_f$ | corpului | suprafeței |
+
+Tabelul ăsta rezolvă cea mai deasă confuzie a lecției: $\vec{F}_N$ și $\vec{N}$
+sunt o **pereche acțiune – reacțiune**, aplicată la două corpuri diferite.
+$\vec{G}$ și $\vec{N}$ acționează amândouă asupra corpului, deci **ele** se pot
+aduna.
+
+---
+
+## 3. De reținut
+
+- $N = G$ **numai** pe suprafață orizontală și numai dacă nimic nu apasă sau nu
+  trage corpul pe verticală.
+- Dacă pe corp se mai așază ceva, $N$ crește, deci și frecarea crește.
+- $\mu$ nu are unitate de măsură și nu depinde de masa corpului, ci numai de
+  cele două materiale în contact.
+- Aria suprafeței de sprijin nu schimbă frecarea.
+- Frecarea se opune **mișcării**, nu forței care trage. Când corpul stă pe loc,
+  ea se opune tendinței de mișcare.
+- La mișcare uniformă, forța de tracțiune este egală cu forța de frecare:
+  $F = F_f$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Forța de frecare exercitată între roțile unui autobuz și asfalt este de
+$1000\ \text{N}$. Masa autobuzului este $m = 5000\ \text{kg}$ și
+$g = 10\ \text{N/kg}$.
+
+**a)** Ce forță de tracțiune trebuie să aibă motorul pentru ca autobuzul să
+meargă rectiliniu uniform?
+
+**b)** Cât este coeficientul de frecare dintre roți și asfalt?
+
+**c)** Ce se întâmplă cu forța de frecare dacă în autobuz urcă
+$40$ de călători, fiecare de $70\ \text{kg}$?
+
+### Pasul 1 — Ce se dă
+
+- $F_f = 1000\ \text{N}$;
+- $m = 5000\ \text{kg}$;
+- $g = 10\ \text{N/kg}$;
+- masa călătorilor: $40 \times 70\ \text{kg}$.
+
+### Pasul 2 — Ce se cere
+
+$F$, apoi $\mu$, apoi noua valoare a lui $F_f$.
+
+### Pasul 3 — Forța de tracțiune
+
+Autobuzul merge **uniform**, deci rezultanta forțelor de pe direcția mișcării
+este nulă. Pe orizontală acționează numai tracțiunea, înainte, și frecarea,
+înapoi:
+
+$$
+F - F_f = 0 \quad\Longrightarrow\quad F = F_f = 1000\ \text{N}
+$$
+
+### Pasul 4 — Reacțiunea normală
+
+Drumul fiind orizontal, reacțiunea normală echilibrează greutatea:
+
+$$
+N = G = m g = 5000 \times 10 = 50\,000\ \text{N}
+$$
+
+### Pasul 5 — Coeficientul de frecare
+
+$$
+\mu = \frac{F_f}{N} = \frac{1000}{50\,000} = 0{,}02
+$$
+
+Un număr fără unitate, cum trebuie.
+
+### Pasul 6 — Cu călători
+
+Masa totală devine:
+
+$$
+m' = 5000 + 40 \times 70 = 5000 + 2800 = 7800\ \text{kg}
+$$
+
+Coeficientul $\mu$ **nu se schimbă** — materialele au rămas aceleași. Se schimbă
+apăsarea:
+
+$$
+N' = 7800 \times 10 = 78\,000\ \text{N}
+$$
+
+$$
+F_f' = \mu \cdot N' = 0{,}02 \times 78\,000 = 1560\ \text{N}
+$$
+
+### Pasul 7 — Verificarea
+
+Masa a crescut de $7800 : 5000 = 1{,}56$ ori, iar frecarea a crescut tot de
+$1560 : 1000 = 1{,}56$ ori. Se potrivește cu prima lege: frecarea e direct
+proporțională cu apăsarea.
+
+### Răspuns
+
+**a)** $F = 1000\ \text{N}$; **b)** $\mu = 0{,}02$; **c)** frecarea crește la
+$1560\ \text{N}$.
+
+---
+
+:::note Ora următoare
+
+**[LP8 — Apăsarea normală și frecarea](./24-lp-apasarea-normala.mdx).** Trei
+probe, în total 32 de minute.
+
+:::

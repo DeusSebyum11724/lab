@@ -1,0 +1,181 @@
+---
+sidebar_position: 24
+sidebar_label: "LP8 — Apăsarea normală și frecarea"
+slug: /f7/interactiunea/lp8
+title: "LP8 — Apăsarea normală și frecarea"
+description: "Lucrare practică: reprezentarea forțelor de frecare, întrebări de discernământ despre frecare și un coeficient de calculat."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP8 — Apăsarea normală și frecarea
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C8 — Forța de apăsare normală. Legile frecării](./22-curs-apasarea-normala.mdx)**,
+cu formulele din **[S8](./23-s-apasarea-normala.mdx)** la îndemână. Trei probe;
+în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Unde arată forța de frecare | — | 10 min |
+| 2 | Patru întrebări de ales | ★ | 10 min |
+| 3 | Un coeficient de calculat | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Unde arată forța de frecare
+
+— &nbsp;·&nbsp; **10 minute**
+
+Reprezintă forța de frecare exercitată asupra fiecărui corp din figura de mai
+jos, presupunând că sensul de mișcare pentru corpurile aflate pe masă este spre
+dreapta.
+
+<FiguraManual
+  src="ro-corpuri-miscare.png"
+  lat={364}
+  inalt={175}
+  latime={400}
+  eticheta="Pe o masă orizontală, corpul m2 este legat prin fir de corpul m1; de la m1 pleacă un fir care trece peste un scripete de la marginea mesei și susține corpul atârnat m0. O săgeată verde arată sensul mișcării, spre dreapta"
+  legenda="Corpuri aflate în mișcare. Cele două de pe masă alunecă, cel atârnat coboară."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+**Corpul $m_1$.** Alunecă pe masă spre dreapta, deci frecarea dintre el și masă
+este orizontală și îndreptată **spre stânga**, aplicată în suprafața lui de
+sprijin.
+
+**Corpul $m_2$.** Alunecă și el pe masă spre dreapta — tras de firul care îl
+leagă de $m_1$. Frecarea asupra lui este tot orizontală și tot **spre stânga**.
+
+**Corpul $m_0$.** Atârnă liber, în aer. **Nu atinge nicio suprafață**, deci
+asupra lui **nu acționează nicio forță de frecare** — numai greutatea, în jos,
+și tensiunea din fir, în sus.
+
+*Ce se învață de aici:* frecarea nu apare fiindcă un corp se mișcă, ci fiindcă
+se **freacă de altceva**. Fără contact, nu există frecare.
+
+</details>
+
+---
+
+## 2. Patru întrebări de ales
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Dacă o mașină se îndreaptă spre sud, forța de frecare cu aerul care
+acționează asupra ei este orientată:
+
+**a)** spre sud; **b)** spre est; **c)** spre nord; **d)** spre vest.
+
+**2.** O cutie goală din lemn este deplasată pe o suprafață din același
+material. Dacă se umple cutia și se deplasează pe aceeași suprafață, forța de
+frecare:
+
+**a)** rămâne aceeași; **b)** crește; **c)** scade.
+
+**3.** Două obiecte din același material, dar de greutăți diferite,
+$G_1 > G_2$, sunt lansate pe gheață cu viteze egale. Ele se vor opri:
+
+**a)** după același timp, fiindcă sunt din același material;
+**b)** primul corp se oprește primul;
+**c)** al doilea corp se oprește primul.
+
+**4.** Aceeași cutie este trasă o dată pe fața ei mare și o dată pe muchie. Cum
+se schimbă frecarea?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **c**. Frecarea se opune întotdeauna sensului mișcării. Mașina
+merge spre sud, deci rezistența aerului o trage spre **nord**.
+
+**2.** Răspunsul **b**. Umplută, cutia are masă mai mare, deci greutate mai
+mare, deci apasă mai tare pe suprafață. Cum $F_f = \mu N$, iar $\mu$ rămâne
+același (materialele nu s-au schimbat), frecarea **crește**.
+
+**3.** Răspunsul **a**. Materialele fiind aceleași, coeficientul $\mu$ e același.
+Corpul greu are într-adevăr o frecare mai mare — dar are și o masă mai mare de
+oprit. Cele două se compensează, iar cele două corpuri se opresc **după același
+timp** și pe aceeași distanță.
+
+Asta se vede și în viață: o cutie plină și una goală, lansate la fel pe gheață,
+alunecă la fel de departe.
+
+**4.** **Nu se schimbă deloc.** A doua lege a frecării spune că forța de frecare
+nu depinde de aria geometrică a suprafeței de contact. Suprafața reală de
+atingere, dintre asperități, rămâne aceeași.
+
+</details>
+
+---
+
+## 3. Un coeficient de calculat
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+La ora de fizică, doi elevi determină forța de frecare dintre un corp de lemn și
+scândura tribometrului. Ei trag corpul cu un fir trecut peste scripete și adaugă
+mase marcate pe taler până când corpul se mișcă **uniform**. Corpul are masa
+$m = 500\ \text{g}$, iar masele marcate de pe taler însumează
+$m_0 = 150\ \text{g}$. Se ia $g = 10\ \text{N/kg}$.
+
+**1.** Cât este forța de frecare dintre corp și scândură?
+
+**2.** Cât este reacțiunea normală a scândurii?
+
+**3.** Calculează coeficientul de frecare.
+
+**4.** Elevii mai așază pe corp o masă de $500\ \text{g}$. Ce greutate trebuie
+acum pe taler ca mișcarea să rămână uniformă?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Corpul se mișcă uniform, deci pe direcția mișcării rezultanta e nulă:
+tensiunea din fir egalează frecarea. Iar talerul coboară tot uniform, deci
+tensiunea egalează greutatea maselor marcate:
+
+$$
+F_f = T = G_0 = m_0 \cdot g = 0{,}15 \times 10 = 1{,}5\ \text{N}
+$$
+
+**2.** Scândura e orizontală și nimic nu apasă în plus pe corp, deci:
+
+$$
+N = G = m g = 0{,}5 \times 10 = 5\ \text{N}
+$$
+
+**3.** Coeficientul de frecare:
+
+$$
+\mu = \frac{F_f}{N} = \frac{1{,}5}{5} = 0{,}3
+$$
+
+Un număr fără unitate — potrivit pentru lemn pe lemn.
+
+**4.** Coeficientul rămâne $0{,}3$: materialele nu s-au schimbat. Se schimbă
+numai apăsarea, fiindcă masa totală care apasă pe scândură devine
+$0{,}5 + 0{,}5 = 1\ \text{kg}$:
+
+$$
+N' = 1 \times 10 = 10\ \text{N}
+$$
+
+$$
+F_f' = \mu N' = 0{,}3 \times 10 = 3\ \text{N}
+$$
+
+Pe taler trebuie deci o greutate de $3\ \text{N}$, adică o masă de
+$300\ \text{g}$ — de două ori mai mult decât înainte, exact cât s-a dublat și
+apăsarea.
+
+</details>
