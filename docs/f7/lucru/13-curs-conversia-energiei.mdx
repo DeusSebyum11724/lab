@@ -1,0 +1,187 @@
+---
+sidebar_position: 13
+sidebar_label: "C5 — Metode de conversie a energiei mecanice"
+slug: /f7/lucru/c5
+title: "C5 — Metode de conversie a energiei mecanice"
+description: "Schimbul dintre energia potențială și cea cinetică pe un half-pipe, prefacerea în energie termică prin frecare și în energie electrică."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C5 — Metode de conversie a energiei mecanice
+
+:::info Planul orei
+
+1. Introducere
+2. Schimbul dintre cele două energii
+3. Cele patru poziții de citit pe figură
+4. Ce se întâmplă cu frecările
+5. Prefacerea în energie electrică
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Într-un half-pipe, un schior se înalță în aer ca să facă figuri, apoi cade
+înapoi pe pistă.**
+
+**1.** Energia potențială de poziție a schiorului este mai mare în poziția 1 sau
+în poziția 5? Dar energia lui cinetică?
+
+**2.** Ce prefacere de energie se face la coborâre? Dar la urcare?
+
+**3.** Ce se întâmplă cu energia mecanică, dacă nu sunt frecări?
+
+**4.** Ce se întâmplă cu ea în realitate?
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Schimbul dintre cele două energii
+
+<FiguraManual
+  src="h26-halfpipe.png"
+  lat={775}
+  inalt={443}
+  latime={620}
+  eticheta="Cronofotografia unui schior într-un half-pipe, cu nouă poziții numerotate; lângă fiecare, bare colorate care arată energia potențială, cea cinetică și suma lor"
+  legenda="Energiile schiorului în cele nouă poziții ale coborârii și ale urcării."
+>
+  <Et x={346} y={13}  w={172} h={17} corp={16} culoare="#176fc0" alinia="centru">Altitudinea maximă</Et>
+  <Et x={561} y={343} w={167} h={17} corp={16} culoare="#176fc0" alinia="centru">Altitudinea minimă</Et>
+  <Et x={92}  y={400} w={90}  h={16} corp={16} culoare="#682024">Viteza</Et>
+</FiguraManual>
+
+Pe figură, lângă fiecare poziție, sunt desenate trei bare:
+
+| Bara | Ce arată |
+|---|---|
+| $E_p$ | energia potențială de poziție — atârnă de **altitudine** |
+| $E_c$ | energia cinetică — atârnă de **viteză** |
+| $E_m$ | energia mecanică, adică suma lor |
+
+$$
+E_m = E_c + E_p
+$$
+
+---
+
+## 3. Cele patru poziții de citit pe figură
+
+**Poziția 1 — altitudinea cea mai mare.** Schiorul are energie potențială de
+poziție **maximă**. Viteza lui este nulă, deci **nu are** energie cinetică.
+
+**Pozițiile 2, 3, 4 — coborârea.** Altitudinea scade, deci $E_p$ scade. În
+același timp schiorul câștigă viteză, deci $E_c$ crește.
+
+**Poziția 5 — altitudinea cea mai mică.** Energia potențială este **nulă**.
+Viteza este cea mai mare, deci energia cinetică este **maximă**.
+
+**Pozițiile 6, 7, 8, 9 — urcarea.** Totul se petrece pe dos: viteza scade,
+$E_c$ scade, altitudinea crește, $E_p$ crește.
+
+:::tip De reținut
+
+La **coborâre**: energia potențială se preface în energie cinetică.
+
+$$
+E_p \longrightarrow E_c
+$$
+
+La **urcare**: energia cinetică se preface în energie potențială.
+
+$$
+E_c \longrightarrow E_p
+$$
+
+:::
+
+Uită-te la barele $E_m$ de pe figură: ele sunt **aproape la fel de lungi** în
+toate pozițiile. Suma nu se schimbă, deși cele două părți ale ei se schimbă
+necontenit. Aceasta este conservarea energiei mecanice.
+
+---
+
+## 4. Ce se întâmplă cu frecările
+
+În realitate există întotdeauna frecări, care încetinesc schiorul.
+
+:::danger Definiția 1
+
+Din pricina frecărilor, o parte din energia mecanică se preface în **energie
+termică**. Energia nu se pierde: ea își schimbă forma.
+
+:::
+
+De aceea barele $E_m$ nu sunt chiar egale: cea din poziția 9 este ceva mai
+scurtă decât cea din poziția 1. Schiorul nu se va înălța niciodată, singur, la
+înălțimea de la care a plecat.
+
+| Se vede în | Ce se preface în ce |
+|---|---|
+| frânele unei mașini, care se încing | energie cinetică → energie termică |
+| palmele frecate una de alta | energie mecanică → energie termică |
+| o minge care sare tot mai jos | energie mecanică → energie termică |
+
+---
+
+## 5. Prefacerea în energie electrică
+
+Energia mecanică poate fi prefăcută și în **energie electrică**.
+
+:::danger Definiția 2
+
+Un **alternator** preface energia **cinetică** în energie **electrică**.
+
+:::
+
+| Locul | Ce mișcă alternatorul |
+|---|---|
+| hidrocentrala | apa care cade |
+| centrala eoliană | vântul care învârte elicea |
+| centrala termică | vaporii care împing turbina |
+| dinamul unei biciclete | roata |
+
+Prefacerea merge și pe dos: un **motor electric** preface energia electrică în
+energie cinetică. Aceasta este prefacerea din lecția despre circuitul electric.
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.** Energia potențială de poziție este mai mare în **poziția 1**, unde
+altitudinea este cea mai mare. Energia cinetică este mai mare în **poziția 5**,
+unde viteza este cea mai mare.
+
+În poziția 1 viteza este nulă, deci energia cinetică este nulă. În poziția 5
+altitudinea este cea mai mică, deci energia potențială este nulă.
+
+**2.** La **coborâre**, energia potențială de poziție se preface în energie
+cinetică. La **urcare**, energia cinetică se preface în energie potențială de
+poziție.
+
+**3.** Dacă n-ar fi frecări, energia mecanică **s-ar păstra**: suma
+$E_m = E_c + E_p$ ar rămâne aceeași în toate pozițiile. Schiorul s-ar întoarce
+exact la înălțimea de la care a plecat, la nesfârșit.
+
+**4.** În realitate există întotdeauna frecări. O parte din energia mecanică se
+preface în **energie termică** — pista și aerul se încălzesc puțin — iar energia
+mecanică scade de la o trecere la alta. De aceea schiorul trebuie să se împingă
+mereu, dacă vrea să rămână la aceeași înălțime.
+
+---
+
+:::note Ora următoare
+
+**LP5 — Metode de conversie a energiei mecanice.** Patru probe: citirea barelor
+de energie, mingea care sare, frânele care se încing și centralele electrice.
+
+Înainte de ea, treci prin
+**[S5 — Metode de conversie a energiei mecanice](./14-s-conversia-energiei.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::
