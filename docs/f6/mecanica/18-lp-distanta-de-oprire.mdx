@@ -1,0 +1,230 @@
+---
+sidebar_position: 18
+sidebar_label: "LP6 — Viteza și distanța de oprire"
+slug: /f6/mecanica/lp6
+title: "LP6 — Viteza și distanța de oprire"
+description: "Lucrare practică: cele două faze, citirea graficelor, proporționalitatea distanței de reacție și înrâurirea vitezei."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP6 — Viteza și distanța de oprire
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C6 — Viteza și distanța de oprire](./16-curs-distanta-de-oprire.mdx)**, cu
+formulele din **[S6](./17-s-distanta-de-oprire.mdx)** la îndemână. Patru probe;
+în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Cele două faze | ★ | 10 min |
+| 2 | Citește graficele | ★★ | 15 min |
+| 3 | Proporțional sau nu | ★★ | 10 min |
+| 4 | De două ori mai repede | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Cele două faze
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="h16-scuter.png"
+  lat={1175}
+  inalt={415}
+  latime={620}
+  eticheta="Un șir de scutere pe șosea, de la clipa în care conducătoarea vede pietonul până la oprire"
+  legenda="Cele două faze ale opririi."
+>
+  <Et x={174} y={332} w={136} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={178} y={359} w={126} h={21} corp={16} fond="#fbcce8" alinia="centru">vede pietonul</Et>
+  <Et x={549} y={332} w={137} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={520} y={359} w={195} h={16} corp={16} fond="#fbcce8" alinia="centru">începe să frâneze</Et>
+  <Et x={900} y={332} w={137} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={925} y={359} w={88}  h={16} corp={16} fond="#fbcce8" alinia="centru">se oprește</Et>
+</FiguraManual>
+
+**1.** Se schimbă viteza scuterului între prima și a doua linie punctată?
+Lămurește-ți răspunsul.
+
+**2.** Ce fel de mișcare are scuterul între a doua și a treia linie punctată?
+
+**3.** Numește distanța dintre prima și a doua linie, apoi pe cea dintre a doua
+și a treia.
+
+**4.** Scrie formula distanței de oprire.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Nu.** Între prima și a doua linie, conducătoarea a văzut pietonul, dar
+încă nu a apăsat frâna: creierul ei cercetează ce a văzut. Nimic nu încetinește
+scuterul, deci viteza rămâne aceeași — mișcarea este **uniformă**.
+
+**2.** Între a doua și a treia linie, frâna este apăsată și viteza scade:
+mișcarea este **încetinită**.
+
+**3.** Prima este **distanța de reacție**, $d_r$. A doua este **distanța de
+frânare**, $d_f$.
+
+**4.** $d_a = d_r + d_f$.
+
+</details>
+
+---
+
+## 2. Citește graficele
+
+★★ &nbsp;·&nbsp; **15 minute**
+
+<FiguraManual
+  src="h16-franare-uscat.png"
+  lat={539}
+  inalt={475}
+  latime={400}
+  eticheta="Grafic al distanței de frânare în funcție de viteză, pe șosea uscată"
+  legenda="Pe șosea uscată."
+>
+  <Et x={60} y={15} w={284} h={23} corp={20}>Distanța de frânare (în m)</Et>
+  <Et x={357} y={401} w={172} h={21} corp={18}>Viteza (în km/h)</Et>
+</FiguraManual>
+
+<FiguraManual
+  src="h16-franare-ud.png"
+  lat={539}
+  inalt={475}
+  latime={400}
+  eticheta="Același grafic, pe șosea udă"
+  legenda="Pe șosea udă."
+>
+  <Et x={60} y={15} w={284} h={23} corp={20}>Distanța de frânare (în m)</Et>
+  <Et x={357} y={401} w={172} h={21} corp={18}>Viteza (în km/h)</Et>
+</FiguraManual>
+
+**1.** Citește distanța de frânare la $40$ km/h, pe uscat și pe ud.
+
+**2.** Citește-o la $80$ km/h, tot pe amândouă.
+
+**3.** Cu cât crește distanța de frânare când viteza se dublează de la $40$ la
+$80$ km/h, pe uscat?
+
+**4.** Ce arată forma curbei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Pe uscat, aproximativ $10$ metri. Pe ud, aproximativ $20$ de metri — de
+două ori mai mult.
+
+**2.** Pe uscat, aproximativ $40$ de metri. Pe ud, aproximativ $65$ de metri.
+
+**3.** De la $10$ la $40$ de metri, adică de **patru ori** mai mult, deși viteza
+s-a dublat doar.
+
+**4.** Curba nu este o dreaptă: ea urcă tot mai abrupt. Asta arată că distanța
+de frânare **nu este proporțională** cu viteza, ci crește mult mai repede decât
+ea.
+
+</details>
+
+---
+
+## 3. Proporțional sau nu
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+| Viteza (km/h) | 40 | 60 | 80 | 90 |
+|---|---|---|---|---|
+| $d_r$ (m) | 11,1 | 16,7 | 22,2 | 25 |
+
+**1.** Arată, prin calcul, că distanța de reacție este proporțională cu viteza.
+
+**2.** De unde vine această proporționalitate?
+
+**3.** Ce se întâmplă cu tabelul dacă timpul de reacție crește la $2$ secunde?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se împarte fiecare distanță la viteza ei:
+
+$$
+\frac{11{,}1}{40} \approx 0{,}28
+\qquad
+\frac{16{,}7}{60} \approx 0{,}28
+\qquad
+\frac{22{,}2}{80} \approx 0{,}28
+\qquad
+\frac{25}{90} \approx 0{,}28
+$$
+
+Toate câturile sunt egale, deci mărimile sunt proporționale.
+
+**2.** Din formula $d_r = v \times t_r$: timpul de reacție **nu se schimbă**,
+deci distanța crește exact la fel ca viteza. Câtul găsit, $0{,}28$, nu este
+altceva decât $t_r$ preschimbat pentru viteze în km/h și distanțe în metri.
+
+**3.** Toate valorile se **dublează**: $22{,}2$; $33{,}4$; $44{,}4$; $50$ de
+metri. Proporționalitatea rămâne — se schimbă numai câtul, care se dublează și
+el.
+
+</details>
+
+---
+
+## 4. De două ori mai repede
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Un scuter merge pe șosea uscată, condus de o persoană atentă
+($t_r = 1\ \text{s}$).
+
+**1.** Calculează distanța de oprire la $40$ km/h, folosind tabelul și graficul.
+
+**2.** Calculează-o la $80$ km/h.
+
+**3.** Viteza s-a dublat. S-a dublat și distanța de oprire? Lămurește.
+
+**4.** Un elev spune: „Dacă merg de două ori mai repede, îmi trebuie de două ori
+mai mult loc ca să opresc.” Ce îi răspunzi?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La $40$ km/h: $d_r = 11{,}1$ m (din tabel), $d_f \approx 10$ m (din
+grafic).
+
+$$
+d_a = 11{,}1 + 10 \approx 21\ \text{m}
+$$
+
+**2.** La $80$ km/h: $d_r = 22{,}2$ m, $d_f \approx 40$ m.
+
+$$
+d_a = 22{,}2 + 40 \approx 62\ \text{m}
+$$
+
+**3.** **Nu.** Distanța de oprire a crescut de la $21$ la $62$ de metri, adică
+de aproape **trei ori**, nu de două.
+
+Pricina: numai una dintre cele două distanțe se dublează. Distanța de reacție,
+proporțională cu viteza, trece de la $11{,}1$ la $22{,}2$ metri. Distanța de
+frânare, care nu e proporțională, trece de la $10$ la $40$ de metri — de patru
+ori mai mult.
+
+**4.** Nu are dreptate, și greșeala lui e primejdioasă. La viteză dublă îi
+trebuie de aproape **trei ori** mai mult loc, nu de două ori. Iar pe șosea udă
+ar fi și mai mult.
+
+Tocmai de aceea limitele de viteză scad acolo unde vederea e scurtă: nu fiindcă
+mașina ar fi mai greu de stăpânit, ci fiindcă **locul în care poate fi oprită
+crește mult mai repede decât viteza**.
+
+</details>

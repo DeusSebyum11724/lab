@@ -1,0 +1,186 @@
+---
+sidebar_position: 13
+sidebar_label: "C5 — Mișcare accelerată, uniformă și încetinită"
+slug: /f6/mecanica/c5
+title: "C5 — Mișcare accelerată, uniformă și încetinită"
+description: "Cele trei feluri de mișcare după cum se schimbă viteza, cronometrarea unui schior pe cinci porțiuni și calculul vitezei medii pe fiecare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C5 — Mișcare accelerată, uniformă și încetinită
+
+:::info Planul orei
+
+1. Introducere
+2. Cronometrarea la antrenament
+3. Viteza medie pe fiecare porțiune
+4. Cele trei feluri de mișcare
+5. Săgeata vitezei
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**La o probă de schi de viteză, schiorul are o mișcare rectilinie și pare că
+merge tot mai repede. Cum se schimbă viteza unui schior care coboară o pantă?**
+
+**1.** Ce distanță parcurge schiorul între două timpi de trecere?
+
+**2.** Cât timp îi trebuie ca să străbată porțiunea A? Dar porțiunea B?
+
+**3.** Calculează viteza medie a schiorului pe fiecare porțiune, în m/s și în
+km/h, rotunjind la zecimi.
+
+**4.** Cum se schimbă viteza schiorului în timpul coborârii? Mișcarea lui este
+uniformă, accelerată sau încetinită?
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Cronometrarea la antrenament
+
+La un antrenament, schiorul pornește din capul pârtiei de elan. El este
+cronometrat pe tot parcursul coborârii, iar timpii de trecere sunt luați **din
+100 în 100 de metri**.
+
+<FiguraManual
+  src="h16-schi.png"
+  lat={1161}
+  inalt={648}
+  latime={620}
+  eticheta="Un schior coborând o pantă, cu cinci porțiuni însemnate A, B, C, D și E, și șase cronometre dedesubt care arată 0,00; 4,70; 7,10; 9,30; 11,10 și 12,70"
+  legenda="Timpii de trecere, luați din 100 în 100 de metri."
+>
+  <Et x={30}  y={572} w={62} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+  <Et x={223} y={572} w={61} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+  <Et x={415} y={572} w={61} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+  <Et x={609} y={572} w={61} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+  <Et x={799} y={572} w={61} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+  <Et x={993} y={572} w={60} h={10} corp={10} fond="#413841" culoare="#aeaaae" alinia="centru">SECUNDE</Et>
+</FiguraManual>
+
+Fiecare porțiune are aceeași lungime: $d = 100\ \text{m}$. Din timpii de trecere
+se află cât a durat fiecare porțiune, prin scădere:
+
+| Porțiunea | A | B | C | D | E |
+|---|---|---|---|---|---|
+| Timpul de trecere (s) | 4,70 | 7,10 | 9,30 | 11,10 | 12,70 |
+| Durata porțiunii (s) | 4,70 | 2,40 | 2,20 | 1,80 | 1,60 |
+
+---
+
+## 3. Viteza medie pe fiecare porțiune
+
+$$
+v = \frac{d}{t}
+$$
+
+| Porțiunea | Durata (s) | Viteza (m/s) | Viteza (km/h) |
+|---|---|---|---|
+| A | 4,70 | 21,3 | 76,6 |
+| B | 2,40 | 41,7 | 150,0 |
+| C | 2,20 | 45,5 | 163,6 |
+| D | 1,80 | 55,6 | 200,0 |
+| E | 1,60 | 62,5 | 225,0 |
+
+Preschimbarea din m/s în km/h se face înmulțind cu $3{,}6$.
+
+Vitezele cresc de la o porțiune la alta: $21{,}3$, apoi $41{,}7$, apoi
+$45{,}5$, apoi $55{,}6$, apoi $62{,}5$ m/s.
+
+---
+
+## 4. Cele trei feluri de mișcare
+
+:::danger Definiția 1
+
+- **Mișcarea accelerată** este mișcarea în cursul căreia viteza **crește**.
+- **Mișcarea încetinită** este mișcarea în cursul căreia viteza **scade**.
+- **Mișcarea uniformă** este mișcarea în cursul căreia viteza **rămâne
+  aceeași**.
+
+:::
+
+Ia seama: aceste trei nume privesc numai **cum se schimbă viteza**, nu forma
+traiectoriei. O mașină care ia o curbă cu viteza neschimbată are o mișcare
+uniformă, deși nu merge drept.
+
+:::warning Atenție
+
+Un corp poate avea o mișcare accelerată chiar dacă merge încet, și una
+încetinită chiar dacă merge repede. Contează dacă viteza **crește** sau
+**scade**, nu cât de mare este ea.
+
+:::
+
+---
+
+## 5. Săgeata vitezei
+
+Viteza se înfățișează printr-un **segment cu săgeată**, care arată direcția și
+sensul mișcării și a cărui lungime este proporțională cu valoarea vitezei.
+
+Dacă $1$ centimetru înfățișează $20$ m/s, atunci pe porțiunea E, unde viteza
+este de $62{,}5$ m/s, săgeata trebuie să fie lungă de:
+
+$$
+\frac{62{,}5}{20} \approx 3{,}1\ \text{cm}
+$$
+
+Săgețile care cresc de la o porțiune la alta sunt tocmai semnul desenat al unei
+mișcări accelerate.
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.** Între două timpi de trecere, schiorul parcurge **100 de metri** —
+distanța este aceeași pentru toate porțiunile, fiindcă așa au fost puse
+reperele.
+
+**2.** Porțiunea A durează $4{,}70$ secunde, fiindcă pornirea s-a făcut la
+$0{,}00$. Porțiunea B durează $7{,}10 - 4{,}70 = 2{,}40$ secunde.
+
+**3.** Cu $v = \dfrac{d}{t}$ și $d = 100\ \text{m}$:
+
+$$
+v_A = \frac{100}{4{,}70} \approx 21{,}3\ \text{m/s}
+\qquad
+v_B = \frac{100}{2{,}40} \approx 41{,}7\ \text{m/s}
+$$
+
+$$
+v_C \approx 45{,}5\ \text{m/s}
+\qquad
+v_D \approx 55{,}6\ \text{m/s}
+\qquad
+v_E \approx 62{,}5\ \text{m/s}
+$$
+
+În km/h, înmulțind cu $3{,}6$: $76{,}6$; $150{,}0$; $163{,}6$; $200{,}0$;
+$225{,}0$.
+
+**4.** Viteza **crește** de la o porțiune la alta, deci mișcarea schiorului este
+**accelerată**.
+
+Ia seama la un lucru: distanțele sunt egale, dar duratele scad. Tocmai duratele
+tot mai mici pentru aceeași distanță arată că viteza crește.
+
+---
+
+:::note Ora următoare
+
+**LP5 — Mișcare accelerată, uniformă și încetinită.** Patru probe:
+recunoașterea felului mișcării, tabelul cronometrărilor, mingea care cade și
+săgețile vitezei.
+
+Înainte de ea, treci prin
+**[S5 — Mișcare accelerată, uniformă și încetinită](./14-s-miscare-accelerata.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

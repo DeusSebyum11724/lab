@@ -1,0 +1,219 @@
+---
+sidebar_position: 16
+sidebar_label: "C6 — Viteza și distanța de oprire"
+slug: /f6/mecanica/c6
+title: "C6 — Viteza și distanța de oprire"
+description: "Timpul de reacție, distanța de reacție, distanța de frânare și distanța de oprire; graficele pentru șosea uscată și udă."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C6 — Viteza și distanța de oprire
+
+:::info Planul orei
+
+1. Introducere
+2. Cele două faze ale opririi
+3. Distanța de reacție
+4. Distanța de frânare
+5. Distanța de oprire
+6. Ce mărește distanța de oprire
+7. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Când vezi un obstacol pe șosea, ai nevoie de o anumită distanță ca să
+oprești. Are viteza vreo înrâurire asupra distanței de oprire?**
+
+**1.** Se schimbă viteza scuterului în timpul de reacție?
+
+**2.** Din ce clipă începe viteza scuterului să scadă?
+
+**3.** Citește distanța de frânare a unui scuter care merge cu $40$ km/h pe
+șosea uscată. Cât devine ea pe șosea udă?
+
+**4.** Distanța parcursă în timpul de reacție este proporțională cu viteza? Dar
+distanța de frânare?
+
+**5.** Află distanța de oprire a unui scuter care merge cu $40$ km/h pe șosea
+uscată, condus de un adolescent atent.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Cele două faze ale opririi
+
+Când trebuie să oprești deodată — de pildă fiindcă vezi un obstacol pe șosea —
+mișcarea scuterului se desface în **două faze**.
+
+<FiguraManual
+  src="h16-scuter.png"
+  lat={1175}
+  inalt={415}
+  latime={620}
+  eticheta="Un șir de scutere pe șosea, de la clipa în care conducătoarea vede pietonul până la oprire; trei linii punctate însemnează cele trei momente"
+  legenda="Cele două faze ale opririi, de la vederea pietonului până la oprire."
+>
+  <Et x={174} y={332} w={136} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={178} y={359} w={126} h={21} corp={16} fond="#fbcce8" alinia="centru">vede pietonul</Et>
+  <Et x={549} y={332} w={137} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={520} y={359} w={195} h={16} corp={16} fond="#fbcce8" alinia="centru">începe să frâneze</Et>
+  <Et x={900} y={332} w={137} h={16} corp={16} fond="#fbcce8" alinia="centru">Conducătoarea</Et>
+  <Et x={925} y={359} w={88}  h={16} corp={16} fond="#fbcce8" alinia="centru">se oprește</Et>
+</FiguraManual>
+
+- **Faza întâi**: de când conducătoarea vede pietonul până când ea începe să
+  frâneze. În toată această fază, scuterul **merge mai departe cu aceeași
+  viteză**.
+- **Faza a doua**: de când începe frânarea până când scuterul se oprește. Abia
+  acum viteza scade.
+
+---
+
+## 3. Distanța de reacție
+
+Când vezi un obstacol pe șosea, frânarea **nu vine îndată**. Creierului îi
+trebuie un răstimp ca să cerceteze ce a văzut și să poruncească frânarea. Acest
+răstimp se numește **timp de reacție**, notat $t_r$.
+
+Pentru o persoană atentă la condus și în bună stare fizică:
+
+$$
+t_r \approx 1\ \text{s}
+$$
+
+În tot acest timp, viteza $v$ a scuterului **nu se schimbă**, iar el înaintează.
+Distanța parcursă atunci se numește **distanță de reacție**, notată $d_r$:
+
+$$
+d_r = v \times t_r
+$$
+
+| Viteza (km/h) | 40 | 60 | 80 | 90 |
+|---|---|---|---|---|
+| $d_r$ (m) | 11,1 | 16,7 | 22,2 | 25 |
+
+Distanța de reacție este **proporțională cu viteza**: dacă viteza se dublează,
+și ea se dublează. Se vede din tabel — la $80$ km/h ea este de două ori cea de
+la $40$ km/h.
+
+---
+
+## 4. Distanța de frânare
+
+Când conducătoarea apasă frâna, viteza scuterului începe să scadă. Scuterul nu
+se poate opri pe loc: el mai parcurge o distanță, numită **distanță de
+frânare** și notată $d_f$.
+
+Distanța de frânare atârnă de viteza vehiculului, dar și de starea frânelor sau
+a șoselei.
+
+<FiguraManual
+  src="h16-franare-uscat.png"
+  lat={539}
+  inalt={475}
+  latime={420}
+  eticheta="Grafic: distanța de frânare crește tot mai repede cu viteza, pe șosea uscată"
+  legenda="Distanța de frânare pe șosea uscată, pentru un scuter în bună stare."
+>
+  <Et x={60} y={15} w={284} h={23} corp={20}>Distanța de frânare (în m)</Et>
+  <Et x={357} y={401} w={172} h={21} corp={18}>Viteza (în km/h)</Et>
+</FiguraManual>
+
+<FiguraManual
+  src="h16-franare-ud.png"
+  lat={539}
+  inalt={475}
+  latime={420}
+  eticheta="Același grafic pentru șosea udă: curba urcă mult mai repede"
+  legenda="Distanța de frânare pe șosea udă, pentru același scuter."
+>
+  <Et x={60} y={15} w={284} h={23} corp={20}>Distanța de frânare (în m)</Et>
+  <Et x={357} y={401} w={172} h={21} corp={18}>Viteza (în km/h)</Et>
+</FiguraManual>
+
+Curba **nu este o dreaptă**: distanța de frânare **nu** este proporțională cu
+viteza. Ea crește mult mai repede decât viteza.
+
+---
+
+## 5. Distanța de oprire
+
+:::danger Definiția 1
+
+**Distanța de oprire** $d_a$ este distanța întreagă de care este nevoie ca un
+vehicul să fie oprit, socotită din clipa în care conducătorul zărește
+obstacolul. Ea este suma dintre distanța de reacție și distanța de frânare:
+
+$$
+d_a = d_r + d_f
+$$
+
+:::
+
+---
+
+## 6. Ce mărește distanța de oprire
+
+| Ce se schimbă | Ce crește |
+|---|---|
+| viteza mai mare | și $d_r$, și $d_f$ — a doua mult mai repede |
+| șosea udă | $d_f$ |
+| frâne uzate | $d_f$ |
+| conducător neatent, obosit | $t_r$, deci $d_r$ |
+| conducător sub înrâurirea alcoolului sau a drogurilor | $t_r$, deci $d_r$ |
+
+:::tip De reținut
+
+Viteza înrâurește distanța de oprire de **două ori**: o dată prin distanța de
+reacție, care crește la fel ca ea, și încă o dată prin distanța de frânare, care
+crește mult mai repede.
+
+:::
+
+---
+
+## 7. Rezolvarea exercițiului-tip
+
+**1.** Nu. În timpul de reacție, viteza scuterului **nu se schimbă**:
+conducătoarea nu a apăsat încă frâna, deci nimic nu-l încetinește.
+
+**2.** Viteza începe să scadă abia din clipa în care conducătoarea **apasă
+frâna**, adică la sfârșitul timpului de reacție.
+
+**3.** Pe graficul pentru șosea uscată, la $40$ km/h curba arată aproximativ
+$10$ metri. Pe graficul pentru șosea udă, la aceeași viteză, ea arată
+aproximativ $20$ de metri — de două ori mai mult.
+
+**4.** Distanța de reacție **este** proporțională cu viteza: din tabel,
+$\dfrac{11{,}1}{40} \approx \dfrac{22{,}2}{80} \approx 0{,}28$. Distanța de
+frânare **nu este**: graficul ei este o curbă, nu o dreaptă, iar valorile cresc
+mult mai repede decât viteza.
+
+**5.** Se adună cele două distanțe:
+
+$$
+d_a = d_r + d_f = 11{,}1\ \text{m} + 10\ \text{m} \approx 21\ \text{m}
+$$
+
+Douăzeci și unu de metri — cam cât cinci mașini puse una după alta — la o viteză
+de numai $40$ km/h, pe șosea uscată, cu un conducător atent. În orice condiții
+mai proaste, distanța crește.
+
+---
+
+:::note Ora următoare
+
+**LP6 — Viteza și distanța de oprire.** Patru probe: cele două faze,
+proporționalitatea, șoseaua udă și oboseala conducătorului.
+
+Înainte de ea, treci prin
+**[S6 — Viteza și distanța de oprire](./17-s-distanta-de-oprire.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

@@ -1,0 +1,157 @@
+---
+sidebar_position: 17
+sidebar_label: "S6 — Viteza și distanța de oprire"
+slug: /f6/mecanica/s6
+title: "S6 — Viteza și distanța de oprire"
+description: "Suport de curs: cele două faze, formulele, tabelul distanțelor de reacție și un exercițiu rezolvat pas cu pas."
+---
+
+# S6 — Viteza și distanța de oprire
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C6 — Viteza și distanța de oprire](./16-curs-distanta-de-oprire.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP6](./18-lp-distanta-de-oprire.mdx)**.
+
+:::
+
+---
+
+## 1. Cele două faze și cele trei distanțe
+
+| Faza | Ce se întâmplă | Viteza | Distanța |
+|---|---|---|---|
+| 1 | conducătorul vede obstacolul, creierul cercetează și poruncește frânarea | **neschimbată** | $d_r$, distanța de reacție |
+| 2 | frâna este apăsată, vehiculul încetinește până se oprește | **scade** | $d_f$, distanța de frânare |
+
+$$
+d_r = v \times t_r
+\qquad
+d_a = d_r + d_f
+$$
+
+Pentru o persoană atentă și în bună stare fizică, $t_r \approx 1\ \text{s}$.
+
+---
+
+## 2. Tabelul distanțelor de reacție
+
+| Viteza (km/h) | 40 | 60 | 80 | 90 |
+|---|---|---|---|---|
+| $d_r$ (m) | 11,1 | 16,7 | 22,2 | 25 |
+
+Valorile acestea se citesc și pe dos: la $40$ km/h, un scuter parcurge
+$11$ metri **înainte ca frâna să fi fost măcar apăsată**.
+
+---
+
+## 3. Proporțional și neproporțional
+
+| Distanța | Este proporțională cu viteza? | De ce |
+|---|---|---|
+| $d_r$ | **da** | $d_r = v \times t_r$, iar $t_r$ nu se schimbă |
+| $d_f$ | **nu** | graficul este o curbă, nu o dreaptă |
+
+Proba proporționalității se face cu împărțiri: $11{,}1 : 40 \approx 0{,}28$ și
+$22{,}2 : 80 \approx 0{,}28$ — același cât, deci proporționalitate.
+
+**Greșeala care se face cel mai des:** se socotește că, dublând viteza, se
+dublează și distanța de oprire. Nu: $d_r$ se dublează, dar $d_f$ crește mult mai
+mult, deci distanța de oprire crește de mai mult de două ori.
+
+---
+
+## 4. Ce mărește distanța de oprire
+
+- **viteza** — crește amândouă distanțele;
+- **șoseaua udă** — crește $d_f$, aproape îl dublează;
+- **frânele uzate** — cresc $d_f$;
+- **neatenția, oboseala, alcoolul, drogurile** — cresc $t_r$, deci $d_r$.
+
+---
+
+## 5. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un scuter merge cu $60$ km/h pe o șosea **udă**. Conducătorul este obosit, iar
+timpul lui de reacție este de $2$ secunde în loc de $1$. Din grafic, distanța de
+frânare la $60$ km/h pe șosea udă este de aproximativ $40$ de metri.
+
+**1.** Calculează distanța de reacție.
+
+**2.** Află distanța de oprire.
+
+**3.** Compară cu distanța de oprire a unui conducător odihnit, pe șosea
+uscată, la aceeași viteză (distanța de frânare pe uscat, la $60$ km/h, este de
+aproximativ $20$ de metri).
+
+### Pasul 1 — Ce se dă
+
+$$
+v = 60\ \text{km/h}
+\qquad
+t_r = 2\ \text{s}
+\qquad
+d_f = 40\ \text{m}
+$$
+
+### Pasul 2 — Ce se cere
+
+$d_r$, $d_a$ și comparația cu un caz mai bun.
+
+### Pasul 3 — Preschimbarea vitezei
+
+Ca să înmulțim viteza cu un timp în secunde, viteza trebuie să fie în m/s:
+
+$$
+v = \frac{60}{3{,}6} \approx 16{,}7\ \text{m/s}
+$$
+
+### Pasul 4 — Distanța de reacție
+
+$$
+d_r = v \times t_r = 16{,}7\ \text{m/s} \times 2\ \text{s} \approx 33{,}3\ \text{m}
+$$
+
+*Verificare cu tabelul*: la $60$ km/h și $t_r = 1$ s, tabelul dă $16{,}7$ metri.
+Timpul de reacție fiind dublu, distanța trebuie să fie dublă:
+$2 \times 16{,}7 = 33{,}4$ metri. Se potrivește.
+
+### Pasul 5 — Distanța de oprire
+
+$$
+d_a = d_r + d_f = 33{,}3 + 40 = 73{,}3\ \text{m}
+$$
+
+### Pasul 6 — Comparația
+
+Pentru un conducător odihnit ($t_r = 1$ s), pe șosea uscată ($d_f = 20$ m):
+
+$$
+d_a' = 16{,}7 + 20 = 36{,}7\ \text{m}
+$$
+
+$$
+\frac{73{,}3}{36{,}7} \approx 2
+$$
+
+La aceeași viteză, oboseala și șoseaua udă **dublează** distanța de oprire.
+
+*Ia seama*: viteza n-a crescut deloc. Tot ce s-a schimbat au fost starea
+conducătorului și starea șoselei.
+
+### Răspuns
+
+$d_r \approx 33{,}3$ m, $d_a \approx 73{,}3$ m — de aproximativ două ori mai
+mult decât cei $36{,}7$ metri ai unui conducător odihnit pe șosea uscată.
+
+---
+
+:::note Ora următoare
+
+**[LP6 — Viteza și distanța de oprire](./18-lp-distanta-de-oprire.mdx).**
+
+:::
