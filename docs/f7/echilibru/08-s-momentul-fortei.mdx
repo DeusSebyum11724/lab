@@ -1,0 +1,151 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Momentul forței"
+slug: /f7/echilibru/s3
+title: "S3 — Momentul forței"
+description: "Suport de curs: formulele momentului forței și ale cuplului, cele două condiții de echilibru și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Momentul forței
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Momentul forței. Echilibrul de rotație](./07-curs-momentul-fortei.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-momentul-fortei.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Momentul forței | $M$ | $M = F \cdot b$ | $\text{N} \cdot \text{m}$ |
+| Brațul forței | $b$ | $b = \dfrac{M}{F}$ | metru, $\text{m}$ |
+| Momentul cuplului | $M_c$ | $M_c = F \cdot b$, cu $F = F_1 = F_2$ | $\text{N} \cdot \text{m}$ |
+| Brațul cuplului la un volan | $b$ | $b = 2R$ | metru, $\text{m}$ |
+
+**Condiția echilibrului de rotație:**
+
+$$
+M_{\text{într-un sens}} = M_{\text{în sens opus}}
+$$
+
+---
+
+## 2. Cele două condiții de echilibru
+
+| Echilibrul | Condiția | Ce împiedică |
+|---|---|---|
+| de **translație** | $\vec{R} = \vec{0}$ | deplasarea corpului |
+| de **rotație** | momentele se echilibrează | rotirea corpului |
+
+Un corp întins este în echilibru mecanic deplin numai dacă **amândouă** sunt
+îndeplinite. Un cuplu de forțe e exemplul care arată de ce: rezultanta lui e
+nulă, dar corpul se rotește.
+
+---
+
+## 3. De reținut
+
+- Brațul se măsoară de la axă până la **dreapta suport** a forței, pe
+  perpendiculară.
+- Dacă dreapta suport trece prin axă, brațul e zero, deci momentul e zero:
+  forța nu rotește nimic.
+- Brațul se trece **în metri**. Un braț de $10\ \text{cm}$ înseamnă
+  $0{,}1\ \text{m}$.
+- Momentul se măsoară în $\text{N} \cdot \text{m}$, **nu** în jouli.
+- La un volan de rază $R$, cele două mâini apasă la capetele unui diametru, deci
+  brațul cuplului este $2R$, nu $R$. E greșeala care se face cel mai des.
+- Un cuplu de forțe nu deplasează corpul; îl **rotește** doar.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Asupra unui corp solid acționează trei forțe coplanare. Forțele $F_1$ și $F_2$
+acționează **în sensul acelor de ceasornic** și au modulele egale cu
+$50\ \text{N}$, respectiv $70\ \text{N}$. Brațele lor sunt
+$b_1 = 10\ \text{cm}$ și $b_2 = 8\ \text{cm}$.
+
+În ce sens trebuie să acționeze o forță $F_3 = 100\ \text{N}$, coplanară cu
+celelalte două, pentru ca solidul să rămână în echilibru? Ce valoare are brațul
+acestei forțe?
+
+### Pasul 1 — Ce se dă
+
+- $F_1 = 50\ \text{N}$, $b_1 = 10\ \text{cm}$;
+- $F_2 = 70\ \text{N}$, $b_2 = 8\ \text{cm}$;
+- amândouă rotesc în sensul acelor de ceasornic;
+- $F_3 = 100\ \text{N}$.
+
+### Pasul 2 — Ce se cere
+
+Sensul lui $F_3$ și brațul ei $b_3$.
+
+### Pasul 3 — Trecem brațele în metri
+
+$$
+b_1 = 10\ \text{cm} = 0{,}1\ \text{m} \qquad b_2 = 8\ \text{cm} = 0{,}08\ \text{m}
+$$
+
+### Pasul 4 — Momentele primelor două forțe
+
+$$
+M_1 = F_1 \cdot b_1 = 50 \times 0{,}1 = 5\ \text{N} \cdot \text{m}
+$$
+
+$$
+M_2 = F_2 \cdot b_2 = 70 \times 0{,}08 = 5{,}6\ \text{N} \cdot \text{m}
+$$
+
+Amândouă rotesc în același sens, deci se **adună**:
+
+$$
+M_1 + M_2 = 5 + 5{,}6 = 10{,}6\ \text{N} \cdot \text{m}
+$$
+
+### Pasul 5 — Sensul celei de-a treia forțe
+
+Ca solidul să fie în echilibru de rotație, momentul lui $F_3$ trebuie să
+echilibreze suma de mai sus. Deci $F_3$ trebuie să rotească corpul **în sens
+invers acelor de ceasornic**.
+
+### Pasul 6 — Brațul celei de-a treia forțe
+
+$$
+M_3 = M_1 + M_2 = 10{,}6\ \text{N} \cdot \text{m}
+$$
+
+$$
+b_3 = \frac{M_3}{F_3} = \frac{10{,}6}{100} = 0{,}106\ \text{m} = 10{,}6\ \text{cm}
+$$
+
+### Pasul 7 — Verificarea
+
+$F_3$ este cea mai mare dintre cele trei forțe, dar brațul ei nu e cel mai mic
+— e cam cât $b_1$. Are sens: ea singură trebuie să țină piept la două momente
+deodată.
+
+Verificăm: $100 \times 0{,}106 = 10{,}6$. Se potrivește.
+
+### Răspuns
+
+$F_3$ trebuie să acționeze în sens invers acelor de ceasornic, cu brațul
+$b_3 = 10{,}6\ \text{cm}$.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Momentul forței](./09-lp-momentul-fortei.mdx).** Trei probe, în total 32
+de minute.
+
+:::

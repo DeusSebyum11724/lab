@@ -1,0 +1,185 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Momentul forței"
+slug: /f7/echilibru/lp3
+title: "LP3 — Momentul forței"
+description: "Lucrare practică: enunțuri adevărat-fals despre moment, cuplul de la volan și ghidon, și o bară în echilibru."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Momentul forței
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Momentul forței. Echilibrul de rotație](./07-curs-momentul-fortei.mdx)**,
+cu formulele din **[S3](./08-s-momentul-fortei.mdx)** la îndemână. Trei probe;
+în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Adevărat sau fals | — | 8 min |
+| 2 | Volanul și ghidonul | ★ | 10 min |
+| 3 | Bara în echilibru | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Adevărat sau fals
+
+— &nbsp;·&nbsp; **8 minute**
+
+Notează cu **A** dacă propoziția este adevărată și cu **F** dacă este falsă,
+apoi corectează în scris enunțurile false.
+
+**a)** Unitatea de măsură a momentului forței este joule-ul.
+
+**b)** Momentul forței față de un centru de rotație este mărimea fizică scalară
+al cărei modul este egal cu suma dintre modulul forței $F$ și brațul său $b$.
+
+**c)** Un corp este în echilibru de rotație atunci când suma modulelor
+momentelor forțelor care rotesc corpul într-un sens este egală cu suma modulelor
+momentelor forțelor care rotesc corpul în sens opus.
+
+**d)** O forță a cărei dreaptă suport trece prin axa de rotație nu rotește
+corpul.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) F.** Unitatea momentului forței este **newton metru**,
+$\text{N} \cdot \text{m}$. Joule-ul este unitatea lucrului mecanic și a energiei.
+Produsul unităților arată la fel, dar mărimile sunt deosebite.
+
+**b) F.** Două greșeli deodată: momentul este o mărime **vectorială**, nu
+scalară, iar modulul lui este **produsul** $M = F \cdot b$, nu suma.
+
+**c) A.** Este chiar condiția echilibrului de rotație.
+
+**d) A.** Brațul unei astfel de forțe este zero, deci și momentul ei este zero.
+De asta nu poți deschide ușa împingând clanța spre balamale.
+
+</details>
+
+---
+
+## 2. Volanul și ghidonul
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Raza volanului unei mașini este $R = 30\ \text{cm}$, iar momentul cuplului
+de forțe cu care șoferul rotește volanul este de
+$24\ \text{N} \cdot \text{m}$. Ce valoare are forța $F$ cu care apasă fiecare
+mână?
+
+**2.** Teodora acționează asupra ghidonului bicicletei cu două forțe paralele,
+de sens opus și egale fiecare cu $10\ \text{N}$. Dacă distanța dintre cele două
+forțe este de $40\ \text{cm}$, află momentul cuplului care acționează asupra
+ghidonului.
+
+**3.** De ce volanele camioanelor sunt mai mari decât cele ale mașinilor mici?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Mâinile apasă la capetele unui **diametru**, deci brațul cuplului este:
+
+$$
+b = 2R = 2 \times 0{,}3 = 0{,}6\ \text{m}
+$$
+
+Din $M_c = F \cdot b$:
+
+$$
+F = \frac{M_c}{b} = \frac{24}{0{,}6} = 40\ \text{N}
+$$
+
+**2.** Brațul cuplului este distanța dintre dreptele suport ale celor două forțe:
+
+$$
+b = 40\ \text{cm} = 0{,}4\ \text{m}
+$$
+
+$$
+M_c = F \cdot b = 10 \times 0{,}4 = 4\ \text{N} \cdot \text{m}
+$$
+
+**3.** Fiindcă roțile unui camion cer un moment mult mai mare ca să fie virate.
+Cu $M_c = F \cdot 2R$, la același moment cerut, un $R$ mai mare înseamnă un $F$
+mai mic — deci brațele șoferului obosesc mai puțin.
+
+Din același motiv are vana industrială din curs o roată atât de largă.
+
+</details>
+
+---
+
+## 3. Bara în echilibru
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+O bară omogenă, sprijinită pe un suport în punctul $O$, poate să se rotească în
+jurul lui. De o parte a suportului atârnă un corp de $6\ \text{kg}$, la
+distanța $b_1 = 20\ \text{cm}$ de $O$.
+
+**1.** Ce moment față de $O$ dă greutatea acestui corp?
+
+**2.** De cealaltă parte se atârnă un corp de $4\ \text{kg}$. La ce distanță de
+$O$ trebuie pus, ca bara să rămână în echilibru?
+
+**3.** Dacă în locul lui s-ar atârna un corp de $2\ \text{kg}$, unde ar trebui
+pus?
+
+**4.** Ce se schimbă dacă amândouă corpurile se atârnă de aceeași parte a
+suportului?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Greutatea primului corp:
+
+$$
+G_1 = m_1 g = 6 \times 10 = 60\ \text{N}
+$$
+
+$$
+M_1 = G_1 \cdot b_1 = 60 \times 0{,}2 = 12\ \text{N} \cdot \text{m}
+$$
+
+**2.** Cele două greutăți rotesc bara în **sensuri opuse**, deci la echilibru
+momentele lor sunt egale:
+
+$$
+G_2 \cdot b_2 = M_1
+$$
+
+$$
+G_2 = m_2 g = 4 \times 10 = 40\ \text{N}
+$$
+
+$$
+b_2 = \frac{12}{40} = 0{,}3\ \text{m} = 30\ \text{cm}
+$$
+
+Corpul mai ușor stă mai departe de suport — de aceea, pe un balansoar, cel mai
+ușor se dă mai spre capăt.
+
+**3.** Cu $G_3 = 2 \times 10 = 20\ \text{N}$:
+
+$$
+b_3 = \frac{12}{20} = 0{,}6\ \text{m} = 60\ \text{cm}
+$$
+
+De trei ori mai ușor, deci de trei ori mai departe. Produsul $G \cdot b$ rămâne
+același.
+
+**4.** Atunci amândouă ar roti bara **în același sens**, iar momentele s-ar
+aduna în loc să se scadă. Echilibrul de rotație s-ar strica: bara s-ar înclina
+în partea aceea și nu s-ar mai putea reface fără o a treia forță.
+
+</details>

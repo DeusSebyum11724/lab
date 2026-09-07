@@ -1,0 +1,152 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Centrul de greutate"
+slug: /f7/echilibru/s4
+title: "S4 — Centrul de greutate"
+description: "Suport de curs: unde se află centrul de greutate al corpurilor obișnuite, metoda firului cu plumb și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Centrul de greutate
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Centrul de greutate](./10-curs-centrul-de-greutate.mdx)**, strâns la un
+loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi
+la **[LP4](./12-lp-centrul-de-greutate.mdx)**.
+
+:::
+
+---
+
+## 1. Unde se află centrul de greutate
+
+| Corpul omogen | Centrul de greutate |
+|---|---|
+| sferă | în centrul sferei |
+| cilindru | pe axă, la jumătatea înălțimii |
+| bară sau tijă subțire | la jumătatea lungimii |
+| pătrat, dreptunghi, paralelogram, romb, trapez isoscel | la intersecția diagonalelor |
+| triunghi | la intersecția medianelor |
+| cerc, disc | în centrul cercului |
+| inel, colac, covrig | în centrul cercului — **în afara corpului** |
+
+Toate valorile de mai sus sunt adevărate numai pentru corpuri **omogene**, adică
+făcute peste tot din același material.
+
+---
+
+## 2. Formulele lecției
+
+| Mărimea | Relația |
+|---|---|
+| Greutatea corpului | $\vec{G} = \vec{G}_1 + \vec{G}_2 + \vec{G}_3 + \dots$ |
+| Modulul greutății | $G = G_1 + G_2 + G_3 + \dots$ |
+| Greutatea, din masă | $G = m \cdot g$ |
+
+Greutățile particulelor sunt paralele și de același sens, așa că modulele lor se
+adună aritmetic — e singurul caz în care compunerea vectorilor se face prin
+simplă adunare.
+
+---
+
+## 3. De reținut
+
+- Centrul de greutate e un **punct**, nu o parte a corpului. El se poate afla și
+  acolo unde nu există materie.
+- Metoda firului cu plumb merge la orice formă, oricât de neregulată: se
+  suspendă corpul din două puncte diferite și se caută intersecția verticalelor.
+- Când tai dintr-un corp o bucată, centrul de greutate se mută **spre partea
+  rămasă mai grea**.
+- Dacă tai la fel de mult de la amândouă capetele unei bare, centrul de greutate
+  **nu se mișcă deloc**: simetria s-a păstrat.
+- Centrul de greutate mai jos înseamnă corp mai stabil.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Într-un atelier mecanic se taie dintr-o tijă metalică subțire, cu lungimea de
+$60\ \text{cm}$, două bucăți cu lungimea de $10\ \text{cm}$ fiecare. Pe ce
+distanță se deplasează centrul de greutate al tijei, dacă bucățile se taie:
+
+**a)** de la ambele capete; **b)** de la un singur capăt?
+
+### Pasul 1 — Ce se dă
+
+- tijă omogenă și subțire, $L = 60\ \text{cm}$;
+- se taie $2 \times 10\ \text{cm}$.
+
+### Pasul 2 — Ce se cere
+
+Deplasarea centrului de greutate în cele două cazuri.
+
+### Pasul 3 — Unde e centrul la început
+
+Tija fiind omogenă, centrul ei de greutate se află la **jumătatea lungimii**.
+Punem o axă cu originea la capătul din stânga:
+
+$$
+x_0 = \frac{60}{2} = 30\ \text{cm}
+$$
+
+### Pasul 4 — Cazul a): de la ambele capete
+
+Se taie $10\ \text{cm}$ din stânga și $10\ \text{cm}$ din dreapta. Rămâne
+porțiunea dintre $10\ \text{cm}$ și $50\ \text{cm}$, lungă de $40\ \text{cm}$.
+
+Noul centru de greutate:
+
+$$
+x_1 = \frac{10 + 50}{2} = 30\ \text{cm}
+$$
+
+Deplasarea:
+
+$$
+d_1 = |30 - 30| = 0
+$$
+
+Centrul de greutate **nu se mișcă deloc**.
+
+### Pasul 5 — Cazul b): de la un singur capăt
+
+Se taie $20\ \text{cm}$ din stânga. Rămâne porțiunea dintre $20\ \text{cm}$ și
+$60\ \text{cm}$, tot lungă de $40\ \text{cm}$.
+
+$$
+x_2 = \frac{20 + 60}{2} = 40\ \text{cm}
+$$
+
+Deplasarea:
+
+$$
+d_2 = |40 - 30| = 10\ \text{cm}
+$$
+
+Centrul de greutate se mută cu $10\ \text{cm}$ **spre dreapta**, adică spre
+capătul netăiat.
+
+### Pasul 6 — Verificarea
+
+În primul caz tija a rămas **simetrică** față de vechiul centru, deci acesta n-a
+avut de ce să se mute. În al doilea caz, jumătate din ce s-a tăiat a fost luat
+dintr-o singură parte, iar centrul s-a mutat cu jumătate din bucata tăiată:
+$20 : 2 = 10\ \text{cm}$. Se potrivește.
+
+### Răspuns
+
+**a)** $0$ — centrul rămâne pe loc; **b)** $10\ \text{cm}$, spre capătul netăiat.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Centrul de greutate](./12-lp-centrul-de-greutate.mdx).** Trei probe, în
+total 32 de minute.
+
+:::

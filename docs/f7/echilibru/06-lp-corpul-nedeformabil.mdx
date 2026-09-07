@@ -1,0 +1,176 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Corpul nedeformabil"
+slug: /f7/echilibru/lp2
+title: "LP2 — Corpul nedeformabil"
+description: "Lucrare practică: recunoașterea mișcărilor de translație și rotație, echilibrul dinamic al unei bănci și un corp tras de trei forțe."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Corpul nedeformabil
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Corpul nedeformabil](./04-curs-corpul-nedeformabil.mdx)**, cu
+definițiile din **[S2](./05-s-corpul-nedeformabil.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Ce fel de mișcare? | — | 10 min |
+| 2 | Banca lui Adrian | ★ | 8 min |
+| 3 | Trei forțe pe un corp | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Ce fel de mișcare?
+
+— &nbsp;·&nbsp; **10 minute**
+
+Ce fel de mișcări au corpurile următoare — de **translație**, de **rotație** sau
+amândouă?
+
+**a)** Pământul care se mișcă în jurul propriei axe;
+**b)** marginea unui titirez în mișcare;
+**c)** o telecabină care coboară;
+**d)** omul care urcă cu scara rulantă;
+**e)** ușa unui dulap care se deschide;
+**f)** o roată de bicicletă în timpul mersului.
+
+Pentru fiecare, spune și **ce traiectorie** descriu punctele corpului.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) Rotație.** Fiecare punct al Pământului descrie un cerc cu centrul pe axa
+polilor. Punctele de pe axă — cele două puncte polare — stau pe loc.
+
+**b) Rotație.** Marginea titirezului descrie un cerc în jurul axului lui.
+
+**c) Translație.** Cabina rămâne orizontală tot drumul: segmentul care unește
+două puncte ale ei își păstrează direcția. Traiectoriile sunt paralele între
+ele, chiar dacă nu sunt drepte.
+
+**d) Translație.** Omul stă pe treaptă și urcă odată cu ea; toate punctele lui se
+mișcă la fel.
+
+**e) Rotație.** Punctele ușii descriu arce de cerc cu centrul pe dreapta
+balamalelor.
+
+**f) Amândouă.** Roata înaintează odată cu bicicleta — translație — și în același
+timp se învârte în jurul butucului — rotație. Un punct de pe anvelopă descrie o
+curbă care nici nu e dreaptă, nici cerc.
+
+*Cum deosebești rapid:* întreabă-te dacă există puncte ale corpului care rămân
+pe loc. Dacă da, e rotație.
+
+</details>
+
+---
+
+## 2. Banca lui Adrian
+
+★ &nbsp;·&nbsp; **8 minute**
+
+Adrian împinge o bancă din clasă cu o forță de $50\ \text{N}$, iar banca se
+mișcă rectiliniu uniform.
+
+**1.** Ce înseamnă că banca este în echilibru dinamic de translație?
+
+**2.** Află forța de frecare dintre bancă și podea.
+
+**3.** Ce s-ar întâmpla dacă Adrian ar împinge cu $60\ \text{N}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Înseamnă că banca **se mișcă**, dar cu viteză constantă, pe linie
+dreaptă. Rezultanta tuturor forțelor care acționează asupra ei este nulă:
+$\vec{R} = \vec{0}$.
+
+**2.** Pe orizontală acționează forța lui Adrian, înainte, și forța de frecare,
+înapoi. Rezultanta fiind nulă:
+
+$$
+F - F_f = 0 \quad\Longrightarrow\quad F_f = F = 50\ \text{N}
+$$
+
+**3.** Rezultanta n-ar mai fi zero: ar rămâne o forță de $10\ \text{N}$ în sensul
+mișcării. Banca **nu ar mai fi în echilibru** — ar începe să meargă din ce în ce
+mai repede.
+
+*Atenție:* frecarea nu crește odată cu forța lui Adrian. Ea depinde de apăsarea
+băncii pe podea și de cele două materiale, nu de cât de tare împingi.
+
+</details>
+
+---
+
+## 3. Trei forțe pe un corp
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Asupra unui corp aflat pe o suprafață orizontală acționează trei forțe
+orizontale, aplicate toate în același punct:
+
+- $F_1 = 30\ \text{N}$, spre est;
+- $F_2 = 40\ \text{N}$, spre nord;
+- $F_3$, de valoare necunoscută.
+
+Corpul se află în **echilibru de translație**.
+
+**1.** Calculează rezultanta primelor două forțe.
+
+**2.** Ce valoare și ce orientare trebuie să aibă $F_3$?
+
+**3.** Dacă cea de-a treia forță ar fi forța de frecare, iar corpul are masa
+$m = 20\ \text{kg}$, cât este coeficientul de frecare? Se ia
+$g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cele două forțe sunt perpendiculare, deci rezultanta lor se află cu
+teorema lui Pitagora:
+
+$$
+R_{12}^2 = F_1^2 + F_2^2 = 30^2 + 40^2 = 900 + 1600 = 2500
+$$
+
+$$
+R_{12} = \sqrt{2500} = 50\ \text{N}
+$$
+
+Direcția ei este cea a diagonalei dreptunghiului cu laturile $30$ și $40$, adică
+între est și nord.
+
+**2.** Corpul e în echilibru de translație, deci rezultanta **tuturor** forțelor
+e nulă:
+
+$$
+\vec{R}_{12} + \vec{F}_3 = \vec{0}
+$$
+
+Deci $F_3 = 50\ \text{N}$, cu aceeași direcție ca $\vec{R}_{12}$, dar **sens
+opus** — adică orientată între vest și sud.
+
+**3.** Corpul stă pe orizontală, deci reacțiunea normală echilibrează greutatea:
+
+$$
+N = G = m g = 20 \times 10 = 200\ \text{N}
+$$
+
+$$
+\mu = \frac{F_f}{N} = \frac{50}{200} = 0{,}25
+$$
+
+*Verificare de bun-simț:* $0{,}25$ e o valoare obișnuită pentru două suprafețe
+netede. Dacă îți ieșea peste $1$, ar fi trebuit să te întorci la calcul.
+
+</details>

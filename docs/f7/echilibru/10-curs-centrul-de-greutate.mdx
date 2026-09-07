@@ -1,0 +1,210 @@
+---
+sidebar_position: 10
+sidebar_label: "C4 — Centrul de greutate"
+slug: /f7/echilibru/c4
+title: "C4 — Centrul de greutate"
+description: "Greutatea ca rezultantă a greutăților particulelor, centrul de greutate al corpurilor simetrice și determinarea lui cu firul cu plumb."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C4 — Centrul de greutate
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Greutatea, rezultanta multor forțe
+3. Centrul de greutate
+4. Corpuri cu centru sau axă de simetrie
+5. Corpuri plane cu forme regulate
+6. Experiment: firul cu plumb
+7. De ce contează unde e centrul de greutate
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** **a)** De ce crezi că mașinile de curse sunt foarte joase în comparație cu
+alte mașini? **b)** Pentru care dintre mașini virajul poate fi mai periculos?
+
+<FiguraManual
+  src="ro-tipuri-masini.png"
+  lat={892}
+  inalt={124}
+  latime={620}
+  eticheta="Trei vehicule alăturate: un monopost de Formula 1, foarte jos; o mașină blindată, înaltă; un camion cu semiremorcă"
+  legenda="Tipuri de mașini. Înălțimea lor nu e o simplă chestiune de formă."
+/>
+
+**2.** Ia un bulgăre mic de sare și sfărâmă-l între degete, lăsând bucățelele să
+cadă. **De ce cad ele? Cine acționează asupra lor?**
+
+<FiguraManual
+  src="ro-bulgare-sare.png"
+  lat={439}
+  inalt={345}
+  latime={340}
+  eticheta="Un bulgăre alb de sare, cu suprafața cristalină"
+  legenda="Bulgăre de sare. Fiecare grăunte al lui e atras de Pământ, separat."
+/>
+
+---
+
+## 2. Greutatea, rezultanta multor forțe
+
+Mașinile de curse sunt foarte joase pentru a fi cât mai **stabile** în viraje și
+la viteze mari. Virajul într-o curbă este mai periculos pentru o mașină înaltă
+decât pentru una joasă.
+
+Orice corp solid, asemenea bulgărelui de sare, este format dintr-un număr foarte
+mare de particule, fiecare cu masă proprie, fiecare atrasă de Pământ.
+
+<FiguraManual
+  src="ro-greutatea-corpului.png"
+  lat={439}
+  inalt={218}
+  latime={430}
+  eticheta="Stânga: un corp de formă neregulată străbătut de multe săgeți mici, paralele, îndreptate în jos — greutățile particulelor. Dreapta: același corp cu o singură săgeată mare, greutatea totală, aplicată în punctul CG"
+  legenda="Greutatea corpului este rezultanta greutăților tuturor particulelor lui."
+/>
+
+$$
+\vec{G} = \vec{G}_1 + \vec{G}_2 + \vec{G}_3 + \vec{G}_4 + \dots
+$$
+
+Greutățile particulelor sunt **paralele** — au aceeași direcție și același sens
+— deci modulul greutății corpului este egal cu suma modulelor:
+
+$$
+G = G_1 + G_2 + G_3 + G_4 + \dots
+$$
+
+---
+
+## 3. Centrul de greutate
+
+:::danger Definiția 1
+
+Punctul de aplicație al greutății corpului se numește **centru de greutate**.
+
+:::
+
+Toate acele mii de greutăți mici pot fi înlocuite cu **o singură** săgeată,
+aplicată în acel punct. E același fel de simplificare ca la compunerea forțelor
+— numai că aici se compun foarte multe forțe deodată.
+
+---
+
+## 4. Corpuri cu centru sau axă de simetrie
+
+Pentru un corp care are un **centru de simetrie**, poziția centrului de greutate
+se află chiar în acel centru. De pildă, centrul de greutate al unei sfere
+omogene se află în centrul sferei.
+
+<FiguraManual
+  src="ro-sfera.png"
+  lat={439}
+  inalt={242}
+  latime={330}
+  eticheta="O sferă de lemn desenată cu cercul ecuatorial punctat și un punct negru marcat în centru, din care pleacă o săgeată roșie în jos"
+  legenda="Sferă omogenă. Centrul de greutate e chiar centrul ei."
+/>
+
+Dacă un corp are o **axă de simetrie**, centrul de greutate se află pe acea axă.
+La un cilindru omogen, el se află la jumătatea înălțimii, pe axă.
+
+<FiguraManual
+  src="ro-cilindru.png"
+  lat={439}
+  inalt={368}
+  latime={280}
+  eticheta="Un cilindru de lemn în poziție verticală, cu axa punctată și un punct negru marcat la jumătatea înălțimii"
+  legenda="Cilindru omogen. Centrul de greutate stă la jumătatea înălțimii."
+/>
+
+:::tip Centrul de greutate poate cădea în afara corpului
+
+Gândește-te la un inel, la un colac de salvare, la un covrig: centrul de
+greutate este în centrul cercului, adică **acolo unde corpul nu există**.
+
+:::
+
+---
+
+## 5. Corpuri plane cu forme regulate
+
+**Descoperă.** Desenează un dreptunghi, un romb, un trapez isoscel, un cerc, un
+triunghi, un pătrat, un paralelogram. Unde crezi că se află centrul lor de
+greutate?
+
+| Figura plană omogenă | Unde e centrul de greutate |
+|---|---|
+| pătrat, dreptunghi, paralelogram, romb, trapez isoscel | la intersecția diagonalelor |
+| triunghi | la intersecția medianelor |
+| cerc | în centrul cercului |
+
+---
+
+## 6. Experiment: firul cu plumb
+
+**Scop:** determinarea experimentală a centrului de greutate al unui corp.
+
+**Materiale necesare:** figuri geometrice neregulate din carton, marker, fir cu
+plumb, suport.
+
+<FiguraManual
+  src="ro-fir-cu-plumb.png"
+  lat={460}
+  inalt={642}
+  latime={330}
+  eticheta="Sus: o figură neregulată din carton suspendată în punctul A1, cu dreapta A1B1 trasată vertical. Jos: aceeași figură suspendată în A2, cu dreapta A2B2; cele două drepte se taie într-un punct marcat"
+  legenda="Determinarea centrului de greutate. Punctul de intersecție al celor două drepte este centrul căutat."
+/>
+
+**Mod de lucru.**
+
+1. Notează cu markerul pe una dintre figurile din carton două puncte $A_1$ și
+   $A_2$.
+2. Suspendă figura de un suport, prin intermediul unui fir prins în punctul
+   $A_1$.
+3. Suspendă firul cu plumb de suport și marchează un punct $B_1$ aflat pe
+   verticala dusă din punctul de suspensie.
+4. Desenează dreapta $A_1B_1$.
+5. Procedează la fel pentru punctul $A_2$ și desenează dreapta $A_2B_2$.
+
+**Constatări.** De fiecare dată când ai suspendat cartonul, dreptele $A_1B_1$ și
+$A_2B_2$ reprezintă **direcția greutății** lui. Punctul lor de intersecție este
+punctul de aplicație al greutății, adică **centrul de greutate**.
+
+---
+
+## 7. De ce contează unde e centrul de greutate
+
+:::tip De reținut
+
+Cu cât centrul de greutate al unui corp este **mai jos**, mai aproape de
+Pământ — ca în cazul mașinii de curse — cu atât corpul este **mai stabil**, de
+pildă când se află pe o pantă abruptă.
+
+Cu cât centrul de greutate este **mai sus**, cu atât corpul se poate răsturna
+mai ușor pe o pantă sau la viraj — cazul tirului.
+
+:::
+
+Pentru a asigura echilibrul părților componente în construcții — clădiri, poduri
+— este esențială cunoașterea poziției centrului lor de greutate.
+
+---
+
+:::note Ora următoare
+
+**LP4 — Centrul de greutate.** Trei probe: unde stă centrul în figuri
+geometrice, o tijă tăiată și un trunchi de copac.
+
+Înainte de ea, treci prin
+**[S4 — Centrul de greutate](./11-s-centrul-de-greutate.mdx)**: regulile lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

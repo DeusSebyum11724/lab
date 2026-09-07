@@ -1,0 +1,242 @@
+---
+sidebar_position: 4
+sidebar_label: "C2 — Corpul nedeformabil. Translație și rotație"
+slug: /f7/echilibru/c2
+title: "C2 — Corpul nedeformabil. Mișcarea de translație și de rotație"
+description: "Modelul solidului rigid, mișcarea de translație și cea de rotație, și condiția echilibrului de translație."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C2 — Corpul nedeformabil. Mișcarea de translație și de rotație
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Când putem înlocui corpul cu un punct
+3. Corpul nedeformabil
+4. Mișcarea de translație
+5. Mișcarea de rotație
+6. Echilibrul de translație
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**În ce situație crezi că putem să nu ținem cont de dimensiunile avionului sau
+ale vaporului, pentru descrierea mișcărilor acestora?**
+
+<FiguraManual
+  src="ro-avion.png"
+  lat={439}
+  inalt={225}
+  latime={380}
+  eticheta="Un avion mic de pasageri pe pistă, iar în medalion, același tip de avion în zbor"
+  legenda="Avion în zbor și în aeroport."
+/>
+
+<FiguraManual
+  src="ro-vapor.png"
+  lat={439}
+  inalt={292}
+  latime={380}
+  eticheta="Un vapor mare acostat la chei, iar în medalion, un remorcher în larg"
+  legenda="Vapor în larg și în port."
+/>
+
+---
+
+## 2. Când putem înlocui corpul cu un punct
+
+Corpurile au anumite forme și dimensiuni, iar mișcarea lor este, de cele mai
+multe ori, una complexă. Sunt situații în care mișcarea unui corp poate fi redusă
+la mișcarea unui **singur punct** al său, în care se consideră concentrată
+întreaga sa masă — dar sunt și situații în care asta nu mai merge.
+
+| Situația | Se poate reduce la un punct? |
+|---|---|
+| avionul care zboară, vaporul în larg | **da** — forma și dimensiunile nu contează |
+| avionul care manevrează în aeroport, vaporul care acostează | **nu** — părțile lui se mișcă altfel una față de alta |
+
+Când corpul este privit de la o distanță mult mai mare decât dimensiunile lui,
+toate părțile din care e alcătuit efectuează mișcări identice, așa că e destul
+să studiem mișcarea unui singur punct.
+
+Dacă însă dimensiunile nu se pot neglija, iar diferite puncte ale corpului
+efectuează mișcări diferite, modelul punctului material nu mai poate fi folosit.
+Pentru astfel de situații s-a introdus **modelul corpului nedeformabil**.
+
+---
+
+## 3. Corpul nedeformabil
+
+<FiguraManual
+  src="ro-bile-fildes.png"
+  lat={439}
+  inalt={250}
+  latime={340}
+  eticheta="Două bile albe de fildeș, sculptate, așezate una lângă alta"
+  legenda="Bile din fildeș."
+/>
+
+<FiguraManual
+  src="ro-diamant.png"
+  lat={398}
+  inalt={263}
+  latime={320}
+  eticheta="Un diamant șlefuit, văzut din lateral, cu fațetele strălucind"
+  legenda="Diamant. Corpurile de felul ăsta au o mare rezistență la deformare."
+/>
+
+Astfel de corpuri au formă proprie, volum propriu și o mare rezistență la
+deformare.
+
+:::danger Definiția 1
+
+Un corp este **nedeformabil** (sau **solid rigid**) dacă distanța dintre oricare
+două puncte ale sale rămâne aceeași în timpul mișcării — cu alte cuvinte, dacă
+dimensiunile lui nu se modifică sub acțiunea forțelor aplicate.
+
+:::
+
+Niciun corp real nu e perfect nedeformabil. Modelul e bun atâta timp cât
+deformările sunt prea mici ca să conteze pentru ce studiem.
+
+---
+
+## 4. Mișcarea de translație
+
+**Observă și descoperă.** Urmărește un punct oarecare al automobilului în timpul
+deplasării lui — de pildă centrul roții din spate — și două puncte $A$ și $B$
+ale unei valize, în timp ce omul o așază pe scaun.
+
+<FiguraManual
+  src="ro-translatie-1.png"
+  lat={454}
+  inalt={184}
+  latime={420}
+  eticheta="Un automobil desenat în trei poziții succesive pe o axă orizontală gradată, la momentele t = 0 s, t = 1 s și t = 2 s, cu coordonatele 0, 5 m și 20 m"
+  legenda="Mișcarea de translație a unui automobil, urmărită pe o axă de coordonate."
+/>
+
+<FiguraManual
+  src="ro-translatie-2.png"
+  lat={500}
+  inalt={194}
+  latime={420}
+  eticheta="Un om duce o valiză și o așază pe un scaun; punctele A și B ale valizei sunt marcate în cele două poziții, iar segmentul AB își păstrează direcția"
+  legenda="Valiza mutată: segmentul AB rămâne paralel cu el însuși."
+/>
+
+**a)** Cum sunt traiectoriile descrise de centrele roților automobilului? Dar
+traiectoriile punctelor $A$ și $B$ ale valizei?
+
+**b)** Cum sunt vitezele punctelor $A$ și $B$? Cum se poziționează segmentul
+$AB$ față de starea inițială?
+
+În exemplele de mai sus, toate punctele corpului se mișcă pe **traiectorii
+paralele**, cu **aceeași viteză**.
+
+:::danger Definiția 2
+
+Mișcarea unui corp nedeformabil în care segmentul care unește oricare două
+puncte ale sale își păstrează **direcția** în timpul deplasării se numește
+**mișcare de translație**.
+
+:::
+
+---
+
+## 5. Mișcarea de rotație
+
+**Observă și descoperă.** Privește mișcarea unui punct oarecare al roții care se
+învârte într-un parc de distracții și mișcarea descrisă de un punct al unei uși
+care se deschide. Cum sunt traiectoriile acestor puncte față de axa de rotație?
+
+<FiguraManual
+  src="ro-rotatie-exemple.png"
+  lat={439}
+  inalt={268}
+  latime={400}
+  eticheta="Stânga: o roată mare de distracții. Dreapta: un frigider cu ușa deschisă"
+  legenda="Roată de distracție și ușă deschisă de frigider. Amândouă se rotesc în jurul unei axe fixe."
+/>
+
+:::danger Definiția 3
+
+Un corp nedeformabil are o **mișcare de rotație** în jurul unei axe fixe, numită
+**axă de rotație**, atunci când orice punct al său descrie un **arc de cerc** cu
+centrul pe axa de rotație.
+
+:::
+
+**Observație.** Axa de rotație este perpendiculară pe planele cercurilor descrise
+de punctele corpului în timpul rotației.
+
+**Experiment.** Ia un echer, marchează pe el două puncte cu markerul, așază-l cu
+o catetă pe masă și rotește-l în jurul celeilalte catete. Ce formă geometrică au
+traiectoriile punctelor marcate?
+
+---
+
+## 6. Echilibrul de translație
+
+Când asupra corpului acționează simultan mai multe forțe, se poate întâmpla ca
+efectele lor **să se compenseze**.
+
+<FiguraManual
+  src="ro-forte-necoliniare.png"
+  lat={462}
+  inalt={270}
+  latime={420}
+  eticheta="Un corp de formă ovală asupra căruia acționează trei forțe F1, F2 și F3, aplicate în puncte diferite și orientate în direcții diferite"
+  legenda="Forțe necoliniare. Rezultanta lor nu e nulă, iar corpul se poate și deplasa, și roti."
+/>
+
+<FiguraManual
+  src="ro-rezultanta-zero.png"
+  lat={462}
+  inalt={200}
+  latime={430}
+  eticheta="Trei forțe concurente F1, F2 și F3 pornite din același punct; suma lui F2 cu F3 este egală și opusă lui F1, deci rezultanta este zero"
+  legenda="Forțe a căror rezultantă este nulă."
+/>
+
+:::danger Definiția 4
+
+Un corp este în **echilibru de translație** atunci când rezultanta forțelor care
+acționează asupra lui este zero:
+
+$$
+\vec{R} = \vec{0}
+$$
+
+:::
+
+:::tip De reținut
+
+Echilibrul de translație poate fi:
+
+- **static**, când corpul este în repaus;
+- **dinamic**, când corpul este în mișcare rectilinie uniformă.
+
+:::
+
+Un corp aflat în echilibru de translație **poate totuși să se rotească** — dacă
+forțele nu sunt concurente. De aceea echilibrul mecanic deplin cere două
+condiții, iar pe a doua o vom vedea la ora următoare.
+
+---
+
+:::note Ora următoare
+
+**LP2 — Corpul nedeformabil.** Trei probe: recunoașterea mișcărilor, echilibrul
+dinamic de translație și forțe perpendiculare.
+
+Înainte de ea, treci prin
+**[S2 — Corpul nedeformabil](./05-s-corpul-nedeformabil.mdx)**: definițiile
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

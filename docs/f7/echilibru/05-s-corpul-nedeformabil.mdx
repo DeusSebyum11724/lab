@@ -1,0 +1,141 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Corpul nedeformabil"
+slug: /f7/echilibru/s2
+title: "S2 — Corpul nedeformabil. Translație și rotație"
+description: "Suport de curs: definițiile solidului rigid, ale celor două mișcări și ale echilibrului de translație, cu un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Corpul nedeformabil. Translație și rotație
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Corpul nedeformabil. Mișcarea de translație și de rotație](./04-curs-corpul-nedeformabil.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-corpul-nedeformabil.mdx)**.
+
+:::
+
+---
+
+## 1. Definițiile lecției
+
+| Noțiunea | Cum se recunoaște |
+|---|---|
+| **corp nedeformabil** | distanța dintre oricare două puncte ale lui rămâne aceeași |
+| **mișcare de translație** | segmentul care unește două puncte își păstrează direcția |
+| **mișcare de rotație** | fiecare punct descrie un arc de cerc cu centrul pe axă |
+| **echilibru de translație** | $\vec{R} = \vec{0}$ |
+
+---
+
+## 2. Cum deosebești cele două mișcări
+
+| Întrebarea | Translație | Rotație |
+|---|---|---|
+| Traiectoriile punctelor sunt… | paralele între ele | arce de cerc |
+| Vitezele punctelor sunt… | egale | diferite — cu atât mai mari cu cât punctul e mai depărtat de axă |
+| Există puncte care stau pe loc? | nu | da, cele de pe axă |
+
+O roată care se rostogolește pe șosea are **amândouă** mișcările deodată:
+butucul se translatează, iar spița se rotește în jurul butucului.
+
+---
+
+## 3. De reținut
+
+- Modelul punctului material merge când dimensiunile corpului sunt mici față de
+  distanțele în joc. Altfel, se folosește modelul corpului nedeformabil.
+- Translația nu înseamnă neapărat mișcare pe linie dreaptă: și scaunele unui
+  scrânciob care rămân orizontale se translatează, deși pe traiectorii curbe.
+- Echilibrul de translație **static** înseamnă repaus; cel **dinamic** înseamnă
+  mișcare rectilinie uniformă. În amândouă, $\vec{R} = \vec{0}$.
+- Rezultanta nulă nu garantează că un corp întins stă nemișcat: el se mai poate
+  și roti.
+- La echilibru dinamic pe orizontală, forța de tracțiune este egală în modul cu
+  forța de frecare.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+De o ladă trag doi copii cu forțe orizontale **egale între ele**, cu valoarea de
+$20\ \text{N}$ fiecare, care formează între direcțiile lor un unghi de
+$90^\circ$. Reprezintă grafic forțele și rezultanta lor, apoi calculează forța
+de frecare exercitată asupra lăzii, știind că lada este în **echilibru dinamic
+de translație**.
+
+### Pasul 1 — Ce se dă
+
+- $F_1 = F_2 = 20\ \text{N}$;
+- unghiul dintre ele: $90^\circ$;
+- lada e în echilibru dinamic de translație, adică se mișcă rectiliniu uniform.
+
+### Pasul 2 — Ce se cere
+
+Desenul și forța de frecare $F_f$.
+
+### Pasul 3 — Rezultanta celor doi copii
+
+Forțele fiind perpendiculare, rezultanta lor este diagonala pătratului construit
+pe ele. Cu teorema lui Pitagora:
+
+$$
+R^2 = F_1^2 + F_2^2 = 20^2 + 20^2 = 400 + 400 = 800
+$$
+
+$$
+R = \sqrt{800} \approx 28{,}3\ \text{N}
+$$
+
+Direcția ei este bisectoarea unghiului dintre cele două forțe — la jumătatea
+drumului între ele.
+
+### Pasul 4 — Condiția de echilibru
+
+Lada se mișcă **uniform**, deci rezultanta **tuturor** forțelor de pe orizontală
+este zero. Pe orizontală acționează rezultanta $\vec{R}$ a celor doi copii și
+forța de frecare $\vec{F}_f$:
+
+$$
+\vec{R} + \vec{F}_f = \vec{0}
+$$
+
+### Pasul 5 — Forța de frecare
+
+De aici, cele două au același modul și sensuri opuse:
+
+$$
+F_f = R \approx 28{,}3\ \text{N}
+$$
+
+Forța de frecare este orientată **în sens opus mișcării**, adică opusă lui
+$\vec{R}$.
+
+### Pasul 6 — Verificarea
+
+Frecarea nu poate depăși forța care trage — altfel lada n-ar porni. Aici cele
+două sunt exact egale, ceea ce e semnul mișcării uniforme: nici nu accelerează,
+nici nu încetinește.
+
+Observă și că $28{,}3\ \text{N}$ este mai puțin decât $20 + 20 = 40\ \text{N}$.
+Copiii ar trage mai cu folos dacă ar sta unul lângă altul, trăgând în aceeași
+direcție.
+
+### Răspuns
+
+$F_f \approx 28{,}3\ \text{N}$, orientată în sens opus mișcării.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Corpul nedeformabil](./06-lp-corpul-nedeformabil.mdx).** Trei probe, în
+total 32 de minute.
+
+:::
