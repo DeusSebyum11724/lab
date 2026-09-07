@@ -1,0 +1,200 @@
+---
+sidebar_position: 12
+sidebar_label: "LP4 — Legea lui Pascal"
+slug: /f7/fluide/lp4
+title: "LP4 — Legea lui Pascal"
+description: "Lucrare practică: presa de ulei cu pârghie, o presă hidraulică de dimensionat și drumul pistoanelor."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP4 — Legea lui Pascal
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C4 — Legea lui Pascal. Aplicații](./10-curs-legea-lui-pascal.mdx)**, cu
+formulele din **[S4](./11-s-legea-lui-pascal.mdx)** la îndemână. Trei probe; în
+total 34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Presa hidraulică, pas cu pas | — | 10 min |
+| 2 | Drumul pistoanelor | ★ | 10 min |
+| 3 | Presa de ulei | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Presa hidraulică, pas cu pas
+
+— &nbsp;·&nbsp; **10 minute**
+
+O presă hidraulică are pistonul mic cu aria $S_1 = 5\ \text{cm}^2$ și pistonul
+mare cu aria $S_2 = 250\ \text{cm}^2$. Pe pistonul mic se apasă cu
+$F_1 = 40\ \text{N}$.
+
+**1.** Ce presiune se realizează în lichid?
+
+**2.** Ce forță apare la pistonul mare?
+
+**3.** Ce masă poate ridica presa?
+
+**4.** Ce s-ar schimba dacă pistonul mare ar avea diametrul dublu față de cel de
+acum?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Trecem aria în unități SI:
+
+$$
+S_1 = 5\ \text{cm}^2 = 5 \times 10^{-4}\ \text{m}^2
+$$
+
+$$
+p = \frac{F_1}{S_1} = \frac{40}{5 \times 10^{-4}} = 80\,000\ \text{Pa} = 80\ \text{kPa}
+$$
+
+**2.** Presiunea e aceeași peste tot, deci:
+
+$$
+F_2 = p \cdot S_2 = 80\,000 \times 250 \times 10^{-4} = 2000\ \text{N}
+$$
+
+Se putea și direct: $F_2 = F_1 \cdot \dfrac{S_2}{S_1} = 40 \times 50 = 2000\ \text{N}$.
+
+**3.**
+
+$$
+m = \frac{F_2}{g} = \frac{2000}{10} = 200\ \text{kg}
+$$
+
+**4.** Diametrul dublu înseamnă aria de **patru** ori mai mare:
+$S_2' = 1000\ \text{cm}^2$. Deci:
+
+$$
+F_2' = 40 \times \frac{1000}{5} = 8000\ \text{N}
+$$
+
+De patru ori mai mult — presa ar ridica $800\ \text{kg}$.
+
+</details>
+
+---
+
+## 2. Drumul pistoanelor
+
+★ &nbsp;·&nbsp; **10 minute**
+
+La aceeași presă ($S_1 = 5\ \text{cm}^2$, $S_2 = 250\ \text{cm}^2$), pistonul
+mic este împins în jos cu $20\ \text{cm}$.
+
+**1.** Ce volum de lichid este împins prin tub?
+
+**2.** Cu cât urcă pistonul mare?
+
+**3.** Calculează lucrul mecanic la fiecare piston și compară-le.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+V = S_1 \cdot d_1 = 5 \times 20 = 100\ \text{cm}^3
+$$
+
+**2.** Lichidul fiind incompresibil, același volum apare sub pistonul mare:
+
+$$
+d_2 = \frac{V}{S_2} = \frac{100}{250} = 0{,}4\ \text{cm} = 4\ \text{mm}
+$$
+
+**3.** Cu forțele aflate la proba dinainte:
+
+$$
+L_1 = F_1 \cdot d_1 = 40 \times 0{,}2 = 8\ \text{J}
+$$
+
+$$
+L_2 = F_2 \cdot d_2 = 2000 \times 0{,}004 = 8\ \text{J}
+$$
+
+**Egale.** Presa hidraulică multiplică forța de $50$ de ori și împarte drumul
+tot de $50$ de ori. Lucrul mecanic rămâne neatins — la fel ca la pârghie, la
+scripete și la planul înclinat.
+
+*De aici se vede și de ce cricul cere multe pompări:* pentru fiecare curs de
+$20\ \text{cm}$ a mânerului, mașina urcă doar câțiva milimetri.
+
+</details>
+
+---
+
+## 3. Presa de ulei
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+La presarea semințelor pentru obținerea uleiului se folosește o **pârghie ideală
+de gradul I** cu lungimea $l = 1\ \text{m}$ și brațul forței active de
+$80\ \text{cm}$. Forța maximă de apăsare a omului este de $100\ \text{N}$.
+
+**1.** Cât este brațul forței rezistente?
+
+**2.** Ce forță se obține la capătul scurt al pârghiei?
+
+**3.** De câte ori multiplică pârghia forța omului?
+
+**4.** Calculează raportul **diametrelor** cilindrilor unei prese hidraulice
+care ar realiza același câștig.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Pârghia fiind de gradul I, punctul de sprijin e între cele două forțe,
+deci brațele se adună la lungimea totală:
+
+$$
+b_R = l - b_F = 100 - 80 = 20\ \text{cm}
+$$
+
+**2.** Din legea pârghiilor:
+
+$$
+F \cdot b_F = R \cdot b_R \quad\Longrightarrow\quad R = \frac{F \cdot b_F}{b_R} = \frac{100 \times 80}{20} = 400\ \text{N}
+$$
+
+**3.**
+
+$$
+\frac{R}{F} = \frac{400}{100} = 4
+$$
+
+Pârghia multiplică forța de **4 ori**.
+
+**4.** Presa hidraulică trebuie să dea același câștig:
+
+$$
+\frac{F_2}{F_1} = \frac{S_2}{S_1} = 4
+$$
+
+Pistoanele fiind circulare, $S = \dfrac{\pi d^2}{4}$, deci raportul ariilor este
+pătratul raportului diametrelor:
+
+$$
+\frac{S_2}{S_1} = \left(\frac{d_2}{d_1}\right)^2 = 4 \quad\Longrightarrow\quad \frac{d_2}{d_1} = 2
+$$
+
+**Diametrul cilindrului mare trebuie să fie de două ori mai mare** decât al
+celui mic.
+
+*Ce se învață:* diametrul dublu nu înseamnă forță dublă, ci de patru ori mai
+mare. Aria crește cu pătratul diametrului — de aceea presele hidraulice mari
+capătă câștiguri uriașe din cilindri care nu par cu mult mai lați.
+
+</details>

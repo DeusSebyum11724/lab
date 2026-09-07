@@ -1,0 +1,243 @@
+---
+sidebar_position: 15
+sidebar_label: "LP5 — Legea lui Arhimede"
+slug: /f7/fluide/lp5
+title: "LP5 — Legea lui Arhimede"
+description: "Lucrare practică: radiera cântărită în apă, balonul cu aer cald și vaporul care trece din mare în Dunăre."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP5 — Legea lui Arhimede
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C5 — Legea lui Arhimede. Aplicații](./13-curs-legea-lui-arhimede.mdx)**, cu
+formulele din **[S5](./14-s-legea-lui-arhimede.mdx)** la îndemână. Trei probe;
+în total 36 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Radiera cântărită în apă | — | 12 min |
+| 2 | Balonul cu aer cald | ★ | 10 min |
+| 3 | Vaporul din Dunăre | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Radiera cântărită în apă
+
+— &nbsp;·&nbsp; **12 minute**
+
+O radieră suspendată de cârligul unui cântar de mână este scufundată în apă la
+diferite adâncimi.
+
+<FiguraManual
+  src="ro-radiera.png"
+  lat={441}
+  inalt={297}
+  latime={400}
+  eticheta="O mână ține un cântar electronic de care atârnă o radieră scufundată într-un pahar cu apă; alături, aceeași scenă cu apa care se scurge într-un al doilea vas"
+  legenda="Radiera cântărită în aer și apoi în apă."
+/>
+
+**1.** De ce indicațiile cântarului nu diferă în funcție de adâncime?
+
+**2.** Volumul radierei se determină măsurând volumul de apă scurs într-un vas
+cilindric, cu înălțimea coloanei $h = 12\ \text{mm}$ și aria bazei
+$S = 1400\ \text{mm}^2$. Calculează volumul radierei.
+
+**3.** Calculează forța arhimedică ce acționează asupra radierei, știind că
+$\rho_{\text{apă}} = 1\ \text{g/cm}^3$.
+
+**4.** Dacă în aer cântarul arăta $0{,}30\ \text{N}$, ce va arăta cu radiera
+scufundată?
+
+**5.** Figura de mai jos arată același ou în trei saramuri cu concentrații
+diferite. Care este cauza pozițiilor staționare diferite?
+
+<FiguraManual
+  src="ro-radiera-scufundata.png"
+  lat={402}
+  inalt={228}
+  latime={400}
+  eticheta="Trei pahare cu apă sărată; în primul oul stă pe fund, în al doilea plutește la mijloc, în al treilea plutește la suprafață"
+  legenda="Pozițiile oului în trei saramuri de concentrații diferite."
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Fiindcă forța arhimedică **nu depinde de adâncime**. Ea depinde numai de
+densitatea lichidului și de volumul dezlocuit — iar radiera dezlocuiește același
+volum, la orice adâncime.
+
+**2.** Volumul cilindrului de apă scurs este chiar volumul radierei:
+
+$$
+V = S \cdot h = 1400 \times 12 = 16\,800\ \text{mm}^3
+$$
+
+$$
+V = 16{,}8\ \text{cm}^3 = 16{,}8 \times 10^{-6}\ \text{m}^3
+$$
+
+**3.** Cu $\rho = 1\ \text{g/cm}^3 = 1000\ \text{kg/m}^3$:
+
+$$
+F_A = \rho g V = 1000 \times 10 \times 16{,}8 \times 10^{-6} = 0{,}168\ \text{N}
+$$
+
+**4.** Cântarul măsoară **greutatea aparentă**:
+
+$$
+G_a = G - F_A = 0{,}30 - 0{,}168 = 0{,}132\ \text{N}
+$$
+
+Radiera pare deci mai ușoară cu mai mult de o treime — deși masa ei n-a scăzut
+cu nimic.
+
+**5.** Cu cât saramura e mai concentrată, cu atât densitatea ei e mai mare, deci
+cu atât forța arhimedică e mai mare la același volum dezlocuit.
+
+- În primul pahar, $\rho_{\ell} < \rho_{\text{ou}}$: $G > F_A$, oul se
+  scufundă.
+- În al doilea, $\rho_{\ell} = \rho_{\text{ou}}$: $G = F_A$, oul rămâne
+  suspendat oriunde l-ai lăsa.
+- În al treilea, $\rho_{\ell} > \rho_{\text{ou}}$: $F_A > G$, oul urcă până
+  când partea scufundată dezlocuiește exact greutatea lui.
+
+*Aceeași explicație* lămurește și de ce se plutește mult mai ușor în Marea
+Moartă decât într-un lac.
+
+</details>
+
+---
+
+## 2. Balonul cu aer cald
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un balon cu aer cald, având masa de $400\ \text{kg}$ și volumul de
+$600\ \text{m}^3$, se ridică vertical în aerul atmosferic cu densitatea
+$\rho = 1{,}3\ \text{kg/m}^3$. Greutatea oamenilor din nacelă este de
+$2000\ \text{N}$.
+
+**1.** Calculează forța arhimedică ce acționează asupra balonului.
+
+**2.** Calculează greutatea totală a sistemului balon – oameni.
+
+**3.** Calculează forța ascensională.
+
+**4.** Ce s-ar întâmpla dacă în nacelă ar mai urca încă $200\ \text{kg}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Aici „lichidul" este aerul, iar volumul dezlocuit este volumul balonului:
+
+$$
+F_A = \rho g V = 1{,}3 \times 10 \times 600 = 7800\ \text{N}
+$$
+
+**2.**
+
+$$
+G = m_{\text{balon}} \, g + G_{\text{oameni}} = 400 \times 10 + 2000 = 6000\ \text{N}
+$$
+
+**3.**
+
+$$
+F_a = F_A - G = 7800 - 6000 = 1800\ \text{N}
+$$
+
+Cum $F_A > G$, balonul **urcă**.
+
+**4.** S-ar mai adăuga $200 \times 10 = 2000\ \text{N}$, deci greutatea totală ar
+ajunge la $8000\ \text{N}$ — mai mult decât $F_A = 7800\ \text{N}$. Balonul
+n-ar mai putea urca; ar coborî cu o greutate aparentă de $200\ \text{N}$.
+
+Ca să urce totuși, pilotul ar trebui să **încălzească mai tare** aerul din
+balon: aerul cald e mai puțin dens, deci masa balonului scade și $G$ împreună
+cu ea.
+
+</details>
+
+---
+
+## 3. Vaporul din Dunăre
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Un vapor cu masa de $30$ de tone trece din Marea Neagră, unde
+$\rho_{\text{apă sărată}} = 1028\ \text{kg/m}^3$, în Dunăre, unde
+$\rho_{\text{apă dulce}} = 1007\ \text{kg/m}^3$.
+
+<FiguraManual
+  src="ro-linie-incarcare.png"
+  lat={393}
+  inalt={163}
+  latime={400}
+  eticheta="Trei vapoare desenate alături, fiecare cufundat până la o altă linie de încărcare marcată pe bordaj"
+  legenda="Liniile de încărcare arată tocmai deosebirea din problema asta."
+/>
+
+**1.** Ce condiție îndeplinește vaporul, în amândouă apele?
+
+**2.** Calculează volumul părții cufundate în fiecare apă.
+
+**3.** Calculează raportul celor două volume.
+
+**4.** În care apă se cufundă vaporul mai mult? De ce marinarii trebuie să știe
+asta?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Vaporul **plutește**, deci în amândouă cazurile:
+
+$$
+G = F_A \quad\Longrightarrow\quad m g = \rho \, g \, V
+$$
+
+Simplificăm prin $g$:
+
+$$
+V = \frac{m}{\rho}
+$$
+
+**2.** Cu $m = 30$ de tone $= 30\,000\ \text{kg}$:
+
+$$
+V_{\text{mare}} = \frac{30\,000}{1028} \approx 29{,}18\ \text{m}^3
+$$
+
+$$
+V_{\text{Dunăre}} = \frac{30\,000}{1007} \approx 29{,}79\ \text{m}^3
+$$
+
+**3.**
+
+$$
+\frac{V_{\text{mare}}}{V_{\text{Dunăre}}} = \frac{1007}{1028} \approx 0{,}98
+$$
+
+Masa se simplifică: raportul volumelor cufundate este **invers** raportului
+densităților.
+
+**4.** În **Dunăre**, unde apa e mai puțin densă: vaporul trebuie să dezlocuiască
+un volum mai mare ca să obțină aceeași forță arhimedică. Diferența e de circa
+$2\%$.
+
+Marinarii trebuie să știe asta fiindcă un vapor încărcat la limită în apă sărată
+se cufundă mai mult când intră pe fluviu — și poate ajunge sub linia de siguranță
+sau chiar să atingă fundul în port. De aceea vapoarele au **mai multe** linii de
+încărcare, câte una pentru fiecare fel de apă.
+
+</details>

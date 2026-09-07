@@ -1,0 +1,149 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Presiunea atmosferică"
+slug: /f7/fluide/s3
+title: "S3 — Presiunea atmosferică"
+description: "Suport de curs: formulele presiunii atmosferice, unitățile ei și un exercițiu rezolvat pas cu pas cu adăpătoarea păsărilor."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Presiunea atmosferică
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Presiunea atmosferică](./07-curs-presiunea-atmosferica.mdx)**, strâns la
+un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când
+lucrezi la **[LP3](./09-lp-presiunea-atmosferica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Presiunea | $p$ | $p = \dfrac{F}{S}$ | pascal, $\text{Pa}$ |
+| Presiunea hidrostatică | $p$ | $p = \rho g h$ | pascal, $\text{Pa}$ |
+| Presiunea citită pe barometru | $p_{\text{atm}}$ | $p_{\text{atm}} = \rho g h$ | pascal, $\text{Pa}$ |
+
+**Valori de reținut:**
+
+$$
+p_0 = 760\ \text{mmHg} \approx 10^5\ \text{Pa} \qquad\qquad 1\ \text{mmHg} = 1\ \text{torr}
+$$
+
+---
+
+## 2. Unitățile presiunii
+
+| Unitatea | Unde se folosește |
+|---|---|
+| pascal, $\text{Pa}$ | unitatea din SI; $1\ \text{Pa} = 1\ \text{N/m}^2$ |
+| $\text{mmHg}$ (torr) | meteorologie, medicină (tensiunea arterială) |
+
+La calcule se lucrează **în pascali**. Milimetrii coloană de mercur se
+folosesc doar la citit și la comparat.
+
+---
+
+## 3. De reținut
+
+- Aerul are masă și e atras de Pământ; de aici vine presiunea atmosferică.
+- Presiunea atmosferică scade cu altitudinea, fiindcă deasupra ta rămâne mai
+  puțin aer.
+- Presiunea atmosferică apasă **în toate direcțiile**, nu doar de sus în jos.
+- Într-un barometru sifon, deasupra coloanei lungi este **vid**: fără el,
+  măsurătoarea n-ar avea sens.
+- Într-un vas închis, presiunea aerului dinăuntru plus presiunea coloanei de
+  lichid trebuie să egaleze presiunea atmosferică de afară. Ăsta e „truc"-ul
+  tuturor problemelor de tipul ăsta.
+- $\rho$ se trece în $\text{kg/m}^3$ și $h$ în metri. Atenție:
+  $1\ \text{g/cm}^3 = 1000\ \text{kg/m}^3$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Adăpătoarea păsărilor conține un vas cu apă, întors cu deschiderea într-o
+farfurie, cu orificiul de comunicare la adâncimea $h$ sub nivelul apei din
+farfurie. Dispozitivul funcționează ca un barometru sifon, cu deosebirea că în
+vas intră aer și simultan se scurge apă în farfurie, pentru echilibrarea
+presiunilor.
+
+<FiguraManual
+  src="ro-adapatoare.png"
+  lat={314}
+  inalt={354}
+  latime={280}
+  eticheta="O sticlă răsturnată cu gura într-o farfurie cu apă; înălțimea H a coloanei de apă din sticlă e marcată, presiunea aerului din sticlă apasă de sus, iar presiunea atmosferică apasă pe apa din farfurie"
+  legenda="Adăpătoare pentru păsări. Nivelul din farfurie rămâne constant cât timp mai e apă în sticlă."
+/>
+
+Calculează presiunea aerului din vas dacă $H = 38\ \text{cm}$,
+$\rho_{\text{apă}} = 1\ \text{g/cm}^3$, iar aerul atmosferic are presiune
+normală. Se ia $g = 10\ \text{N/kg}$.
+
+### Pasul 1 — Ce se dă
+
+- $H = 38\ \text{cm}$;
+- $\rho = 1\ \text{g/cm}^3$;
+- $p_{\text{atm}} = p_0 \approx 10^5\ \text{Pa}$;
+- $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Trecem în unități SI
+
+$$
+H = 38\ \text{cm} = 0{,}38\ \text{m} \qquad \rho = 1\ \text{g/cm}^3 = 1000\ \text{kg/m}^3
+$$
+
+### Pasul 3 — Condiția de echilibru
+
+La nivelul orificiului de comunicare, presiunile din cele două părți trebuie să
+fie egale. Din partea sticlei apasă aerul dinăuntru **plus** coloana de apă de
+înălțime $H$; din partea farfuriei apasă aerul atmosferic:
+
+$$
+p_{\text{aer}} + \rho g H = p_{\text{atm}}
+$$
+
+### Pasul 4 — Presiunea coloanei de apă
+
+$$
+\rho g H = 1000 \times 10 \times 0{,}38 = 3800\ \text{Pa}
+$$
+
+### Pasul 5 — Presiunea aerului din vas
+
+$$
+p_{\text{aer}} = p_{\text{atm}} - \rho g H = 100\,000 - 3800 = 96\,200\ \text{Pa}
+$$
+
+Adică aproximativ $96{,}2\ \text{kPa}$.
+
+### Pasul 6 — Verificarea
+
+Presiunea din sticlă a ieșit **mai mică** decât cea atmosferică — cum trebuie:
+aerul din sticlă e ajutat de greutatea coloanei de apă, deci nu are nevoie să
+apese la fel de tare.
+
+Se vede și de ce merge adăpătoarea: apa nu se scurge toată deodată, fiindcă
+îndată ce nivelul din farfurie ar scădea sub orificiu, ar intra o bulă de aer,
+presiunea s-ar reechilibra și scurgerea s-ar opri.
+
+### Răspuns
+
+$p_{\text{aer}} \approx 96\,200\ \text{Pa}$.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Presiunea atmosferică](./09-lp-presiunea-atmosferica.mdx).** Trei probe,
+în total 32 de minute.
+
+:::

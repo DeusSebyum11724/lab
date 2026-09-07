@@ -1,0 +1,295 @@
+---
+sidebar_position: 13
+sidebar_label: "C5 — Legea lui Arhimede"
+slug: /f7/fluide/c5
+title: "C5 — Legea lui Arhimede. Aplicații"
+description: "Forța arhimedică, legea lui Arhimede, condiția de plutire, centrul de presiune și aplicațiile în lichide și în gaze."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C5 — Legea lui Arhimede. Aplicații
+
+:::info Planul orei
+
+1. Observă și descoperă
+2. De unde vine forța arhimedică
+3. Modulul forței arhimedice
+4. Legea lui Arhimede
+5. Plutirea unui corp omogen
+6. Centrul de presiune
+7. Legea lui Arhimede în gaze
+8. Aplicații
+
+:::
+
+---
+
+## 1. Observă și descoperă
+
+<FiguraManual
+  src="ro-plutire-intrebari.png"
+  lat={912}
+  inalt={166}
+  latime={620}
+  eticheta="Patru fotografii: un copil într-o bilă mare transparentă pe apă, un ou care plutește într-un pahar cu apă sărată și se scufundă în altul cu apă dulce, bule ridicându-se printr-un pai într-un pahar, bule de aer mari și mici la suprafața unui lichid"
+  legenda="Patru situații care se explică toate prin aceeași forță."
+/>
+
+**1.** De ce nu se scufundă copilul aflat într-o bilă de mers pe apă?
+
+**2.** Cum este posibil ca oul din apă foarte sărată să plutească, dacă în apa
+dulce se scufundă?
+
+**3.** De ce bulele de gaz produse suflând printr-un pai, pe fundul unui vas cu
+apă, se ridică pe direcție verticală?
+
+**4.** Cum explici că bulele de aer mari se ridică mai repede la suprafață decât
+cele mici?
+
+**5.** Scufunzi complet, în aceeași cantitate de apă dintr-un vas, ținând în
+palmă pe rând o lingură metalică și apoi un ou. Știind că ambele corpuri au
+aceeași **masă**, ce deosebiri vei observa?
+
+<FiguraManual
+  src="ro-lingura-ou.png"
+  lat={317}
+  inalt={316}
+  latime={300}
+  eticheta="Două boluri rotunde cu apă: într-unul o mână ține o lingură metalică scufundată, în celălalt un ou"
+  legenda="Lingura și oul, cufundate pe rând în același vas cu apă."
+/>
+
+---
+
+## 2. De unde vine forța arhimedică
+
+<FiguraManual
+  src="ro-forta-arhimedica.png"
+  lat={439}
+  inalt={278}
+  latime={420}
+  eticheta="Un corp paralelipipedic scufundat într-un vas cu lichid; forța F1 apasă în jos pe fața de sus, aflată la adâncimea h1, iar forța F2 împinge în sus pe fața de jos, aflată la adâncimea h2; rezultanta FA este îndreptată în sus"
+  legenda="Forța arhimedică se naște din deosebirea dintre apăsarea de jos și cea de sus."
+/>
+
+Presiunea hidrostatică crește cu adâncimea. Fața de jos a corpului se află mai
+adânc decât fața de sus, deci este apăsată mai tare. Diferența dintre cele două
+apăsări este o forță îndreptată **în sus**:
+
+$$
+F_A = F_2 - F_1 = (p_2 - p_1) S = \rho_{\text{lichid}} \, g \, (h_2 - h_1) \, S
+$$
+
+Dar $(h_2 - h_1) S$ este chiar **volumul corpului scufundat**.
+
+:::danger Definiția 1
+
+Forța rezultantă care acționează asupra unui corp introdus într-un lichid,
+orientată **vertical, de jos în sus**, se numește **forță arhimedică**, notată
+$F_A$.
+
+:::
+
+---
+
+## 3. Modulul forței arhimedice
+
+$$
+F_A = \rho_{\text{lichid}} \cdot g \cdot V_{\text{lichid dezlocuit}}
+$$
+
+:::tip Cinci lucruri despre $F_A$
+
+- este egală cu **greutatea lichidului dezlocuit** de corp: $F_A = G_{\ell}$;
+- **crește** cu densitatea lichidului;
+- **crește** cu volumul corpului scufundat;
+- **nu depinde** de masa corpului scufundat;
+- **nu depinde** de adâncimea la care este scufundat corpul.
+
+:::
+
+Ultimele două lămuresc întrebările de la începutul orei: oul plutește în
+saramură fiindcă acolo $\rho$ e mai mare, iar bulele mari urcă mai repede
+fiindcă au volum mai mare.
+
+---
+
+## 4. Legea lui Arhimede
+
+:::danger Legea lui Arhimede
+
+Un corp scufundat într-un lichid aflat în repaus este împins vertical în sus cu
+o forță al cărei modul este egal cu **greutatea lichidului dezlocuit** de corp.
+
+:::
+
+---
+
+## 5. Plutirea unui corp omogen
+
+<FiguraManual
+  src="ro-plutire-omogen.png"
+  lat={433}
+  inalt={290}
+  latime={430}
+  eticheta="Trei vase cu lichid: în a) corpul coboară, cu greutatea aparentă îndreptată în jos; în b) corpul stă în mijloc, cu G egală cu FA; în c) corpul urcă, cu forța ascensională îndreptată în sus"
+  legenda="Poziții de plutire ale unui corp omogen: se scufundă, rămâne în echilibru sau urcă."
+/>
+
+| Situația | Densitățile | Ce se întâmplă |
+|---|---|---|
+| $G > F_A$ | $\rho_c > \rho_{\ell}$ | corpul **se scufundă** |
+| $G = F_A$ | $\rho_c = \rho_{\ell}$ | corpul **rămâne în echilibru** oriunde în lichid |
+| $G < F_A$ | $\rho_c < \rho_{\ell}$ | corpul **se ridică** la suprafață |
+
+Când corpul se scufundă, el o face sub acțiunea unei forțe numite **greutate
+aparentă**:
+
+$$
+G_a = G - F_A
+$$
+
+Când se ridică, o face sub acțiunea unei forțe numite **forță ascensională**:
+
+$$
+F_a = F_A - G
+$$
+
+:::danger Condiția de plutire
+
+Un corp plutește dacă:
+
+$$
+G = F_A
+$$
+
+:::
+
+---
+
+## 6. Centrul de presiune
+
+Punctul de aplicație al forței arhimedice se numește **centru de presiune**.
+
+Pentru un corp omogen cu formă geometrică regulată, el se găsește în **centrul
+de simetrie al porțiunii de corp aflate în lichid**. Când corpul e scufundat
+integral, centrul de presiune coincide cu centrul de greutate.
+
+<FiguraManual
+  src="ro-plutire-neomogen.png"
+  lat={457}
+  inalt={320}
+  latime={430}
+  eticheta="Două vapoare desenate pe linia apei; la fiecare, centrul de greutate C și centrul de presiune O sunt marcate, cu forța arhimedică FA în sus din O și greutatea G în jos din C"
+  legenda="Condiția de plutire la suprafață pentru un corp neomogen, cum e un vapor."
+/>
+
+Vapoarele pot fi considerate **corpuri neomogene** care plutesc. La ele, poziția
+centrului de greutate $C$ nu coincide cu cea a centrului de presiune $O$.
+
+:::tip De ce nu se răstoarnă vapoarele
+
+Dacă $C$ este situat **sub** $O$, pe aceeași verticală, vaporul plutește în
+**echilibru stabil**. Scos din această stare, el revine la poziția inițială sub
+acțiunea cuplului format de $\vec{G}$ și $\vec{F}_A$.
+
+De aceea se pune balast greu la fundul navelor: coboară centrul de greutate sub
+cel de presiune.
+
+:::
+
+---
+
+## 7. Legea lui Arhimede în gaze
+
+Legea se verifică și în cazul gazelor, așa că poate fi reformulată mai larg:
+
+:::danger Legea lui Arhimede, forma generală
+
+Un corp scufundat într-un **fluid** aflat în repaus este împins vertical în sus
+cu o forță al cărei modul este egal cu greutatea fluidului dezlocuit de corp.
+
+:::
+
+<FiguraManual
+  src="ro-balon-aer-cald.png"
+  lat={457}
+  inalt={312}
+  latime={420}
+  eticheta="Un balon cu aer cald colorat, umflat pe câmp, cu arzătorul aprins sub gura lui"
+  legenda="Balon cu aer cald. Aerul dinăuntru, încălzit, e mai puțin dens decât cel de afară."
+/>
+
+Când forța arhimedică a aerului atmosferic este mai mare decât greutatea unui
+corp, asupra acestuia acționează o forță ascensională $F_a = F_A - G$ — cazul
+balonului cu aer cald, a cărui densitate medie este mai mică decât a aerului.
+
+<FiguraManual
+  src="ro-balanta-co2.png"
+  lat={433}
+  inalt={472}
+  latime={330}
+  eticheta="Sus: o balanță în echilibru, cu un balon atârnat de un braț. Jos: aceeași balanță se dezechilibrează după ce balonul este coborât într-o incintă cu dioxid de carbon"
+  legenda="Balanța se dezechilibrează fiindcă dioxidul de carbon, mai dens decât aerul, împinge balonul mai tare."
+/>
+
+---
+
+## 8. Aplicații
+
+| Aplicația | Cum folosește legea |
+|---|---|
+| **submarinul** | plutește la suprafață sau în adânc prin **variația controlată a greutății** sale |
+| **aerostatele** | anvelope ușoare umplute cu un gaz mai puțin dens decât aerul: balonul cu aer cald, dirijabilul, balonul-sondă |
+| **densimetrul** | măsoară densitatea lichidelor după cât de adânc se cufundă |
+| **liniile de încărcare** | marcaje pe vapor care arată nivelul maxim de scufundare, pentru ape de densități diferite |
+
+<FiguraManual
+  src="ro-submarin.png"
+  lat={430}
+  inalt={226}
+  latime={380}
+  eticheta="Un submarin gri văzut din lateral, cu turela și elicea"
+  legenda="Submarin."
+/>
+
+<FiguraManual
+  src="ro-aerostat.png"
+  lat={439}
+  inalt={200}
+  latime={380}
+  eticheta="Un dirijabil alb și galben zburând, cu nacela sub anvelopă"
+  legenda="Aerostat. Anvelopa e umplută cu un gaz mai puțin dens decât aerul."
+/>
+
+<FiguraManual
+  src="ro-densimetru.png"
+  lat={432}
+  inalt={299}
+  latime={380}
+  eticheta="Un densimetru plutind într-un cilindru gradat cu lichid, cu detaliul scalei mărit alături"
+  legenda="Densimetru. Cu cât lichidul e mai dens, cu atât instrumentul se cufundă mai puțin."
+/>
+
+<FiguraManual
+  src="ro-linie-incarcare.png"
+  lat={393}
+  inalt={163}
+  latime={380}
+  eticheta="Trei vapoare desenate alături, fiecare cufundat până la o altă linie de încărcare marcată pe bordaj"
+  legenda="Linii de încărcare. Același vapor se cufundă altfel în apă dulce decât în apă sărată."
+/>
+
+---
+
+:::note Ora următoare
+
+**LP5 — Legea lui Arhimede.** Trei probe: radiera cântărită în apă, ghețarul și
+balonul cu aer cald.
+
+Înainte de ea, treci prin
+**[S5 — Legea lui Arhimede](./14-s-legea-lui-arhimede.mdx)**: formulele lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

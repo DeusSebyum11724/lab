@@ -1,0 +1,195 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Presiunea atmosferică"
+slug: /f7/fluide/lp3
+title: "LP3 — Presiunea atmosferică"
+description: "Lucrare practică: paharul cu cartonul, presiunea la altitudine și barometrul cu apă."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Presiunea atmosferică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Presiunea atmosferică](./07-curs-presiunea-atmosferica.mdx)**, cu
+formulele din **[S3](./08-s-presiunea-atmosferica.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Paharul cu cartonul | — | 10 min |
+| 2 | Presiunea la altitudine | ★ | 10 min |
+| 3 | Un barometru cu apă | ★★ | 12 min |
+
+Ai nevoie de un pahar, o bucată de carton și apă. Peste tot se ia
+$g = 10\ \text{N/kg}$ și $p_0 \approx 10^5\ \text{Pa}$. Rezolvarea fiecărei
+probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Paharul cu cartonul
+
+— &nbsp;·&nbsp; **10 minute**
+
+Umple un pahar cu apă până sus, acoperă-l cu o bucată de carton, ține cartonul
+cu palma și întoarce paharul cu gura în jos. Ia mâna de pe carton — deasupra
+chiuvetei.
+
+**1.** Ce se întâmplă? De ce nu cade apa?
+
+**2.** Paharul are gura cu aria $S = 40\ \text{cm}^2$ și conține
+$0{,}2\ \text{kg}$ de apă. Calculează forța cu care apasă în jos apa și forța
+cu care apasă în sus aerul.
+
+**3.** Compară cele două forțe.
+
+**4.** Ce s-ar întâmpla dacă paharul ar fi umplut doar pe jumătate, cu aer
+deasupra apei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cartonul rămâne lipit, iar apa nu cade. Aerul atmosferic împinge cartonul
+**în sus** cu o forță mult mai mare decât greutatea apei.
+
+**2.** Greutatea apei:
+
+$$
+G = m g = 0{,}2 \times 10 = 2\ \text{N}
+$$
+
+Aria în unități SI:
+
+$$
+S = 40\ \text{cm}^2 = 40 \times 10^{-4}\ \text{m}^2 = 0{,}004\ \text{m}^2
+$$
+
+Forța aerului:
+
+$$
+F = p_0 \cdot S = 100\,000 \times 0{,}004 = 400\ \text{N}
+$$
+
+**3.** $400\ \text{N}$ față de $2\ \text{N}$: aerul apasă de **două sute de ori**
+mai tare decât greutatea apei. Nu e de mirare că apa rămâne pe loc — și că
+experiența merge și cu o găleată, dacă găsești un carton destul de rezistent.
+
+**4.** Ar merge tot, dar mai șubred. Aerul rămas deasupra apei se destinde puțin
+când cartonul se lasă, presiunea lui scade sub cea atmosferică și diferența ține
+apa. Dacă paharul e plin ochi, nu există aer care să se destindă, iar
+echilibrul e mai sigur.
+
+</details>
+
+---
+
+## 2. Presiunea la altitudine
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un barometru arată la nivelul mării $760\ \text{mmHg}$. Urcat pe un munte, el
+arată $600\ \text{mmHg}$.
+
+**1.** A crescut sau a scăzut presiunea? De ce?
+
+**2.** Cu câți milimetri coloană de mercur s-a schimbat?
+
+**3.** Exprimă cele două valori în pascali, știind că
+$760\ \text{mmHg} \approx 10^5\ \text{Pa}$.
+
+**4.** De ce le e greu alpiniștilor să respire la altitudine mare?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** A **scăzut**. Cu cât urci mai sus, cu atât deasupra ta rămâne o coloană de
+aer mai scurtă, deci mai puțină greutate care să apese.
+
+**2.**
+
+$$
+760 - 600 = 160\ \text{mmHg}
+$$
+
+**3.** Facem regula de trei simplă. Dacă $760\ \text{mmHg}$ înseamnă
+$100\,000\ \text{Pa}$, atunci:
+
+$$
+600\ \text{mmHg} = \frac{600 \times 100\,000}{760} \approx 78\,900\ \text{Pa}
+$$
+
+Deci presiunea a scăzut de la $100\ \text{kPa}$ la circa $79\ \text{kPa}$.
+
+**4.** Fiindcă aerul e mai rarefiat: în același volum de aer inspirat se găsește
+mai puțin oxigen. Plămânii lucrează la fel de mult, dar aduc în sânge mai puțin.
+De aceea alpiniștii au nevoie de zile de aclimatizare, iar la peste
+$8000\ \text{m}$ folosesc butelii cu oxigen.
+
+</details>
+
+---
+
+## 3. Un barometru cu apă
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Un elev vrea să construiască un barometru **cu apă** în loc de mercur. Se dau
+$\rho_{\text{apă}} = 1000\ \text{kg/m}^3$,
+$\rho_{\text{mercur}} = 13\,600\ \text{kg/m}^3$ și
+$p_0 \approx 10^5\ \text{Pa}$.
+
+**1.** Ce înălțime ar trebui să aibă coloana de apă, la presiune atmosferică
+normală?
+
+**2.** Ce înălțime are coloana de mercur, calculată din aceleași date?
+
+**3.** De câte ori e mai înalt barometrul cu apă? Compară cu raportul
+densităților.
+
+**4.** Ar putea elevul să-l așeze într-o cameră obișnuită?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La echilibru, coloana de lichid trebuie să dea aceeași presiune ca aerul
+atmosferic:
+
+$$
+\rho g h = p_0 \quad\Longrightarrow\quad h = \frac{p_0}{\rho g}
+$$
+
+$$
+h_{\text{apă}} = \frac{100\,000}{1000 \times 10} = 10\ \text{m}
+$$
+
+**2.**
+
+$$
+h_{\text{Hg}} = \frac{100\,000}{13\,600 \times 10} \approx 0{,}735\ \text{m} \approx 735\ \text{mm}
+$$
+
+Aproape de valoarea cunoscută, $760\ \text{mm}$. Mica deosebire vine din
+rotunjirea lui $p_0$ la $10^5\ \text{Pa}$ și a lui $g$ la $10\ \text{N/kg}$.
+
+**3.**
+
+$$
+\frac{h_{\text{apă}}}{h_{\text{Hg}}} = \frac{10}{0{,}735} \approx 13{,}6
+$$
+
+$$
+\frac{\rho_{\text{Hg}}}{\rho_{\text{apă}}} = \frac{13\,600}{1000} = 13{,}6
+$$
+
+Exact același număr — și trebuie să fie așa: din $\rho g h = p_0$, la aceeași
+presiune, înălțimea e invers proporțională cu densitatea.
+
+**4.** **Nu.** Un tub de $10\ \text{m}$ nu încape în nicio cameră; ar trebui un
+turn de trei etaje. De asta se folosește mercurul, care fiind de $13{,}6$ ori
+mai dens, dă o coloană de $13{,}6$ ori mai scurtă.
+
+</details>

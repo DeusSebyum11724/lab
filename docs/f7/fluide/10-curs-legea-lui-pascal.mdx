@@ -1,0 +1,227 @@
+---
+sidebar_position: 10
+sidebar_label: "C4 — Legea lui Pascal"
+slug: /f7/fluide/c4
+title: "C4 — Legea lui Pascal. Aplicații"
+description: "Vasele comunicante, incompresibilitatea lichidelor, legea lui Pascal și dispozitivele hidraulice."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C4 — Legea lui Pascal. Aplicații
+
+:::info Planul orei
+
+1. Observă și descoperă
+2. Vasele comunicante
+3. Lichidele sunt incompresibile
+4. Legea lui Pascal
+5. Presa hidraulică
+6. Experiment: modelul presei hidraulice
+7. Alte dispozitive hidraulice
+
+:::
+
+---
+
+## 1. Observă și descoperă
+
+**1.** Un lichid se află în repaus într-un sistem de vase comunicante. De ce
+nivelul lichidului este **același** în toate vasele, indiferent de forma sau
+volumul acestora?
+
+<FiguraManual
+  src="ro-vase-comunicante.png"
+  lat={310}
+  inalt={174}
+  latime={300}
+  eticheta="Cinci vase de sticlă de forme foarte diferite, legate la bază, în care lichidul verde stă peste tot la același nivel"
+  legenda="Vase comunicante. Forma vasului nu schimbă nivelul."
+/>
+
+**2.** Ce proprietate a lichidului permite transmiterea apăsării de la pedală
+către roți, în sistemul de frânare al automobilului?
+
+<FiguraManual
+  src="ro-frana-schema.png"
+  lat={289}
+  inalt={174}
+  latime={300}
+  eticheta="Schema unui sistem de frânare hidraulic: pedala apasă pistonul unui cilindru, iar lichidul din conductă transmite apăsarea la saboții de pe roată"
+  legenda="Sistem de frânare hidraulic."
+/>
+
+**3.** De ce sare dopul $B$ când ciocanul lovește dopul $A$?
+
+<FiguraManual
+  src="ro-tub-u-dopuri.png"
+  lat={289}
+  inalt={174}
+  latime={300}
+  eticheta="Un tub în formă de U plin cu lichid, astupat cu câte un dop la fiecare capăt; un ciocan lovește dopul A, iar dopul B sare afară"
+  legenda="Tub U cu dopuri. Lovitura dată într-un capăt ajunge în celălalt."
+/>
+
+---
+
+## 2. Vasele comunicante
+
+În vasele care comunică în partea inferioară, numite **vase comunicante**,
+forțele de apăsare gravitațională ale coloanelor de lichid omogen creează
+**aceeași presiune** la nivelul tubului de comunicare, ca lichidul să se afle în
+echilibru static:
+
+$$
+p = \rho g h
+$$
+
+Cum densitatea și $g$ sunt aceleași peste tot, presiunile pot fi egale numai
+dacă înălțimile $h$ sunt egale.
+
+:::danger Principiul vaselor comunicante
+
+Suprafața liberă a lichidului se află, în fiecare vas comunicant, la **același
+nivel**, indiferent de forma sau de volumul vasului.
+
+:::
+
+Ăsta e răspunsul la prima întrebare — și motivul pentru care nivelul apei într-o
+cadă legată la un furtun transparent îți spune, fără să te apleci, cât e apa în
+cadă.
+
+---
+
+## 3. Lichidele sunt incompresibile
+
+Suprafața liberă a lichidelor este elastică și exercită o presiune foarte mare
+asupra interiorului lichidului; de aceea lichidele sunt practic
+**incompresibile** — nu se pot strânge într-un volum mai mic.
+
+Transmiterea unei modificări a presiunii apărute într-un loc din interiorul
+lichidului se bazează tocmai pe această proprietate. Ăsta e **principiul
+transmiterii presiunii în fluide**, și el explică și dopul care sare, și frâna
+automobilului.
+
+---
+
+## 4. Legea lui Pascal
+
+:::danger Legea lui Pascal
+
+Presiunea exercitată din exterior asupra unui lichid aflat în repaus se
+transmite **integral**, cu aceeași intensitate, **pe toate direcțiile**, atât în
+lichid, cât și la pereții vasului care îl conține.
+
+:::
+
+Trei cuvinte poartă toată legea:
+
+| Cuvântul | Ce înseamnă |
+|---|---|
+| **integral** | nu se pierde nimic pe drum |
+| **aceeași intensitate** | presiunea e la fel de mare oriunde în lichid |
+| **pe toate direcțiile** | și în sus, și în lături, nu doar în jos |
+
+---
+
+## 5. Presa hidraulică
+
+<FiguraManual
+  src="ro-presa-hidraulica.png"
+  lat={433}
+  inalt={315}
+  latime={420}
+  eticheta="Două vase cilindrice de secțiuni diferite, legate printr-un tub, fiecare închis cu un piston; forța F1 apasă pistonul mic de arie S1, iar forța F2 iese la pistonul mare de arie S2, presiunea P fiind aceeași peste tot"
+  legenda="Presă hidraulică. Presiunea P e aceeași sub amândouă pistoanele."
+/>
+
+**Presa hidraulică** este un dispozitiv alcătuit din două vase comunicante care
+conțin lichid până la nivelul a două pistoane de secțiuni diferite.
+
+Presiunea realizată din exterior de forța $F_1$ pe pistonul cu suprafața $S_1$
+se transmite integral în tot lichidul, deci și la pistonul de arie $S_2$, asupra
+căruia va acționa o forță **multiplicată** $F_2$:
+
+$$
+\frac{F_1}{S_1} = \frac{F_2}{S_2} \qquad\text{de unde}\qquad F_2 = F_1 \cdot \frac{S_2}{S_1}
+$$
+
+:::tip Câștigul
+
+Dacă pistonul mare are aria de $100$ de ori mai mare, forța iese de $100$ de ori
+mai mare. Ca la pârghie și la scripete, câștigul de forță se plătește cu drum:
+pistonul mic coboară mult, cel mare urcă puțin.
+
+:::
+
+---
+
+## 6. Experiment: modelul presei hidraulice
+
+**Scop:** transmiterea presiunii într-un lichid.
+
+**Materiale:** două seringi cu diametre diferite, tub de plastic, riglă, apă.
+
+<FiguraManual
+  src="ro-exp-seringi.png"
+  lat={378}
+  inalt={273}
+  latime={360}
+  eticheta="Două seringi de plastic de diametre diferite, legate între ele printr-un tub portocaliu de cauciuc, pline cu apă"
+  legenda="Modelul presei hidraulice, făcut din două seringi."
+/>
+
+**Mod de lucru.**
+
+1. Scoate pistoanele din seringi, măsoară-le diametrele și calculează ariile.
+   Umple cu apă seringa mică.
+2. Cuplează orificiul seringii mici la tub și, apăsând pistonul, umple complet
+   tubul cu apă; apoi cuplează-l la orificiul seringii mari.
+3. Apasă pe pistonul mic, împingând prin tub un volum de apă spre a doua
+   seringă.
+4. Fixează vertical cele două seringi pe același suport, cu orificiile cuplate
+   orientate în jos.
+5. Așază corpuri cu mase marcate pe capetele celor două pistoane, astfel încât
+   sistemul să fie în echilibru static.
+
+**Constatări.** Ce volum de apă s-a transferat din seringa mică în cea mare?
+Care sunt cele mai potrivite mase marcate pentru obținerea echilibrului?
+
+---
+
+## 7. Alte dispozitive hidraulice
+
+<FiguraManual
+  src="ro-aplicatii-hidraulice.png"
+  lat={912}
+  inalt={202}
+  latime={620}
+  eticheta="Trei imagini alăturate: un cric hidraulic albastru cu galben, un elevator roșu care ridică un automobil, și schema unei frâne hidraulice de roată"
+  legenda="Cric hidraulic, elevator hidraulic și frână hidraulică."
+/>
+
+| Dispozitivul | La ce folosește |
+|---|---|
+| **cricul hidraulic** | ridicarea de greutăți prin acțiune manuală sau mecanică; ridicarea parțială a automobilelor, scaunele de la stomatolog sau frizer |
+| **elevatorul hidraulic** | ridicarea vehiculelor întregi în service |
+| **frâna hidraulică** | transmite apăsarea pedalei, prin lichidul de frână, către roțile automobilului |
+
+:::tip De reținut
+
+Dispozitivul hidraulic realizează lucru mecanic pe baza principiului
+transmiterii presiunii în fluide.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP4 — Legea lui Pascal.** Trei probe: cricul mecanicului, presa de ulei și
+vasele comunicante cu două lichide.
+
+Înainte de ea, treci prin
+**[S4 — Legea lui Pascal](./11-s-legea-lui-pascal.mdx)**: formulele lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

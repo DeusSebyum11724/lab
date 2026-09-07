@@ -1,0 +1,136 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Legea lui Pascal"
+slug: /f7/fluide/s4
+title: "S4 — Legea lui Pascal"
+description: "Suport de curs: formula presei hidraulice, legătura cu lucrul mecanic și un exercițiu rezolvat pas cu pas cu cricul hidraulic."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Legea lui Pascal
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Legea lui Pascal. Aplicații](./10-curs-legea-lui-pascal.mdx)**, strâns
+la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când
+lucrezi la **[LP4](./12-lp-legea-lui-pascal.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Presiunea | $p$ | $p = \dfrac{F}{S}$ | pascal, $\text{Pa}$ |
+| Legea presei hidraulice | — | $\dfrac{F_1}{S_1} = \dfrac{F_2}{S_2}$ | — |
+| Forța obținută | $F_2$ | $F_2 = F_1 \cdot \dfrac{S_2}{S_1}$ | newton, $\text{N}$ |
+| Aria unui piston circular | $S$ | $S = \dfrac{\pi d^2}{4}$ | $\text{m}^2$ |
+| Raportul ariilor, din diametre | — | $\dfrac{S_2}{S_1} = \left(\dfrac{d_2}{d_1}\right)^2$ | — |
+
+---
+
+## 2. Câștigul de forță și prețul lui
+
+| Mărimea | La pistonul mic | La pistonul mare |
+|---|---|---|
+| forța | $F_1$ | $F_2 = F_1 \dfrac{S_2}{S_1}$ |
+| drumul | $d_1$ | $d_2 = d_1 \dfrac{S_1}{S_2}$ |
+| lucrul mecanic | $F_1 d_1$ | același |
+
+Volumul de lichid împins de pistonul mic este chiar volumul cu care urcă cel
+mare — de aici vine raportul invers al drumurilor.
+
+Ca la pârghie și la scripete: **câștigi forță, plătești drum**.
+
+---
+
+## 3. De reținut
+
+- Presiunea se transmite **în toate direcțiile**, nu doar în direcția în care
+  apeși.
+- În formula presei, contează **raportul ariilor**, nu al diametrelor. Dacă
+  diametrul crește de $2$ ori, aria crește de $4$ ori.
+- Ariile pot rămâne în aceleași unități, oricare ar fi ele, atâta timp cât sunt
+  amândouă la fel — în formulă intră doar raportul.
+- Lichidul se socotește **incompresibil**: volumul împins din partea mică apare
+  întreg în partea mare.
+- Nivelul din vase comunicante e același numai dacă lichidul e **omogen** —
+  adică unul singur, cu aceeași densitate peste tot.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Pentru a ridica un automobil, mecanicul apasă mânerul unui cric hidraulic cu o
+forță de $10\ \text{kgf}$, unde $1\ \text{kilogram-forță} = 10\ \text{N}$.
+Suprafața unui piston este de $100$ de ori mai mare decât a celuilalt. Reușește
+mecanicul să ridice automobilul cu masa de o tonă? Se ia
+$g = 10\ \text{N/kg}$.
+
+### Pasul 1 — Ce se dă
+
+- $F_1 = 10\ \text{kgf} = 100\ \text{N}$;
+- $\dfrac{S_2}{S_1} = 100$;
+- $m = 1\ \text{tonă} = 1000\ \text{kg}$.
+
+### Pasul 2 — Ce se cere
+
+Forța obținută la pistonul mare, comparată cu greutatea automobilului.
+
+### Pasul 3 — Greutatea automobilului
+
+$$
+G = m g = 1000 \times 10 = 10\,000\ \text{N}
+$$
+
+### Pasul 4 — Forța la pistonul mare
+
+Din legea lui Pascal, presiunea e aceeași sub amândouă pistoanele:
+
+$$
+\frac{F_1}{S_1} = \frac{F_2}{S_2} \quad\Longrightarrow\quad F_2 = F_1 \cdot \frac{S_2}{S_1}
+$$
+
+$$
+F_2 = 100 \times 100 = 10\,000\ \text{N}
+$$
+
+### Pasul 5 — Comparația
+
+$$
+F_2 = 10\,000\ \text{N} = G
+$$
+
+Forța obținută este **exact** cât greutatea automobilului.
+
+### Pasul 6 — Interpretarea
+
+La această valoare, sistemul se află la **limita echilibrului**: automobilul e
+susținut, dar nu urcă. Ca să-l ridice, mecanicul trebuie să apese ceva mai
+tare — sau, în practică, să pompeze de mai multe ori, fiindcă un cric adevărat
+are o supapă care păstrează câștigul de la o cursă la alta.
+
+### Pasul 7 — Verificarea
+
+Câștigul de forță este de $100$ de ori, exact raportul ariilor. Prețul: pistonul
+mic trebuie împins pe un drum de $100$ de ori mai lung decât cel pe care urcă
+mașina. De aceea mecanicul pompează de zeci de ori pentru câțiva centimetri.
+
+### Răspuns
+
+Da, dar la limită: $F_2 = 10\,000\ \text{N}$, exact greutatea automobilului.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Legea lui Pascal](./12-lp-legea-lui-pascal.mdx).** Trei probe, în total
+34 de minute.
+
+:::

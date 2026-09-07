@@ -1,0 +1,161 @@
+---
+sidebar_position: 14
+sidebar_label: "S5 — Legea lui Arhimede"
+slug: /f7/fluide/s5
+title: "S5 — Legea lui Arhimede"
+description: "Suport de curs: formula forței arhimedice, cele trei cazuri de plutire și un exercițiu rezolvat pas cu pas cu un ghețar."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S5 — Legea lui Arhimede
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C5 — Legea lui Arhimede. Aplicații](./13-curs-legea-lui-arhimede.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP5](./15-lp-legea-lui-arhimede.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Forța arhimedică | $F_A$ | $F_A = \rho_{\ell} \, g \, V_{\text{dezlocuit}}$ | newton, $\text{N}$ |
+| Greutatea corpului | $G$ | $G = m g = \rho_c \, g \, V_c$ | newton, $\text{N}$ |
+| Greutatea aparentă | $G_a$ | $G_a = G - F_A$ | newton, $\text{N}$ |
+| Forța ascensională | $F_a$ | $F_a = F_A - G$ | newton, $\text{N}$ |
+| Condiția de plutire | — | $G = F_A$ | — |
+
+---
+
+## 2. Cele trei cazuri
+
+| Comparația | Densitățile | Rezultatul | Forța care rămâne |
+|---|---|---|---|
+| $G > F_A$ | $\rho_c > \rho_{\ell}$ | se scufundă | $G_a = G - F_A$, în jos |
+| $G = F_A$ | $\rho_c = \rho_{\ell}$ | stă unde e lăsat | niciuna |
+| $G < F_A$ | $\rho_c < \rho_{\ell}$ | urcă la suprafață | $F_a = F_A - G$, în sus |
+
+Comparația densităților e cea mai rapidă cale de a ghici răspunsul înainte de
+calcul.
+
+---
+
+## 3. De reținut
+
+- $V$ din formula lui $F_A$ este **volumul dezlocuit**, adică volumul părții
+  **scufundate**, nu volumul întreg al corpului. Ele sunt egale doar când corpul
+  e cufundat de tot.
+- $\rho$ din formulă este densitatea **lichidului**, nu a corpului.
+- $F_A$ nu depinde de adâncime: un corp scufundat la $1\ \text{m}$ e împins la
+  fel ca la $10\ \text{m}$.
+- Un corp care plutește la suprafață dezlocuiește exact atâta lichid cât să-i
+  egaleze greutatea.
+- Legea merge la fel în gaze — de acolo baloanele și dirijabilele.
+- Volumele se trec în $\text{m}^3$:
+  $1\ \text{cm}^3 = 10^{-6}\ \text{m}^3$ și
+  $1\ \text{L} = 10^{-3}\ \text{m}^3$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un ghețar care plutește în mare are volumul de deasupra apei egal cu
+$V_1 = 150\ \text{m}^3$. Află volumul total al ghețarului. Se dau
+$\rho_{\text{apă de mare}} = 1030\ \text{kg/m}^3$ și
+$\rho_{\text{gheață}} = 900\ \text{kg/m}^3$.
+
+### Pasul 1 — Ce se dă
+
+- $V_1 = 150\ \text{m}^3$ — partea de deasupra apei;
+- $\rho_{\ell} = 1030\ \text{kg/m}^3$;
+- $\rho_{\text{gh}} = 900\ \text{kg/m}^3$.
+
+### Pasul 2 — Ce se cere
+
+Volumul total $V$ al ghețarului.
+
+### Pasul 3 — Ce condiție folosim
+
+Ghețarul **plutește**, deci greutatea lui este echilibrată de forța arhimedică:
+
+$$
+G = F_A
+$$
+
+$$
+\rho_{\text{gh}} \, g \, V = \rho_{\ell} \, g \, V_{\text{dezlocuit}}
+$$
+
+Accelerația gravitațională se simplifică:
+
+$$
+\rho_{\text{gh}} \, V = \rho_{\ell} \, V_{\text{dezlocuit}}
+$$
+
+### Pasul 4 — Volumul dezlocuit
+
+Volumul dezlocuit este partea **scufundată**, adică volumul total minus partea
+de deasupra:
+
+$$
+V_{\text{dezlocuit}} = V - V_1
+$$
+
+### Pasul 5 — Ecuația
+
+$$
+900 \, V = 1030 \, (V - 150)
+$$
+
+$$
+900 V = 1030 V - 154\,500
+$$
+
+$$
+130 V = 154\,500
+$$
+
+$$
+V = \frac{154\,500}{130} \approx 1188{,}5\ \text{m}^3
+$$
+
+### Pasul 6 — Verificarea
+
+Partea scufundată este:
+
+$$
+V - V_1 = 1188{,}5 - 150 = 1038{,}5\ \text{m}^3
+$$
+
+adică:
+
+$$
+\frac{1038{,}5}{1188{,}5} \approx 0{,}874 = 87{,}4\%
+$$
+
+din ghețar. Se potrivește și cu raportul densităților:
+$\dfrac{900}{1030} \approx 0{,}874$.
+
+Aproape $87\%$ din gheață stă sub apă — de aici zicala despre „vârful
+aisbergului", și primejdia lor pentru vapoare.
+
+### Răspuns
+
+$V \approx 1188{,}5\ \text{m}^3$.
+
+---
+
+:::note Ora următoare
+
+**[LP5 — Legea lui Arhimede](./15-lp-legea-lui-arhimede.mdx).** Trei probe, în
+total 36 de minute.
+
+:::
