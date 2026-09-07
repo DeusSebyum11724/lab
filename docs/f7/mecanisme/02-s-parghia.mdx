@@ -1,0 +1,153 @@
+---
+sidebar_position: 2
+sidebar_label: "S1 — Pârghia"
+slug: /f7/mecanisme/s1
+title: "S1 — Pârghia"
+description: "Suport de curs: legea pârghiilor, cele trei tipuri cu exemplele lor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S1 — Pârghia
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C1 — Pârghia. Tipuri de pârghii](./01-curs-parghia.mdx)**, strâns la un loc,
+și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi la
+**[LP1](./03-lp-parghia.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Legea pârghiilor | — | $F \cdot b_F = R \cdot b_R$ | — |
+| Forța activă | $F$ | $F = \dfrac{R \cdot b_R}{b_F}$ | newton, $\text{N}$ |
+| Brațul forței active | $b_F$ | $b_F = \dfrac{R \cdot b_R}{F}$ | metru, $\text{m}$ |
+| Lungimea unei pârghii de gradul I | $l$ | $l = b_F + b_R$ | metru, $\text{m}$ |
+
+---
+
+## 2. Cele trei tipuri, la un loc
+
+| Gradul | Ce e la mijloc | Exemple | Câștigă forță? |
+|---|---|---|---|
+| **I** | punctul de sprijin | balansoar, foarfecă, levier, cumpăna fântânii | uneori, după cum sunt brațele |
+| **II** | forța rezistentă | roabă, pedală de frână, clește de spart nuci | **întotdeauna** |
+| **III** | forța activă | pensetă, brațul omului, undița | **niciodată** — câștigă viteză |
+
+Pârghia de gradul III cere o forță **mai mare** decât cea de învins. În schimb,
+capătul ei se mișcă repede și pe o distanță mare — de asta e brațul omului
+făcut așa.
+
+---
+
+## 3. De reținut
+
+- Brațul se măsoară de la punctul de sprijin la **direcția** forței, pe
+  perpendiculară.
+- Brațele se trec **în metri**, sau amândouă în aceleași unități — în lege
+  contează doar raportul lor.
+- Câștigul de forță e plătit cu drum: capătul unde apeși parcurge o distanță mai
+  mare decât cel care ridică. Lucrul mecanic nu se micșorează.
+- Aceeași unealtă își poate schimba gradul, după cum o ții. Antebrațul e pârghie
+  de gradul III când ridici o greutate în palmă, dar de gradul I când stai în
+  mâini.
+- Legea pârghiilor **este** condiția echilibrului de rotație, scrisă pentru o
+  bară cu două forțe.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un om folosește o rangă cu lungimea $l = 3\ \text{m}$ pentru a învinge forța de
+rezistență a unui obiect greu pe care dorește să îl ridice. Unde trebuie să
+fixeze punctul de sprijin, dacă forța de rezistență are valoarea
+$R = 1{,}2\ \text{kN}$, iar omul acționează perpendicular cu o forță de
+$600\ \text{N}$?
+
+<FiguraManual
+  src="ro-ranga.png"
+  lat={338}
+  inalt={338}
+  latime={320}
+  eticheta="Un om apasă capătul unei rângi sprijinite pe un suport triunghiular, ridicând o ladă la celălalt capăt; dedesubt, schema simplificată a pârghiei"
+  legenda="Ranga: pârghie de gradul I."
+/>
+
+### Pasul 1 — Ce se dă
+
+- $l = 3\ \text{m}$;
+- $R = 1{,}2\ \text{kN} = 1200\ \text{N}$;
+- $F = 600\ \text{N}$.
+
+### Pasul 2 — Ce se cere
+
+Poziția punctului de sprijin, adică cele două brațe $b_F$ și $b_R$.
+
+### Pasul 3 — Ce relații avem
+
+Punctul de sprijin fiind între cele două forțe — pârghie de gradul I — brațele
+se adună la lungimea rangăi:
+
+$$
+b_F + b_R = l = 3\ \text{m}
+$$
+
+iar legea pârghiilor cere:
+
+$$
+F \cdot b_F = R \cdot b_R
+$$
+
+### Pasul 4 — Raportul brațelor
+
+$$
+600 \cdot b_F = 1200 \cdot b_R \quad\Longrightarrow\quad b_F = 2 \, b_R
+$$
+
+Brațul forței omului trebuie să fie de două ori mai lung — cum ne așteptam,
+fiindcă forța lui e de două ori mai mică.
+
+### Pasul 5 — Cele două brațe
+
+Înlocuim în prima relație:
+
+$$
+2 b_R + b_R = 3 \quad\Longrightarrow\quad 3 b_R = 3 \quad\Longrightarrow\quad b_R = 1\ \text{m}
+$$
+
+$$
+b_F = 2 \times 1 = 2\ \text{m}
+$$
+
+### Pasul 6 — Verificarea
+
+$$
+F \cdot b_F = 600 \times 2 = 1200\ \text{N} \cdot \text{m}
+$$
+
+$$
+R \cdot b_R = 1200 \times 1 = 1200\ \text{N} \cdot \text{m}
+$$
+
+Egale — deci pârghia e în echilibru.
+
+### Răspuns
+
+Punctul de sprijin se fixează la $1\ \text{m}$ de obiectul de ridicat, deci la
+$2\ \text{m}$ de capătul pe care apasă omul.
+
+---
+
+:::note Ora următoare
+
+**[LP1 — Pârghia](./03-lp-parghia.mdx).** Trei probe, în total 32 de minute.
+
+:::

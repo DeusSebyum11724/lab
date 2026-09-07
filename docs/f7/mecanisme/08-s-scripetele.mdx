@@ -1,0 +1,149 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Scripetele"
+slug: /f7/mecanisme/s3
+title: "S3 — Scripetele"
+description: "Suport de curs: formulele scripetelui fix și mobil, legătura cu lucrul mecanic și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Scripetele
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din **[C3 — Scripetele](./07-curs-scripetele.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-scripetele.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Felul scripetelui | Forța activă | Drumul forței active | Ce câștigi |
+|---|---|---|---|
+| **fix** | $F = R$ | $d_F = d_R$ | schimbi direcția |
+| **mobil** | $F = \dfrac{R}{2}$ | $d_F = 2 d_R$ | forța se înjumătățește |
+
+unde $R = G = m g$ este greutatea corpului de ridicat.
+
+Lucrul mecanic al forței active, în amândouă cazurile:
+
+$$
+L = F \cdot d_F
+$$
+
+---
+
+## 2. De ce nu se câștigă energie
+
+| Scripetele | $F$ | $d_F$ | $L = F \cdot d_F$ |
+|---|---|---|---|
+| fix | $R$ | $d$ | $R d$ |
+| mobil | $R/2$ | $2d$ | $R d$ |
+
+Același lucru mecanic. Mecanismul simplu **redistribuie** efortul între forță și
+drum; nu creează nimic.
+
+Asta e ideea care leagă toate cele trei mecanisme simple — pârghia, planul
+înclinat și scripetele.
+
+---
+
+## 3. De reținut
+
+- La scripetele fix, direcția forței active poate fi oricare: valoarea măsurată
+  nu se schimbă.
+- Un om atârnat de un fir nu poate trage mai tare decât **propria lui
+  greutate** — altfel se ridică el, nu greutatea.
+- La scripetele mobil, roata urcă odată cu greutatea; la cel fix, roata rămâne
+  pe loc. Ăsta e semnul după care le deosebești.
+- Firul se socotește inextensibil și de masă neglijabilă, iar frecarea din axă
+  se neglijează. Într-un scripete real, forța cerută e ceva mai mare.
+- Un scripete compus câștigă și forță, și comoditate — de aceea îl vezi la
+  macarale.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Pe un șantier, un constructor ridică o placă de beton cu masa de
+$100\ \text{kg}$ pe distanța de $5\ \text{m}$, folosind un **scripete mobil**.
+Se ia $g = 10\ \text{N/kg}$.
+
+**a)** Care este forța activă cu care a acționat constructorul?
+
+**b)** Câți metri din lungimea firului a tras constructorul?
+
+**c)** Ce lucru mecanic a efectuat forța activă? Dar cea rezistentă?
+
+### Pasul 1 — Ce se dă
+
+- $m = 100\ \text{kg}$;
+- $d_R = 5\ \text{m}$;
+- scripete mobil.
+
+### Pasul 2 — Forța rezistentă
+
+$$
+R = G = m g = 100 \times 10 = 1000\ \text{N}
+$$
+
+### Pasul 3 — Forța activă
+
+La scripetele mobil, la echilibru:
+
+$$
+F = \frac{R}{2} = \frac{1000}{2} = 500\ \text{N}
+$$
+
+### Pasul 4 — Lungimea firului tras
+
+La scripetele mobil, punctul de aplicație al forței active parcurge de două ori
+distanța pe care urcă sarcina:
+
+$$
+d_F = 2 \, d_R = 2 \times 5 = 10\ \text{m}
+$$
+
+### Pasul 5 — Lucrul mecanic al forței active
+
+$$
+L_F = F \cdot d_F = 500 \times 10 = 5000\ \text{J}
+$$
+
+### Pasul 6 — Lucrul mecanic al forței rezistente
+
+$$
+L_R = R \cdot d_R = 1000 \times 5 = 5000\ \text{J}
+$$
+
+### Pasul 7 — Verificarea
+
+Cele două ies **egale**. Așa și trebuie: fără frecări, tot ce dai se regăsește
+în ridicarea plăcii. Randamentul acestui scripete ideal ar fi:
+
+$$
+\eta = \frac{L_R}{L_F} = \frac{5000}{5000} = 1 = 100\%
+$$
+
+Într-un scripete adevărat, frecarea din axă și greutatea roții fac ca $L_F$ să
+fie ceva mai mare, deci randamentul ceva mai mic decât $100\%$.
+
+### Răspuns
+
+**a)** $F = 500\ \text{N}$; **b)** $10\ \text{m}$ de fir; **c)**
+$L_F = L_R = 5000\ \text{J}$.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Scripetele](./09-lp-scripetele.mdx).** Trei probe, în total 34 de
+minute.
+
+:::

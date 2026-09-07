@@ -1,0 +1,182 @@
+---
+sidebar_position: 3
+sidebar_label: "LP1 — Pârghia"
+slug: /f7/mecanisme/lp1
+title: "LP1 — Pârghia"
+description: "Lucrare practică: recunoașterea tipurilor de pârghii, pedala de frână și o balanță cu brațe inegale."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Pârghia
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C1 — Pârghia. Tipuri de pârghii](./01-curs-parghia.mdx)**, cu formulele din
+**[S1](./02-s-parghia.mdx)** la îndemână. Trei probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Ce fel de pârghie | — | 10 min |
+| 2 | Pedala de frână | ★ | 10 min |
+| 3 | Balanța cu brațe inegale | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Ce fel de pârghie
+
+— &nbsp;·&nbsp; **10 minute**
+
+Identifică pârghiile din imagine și precizează tipul lor. Atenție: **nu toate
+obiectele de mai jos sunt pârghii.**
+
+<FiguraManual
+  src="ro-tipuri-parghii.png"
+  lat={912}
+  inalt={254}
+  latime={620}
+  eticheta="Trei obiecte alăturate: o balanță cu două talere, un capsator roșu și un cuțit de bucătărie"
+  legenda="Tipuri de pârghii — și un intrus."
+/>
+
+Pentru fiecare, spune unde se află punctul de sprijin, forța activă și forța
+rezistentă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**Balanța cu talere — pârghie de gradul I.** Punctul de sprijin este axul de la
+mijlocul brațului. Cele două greutăți atârnă de o parte și de alta a lui, deci
+sprijinul e la mijloc. Brațele fiind egale, ea nu câștigă forță — și tocmai de
+asta e bună la cântărit: arată egalitatea, nu o falsifică.
+
+**Capsatorul — pârghie de gradul II.** Punctul de sprijin este balamaua din
+spate. Forța activă e apăsarea palmei, în față. Rezistența — capsa care trebuie
+împinsă în hârtie — se află **între** ele. Deci câștigă forță: apeși ușor, iar
+capsa trece prin zece foi.
+
+**Cuțitul — nu este o pârghie.** El este o **pană**, adică o adaptare a planului
+înclinat. Nu se rotește în jurul unui punct de sprijin; el desface materialul
+lateral, cu cât e mai ascuțit, cu atât mai ușor.
+
+*Ce se învață:* nu tot ce ușurează munca e pârghie. Întrebarea de control e
+mereu aceeași — **există un punct fix în jurul căruia se rotește?**
+
+</details>
+
+---
+
+## 2. Pedala de frână
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un șofer acționează pedala de frână cu o forță $F$, aplicată în punctul $A$.
+Tija pistonului din cilindrul de frână este articulată de brațul pedalei în
+punctul $B$, iar $B$ se află față de punctul de sprijin $O$ la **un sfert** din
+lungimea totală a brațului $OA$. Forța care apasă pistonul în cilindrul de frână
+este $R = 120\ \text{N}$.
+
+<FiguraManual
+  src="ro-pedala-frana.png"
+  lat={511}
+  inalt={336}
+  latime={430}
+  eticheta="Schema unei pedale de frână: brațul OA articulat în O, cu piciorul apăsând în A cu forța F; în punctul B, la un sfert de la O, tija pistonului împinge cu forța R"
+  legenda="Pedala de frână: pârghie de gradul II."
+/>
+
+**1.** Ce tip de pârghie este pedala de frână? Justifică.
+
+**2.** Află forța $F$ cu care a acționat șoferul.
+
+**3.** De câte ori a fost ușurat efortul lui?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Pârghie de gradul II.** Punctul de sprijin este articulația $O$; forța
+activă se aplică în $A$, la capăt; rezistența în $B$, **între** $O$ și $A$.
+
+**2.** Brațele sunt $b_F = OA$ și $b_R = OB = \dfrac{OA}{4}$. Din legea
+pârghiilor:
+
+$$
+F \cdot OA = R \cdot OB = R \cdot \frac{OA}{4}
+$$
+
+Simplificăm prin $OA$:
+
+$$
+F = \frac{R}{4} = \frac{120}{4} = 30\ \text{N}
+$$
+
+**3.** De **4 ori**: apasă cu $30\ \text{N}$ și obține $120\ \text{N}$ pe
+piston. Raportul e chiar raportul brațelor.
+
+*Observă că lungimea pedalei nu s-a folosit nicăieri* — s-a simplificat. Contează
+numai **raportul** dintre brațe, nu valorile lor.
+
+</details>
+
+---
+
+## 3. Balanța cu brațe inegale
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Un negustor necinstit folosește o balanță al cărei braț stâng are
+$b_1 = 25\ \text{cm}$, iar cel drept $b_2 = 20\ \text{cm}$. El pune marfa pe
+talerul din stânga și greutățile pe cel din dreapta. Se ia
+$g = 10\ \text{N/kg}$.
+
+**1.** Dacă pe talerul din dreapta pune greutăți de $1\ \text{kg}$, ce masă are
+de fapt marfa pe care o dă clientului?
+
+**2.** Cu cât e păgubit clientul, în procente?
+
+**3.** Cum ar putea clientul să prindă înșelăciunea, folosind aceeași balanță?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La echilibru, legea pârghiilor cere:
+
+$$
+G_{\text{marfă}} \cdot b_1 = G_{\text{greutăți}} \cdot b_2
+$$
+
+$$
+G_{\text{marfă}} = \frac{G_{\text{greutăți}} \cdot b_2}{b_1} = \frac{10 \times 20}{25} = 8\ \text{N}
+$$
+
+$$
+m_{\text{marfă}} = \frac{8}{10} = 0{,}8\ \text{kg}
+$$
+
+Clientul plătește pentru un kilogram și primește $800\ \text{g}$.
+
+**2.**
+
+$$
+\frac{1 - 0{,}8}{1} = 0{,}2 = 20\%
+$$
+
+Clientul e păgubit cu o cincime din marfă.
+
+**3.** **Cântărind a doua oară, cu talerele schimbate.** Dacă pune marfa în
+dreapta și greutățile în stânga, aceeași marfă va părea acum mai grea:
+
+$$
+G' = \frac{10 \times 25}{20} = 12{,}5\ \text{N} \quad\Longrightarrow\quad 1{,}25\ \text{kg}
+$$
+
+La o balanță cinstită, cele două cântăriri dau același rezultat. Dacă dau
+rezultate diferite, brațele nu sunt egale — și înșelăciunea e dovedită fără să
+fie nevoie de riglă.
+
+</details>

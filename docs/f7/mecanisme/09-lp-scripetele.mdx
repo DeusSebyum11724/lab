@@ -1,0 +1,210 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Scripetele"
+slug: /f7/mecanisme/lp3
+title: "LP3 — Scripetele"
+description: "Lucrare practică: patru montaje de scripeți comparate, doi copii care trag de un cablu și un scripete compus."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Scripetele
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C3 — Scripetele](./07-curs-scripetele.mdx)**, cu
+formulele din **[S3](./08-s-scripetele.mdx)** la îndemână. Trei probe; în total
+34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Patru montaje | — | 12 min |
+| 2 | Mihnea și Șerban | ★★ | 12 min |
+| 3 | Scripetele compus | ★ | 10 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$ și se neglijează frecările. Rezolvarea
+fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Patru montaje
+
+— &nbsp;·&nbsp; **12 minute**
+
+Ridici, pe rând, un corp cu greutatea $G = 100\ \text{N}$ cu fiecare dintre
+scripeții din imagine.
+
+<FiguraManual
+  src="ro-scripeti-set.png"
+  lat={904}
+  inalt={523}
+  latime={640}
+  eticheta="Patru montaje cu scripeți prinși de un tavan roșu: doi scripeți ficși, cu firul tras în jos, și doi scripeți mobili, cu firul tras în sus; de fiecare atârnă aceeași greutate albastră"
+  legenda="Patru montaje cu scripeți. Deosebirea e dacă roata stă pe loc sau urcă odată cu greutatea."
+/>
+
+**1.** Pentru fiecare montaj, spune dacă scripetele este **fix** sau **mobil**.
+
+**2.** Specifică valoarea forței active în fiecare caz.
+
+**3.** Distanța pe care se deplasează corpul este de $2\ \text{m}$. Care este
+distanța pe care se deplasează punctul de aplicație al forței active în fiecare
+situație?
+
+**4.** Calculează, pentru un scripete fix și pentru unul mobil, lucrul mecanic
+al forței active. Ce constați?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Semnul după care le deosebești: **roata urcă sau nu odată cu greutatea?**
+Dacă roata e prinsă de tavan, e **fixă**. Dacă atârnă de firul de care e legată
+greutatea, e **mobilă**.
+
+**2.**
+
+| Scripetele | Forța activă |
+|---|---|
+| fix | $F = R = 100\ \text{N}$ |
+| mobil | $F = \dfrac{R}{2} = 50\ \text{N}$ |
+
+**3.**
+
+| Scripetele | Drumul forței active |
+|---|---|
+| fix | $d_F = d_R = 2\ \text{m}$ |
+| mobil | $d_F = 2 d_R = 4\ \text{m}$ |
+
+**4.**
+
+$$
+L_{\text{fix}} = 100 \times 2 = 200\ \text{J}
+$$
+
+$$
+L_{\text{mobil}} = 50 \times 4 = 200\ \text{J}
+$$
+
+**Sunt egale.** Scripetele mobil îți ușurează brațele, dar te pune să tragi de
+două ori mai mult fir. Nici un mecanism simplu nu micșorează lucrul mecanic — el
+doar îl împarte altfel între forță și drum.
+
+</details>
+
+---
+
+## 2. Mihnea și Șerban
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Mihnea și Șerban trag de capetele unui cablu trecut peste un scripete atârnat de
+tavan. Masa lui Mihnea este de $60\ \text{kg}$, iar a lui Șerban de
+$50\ \text{kg}$. Șerban este sportiv și dezvoltă o forță musculară de **două
+ori** mai mare decât a lui Mihnea.
+
+**Care dintre ei îl poate ridica pe celălalt?**
+
+**1.** Ce fel de scripete este și ce relație există între tensiunile din cele
+două capete ale cablului?
+
+**2.** Cât cântărește fiecare?
+
+**3.** Cu ce forță maximă poate trage în jos fiecare, dacă stă pe podea?
+
+**4.** Răspunde la întrebarea din enunț și explică de ce forța musculară mai
+mare nu ajută.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Este un **scripete fix**: roata e prinsă de tavan. La un scripete fix,
+tensiunea este **aceeași** în tot cablul, deci fiecare copil e tras în sus cu
+exact forța cu care celălalt trage în jos.
+
+**2.**
+
+$$
+G_M = 60 \times 10 = 600\ \text{N} \qquad G_S = 50 \times 10 = 500\ \text{N}
+$$
+
+**3.** Ca să tragă în jos, fiecare are nevoie de un sprijin — podeaua. Atâta timp
+cât apasă pe podea, poate trage. În clipa în care ar trage mai tare decât
+propria lui greutate, **s-ar ridica el de la podea**, și n-ar mai avea de unde
+trage.
+
+Deci forța maximă utilă este propria greutate:
+
+$$
+F_{M,\max} = 600\ \text{N} \qquad F_{S,\max} = 500\ \text{N}
+$$
+
+**4.** **Mihnea îl poate ridica pe Șerban.** El poate trage cu până la
+$600\ \text{N}$, iar lui Șerban îi trebuie doar $500\ \text{N}$ ca să fie
+ridicat.
+
+Șerban, oricât de puternic ar fi, nu poate trage cu mai mult de $500\ \text{N}$
+înainte să se ridice el însuși de pe podea — iar lui Mihnea i-ar trebui
+$600\ \text{N}$.
+
+*Ce se învață:* la un asemenea montaj nu forța mușchilor hotărăște, ci
+**greutatea** celui care trage. De aceea, la tragerea de frânghie, echipa mai
+grea are un avantaj pe care antrenamentul nu-l poate acoperi.
+
+</details>
+
+---
+
+## 3. Scripetele compus
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un montaj este alcătuit dintr-un scripete **fix**, prins de tavan, și un
+scripete **mobil**, de care atârnă o ladă cu masa $m = 40\ \text{kg}$. Firul
+trece pe sub scripetele mobil, apoi peste cel fix, iar omul trage de capătul
+liber, în jos.
+
+**1.** Ce rol are fiecare dintre cei doi scripeți?
+
+**2.** Cu ce forță trebuie să tragă omul?
+
+**3.** Dacă lada trebuie ridicată cu $3\ \text{m}$, câți metri de fir trage
+omul?
+
+**4.** Ce lucru mecanic efectuează?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Scripetele mobil** înjumătățește forța: el e cel care aduce câștigul.
+**Scripetele fix** nu schimbă valoarea forței, ci numai **direcția** ei — omul
+poate trage în jos, ajutat de propria greutate, în loc să tragă în sus.
+
+**2.**
+
+$$
+R = G = m g = 40 \times 10 = 400\ \text{N}
+$$
+
+$$
+F = \frac{R}{2} = 200\ \text{N}
+$$
+
+**3.** Câștigul de forță vine de la scripetele mobil, deci firul tras e de două
+ori mai lung decât înălțimea de urcat:
+
+$$
+d_F = 2 \times 3 = 6\ \text{m}
+$$
+
+**4.**
+
+$$
+L = F \cdot d_F = 200 \times 6 = 1200\ \text{J}
+$$
+
+*Verificare:* $L_R = G \cdot h = 400 \times 3 = 1200\ \text{J}$. Aceeași
+valoare — cum trebuie, în lipsa frecărilor.
+
+</details>
