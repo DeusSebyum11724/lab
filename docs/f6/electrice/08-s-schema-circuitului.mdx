@@ -1,0 +1,164 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Schema unui circuit. Simbolurile normalizate"
+slug: /f6/electrice/s3
+title: "S3 — Schema unui circuit. Simbolurile normalizate"
+description: "Suport de curs: tabelul simbolurilor, cele trei reguli, etapele schematizării și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Schema unui circuit. Simbolurile normalizate
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Schema unui circuit. Simbolurile normalizate](./07-curs-schema-circuitului.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-schema-circuitului.mdx)**.
+
+:::
+
+---
+
+## 1. Tabelul simbolurilor
+
+<FiguraManual
+  src="h21-simboluri.png"
+  lat={1158}
+  inalt={839}
+  latime={620}
+  eticheta="Tabel cu fotografia și simbolul fiecărui dipol: pila, generatorul, firele de legătură, întrerupătorul deschis și închis, becul, motorul, dioda electroluminescentă, dioda și rezistorul"
+  legenda="Simbolurile normalizate ale dipolilor electrici."
+>
+  <Et x={137} y={41}  w={48}  h={16} corp={15} alinia="centru">Pila</Et>
+  <Et x={380} y={42}  w={118} h={16} corp={15} alinia="centru">Generatorul</Et>
+  <Et x={636} y={41}  w={164} h={16} corp={15} alinia="centru">Firele de legătură</Et>
+  <Et x={930} y={42}  w={134} h={19} corp={15} alinia="centru">Întrerupătorul</Et>
+  <Et x={903} y={306} w={74}  h={18} corp={14} alinia="centru">deschis</Et>
+  <Et x={1023} y={305} w={64} h={19} corp={14} alinia="centru">închis</Et>
+  <Et x={733} y={324} w={31}  h={13} corp={13} alinia="centru">sau</Et>
+  <Et x={126} y={464} w={70}  h={19} corp={15} alinia="centru">Becul</Et>
+  <Et x={400} y={464} w={78}  h={16} corp={15} alinia="centru">Motorul</Et>
+  <Et x={686} y={439} w={64}  h={17} corp={14} alinia="centru">Diodă</Et>
+  <Et x={596} y={463} w={248} h={20} corp={14} alinia="centru">electroluminescentă (LED)</Et>
+  <Et x={895} y={464} w={64}  h={16} corp={15} alinia="centru">Dioda</Et>
+  <Et x={1022} y={464} w={88} h={16} corp={15} alinia="centru">Rezistorul</Et>
+</FiguraManual>
+
+---
+
+## 2. Cele trei reguli și cele trei etape
+
+| Regula | De ce |
+|---|---|
+| rigla și creionul | liniile strâmbe fac schema greu de citit |
+| caută fiecare buclă | numărul buclelor este chiar ce deosebește circuitele |
+| păstrează ordinea și polaritățile | altfel schema înfățișează alt circuit |
+
+**Etapele:**
+
+1. se închipuie un **dreptunghi** pentru fiecare buclă;
+2. se așază pe el **simbolul** fiecărui dipol, în ordinea din montaj;
+3. se leagă simbolurile prin **linii drepte**.
+
+---
+
+## 3. Cum se recunoaște un circuit în serie
+
+Pui degetul pe o bornă a pilei și mergi de-a lungul firului. Dacă ajungi înapoi
+la cealaltă bornă **fără ca drumul să se despartă vreodată în două**, circuitul
+este în serie: are o singură buclă.
+
+**Greșeala care se face cel mai des:** se desenează pila la întâmplare, fără să
+se bage de seamă care bară e $+$ și care $-$. Bara **lungă și subțire** este
+$+$; cea **scurtă și groasă** este $-$.
+
+---
+
+## 4. De reținut
+
+- Simbolul becului este un cerc tăiat în **cruce**; al motorului, un cerc cu
+  litera $\text{M}$; al generatorului, un cerc cu litera $\text{G}$.
+- Întrerupătorul are **două** simboluri: unul deschis, cu linia ridicată, și
+  unul închis, cu linia lăsată.
+- Dioda lasă curentul să treacă numai într-un sens; vârful triunghiului arată
+  acel sens.
+- Schema se citește la fel de oricine. Aceasta este toată pricina pentru care
+  simbolurile sunt **normalizate**.
+
+---
+
+## 5. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un elev trebuie să facă schema unui montaj în care o pilă, un întrerupător, un
+bec și un motor sunt legate unul după altul, cu borna $-$ a pilei înspre
+întrerupător.
+
+Iată trei scheme propuse de trei elevi. Pentru fiecare, arată greșeala făcută.
+
+<FiguraManual
+  src="h21-scheme-gresite.png"
+  lat={815}
+  inalt={212}
+  latime={620}
+  eticheta="Trei scheme dreptunghiulare alăturate; prima are motorul lângă bornă, a doua are polaritățile pe dos, a treia are un cerc cu litera G în loc de M"
+  legenda="Cele trei scheme propuse."
+/>
+
+### Pasul 1 — Ce se dă
+
+Cerința: dipolii legați unul după altul, cu borna $-$ înspre întrerupător, deci
+borna $+$ înspre bec.
+
+### Pasul 2 — Ce se cere
+
+Greșeala din fiecare schemă.
+
+### Pasul 3 — Cum se caută greșeala
+
+Se trec toate trei prin aceeași listă scurtă:
+
+1. sunt bornele $+$ și $-$ la locul lor?
+2. este ordinea dipolilor cea cerută?
+3. sunt simbolurile cele adevărate?
+
+### Pasul 4 — Prima schemă
+
+Bornele sunt bune: $-$ în stânga, lângă întrerupător. Simbolurile sunt bune.
+
+Dar **ordinea dipolilor** e schimbată: după pilă vine motorul, iar becul e pus
+mai departe. Cerința spunea că borna $+$ trebuie legată la **bec**. Greșeala:
+**ordinea dipolilor**.
+
+### Pasul 5 — A doua schemă
+
+Ordinea e bună și simbolurile sunt bune. Dar pila e desenată cu $+$ în stânga și
+$-$ în dreapta, adică **întors**. Atunci întrerupătorul ajunge legat la borna
+$+$, nu la $-$. Greșeala: **polaritățile**.
+
+### Pasul 6 — A treia schemă
+
+Bornele sunt bune, ordinea e bună. Dar în locul motorului este desenat un cerc
+cu litera $\text{G}$, adică simbolul unui **generator**. Greșeala: **simbolul**.
+
+### Pasul 7 — Verificarea
+
+Fiecare schemă încalcă exact una dintre cele trei reguli — și niciuna nu se vede
+dacă privești numai forma dreptunghiulară. De aceea schema se citește pe rând:
+întâi bornele, apoi ordinea, apoi simbolurile.
+
+### Răspuns
+
+Prima schemă greșește **ordinea dipolilor**, a doua **polaritățile pilei**, a
+treia **simbolul motorului**.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Schema unui circuit. Simbolurile normalizate](./09-lp-schema-circuitului.mdx).**
+
+:::

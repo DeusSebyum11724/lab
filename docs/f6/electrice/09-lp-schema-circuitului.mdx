@@ -1,0 +1,189 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Schema unui circuit. Simbolurile normalizate"
+slug: /f6/electrice/lp3
+title: "LP3 — Schema unui circuit. Simbolurile normalizate"
+description: "Lucrare practică: recunoașterea simbolurilor, desenarea unei scheme, citirea unei scheme și montajul refăcut după desen."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Schema unui circuit. Simbolurile normalizate
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Schema unui circuit. Simbolurile normalizate](./07-curs-schema-circuitului.mdx)**,
+cu noțiunile din **[S3](./08-s-schema-circuitului.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Simbolurile | ★ | 10 min |
+| 2 | Desenează schema | ★★ | 15 min |
+| 3 | Refă montajul după schemă | ★★ | 10 min |
+| 4 | Trei scheme, trei greșeli | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Simbolurile
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Scrie ce dipol înfățișează fiecare simbol: un cerc tăiat în cruce; un
+cerc cu litera $\text{M}$; un cerc cu litera $\text{G}$; un dreptunghi gol.
+
+**2.** Cum se deosebește, pe simbolul pilei, borna $+$ de borna $-$?
+
+**3.** Câte simboluri are întrerupătorul și de ce?
+
+**4.** Ce înfățișează un triunghi cu vârful lipit de o bară?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cercul tăiat în cruce este **becul**; cercul cu $\text{M}$ este
+**motorul**; cercul cu $\text{G}$ este **generatorul**; dreptunghiul gol este
+**rezistorul**.
+
+**2.** Bara **lungă și subțire** este borna $+$; bara **scurtă și groasă** este
+borna $-$.
+
+**3.** Are **două**: unul cu linia ridicată — întrerupător **deschis** — și unul
+cu linia lăsată — întrerupător **închis**. Ele arată două stări deosebite ale
+aceluiași dipol, iar circuitul se poartă cu totul altfel în fiecare.
+
+**4.** Este simbolul **diodei**. Vârful triunghiului arată sensul în care ea
+lasă curentul să treacă.
+
+</details>
+
+---
+
+## 2. Desenează schema
+
+★★ &nbsp;·&nbsp; **15 minute**
+
+<FiguraManual
+  src="h21-serie-foto.png"
+  lat={858}
+  inalt={429}
+  latime={520}
+  eticheta="Fotografia unui montaj: o pilă, un întrerupător, un bec și un motor, legate unul după altul"
+  legenda="Montajul de schematizat."
+/>
+
+**1.** Numește dipolii din fotografie.
+
+**2.** Desenează schema normalizată a montajului, cu întrerupătorul deschis.
+
+**3.** Desenează apoi aceeași schemă cu întrerupătorul închis. Ce s-a schimbat?
+
+**4.** Câte bucle are circuitul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** O **pilă**, un **întrerupător**, un **bec** și un **motor**, legate prin
+**fire de legătură**.
+
+**2.** Se desenează un **dreptunghi** cu rigla. Pe una dintre laturi se pune
+simbolul pilei, cu borna $-$ înspre latura unde va veni întrerupătorul. Pe
+celelalte laturi se așază, în ordinea din fotografie, întrerupătorul (cu linia
+ridicată), motorul și becul. La urmă se leagă simbolurile prin linii drepte.
+
+**3.** Aceeași schemă, cu un singur lucru schimbat: simbolul întrerupătorului
+are acum linia **lăsată**. Tot restul rămâne neatins — și tocmai asta arată că
+un întrerupător nu mută nimic din loc, ci doar deschide sau închide bucla.
+
+**4.** Are **o singură buclă**: pornind de la o bornă a pilei, drumul nu se
+desparte niciodată în două. Este un circuit în serie.
+
+</details>
+
+---
+
+## 3. Refă montajul după schemă
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Un coleg îți dă numai schema, fără fotografie: un dreptunghi pe care sunt, în
+ordine, o pilă cu borna $+$ sus-stânga, un bec, un întrerupător închis și un
+rezistor.
+
+**1.** Ce piese ceri de la profesor?
+
+**2.** În ce ordine le legi?
+
+**3.** Ai nevoie să știi cum arată montajul lui ca să-l poți reface?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** O pilă, un bec, un întrerupător, un rezistor și **cinci** fire de
+legătură — câte unul între fiecare doi dipoli învecinați, plus cel care închide
+bucla.
+
+**2.** În ordinea din schemă: de la borna $+$ a pilei la bec, de la bec la
+întrerupător, de la întrerupător la rezistor, de la rezistor înapoi la borna
+$-$ a pilei.
+
+**3.** **Nu.** Acesta este chiar folosul schemei normalizate: ea cuprinde tot
+ce trebuie ca montajul să fie refăcut — dipolii, ordinea lor și polaritățile.
+Cum sunt așezate piesele pe masă și pe unde trec firele nu schimbă cu nimic
+circuitul.
+
+</details>
+
+---
+
+## 4. Trei scheme, trei greșeli
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Cerința era: dipolii legați unul după altul, borna $-$ a pilei legată la
+întrerupător, borna $+$ legată la bec.
+
+<FiguraManual
+  src="h21-scheme-gresite.png"
+  lat={815}
+  inalt={212}
+  latime={620}
+  eticheta="Trei scheme dreptunghiulare alăturate, fiecare cu o pilă, un întrerupător, un bec și un al patrulea dipol"
+  legenda="Cele trei scheme propuse de elevi."
+/>
+
+**1.** Pentru fiecare schemă, arată greșeala făcută.
+
+**2.** Care dintre cele trei reguli de desen a fost încălcată de fiecare dată?
+
+**3.** Un al patrulea elev spune că schema lui e bună fiindcă „arată la fel de
+frumos”. Ce îi răspunzi?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+- **Prima schemă**: după pilă vine motorul, iar becul e mai departe. Borna $+$
+  ajunge legată la motor, nu la bec. Greșeala este **ordinea dipolilor**.
+- **A doua schemă**: pila e desenată întors, cu $+$ în stânga. Întrerupătorul
+  ajunge legat la borna $+$, nu la $-$. Greșeala sunt **polaritățile**.
+- **A treia schemă**: în locul motorului stă un cerc cu litera $\text{G}$, adică
+  simbolul unui generator. Greșeala este **simbolul**.
+
+**2.** Toate trei încalcă regula a treia: *păstrează ordinea dipolilor și
+polaritățile* — prima ordinea, a doua polaritățile — iar a treia greșește chiar
+la simbol, adică la temelia schematizării normalizate.
+
+**3.** Că frumusețea desenului nu are nicio legătură cu adevărul lui. O schemă
+nu e o ilustrație, ci o **spunere exactă**: ea trebuie să îngăduie oricui să
+refacă montajul. Dacă simbolurile sau ordinea sunt greșite, cine o citește va
+face alt circuit — oricât de drepte ar fi liniile.
+
+</details>

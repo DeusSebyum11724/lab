@@ -1,5 +1,5 @@
 {
-  "label": "Fenomene electrice și magnetice",
+  "label": "Fenomene electrice",
   "position": 5,
-  "link": { "type": "generated-index", "description": "Magneți, electrizare, circuitul electric simplu" }
+  "link": { "type": "generated-index", "description": "Circuitul electric simplu, conductoare și izolatoare, schema unui circuit, legarea în serie și în derivație" }
 }

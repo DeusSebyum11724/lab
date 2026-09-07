@@ -1,0 +1,182 @@
+---
+sidebar_position: 7
+sidebar_label: "C3 — Schema unui circuit. Simbolurile normalizate"
+slug: /f6/electrice/c3
+title: "C3 — Schema unui circuit. Simbolurile normalizate"
+description: "Simbolurile normalizate ale dipolilor, cele trei reguli de desen, etapele schematizării și circuitul în serie cu o singură buclă."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Schema unui circuit. Simbolurile normalizate
+
+:::info Planul orei
+
+1. Introducere
+2. Simbolurile normalizate
+3. Cele trei reguli de desen
+4. Etapele schematizării
+5. Circuitul în serie
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Nu este ușor să recunoști un circuit electric după o fotografie. Cum se poate
+înfățișa un circuit cu ajutorul simbolurilor normalizate?**
+
+Se face un circuit cu dipolii legați unul după altul, ținând seama de aceste
+cerințe:
+
+- borna $-$ a pilei este legată la întrerupător;
+- borna $+$ a pilei este legată la bec.
+
+**1.** Numește fiecare dipol folosit și scrie-i simbolul.
+
+**2.** Fă schema montajului cu întrerupătorul deschis, apoi cu întrerupătorul
+închis.
+
+**3.** De ce se poate spune că dipolii sunt legați în serie?
+
+**4.** Care este folosul schematizării normalizate?
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+<FiguraManual
+  src="h21-serie-foto.png"
+  lat={858}
+  inalt={429}
+  latime={520}
+  eticheta="Fotografia unui montaj: o pilă, un întrerupător, un bec și un motor, legate unul după altul cu fire negre și roșii"
+  legenda="Circuit în serie."
+/>
+
+---
+
+## 2. Simbolurile normalizate
+
+Ca să nu fie nevoie să desenăm fotografii, fiecare dipol are un **simbol**
+înțeles la fel peste tot.
+
+<FiguraManual
+  src="h21-simboluri.png"
+  lat={1158}
+  inalt={839}
+  latime={620}
+  eticheta="Tabel cu fotografia și simbolul fiecărui dipol: pila, generatorul, firele de legătură, întrerupătorul deschis și închis, becul, motorul, dioda electroluminescentă, dioda și rezistorul"
+  legenda="Simbolurile normalizate ale dipolilor electrici."
+>
+  <Et x={137} y={41}  w={48}  h={16} corp={15} alinia="centru">Pila</Et>
+  <Et x={380} y={42}  w={118} h={16} corp={15} alinia="centru">Generatorul</Et>
+  <Et x={636} y={41}  w={164} h={16} corp={15} alinia="centru">Firele de legătură</Et>
+  <Et x={930} y={42}  w={134} h={19} corp={15} alinia="centru">Întrerupătorul</Et>
+  <Et x={903} y={306} w={74}  h={18} corp={14} alinia="centru">deschis</Et>
+  <Et x={1023} y={305} w={64} h={19} corp={14} alinia="centru">închis</Et>
+  <Et x={733} y={324} w={31}  h={13} corp={13} alinia="centru">sau</Et>
+  <Et x={126} y={464} w={70}  h={19} corp={15} alinia="centru">Becul</Et>
+  <Et x={400} y={464} w={78}  h={16} corp={15} alinia="centru">Motorul</Et>
+  <Et x={686} y={439} w={64}  h={17} corp={14} alinia="centru">Diodă</Et>
+  <Et x={596} y={463} w={248} h={20} corp={14} alinia="centru">electroluminescentă (LED)</Et>
+  <Et x={895} y={464} w={64}  h={16} corp={15} alinia="centru">Dioda</Et>
+  <Et x={1022} y={464} w={88} h={16} corp={15} alinia="centru">Rezistorul</Et>
+</FiguraManual>
+
+Ia seama la pilă: bara **lungă și subțire** este borna $+$, iar cea **scurtă și
+groasă** este borna $-$. Ele nu se pot pune la întâmplare.
+
+---
+
+## 3. Cele trei reguli de desen
+
+:::tip De reținut
+
+1. Se lucrează cu **rigla** și cu **creionul**.
+2. Se caută **fiecare buclă** a circuitului.
+3. Se păstrează **ordinea dipolilor** și **polaritățile**.
+
+:::
+
+Regula a treia este cea încălcată cel mai des. O schemă în care becul și
+motorul își schimbă locurile, sau în care $+$ și $-$ sunt puse pe dos, nu mai
+înfățișează circuitul din fața ta, ci altul.
+
+---
+
+## 4. Etapele schematizării
+
+<FiguraManual
+  src="h21-etape-schema.png"
+  lat={265}
+  inalt={265}
+  latime={280}
+  eticheta="Două desene: sus, un dreptunghi punctat gol; jos, același dreptunghi cu simbolurile pilei, becului și întrerupătorului așezate pe laturile lui"
+  legenda="Etapele schematizării."
+/>
+
+- **a.** Se închipuie un **dreptunghi** care să înfățișeze fiecare buclă a
+  circuitului.
+- **b.** Se așază pe dreptunghi simbolul fiecărui dipol, în ordinea din montaj,
+  apoi se leagă simbolurile prin linii drepte.
+
+Schema iese astfel curată și limpede, iar oricine o citește reface montajul
+fără să-l fi văzut.
+
+---
+
+## 5. Circuitul în serie
+
+:::danger Definiția 1
+
+Un **circuit în serie** este un circuit care cuprinde **o singură buclă**.
+Dipolii sunt legați unul după altul.
+
+:::
+
+În montajul de la începutul orei, pornind de la borna $-$ a pilei și mergând tot
+înainte, treci prin întrerupător, prin motor, prin bec și te întorci la borna
+$+$. Nicăieri drumul nu se desparte în două: este o singură buclă, deci un
+circuit în serie.
+
+Când întrerupătorul este **deschis**, bucla e ruptă și niciun receptor nu mai
+funcționează.
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.** Dipolii folosiți sunt: **pila**, **întrerupătorul**, **becul** și
+**motorul**, legate prin **fire de legătură**. Simbolurile lor sunt cele din
+tabelul de mai sus: două bare inegale pentru pilă, o linie ruptă pentru
+întrerupătorul deschis, un cerc tăiat în cruce pentru bec și un cerc cu litera
+$\text{M}$ pentru motor.
+
+**2.** Schema este un **dreptunghi**. Pe una dintre laturi se pune pila, cu
+borna $-$ înspre întrerupător și borna $+$ înspre bec; pe celelalte laturi, în
+ordine, întrerupătorul, motorul și becul. Cele două scheme — cu întrerupătorul
+deschis și cu el închis — se deosebesc numai prin simbolul întrerupătorului.
+
+**3.** Fiindcă circuitul are **o singură buclă**: pornind de la o bornă a pilei
+și mergând înainte, treci o singură dată prin fiecare dipol și te întorci la
+cealaltă bornă, fără ca drumul să se despartă vreodată.
+
+**4.** Folosul este că schema **spune același lucru pentru toată lumea**. O
+fotografie se poate citi greșit — fire încrucișate, dipoli ascunși unul după
+altul. O schemă normalizată, desenată cu rigla, arată limpede câte bucle sunt,
+ce dipoli cuprind și în ce ordine.
+
+---
+
+:::note Ora următoare
+
+**LP3 — Schema unui circuit. Simbolurile normalizate.** Patru probe:
+simbolurile, cele trei scheme greșite, schema unui montaj și citirea unei
+scheme.
+
+Înainte de ea, treci prin
+**[S3 — Schema unui circuit. Simbolurile normalizate](./08-s-schema-circuitului.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

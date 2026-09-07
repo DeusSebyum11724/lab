@@ -1,0 +1,146 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Circuitul în serie și circuitul cu derivație"
+slug: /f6/electrice/s4
+title: "S4 — Circuitul în serie și circuitul cu derivație"
+description: "Suport de curs: tabelul care deosebește cele două legări, semnul buclelor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Circuitul în serie și circuitul cu derivație
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Circuitul în serie și circuitul cu derivație](./10-curs-serie-si-derivatie.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP4](./12-lp-serie-si-derivatie.mdx)**.
+
+:::
+
+---
+
+## 1. Tabelul care le deosebește
+
+| | În serie | În derivație |
+|---|---|---|
+| **Cum sunt legați dipolii** | unul după altul | fiecare pe bucla lui |
+| **Numărul de bucle** | una singură | mai multe |
+| **Dacă un dipol se strică** | niciunul nu mai funcționează | ceilalți funcționează mai departe |
+| **Dipolii sunt** | dependenți | independenți |
+| **Strălucirea a două becuri** | mai slabă | mai puternică |
+
+---
+
+## 2. Semnul după care se recunosc
+
+Pui degetul pe o bornă a generatorului și mergi de-a lungul firului.
+
+- Dacă drumul **nu se desparte** niciodată, circuitul este **în serie**.
+- Dacă ajungi într-un punct unde firul **se desparte în două**, circuitul are
+  **derivație**.
+
+Punctul acela — unde firul se desparte sau se adună — este cheia. Numărul
+buclelor, nu strălucirea becurilor, este semnul după care se hotărăște.
+
+**Greșeala care se face cel mai des:** se judecă după cum sunt așezate piesele
+pe masă. Două becuri puse unul lângă altul pot fi legate în serie, iar două puse
+departe unul de altul pot fi în derivație. Contează numai **drumul firelor**.
+
+---
+
+## 3. De reținut
+
+- Într-un circuit în serie, bucla ruptă este **singura**. De aceea totul se
+  oprește.
+- Într-un circuit cu derivație, celelalte bucle rămân **închise**. De aceea
+  restul merge mai departe.
+- În derivație, fiecare bec este legat **de-a dreptul** la generator; de aceea
+  luminează mai tare.
+- Aparatele dintr-o casă sunt legate **în derivație**, tocmai fiindcă trebuie să
+  poată fi pornite și oprite fiecare deosebit.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Două becuri sunt legate la aceeași pilă. Un elev deșurubează unul dintre ele.
+
+<FiguraManual
+  src="h22-desurubata.png"
+  lat={428}
+  inalt={286}
+  latime={400}
+  eticheta="Două becuri legate la o pilă; unul dintre becuri a fost deșurubat și scos, iar celălalt luminează"
+  legenda="Unul dintre becuri a fost deșurubat."
+/>
+
+**1.** Al doilea bec luminează mai departe. Cum sunt legate cele două becuri?
+
+**2.** Câte bucle are circuitul? Arată drumul curentului.
+
+**3.** Ce s-ar fi întâmplat dacă ele ar fi fost legate altfel?
+
+### Pasul 1 — Ce se dă
+
+Două becuri la aceeași pilă și o singură constatare: unul deșurubat, celălalt
+luminează.
+
+### Pasul 2 — Ce se cere
+
+Felul legării, numărul buclelor și ce s-ar fi întâmplat în celălalt caz.
+
+### Pasul 3 — Ce folosim
+
+Regula care deosebește cele două legări:
+
+| Dacă un dipol se strică | atunci legarea este |
+|---|---|
+| totul se oprește | în serie |
+| restul merge mai departe | în derivație |
+
+### Pasul 4 — Răspunsul la prima întrebare
+
+Al doilea bec luminează mai departe, deci becurile sunt legate **în derivație**.
+
+Nu era nevoie să ne uităm la fire: constatarea singură ajunge, fiindcă cele două
+legări se poartă altfel tocmai la această probă.
+
+### Pasul 5 — Buclele și drumul curentului
+
+Circuitul are **două bucle**, câte una pentru fiecare bec:
+
+- **bucla 1**: de la borna $+$ a pilei, prin firul comun, până la punctul unde
+  firul se desparte, apoi prin becul întâi și înapoi la borna $-$;
+- **bucla 2**: același drum până la punctul de despărțire, apoi prin becul al
+  doilea și înapoi la borna $-$.
+
+Deșurubarea unui bec rupe **numai bucla lui**. Cealaltă rămâne închisă, iar
+curentul trece prin ea.
+
+### Pasul 6 — Ce s-ar fi întâmplat în serie
+
+Dacă becurile ar fi fost legate în serie, circuitul ar fi avut **o singură
+buclă**, iar aceea ar fi fost ruptă de deșurubare. Al doilea bec s-ar fi
+**stins** și el, deși nu i se stricase nimic.
+
+*Verificare*: la aceeași pilă, becurile din montajul cu derivație luminează și
+**mai tare** decât cele legate în serie, fiindcă fiecare e legat de-a dreptul la
+pilă.
+
+### Răspuns
+
+Becurile sunt legate **în derivație**, circuitul are **două bucle**, iar
+deșurubarea unuia rupe numai bucla lui. Legate în serie, deșurubarea unuia le-ar
+fi stins pe amândouă.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Circuitul în serie și circuitul cu derivație](./12-lp-serie-si-derivatie.mdx).**
+
+:::
