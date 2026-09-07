@@ -1,0 +1,244 @@
+---
+sidebar_position: 12
+sidebar_label: "LP4 — Planul înclinat"
+slug: /f7/marimi/lp4
+title: "LP4 — Planul înclinat"
+description: "Lucrare practică: componentele greutății pe pantă, o ladă trasă cu firul și un sistem de două corpuri legate peste scripete."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP4 — Planul înclinat
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C4 — Mișcarea pe plan înclinat. Descompunerea unei forțe](./10-curs-plan-inclinat.mdx)**,
+cu formulele din **[S4](./11-s-plan-inclinat.mdx)** la îndemână. Trei probe; în
+total 36 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Componentele greutății pe pantă | — | 10 min |
+| 2 | Lada trasă cu firul | ★ | 12 min |
+| 3 | Două corpuri legate peste scripete | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Componentele greutății pe pantă
+
+— &nbsp;·&nbsp; **10 minute**
+
+Un corp cu masa $m = 6\ \text{kg}$ stă pe un plan înclinat cu lungimea
+$l = 10\ \text{m}$ și înălțimea $h = 6\ \text{m}$.
+
+**1.** Desenează planul și forțele care acționează asupra corpului.
+
+**2.** Calculează baza planului, apoi componentele $G_t$ și $G_n$ ale greutății.
+
+**3.** Ce forță ar trebui să tragă corpul în sus pe plan, uniform, dacă frecarea
+este neglijabilă? Compar-o cu greutatea corpului.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Pe corp acționează trei forțe: **greutatea** $\vec{G}$, verticală, în
+jos; **reacțiunea normală** $\vec{N}$, perpendiculară pe plan, dinspre plan spre
+corp; **forța de tracțiune** $\vec{F}$, de-a lungul planului, în sus. Greutatea
+se descompune punctat în $\vec{G}_t$ și $\vec{G}_n$.
+
+**2.** Greutatea corpului:
+
+$$
+G = m \cdot g = 6 \times 10 = 60\ \text{N}
+$$
+
+Baza planului:
+
+$$
+b = \sqrt{l^2 - h^2} = \sqrt{100 - 36} = \sqrt{64} = 8\ \text{m}
+$$
+
+Componentele:
+
+$$
+G_t = \frac{G h}{l} = \frac{60 \times 6}{10} = 36\ \text{N}
+$$
+
+$$
+G_n = \frac{G b}{l} = \frac{60 \times 8}{10} = 48\ \text{N}
+$$
+
+**3.** Fără frecare, $F = G_t = 36\ \text{N}$. Este mai puțin decât greutatea
+($60\ \text{N}$): pe pantă tragi cu ceva mai mult de jumătate din cât ar cere
+ridicarea pe verticală.
+
+*Verificare:* $36^2 + 48^2 = 1296 + 2304 = 3600 = 60^2$. Componentele sunt
+corecte.
+
+</details>
+
+---
+
+## 2. Lada trasă cu firul
+
+★ &nbsp;·&nbsp; **12 minute**
+
+Cezar urcă o ladă de $5\ \text{kg}$ pe o rampă cu lungimea de $5\ \text{m}$ și
+înălțimea de $3\ \text{m}$, acționând asupra ei printr-un fir inextensibil și de
+masă neglijabilă. Forța de frecare exercitată asupra lăzii reprezintă $2\%$ din
+greutatea ei. Lada este trasă uniform.
+
+**1.** Află forța de tensiune din fir.
+
+**2.** Află raportul dintre forța de frecare și reacțiunea normală, $F_f / N$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Greutatea lăzii:
+
+$$
+G = m \cdot g = 5 \times 10 = 50\ \text{N}
+$$
+
+Forța de frecare, $2\%$ din greutate:
+
+$$
+F_f = \frac{2}{100} \times 50 = 1\ \text{N}
+$$
+
+Componenta tangențială a greutății:
+
+$$
+G_t = \frac{G h}{l} = \frac{50 \times 3}{5} = 30\ \text{N}
+$$
+
+Lada urcă **uniform**, deci firul trebuie să învingă și componenta tangențială,
+și frecarea:
+
+$$
+T = G_t + F_f = 30 + 1 = 31\ \text{N}
+$$
+
+**2.** Baza rampei:
+
+$$
+b = \sqrt{5^2 - 3^2} = \sqrt{16} = 4\ \text{m}
+$$
+
+Componenta normală, egală cu reacțiunea normală:
+
+$$
+N = G_n = \frac{G b}{l} = \frac{50 \times 4}{5} = 40\ \text{N}
+$$
+
+Raportul cerut:
+
+$$
+\frac{F_f}{N} = \frac{1}{40} = 0{,}025
+$$
+
+Raportul ăsta nu depinde de cât de grea e lada, ci numai de cele două suprafețe
+care se freacă între ele.
+
+</details>
+
+---
+
+## 3. Două corpuri legate peste scripete
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Corpul $1$ se află pe un plan înclinat și este legat printr-un fir trecut peste
+un scripete de corpul $2$, care atârnă liber.
+
+<FiguraManual
+  src="ro-doua-corpuri.png"
+  lat={433}
+  inalt={393}
+  latime={400}
+  eticheta="Un corp galben numit 1 stă pe un plan înclinat; de el pleacă un fir care trece peste un scripete din vârful planului și susține, atârnat, corpul portocaliu numit 2"
+  legenda="Cele două corpuri legate prin firul trecut peste scripete."
+/>
+
+**1.** Presupunem întâi că cele două corpuri au **aceeași masă** și că între
+corpul $1$ și plan **nu există frecare**. Poate corpul $2$ să îl ridice pe
+corpul $1$? Justifică răspunsul.
+
+**2.** Acum se dă $m_2 = 10\ \text{kg}$, iar forța de frecare dintre corpul $1$
+și plan este $F_f = 60\ \text{N}$. Sistemul este în **repaus**. Află tensiunea
+din fir, apoi componenta tangențială a greutății corpului $1$.
+
+**3.** Lungimea planului este $l = 8\ \text{m}$ și înălțimea lui
+$h = 4\ \text{m}$. Află masa corpului $1$.
+
+**4.** Află reacțiunea normală a planului.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Da.** Corpul $2$ atârnă liber, deci firul e tras în jos cu toată
+greutatea lui: $T = G_2 = m g$. Corpul $1$ e ținut pe plan doar de componenta
+tangențială a greutății sale:
+
+$$
+G_{t1} = \frac{G_1 h}{l} = m g \cdot \frac{h}{l}
+$$
+
+Cum $h < l$ la orice plan înclinat, raportul $h/l$ este subunitar, deci
+$G_{t1} < G_2$. Firul trage mai tare decât ține panta, iar corpul $1$ urcă.
+
+Tocmai de asta e mai ușor să urci un corp pe pantă decât pe verticală: pe
+verticală ar fi trebuit să înfrunți greutatea întreagă.
+
+**2.** Corpul $2$ atârnă și stă pe loc, deci tensiunea îi echilibrează
+greutatea:
+
+$$
+T = G_2 = m_2 \cdot g = 10 \times 10 = 100\ \text{N}
+$$
+
+Corpul $1$ stă și el pe loc. De-a lungul planului acționează asupra lui:
+tensiunea $T$, în sus pe pantă; componenta tangențială $G_{t1}$, în jos pe
+pantă; forța de frecare $F_f$, care se opune tendinței de mișcare, deci tot în
+jos pe pantă:
+
+$$
+T = G_{t1} + F_f
+$$
+
+$$
+G_{t1} = T - F_f = 100 - 60 = 40\ \text{N}
+$$
+
+**3.** Din formula componentei tangențiale:
+
+$$
+G_{t1} = \frac{G_1 h}{l} \quad\Longrightarrow\quad G_1 = \frac{G_{t1} \cdot l}{h} = \frac{40 \times 8}{4} = 80\ \text{N}
+$$
+
+$$
+m_1 = \frac{G_1}{g} = \frac{80}{10} = 8\ \text{kg}
+$$
+
+**4.** Baza planului:
+
+$$
+b = \sqrt{l^2 - h^2} = \sqrt{64 - 16} = \sqrt{48} \approx 6{,}93\ \text{m}
+$$
+
+$$
+N = G_{n1} = \frac{G_1 b}{l} = \frac{80 \times 6{,}93}{8} \approx 69{,}3\ \text{N}
+$$
+
+*Verificare:* $G_{t1}^2 + G_{n1}^2 \approx 40^2 + 69{,}3^2 = 1600 + 4802 = 6402$,
+iar $G_1^2 = 80^2 = 6400$. Diferența vine numai din rotunjirea lui
+$\sqrt{48}$ — deci calculul e bun.
+
+</details>

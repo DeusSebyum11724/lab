@@ -1,0 +1,285 @@
+---
+sidebar_position: 10
+sidebar_label: "C4 — Planul înclinat. Descompunerea unei forțe"
+slug: /f7/marimi/c4
+title: "C4 — Mișcarea pe plan înclinat. Descompunerea unei forțe"
+description: "Elementele planului înclinat, descompunerea unui vector după două direcții perpendiculare și componentele greutății pe plan."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C4 — Mișcarea pe plan înclinat. Descompunerea unei forțe
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Elementele planului înclinat
+3. Forțele care acționează asupra corpului
+4. Descompunerea unui vector
+5. Componentele greutății
+6. Condiția de mișcare rectilinie uniformă
+7. Descompunerea după două direcții perpendiculare
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Poți să ajungi la aceeași înălțime pe munte urmând oricare dintre cele
+două trasee? Care dintre variante este mai accesibilă? De ce crezi că este așa?
+
+<FiguraManual
+  src="ro-trasee-montane.png"
+  lat={926}
+  inalt={310}
+  latime={680}
+  eticheta="Stânga: un alpinist urcă un perete stâncos aproape vertical. Dreapta: un drumeț urcă pe o potecă lină prin pădure"
+  legenda="Două trasee montane. Amândouă duc sus, dar nu cu același efort și nu în același timp."
+/>
+
+**2.** De ce este utilă calea ferată din imagine?
+
+<FiguraManual
+  src="ro-funicular.png"
+  lat={452}
+  inalt={308}
+  latime={340}
+  eticheta="Un vagon de funicular urcă pe o cale ferată înclinată, tăiată în coasta unui deal împădurit"
+  legenda="Funicular. Vagonul urcă pe o pantă, nu pe verticală."
+/>
+
+**3.** Ce forțe trebuie să învingă omul în urcarea lăzii?
+
+<FiguraManual
+  src="ro-lada-rampa.png"
+  lat={468}
+  inalt={308}
+  latime={340}
+  eticheta="Un om împinge o ladă mare de lemn în sus pe o pantă de piatră"
+  legenda="Ladă pe rampă. Omul împinge de-a lungul pantei, nu în sus pe verticală."
+/>
+
+---
+
+## 2. Elementele planului înclinat
+
+În toate cele trei imagini se folosește un **plan înclinat**. În foarte multe
+situații practice este mai ușor să folosim un plan înclinat pentru a urca un
+corp la o anumită înălțime, decât să îl ridicăm direct pe verticală. De
+asemenea, este comod, în alte situații, să lăsăm corpul să alunece liber pe o
+pantă, fără să fie nevoie să acționăm asupra lui cu vreo forță.
+
+:::danger Definiția 1
+
+**Planul înclinat** este o suprafață care formează un unghi ascuțit cu
+orizontala.
+
+:::
+
+Planul înclinat se reprezintă, de obicei, ca **ipotenuza unui triunghi
+dreptunghic**.
+
+<FiguraManual
+  src="ro-plan-inclinat.png"
+  lat={433}
+  inalt={360}
+  latime={430}
+  eticheta="Un triunghi dreptunghic ABC cu unghiul drept în B; ipotenuza AC este lungimea planului, cateta verticală BC este înălțimea, cateta orizontală AB este baza, iar unghiul din A este unghiul planului"
+  legenda="Elementele planului înclinat: lungimea l = AC, înălțimea h = BC, baza b = AB și unghiul planului α."
+/>
+
+| Elementul | Notația | Ce este pe desen |
+|---|---|---|
+| lungimea planului | $l$ | ipotenuza $AC$ |
+| înălțimea planului | $h$ | cateta verticală $BC$ |
+| baza planului | $b$ | cateta orizontală $AB$ |
+| unghiul planului | $\alpha$ | unghiul din $A$ |
+
+Cele trei laturi sunt legate prin teorema lui Pitagora:
+
+$$
+l^2 = h^2 + b^2 \qquad\text{deci}\qquad b = \sqrt{l^2 - h^2}
+$$
+
+---
+
+## 3. Forțele care acționează asupra corpului
+
+Considerăm un corp de greutate $G$ pe care dorim să îl urcăm **uniform** pe
+planul înclinat, și reprezentăm toate forțele care acționează asupra lui:
+**greutatea** $\vec{G}$, **forța de tracțiune** $\vec{F}$ și **reacțiunea
+normală** $\vec{N}$.
+
+<FiguraManual
+  src="ro-forte-plan.png"
+  lat={448}
+  inalt={345}
+  latime={430}
+  eticheta="Un corp așezat pe un plan înclinat, cu greutatea G îndreptată vertical în jos, reacțiunea normală N perpendiculară pe plan și forța de tracțiune F de-a lungul planului, în sus"
+  legenda="Reprezentarea forțelor care acționează asupra unui corp aflat pe planul înclinat."
+/>
+
+Mișcarea corpului fiind rectilinie și uniformă înseamnă, conform principiului
+inerției, că rezultanta tuturor forțelor care acționează asupra lui trebuie să
+fie **nulă**:
+
+$$
+\vec{R} = \vec{G} + \vec{N} + \vec{F} = \vec{0}
+$$
+
+Necazul e că cele trei forțe au trei direcții diferite. Ne trebuie o cale de a
+le aduce pe **aceleași** direcții.
+
+---
+
+## 4. Descompunerea unui vector
+
+Rezultanta a două forțe concurente se găsește cu regula paralelogramului: ea
+este diagonala paralelogramului format cu cele două forțe drept laturi.
+
+Dacă privim regula de compunere **în sens invers**, putem considera că diagonala
+paralelogramului provine din adunarea a doi vectori, numiți **componente**,
+orientați pe direcțiile celor două laturi și care au origine comună cu
+diagonala.
+
+<FiguraManual
+  src="ro-componente-vector.png"
+  lat={390}
+  inalt={325}
+  latime={380}
+  eticheta="Un paralelogram OACB; vectorul c este diagonala OC, iar vectorii a și b sunt cele două laturi care pleacă din O"
+  legenda="Componentele unui vector. Vectorul c se scrie ca sumă a componentelor sale a și b, pe direcțiile OA și OB."
+/>
+
+:::danger Definiția 2
+
+Operația inversă compunerii, prin care un vector este înlocuit cu doi vectori
+așezați pe două direcții date, se numește **descompunerea vectorului**. Cei doi
+vectori se numesc **componentele** lui pe acele direcții.
+
+:::
+
+---
+
+## 5. Componentele greutății
+
+În cazul corpului așezat pe un plan înclinat, este convenabil să descompunem
+greutatea după **două direcții perpendiculare** între ele:
+
+- direcția mișcării, **paralelă** cu planul înclinat;
+- direcția **perpendiculară** pe planul înclinat.
+
+**Cum procedezi.** Pe cele două direcții, trasate punctat prin originea
+greutății, se duc din vârful greutății perpendicularele, reconstituind astfel
+paralelogramul — care acum este **dreptunghi**, deoarece direcțiile formează un
+unghi drept.
+
+<FiguraManual
+  src="ro-componentele-greutatii.png"
+  lat={405}
+  inalt={335}
+  latime={420}
+  eticheta="Corpul de pe planul înclinat, cu greutatea G descompusă în componenta tangențială Gt, paralelă cu planul, și componenta normală Gn, perpendiculară pe plan; punctate, laturile dreptunghiului"
+  legenda="Componentele greutății pe planul înclinat: Gₜ de-a lungul planului, Gₙ perpendicular pe el."
+/>
+
+Greutatea, fiind diagonala dreptunghiului, este suma vectorială a celor doi
+vectori care au aceeași origine cu ea:
+
+$$
+\vec{G} = \vec{G}_t + \vec{G}_n
+$$
+
+| Componenta | Notația | Direcția |
+|---|---|---|
+| greutatea tangențială | $G_t$ | paralelă cu planul înclinat |
+| greutatea normală | $G_n$ | perpendiculară pe plan |
+
+**Cât valorează fiecare.** Triunghiul componentelor greutății este **asemenea**
+cu triunghiul planului înclinat: laturile lor sunt două câte două
+perpendiculare. Din asemănare:
+
+$$
+\frac{G_t}{h} = \frac{G}{l} \qquad\text{și}\qquad \frac{G_n}{b} = \frac{G}{l}
+$$
+
+de unde:
+
+$$
+G_t = \frac{G \cdot h}{l} \qquad\qquad G_n = \frac{G \cdot b}{l}
+$$
+
+unde $b = \sqrt{l^2 - h^2}$ este baza planului.
+
+:::tip De reținut
+
+Cu cât planul e mai lin (adică $h$ mic față de $l$), cu atât $G_t$ e mai mică
+— deci cu atât e mai ușor de urcat corpul. Asta e răspunsul la prima întrebare
+a orei: poteca lungă cere o forță mai mică decât peretele vertical.
+
+:::
+
+---
+
+## 6. Condiția de mișcare rectilinie uniformă
+
+În absența frecării, condiția de mișcare rectilinie uniformă se scrie pe cele
+două direcții:
+
+$$
+\vec{F} + \vec{G}_t = \vec{0} \qquad\text{și}\qquad \vec{N} + \vec{G}_n = \vec{0}
+$$
+
+adică, în scriere scalară:
+
+$$
+F - G_t = 0 \qquad\text{și}\qquad N - G_n = 0
+$$
+
+din care rezultă:
+
+$$
+F = G_t \qquad\qquad N = G_n
+$$
+
+**Observație.** În acest caz forța de apăsare normală pe plan este egală cu
+componenta normală a greutății: $F_n = G_n$.
+
+Dacă există frecare, forța de tracțiune trebuie să învingă și forța de frecare:
+
+$$
+F = G_t + F_f
+$$
+
+---
+
+## 7. Descompunerea după două direcții perpendiculare
+
+Metoda nu e legată de planul înclinat: **orice** vector se poate descompune după
+două direcții perpendiculare $Ox$ și $Oy$.
+
+<FiguraManual
+  src="ro-componente-oxy.png"
+  lat={390}
+  inalt={324}
+  latime={380}
+  eticheta="Un sistem de axe Ox și Oy; vectorul a pleacă din A și se descompune în componentele ax pe orizontală și ay pe verticală, obținute ducând perpendiculare din vârful lui a pe cele două axe"
+  legenda="Componentele unui vector pe direcțiile Ox și Oy."
+/>
+
+Se duc din **extremitățile** vectorului — originea și vârful — perpendiculare pe
+cele două direcții și se găsesc componentele lui după acele direcții.
+
+---
+
+:::note Ora următoare
+
+**LP4 — Planul înclinat.** Trei probe: componentele greutății, un frigider urcat
+pe rampă și un sistem de două corpuri.
+
+Înainte de ea, treci prin
+**[S4 — Planul înclinat](./11-s-plan-inclinat.mdx)**: formulele lecției strânse
+la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

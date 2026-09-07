@@ -1,0 +1,157 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Planul înclinat"
+slug: /f7/marimi/s4
+title: "S4 — Planul înclinat"
+description: "Suport de curs: elementele planului înclinat, formulele componentelor greutății și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Planul înclinat
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Mișcarea pe plan înclinat. Descompunerea unei forțe](./10-curs-plan-inclinat.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP4](./12-lp-plan-inclinat.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Baza planului | $b$ | $b = \sqrt{l^2 - h^2}$ | metru, $\text{m}$ |
+| Greutatea tangențială | $G_t$ | $G_t = \dfrac{G \cdot h}{l}$ | newton, $\text{N}$ |
+| Greutatea normală | $G_n$ | $G_n = \dfrac{G \cdot b}{l}$ | newton, $\text{N}$ |
+| Reacțiunea normală | $N$ | $N = G_n$ | newton, $\text{N}$ |
+| Forța de tracțiune, fără frecare | $F$ | $F = G_t$ | newton, $\text{N}$ |
+| Forța de tracțiune, cu frecare | $F$ | $F = G_t + F_f$ | newton, $\text{N}$ |
+| Greutatea corpului | $G$ | $G = m \cdot g$ | newton, $\text{N}$ |
+
+Notațiile: $l$ — lungimea planului, $h$ — înălțimea planului, $b$ — baza
+planului, $G$ — greutatea corpului.
+
+---
+
+## 2. Cum arată descompunerea
+
+| Ce descompui | Pe ce direcții | Ce obții |
+|---|---|---|
+| greutatea $\vec{G}$ | paralelă cu planul și perpendiculară pe plan | $\vec{G}_t$ și $\vec{G}_n$ |
+| un vector oarecare | axele $Ox$ și $Oy$ | componentele lui pe cele două axe |
+
+Construcția e aceeași în amândouă cazurile: din vârful vectorului se duc
+perpendiculare pe cele două direcții, iar componentele sunt laturile
+dreptunghiului astfel format.
+
+---
+
+## 3. De reținut
+
+- Componenta tangențială $G_t$ e cea care **trage corpul la vale**. Ea se
+  învinge cu forța de tracțiune.
+- Componenta normală $G_n$ e cea care **apasă pe plan**. Ea dă reacțiunea
+  normală, deci și frecarea.
+- Raportul $h/l$ este întotdeauna **subunitar**: de aceea $G_t$ e mai mică decât
+  $G$, și de aceea urcarea pe pantă cere o forță mai mică decât ridicarea pe
+  verticală.
+- Cu cât panta e mai lină, cu atât $G_t$ scade și $G_n$ crește.
+- Cele două componente **nu** se adună aritmetic: $G_t + G_n \ne G$. Ele se
+  compun ca vectori perpendiculari, deci $G^2 = G_t^2 + G_n^2$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un frigider cu masa $m = 80\ \text{kg}$ este ridicat uniform pe un plan înclinat
+cu lungimea $l = 5\ \text{m}$ și înălțimea $h = 3\ \text{m}$. Forța de frecare
+dintre frigider și plan este de $50\ \text{N}$. Se cunoaște
+$g = 10\ \text{N/kg}$. Calculează:
+
+**a)** reacțiunea normală a planului;
+**b)** forța cu care trebuie tras frigiderul pentru a-l urca uniform pe plan.
+
+### Pasul 1 — Ce se dă
+
+- $m = 80\ \text{kg}$;
+- $l = 5\ \text{m}$, $h = 3\ \text{m}$;
+- $F_f = 50\ \text{N}$;
+- $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Ce se cere
+
+$N$ și $F$.
+
+### Pasul 3 — Ce formule folosim
+
+$$
+G = m \cdot g \qquad b = \sqrt{l^2 - h^2} \qquad G_t = \frac{G h}{l} \qquad G_n = \frac{G b}{l}
+$$
+
+apoi condițiile de mișcare uniformă: $N = G_n$ și $F = G_t + F_f$.
+
+### Pasul 4 — Greutatea și baza planului
+
+$$
+G = 80 \times 10 = 800\ \text{N}
+$$
+
+$$
+b = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4\ \text{m}
+$$
+
+### Pasul 5 — Componentele greutății
+
+$$
+G_t = \frac{800 \times 3}{5} = \frac{2400}{5} = 480\ \text{N}
+$$
+
+$$
+G_n = \frac{800 \times 4}{5} = \frac{3200}{5} = 640\ \text{N}
+$$
+
+### Pasul 6 — Răspunsurile
+
+**a)** Pe direcția perpendiculară pe plan corpul nu se mișcă, deci reacțiunea
+normală echilibrează componenta normală:
+
+$$
+N = G_n = 640\ \text{N}
+$$
+
+**b)** Pe direcția planului, mișcarea fiind uniformă, forța de tracțiune
+echilibrează și componenta tangențială, și frecarea:
+
+$$
+F = G_t + F_f = 480 + 50 = 530\ \text{N}
+$$
+
+### Pasul 7 — Verificarea
+
+Ridicarea pe verticală ar fi cerut o forță egală cu greutatea, adică
+$800\ \text{N}$. Pe rampă e nevoie de $530\ \text{N}$ — mai puțin, cum ne
+așteptam. În schimb drumul e mai lung: $5\ \text{m}$ în loc de $3\ \text{m}$.
+
+Verificăm și componentele:
+$G_t^2 + G_n^2 = 480^2 + 640^2 = 230\,400 + 409\,600 = 640\,000 = 800^2$. Sunt
+într-adevăr componentele greutății.
+
+### Răspuns
+
+$N = 640\ \text{N}$ și $F = 530\ \text{N}$.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Planul înclinat](./12-lp-plan-inclinat.mdx).** Trei probe, în total 36
+de minute.
+
+:::

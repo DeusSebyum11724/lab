@@ -1,0 +1,151 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Compunerea forțelor"
+slug: /f7/marimi/s2
+title: "S2 — Compunerea forțelor"
+description: "Suport de curs: cele patru cazuri de compunere a forțelor, formulele lor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Compunerea forțelor
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Compunerea forțelor. Regula paralelogramului](./04-curs-compunerea-fortelor.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-compunerea-fortelor.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Situația | Cum se construiește | Modulul rezultantei |
+|---|---|---|
+| Forțe concurente, unghi oarecare | diagonala paralelogramului | se măsoară pe desen, la scară |
+| Forțe **perpendiculare** | diagonala dreptunghiului | $R = \sqrt{F_1^2 + F_2^2}$ |
+| Forțe coliniare, **același sens** | cap la coadă | $R = F_1 + F_2$ |
+| Forțe coliniare, **sensuri opuse** | cap la coadă | $R = F_1 - F_2$, cu $F_1 > F_2$ |
+
+Relația vectorială e aceeași în toate cazurile:
+
+$$
+\vec{R} = \vec{F}_1 + \vec{F}_2
+$$
+
+Ce se schimbă de la un caz la altul e **numai** felul în care se citește modulul
+lui $\vec{R}$.
+
+---
+
+## 2. Cele două reguli de desen
+
+| Regula | Cum așezi vectorii | Unde e rezultanta |
+|---|---|---|
+| **paralelogramului** | amândoi din **aceeași origine** | diagonala dusă din acea origine |
+| **triunghiului** | al doilea cu originea în **vârful primului** | de la originea primului la vârful ultimului |
+
+Amândouă dau același vector. Alege-o pe cea care îți e mai comodă de desenat.
+
+---
+
+## 3. De reținut
+
+- Rezultanta a două forțe concurente depinde de **modulele** lor și de
+  **unghiul** dintre direcții.
+- Cu cât unghiul dintre forțe e mai mare, cu atât rezultanta e mai mică. La
+  $0^\circ$ rezultanta e maximă ($F_1 + F_2$); la $180^\circ$ e minimă
+  ($|F_1 - F_2|$).
+- Două forțe de câte $2\ \text{N}$ nu dau $4\ \text{N}$ decât dacă sunt
+  coliniare și de același sens.
+- Teorema lui Pitagora se folosește **numai** la forțe perpendiculare.
+- Rezultanta unei forțe cu ea însăși nu se pune; compunerea are sens numai
+  între forțe care acționează pe **același corp**.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Asupra unui corp acționează simultan două forțe, $F_1 = 300\ \text{N}$ și
+$F_2 = 400\ \text{N}$. Reprezintă grafic și calculează modulul rezultantei în
+următoarele situații:
+
+**a)** forțele sunt perpendiculare;
+**b)** forțele au aceeași direcție și același sens;
+**c)** forțele au aceeași direcție și sensuri opuse.
+
+### Pasul 1 — Ce se dă
+
+- $F_1 = 300\ \text{N}$;
+- $F_2 = 400\ \text{N}$;
+- trei așezări diferite ale acelorași două forțe.
+
+### Pasul 2 — Ce se cere
+
+Modulul rezultantei $R$ în fiecare din cele trei cazuri, plus desenul.
+
+### Pasul 3 — Cazul a): forțe perpendiculare
+
+Paralelogramul construit pe cele două forțe este un **dreptunghi**, iar
+rezultanta este diagonala lui. Cu teorema lui Pitagora:
+
+$$
+R^2 = F_1^2 + F_2^2 = 300^2 + 400^2 = 90\,000 + 160\,000 = 250\,000
+$$
+
+$$
+R = \sqrt{250\,000} = 500\ \text{N}
+$$
+
+Desenul: la scara $1\ \text{cm}$ pentru $100\ \text{N}$, o forță se trage cu o
+săgeată de $3\ \text{cm}$, cealaltă cu una de $4\ \text{cm}$, perpendiculare;
+diagonala iese de $5\ \text{cm}$.
+
+### Pasul 4 — Cazul b): același sens
+
+Vectorii se așază cap la coadă, pe aceeași dreaptă, arătând în aceeași parte:
+
+$$
+R = F_1 + F_2 = 300 + 400 = 700\ \text{N}
+$$
+
+Sensul rezultantei este sensul comun al celor două forțe.
+
+### Pasul 5 — Cazul c): sensuri opuse
+
+$$
+R = F_2 - F_1 = 400 - 300 = 100\ \text{N}
+$$
+
+Sensul rezultantei este sensul forței **mai mari**, adică al lui $F_2$.
+
+### Pasul 6 — Verificarea
+
+Cele trei rezultate se pot pune în ordine:
+
+$$
+100\ \text{N} < 500\ \text{N} < 700\ \text{N}
+$$
+
+Asta se potrivește cu ce știm: rezultanta e cea mai mare când unghiul e
+$0^\circ$, cea mai mică când unghiul e $180^\circ$, iar cazul perpendicular
+cade între ele. Dacă la tine ar ieși altfel, ai greșit undeva.
+
+### Răspuns
+
+**a)** $R = 500\ \text{N}$; **b)** $R = 700\ \text{N}$; **c)**
+$R = 100\ \text{N}$, în sensul lui $\vec{F}_2$.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Compunerea forțelor](./06-lp-compunerea-fortelor.mdx).** Trei probe, în
+total 34 de minute.
+
+:::

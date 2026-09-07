@@ -1,0 +1,196 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Regula poligonului"
+slug: /f7/marimi/lp3
+title: "LP3 — Regula poligonului"
+description: "Lucrare practică: suma grafică a patru vectori, compunerea a două forțe și deosebirea dintre distanța parcursă și deplasare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Regula poligonului
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Regula poligonului](./07-curs-regula-poligonului.mdx)**, cu pașii
+construcției din **[S3](./08-s-regula-poligonului.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Suma grafică a patru vectori | — | 10 min |
+| 2 | Două forțe, două așezări | ★ | 10 min |
+| 3 | Distanță sau deplasare | ★★ | 12 min |
+
+Ai nevoie de riglă, creion și hârtie cu pătrățele. Rezolvarea fiecărei probe e
+ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Suma grafică a patru vectori
+
+— &nbsp;·&nbsp; **10 minute**
+
+Reprezintă grafic suma vectorilor din figura de mai jos.
+
+<FiguraManual
+  src="ro-vectori-de-compus.png"
+  lat={433}
+  inalt={192}
+  latime={430}
+  eticheta="Patru vectori albaștri de lungimi și direcții diferite, notați a, b, c și d, desenați separat unul lângă altul"
+  legenda="Cei patru vectori de compus. Fiecare se mută paralel cu el însuși, fără să i se schimbe lungimea."
+/>
+
+**1.** Copiază vectorii pe hârtia cu pătrățele, numărând pătrățelele pe
+orizontală și pe verticală pentru fiecare.
+
+**2.** Așază-i cap la coadă, în ordinea $\vec{a}$, $\vec{b}$, $\vec{c}$,
+$\vec{d}$, și trage rezultanta.
+
+**3.** Reia construcția în altă ordine, de pildă $\vec{d}$, $\vec{b}$,
+$\vec{a}$, $\vec{c}$. Ce observi?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Fiecare vector se copiază **mutându-l paralel cu el însuși**: se numără
+câte pătrățele are pe orizontală și câte pe verticală, iar aceleași numere se
+reproduc în locul nou. Nici lungimea, nici înclinarea nu se schimbă — un vector
+mutat paralel rămâne același vector.
+
+**2.** Se pornește din orice punct. Se desenează $\vec{a}$; din vârful lui
+pleacă $\vec{b}$; din vârful lui $\vec{b}$ pleacă $\vec{c}$; din vârful lui
+$\vec{c}$ pleacă $\vec{d}$. Rezultanta este segmentul care unește **originea
+lui $\vec{a}$** cu **vârful lui $\vec{d}$**, orientat în acest sens:
+
+$$
+\vec{R} = \vec{a} + \vec{b} + \vec{c} + \vec{d}
+$$
+
+**3.** Poligonul iese cu totul altfel desenat — laturile vin în altă ordine, iar
+forma lui e alta. Dar punctul de sosire e **același**, deci **rezultanta este
+identică**: aceeași direcție, același sens, aceeași lungime.
+
+Asta se vede și pe pătrățele: numărul total de pătrățele pe orizontală și cel
+pe verticală nu se schimbă dacă aduni aceleași numere în altă ordine.
+
+</details>
+
+---
+
+## 2. Două forțe, două așezări
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Reprezintă grafic rezultanta forțelor și calculează modulul ei:
+
+**a)** $F_1 = 2\ \text{N}$ orientată spre dreapta (est) și $F_2 = 6\ \text{N}$
+orientată spre stânga (vest);
+
+**b)** $F_1 = 3\ \text{N}$ orientată în sus (nord) și $F_2 = 4\ \text{N}$
+orientată spre dreapta (est).
+
+Folosește scara $1\ \text{cm}$ pentru $1\ \text{N}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a)** Forțele sunt coliniare și de **sensuri opuse**. Așezate cap la coadă,
+poligonul se strânge pe o singură dreaptă:
+
+$$
+R = F_2 - F_1 = 6 - 2 = 4\ \text{N}
+$$
+
+Sensul este cel al forței mai mari, adică **spre vest**. Pe desen: o săgeată de
+$2\ \text{cm}$ spre est, apoi din vârful ei una de $6\ \text{cm}$ spre vest;
+segmentul de închidere măsoară $4\ \text{cm}$ și arată spre vest.
+
+**b)** Forțele sunt **perpendiculare**. Poligonul e un triunghi dreptunghic, iar
+rezultanta e ipotenuza lui:
+
+$$
+R = \sqrt{F_1^2 + F_2^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5\ \text{N}
+$$
+
+Pe desen: $3\ \text{cm}$ în sus, apoi $4\ \text{cm}$ spre est din vârful
+primei; segmentul de închidere măsoară $5\ \text{cm}$ și e orientat spre
+nord-est.
+
+</details>
+
+---
+
+## 3. Distanță sau deplasare
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Un drumeț pleacă din tabăra $T$, merge $6\ \text{km}$ spre nord, apoi
+$8\ \text{km}$ spre est, apoi $6\ \text{km}$ spre sud și se oprește în punctul
+$P$.
+
+**1.** Ce distanță a parcurs?
+
+**2.** Cu cât s-a deplasat față de tabără? În ce direcție se află $P$ față de
+$T$?
+
+**3.** A doua zi pleacă din nou din $T$, merge $3\ \text{km}$ spre nord și
+$4\ \text{km}$ spre est. Ce distanță a parcurs acum și cu cât s-a deplasat?
+
+**4.** Ce ar trebui să facă în a treia zi ca deplasarea lui să fie nulă, deși
+distanța parcursă nu e zero?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Distanța parcursă este un **scalar** și se adună aritmetic:
+
+$$
+d = 6 + 8 + 6 = 20\ \text{km}
+$$
+
+**2.** Deplasarea se compune **vectorial**. Pe direcția nord–sud, cele două
+drumuri se anulează ($6\ \text{km}$ spre nord și $6\ \text{km}$ spre sud), deci
+rămâne numai drumul spre est:
+
+$$
+\vec{d} = 8\ \text{km, spre est}
+$$
+
+Punctul $P$ se află la $8\ \text{km}$ **est** de tabără, pe aceeași paralelă cu
+ea. Poligonul deplasărilor e un „U" răsturnat, iar segmentul lui de închidere e
+orizontal.
+
+**3.** Distanța parcursă:
+
+$$
+d = 3 + 4 = 7\ \text{km}
+$$
+
+Deplasarea se află cu teorema lui Pitagora, cele două drumuri fiind
+perpendiculare:
+
+$$
+d = \sqrt{3^2 + 4^2} = \sqrt{25} = 5\ \text{km}
+$$
+
+Deci a mers $7\ \text{km}$, dar s-a depărtat de tabără numai cu $5\ \text{km}$,
+spre nord-est.
+
+**4.** I-ar ajunge să se întoarcă în tabără pe orice drum. Atunci poligonul
+deplasărilor se **închide**: vârful ultimului vector cade peste originea
+primului, iar deplasarea rezultantă este nulă:
+
+$$
+\vec{d} = \vec{0}
+$$
+
+Distanța parcursă, în schimb, rămâne toată — poate fi de zeci de kilometri.
+Deplasarea zero nu înseamnă niciodată că omul n-a mers; înseamnă doar că a
+ajuns de unde a plecat.
+
+</details>

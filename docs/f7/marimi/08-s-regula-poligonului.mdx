@@ -1,0 +1,143 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Regula poligonului"
+slug: /f7/marimi/s3
+title: "S3 — Regula poligonului"
+description: "Suport de curs: pașii construcției poligonului, deosebirea dintre distanță și deplasare și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Regula poligonului
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Regula poligonului pentru compunerea mai multor vectori](./07-curs-regula-poligonului.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-regula-poligonului.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Relația | Unitatea în SI |
+|---|---|---|---|
+| Deplasarea rezultantă | $\vec{d}$ | $\vec{d} = \vec{d}_1 + \vec{d}_2 + \dots$ | metru, $\text{m}$ |
+| Distanța parcursă | $d$ | $d = d_1 + d_2 + \dots$ | metru, $\text{m}$ |
+| Forța rezultantă | $\vec{R}$ | $\vec{R} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \dots$ | newton, $\text{N}$ |
+
+Când toți vectorii sunt orientați pe **două direcții perpendiculare** (de pildă
+nord–sud și est–vest), modulul rezultantei se află în doi pași:
+
+1. se adună algebric vectorii de pe fiecare direcție, obținând $R_x$ și $R_y$;
+2. se aplică teorema lui Pitagora:
+
+$$
+R = \sqrt{R_x^2 + R_y^2}
+$$
+
+---
+
+## 2. Cei patru pași ai construcției
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Alegi o scară și o scrii alături (de pildă $1\ \text{cm}$ pentru $1\ \text{N}$) |
+| 2 | Desenezi primul vector |
+| 3 | Desenezi al doilea **din vârful primului**, apoi al treilea din vârful celui de-al doilea, și tot așa |
+| 4 | Tragi segmentul de la **originea primului** la **vârful ultimului** — asta e rezultanta |
+
+Fiecare vector se desenează **paralel cu el însuși** și cu lungimea lui, mutat
+doar din loc.
+
+---
+
+## 3. De reținut
+
+- Regula triunghiului = regula poligonului pentru doi vectori.
+- Ordinea vectorilor nu schimbă rezultanta.
+- Distanța parcursă se adună aritmetic; deplasarea se compune vectorial. Ele nu
+  sunt egale decât dacă drumul e o linie dreaptă parcursă într-un singur sens.
+- Dacă poligonul se închide singur, rezultanta este nulă și forțele se
+  echilibrează.
+- Un vector orientat spre sud este opusul unuia spre nord: la calculul algebric
+  se scad.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Asupra unui corp acționează cinci forțe:
+
+- $F_1 = 4\ \text{N}$ orientată în sus (nord);
+- $F_2 = 2\ \text{N}$ orientată spre dreapta (est);
+- $F_3 = 1\ \text{N}$ orientată în jos (sud);
+- $F_4 = 2\ \text{N}$ orientată spre dreapta (est);
+- $F_5 = 3\ \text{N}$ orientată în jos (sud).
+
+Reprezintă grafic rezultanta forțelor și calculează modulul ei.
+
+### Pasul 1 — Ce se dă
+
+Cinci forțe, toate așezate pe două direcții perpendiculare: nord–sud și
+est–vest.
+
+### Pasul 2 — Ce se cere
+
+Desenul poligonului și modulul rezultantei $R$.
+
+### Pasul 3 — Grupăm forțele pe direcții
+
+Pe direcția **nord–sud**, luând nordul ca sens pozitiv:
+
+$$
+R_y = F_1 - F_3 - F_5 = 4 - 1 - 3 = 0\ \text{N}
+$$
+
+Pe direcția **est–vest**, luând estul ca sens pozitiv:
+
+$$
+R_x = F_2 + F_4 = 2 + 2 = 4\ \text{N}
+$$
+
+### Pasul 4 — Calculul rezultantei
+
+$$
+R = \sqrt{R_x^2 + R_y^2} = \sqrt{4^2 + 0^2} = 4\ \text{N}
+$$
+
+Rezultanta este orientată **spre est**.
+
+### Pasul 5 — Desenul
+
+La scara $1\ \text{cm}$ pentru $1\ \text{N}$, așază cele cinci săgeți cap la
+coadă, în ordinea din enunț: $4\ \text{cm}$ în sus, $2\ \text{cm}$ la dreapta,
+$1\ \text{cm}$ în jos, $2\ \text{cm}$ la dreapta, $3\ \text{cm}$ în jos.
+
+Vârful ultimei săgeți cade la $4\ \text{cm}$ **la dreapta** originii primeia și
+la aceeași înălțime cu ea. Segmentul de închidere măsoară deci $4\ \text{cm}$
+și e orizontal — exact ce a dat calculul.
+
+### Pasul 6 — Verificarea
+
+Componenta pe verticală a ieșit zero: cele trei forțe verticale se
+echilibrează între ele ($4 = 1 + 3$). Corpul nu se mișcă nici în sus, nici în
+jos; se mișcă numai spre est.
+
+### Răspuns
+
+$R = 4\ \text{N}$, orientată spre est.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Regula poligonului](./09-lp-regula-poligonului.mdx).** Trei probe, în
+total 32 de minute.
+
+:::

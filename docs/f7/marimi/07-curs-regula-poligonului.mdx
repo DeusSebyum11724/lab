@@ -1,0 +1,175 @@
+---
+sidebar_position: 7
+sidebar_label: "C3 — Regula poligonului"
+slug: /f7/marimi/c3
+title: "C3 — Regula poligonului pentru compunerea mai multor vectori"
+description: "Vectorul deplasare, compunerea succesivă a mai multor vectori și regula poligonului, cu cazul poligonului închis."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Regula poligonului pentru compunerea mai multor vectori
+
+:::info Planul orei
+
+1. Din experiența ta
+2. De ce nu ajunge o singură pereche de vectori
+3. Vectorul deplasare
+4. Compunerea succesivă
+5. Regula poligonului
+6. Când poligonul se închide
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+Să presupunem că te afli în punctul $A$, situat la $1\ \text{km}$ față de
+reperul $O$. Te deplasezi spre **nord** pe distanța $d_1 = 4\ \text{km}$, apoi
+spre **est** pe distanța $d_2 = 2\ \text{km}$ și în final spre **sud** pe
+distanța $d_3 = 4\ \text{km}$, ajungând în punctul $B$.
+
+<FiguraManual
+  src="ro-deplasare.png"
+  lat={433}
+  inalt={394}
+  latime={400}
+  eticheta="Pe o roză a vânturilor cu axele nord-sud și vest-est, traseul pornește din A spre nord (d1), continuă spre est (d2), coboară spre sud (d3) și se închide în B; vectorul d unește direct A cu B"
+  legenda="Vectorul deplasare. Traseul parcurs are trei laturi; deplasarea este o singură săgeată, de la A la B."
+/>
+
+**Cu câți kilometri te-ai deplasat față de punctul $A$? Ce distanță ai
+parcurs?**
+
+Cele două întrebări **nu** au același răspuns, și tocmai de aici pornește
+lecția.
+
+---
+
+## 2. De ce nu ajunge o singură pereche de vectori
+
+În situațiile de zi cu zi, mișcările corpurilor sunt destul de complexe.
+
+De exemplu, un avion ușor zboară spre est, iar vântul bate spre nord, ceea ce
+determină schimbarea direcției după care se deplasează avionul: aceasta devine
+direcția **vitezei rezultante**.
+
+În mod asemănător, dacă asupra unui corp acționează simultan mai multe forțe
+— greutatea, forța de tracțiune, forța de frecare, reacțiunea normală — acestea
+pot fi înlocuite, ca efect, cu **o singură forță**, numită forță rezultantă.
+
+Regula paralelogramului învățată la lecția trecută compune **doi** vectori. Ne
+trebuie o cale de a compune **oricâți**.
+
+---
+
+## 3. Vectorul deplasare
+
+În exemplul de mai sus ai plecat din punctul $A$ și ai ajuns în punctul $B$,
+deplasându-te cu $2\ \text{km}$, deși **distanța pe care ai parcurs-o** a fost:
+
+$$
+d_1 + d_2 + d_3 = 4 + 2 + 4 = 10\ \text{km}
+$$
+
+Ca vector, orientăm această deplasare de la $A$ la $B$, iar ea reprezintă
+**deplasarea rezultantă**:
+
+$$
+\vec{d} = \vec{d}_1 + \vec{d}_2 + \vec{d}_3
+$$
+
+Modulul vectorului deplasare este segmentul $AB$, adică $2\ \text{km}$.
+
+:::warning Atenție
+
+**Distanța parcursă** ($10\ \text{km}$) și **modulul deplasării**
+($2\ \text{km}$) sunt două lucruri diferite. Prima e un scalar și se adună
+aritmetic; a doua e un vector și se compune după reguli de vectori.
+
+:::
+
+---
+
+## 4. Compunerea succesivă
+
+Ai văzut că pentru a compune două forțe concurente poți aplica regula
+paralelogramului sau regula triunghiului. Când avem de adunat **mai mulți**
+vectori concurenți, se poate aplica **în mod succesiv** regula paralelogramului:
+
+Se calculează mai întâi suma vectorială a primilor doi vectori, apoi aceasta se
+adună vectorial cu al treilea, și așa mai departe.
+
+<FiguraManual
+  src="ro-poligon.png"
+  lat={433}
+  inalt={325}
+  latime={430}
+  eticheta="Patru forțe F1, F2, F3 și F4 așezate cap la coadă; rezultantele parțiale R12 și R123 sunt punctate, iar rezultanta finală R unește originea lui F1 cu vârful lui F4"
+  legenda="Regula poligonului. Rezultantele parțiale R₁₂ și R₁₂₃ arată drumul, dar în desenul final se trage doar R."
+/>
+
+În figură, rezultanta $\vec{R}_{12}$ a primilor doi vectori se adună vectorial
+cu $\vec{F}_3$, rezultând $\vec{R}_{123}$, care se adună vectorial cu
+$\vec{F}_4$.
+
+Putem însă așeza vectorii **unul cu originea în vârful celuilalt**, așa cum ai
+procedat la regula triunghiului — și atunci nu mai e nevoie să desenăm
+rezultantele parțiale.
+
+---
+
+## 5. Regula poligonului
+
+:::danger Definiția 1 — regula poligonului
+
+Rezultanta $\vec{R}$ a mai multor vectori așezați unul cu originea în vârful
+celuilalt este **segmentul care închide poligonul** obținut, orientat **de la
+originea primului vector la vârful ultimului**:
+
+$$
+\vec{R} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \dots
+$$
+
+:::
+
+Regula triunghiului nu este altceva decât regula poligonului pentru doi
+vectori.
+
+:::tip De reținut
+
+Ordinea în care așezi vectorii **nu contează**: dacă începi cu $\vec{F}_3$ în
+loc de $\vec{F}_1$, poligonul iese altfel desenat, dar segmentul de închidere
+iese același.
+
+:::
+
+---
+
+## 6. Când poligonul se închide
+
+Poate să se întâmple ca vârful ultimului vector să cadă chiar peste originea
+primului. Poligonul se închide singur, iar segmentul de închidere are lungimea
+zero:
+
+$$
+\vec{R} = \vec{0}
+$$
+
+Asta înseamnă că forțele **se echilibrează**: corpul rămâne în repaus sau își
+păstrează mișcarea rectilinie uniformă. E cazul din lecția trecută, în care
+$\vec{F}_3$ echilibra forțele $\vec{F}_1$ și $\vec{F}_2$.
+
+---
+
+:::note Ora următoare
+
+**LP3 — Regula poligonului.** Trei probe: suma grafică a patru vectori, cinci
+forțe de compus și o problemă de deplasare.
+
+Înainte de ea, treci prin
+**[S3 — Regula poligonului](./08-s-regula-poligonului.mdx)**: pașii construcției
+strânși la un loc și un exercițiu rezolvat pas cu pas.
+
+:::
