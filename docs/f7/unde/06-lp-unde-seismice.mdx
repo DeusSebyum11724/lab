@@ -1,0 +1,188 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Unde seismice și valuri"
+slug: /f7/unde/lp2
+title: "LP2 — Unde seismice și valuri"
+description: "Lucrare practică: deosebirea undelor P și S, citirea unei seismograme și caracteristicile unui val."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Unde seismice și valuri
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Unde seismice, valuri](./04-curs-unde-seismice.mdx)**, cu tabelele din
+**[S2](./05-s-unde-seismice.mdx)** la îndemână. Trei probe; în total 32 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | P sau S | — | 8 min |
+| 2 | Valul de la mal | ★ | 10 min |
+| 3 | Seismograma citită | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. P sau S
+
+— &nbsp;·&nbsp; **8 minute**
+
+Pentru fiecare afirmație, spune dacă se potrivește undei **P**, undei **S**,
+**amândurora** sau **niciuneia**.
+
+**a)** Mediul vibrează pe direcția de propagare.
+**b)** Nu se propagă prin apă.
+**c)** Ajunge prima la stațiile seismice.
+**d)** Are amplitudinea mai mare.
+**e)** Se propagă prin vid.
+**f)** Pornește din focar.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) P.** Undele primare comprimă și destind mediul chiar în direcția în care
+merg.
+
+**b) S.** Undele secundare cer ca particulele să fie legate lateral, ceea ce
+lichidele nu asigură. De aceea ele se opresc la apă — și tocmai asta a arătat
+că Pământul are un strat lichid în adânc.
+
+**c) P.** Merg cu $5$–$7\ \text{km/s}$, față de $3$–$4\ \text{km/s}$ cât fac
+undele S.
+
+**d) S.** Undele secundare au amplitudine mai mare decât cele primare — dar cele
+mai ample rămân undele de suprafață.
+
+**e) Niciuna.** Sunt unde **mecanice**: au nevoie de un mediu cu particule
+legate între ele. Prin vid nu se propagă.
+
+**f) Amândouă.** Pornesc în același moment, din același loc. Se despart numai pe
+drum, fiindcă merg cu viteze diferite.
+
+</details>
+
+---
+
+## 2. Valul de la mal
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Stând pe un dig, numeri valurile care trec pe lângă un stâlp: **12 valuri în
+60 de secunde**. Măsurând de la o creastă la alta, găsești
+$L = 8\ \text{m}$.
+
+**1.** Cât este perioada valului?
+
+**2.** Cât este viteza lui?
+
+**3.** În cât timp ajunge valul de la stâlp la mal, dacă distanța e de
+$100\ \text{m}$?
+
+**4.** Un dop plutește lângă stâlp. De câte ori urcă și coboară el în cele
+$60$ de secunde? Se apropie de mal?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Perioada este timpul dintre două creste succesive:
+
+$$
+T = \frac{60}{12} = 5\ \text{s}
+$$
+
+**2.**
+
+$$
+v = \frac{L}{T} = \frac{8}{5} = 1{,}6\ \text{m/s}
+$$
+
+**3.**
+
+$$
+t = \frac{d}{v} = \frac{100}{1{,}6} = 62{,}5\ \text{s}
+$$
+
+**4.** Dopul urcă și coboară o dată la fiecare val, deci de **12 ori**.
+
+**Nu se apropie de mal.** El oscilează pe loc: unda transportă energie, nu
+substanță. Dacă totuși dopul ajunge la mal, asta se datorează vântului sau
+curenților, nu valurilor.
+
+</details>
+
+---
+
+## 3. Seismograma citită
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+<FiguraManual
+  src="ro-seismograma.png"
+  lat={740}
+  inalt={368}
+  latime={600}
+  eticheta="Seismogramă cu amplitudinea în micrometri pe verticală și timpul în milisecunde pe orizontală; unda P apare prima, cu amplitudine mică, apoi unda S, apoi undele de suprafață, cele mai ample"
+  legenda="Seismogramă. Se citesc, în ordine, cele trei feluri de unde."
+/>
+
+Un seismograf înregistrează unda P la ora $10{:}00{:}00$ și unda S la ora
+$10{:}00{:}50$. În scoarță, undele P merg cu $7\ \text{km/s}$, iar undele S cu
+$3{,}5\ \text{km/s}$.
+
+**1.** Ce reprezintă cele trei grupuri de oscilații de pe seismogramă și în ce
+ordine apar?
+
+**2.** Notând cu $d$ distanța până la focar, scrie timpii de parcurs ai celor
+două unde.
+
+**3.** Află distanța $d$.
+
+**4.** De ce e nevoie de **cel puțin trei** stații seismice ca să se afle
+**unde** s-a produs cutremurul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În ordine: **unda P**, cu amplitudine mică; **unda S**, mai amplă;
+**undele de suprafață**, cele mai ample. Ordinea e dată de vitezele lor
+descrescătoare.
+
+**2.** Cele două unde parcurg aceeași distanță $d$, cu viteze diferite:
+
+$$
+t_P = \frac{d}{7} \qquad t_S = \frac{d}{3{,}5}
+$$
+
+**3.** Diferența dintre sosiri este de $50\ \text{s}$:
+
+$$
+t_S - t_P = 50
+$$
+
+$$
+\frac{d}{3{,}5} - \frac{d}{7} = 50
+$$
+
+Aducem la același numitor:
+
+$$
+\frac{2d - d}{7} = 50 \quad\Longrightarrow\quad \frac{d}{7} = 50 \quad\Longrightarrow\quad d = 350\ \text{km}
+$$
+
+*Verificare:* $t_P = 350 : 7 = 50\ \text{s}$ și
+$t_S = 350 : 3{,}5 = 100\ \text{s}$. Diferența e într-adevăr $50\ \text{s}$.
+
+**4.** Fiindcă o singură stație află **cât de departe** e focarul, nu și
+**încotro**. Cu o stație, focarul poate fi oriunde pe un cerc cu raza
+$350\ \text{km}$ în jurul ei.
+
+Cu două stații, cele două cercuri se taie în **două** puncte. Abia a treia
+stație arată care dintre ele e cel adevărat.
+
+</details>

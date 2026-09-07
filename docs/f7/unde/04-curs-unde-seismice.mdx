@@ -1,0 +1,273 @@
+---
+sidebar_position: 4
+sidebar_label: "C2 — Unde seismice și valuri"
+slug: /f7/unde/c2
+title: "C2 — Unde seismice, valuri"
+description: "Cutremurele și undele seismice, undele P și S, magnitudinea și intensitatea seismică, valurile și lungimea lor."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C2 — Unde seismice, valuri
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Cum se produce un cutremur
+3. Undele seismice
+4. Undele de volum: P și S
+5. Undele de suprafață
+6. Magnitudine și intensitate
+7. Valurile
+8. Experiment: modelarea unui seism
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Ce poți spune despre structura internă a Pământului, în comparație cu cea
+a unui ou?
+
+<FiguraManual
+  src="ro-structura-pamant.png"
+  lat={378}
+  inalt={288}
+  latime={340}
+  eticheta="Globul pământesc tăiat în sfert, arătând straturile: scoarța subțire, mantaua portocalie și nucleul galben"
+  legenda="Structura internă a Pământului."
+/>
+
+**2.** Scoarța terestră pare alcătuită din piese de puzzle — **plăcile
+tectonice**. De ce se mișcă acestea și care sunt efectele mișcării lor?
+
+<FiguraManual
+  src="ro-placi-tectonice.png"
+  lat={522}
+  inalt={288}
+  latime={400}
+  eticheta="Bloc-diagramă cu două plăci tectonice care se depărtează una de alta, cu magmă roșie dedesubt și un vulcan în erupție la margine"
+  legenda="Plăcile tectonice. Ele plutesc pe materia fierbinte de dedesubt și se mișcă una față de alta."
+/>
+
+---
+
+## 2. Cum se produce un cutremur
+
+Interacțiunea plăcilor tectonice produce mai întâi o puternică **deformare** în
+zona de contact. Rocile aflate acolo eliberează **brusc** energia acumulată și
+încep să oscileze. S-a produs un **cutremur**, numit și **seism**.
+
+| Cauza cutremurului | Cât de des |
+|---|---|
+| modificări structurale ale scoarței terestre | $90\%$ |
+| erupții vulcanice | $7\%$ |
+| căderi de meteoriți, prăbușirea cavernelor subterane, explozii, operațiuni miniere, umplerea lacurilor de acumulare | restul |
+
+---
+
+## 3. Undele seismice
+
+Perturbația apărută în acea zonă, numită **focar** sau **hipocentru**, se
+propagă în toate direcțiile sub forma unor unde elastice numite **unde
+seismice**.
+
+<FiguraManual
+  src="ro-cutremur.png"
+  lat={630}
+  inalt={366}
+  latime={520}
+  eticheta="Secțiune prin scoarța terestră: hipocentrul, aflat în adânc pe o falie, epicentrul deasupra lui la suprafață, o casă la distanța epicentrală și săgeata distanței hipocentrale"
+  legenda="Cutremur de pământ. Focarul e în adânc; epicentrul e punctul de la suprafață aflat chiar deasupra lui."
+/>
+
+| Termenul | Ce înseamnă |
+|---|---|
+| **focar (hipocentru)** | locul din adânc unde s-a eliberat energia |
+| **epicentru** | punctul de la suprafață aflat pe verticala focarului |
+| **distanța epicentrală** | de la epicentru la locul unde se măsoară |
+| **distanța hipocentrală** | de la focar la locul unde se măsoară |
+
+Undele seismice sunt înregistrate cu instrumente numite **seismografe**, iar
+graficul oscilațiilor seismice se numește **seismogramă**.
+
+<FiguraManual
+  src="ro-seismograma.png"
+  lat={740}
+  inalt={368}
+  latime={600}
+  eticheta="Seismogramă cu amplitudinea în micrometri pe verticală și timpul în milisecunde pe orizontală; se disting, în ordine, unda P mică, unda S mai mare și undele de suprafață, cele mai ample"
+  legenda="Seismogramă a cutremurului din Japonia. Cele trei feluri de unde ajung pe rând."
+/>
+
+---
+
+## 4. Undele de volum: P și S
+
+Stațiile seismice detectează două tipuri principale de unde seismice: **unde de
+volum** și **unde de suprafață**. Cele de volum se propagă prin interiorul
+Pământului, sub două forme.
+
+**1. Undele primare (P)** — se deplasează prin **comprimări și dilatări
+succesive** ale mediului, **pe direcția de propagare**, cu viteze de
+$5$–$7\ \text{km/s}$ în crusta terestră. Ajung **primele** la stațiile seismice
+și se propagă atât în uscat, cât și în apă.
+
+<FiguraManual
+  src="ro-unda-primara.png"
+  lat={443}
+  inalt={180}
+  latime={430}
+  eticheta="Un bloc de teren desenat ca o rețea, în care liniile verticale sunt când înghesuite, când rărite, cu o săgeată care arată direcția de propagare"
+  legenda="Unda primară (P). Mediul se comprimă și se destinde chiar pe direcția în care merge unda."
+/>
+
+**2. Undele secundare (S)** — se deplasează prin vibrații ale particulelor
+**perpendicular pe direcția de propagare**, cu viteze de $3$–$4\ \text{km/s}$ în
+scoarța terestră. Au amplitudine mai mare decât undele P și sunt înregistrate
+după ele. **Nu se propagă prin apă.**
+
+<FiguraManual
+  src="ro-unda-secundara.png"
+  lat={443}
+  inalt={186}
+  latime={430}
+  eticheta="Un bloc de teren desenat ca o rețea ondulată în sus și în jos, cu o săgeată care arată direcția de propagare, orizontală"
+  legenda="Unda secundară (S). Mediul vibrează perpendicular pe direcția de mers a undei."
+/>
+
+:::tip De ce contează ordinea
+
+Fiindcă undele P merg mai repede, ele ajung primele. Din **decalajul** dintre
+sosirea undei P și a undei S, seismologii pot afla la ce distanță s-a produs
+cutremurul — fără să fi văzut nimic.
+
+Iar faptul că undele S **nu trec prin apă** a fost prima dovadă că Pământul are,
+în adânc, un strat lichid.
+
+:::
+
+---
+
+## 5. Undele de suprafață
+
+Undele de suprafață sunt generate în urma interacțiunii undelor P și S cu
+suprafața Pământului. Ele sunt considerate **principala cauză a distrugerilor**
+provocate de cutremure.
+
+<FiguraManual
+  src="ro-unde-suprafata.png"
+  lat={443}
+  inalt={336}
+  latime={430}
+  eticheta="Două blocuri de teren desenate ca rețele deformate în valuri ample, cu săgeți care arată direcția de propagare"
+  legenda="Unde de suprafață. Ele au amplitudinea cea mai mare — de aceea fac cel mai mult rău."
+/>
+
+---
+
+## 6. Magnitudine și intensitate
+
+:::danger Definițiile 1–2
+
+**Magnitudinea seismică** este o mărime care caracterizează **energia
+eliberată** în focarul unui cutremur sub formă de unde seismice. Ea se citește
+pe **scara Richter**, gradată de la $1$ la $9$.
+
+**Intensitatea seismică** descrie cutremurul din punctul de vedere al
+**gravității distrugerilor**, al deformărilor suprafeței terestre și al
+reacțiilor populației. Ea se citește pe **scara Mercalli**, cu valori de la $1$
+la $12$.
+
+:::
+
+| Scara Richter | Scara Mercalli | Descriere |
+|---|---|---|
+| sub $3{,}5$ | I | detectat numai de seismografe |
+| $3{,}5$ – $4{,}2$ | II – III | resimțit slab de populație |
+| $4{,}5$ – $4{,}8$ | IV – V | se simte; corpurile vibrează slab |
+| $5{,}4$ – $6{,}5$ | VI – VIII | produce panică; distrugeri moderate |
+| $6{,}9$ – $7{,}3$ | IX – X | cutremur puternic; distrugeri mari |
+| peste $8{,}1$ | XI – XII | cutremur catastrofal |
+
+Deosebirea dintre cele două e importantă: **un cutremur are o singură
+magnitudine, dar intensități diferite** de la un loc la altul, după cum e
+depărtarea, terenul și felul clădirilor.
+
+---
+
+## 7. Valurile
+
+Cutremurele submarine puternice pot determina apariția unor valuri înalte numite
+**valuri seismice** sau **tsunami**.
+
+Valurile se aseamănă undelor seismice de suprafață și pot fi produse în
+principal de vânturi și de cutremure.
+
+<FiguraManual
+  src="ro-valul.png"
+  lat={906}
+  inalt={434}
+  latime={640}
+  eticheta="Profilul a două valuri succesive, cu creasta sus și baza jos; lungimea valului e măsurată de la o creastă la alta, înălțimea e marcată vertical, iar viteza v e arătată printr-o săgeată orizontală"
+  legenda="Caracteristicile valului: lungimea, înălțimea, perioada și viteza."
+/>
+
+| Mărimea | Ce este |
+|---|---|
+| **perioada valului**, $T$ | timpul de trecere a două creste succesive prin același punct |
+| **amplitudinea (înălțimea)** | înălțimea valului, de la bază la creastă |
+| **lungimea valului**, $L$ | distanța dintre două creste succesive |
+| **viteza valului**, $v$ | cu ce viteză înaintează creasta |
+
+Cele patru sunt legate printr-o relație simplă:
+
+$$
+L = v \cdot T
+$$
+
+Ea nu e altceva decât $d = v t$, scrisă pentru drumul făcut de val într-o
+perioadă.
+
+:::danger De reținut
+
+- **Unda seismică** este unda elastică produsă prin eliberarea bruscă a energiei
+  în focarul unui cutremur.
+- **Magnitudinea** seismului arată energia eliberată din focar.
+- **Valul** este unda elastică ce înaintează prin mișcări oscilatorii ale
+  maselor de apă.
+
+:::
+
+---
+
+## 8. Experiment: modelarea unui seism
+
+**Scop:** modelarea unui seism.
+
+**Mijloace necesare:** două resorturi moi și lungi, o mașinuță de jucărie cu
+platformă, figurine de plastic.
+
+**Mod de lucru.**
+
+1. Cuplează cele două resorturi între capetele mașinuței și câte un suport fix
+   aflat de o parte și de cealaltă a jucăriei.
+2. Plasează figurinele pe platforma mașinuței.
+3. Deplasează mașinuța din poziția inițială și las-o liberă.
+
+**Constatări.** Ce fel de mișcare va avea mașinuța? Ce se întâmplă cu figurinele?
+Ce fenomen ai simulat astfel?
+
+---
+
+:::note Ora următoare
+
+**LP2 — Unde seismice și valuri.** Trei probe: undele P și S deosebite, un val
+de calculat și seismograma citită.
+
+Înainte de ea, treci prin
+**[S2 — Unde seismice și valuri](./05-s-unde-seismice.mdx)**: noțiunile lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

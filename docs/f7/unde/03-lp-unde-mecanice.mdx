@@ -1,0 +1,166 @@
+---
+sidebar_position: 3
+sidebar_label: "LP1 — Unde mecanice"
+slug: /f7/unde/lp1
+title: "LP1 — Unde mecanice"
+description: "Lucrare practică: recunoașterea oscilatorilor, modelul de Domino pentru propagare și rigla care vibrează."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Unde mecanice
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C1 — Unde mecanice](./01-curs-unde-mecanice.mdx)**, cu tabelele din
+**[S1](./02-s-unde-mecanice.mdx)** la îndemână. Trei probe; în total 32 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Oscilează sau nu | — | 8 min |
+| 2 | Modelul de Domino | ★ | 12 min |
+| 3 | Rigla care vibrează | ★★ | 12 min |
+
+Ai nevoie de o riglă de plastic și, dacă se poate, de un set de piese de Domino.
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Oscilează sau nu
+
+— &nbsp;·&nbsp; **8 minute**
+
+Pentru fiecare situație, spune dacă este vorba de o **mișcare oscilatorie** și,
+dacă da, care este poziția de echilibru.
+
+**a)** un leagăn dat în balans;
+**b)** o roată de bicicletă care se învârte;
+**c)** o coardă de chitară ciupită;
+**d)** o mașină care merge uniform pe autostradă;
+**e)** limba unui metronom;
+**f)** o frunză care cade unduind.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) Da.** Poziția de echilibru este cea verticală, în care leagănul atârnă
+liniștit. E un pendul gravitațional.
+
+**b) Nu.** Roata se învârte mereu în același sens; nu e nicio poziție de o parte
+și de alta a căreia să se întoarcă. E mișcare de rotație, nu oscilatorie.
+
+**c) Da.** Poziția de echilibru este coarda întinsă și dreaptă, așa cum stă
+înainte de a fi ciupită.
+
+**d) Nu.** Mișcare rectilinie uniformă, într-un singur sens.
+
+**e) Da.** Poziția de echilibru este cea verticală a limbii.
+
+**f) Nu chiar.** Frunza se leagănă, dar nu revine periodic în aceeași poziție —
+ea coboară tot timpul. Mișcarea are ceva oscilatoriu în ea, dar nu e periodică.
+
+*Întrebarea de control:* există o poziție de echilibru la care corpul se
+întoarce, mereu aceeași?
+
+</details>
+
+---
+
+## 2. Modelul de Domino
+
+★ &nbsp;·&nbsp; **12 minute**
+
+Construiește un model fizic pentru propagarea undei mecanice folosind piese din
+jocul Domino: așază-le în picioare, în șir, la distanțe mici și egale, apoi
+împinge-o pe prima.
+
+<FiguraManual
+  src="ro-domino.png"
+  lat={439}
+  inalt={302}
+  latime={400}
+  eticheta="Un deget împinge prima piesă dintr-un șir lung de piese de Domino albe, așezate în picioare pe o masă"
+  legenda="Piese de Domino. Perturbația trece prin tot șirul; piesele rămân unde au fost."
+/>
+
+**1.** Ce reprezintă, în model, o piesă de Domino? Dar distanța dintre ele?
+
+**2.** Ce se propagă de-a lungul șirului: piesele sau altceva?
+
+**3.** Măsoară timpul în care „unda" străbate un șir de $1\ \text{m}$ și
+calculează viteza ei.
+
+**4.** Ce se schimbă dacă apropii piesele una de alta? Ce mărime a mediului real
+imită asta?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** O piesă ține locul unei **particule** a mediului. Distanța dintre ele ține
+locul **legăturii** dintre particule — resorturile din modelul cu bile.
+
+**2.** Se propagă **perturbația**, adică răsturnarea. Piesele nu se mută din
+locul lor: fiecare cade acolo unde era. E chiar ilustrarea proprietății
+„transportă energie fără transport de substanță".
+
+**3.** Dacă șirul de $1\ \text{m}$ cade în circa $1{,}5\ \text{s}$:
+
+$$
+v = \frac{d}{t} = \frac{1}{1{,}5} \approx 0{,}67\ \text{m/s}
+$$
+
+Valoarea depinde de cât de dese sunt piesele și de cât de înalte.
+
+**4.** Cu piesele mai apropiate, fiecare o lovește pe următoarea mai devreme,
+deci unda merge **mai repede**. În mediul real, asta corespunde unor legături
+mai strânse între particule — adică unui mediu mai dens și mai rigid, prin care
+sunetul se propagă mai repede.
+
+</details>
+
+---
+
+## 3. Rigla care vibrează
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Găsește o modalitate prin care o riglă de plastic să execute mișcare
+oscilatorie.
+
+**1.** Descrie montajul și cum pui rigla în mișcare.
+
+**2.** Care este poziția de echilibru?
+
+**3.** Scoate în afara mesei o parte din ce în ce mai mică din riglă. Ce se
+întâmplă cu oscilația?
+
+**4.** De ce se oprește rigla după un timp? Ce s-a întâmplat cu energia ei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se apasă rigla pe marginea mesei, cu o parte ieșită în afară, apoi se
+îndoaie capătul liber și se eliberează. Capătul începe să se ducă în sus și în
+jos.
+
+**2.** Poziția în care rigla stă dreaptă, orizontală — cea de dinainte de a fi
+îndoită.
+
+**3.** Cu partea liberă mai scurtă, rigla oscilează **mai des**, adică perioada
+scade. Când partea liberă e foarte scurtă, oscilațiile devin atât de dese încât
+încep să se audă: rigla scoate un **sunet**.
+
+Ăsta e primul indiciu al lecțiilor care urmează: sunetul este tocmai o vibrație
+destul de deasă.
+
+**4.** Se oprește din cauza **frecărilor** — cea internă, din plasticul care se
+îndoaie, și cea cu aerul. Energia mecanică a riglei se transformă treptat în
+energie de încălzire a materialului și a aerului din jur, și se împrăștie.
+
+Nicio oscilație reală nu ține la nesfârșit; toate se sting.
+
+</details>

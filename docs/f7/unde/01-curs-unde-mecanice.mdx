@@ -1,0 +1,230 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Unde mecanice"
+slug: /f7/unde/c1
+title: "C1 — Unde mecanice"
+description: "Mișcarea oscilatorie, oscilatorii reali, perturbația și propagarea ei, unda mecanică și cele două caracteristici ale ei."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C1 — Unde mecanice
+
+:::info Planul orei
+
+1. Descoperă
+2. Mișcarea periodică
+3. Mișcarea oscilatorie
+4. Oscilatori reali
+5. Perturbația și propagarea ei
+6. Modelul cu bile și resorturi
+7. Unda mecanică
+
+:::
+
+---
+
+## 1. Descoperă
+
+**1.** Toarnă apă într-un tub de plastic transparent — de pildă o bucată de
+furtun cu diametrul $d = 1\ \text{cm}$ — îndoit în formă de U. Acoperă unul
+dintre capete cu mâna și suflă aer prin celălalt capăt, pentru scurt timp. Ce
+observi urmărind mișcarea coloanei de apă?
+
+<FiguraManual
+  src="ro-tub-u-oscilatii.png"
+  lat={433}
+  inalt={315}
+  latime={420}
+  eticheta="Un tub în formă de U cu apă roșie, desenat în două momente; scalele gradate de la 0 la 4 arată cum coloana urcă într-o ramură și coboară în cealaltă, apoi invers"
+  legenda="Tub U cu lichid. Coloana urcă și coboară de o parte și de alta a poziției de echilibru."
+/>
+
+**2.** Suspendă o bilă metalică de un fir lung inextensibil și lovește-o astfel
+încât să o scoți din poziția de repaus. Ce observi?
+
+<FiguraManual
+  src="ro-pendul-gravitational.png"
+  lat={433}
+  inalt={346}
+  latime={400}
+  eticheta="O bilă atârnată de un fir prins în punctul O, desenată în trei poziții: A la stânga, B la mijloc jos și C la dreapta, cu săgeți care arată dus-întorsul"
+  legenda="Pendul gravitațional. Bila trece mereu prin aceeași poziție de echilibru, B."
+/>
+
+**3.** De un resort de oțel agață un corp solid, trage de el vertical, apoi
+eliberează-l. Urmărește mișcarea corpului suspendat.
+
+<FiguraManual
+  src="ro-pendul-elastic.png"
+  lat={433}
+  inalt={315}
+  latime={400}
+  eticheta="Un resort prins de tavan cu un corp galben la capăt, desenat în două situații: în repaus, și tras în jos de o mână, cu o săgeată dublă care arată oscilația"
+  legenda="Pendul elastic. Corpul urcă și coboară în jurul poziției de echilibru."
+/>
+
+Toate trei arată același lucru: o mișcare **dus-întors** în jurul unei poziții.
+
+---
+
+## 2. Mișcarea periodică
+
+Unele corpuri sunt constrânse să realizeze mișcări pe traiectorii parcurse în
+**ambele sensuri** față de o poziție inițială de repaus, numită **poziție de
+echilibru**.
+
+:::danger Definiția 1
+
+Dacă mișcarea se reia din aceeași poziție după un interval de timp, numit
+**perioadă**, se spune că este o **mișcare periodică**.
+
+:::
+
+---
+
+## 3. Mișcarea oscilatorie
+
+:::danger Definiția 2
+
+**Mișcarea oscilatorie** — numită și **oscilație** sau **vibrație** — este
+mișcarea periodică ce se realizează de o parte și de alta față de o poziție de
+echilibru.
+
+:::
+
+Sistemul fizic care realizează mișcare de oscilație se numește **oscilator**.
+
+---
+
+## 4. Oscilatori reali
+
+Dacă nu ar exista forțe de frecare, perioada de oscilație ar fi constantă, iar
+mișcarea oscilatorie ar fi **ideală**.
+
+În realitate nu pot exista oscilații ideale, fiindcă frecările nu se pot elimina.
+De aceea perioada mișcării nu este constantă, ci **descrește în timp**, iar
+oscilația se stinge.
+
+| Oscilatorul | Ce oscilează |
+|---|---|
+| **pendulul gravitațional** | o bilă atârnată de un fir |
+| **pendulul elastic** | un corp atârnat de un resort |
+| coloana de apă din tubul U | lichidul însuși |
+
+Toate trei sunt **oscilatori reali**: mișcarea lor încetează după un timp, din
+cauza frecărilor.
+
+---
+
+## 5. Perturbația și propagarea ei
+
+**Arunci o piatră în apa liniștită a unui lac. Ce se întâmplă la suprafața
+apei?**
+
+La contactul pietrei cu apa se produce o **perturbație mecanică** a mediului,
+adică o deformare a lichidului. Încercând să revină la pozițiile inițiale,
+moleculele deranjate încep să aibă o mișcare oscilatorie, pe care o transmit
+**din aproape în aproape** moleculelor vecine.
+
+:::danger Definiția 3
+
+Transmiterea unei perturbații dintr-un punct în punctele vecine ale unui mediu
+se numește **propagarea perturbației**.
+
+:::
+
+La suprafața apei se observă valuri circulare concentrice care se îndepărtează
+de locul impactului și devin din ce în ce mai mici, pe măsură ce energiile
+cinetică și potențială ale moleculelor se micșorează.
+
+**Și membrana difuzorului face la fel.** Vibrația ei produce perturbația
+particulelor de aer din vecinătate; acestea primesc energia și o transmit
+particulelor vecine, ca moleculele de apă ale valurilor. Din aproape în aproape,
+particulele de aer „conduc muzica" până la urechea ascultătorului.
+
+<FiguraManual
+  src="ro-difuzoare.png"
+  lat={434}
+  inalt={284}
+  latime={380}
+  eticheta="Două boxe audio negre, cu unde desenate ieșind din membranele lor"
+  legenda="Difuzoarele unui sistem audio."
+/>
+
+<FiguraManual
+  src="ro-membrana-difuzor.png"
+  lat={434}
+  inalt={576}
+  latime={330}
+  eticheta="Prim-plan cu membrana conică a unui difuzor, văzută din față"
+  legenda="Membrana vibrantă a difuzorului. Ea pune aerul în mișcare."
+/>
+
+---
+
+## 6. Modelul cu bile și resorturi
+
+Un model fizic în care se simulează mișcările de mai sus este alcătuit din bile
+identice legate între ele prin resorturi de același tip — **pendule elastice
+cuplate** — asupra cărora s-a produs o deformare sub acțiunea unei forțe.
+
+<FiguraManual
+  src="ro-pendule-cuplate.png"
+  lat={694}
+  inalt={418}
+  latime={560}
+  eticheta="Un șir de patru bile roz legate prin resorturi, desenat în trei momente succesive; o forță F deformează șirul, iar deformarea se mută de la o bilă la alta, arătată prin săgeți roșii"
+  legenda="Pendule elastice cuplate. Perturbația trece de la o bilă la alta, dar bilele rămân în șir."
+/>
+
+Perturbația reprezintă deranjarea poziției bilelor, însoțită de alungirea
+resorturilor. Particulele mediilor de mai sus — apa, aerul — sunt asemenea
+bilelor, iar resorturile țin locul legăturilor dintre ele.
+
+După încetarea acțiunii forței deformatoare, propagarea perturbației se produce
+de la o bilă la alta, sub forma mișcărilor oscilatorii ale bilelor, care își
+transmit energia mecanică **succesiv**.
+
+---
+
+## 7. Unda mecanică
+
+:::danger Definiția 4
+
+Fenomenul de transmitere a unei perturbații într-un mediu se numește **undă**.
+
+Dacă perturbația este o **deformare mecanică**, iar mișcarea transmisă este
+oscilatorie, fenomenul se numește **undă mecanică**.
+
+:::
+
+Proprietățile mediului — natura substanței, densitatea, temperatura — determină
+modul de propagare a perturbației.
+
+Deoarece forțele de legătură dintre particulele unui mediu material sunt de tip
+elastic, undele mecanice se mai numesc și **unde elastice**.
+
+:::tip Cele două caracteristici ale undei
+
+- se propagă **din aproape în aproape**;
+- **transportă energie fără transport de substanță**.
+
+:::
+
+A doua e cea care surprinde. Bilele din model rămân fiecare la locul ei; se mută
+doar **perturbația**. La fel, o minge care plutește pe lac nu e dusă la mal de
+valuri: ea se leagănă pe loc, în sus și în jos.
+
+---
+
+:::note Ora următoare
+
+**LP1 — Unde mecanice.** Trei probe: recunoașterea oscilatorilor, modelul cu
+piese de Domino și mingea din piscină.
+
+Înainte de ea, treci prin
+**[S1 — Unde mecanice](./02-s-unde-mecanice.mdx)**: noțiunile lecției strânse la
+un loc și un exercițiu rezolvat pas cu pas.
+
+:::

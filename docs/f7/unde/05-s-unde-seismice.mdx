@@ -1,0 +1,149 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Unde seismice și valuri"
+slug: /f7/unde/s2
+title: "S2 — Unde seismice și valuri"
+description: "Suport de curs: tabelul undelor seismice, formula lungimii valului și un exercițiu rezolvat pas cu pas cu un tsunami."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Unde seismice și valuri
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Unde seismice, valuri](./04-curs-unde-seismice.mdx)**, strâns la un loc,
+și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi la
+**[LP2](./06-lp-unde-seismice.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Lungimea valului | $L$ | $L = v \cdot T$ | metru, $\text{m}$ |
+| Viteza valului | $v$ | $v = \dfrac{L}{T}$ | $\text{m/s}$ |
+| Perioada valului | $T$ | $T = \dfrac{L}{v}$ | secundă, $\text{s}$ |
+| Timpul de parcurs | $t$ | $t = \dfrac{d}{v}$ | secundă, $\text{s}$ |
+
+---
+
+## 2. Cele trei feluri de unde seismice
+
+| Unda | Cum vibrează mediul | Viteza în scoarță | Trece prin apă? | Ordinea sosirii |
+|---|---|---|---|---|
+| **primară (P)** | comprimări și dilatări **pe** direcția de propagare | $5$–$7\ \text{km/s}$ | **da** | prima |
+| **secundară (S)** | vibrații **perpendicular** pe direcția de propagare | $3$–$4\ \text{km/s}$ | **nu** | a doua |
+| **de suprafață** | deformări ample ale scoarței | cea mai mică | — | ultima |
+
+Amplitudinea crește în aceeași ordine: undele de suprafață sunt cele care
+dărâmă.
+
+---
+
+## 3. De reținut
+
+- **Focarul** e în adânc; **epicentrul** e la suprafață, deasupra lui.
+- **Magnitudinea** e una singură pentru un cutremur; **intensitatea** e alta
+  în fiecare loc.
+- Scara Richter merge de la $1$ la $9$; scara Mercalli, de la $1$ la $12$. Nu
+  le amesteca.
+- Undele P și S pornesc din același loc, în același moment; ele ajung la
+  seismograf la momente diferite doar fiindcă au viteze diferite.
+- La val, **lungimea** se măsoară de la o creastă la alta, iar **înălțimea** de
+  la bază la creastă. Ele nu au nimic de-a face una cu alta.
+- În $L = vT$, timpul se trece în secunde și lungimile în metri.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un cutremur submarin produce un tsunami. În larg, valul are lungimea
+$L = 200\ \text{km}$ și perioada $T = 15\ \text{minute}$. Coasta se află la
+$900\ \text{km}$ de epicentru.
+
+**a)** Cu ce viteză înaintează valul?
+
+**b)** În cât timp ajunge el la coastă?
+
+**c)** Undele seismice ale aceluiași cutremur merg prin scoarță cu
+$6\ \text{km/s}$. În cât timp ajung ele la o stație aflată tot la
+$900\ \text{km}$?
+
+**d)** Cu cât înainte de val află stația de cutremur?
+
+### Pasul 1 — Ce se dă
+
+- $L = 200\ \text{km}$;
+- $T = 15\ \text{min}$;
+- $d = 900\ \text{km}$;
+- $v_{\text{seism}} = 6\ \text{km/s}$.
+
+### Pasul 2 — Trecem în unități potrivite
+
+Lucrăm în kilometri și secunde, ca să nu ne încurcăm în zerouri:
+
+$$
+T = 15\ \text{min} = 15 \times 60 = 900\ \text{s}
+$$
+
+### Pasul 3 — Viteza valului
+
+$$
+v = \frac{L}{T} = \frac{200}{900} \approx 0{,}222\ \text{km/s}
+$$
+
+adică aproximativ $222\ \text{m/s}$, sau circa $800\ \text{km/h}$ — cât un
+avion de linie.
+
+### Pasul 4 — Timpul până la coastă
+
+$$
+t_{\text{val}} = \frac{d}{v} = \frac{900}{0{,}222} \approx 4050\ \text{s}
+$$
+
+$$
+4050\ \text{s} = \frac{4050}{60} \approx 67{,}5\ \text{minute}
+$$
+
+Puțin peste o oră.
+
+### Pasul 5 — Timpul undelor seismice
+
+$$
+t_{\text{seism}} = \frac{d}{v_{\text{seism}}} = \frac{900}{6} = 150\ \text{s} = 2{,}5\ \text{minute}
+$$
+
+### Pasul 6 — Diferența
+
+$$
+\Delta t = 4050 - 150 = 3900\ \text{s} = 65\ \text{minute}
+$$
+
+### Pasul 7 — Verificarea și înțelesul
+
+Numerele sunt mari, dar verosimile: tsunamiurile străbat oceanul cu viteze de
+sute de metri pe secundă, iar undele seismice sunt de zeci de ori mai rapide.
+
+Aici stă și rostul sistemelor de avertizare: stația **simte cutremurul** cu peste
+o oră înainte ca valul să ajungă. Într-o oră se poate evacua un oraș de coastă.
+
+### Răspuns
+
+**a)** $v \approx 222\ \text{m/s}$; **b)** circa $67{,}5$ minute;
+**c)** $2{,}5$ minute; **d)** cu circa $65$ de minute mai devreme.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Unde seismice și valuri](./06-lp-unde-seismice.mdx).** Trei probe, în
+total 32 de minute.
+
+:::
