@@ -1,0 +1,172 @@
+---
+sidebar_position: 15.5
+sidebar_label: "S8 — Legea lui Ohm și rezistența"
+slug: /f8/electrocinetica/s8
+title: "S8 — Legea lui Ohm și rezistența"
+description: "Suport de curs: legea lui Ohm scrisă în toate felurile, conversiile de intensitate și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S8 — Legea lui Ohm și rezistența
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C8 — Legea lui Ohm și rezistența](./15-curs-legea-lui-ohm.mdx)**, strânse la
+un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă când
+lucrezi la **[LP8](./16-lp-legea-lui-ohm.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Tensiunea | $U$ | $U = R \times I$ | volt, $\text{V}$ |
+| Intensitatea | $I$ | $I = \dfrac{U}{R}$ | amper, $\text{A}$ |
+| Rezistența | $R$ | $R = \dfrac{U}{I}$ | ohm, $\Omega$ |
+
+Aceeași lege, scrisă în cele trei feluri în care o vei folosi:
+
+$$
+U = R \times I
+\qquad\Longleftrightarrow\qquad
+I = \frac{U}{R}
+\qquad\Longleftrightarrow\qquad
+R = \frac{U}{I}
+$$
+
+La un conductor ohmic, tensiunea $U$ de la borne este **proporțională** cu
+intensitatea $I$ a curentului care îl străbate — asta e tot una cu a spune că
+graficul lui este o dreaptă prin origine.
+
+---
+
+## 2. Unități și conversii
+
+| Ce ai | Cât face în SI |
+|---|---|
+| $1\ \text{mA}$ | $10^{-3}\ \text{A}$ |
+| $1\ \mu\text{A}$ | $10^{-6}\ \text{A}$ |
+| $1\ \text{k}\Omega$ | $10^{3}\ \Omega$ |
+| $1\ \text{M}\Omega$ | $10^{6}\ \Omega$ |
+| $1\ \text{mV}$ | $10^{-3}\ \text{V}$ |
+
+:::warning Atenție
+
+Intensitatea se dă foarte des în **miliamperi**, iar legea lui Ohm cere
+**amperi**. $20{,}0\ \text{mA} = 0{,}0200\ \text{A}$. Dacă uiți conversia,
+rezistența îți iese de o mie de ori mai mică.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Legea lui Ohm se aplică **numai** conductoarelor ohmice — celor cu
+  caracteristica dreaptă prin origine.
+- Rezistența unui conductor ohmic e **aceeași** în orice punct de funcționare:
+  raportul $U/I$ nu se schimbă.
+- Dacă tensiunea se dublează, se dublează și curentul. Proporționalitatea îți
+  scutește adesea calculul.
+- Verifică mereu ordinul de mărime: câțiva volți împărțiți la câțiva miliamperi
+  dau **sute sau mii** de ohmi.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Caracteristica intensitate–tensiune a unui dipol este o dreaptă care trece prin
+originea coordonatelor și prin punctul
+$M\ (20{,}0\ \text{mA}\ ;\ 4{,}00\ \text{V})$.
+
+**1.** Ce dipol este acesta?
+
+**2.** Calculează rezistența lui.
+
+**3.** Prin ce curent trebuie să fie parcurs ca la bornele lui să apară o
+tensiune de $8{,}00\ \text{V}$?
+
+### Pasul 1 — Ce se dă
+
+- caracteristica: **dreaptă**, prin **origine**;
+- un punct de funcționare: $I = 20{,}0\ \text{mA}$ la $U = 4{,}00\ \text{V}$.
+
+### Pasul 2 — Ce se cere
+
+Natura dipolului, rezistența lui și curentul la o altă tensiune.
+
+### Pasul 3 — Natura dipolului
+
+Caracteristica acestui dipol fiind o dreaptă care trece prin origine, este vorba,
+prin definiție, de un **conductor ohmic**.
+
+<FiguraManual
+  src="c03-caract-exercitiu.png"
+  lat={515}
+  inalt={324}
+  latime={300}
+  eticheta="Dreaptă prin origine care trece prin punctul de coordonate 20,0 mA și 4,00 V"
+  legenda="Caracteristica dipolului din exercițiu: o dreaptă prin origine, dusă prin punctul M."
+>
+  <Et x={30}  y={109} w={42} h={16} corp={16} alinia="dreapta" fond="#daf0f4">4,00</Et>
+  <Et x={334} y={287} w={42} h={20} corp={17} alinia="centru"  fond="#daf0f4">20,0</Et>
+</FiguraManual>
+
+Fiind conductor ohmic, putem folosi legea lui Ohm.
+
+### Pasul 4 — Trecem în unități SI
+
+Intensitatea $20{,}0\ \text{mA}$ se scrie mai întâi în amperi:
+
+$$
+20{,}0\ \text{mA} = 0{,}0200\ \text{A}
+$$
+
+### Pasul 5 — Rezistența
+
+Rezistența unui conductor ohmic se obține din legea lui Ohm, aplicată în punctul
+dat de enunț:
+
+$$
+R = \frac{U}{I} = \frac{4{,}00}{0{,}0200} = 200\ \Omega
+$$
+
+### Pasul 6 — Curentul la $8{,}00\ \text{V}$, și verificarea
+
+Aici ni se dă tensiunea și trebuie să deducem intensitatea. Aplicăm din nou legea
+lui Ohm, sub cealaltă formă a ei:
+
+$$
+I = \frac{U}{R} = \frac{8{,}00}{200} = 0{,}0400\ \text{A} = 40{,}0\ \text{mA}
+$$
+
+Trebuie deci ca prin dipol să treacă un curent de $40\ \text{mA}$.
+
+*Verificare — și scurtătura*: rezultatul se putea vedea și direct. Vrem ca
+tensiunea de la bornele conductorului ohmic să fie **dublul** celei din punctul
+de funcționare dat în enunț. Trebuie deci ca și curentul să fie dublul celor
+$20\ \text{mA}$ care corespund acelui punct.
+
+*A doua verificare*: $200\ \Omega$ e un ordin de mărime obișnuit pentru un
+rezistor. Dacă ți-ar fi ieșit $0{,}2\ \Omega$, ai fi uitat conversia din
+miliamperi.
+
+### Răspuns
+
+Un conductor ohmic, cu $R = 200\ \Omega$. La $8{,}00\ \text{V}$ îl străbate un
+curent de $40{,}0\ \text{mA}$.
+
+---
+
+:::note Ora următoare
+
+**[LP8 — Legea lui Ohm și rezistența](./16-lp-legea-lui-ohm.mdx).**
+
+:::

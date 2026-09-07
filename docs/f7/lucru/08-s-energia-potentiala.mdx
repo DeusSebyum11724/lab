@@ -1,0 +1,167 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Energia potențială de greutate"
+slug: /f7/lucru/s3
+title: "S3 — Energia potențială de greutate"
+description: "Suport de curs: formulele energiei potențiale, regula semnelor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Energia potențială de greutate
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C3 — Energia potențială de greutate](./07-curs-energia-potentiala.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP3](./09-lp-energia-potentiala.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Energia potențială (caz general) | $E_p$ | $E_p = m g z + E_0$ | joule, $\text{J}$ |
+| Energia potențială (zero la sol) | $E_p$ | $E_p = m g z$ | joule, $\text{J}$ |
+| Energia potențială (zero la $z_{\text{ref}}$) | $E_p$ | $E_p = m g (z - z_{\text{ref}})$ | joule, $\text{J}$ |
+| Variația între două puncte | $\Delta E_p$ | $\Delta E_p = m g (z_B - z_A)$ | joule, $\text{J}$ |
+| Înălțimea | $z$ | $z = \dfrac{E_p}{m g}$ | metru, $\text{m}$ |
+
+Relația pe care o vei folosi cel mai des:
+
+$$
+\Delta E_p = m g (z_B - z_A)
+$$
+
+- $m$ — masa, în **kilograme**;
+- $g$ — intensitatea gravitațională, $10\ \text{N/kg}$;
+- $z_A$, $z_B$ — altitudinile punctului de plecare și de sosire, în **metri**;
+- $\Delta E_p$ — variația energiei potențiale, în jouli.
+
+Pentru un corp întins se ia cota **centrului lui de greutate** $G$:
+$E_p = m g z_G + E_0$.
+
+---
+
+## 2. Unități și pregătirea datelor
+
+| Ce ai | Ce faci |
+|---|---|
+| masa în grame | împarți la $1\,000$ |
+| masa în tone | înmulțești cu $1\,000$ |
+| înălțimea în centimetri | împarți la $100$ |
+
+Înainte de orice calcul, **scrie unde ai pus zeroul**. De obicei la sol.
+Altitudinile de sub el sunt atunci negative.
+
+---
+
+## 3. De reținut
+
+- Valoarea lui $E_p$ depinde de unde ai ales zeroul. **Variația** $\Delta E_p$
+  nu depinde: constanta se simplifică.
+- Corpul **urcă** $\Rightarrow$ $z_B > z_A$ $\Rightarrow$ $\Delta E_p > 0$.
+- Corpul **coboară** $\Rightarrow$ $z_B < z_A$ $\Rightarrow$ $\Delta E_p < 0$.
+- Energia potențială nu depinde de viteza corpului, ci numai de unde se află el.
+- La un corp întins se lucrează cu centrul lui de greutate.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un ciocan-pilon, de masă $m = 2$ tone, cade de la înălțimea $h = 3\ \text{m}$
+peste un obiect de aluminiu. Viteza lui inițială este nulă, iar frecările se
+neglijează în timpul căderii.
+
+<FiguraManual
+  src="r4-ciocan.png"
+  lat={160}
+  inalt={235}
+  latime={150}
+  eticheta="Ciocanul-pilon cade de la altitudinea zA la altitudinea zB, pe înălțimea h"
+  legenda="Ciocanul-pilon trece de la altitudinea zA la altitudinea zB."
+/>
+
+Cu cât variază energia potențială de greutate a ciocanului-pilon în timpul
+căderii?
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+### Pasul 1 — Ce se dă
+
+- masa ciocanului: $m = 2$ tone;
+- înălțimea căderii: $h = 3\ \text{m}$;
+- $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Ce se cere
+
+Variația $\Delta E_p$ a energiei potențiale de greutate între punctul de
+plecare A și punctul de sosire B.
+
+### Pasul 3 — Ce formulă folosim
+
+Ciocanul-pilon trece de la altitudinea $z_A$ la altitudinea $z_B$, caz în care
+energia lui potențială de greutate trece de la
+
+$$
+E_p(A) = m g z_A + E_0
+\qquad\text{la}\qquad
+E_p(B) = m g z_B + E_0
+$$
+
+unde $E_0$ este o constantă. De aceea, în timpul căderii, energia potențială de
+greutate a ciocanului-pilon variază cu cantitatea:
+
+$$
+\Delta E_p = E_p(B) - E_p(A) = m g (z_B - z_A)
+$$
+
+Constanta $E_0$ se simplifică — de asta nici nu trebuie să hotărâm unde punem
+zeroul.
+
+### Pasul 4 — Legăm de înălțimea căderii
+
+Înălțimea căderii este $h = z_A - z_B$, deci $z_B - z_A = -h$, și prin urmare:
+
+$$
+\Delta E_p = -m g h
+$$
+
+Semnul minus apare de la sine: ciocanul **coboară**.
+
+### Pasul 5 — Trecem în unități SI și calculăm
+
+$$
+m = 2\ \text{tone} = 2\,000\ \text{kg}
+$$
+
+$$
+\Delta E_p = -2\,000 \times 10 \times 3 = -6 \times 10^4\ \text{J}
+$$
+
+### Pasul 6 — Verificarea
+
+Semnul: corpul coboară, deci $\Delta E_p$ trebuie să fie negativ. Este.
+
+Ordinul de mărime: două tone ridicate la trei metri înseamnă $60\ \text{kJ}$ —
+cam energia dintr-o baterie mică de telefon. Rezonabil.
+
+### Răspuns
+
+Energia potențială de greutate a ciocanului-pilon scade cu
+$6 \times 10^4\ \text{J}$ în timpul căderii.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Energia potențială de greutate](./09-lp-energia-potentiala.mdx).**
+Trei probe, în total 40 de minute.
+
+:::

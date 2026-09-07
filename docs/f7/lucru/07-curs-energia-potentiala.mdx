@@ -1,0 +1,153 @@
+---
+sidebar_position: 7
+sidebar_label: "C3 — Energia potențială de greutate"
+slug: /f7/lucru/c3
+title: "C3 — Energia potențială de greutate"
+description: "Energia potențială de greutate, alegerea nivelului de referință și variația ei între două puncte."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C3 — Energia potențială de greutate
+
+:::info Planul orei
+
+1. Definiția
+2. Alegerea nivelului de referință
+3. Ce se poate ști cu adevărat: variația
+4. Energia potențială a unui corp întreg
+
+:::
+
+---
+
+## 1. Definiția
+
+:::danger Definiția 1
+
+În vecinătatea Pământului, acolo unde câmpul gravitațional este aproape uniform
+și de intensitate $g$ (în $\text{N/kg}$), **energia potențială de greutate** a
+unui punct $M$ de masă $m$ (în kg) și de cotă verticală $z$ (în m) valorează:
+
+$$
+E_{p}(M) = m g z + E_0 \quad \text{(în joule)}
+$$
+
+unde $E_0$ este o constantă oarecare.
+
+:::
+
+<FiguraManual
+  src="r4-ep-punct.png"
+  lat={188}
+  inalt={235}
+  latime={175}
+  eticheta="Un punct M la cota z deasupra originii O, în câmpul gravitațional g"
+  legenda="Punctul M se află la cota z față de originea O aleasă la nivelul solului."
+>
+  <Et x={68} y={186} w={48} h={20} corp={14}>solul</Et>
+</FiguraManual>
+
+---
+
+## 2. Alegerea nivelului de referință
+
+Constanta $E_0$ poate fi hotărâtă alegând originea energiilor potențiale de
+greutate la cota $z_{\text{ref}}$ — ceea ce înseamnă să presupunem energia
+potențială nulă la $z = z_{\text{ref}}$. În cazul ăsta, expresia devine:
+
+$$
+E_p(M) = m g (z - z_{\text{ref}})
+\qquad\text{fiindcă}\qquad
+E_0 = -m g z_{\text{ref}}
+$$
+
+:::warning Atenție
+
+Cota $z$ este adesea o altitudine, adică o cotă față de sol sau față de nivelul
+mării. Trebuie atunci să admitem existența unor **altitudini negative**, care
+corespund punctelor aflate sub suprafața solului sau a mării.
+
+:::
+
+:::tip De reținut — metoda
+
+Alegând originea energiei potențiale de greutate la nivelul solului (sau al
+mării) și notând cu $z$ altitudinea unui punct $M$, expresia energiei
+potențiale de greutate a lui $M$ se simplifică:
+
+$$
+E_p(M) = m g z
+$$
+
+:::
+
+Asta e alegerea pe care o vei face aproape întotdeauna: **nivelul solului
+înseamnă energie potențială zero**.
+
+---
+
+## 3. Ce se poate ști cu adevărat: variația
+
+Fiindcă constanta $E_0$ poate fi hotărâtă oricum, energia potențială de
+greutate a două puncte:
+
+$$
+E_p(A) = m g z_A + E_0
+\qquad\text{și}\qquad
+E_p(B) = m g z_B + E_0
+$$
+
+nu este niciodată cunoscută decât până la o constantă. În schimb, **variația**
+energiei potențiale:
+
+$$
+\Delta E_p = E_p(B) - E_p(A) = m g (z_B - z_A)
+$$
+
+este perfect determinată — constanta $E_0$ se simplifică.
+
+:::tip De reținut
+
+Valoarea energiei potențiale depinde de unde ai pus zeroul. **Variația** ei nu
+depinde. De aceea, în probleme, ceea ce contează aproape întotdeauna este
+$\Delta E_p$.
+
+:::
+
+---
+
+## 4. Energia potențială a unui corp întreg
+
+Energia potențială de greutate a unui corp care nu este punctiform, de masă $m$
+și de centru de greutate $G$, se confundă cu energia potențială de greutate a
+punctului $G$ care ar avea masa $m$:
+
+$$
+E_p(\text{corp}) = m g z_G + E_0
+$$
+
+<FiguraManual
+  src="r4-ep-corp.png"
+  lat={225}
+  inalt={220}
+  latime={205}
+  eticheta="Un corp întins, cu centrul de greutate G la cota zG, deasupra cotei de referință"
+  legenda="Pentru un corp întreg se ia cota centrului lui de greutate G."
+>
+  <Et x={7} y={142} w={38} h={18} corp={11}><i>z</i><sub>ref</sub></Et>
+  <Et x={91} y={175} w={48} h={20} corp={14}>solul</Et>
+</FiguraManual>
+
+---
+
+:::note Ora următoare
+
+**LP3 — Energia potențială de greutate.** Trei probe: alegerea nivelului de
+referință, vagonetul din parcul de distracții și săritura în înălțime.
+
+Înainte de ea, treci prin
+**[S3 — Energia potențială de greutate](./08-s-energia-potentiala.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

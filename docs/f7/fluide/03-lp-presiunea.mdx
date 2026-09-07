@@ -1,0 +1,389 @@
+---
+sidebar_position: 3
+sidebar_label: "LP1 — Presiunea"
+slug: /f7/fluide/lp1
+title: "LP1 — Presiunea"
+description: "Lucrare practică: piuneza, forța de apăsare pe o masă, presiunea sub un piston, forțele de pe un geam și masa unui piston."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Presiunea
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C1 — Presiunea](./01-curs-presiunea.mdx)**, cu
+formulele din **[S1](./02-s-presiunea.mdx)** la îndemână. Cinci probe; în total
+50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Vârful piunezei | ★★ | 10 min |
+| 2 | Forța de apăsare | ★★ | 10 min |
+| 3 | Presiunea sub un piston | ★ | 10 min |
+| 4 | Forțele de apăsare pe o fereastră | ★ | 10 min |
+| 5 | Masa pistonului | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Vârful piunezei
+
+**Liceul Henri IV, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră o piuneză de alamă, reprezentată mai jos, alcătuită dintr-un vârf
+a cărui extremitate poate fi socotită un disc de rază $r = 0{,}1\ \text{mm}$ și
+dintr-un cap plat, asemănător unui disc de rază $R = 4\ \text{mm}$.
+
+<FiguraManual
+  src="r3-piuneza.png"
+  lat={542}
+  inalt={343}
+  latime={420}
+  eticheta="Schema unei piuneze, cu capul de rază R și vârful de rază r văzut prin lupă"
+  legenda="Schema piunezei și mărirea vârfului."
+>
+  <Et x={32} y={52} w={73} h={19} corp={13}>capul</Et>
+  <Et x={13} y={85} w={111} h={25} corp={14}>piunezei</Et>
+  <Et x={469} y={212} w={64} h={25} corp={14}>lupă</Et>
+  <Et x={19} y={215} w={102} h={25} corp={14}>vârful</Et>
+  <Et x={15} y={248} w={111} h={26} corp={14}>piunezei</Et>
+</FiguraManual>
+
+Se exercită pe capul piunezei o forță de valoare $F = 50\ \text{N}$, apăsând
+totodată vârful pe un perete.
+
+**1.** Ce masă ar avea o greutate egală cu această forță?
+
+**2.** Ce presiune se exercită pe capul piunezei?
+
+**3.** Ce presiune este exercitată pe vârf? Ce poți deduce de aici?
+
+*Date:*
+
+- Suprafața unui disc de rază $r$ este $\pi r^2$.
+- Intensitatea gravitațională: $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Aplicăm relația $G = m \times g$. Asta dă:
+
+$$
+m = \frac{G}{g} = \frac{50}{10} = 5{,}0\ \text{kg}
+$$
+
+O masă de $5{,}0\ \text{kg}$ ar avea o greutate egală cu forța exercitată.
+
+**2.** Presiunea este egală cu forța de apăsare împărțită la suprafață.
+Suprafața capului piunezei este:
+
+$$
+S = \pi R^2 = 3{,}14 \times (4 \times 10^{-3})^2 = 5 \times 10^{-5}\ \text{m}^2
+$$
+
+Presiunea exercitată pe capul piunezei este deci:
+
+$$
+P = \frac{50}{5 \times 10^{-5}} = 10^6\ \text{Pa}
+$$
+
+**3.** Considerăm piuneza în echilibru (sau în mișcare rectilinie uniformă,
+dacă intră în perete). Forțele care se exercită asupra ei se compensează deci.
+Sunt forța exercitată de operator pe capul piunezei și reacțiunea peretelui pe
+vârf. Este pe deplin îndreptățit să neglijăm greutatea piunezei, având în
+vedere ordinul de mărime obținut la prima întrebare.
+
+Forța exercitată pe vârf are deci valoarea $F = 50\ \text{N}$. Presiunea
+corespunzătoare se deduce prin:
+
+$$
+P' = \frac{F}{\pi r^2}
+$$
+
+$$
+P' = \frac{50}{3{,}14 \times (10^{-4})^2} \approx 1{,}6 \times 10^9\ \text{Pa}
+$$
+
+Presiunea asta reprezintă aproximativ $16\,000$ de atmosfere. Este
+considerabilă. Ea îi permite vârfului să străpungă materialele în care vrem să
+înfigem piuneza.
+
+*Verificare*: raza vârfului este de $40$ de ori mai mică decât cea a capului,
+deci presiunea la vârf trebuie să fie de $40^2 = 1\,600$ de ori mai mare decât
+la cap.
+
+</details>
+
+---
+
+## 2. Forța de apăsare
+
+**Liceul Hector Berlioz, Vincennes** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+O masă $m = 240\ \text{kg}$ este așezată pe o suprafață de arie
+$A_1 = 3{,}00\ \text{m}^2$.
+
+**1.** Ce presiune, presupusă repartizată uniform, exercită ea pe suprafața
+asta?
+
+**2.** Este presiunea asta mult mai mare decât presiunea atmosferică?
+
+**3.** Aceeași masă este acum așezată pe o suprafață de arie
+$A_2 = 120\ \text{cm}^2$. Ce presiune se exercită pe suprafața asta? Cum se
+compară ea cu presiunea atmosferică?
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forța exercitată pe suprafață este:
+
+$$
+F = m g = 240 \times 10 = 2{,}4 \times 10^3\ \text{N}
+$$
+
+Presiunea se deduce prin:
+
+$$
+P = \frac{F}{A_1} = \frac{2\,400}{3} = 800\ \text{Pa}
+$$
+
+**2.** Presiunea asta este considerabil mai mică decât presiunea atmosferică.
+
+:::warning Atenție
+
+Presiunea e obținută aici în pascali. În unitatea asta, presiunea atmosferică
+valorează aproximativ o sută de mii.
+
+:::
+
+**3.** Convertim valoarea noii suprafețe în unitatea Sistemului Internațional,
+metrul pătrat. Avem:
+
+$$
+1\ \text{m} = 10^2\ \text{cm}
+\quad\text{deci}\quad
+1\ \text{m}^2 = 10^4\ \text{cm}^2
+\quad\text{deci}\quad
+1\ \text{cm}^2 = 10^{-4}\ \text{m}^2
+$$
+
+Suprafața valorează deci:
+
+$$
+A_2 = 120 \times 10^{-4} = 1{,}2 \times 10^{-2}\ \text{m}^2
+$$
+
+Presiunea exercitată pe suprafață este deci:
+
+$$
+P' = \frac{F}{A_2} = \frac{2\,400}{1{,}2 \times 10^{-2}} = 2{,}0 \times 10^5\ \text{Pa}
+$$
+
+Presiunea asta valorează aproximativ de două ori presiunea atmosferică.
+
+</details>
+
+---
+
+## 3. Presiunea sub un piston
+
+**Liceul Les Fauvettes, Cannes** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră un gaz G într-o incintă închisă sus de un piston de masă
+$m = 10\ \text{kg}$ și de suprafață $S = 50\ \text{cm}^2$. Incinta se află în
+vid, așa cum arată figura de mai jos.
+
+<FiguraManual
+  src="r3-piston-vid.png"
+  lat={287}
+  inalt={218}
+  latime={250}
+  eticheta="Incintă cu gazul G, închisă sus de un piston, aflată în vid"
+  legenda="Incinta cu gazul G, închisă de un piston, se află în vid."
+>
+  <Et x={82} y={10} w={47} h={20} corp={13}>vid</Et>
+</FiguraManual>
+
+**1.** Care este bilanțul forțelor exercitate asupra pistonului?
+
+**2.** Deduceți de aici presiunea gazului G.
+
+*Dat:* intensitatea gravitațională: $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forțele exercitate asupra pistonului sunt (vezi figura de mai jos):
+
+<FiguraManual
+  src="r3-bilan-piston.png"
+  lat={240}
+  inalt={190}
+  latime={230}
+  eticheta="Bilanțul forțelor pe piston: forța de apăsare a gazului în sus și greutatea în jos"
+  legenda="Bilanțul forțelor exercitate asupra pistonului."
+>
+  <Et x={42} y={39} w={47} h={20} corp={13} fond="#ecf6eb">vid</Et>
+  <Et x={38} y={135} w={82} h={25} corp={19} fond="#ecf6eb">gazul G</Et>
+</FiguraManual>
+
+- Forța de apăsare $\vec{F}$ exercitată de gazul dinăuntrul incintei. Ea este
+  îndreptată în sus și valoarea ei este $F = p \times S$, unde $p$ este
+  presiunea gazului G.
+- Greutatea $\vec{G}$ a pistonului, care este îndreptată în jos și a cărei
+  valoare este $G = m \times g$.
+
+**2.** Pistonul este în echilibru, deci forțele care se exercită asupra lui se
+compensează. Putem scrie deci:
+
+$$
+p \times S = m \times g
+\qquad\text{adică}\qquad
+p = \frac{m \times g}{S}
+$$
+
+Aplicația numerică dă:
+
+$$
+p = \frac{10 \times 10}{50 \times 10^{-4}} = 2{,}0 \times 10^4\ \text{Pa} = 20\ \text{kPa}
+$$
+
+</details>
+
+---
+
+## 4. Forțele de apăsare pe o fereastră
+
+**Liceul Frédéric Ozanam, Lille** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Care este forța exercitată pe o fereastră de
+$80{,}000\ \text{cm} \times 100{,}00\ \text{cm}$ de aerul din afară, de
+presiune $P = 101\,325\ \text{Pa}$?
+
+**2.** Care este forța exercitată de aerul dinăuntru, presupus la aceeași
+presiune ca aerul din afară?
+
+**3.** De ce nu se sparge fereastra?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forța se obține aplicând formula:
+
+$$
+\text{forța} = \text{presiune} \times \text{suprafață}
+$$
+
+Aici suprafața valorează $S = 0{,}8 \times 1 = 0{,}8\ \text{m}^2$, deci forța
+valorează:
+
+$$
+F = P \times S = 101\,325 \times 0{,}8 = 81\,060\ \text{N}
+$$
+
+De notat că forța asta corespunde greutății unei mase de aproximativ opt tone!
+
+**2.** Forța se deduce prin aceeași formulă; valorile numerice fiind
+neschimbate, valoarea forței este aceeași ca la întrebarea precedentă:
+
+$$
+F = 81\,060\ \text{N}
+$$
+
+**3.** Fereastra nu se sparge fiindcă este apăsată la fel pe amândouă fețele
+ei. Dacă presiunile nu sunt chiar egale, există risc de rupere. În cazul ăsta,
+ca să poată rezista, fereastra trebuie să fie mică (se micșorează astfel $S$)
+și groasă. Ăsta e motivul pentru care hublourile de avion sunt mult mai mici
+decât ferestrele unui tren, de pildă.
+
+</details>
+
+---
+
+## 5. Masa pistonului
+
+**Liceul Ampère, Lyon** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră gazul G din incinta din figura alăturată. Incinta este închisă de
+un piston de masă $m$ și de suprafață $S = 100\ \text{cm}^2$. Ansamblul este în
+echilibru și se află în aerul din jur ($P = 101\,325\ \text{Pa}$).
+
+<FiguraManual
+  src="r3-piston-aer.png"
+  lat={283}
+  inalt={214}
+  latime={250}
+  eticheta="Incintă cu gazul G, închisă de un piston, aflată în aerul din jur"
+  legenda="Incinta cu gazul G se află de data asta în aerul din jur."
+>
+  <Et x={56} y={22} w={55} h={20} corp={14}>aerul</Et>
+  <Et x={26} y={56} w={100} h={21} corp={15} fond="#bee6ef">din jur</Et>
+</FiguraManual>
+
+**1.** Care sunt forțele exercitate asupra pistonului? Caracterizează-le pe
+fiecare.
+
+**2.** Știind că presiunea gazului G este
+$P_G = 1{,}11 \times 10^5\ \text{Pa}$, deduceți masa pistonului.
+
+*Dat:* intensitatea gravitațională: $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forțele exercitate asupra pistonului sunt (vezi figura de mai jos):
+
+<FiguraManual
+  src="r3-bilan-piston-aer.png"
+  lat={388}
+  inalt={280}
+  latime={330}
+  eticheta="Bilanțul forțelor pe piston: apăsarea gazului în sus, apăsarea aerului și greutatea în jos"
+  legenda="Bilanțul forțelor exercitate asupra pistonului."
+>
+  <Et x={16} y={5} w={55} h={20} corp={14} fond="#ecf6eb">aerul</Et>
+  <Et x={70} y={5} w={88} h={20} corp={14} fond="#ecf6eb">din jur</Et>
+  <Et x={125} y={188} w={82} h={25} corp={19} fond="#ecf6eb">gazul G</Et>
+</FiguraManual>
+
+- Forța de apăsare $\vec{F_i}$ exercitată de gazul dinăuntrul incintei. Ea este
+  îndreptată în sus și valoarea ei este $F_i = P_G \times S$, unde $P_G$ este
+  presiunea gazului G.
+- Forța de apăsare $\vec{F_e}$ exercitată de gazul din afara incintei. Ea este
+  îndreptată în jos și valoarea ei este $F_e = P \times S$, unde $P$ este
+  presiunea aerului din jur.
+- Greutatea $m \times g$ a pistonului, care este îndreptată în jos.
+
+**2.** Pistonul este în echilibru, deci forțele care se exercită asupra lui se
+compensează. Putem scrie deci:
+
+$$
+F_i = F_e + m g
+$$
+
+adică
+
+$$
+P_G \times S = P \times S + m \times g
+\qquad\text{adică}\qquad
+m = \frac{(P_G - P) \times S}{g}
+$$
+
+Aplicația numerică dă:
+
+$$
+m = \frac{(1{,}11 \times 10^5 - 1{,}01 \times 10^5) \times 10^{-2}}{10} = 10\ \text{kg}
+$$
+
+Trebuie avut grijă la transformarea centimetrilor pătrați în metri pătrați:
+$1\ \text{cm}^2 = 10^{-4}\ \text{m}^2$ (sunt zece mii de centimetri pătrați
+într-un metru pătrat).
+
+</details>

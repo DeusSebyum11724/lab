@@ -1,0 +1,236 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Energia potențială de greutate"
+slug: /f7/lucru/lp3
+title: "LP3 — Energia potențială de greutate"
+description: "Lucrare practică: alegerea nivelului de referință, vagonetul din parcul de distracții și săritura în înălțime."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Energia potențială de greutate
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Energia potențială de greutate](./07-curs-energia-potentiala.mdx)**, cu
+formulele din **[S3](./08-s-energia-potentiala.mdx)** la îndemână. Trei probe;
+în total 40 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Unde punem zeroul | ★ | 10 min |
+| 2 | Vagonetul din parcul de distracții | ★★ | 15 min |
+| 3 | Săritura în înălțime | ★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Unde punem zeroul
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un punct material $M$, de masă $m = 200\ \text{g}$, este așezat la altitudinea
+$z$ în câmpul gravitațional de intensitate $g = 10\ \text{N/kg}$. Originea
+energiilor potențiale de greutate fiind aleasă la altitudinea
+$z_{\text{ref}} = 10\ \text{m}$, energia potențială de greutate a lui $M$ (în
+joule) valorează:
+
+**a.** $E_p = m g z - 20$ &nbsp;&nbsp; **b.** $E_p = m g z$ &nbsp;&nbsp;
+**c.** $E_p = m g z + 20$ &nbsp;&nbsp; **d.** $E_p = m g z - 2$
+
+Justifică alegerea printr-un calcul.
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **a**. Energia potențială de greutate valorează:
+
+$$
+E_p = m g (z - z_{\text{ref}}) = m g z - m g z_{\text{ref}}
+$$
+
+$$
+E_p = m g z - 0{,}2 \times 10 \times 10
+$$
+
+$$
+E_p = m g z - 20
+$$
+
+Atenție la masă: $200\ \text{g} = 0{,}2\ \text{kg}$. Dacă uiți transformarea,
+îți iese răspunsul greșit.
+
+</details>
+
+---
+
+## 2. Vagonetul din parcul de distracții
+
+**Liceul Claude Bernard, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Într-un parc de distracții, un vagonet de masă $m = 65\ \text{kg}$ se deplasează
+pe niște șine al căror profil este dat în schema următoare.
+
+<FiguraManual
+  src="r4-vagonet.png"
+  lat={640}
+  inalt={270}
+  latime={560}
+  eticheta="Profilul șinelor cu punctele A, B, C, D și E la înălțimile hA, hB, hC, hD și hE"
+  legenda="Profilul șinelor. Înălțimile sunt măsurate față de sol."
+>
+  <Et x={582} y={237} w={48} h={20} corp={14}>solul</Et>
+</FiguraManual>
+
+Intensitatea gravitațională valorează $g = 10\ \text{N/kg}$.
+
+Înălțimile punctelor $A$, $B$, $C$, $D$ și $E$ sunt măsurate față de sol și au
+valorile:
+
+$$
+h_A = 20\ \text{m} \qquad h_B = 10\ \text{m} \qquad h_C = 15\ \text{m}
+$$
+
+$$
+h_D = 5\ \text{m} \qquad h_E = 18\ \text{m}
+$$
+
+**1.** Calculează variația de energie potențială $\Delta E_p(A/B)$ atunci când
+vagonetul trece de la $A$ la $B$, apoi variația $\Delta E_p(B/C)$ atunci când
+vagonetul trece de la $B$ la $C$.
+
+**2.** Calculează variația de energie potențială de greutate atunci când
+vagonetul trece de la $A$ la $E$.
+
+**3.** Fără să mai calculezi, spune în care dintre porțiunile $A \to B$,
+$B \to C$, $A \to E$ energia potențială crește și în care scade.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În $A$, $B$ și $C$, de înălțimi $h_A$, $h_B$ și $h_C$, vagonetul are
+energiile potențiale de greutate:
+
+$$
+E_p(A) = m g h_A + E_0, \quad E_p(B) = m g h_B + E_0, \quad E_p(C) = m g h_C + E_0
+$$
+
+unde $E_0$ este o constantă. Deci, între $A$ și $B$ pe de o parte și între $B$
+și $C$ pe de altă parte, energia potențială de greutate a vagonetului variază
+cu cantitățile:
+
+$$
+\Delta E_p(A/B) = E_p(B) - E_p(A) = m g (h_B - h_A) = 65 \times 10 \times (10 - 20)
+$$
+
+$$
+\Delta E_p(B/C) = E_p(C) - E_p(B) = m g (h_C - h_B) = 65 \times 10 \times (15 - 10)
+$$
+
+adică:
+
+$$
+\Delta E_p(A/B) = -6\,500\ \text{J}
+\qquad\text{și}\qquad
+\Delta E_p(B/C) = 3\,250\ \text{J}
+$$
+
+**2.** La fel, când vagonetul se află în $A$ sau în $E$, energia lui potențială
+de greutate ia valorile $E_p(A) = m g h_A + E_0$ și $E_p(E) = m g h_E + E_0$.
+Deci, când vagonetul trece de la $A$ la $E$:
+
+$$
+\Delta E_p(A/E) = E_p(E) - E_p(A) = m g (h_E - h_A) = 65 \times 10 \times (18 - 20)
+$$
+
+$$
+\Delta E_p(A/E) = -1\,300\ \text{J}
+$$
+
+**3.** Se citește direct din înălțimi:
+
+- $A \to B$: coboară de la $20\ \text{m}$ la $10\ \text{m}$ $\Rightarrow$
+  energia potențială **scade**;
+- $B \to C$: urcă de la $10\ \text{m}$ la $15\ \text{m}$ $\Rightarrow$ energia
+  potențială **crește**;
+- $A \to E$: coboară de la $20\ \text{m}$ la $18\ \text{m}$ $\Rightarrow$
+  energia potențială **scade**, dar puțin.
+
+</details>
+
+---
+
+## 3. Săritura în înălțime
+
+**Liceul Saint-Pierre, Brunoy** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Proba asta studiază trecerea peste o ștachetă așezată la $2{,}45\ \text{m}$, la
+un record mondial de săritură în înălțime.
+
+Atletul, de masă $m = 85{,}0\ \text{kg}$, va fi modelat numai prin centrul lui
+de greutate $G$, aflat la $1{,}00\ \text{m}$ de sol la plecare.
+
+<FiguraManual
+  src="r4-saltul.png"
+  lat={205}
+  inalt={250}
+  latime={190}
+  eticheta="Poziția centrului de greutate: I la plecare, B la nivelul ștachetei, P cu 1 cm mai sus"
+  legenda="Centrul de greutate pleacă din I și trece prin punctul cel mai înalt P, la 1 cm deasupra ștachetei."
+/>
+
+În timpul săriturii, centrul lui de greutate $G$ trece printr-un punct înalt
+aflat la $1{,}00\ \text{cm}$ deasupra ștachetei.
+
+Care este variația energiei potențiale de greutate în timpul săriturii?
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+La început, centrul de greutate $G$ se află în punctul $I$, de altitudine
+$z_I = 1\ \text{m}$. Alegând energia potențială de greutate nulă la nivelul
+solului, energia potențială de greutate inițială a atletului valorează:
+
+$$
+E_p(I) = m g z_I
+$$
+
+Punctul $G$ atinge, în timpul săriturii, punctul $P$ cel mai înalt, de
+altitudine:
+
+$$
+z_P = 2{,}45 + 0{,}01 = 2{,}46\ \text{m}
+$$
+
+Atenție: $1{,}00\ \text{cm} = 0{,}01\ \text{m}$.
+
+În punctul ăsta, atletul are energia potențială de greutate:
+
+$$
+E_p(P) = m g z_P
+$$
+
+Deci, în timpul săriturii, energia potențială de greutate a atletului variază
+cu:
+
+$$
+\Delta E_p = E_p(P) - E_p(I) = m g \times (z_P - z_I)
+$$
+
+$$
+\Delta E_p = 85 \times 10 \times (2{,}46 - 1)
+\qquad\Longrightarrow\qquad
+\Delta E_p = 1{,}24 \times 10^3\ \text{J}
+$$
+
+Rezultatul este **pozitiv**, fiindcă atletul urcă. Ca să sară, el trebuie deci
+să producă cel puțin $1\,240\ \text{J}$.
+
+</details>

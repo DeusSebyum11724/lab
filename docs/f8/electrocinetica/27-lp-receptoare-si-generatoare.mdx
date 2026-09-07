@@ -1,0 +1,333 @@
+---
+sidebar_position: 27
+sidebar_label: "LP12 — Receptoare și generatoare"
+slug: /f8/electrocinetica/lp12
+title: "LP12 — Receptoare și generatoare"
+description: "Lucrare practică: legile motorului și ale generatorului, randamente, motorul electric și încărcarea unui telefon."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP12 — Receptoare și generatoare
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C12 — Receptoare și generatoare](./25-curs-receptoare-si-generatoare.mdx)**,
+cu formulele din **[S12](./26-s-receptoare-si-generatoare.mdx)** la îndemână.
+Patru probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Cele două legi | ★ | 12 min |
+| 2 | Randamente | ★ | 8 min |
+| 3 | Motorul electric | ★★ | 15 min |
+| 4 | Încărcarea unui telefon | ★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Cele două legi
+
+★ &nbsp;·&nbsp; **12 minute**
+
+**1.** Un motor, de tensiune contraelectromotoare $E$ (în V) și de rezistență
+internă $r$ (în $\Omega$), este străbătut de un curent de intensitate $I$ (în
+A). Tensiunea $U_{AB}$ (în V) dintre bornele lui verifică:
+
+**a.** $U_{AB} = E - r I$ &nbsp;&nbsp; **b.** $U_{AB} = E + r I$
+&nbsp;&nbsp; **c.** $U_{AB} = r I - E$
+
+**2.** Un generator, de tensiune electromotoare $E$ (în V) și de rezistență
+internă $r$ (în $\Omega$), debitează un curent de intensitate $I$ (în A).
+Tensiunea $U_{PN}$ (în V) dintre bornele lui verifică:
+
+**a.** $U_{PN} = E - r I$ &nbsp;&nbsp; **b.** $U_{PN} = E + r I$
+&nbsp;&nbsp; **c.** $U_{PN} = r I - E$
+
+**3.** Randamentul motorului de mai sus valorează:
+
+**a.** $\eta = \dfrac{E}{E + r I}$ &nbsp;&nbsp;
+**b.** $\eta = \dfrac{r I - E}{E}$ &nbsp;&nbsp;
+**c.** $\eta = 1 - \dfrac{r I}{E}$ &nbsp;&nbsp;
+**d.** $\eta = \dfrac{r I - E}{I}$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Motorul realizează o conversie de energie:
+
+- primește o putere electrică $P_{\text{primită}} = U_{AB} \times I$;
+- disipă o putere termică $P_{\text{Joule}} = r I^2$;
+- livrează o putere sub formă mecanică $P_{\text{mec}} = E \times I$.
+
+Principiul conservării energiei spune atunci că:
+
+$$
+P_{\text{primită}} = P_{\text{Joule}} + P_{\text{mec}}
+\;\Longrightarrow\;
+U_{AB} \times I = r I^2 + E \times I
+$$
+
+$$
+\Longrightarrow\quad U_{AB} = r I + E
+$$
+
+**2.** Răspunsul **a**. La fel, un generator electric realizează și el o
+conversie de energie:
+
+- produce (cu ajutorul unei surse chimice, mecanice…) o putere
+  $P_{\text{generată}} = E \times I$;
+- disipă, prin efect Joule, o putere $P_{\text{Joule}} = r I^2$;
+- furnizează circuitului o putere sub formă electrică
+  $P_{\text{furnizată}} = U_{PN} \times I$.
+
+Din nou, principiul conservării energiei impune:
+
+$$
+P_{\text{generată}} = P_{\text{Joule}} + P_{\text{furnizată}}
+\;\Longrightarrow\;
+E \times I = r I^2 + U_{PN} \times I
+$$
+
+$$
+\Longrightarrow\quad E = r I + U_{PN}
+\quad\Longrightarrow\quad
+U_{PN} = E - r I
+$$
+
+**3.** Răspunsul **a**. Din cele de mai sus reiese că motorul livrează o putere
+mecanică $P_{\text{mec}} = E \times I$, în timp ce primește o putere electrică
+$P_{\text{primită}} = U_{AB} \times I$. Randamentul lui valorează atunci:
+
+$$
+\eta = \frac{P_{\text{mec}}}{P_{\text{primită}}} = \frac{E \times I}{U_{AB} \times I} = \frac{E}{U_{AB}}
+$$
+
+adică, ținând seama de rezultatul de la prima întrebare:
+
+$$
+\eta = \frac{E}{r I + E}
+$$
+
+</details>
+
+---
+
+## 2. Randamente
+
+★ &nbsp;·&nbsp; **8 minute**
+
+**1.** Un generator furnizează o energie electrică
+$E_{\text{utilă}} = 1{,}8\ \text{kJ}$ unui circuit, dar a primit o energie
+chimică $E_{\text{primită}} = 2{,}5\ \text{kJ}$. Care este randamentul lui
+$\eta$?
+
+**a.** $\eta = 82\%$ &nbsp;&nbsp; **b.** $\eta = 72\%$ &nbsp;&nbsp;
+**c.** $\eta = 68\%$ &nbsp;&nbsp; **d.** $\eta = 92\%$
+
+**2.** Un motor electric are randamentul $\eta = 80\%$ și primește o putere
+$P_{\text{primită}} = 1{,}2\ \text{kW}$. Care este puterea utilă
+$P_{\text{utilă}}$ pe care o furnizează?
+
+**a.** $P_{\text{utilă}} = 800\ \text{W}$ &nbsp;&nbsp;
+**b.** $P_{\text{utilă}} = 1{,}0\ \text{kW}$ &nbsp;&nbsp;
+**c.** $P_{\text{utilă}} = 1{,}5\ \text{kW}$ &nbsp;&nbsp;
+**d.** $P_{\text{utilă}} = 960\ \text{W}$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Generatorul furnizează o energie electrică
+$E_{\text{utilă}}$, dar a primit o energie chimică $E_{\text{primită}}$.
+Randamentul lui valorează atunci:
+
+$$
+\eta = \frac{E_{\text{utilă}}}{E_{\text{primită}}} = \frac{1{,}8}{2{,}5} = 0{,}72 = 72\%
+$$
+
+Observă că nu a trebuit să transformăm kilojoulii în jouli: raportul e același.
+
+**2.** Răspunsul **d**. Randamentul motorului este dat de formula:
+
+$$
+\eta = \frac{P_{\text{utilă}}}{P_{\text{primită}}}
+$$
+
+Deci:
+
+$$
+P_{\text{utilă}} = \eta \times P_{\text{primită}} = 0{,}80 \times 1\,200 = 960\ \text{W}
+$$
+
+</details>
+
+---
+
+## 3. Motorul electric
+
+**Liceul Jacques Monod, Clamart** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Un motor, de rezistență internă $r = 20{,}00\ \Omega$, este alimentat sub o
+tensiune de $220\ \text{V}$.
+
+<FiguraManual
+  src="r5-motor-ex.png"
+  lat={195}
+  inalt={110}
+  latime={190}
+  eticheta="Motorul între bornele A și B, cu tensiunea UAB și curentul I"
+  legenda="Motorul alimentat sub tensiunea de 220 V."
+/>
+
+**1.** Fă bilanțul energetic cu ajutorul puterii în motorul ăsta.
+
+**2.** Motorul se învârte; degajarea de energie termică este de
+$7\,500\ \text{J}$ în fiecare minut.
+
+**(a)** Care este intensitatea curentului care străbate motorul?
+
+**(b)** Care este randamentul lui?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Motorul, alimentat sub tensiunea $U_{AB} = 220\ \text{V}$ și de un curent
+de intensitate $I$, este caracterizat prin tensiunea lui contraelectromotoare
+$E$ și prin rezistența lui internă $r = 20\ \Omega$.
+
+Puterea electrică pe care o primește,
+$P_{\text{primită}} = U_{AB} \times I$, este transformată în putere mecanică,
+$P_{\text{mec}} = E \times I$, și în putere termică (efect Joule),
+$P_J = r I^2$. Bilanțul ăsta se scrie:
+
+$$
+P_{\text{primită}} = P_{\text{mec}} + P_J
+$$
+
+**2. (a)** Puterea termică disipată prin efect Joule, $P_J = r I^2$, dă energia
+termică $E_J = 7\,500\ \text{J}$ în timpul
+$\Delta t = 1\ \text{min} = 60\ \text{s}$:
+
+$$
+E_J = P_J \times \Delta t = r I^2 \Delta t
+\;\Longrightarrow\;
+I = \sqrt{\frac{E_J}{r \, \Delta t}} = \sqrt{\frac{7\,500}{20 \times 60}} = 2{,}5\ \text{A}
+$$
+
+**(b)** Puterea electrică primită de motor,
+$P_{\text{primită}} = U_{AB} \times I$, dă energia pe care o primește în timpul
+$\Delta t$:
+
+$$
+E_{\text{primită}} = U_{AB} \times I \times \Delta t = 220 \times 2{,}5 \times 60
+$$
+
+$$
+\Longrightarrow\quad E_{\text{primită}} = 3{,}3 \times 10^4\ \text{J}
+$$
+
+Or, energia asta se împarte sub formă mecanică ($E_{\text{mec}}$) și sub formă
+termică (efect Joule: $E_J$), în urma cărui fapt:
+
+$$
+E_{\text{primită}} = E_{\text{mec}} + E_J
+\quad\Longrightarrow\quad
+E_{\text{mec}} = E_{\text{primită}} - E_J
+$$
+
+Din energia $E_{\text{primită}}$ pe care o primește motorul, numai
+$E_{\text{mec}}$ este transformată sub formă mecanică. De aceea randamentul
+motorului valorează:
+
+$$
+\eta = \frac{E_{\text{mec}}}{E_{\text{primită}}} = \frac{E_{\text{primită}} - E_J}{E_{\text{primită}}} = 1 - \frac{E_J}{E_{\text{primită}}}
+$$
+
+$$
+= 1 - \frac{7\,500}{3{,}3 \times 10^4}
+\qquad\Longrightarrow\qquad
+\eta \approx 0{,}77 = 77\%
+$$
+
+</details>
+
+---
+
+## 4. Încărcarea unui telefon
+
+**Liceul Claude Bernard, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Un încărcător de telefon este modelat printr-o sursă reală de tensiune
+$E = 5{,}0\ \text{V}$ și o rezistență internă $r = 0{,}2\ \Omega$. El este
+legat la un telefon a cărui rezistență echivalentă este $R = 4{,}8\ \Omega$.
+
+**1.** Calculează intensitatea $I$ a curentului care străbate circuitul.
+
+**2.** Determină tensiunea $U$ la bornele telefonului.
+
+**3.** Calculează energia electrică furnizată telefonului în $2$ ore de
+încărcare.
+
+**4.** Calculează cantitatea de sarcină electrică ce străbate telefonul în $2$
+ore.
+
+**5.** Dacă rezistența internă a încărcătorului crește la $r = 0{,}5\ \Omega$,
+recalculează tensiunea $U$ la bornele telefonului. Ce poți conchide despre
+însemnătatea rezistenței interne în dispozitivele electrice?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Tensiunea $U$ la bornele generatorului valorează $U = E - r \times I$. În
+plus, tensiunea la bornele telefonului este $U = R \times I$. Deci:
+
+$$
+E - r \times I = R \times I
+\qquad\Longrightarrow\qquad
+I = \frac{E}{r + R} = \frac{5}{0{,}2 + 4{,}8} = 1{,}0\ \text{A}
+$$
+
+**2.** Tensiunea la bornele telefonului valorează:
+
+$$
+U = R \times I = 4{,}8 \times 1 = 4{,}8\ \text{V}
+$$
+
+**3.** Energia electrică $E$ furnizată telefonului în $2$ ore este:
+
+$$
+E = P \times \Delta t = U \times I \times \Delta t = 4{,}8 \times 1{,}0 \times 7\,200 = 3{,}46 \times 10^4\ \text{J}
+$$
+
+(am transformat mai întâi $2$ ore în $7\,200\ \text{s}$).
+
+**4.** Cantitatea de sarcină electrică $Q$ care străbate telefonul în două ore
+este:
+
+$$
+Q = I \times \Delta t = 1{,}0 \times 7\,200 = 7\,200\ \text{C}
+$$
+
+**5.** Cu $r = 0{,}5\ \Omega$, intensitatea devine:
+
+$$
+I' = \frac{E}{r + R} = \frac{5}{0{,}5 + 4{,}8} = \frac{5}{5{,}3} \approx 0{,}94\ \text{A}
+$$
+
+iar tensiunea la bornele telefonului:
+
+$$
+U' = R \times I' = 4{,}8 \times 0{,}94 \approx 4{,}5\ \text{V}
+$$
+
+**Concluzia**: rezistența internă „mănâncă" o parte din tensiunea sursei.
+Cu cât ea este mai mare, cu atât ajunge mai puțină tensiune la aparat și cu atât
+se pierde mai multă energie sub formă de căldură în încărcător. De asta
+încărcătoarele bune au rezistență internă cât mai mică.
+
+</details>

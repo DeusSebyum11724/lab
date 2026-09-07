@@ -1,0 +1,126 @@
+---
+sidebar_position: 22
+sidebar_label: "C11 — Efectul Joule"
+slug: /f8/electrocinetica/c11
+title: "C11 — Efectul Joule"
+description: "Puterea electrică primită de un conductor ohmic și transformarea ei integrală în căldură."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C11 — Efectul Joule
+
+:::info Planul orei
+
+1. Conductorul ohmic
+2. Puterea pe care o primește
+3. Efectul Joule
+4. Cele trei forme ale aceleiași puteri
+
+:::
+
+---
+
+## 1. Conductorul ohmic
+
+:::danger Definiția 1
+
+Un **conductor ohmic** este un dipol la bornele căruia tensiunea $U_{AB}$ este
+proporțională cu intensitatea $I$ a curentului care îl străbate.
+
+:::
+
+Legea lui Ohm precizează relația asta de proporționalitate:
+
+$$
+U_{AB} = R \times I
+$$
+
+cu $U_{AB}$ în volți, $I$ în amperi și $R$ în ohmi, unde $R$ este
+**rezistența** conductorului ohmic.
+
+<FiguraManual
+  src="r5-conductor-ohmic.png"
+  lat={200}
+  inalt={90}
+  latime={195}
+  eticheta="Conductor ohmic între bornele A și B, cu tensiunea UAB și curentul I"
+  legenda="Conductorul ohmic, cu tensiunea la borne și curentul care îl străbate."
+/>
+
+Se numește adesea **rezistență** chiar conductorul ohmic, confundându-l astfel
+cu rezistența lui $R$.
+
+---
+
+## 2. Puterea pe care o primește
+
+Am văzut în ora trecută că un dipol supus tensiunii $U_{AB}$ și străbătut de
+curentul $I$ primește de la circuit puterea electrică:
+
+$$
+P_{\text{primită}} = U_{AB} \times I
+$$
+
+Pentru un conductor ohmic putem înlocui $U_{AB}$ cu $R \times I$, ceea ce dă:
+
+$$
+P_{\text{primită}} = R \times I \times I = R I^2
+$$
+
+---
+
+## 3. Efectul Joule
+
+Un conductor ohmic transformă **toată** puterea electrică pe care o primește în
+putere termică. Acesta este **efectul Joule**.
+
+:::tip De reținut
+
+Puterea disipată prin efect Joule într-un conductor ohmic valorează:
+
+$$
+P_{\text{Joule}} = R I^2 = \frac{U_{AB}^2}{R} = P_{\text{primită}}
+$$
+
+cu $P_{\text{Joule}}$ în wați, $R$ în ohmi, $I$ în amperi și $U_{AB}$ în volți.
+
+:::
+
+Toată energia electrică primită de un conductor ohmic se regăsește sub formă de
+**căldură**. Așa funcționează reșoul, fierul de călcat, becul cu incandescență
+și radiatorul electric.
+
+---
+
+## 4. Cele trei forme ale aceleiași puteri
+
+Cele trei scrieri de mai sus dau **aceeași** putere. Alegi între ele după ce
+mărimi cunoști:
+
+| Ce cunoști | Ce formulă folosești |
+|---|---|
+| $U$ și $I$ | $P = U \times I$ |
+| $R$ și $I$ | $P = R I^2$ |
+| $U$ și $R$ | $P = \dfrac{U^2}{R}$ |
+
+:::warning Atenție
+
+Un conductor ohmic nu poate evacua oricâtă căldură. Peste o anumită putere,
+temperatura lui crește până la deteriorare. De aceea rezistoarele au înscrisă o
+**putere maximă admisibilă**.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP11 — Efectul Joule.** Trei probe: recunoașterea formulelor, curentul maxim
+pe care îl suportă un rezistor și alegerea rezistenței într-un circuit de
+baterie.
+
+Înainte de ea, treci prin **[S11 — Efectul Joule](./23-s-efectul-joule.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

@@ -1,0 +1,162 @@
+---
+sidebar_position: 3
+sidebar_label: "LP1 — Mărimi scalare și mărimi vectoriale"
+slug: /f7/marimi/lp1
+title: "LP1 — Mărimi scalare și mărimi vectoriale"
+description: "Lucrare practică: recunoașterea mărimilor scalare și vectoriale, mărimi uniforme și un vector viteză de determinat grafic."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Mărimi scalare și mărimi vectoriale
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C1 — Mărimi scalare și mărimi vectoriale](./01-curs-marimi-vectoriale.mdx)**,
+cu formulele din **[S1](./02-s-marimi-vectoriale.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Scalar sau vector | — | 10 min |
+| 2 | Ce înseamnă „uniform" | ★ | 8 min |
+| 3 | Un vector viteză de determinat | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Scalar sau vector
+
+— &nbsp;·&nbsp; **10 minute**
+
+**1.** O mărime scalară este caracterizată prin:
+
+**a.** o direcție și un sens în fiecare punct din spațiu;
+**b.** o valoare numerică în fiecare punct din spațiu;
+**c.** o intensitate și o orientare;
+**d.** o traiectorie definită.
+
+**2.** Pune fiecare mărime de mai jos în coloana ei — **scalară** sau
+**vectorială** — și justifică pe scurt trei dintre alegeri:
+
+masa · viteza · temperatura · forța · volumul · greutatea · densitatea ·
+energia · presiunea
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. O mărime scalară asociază fiecărui punct din spațiu o
+valoare numerică (exemple: temperatura, presiunea). Spre deosebire de o mărime
+vectorială, ea **nu are nici direcție, nici sens**.
+
+**2.**
+
+| Scalare | Vectoriale |
+|---|---|
+| masa, temperatura, volumul, densitatea, energia, presiunea | viteza, forța, greutatea |
+
+*Justificări:*
+
+- **masa** e scalară: „$3\ \text{kg}$" spune tot; n-are sens să întrebi
+  „încotro sunt cele trei kilograme".
+- **viteza** e vectorială: două mașini care merg amândouă cu
+  $50\ \text{km/h}$, una spre nord și una spre sud, nu au aceeași viteză — se
+  și pot ciocni.
+- **greutatea** e vectorială: ea are întotdeauna o direcție (verticala) și un
+  sens (în jos, spre centrul Pământului).
+
+</details>
+
+---
+
+## 2. Ce înseamnă „uniform"
+
+★ &nbsp;·&nbsp; **8 minute**
+
+Când o mărime nu variază de la un punct la altul al spațiului, spunem că este:
+
+**a.** uniformă &nbsp;&nbsp; **b.** izotropă &nbsp;&nbsp; **c.** constantă
+
+Explică deosebirea dintre cuvântul ales și celălalt care i se apropie.
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **a**. O mărime (vectorială sau scalară) care rămâne aceeași în orice
+punct al unei regiuni din spațiu este o mărime **uniformă**.
+
+În schimb, o mărime **constantă** este una care nu variază **în timp**.
+
+Deosebirea contează: temperatura dintr-o cameră bine amestecată e uniformă
+(aceeași peste tot), dar nu e constantă dacă se face seară și camera se
+răcește. Invers, un râu poate curge cu debit constant în timp, dar cu viteză
+neuniformă — mai repede la mijloc decât lângă maluri.
+
+</details>
+
+---
+
+## 3. Un vector viteză de determinat
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Se dă înregistrarea de mai jos a pozițiilor succesive ale unui punct, luate la
+intervale egale de timp $\Delta t = 40\ \text{ms}$. Scara desenului este dată
+prin segmentul de $1\ \text{cm}$ din colțul de jos.
+
+<FiguraManual
+  src="r2-traiectorie.png"
+  lat={660}
+  inalt={200}
+  latime={580}
+  eticheta="Pozițiile succesive M1, M2, M3... ale unui punct, la intervale egale de timp"
+  legenda="Pozițiile punctului la intervale de 40 ms. Jos, scara desenului."
+/>
+
+Măsurând pe desen și ținând seama de scară, se găsește
+$M_2M_3 = 2{,}2\ \text{cm}$ și $M_3M_4 = 1{,}9\ \text{cm}$.
+
+**1.** Pe ce dreaptă se află vectorul viteză în $M_3$?
+
+**2.** Calculează valoarea vitezei în $M_3$.
+
+**3.** La scara $1\ \text{cm}$ pentru $0{,}1\ \text{m/s}$, ce lungime va avea
+săgeata care reprezintă vectorul ăsta?
+
+**4.** De ce se ia media celor două distanțe, și nu doar una dintre ele?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Vectorul căutat se află pe **paralela la $M_2M_4$ care trece prin
+$M_3$**. Sensul lui este cel al mișcării, adică de la $M_2$ spre $M_4$.
+
+**2.** Norma lui este egală cu:
+
+$$
+v = \frac{M_2M_3 + M_3M_4}{2 \cdot \Delta t} = \frac{(2{,}2 + 1{,}9) \times 10^{-2}}{2 \times 40 \times 10^{-3}} = 0{,}51\ \text{m/s}
+$$
+
+Atenție la unități: centimetrii se trec în metri
+($2{,}2\ \text{cm} = 2{,}2 \times 10^{-2}\ \text{m}$), iar milisecundele în
+secunde ($40\ \text{ms} = 40 \times 10^{-3}\ \text{s}$).
+
+**3.** Dacă $1\ \text{cm}$ înseamnă $0{,}1\ \text{m/s}$, atunci
+$1\ \text{m/s}$ ar fi reprezentat printr-o săgeată de
+$1 : 0{,}1 = 10\ \text{cm}$. Deci viteza noastră se desenează cu o săgeată de:
+
+$$
+0{,}51 \times 10 \approx 5{,}1\ \text{cm}
+$$
+
+**4.** Fiindcă între $M_2$ și $M_3$, apoi între $M_3$ și $M_4$, viteza se poate
+schimba puțin. Luând media celor două, obținem o valoare **centrată pe $M_3$**,
+deci mai apropiată de viteza chiar din acel punct decât dacă am folosi numai
+distanța dinainte sau numai pe cea de după.
+
+</details>

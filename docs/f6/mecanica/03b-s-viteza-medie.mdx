@@ -1,0 +1,174 @@
+---
+sidebar_position: 3.5
+sidebar_label: "S2 — Viteza medie"
+slug: /f6/mecanica/s2
+title: "S2 — Viteza medie"
+description: "Suport de curs: formula vitezei medii, conversia m/s ↔ km/h și un exercițiu rezolvat pas cu pas."
+---
+
+# S2 — Viteza medie
+
+:::info Suportul lecției
+
+Toate formulele din **[C2 — Viteza medie](./03-curs-viteza-medie.mdx)**, strânse
+la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă
+când lucrezi la **[LP2](./04-lp-viteza-medie.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Viteza medie | $V$ | $V = \dfrac{d}{t_2 - t_1}$ | $\text{m/s}$ |
+| Distanța parcursă | $d$ | $d = V \times (t_2 - t_1)$ | metru, $\text{m}$ |
+| Durata | $\Delta t$ | $\Delta t = \dfrac{d}{V}$ | secundă, $\text{s}$ |
+
+Aceeași relație, scrisă în cele trei feluri:
+
+$$
+V = \frac{d}{\Delta t}
+\qquad\Longleftrightarrow\qquad
+d = V \times \Delta t
+\qquad\Longleftrightarrow\qquad
+\Delta t = \frac{d}{V}
+$$
+
+unde $\Delta t = t_2 - t_1$ este durata mișcării, iar $d$ distanța parcursă între
+cele două momente.
+
+---
+
+## 2. Conversia unităților
+
+:::tip De reținut
+
+Ca să treci din **metri pe secundă în kilometri pe oră**, **înmulțești cu
+$3{,}6$**.
+
+Ca să treci din **kilometri pe oră în metri pe secundă**, **împarți la
+$3{,}6$**.
+
+:::
+
+| Ce ai | Ce faci | Ce obții |
+|---|---|---|
+| $\text{m/s}$ | $\times\ 3{,}6$ | $\text{km/h}$ |
+| $\text{km/h}$ | $:\ 3{,}6$ | $\text{m/s}$ |
+| minute | $\times\ 60$ | secunde |
+| ore | $\times\ 3\,600$ | secunde |
+| kilometri | $\times\ 1\,000$ | metri |
+
+**Verificarea rapidă:** kilometrii pe oră sunt întotdeauna un număr **mai mare**
+decât metrii pe secundă pentru aceeași viteză. Dacă îți iese invers, ai
+înmulțit când trebuia să împarți.
+
+---
+
+## 3. De reținut
+
+- Viteza medie se calculează pe **tot** drumul: distanța totală împărțită la
+  durata totală. Nu e media vitezelor de pe porțiuni.
+- Durata se ia între cele două momente: $\Delta t = t_2 - t_1$.
+- Un rezultat de viteză se scrie întotdeauna cu unitatea. Fără ea, numărul nu
+  înseamnă nimic.
+- Viteza medie nu spune nimic despre ce s-a întâmplat pe parcurs: același
+  $V$ poate ascunde o mișcare uniformă sau una cu opriri și accelerări.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un înotător are viteza medie de $2{,}1\ \text{m/s}$.
+
+Un pilot de curse merge cu $272\ \text{km/h}$.
+
+**1.** Exprimă viteza înotătorului în kilometri pe oră.
+
+**2.** Exprimă viteza pilotului în metri pe secundă.
+
+**3.** De câte ori merge pilotul mai repede decât înotătorul?
+
+**4.** Ce distanță parcurge fiecare într-un minut?
+
+### Pasul 1 — Ce se dă
+
+- viteza înotătorului: $V_1 = 2{,}1\ \text{m/s}$;
+- viteza pilotului: $V_2 = 272\ \text{km/h}$;
+- durata pentru ultima întrebare: un minut.
+
+### Pasul 2 — Ce se cere
+
+Cele două viteze exprimate în cealaltă unitate, raportul lor și distanțele
+parcurse într-un minut.
+
+### Pasul 3 — Ce formule folosim
+
+Conversiile din tabel, apoi $d = V \times \Delta t$.
+
+Ca să comparăm cele două viteze, trebuie mai întâi să le aducem în **aceeași**
+unitate — altfel comparăm mere cu pere.
+
+### Pasul 4 — Cele două conversii
+
+Un înotător care are viteza medie de $2{,}1\ \text{m/s}$ merge cu:
+
+$$
+2{,}1 \times 3{,}6 = 7{,}5\ \text{km/h}
+$$
+
+Un pilot care merge cu $272\ \text{km/h}$ are viteza:
+
+$$
+\frac{272}{3{,}6} = 75{,}6\ \text{m/s}
+$$
+
+### Pasul 5 — Comparația
+
+Lucrăm în $\text{m/s}$, unde avem $2{,}1$ și $75{,}6$:
+
+$$
+\frac{75{,}6}{2{,}1} = 36
+$$
+
+Pilotul merge de **$36$ de ori** mai repede decât înotătorul.
+
+*Aceeași comparație în $\text{km/h}$*: $75{,}5 : 7{,}5 \approx 36$ — același
+număr, cum trebuie. Raportul a două viteze nu depinde de unitatea în care le
+scrii.
+
+### Pasul 6 — Distanțele într-un minut, și verificarea
+
+Un minut are $60\ \text{s}$, deci:
+
+$$
+d_1 = V_1 \times \Delta t = 2{,}1 \times 60 = 126\ \text{m}
+$$
+
+$$
+d_2 = V_2 \times \Delta t = 75{,}6 \times 60 = 4\,536\ \text{m} \approx 4{,}5\ \text{km}
+$$
+
+*Verificare*: raportul distanțelor trebuie să fie tot $36$, fiindcă timpul e
+același: $4\,536 : 126 = 36$. Se potrivește.
+
+Și ordinele de mărime sunt plauzibile: un înotător bun face vreo $120$ de metri
+pe minut, iar o mașină de curse vreo patru kilometri și jumătate.
+
+### Răspuns
+
+Înotătorul: $7{,}5\ \text{km/h}$. Pilotul: $75{,}6\ \text{m/s}$. Pilotul merge de
+$36$ de ori mai repede. Într-un minut: $126\ \text{m}$ față de
+$4{,}5\ \text{km}$.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Viteza medie](./04-lp-viteza-medie.mdx).**
+
+:::

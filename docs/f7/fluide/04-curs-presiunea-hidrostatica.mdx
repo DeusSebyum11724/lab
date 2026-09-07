@@ -1,0 +1,139 @@
+---
+sidebar_position: 4
+sidebar_label: "C2 — Presiunea hidrostatică"
+slug: /f7/fluide/c2
+title: "C2 — Presiunea hidrostatică"
+description: "Masa volumică, relația fundamentală a hidrostaticii și regulile de folosire a ei într-un lichid în repaus."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C2 — Presiunea hidrostatică
+
+:::info Planul orei
+
+1. Masa volumică
+2. Relația fundamentală a hidrostaticii
+3. Cinci observații despre relație
+4. Cum crește presiunea cu adâncimea
+
+:::
+
+---
+
+## 1. Masa volumică
+
+:::danger Definiția 2
+
+Se numește **masă volumică** a unui corp masa pe unitatea de volum a acestui
+corp. În unitățile Sistemului Internațional, ea se exprimă în kilogram pe metru
+cub, $\text{kg/m}^3$.
+
+:::
+
+În unitățile Sistemului Internațional, masa volumică este deci masa unui metru
+cub din corpul respectiv.
+
+$$
+\rho = \frac{m}{V}
+$$
+
+Masa volumică se notează cu litera grecească $\rho$ (se citește *ro*).
+
+**Exemplu.** Apa are masa volumică $\rho = 1{,}0\ \text{g/cm}^3$. În unitățile
+Sistemului Internațional asta înseamnă
+$\rho = 1{,}0 \times 10^3\ \text{kg/m}^3$: un metru cub de apă are masa de o
+mie de kilograme, adică o tonă.
+
+---
+
+## 2. Relația fundamentală a hidrostaticii
+
+Într-un lichid incompresibil de masă volumică $\rho$, aflat în repaus, avem,
+între două puncte oarecare A și B din interiorul lichidului, relația de mai
+jos.
+
+:::tip De reținut
+
+**Relația fundamentală a hidrostaticii:**
+
+$$
+P_B - P_A = \rho \times g \times h
+$$
+
+unde $P_B$ este presiunea în punctul B și $P_A$ presiunea în punctul A, $g$
+intensitatea gravitațională, $\rho$ masa volumică a fluidului, iar $h$
+diferența de altitudine dintre cele două puncte.
+
+:::
+
+<FiguraManual
+  src="r3-vas-hidrostatic.png"
+  lat={325}
+  inalt={247}
+  latime={300}
+  eticheta="Două puncte A și B într-un lichid, la o diferență de altitudine h"
+  legenda="Punctele A și B din lichid, despărțite de diferența de altitudine h."
+>
+  <Et x={27} y={11} w={184} h={25} corp={14} culoare="#3d7ba8">lichid cu masa</Et>
+  <Et x={26} y={44} w={139} h={25} corp={13} culoare="#3d7ba8">volumică ρ</Et>
+</FiguraManual>
+
+---
+
+## 3. Cinci observații despre relație
+
+Relația fundamentală a hidrostaticii cere câteva lămuriri:
+
+- ea este valabilă **numai dacă lichidul este în repaus** (de aici și numele de
+  *hidrostatică*);
+
+- presiunea este **întotdeauna mai mare în punctul cel mai de jos** (în cazul
+  reprezentat mai sus, e vorba de punctul B). Dacă ai vreo îndoială în timpul
+  unei lucrări, asigură-te că fiecare membru al egalității este pozitiv (aici
+  $P_B > P_A$, deci $P_B - P_A > 0$, și $\rho \times g \times h > 0$);
+
+- $h$ **nu este distanța** care desparte punctele, ci **diferența de
+  altitudine**. În particular, dacă ele se află la aceeași altitudine, se află
+  la aceeași presiune;
+
+- punctele A și B nu sunt neapărat pe aceeași verticală;
+
+- relația fundamentală a hidrostaticii se poate aplica dacă se poate trece
+  neîntrerupt din punctul A în punctul B rămânând mereu în **același fluid**.
+
+---
+
+## 4. Cum crește presiunea cu adâncimea
+
+Când punctul A este la suprafața liberă a lichidului, presiunea în A este
+presiunea atmosferică, iar relația devine:
+
+$$
+P = P_{\text{atm}} + \rho \times g \times h
+$$
+
+unde $h$ este adâncimea la care se află punctul B.
+
+Pentru apă, cu $\rho = 1\,000\ \text{kg/m}^3$ și $g = 10\ \text{N/kg}$, fiecare
+zece metri de adâncime adaugă
+
+$$
+\rho \times g \times h = 1\,000 \times 10 \times 10 = 100\,000\ \text{Pa}
+$$
+
+adică **un bar**. E util de știut: presiunea apei crește cu un bar la fiecare
+zece metri coborâți.
+
+---
+
+:::note Ora următoare
+
+**LP2 — Presiunea hidrostatică.** Patru probe: barometrul cu mercur, butelia de
+oxigen la adâncime, profilul unei scufundări și ochelarii de scufundare.
+
+Înainte de ea, treci prin
+**[S2 — Presiunea hidrostatică](./05-s-presiunea-hidrostatica.mdx)**: formulele
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

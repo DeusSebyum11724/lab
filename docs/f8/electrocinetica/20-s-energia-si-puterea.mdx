@@ -1,0 +1,191 @@
+---
+sidebar_position: 20
+sidebar_label: "S10 — Energia și puterea electrică"
+slug: /f8/electrocinetica/s10
+title: "S10 — Energia și puterea electrică"
+description: "Suport de curs: formulele puterii și energiei electrice, conversiile de timp și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S10 — Energia și puterea electrică
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C10 — Energia și puterea electrică](./19-curs-energia-si-puterea.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP10](./21-lp-energia-si-puterea.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Puterea | $P$ | $P = \dfrac{E}{\Delta t}$ | watt, $\text{W}$ |
+| Energia | $E$ | $E = P \times \Delta t$ | joule, $\text{J}$ |
+| Durata | $\Delta t$ | $\Delta t = \dfrac{E}{P}$ | secundă, $\text{s}$ |
+| Puterea electrică primită | $P$ | $P = U \times I$ | watt, $\text{W}$ |
+| Intensitatea | $I$ | $I = \dfrac{P}{U}$ | amper, $\text{A}$ |
+| Energia electrică | $E$ | $E = U \times I \times \Delta t$ | joule, $\text{J}$ |
+
+Formula care le leagă pe toate:
+
+$$
+E = P \times \Delta t = U \times I \times \Delta t
+$$
+
+- $U$ — tensiunea la bornele dipolului, în volți;
+- $I$ — intensitatea curentului care îl străbate, în amperi;
+- $\Delta t$ — durata, în **secunde**;
+- $P$ — puterea, în wați; $E$ — energia, în jouli.
+
+**Gruparea în paralel:** $U_{AB} = U_{PN}$ — aceeași tensiune.
+**Gruparea în serie:** același curent $I$ prin amândouă dipolurile.
+
+---
+
+## 2. Unități și conversii
+
+| Ce ai | Ce faci ca să treci în SI |
+|---|---|
+| minute | înmulțești cu $60$ |
+| ore | înmulțești cu $3\,600$ |
+| $\text{mA}$ | împarți la $1\,000$ |
+| $\text{kW}$ | înmulțești cu $1\,000$ |
+| $\text{MJ}$ | înmulțești cu $10^6$ |
+| $\text{kWh}$ | înmulțești cu $3{,}6 \times 10^6$ (jouli) |
+
+$$
+1\ \text{W} = 1\ \text{V} \times 1\ \text{A}
+\qquad
+1\ \text{J} = 1\ \text{W} \times 1\ \text{s}
+$$
+
+---
+
+## 3. De reținut
+
+- Puterea nu e energie: e **energie pe secundă**.
+- $\Delta t$ în secunde, mereu. Minutele și orele se transformă întâi.
+- Un dipol în paralel cu altul are aceeași tensiune; unul în serie are același
+  curent.
+- Ca să afli cât consumă un aparat într-o lună, calculezi puterea o dată și
+  înmulțești cu numărul total de secunde de funcționare.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Saint-Dominique, Herblain)*
+
+Tensiunea $U_{AB}$, la bornele unui electrolizor străbătut de un curent de
+intensitate $I$, este dată de legea:
+
+$$
+U_{AB} = 3{,}5 + 5{,}0 \times I
+$$
+
+<FiguraManual
+  src="r5-electrolizor-ex.png"
+  lat={195}
+  inalt={135}
+  latime={190}
+  eticheta="Electrolizorul între bornele A și B, cu tensiunea UAB și curentul I"
+  legenda="Electrolizorul, cu tensiunea la borne și curentul care îl străbate."
+/>
+
+Aparatul ăsta este străbătut de un curent de $100\ \text{mA}$, timp de
+$10\ \text{minute}$.
+
+**1.** Care este valoarea tensiunii la bornele lui?
+
+**2.** Care este energia electrică consumată?
+
+### Pasul 1 — Ce se dă
+
+- legea aparatului: $U_{AB} = 3{,}5 + 5{,}0 \times I$;
+- intensitatea: $I = 100\ \text{mA}$;
+- durata: $\Delta t = 10\ \text{min}$.
+
+### Pasul 2 — Ce se cere
+
+Tensiunea $U_{AB}$ la borne, apoi energia electrică primită în cele zece minute.
+
+### Pasul 3 — Ce formule folosim
+
+Legea aparatului, apoi cele două formule ale lecției:
+
+$$
+P = U_{AB} \times I
+\qquad\text{și}\qquad
+E = P \times \Delta t
+$$
+
+### Pasul 4 — Trecem totul în unități SI
+
+Legea aparatului este scrisă pentru $I$ în **amperi**, deci transformăm:
+
+$$
+I = 100\ \text{mA} = 0{,}1\ \text{A}
+$$
+
+Durata trebuie pusă în secunde:
+
+$$
+\Delta t = 10\ \text{min} = 10 \times 60 = 600\ \text{s}
+$$
+
+### Pasul 5 — Calculul
+
+**Tensiunea.** Când electrolizorul este străbătut de un curent de intensitate
+$I = 0{,}1\ \text{A}$, tensiunea la bornele lui valorează:
+
+$$
+U_{AB} = 3{,}5 + 5 \times 0{,}1
+\qquad\Longrightarrow\qquad
+U_{AB} = 4\ \text{V}
+$$
+
+**Puterea.** Puterea electrică primită de un dipol străbătut de un curent de
+intensitate $I$ și supus tensiunii $U_{AB}$ valorează:
+
+$$
+P = U_{AB} \times I = 4 \times 0{,}1 = 0{,}40\ \text{W}
+$$
+
+**Energia.** Deci, în timpul $\Delta t = 600\ \text{s}$, dipolul primește
+energia electrică:
+
+$$
+E = P \times \Delta t = 0{,}4 \times 600
+\qquad\Longrightarrow\qquad
+E = 2{,}4 \times 10^2\ \text{J}
+$$
+
+### Pasul 6 — Verificarea
+
+Ordinul de mărime: $0{,}4\ \text{W}$ e o putere mică — cât un LED. Timp de zece
+minute, asta dă câteva sute de jouli. $240\ \text{J}$ se potrivește.
+
+Verifică și unitățile: $\text{V} \times \text{A} = \text{W}$, iar
+$\text{W} \times \text{s} = \text{J}$. Iese joule, cum trebuie.
+
+### Răspuns
+
+Tensiunea la bornele electrolizorului este $4\ \text{V}$, iar în cele zece
+minute el primește $2{,}4 \times 10^2\ \text{J}$ de energie electrică.
+
+---
+
+:::note Ora următoare
+
+**[LP10 — Energia și puterea electrică](./21-lp-energia-si-puterea.mdx).** Trei
+probe, în total 38 de minute.
+
+:::

@@ -1,0 +1,210 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Energia cinetică"
+slug: /f7/lucru/lp2
+title: "LP2 — Energia cinetică"
+description: "Lucrare practică: întrebări scurte, energia cinetică a unui tren de mare viteză, ciocanul-pilon și găsirea unei forțe."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Energia cinetică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Energia cinetică](./04-curs-energia-cinetica.mdx)**, cu formulele din
+**[S2](./05-s-energia-cinetica.mdx)** la îndemână. Patru probe; în total 40 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Întrebări scurte | — | 8 min |
+| 2 | Energia cinetică a unui tren de mare viteză | ★ | 12 min |
+| 3 | Ciocanul-pilon | ★★ | 10 min |
+| 4 | Forța care pune în mișcare | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Întrebări scurte
+
+— &nbsp;·&nbsp; **8 minute**
+
+**1.** O viteză se poate exprima în $\text{m/s}$ sau în $\text{km/h}$, cu legea
+de conversie:
+
+**a.** $1\ \text{km/h} = \dfrac{1}{36}\ \text{m/s}$ &nbsp;&nbsp;
+**b.** $1\ \text{m/s} = 3{,}6\ \text{km/h}$ &nbsp;&nbsp;
+**c.** $1\ \text{m/s} = \dfrac{1}{36}\ \text{km/h}$ &nbsp;&nbsp;
+**d.** $1\ \text{km/h} = 3{,}6\ \text{m/s}$
+
+**2.** Un punct de masă $m$ (în kg) și de viteză $v$ (în m/s) are energia
+cinetică:
+
+**a.** $E_c = m v^2$ &nbsp;&nbsp; **b.** $E_c = 2 m v^2$ &nbsp;&nbsp;
+**c.** $E_c = \dfrac{1}{2} m v^2$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Conversia dintre unitățile de viteză se scrie:
+
+$$
+1\ \text{km/h} = \frac{1}{3{,}6}\ \text{m/s}
+\quad\Longleftrightarrow\quad
+1\ \text{m/s} = 3{,}6\ \text{km/h}
+$$
+
+**2.** Răspunsul **c**. Prin definiție, energia cinetică a unui punct material
+de masă $m$ și de viteză $v$ este:
+
+$$
+E_c = \frac{1}{2} m v^2
+$$
+
+</details>
+
+---
+
+## 2. Energia cinetică a unui tren de mare viteză
+
+**Liceul Bellevue, Toulouse** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **12 minute**
+
+Un tren de mare viteză, de masă $m = 500$ de tone, rulează cu $300\ \text{km/h}$
+pe o cale dreaptă și orizontală. Suferind o oprire de urgență, el își blochează
+roțile și se oprește după $3\,300\ \text{m}$.
+
+**1.** Care este variația energiei lui cinetice în timpul frânării (mai întâi
+expresia literală, apoi calculul, respectând unitățile)?
+
+**2.** Care este modul de transfer al acestei energii?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La început, trenul are viteza:
+
+$$
+v_i = 300\ \text{km/h} = \frac{300}{3{,}6} = 83{,}3\ \text{m/s}
+$$
+
+Energia lui cinetică valorează atunci $E_{ci} = \dfrac{1}{2} m v_i^2$.
+
+Când trenul se oprește, viteza lui $v_f$ este nulă, la fel și energia lui
+cinetică:
+
+$$
+E_{cf} = \frac{1}{2} m v_f^2 = 0
+$$
+
+În timpul opririi ăsteia, energia cinetică a trenului a variat deci cu
+cantitatea:
+
+$$
+\Delta E_c = E_{cf} - E_{ci} = -\frac{1}{2} m v_i^2 = -\frac{1}{2} \times 500 \times 10^3 \times (83{,}3)^2
+$$
+
+$$
+\Delta E_c \approx -1{,}73 \times 10^9\ \text{J}
+$$
+
+**2.** Energia asta este transferată frânelor, roților și șinelor sub formă
+**termică** (prin frecări).
+
+</details>
+
+---
+
+## 3. Ciocanul-pilon
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Un ciocan-pilon de masă $m = 2$ tone cade de la înălțimea $h = 3\ \text{m}$
+peste un obiect de aluminiu. Viteza lui inițială este nulă și frecările se
+neglijează în timpul căderii.
+
+<FiguraManual
+  src="r4-ciocan.png"
+  lat={160}
+  inalt={235}
+  latime={150}
+  eticheta="Ciocanul-pilon cade de la altitudinea zA la altitudinea zB"
+  legenda="Ciocanul cade din A în B, pe înălțimea h."
+/>
+
+Se știe că, în timpul căderii, toată energia dată de coborâre se regăsește în
+energia cinetică a ciocanului, iar aceasta valorează
+$E'_c = 6 \times 10^4\ \text{J}$ chiar înainte de ciocnire.
+
+Cât valorează viteza ciocanului-pilon chiar înainte de ciocnirea cu obiectul?
+
+**a.** $v' = 7{,}7\ \text{m/s}$ &nbsp;&nbsp; **b.** $v' = 20\ \text{m/s}$
+&nbsp;&nbsp; **c.** $v' = 7{,}7\ \text{km/h}$ &nbsp;&nbsp;
+**d.** $v' = 40\ \text{km/h}$
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **a**. Energia cinetică a ciocanului-pilon $E'_c$ este definită
+pornind de la viteza lui $v'$ chiar înainte de ciocnirea cu obiectul:
+
+$$
+E'_c = \frac{1}{2} m v'^2
+\qquad\Longrightarrow\qquad
+v' = \sqrt{\frac{2 E'_c}{m}} = \sqrt{\frac{2 \times 6 \times 10^4}{2\,000}}
+$$
+
+$$
+v' \approx 7{,}7\ \text{m/s}
+$$
+
+*Atenție la unități*: masa trebuie pusă în kilograme
+($2\ \text{tone} = 2\,000\ \text{kg}$), iar rezultatul iese direct în
+$\text{m/s}$ — deci răspunsurile **c** și **d**, date în $\text{km/h}$, sunt
+greșite chiar dacă numărul seamănă.
+
+</details>
+
+---
+
+## 4. Forța care pune în mișcare
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+Un obiect de masă $m = 3\ \text{kg}$ este la început în repaus. O forță
+$\vec{F}$ îi dă o mișcare din ce în ce mai rapidă, iar viteza lui ajunge la
+$v = 6\ \text{m/s}$ după o deplasare de $d = 4\ \text{m}$.
+
+Știind că energia cinetică dobândită de obiect este egală cu lucrul forței
+$\vec{F}$, care este valoarea forței aplicate?
+
+**a.** $F = 6\ \text{N}$ &nbsp;&nbsp; **b.** $F = 13{,}5\ \text{N}$
+&nbsp;&nbsp; **c.** $F = 27\ \text{N}$ &nbsp;&nbsp; **d.** $F = 54\ \text{N}$
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **b**. Energia cinetică dobândită este egală cu lucrul forței. Cum
+obiectul pleacă din repaus, energia cinetică dobândită este chiar energia lui
+cinetică finală:
+
+$$
+\frac{1}{2} m v^2 = F \times d
+$$
+
+$$
+\frac{1}{2} \times 3 \times 6^2 = F \times 4
+$$
+
+$$
+54 = 4F
+\qquad\Longrightarrow\qquad
+F = 13{,}5\ \text{N}
+$$
+
+</details>

@@ -1,0 +1,198 @@
+---
+sidebar_position: 2
+sidebar_label: "S1 — Mărimi scalare și mărimi vectoriale"
+slug: /f7/marimi/s1
+title: "S1 — Mărimi scalare și mărimi vectoriale"
+description: "Suport de curs: cele trei caracteristici ale unui vector, metoda grafică și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S1 — Mărimi scalare și mărimi vectoriale
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C1 — Mărimi scalare și mărimi vectoriale](./01-curs-marimi-vectoriale.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP1](./03-lp-marimi-vectoriale.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Norma vectorului viteză | $v$ | $v = \dfrac{M_2M_3 + M_3M_4}{2 \cdot \Delta t}$ | $\text{m/s}$ |
+| Lungimea săgeții pe desen | $\ell$ | $\ell = \dfrac{v}{\text{scara}}$ | centimetru, $\text{cm}$ |
+| Distanța reală, din desen | $D$ | $D = D_{\text{măsurat}} \times \text{factorul de scară}$ | metru, $\text{m}$ |
+
+Formula vitezei într-un punct $M_3$, citită din trei poziții succesive:
+
+$$
+v_3 = \frac{M_2 M_3 + M_3 M_4}{2 \, \Delta t}
+$$
+
+- $M_2M_3$, $M_3M_4$ — distanțele **reale**, nu cele măsurate cu rigla pe
+  desen;
+- $\Delta t$ — intervalul de timp dintre două poziții succesive, în secunde.
+
+Direcția vectorului: **paralela la $M_2M_4$ dusă prin $M_3$**.
+
+---
+
+## 2. Cele trei caracteristici
+
+| Ce | Cum se citește pe desen |
+|---|---|
+| **direcția** | dreapta pe care stă săgeata |
+| **sensul** | încotro arată vârful săgeții |
+| **norma** | lungimea săgeții, împărțită la scară |
+
+Scara se scrie mereu alături, de pildă
+„$1\ \text{cm}$ pentru $5 \times 10^{-2}\ \text{m/s}$". Ea leagă centimetrii de
+pe hârtie de valoarea reală.
+
+**Cum afli lungimea săgeții.** Dacă $1\ \text{cm}$ înseamnă
+$5 \times 10^{-2}\ \text{m/s}$, atunci $1\ \text{m/s}$ ar fi reprezentat de:
+
+$$
+\frac{1}{5 \times 10^{-2}} = 20\ \text{cm}
+$$
+
+deci o viteză $v$ se desenează cu o săgeată de $v \times 20$ centimetri.
+
+---
+
+## 3. De reținut
+
+- Scalar = un număr și o unitate. Vector = număr, direcție și sens.
+- Scalare: masa, volumul, densitatea, temperatura, presiunea, timpul, energia.
+- Vectoriale: viteza, forța, greutatea.
+- Vectorul viteză într-un punct are direcția paralelei la dreapta care unește
+  punctul dinainte cu cel de după.
+- Nu uita factorul de scară nici la citire, nici la desen. E greșeala care se
+  face cel mai des.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Honoré de Balzac, Mitry-Mory)*
+
+Un mobil, legat de un fir elastic al cărui celălalt capăt este prins de un punct
+fix $O$, este lansat pe o masă orizontală cu pernă de aer.
+
+Pozițiile centrului de inerție $G$ al mobilului sunt înregistrate la intervale
+de timp consecutive egale cu $50\ \text{ms}$.
+
+<FiguraManual
+  src="r2-mobil-enunt.png"
+  lat={620}
+  inalt={420}
+  latime={480}
+  eticheta="Pozițiile succesive A1 până la A11 ale mobilului, cu punctul fix O dedesubt"
+  legenda="Pozițiile succesive ale mobilului, la 50 ms una de alta. Linia punctată arată direcția firului întins când mobilul se află în A₆."
+>
+  <Et x={266} y={112} w={35} h={234} corp={1} fond="#dbf0f5" />
+</FiguraManual>
+
+**1.** Calculează valoarea vitezei lui $G$ în $A_5$ și în $A_7$.
+
+**2.** Reprezintă, la scara $1\ \text{cm}$ pentru
+$5 \times 10^{-2}\ \text{m/s}$, vectorii viteză $\vec{v}_5$ și $\vec{v}_7$ în
+$A_5$ și în $A_7$.
+
+### Pasul 1 — Ce se dă
+
+- intervalul dintre două poziții: $\tau = 50\ \text{ms}$;
+- pozițiile $A_1$ până la $A_{11}$, măsurate pe înregistrare;
+- scara pentru vectorii viteză: $1\ \text{cm}$ pentru
+  $5 \times 10^{-2}\ \text{m/s}$.
+
+### Pasul 2 — Ce se cere
+
+Valorile vitezelor în $A_5$ și $A_7$, apoi cele două săgeți desenate corect.
+
+### Pasul 3 — Ce formulă folosim
+
+Metoda din curs, aplicată în $A_5$ (cu vecinii $A_4$ și $A_6$) și în $A_7$ (cu
+vecinii $A_6$ și $A_8$):
+
+$$
+v_5 = \frac{A_4A_5 + A_5A_6}{2\tau}
+\qquad\text{și}\qquad
+v_7 = \frac{A_6A_7 + A_7A_8}{2\tau}
+$$
+
+### Pasul 4 — Trecem în unități SI
+
+$$
+\tau = 50\ \text{ms} = 0{,}05\ \text{s}
+$$
+
+Măsurând pe înregistrare, se constată că:
+
+$$
+A_4A_6 = A_6A_8 = 1{,}5\ \text{cm} = 1{,}5 \times 10^{-2}\ \text{m}
+$$
+
+Or, $A_4A_5 + A_5A_6$ este chiar $A_4A_6$, iar $A_6A_7 + A_7A_8$ este chiar
+$A_6A_8$ — punctele fiind aproape aliniate pe porțiunile astea.
+
+### Pasul 5 — Calculul
+
+$$
+v_5 = v_7 = \frac{1{,}5 \times 10^{-2}}{2 \times 0{,}05} = 0{,}15\ \text{m/s}
+$$
+
+**Desenul.** La scara $1\ \text{cm} \leftrightarrow 5 \times 10^{-2}\ \text{m/s}$,
+o viteză de $1\ \text{m/s}$ ar fi reprezentată printr-o săgeată de lungime:
+
+$$
+\frac{1}{5 \times 10^{-2}} = 20\ \text{cm}
+$$
+
+De aceea vectorii $\vec{v}_5$ și $\vec{v}_7$ sunt desenați prin săgeți de
+lungime $0{,}15 \times 20 = 3\ \text{cm}$.
+
+În plus, vectorii ăștia se aplică în punctele $A_5$ pentru $\vec{v}_5$ și $A_7$
+pentru $\vec{v}_7$, iar direcțiile lor sunt respectiv cele ale lui $A_4A_6$ și
+$A_6A_8$:
+
+<FiguraManual
+  src="r2-vectori-viteza.png"
+  lat={440}
+  inalt={430}
+  latime={380}
+  eticheta="Vectorii viteză v5 și v7 desenați în A5 și A7, paraleli cu A4A6 și cu A6A8"
+  legenda="Cei doi vectori viteză, desenați la scară în punctele lor de aplicație."
+/>
+
+### Pasul 6 — Verificarea
+
+Cele două viteze ies egale — și așa trebuie: $A_4A_6$ și $A_6A_8$ au aceeași
+lungime, iar intervalul de timp e același. Ce se schimbă între $A_5$ și $A_7$
+nu este valoarea vitezei, ci **direcția** ei.
+
+Asta arată exact de ce viteza e o mărime vectorială: dacă ar fi fost scalară,
+n-am fi avut ce deosebi între cele două puncte.
+
+### Răspuns
+
+$v_5 = v_7 = 0{,}15\ \text{m/s}$, iar pe desen fiecare vector se trage cu o
+săgeată de $3\ \text{cm}$, din punctul lui de aplicație, paralel cu dreapta
+care unește vecinii.
+
+---
+
+:::note Ora următoare
+
+**[LP1 — Mărimi scalare și mărimi vectoriale](./03-lp-marimi-vectoriale.mdx).**
+Trei probe, în total 32 de minute.
+
+:::

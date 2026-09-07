@@ -1,0 +1,155 @@
+---
+sidebar_position: 2
+sidebar_label: "S1 — Lucrul mecanic al unei forțe"
+slug: /f7/lucru/s1
+title: "S1 — Lucrul mecanic al unei forțe"
+description: "Suport de curs: formulele lucrului mecanic, semnele lui și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S1 — Lucrul mecanic al unei forțe
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C1 — Lucrul mecanic al unei forțe](./01-curs-lucrul-mecanic.mdx)**, strânse
+la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă
+când lucrezi la **[LP1](./03-lp-lucrul-mecanic.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Lucrul unei forțe | $L$ | $L = F \times d$ | joule, $\text{J}$ |
+| Forța | $F$ | $F = \dfrac{L}{d}$ | newton, $\text{N}$ |
+| Deplasarea | $d$ | $d = \dfrac{L}{F}$ | metru, $\text{m}$ |
+| Lucrul greutății | $L^{\vec{G}}$ | $L^{\vec{G}} = m g (z_A - z_B)$ | joule, $\text{J}$ |
+| Greutatea | $G$ | $G = m \times g$ | newton, $\text{N}$ |
+
+Formula de bază, scrisă în cele trei feluri în care o vei folosi:
+
+$$
+L = F \times d
+\qquad\Longleftrightarrow\qquad
+F = \frac{L}{d}
+\qquad\Longleftrightarrow\qquad
+d = \frac{L}{F}
+$$
+
+- $L$ — lucrul mecanic, în jouli;
+- $F$ — valoarea forței constante, în newtoni, **pe direcția deplasării**;
+- $d$ — lungimea deplasării, în metri.
+
+Pentru greutate, când corpul coboară cu înălțimea $h$:
+
+$$
+L^{\vec{G}} = m \times g \times h
+$$
+
+---
+
+## 2. Unități
+
+| Mărimea | Unitatea | Simbolul |
+|---|---|---|
+| Lucrul mecanic | joule | $\text{J}$ |
+| Forța | newton | $\text{N}$ |
+| Deplasarea | metru | $\text{m}$ |
+
+$$
+1\ \text{J} = 1\ \text{N} \times 1\ \text{m}
+\qquad
+1\ \text{kJ} = 1\,000\ \text{J}
+\qquad
+1\ \text{MJ} = 10^6\ \text{J}
+$$
+
+Masa se pune în **kilograme**, altitudinile în **metri**, iar
+$g = 10\ \text{N/kg}$ (sau $9{,}81\ \text{N/kg}$).
+
+---
+
+## 3. De reținut
+
+- Lucrul are **semn**. Pozitiv $\Rightarrow$ **motor**, forța ajută mișcarea.
+  Negativ $\Rightarrow$ **rezistent**, forța se împotrivește mișcării.
+- O forță **perpendiculară** pe deplasare are lucrul **zero**. Reacțiunea
+  solului, de pildă.
+- Lucrul unei forțe constante **nu depinde de drum**, ci doar de punctul de
+  plecare și de cel de sosire.
+- La greutate: corpul **coboară** $\Rightarrow$ lucru pozitiv; corpul **urcă**
+  $\Rightarrow$ lucru negativ.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un obiect de masă $m = 2\ \text{kg}$ se deplasează pe orizontală, pe o distanță
+de $5\ \text{m}$, sub acțiunea unei forțe constante $\vec{F}$ de valoare
+$F = 10\ \text{N}$, paralelă cu deplasarea.
+
+Care este valoarea lucrului $L$ al acestei forțe?
+
+### Pasul 1 — Ce se dă
+
+- masa obiectului: $m = 2\ \text{kg}$;
+- distanța parcursă: $d = 5\ \text{m}$;
+- valoarea forței: $F = 10\ \text{N}$;
+- forța este **paralelă cu deplasarea**.
+
+### Pasul 2 — Ce se cere
+
+Lucrul $L$ efectuat de forța $\vec{F}$ pe distanța de $5\ \text{m}$.
+
+### Pasul 3 — Ce formulă folosim
+
+Lucrul unei forțe constante între două puncte A și B se obține înmulțind
+valoarea forței cu lungimea deplasării, **cu condiția ca forța să aibă aceeași
+direcție și același sens cu deplasarea**. Enunțul ne spune că forța este
+paralelă cu deplasarea, deci putem scrie direct:
+
+$$
+L = F \times AB
+$$
+
+### Pasul 4 — Verificăm unitățile
+
+Forța e deja în newtoni, distanța în metri. Nu avem nimic de transformat.
+
+Masa de $2\ \text{kg}$ **nu intră în calcul**: lucrul unei forțe nu depinde de
+masa corpului asupra căruia lucrează. Este un dat pus în enunț ca să te încerce.
+
+### Pasul 5 — Calculul
+
+$$
+L = F \times AB = 10 \times 5 = 50\ \text{J}
+$$
+
+### Pasul 6 — Verificarea
+
+Forța are același sens cu deplasarea, deci ne așteptăm la un lucru **pozitiv**,
+adică motor. Am obținut $+50\ \text{J}$. Se potrivește.
+
+Ordinul de mărime: $50\ \text{J}$ e cam energia cu care ridici o carte de un
+kilogram la cinci metri înălțime. Rezonabil pentru o forță mică pe o distanță
+mică.
+
+### Răspuns
+
+Forța efectuează un lucru motor de $50\ \text{J}$.
+
+---
+
+:::note Ora următoare
+
+**[LP1 — Lucrul mecanic al unei forțe](./03-lp-lucrul-mecanic.mdx).** Trei
+probe, în total 35 de minute.
+
+:::

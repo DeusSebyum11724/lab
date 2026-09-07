@@ -1,0 +1,177 @@
+---
+sidebar_position: 7.5
+sidebar_label: "S4 — Vectorul-viteză"
+slug: /f6/mecanica/s4
+title: "S4 — Vectorul-viteză"
+description: "Suport de curs: cele trei elemente ale vectorului-viteză, desenul la scară și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Vectorul-viteză
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Vectorul-viteză](./07-curs-vectorul-vitezei.mdx)**, strâns la un loc, și
+un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi la
+**[LP4](./08-lp-vectorii-viteza.mdx)**.
+
+:::
+
+---
+
+## 1. Cele trei elemente ale vectorului-viteză
+
+| Elementul | Unde se citește | Ce arată |
+|---|---|---|
+| **punctul de aplicație** | poziția corpului | unde se află corpul acum |
+| **direcția și sensul** | deplasarea de la M la M′ | încotro merge |
+| **lungimea** | la scara aleasă | cât de repede merge |
+
+Vectorul-viteză se notează $\vec{v}$ și se desenează ca o **săgeată**.
+
+$$
+\text{lungimea săgeții} = \frac{\text{valoarea vitezei}}{\text{scara}}
+$$
+
+---
+
+## 2. Desenul la scară
+
+Ca să desenezi săgeata, alegi mai întâi o **scară**. De pildă, la scara
+$1\ \text{cm}$ pentru $1\ \text{m/s}$:
+
+| Viteza | Lungimea săgeții |
+|---|---|
+| $2{,}1\ \text{m/s}$ | $2{,}1\ \text{cm}$ |
+| $1{,}3\ \text{m/s}$ | $1{,}3\ \text{cm}$ |
+
+La o altă scară, de pildă $1\ \text{cm}$ pentru $0{,}5\ \text{m/s}$, aceleași
+viteze s-ar desena cu săgeți de două ori mai lungi:
+$2{,}1 : 0{,}5 = 4{,}2\ \text{cm}$.
+
+:::tip De reținut
+
+Un vector-viteză nu se poate citi fără scară. Scara se scrie întotdeauna lângă
+desen, așa cum se scrie și pe hartă.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Vectorul-viteză instantanee este **tangent la traiectorie**: se așază de-a
+  lungul ei, chiar în punctul unde se află corpul acum.
+- El **nu** arată nici spre centrul curbei, nici spre locul unde ajunge corpul
+  mai târziu.
+- Viteza instantanee este cea pe care o arată vitezometrul: viteza **de acum**,
+  nu media pe tot drumul.
+- Ca s-o găsești dintr-o înregistrare punct cu punct, calculezi viteze medii pe
+  intervale din ce în ce mai mici, luate **în jurul** momentului care te
+  interesează.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Pe o cronofotografie, pozițiile succesive ale unui corp sunt însemnate din
+$0{,}1$ în $0{,}1$ secunde. Se citește că, între poziția dinaintea punctului M
+și poziția de după el, corpul a parcurs în total $0{,}42\ \text{m}$.
+
+**1.** Care este viteza corpului în punctul M?
+
+**2.** Pe ce dreaptă se așază vectorul-viteză în M?
+
+**3.** La scara $1\ \text{cm}$ pentru $1\ \text{m/s}$, ce lungime are săgeata?
+
+**4.** Dar la scara $1\ \text{cm}$ pentru $0{,}5\ \text{m/s}$?
+
+### Pasul 1 — Ce se dă
+
+- intervalul dintre două poziții: $0{,}1\ \text{s}$;
+- distanța parcursă între poziția dinainte și cea de după M:
+  $0{,}42\ \text{m}$;
+- deci durata acoperită este de **două** intervale.
+
+### Pasul 2 — Ce se cere
+
+Valoarea vitezei în M, direcția vectorului și lungimea săgeții la două scări.
+
+### Pasul 3 — Ce formulă folosim
+
+Viteza instantanee în M se aproximează prin viteza medie pe un interval mic
+luat **în jurul** lui M:
+
+$$
+v_M = \frac{d}{\Delta t}
+$$
+
+unde $d$ este distanța de la punctul dinainte la punctul de după, iar
+$\Delta t$ durata corespunzătoare.
+
+### Pasul 4 — Trecem în unități SI și calculăm
+
+Durata acoperită este de două intervale:
+
+$$
+\Delta t = 2 \times 0{,}1 = 0{,}2\ \text{s}
+$$
+
+Distanța e deja în metri. Deci:
+
+$$
+v_M = \frac{0{,}42}{0{,}2} = 2{,}1\ \text{m/s}
+$$
+
+### Pasul 5 — Direcția și desenul
+
+Vectorul-viteză instantanee este **tangent la traiectorie**: el se așază de-a
+lungul traiectoriei, chiar în punctul M, cu sensul mișcării.
+
+<FiguraManual
+  src="c08-vector-viteza.png"
+  lat={331}
+  inalt={111}
+  latime={300}
+  eticheta="Pe o traiectorie curbă, punctele M și M prim sunt apropiate, iar săgeata vitezei pornește din M de-a lungul traiectoriei."
+  legenda="Când M′ e foarte aproape de M, săgeata vitezei se așază de-a lungul traiectoriei."
+/>
+
+La scara $1\ \text{cm}$ pentru $1\ \text{m/s}$, o viteză de $2{,}1\ \text{m/s}$
+se desenează cu o săgeată lungă de:
+
+$$
+\frac{2{,}1}{1} = 2{,}1\ \text{cm}
+$$
+
+### Pasul 6 — A doua scară, și verificarea
+
+La scara $1\ \text{cm}$ pentru $0{,}5\ \text{m/s}$:
+
+$$
+\frac{2{,}1}{0{,}5} = 4{,}2\ \text{cm}
+$$
+
+*Verificare*: a doua scară e de două ori mai „fină" (un centimetru înseamnă
+jumătate din viteză), deci săgeata trebuie să iasă de două ori mai lungă:
+$2 \times 2{,}1 = 4{,}2$. Se potrivește.
+
+Și încă una: aceeași viteză, două desene diferite. De asta scara se scrie mereu
+lângă figură — fără ea, lungimea săgeții nu spune nimic.
+
+### Răspuns
+
+$v_M = 2{,}1\ \text{m/s}$, tangent la traiectorie în M. Săgeata:
+$2{,}1\ \text{cm}$ la prima scară, $4{,}2\ \text{cm}$ la a doua.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Vectorii viteză](./08-lp-vectorii-viteza.mdx).**
+
+:::

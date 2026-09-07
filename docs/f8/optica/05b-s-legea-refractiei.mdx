@@ -1,0 +1,160 @@
+---
+sidebar_position: 5.5
+sidebar_label: "S3 — Legea refracției"
+slug: /f8/optica/s3
+title: "S3 — Legea refracției"
+description: "Suport de curs: legea refracției, tabelul sinusurilor, sensul devierii și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Legea refracției
+
+:::info Suportul lecției
+
+Toate formulele din **[C3 — Legea refracției](./05-curs-legea-refractiei.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP3](./06-lp-legea-refractiei.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Ce cauți | Formula |
+|---|---|
+| legătura dintre unghiuri | $n_1 \times \sin(i_1) = n_2 \times \sin(i_2)$ |
+| sinusul unghiului refractat | $\sin(i_2) = \dfrac{n_1 \sin(i_1)}{n_2}$ |
+| un indice | $n_2 = \dfrac{n_1 \sin(i_1)}{\sin(i_2)}$ |
+
+$$
+n_1 \times \sin(i_1) = n_2 \times \sin(i_2)
+$$
+
+Unghiurile se măsoară **față de normală** și se dau în **grade**.
+
+---
+
+## 2. Tabelul sinusurilor și cum se citește invers
+
+| $i$ | $\sin i$ | | $i$ | $\sin i$ |
+|---|---|---|---|---|
+| $0^\circ$ | $0{,}000$ | | $50^\circ$ | $0{,}766$ |
+| $10^\circ$ | $0{,}174$ | | $55^\circ$ | $0{,}819$ |
+| $20^\circ$ | $0{,}342$ | | $60^\circ$ | $0{,}866$ |
+| $30^\circ$ | $0{,}500$ | | $70^\circ$ | $0{,}940$ |
+| $35^\circ$ | $0{,}574$ | | $80^\circ$ | $0{,}985$ |
+| $45^\circ$ | $0{,}707$ | | $90^\circ$ | $1{,}000$ |
+
+**Citirea inversă:** când ai obținut un sinus și vrei unghiul, cauți valoarea în
+coloana a doua și citești unghiul din prima. Dacă valoarea cade între două
+rânduri, iei unghiul de care e mai aproape.
+
+:::warning Atenție
+
+Sinusul nu trece niciodată de $1$ — cea mai mare valoare din tabel este
+$\sin 90^\circ = 1{,}000$. Dacă îți iese un sinus mai mare decât $1$, nu ai
+greșit calculul: **raza refractată nu există**, e reflexie totală.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Legea refracției spune și **încotro** se abate raza, fără niciun calcul:
+  spre un mediu cu indice **mai mare**, raza se apropie de normală; spre unul cu
+  indice mai mic, se depărtează de ea.
+- O rază care cade perpendicular ($i_1 = 0$) **nu se deviază** deloc.
+- Când treci de la un mediu la altul, indicele mediului **din care vine** raza
+  se pune cu unghiul de incidență.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O prismă de sticlă ($n_{\text{prismă}} = 1{,}58$) este scufundată în apă
+($n_{\text{apă}} = 1{,}33$). O rază de lumină intră perpendicular prin fața din
+stânga a prismei și ajunge pe fața oblică, unde face $45^\circ$ cu normala.
+
+Trasează drumul razei, ținând seama de eventualele raze reflectate.
+
+### Pasul 1 — Ce se dă
+
+- $n_{\text{prismă}} = 1{,}58$, $n_{\text{apă}} = 1{,}33$;
+- raza intră **perpendicular** pe prima față;
+- pe fața oblică, unghiul de incidență este $45^\circ$.
+
+### Pasul 2 — Ce se cere
+
+Drumul razei prin toată prisma, cu raza refractată și cea reflectată.
+
+### Pasul 3 — Prima față
+
+Raza lovește perpendicular fața din stânga a prismei, deci **nu suferă acolo
+nicio deviere**. Ea ajunge pe fața oblică, iar acolo se pune întrebarea care
+sunt raza refractată și raza reflectată.
+
+### Pasul 4 — Raza refractată
+
+Notăm cu $i$ unghiul razei refractate. Scriind legea refracției, avem:
+
+$$
+n_{\text{prismă}} \times \sin 45^\circ = n_{\text{apă}} \times \sin i
+$$
+
+adică
+
+$$
+\sin i = \frac{1{,}58 \times \sin 45^\circ}{1{,}33}
+= \frac{1{,}58 \times 0{,}707}{1{,}33} = 0{,}840
+$$
+
+Citim invers în tabel: $0{,}840$ este între $\sin 55^\circ = 0{,}819$ și
+$\sin 60^\circ = 0{,}866$, mai aproape de primul. Prin urmare
+
+$$
+i = 57^\circ
+$$
+
+### Pasul 5 — Raza reflectată
+
+Pe de altă parte, raza reflectată face un unghi de $45^\circ$ cu normala la
+dioptru și pleacă deci **vertical**, în direcția feței de jos, pe care o atinge
+cu incidență normală. Ea traversează așadar dioptrul de jos **fără să fie
+deviată**.
+
+<FiguraManual
+  src="c05-prisma-rezolvare.png"
+  lat={468}
+  inalt={291}
+  latime={320}
+  eticheta="Raza incidentă pe fața oblică a prismei dă o rază refractată și una reflectată"
+  legenda="Raza incidentă pe fața oblică a prismei dă naștere unei raze refractate și unei raze reflectate."
+/>
+
+### Pasul 6 — Verificarea
+
+Raza trece dintr-un mediu cu indice mai mare ($1{,}58$) într-unul cu indice mai
+mic ($1{,}33$), deci trebuie să se **depărteze de normală**: $57^\circ > 45^\circ$.
+Se potrivește.
+
+*A doua verificare*: sinusul obținut, $0{,}840$, este sub $1$ — deci raza
+refractată chiar există. Dacă ar fi ieșit peste $1$, ar fi fost reflexie totală
+și n-ar fi existat rază refractată deloc.
+
+### Răspuns
+
+Fără deviere la intrare; pe fața oblică, o rază refractată la $57^\circ$ și una
+reflectată care iese vertical, nedeviată, prin fața de jos.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Legea refracției](./06-lp-legea-refractiei.mdx).**
+
+:::

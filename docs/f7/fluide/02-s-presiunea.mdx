@@ -1,0 +1,206 @@
+---
+sidebar_position: 2
+sidebar_label: "S1 — Presiunea"
+slug: /f7/fluide/s1
+title: "S1 — Presiunea"
+description: "Suport de curs: formulele presiunii, unitățile și conversiile lor, plus un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S1 — Presiunea
+
+:::info Suportul lecției
+
+Toate formulele din **[C1 — Presiunea](./01-curs-presiunea.mdx)**, strânse la un
+loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă când
+lucrezi la **[LP1](./03-lp-presiunea.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Forța de apăsare | $F$ | $F = P \times S$ | newton, $\text{N}$ |
+| Presiunea | $P$ | $P = \dfrac{F}{S}$ | pascal, $\text{Pa}$ |
+| Aria suprafeței | $S$ | $S = \dfrac{F}{P}$ | metru pătrat, $\text{m}^2$ |
+| Greutatea | $G$ | $G = m \times g$ | newton, $\text{N}$ |
+
+Cele trei forme din primele trei rânduri sunt **aceeași relație**, scrisă în
+trei feluri. Din ea scoți ce nu știi, dacă le știi pe celelalte două.
+
+$$
+P = \frac{F}{S}
+\qquad\Longleftrightarrow\qquad
+F = P \times S
+\qquad\Longleftrightarrow\qquad
+S = \frac{F}{P}
+$$
+
+- $P$ — presiunea, în pascali;
+- $F$ — forța de apăsare, perpendiculară pe suprafață, în newtoni;
+- $S$ — aria suprafeței apăsate, în metri pătrați.
+
+Când forța care apasă este chiar greutatea unui corp așezat pe suprafață,
+$F = m \times g$, deci
+
+$$
+P = \frac{m \times g}{S}
+$$
+
+unde $g = 10\ \text{N/kg}$ (sau $9{,}81\ \text{N/kg}$, când problema cere mai
+multă precizie).
+
+---
+
+## 2. Unități și conversii
+
+| Unitatea | Cât face în pascali |
+|---|---|
+| $1\ \text{Pa}$ | $1\ \text{Pa}$ |
+| $1\ \text{hPa}$ (hectopascal) | $100\ \text{Pa}$ |
+| $1\ \text{bar}$ | $100\,000\ \text{Pa} = 10^5\ \text{Pa}$ |
+| $1\ \text{atm}$ (atmosferă) | $101\,325\ \text{Pa}$ |
+| $760\ \text{mm Hg}$ | $101\,325\ \text{Pa}$ |
+
+Presiunea standard: $P_0 = 101\,325\ \text{Pa} = 1\,013{,}25\ \text{hPa}$.
+
+**Conversiile de suprafață** — sunt locul unde se greșește cel mai des:
+
+$$
+1\ \text{m} = 10^2\ \text{cm}
+\quad\Longrightarrow\quad
+1\ \text{m}^2 = 10^4\ \text{cm}^2
+\quad\Longrightarrow\quad
+1\ \text{cm}^2 = 10^{-4}\ \text{m}^2
+$$
+
+$$
+1\ \text{mm}^2 = 10^{-6}\ \text{m}^2
+$$
+
+Aria unui disc de rază $r$ este $S = \pi r^2$, cu $\pi \approx 3{,}14$.
+
+---
+
+## 3. De reținut
+
+- Forța de apăsare este **perpendiculară** pe suprafață și **proporțională** cu
+  aria ei.
+- Dacă suprafața are **același** fluid pe amândouă fețele, cele două forțe de
+  apăsare se compensează. Dacă are fluide diferite, nu.
+- Aceeași forță dă o presiune cu atât mai mare cu cât suprafața e mai mică.
+  De asta piunezele au vârf.
+- Presiunea atmosferică e de aproximativ $10^5\ \text{Pa}$. Compară cu ea orice
+  presiune obținută în pascali.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un hublou de avion are dimensiunile $25\ \text{cm} \times 18\ \text{cm}$. Aerul
+dinăuntrul avionului se află la presiunea $P_0 = 10^5\ \text{Pa}$, în timp ce
+aerul din afară se află la presiunea $P_1 = 10^4\ \text{Pa}$. Care este
+rezultanta forțelor de apăsare pe hublou?
+
+<FiguraManual
+  src="r3-hublou.png"
+  lat={553}
+  inalt={390}
+  latime={400}
+  eticheta="Hubloul unui avion, cu forța de apăsare a aerului dinăuntru și a aerului din afară"
+  legenda="Bilanțul forțelor de apăsare pe hubloul de avion."
+>
+  <Et x={231} y={114} w={82} h={20} corp={17} fond="#dbf0f5">hubloul</Et>
+  <Et x={228} y={160} w={152} h={20} corp={13} fond="#dbf0f5">aerul din afară</Et>
+  <Et x={2} y={166} w={152} h={19} corp={13} fond="#dbf0f5">aerul dinăuntru</Et>
+</FiguraManual>
+
+### Pasul 1 — Ce se dă
+
+- lungimea hubloului: $a = 25\ \text{cm}$;
+- lățimea hubloului: $b = 18\ \text{cm}$;
+- presiunea dinăuntru: $P_0 = 10^5\ \text{Pa}$;
+- presiunea din afară: $P_1 = 10^4\ \text{Pa}$.
+
+### Pasul 2 — Ce se cere
+
+Rezultanta $F$ a celor două forțe de apăsare: valoarea ei și sensul în care e
+îndreptată.
+
+### Pasul 3 — Ce formulă folosim
+
+Fiecare aer apasă pe câte o față a hubloului, cu o forță dată de
+
+$$
+F = P \times S
+$$
+
+Cele două forțe sunt paralele și de sensuri opuse, deci rezultanta lor are
+valoarea egală cu **diferența** valorilor lor.
+
+### Pasul 4 — Trecem totul în unități SI
+
+Dimensiunile hubloului sunt date în centimetri, iar formula cere metri:
+
+$$
+a = 25\ \text{cm} = 0{,}25\ \text{m}
+\qquad
+b = 18\ \text{cm} = 0{,}18\ \text{m}
+$$
+
+Aria hubloului este deci
+
+$$
+S = a \times b = 0{,}25 \times 0{,}18 = 0{,}045\ \text{m}^2
+$$
+
+### Pasul 5 — Calculul
+
+Forța de apăsare $F_i$ pe fața dinăuntru a hubloului:
+
+$$
+F_i = S \times P_0 = 0{,}045 \times 10^5 = 4\,500\ \text{N}
+$$
+
+Forța de apăsare $F_e$ pe fața din afară a hubloului:
+
+$$
+F_e = P_1 \times S = 10^4 \times 0{,}045 = 450\ \text{N}
+$$
+
+Rezultanta acestor două forțe, paralele și opuse, este o forță îndreptată spre
+afara avionului, de valoare:
+
+$$
+F = F_i - F_e = 4\,500 - 450 = 4\,050\ \text{N}
+$$
+
+### Pasul 6 — Verificarea
+
+Presiunea dinăuntru e de zece ori mai mare decât cea din afară, deci forța
+dinăuntru trebuie să fie de zece ori mai mare decât cea din afară:
+$4\,500 = 10 \times 450$. Se potrivește.
+
+Rezultanta e îndreptată **spre afară** — dinspre presiunea mare spre presiunea
+mică. Așa și trebuie: aerul dinăuntru împinge mai tare decât cel din afară.
+
+### Răspuns
+
+Hubloul este împins spre exteriorul avionului cu o forță de $4\,050\ \text{N}$
+— cât greutatea unui corp cu masa de aproximativ $405\ \text{kg}$. De aceea
+hublourile de avion sunt mici și groase.
+
+---
+
+:::note Ora următoare
+
+**[LP1 — Presiunea](./03-lp-presiunea.mdx).** Cinci probe, în total 50 de
+minute.
+
+:::

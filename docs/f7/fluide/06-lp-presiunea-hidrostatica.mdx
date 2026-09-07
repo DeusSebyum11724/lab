@@ -1,0 +1,394 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Presiunea hidrostatică"
+slug: /f7/fluide/lp2
+title: "LP2 — Presiunea hidrostatică"
+description: "Lucrare practică: barometrul cu mercur, butelia de oxigen la adâncime, profilul unei scufundări și ochelarii de scufundare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Presiunea hidrostatică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Presiunea hidrostatică](./04-curs-presiunea-hidrostatica.mdx)**, cu
+formulele din **[S2](./05-s-presiunea-hidrostatica.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Barometrul cu mercur | ★ | 10 min |
+| 2 | Butelia de oxigen | ★★ | 20 min |
+| 3 | Profilul unei scufundări | ★★ | 12 min |
+| 4 | Ochelarii de scufundare | ★★ | 8 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Barometrul cu mercur
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Presiunea la fundul unui lac adânc de $50\ \text{m}$
+($\rho = 1\,000\ \text{kg/m}^3$, $g = 10\ \text{N/kg}$,
+$P_0 = 1\ \text{bar}$) este:
+
+**a.** $1\ \text{bar}$ &nbsp;&nbsp; **b.** $5\ \text{bar}$ &nbsp;&nbsp;
+**c.** $6\ \text{bar}$ &nbsp;&nbsp; **d.** $10\ \text{bar}$
+
+**2.** Un tub în formă de U conține mercur
+($\rho = 13\,600\ \text{kg/m}^3$) pe o înălțime de $76\ \text{cm}$.
+
+<FiguraManual
+  src="r3-tub-u-mercur.png"
+  lat={267}
+  inalt={286}
+  latime={210}
+  eticheta="Tub în U cu mercur pe 76 cm, cu vid deasupra coloanei și aer la capătul celălalt"
+  legenda="Coloana de mercur de 76 cm, cu vid deasupra ei."
+>
+  <Et x={176} y={20} w={47} h={21} corp={14}>vid</Et>
+  <Et x={35} y={221} w={45} h={29} corp={13}>aer</Et>
+</FiguraManual>
+
+Care este presiunea hidrostatică exercitată de mercur asupra aerului?
+
+**a.** $10\,132\ \text{Pa}$ &nbsp;&nbsp; **b.** $101\,325\ \text{Pa}$
+&nbsp;&nbsp; **c.** $1\,013\,250\ \text{Pa}$ &nbsp;&nbsp;
+**d.** $10\,132\,500\ \text{Pa}$
+
+*Dat:* $g = 9{,}81\ \text{m/s}^2$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **c**. $1\ \text{bar} = 100\,000\ \text{Pa}$, deci:
+
+$$
+P = P_0 + \rho g h = 100\,000 + (1\,000 \times 10 \times 50) = 600\,000\ \text{Pa} = 6\ \text{bar}
+$$
+
+**2.** Răspunsul **b**. Presiunea hidrostatică $P$ exercitată de mercur asupra
+aerului este dată de relația:
+
+$$
+P = P_{\text{vid}} + \rho \times g \times h
+$$
+
+unde
+
+- $P_{\text{vid}} = 0\ \text{Pa}$,
+- $\rho = 13\,600\ \text{kg/m}^3$ (masa volumică a mercurului),
+- $g = 9{,}81\ \text{m/s}^2$,
+- $h = 0{,}76\ \text{m}$ (înălțimea de mercur).
+
+Deci
+
+$$
+P = 0 + 13\,600 \times 9{,}81 \times 0{,}76 \approx 101\,325\ \text{Pa}
+$$
+
+*Observație*: presiunea asta corespunde **unei atmosfere**, ceea ce explică de
+ce mercurul este folosit adesea în barometre.
+
+</details>
+
+---
+
+## 2. Butelia de oxigen
+
+**Liceul Carnot, Dijon** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **20 minute**
+
+Se consideră o butelie de oxigen destinată scufundărilor. Ea conține oxigen sub
+o presiune de $6{,}00\ \text{bar}$. Raza buteliei este $r = 5{,}00\ \text{cm}$.
+
+**1.** Butelia este afară din apă. Calculează forța de apăsare datorată aerului
+din jur pe fundul buteliei.
+
+**2.** Calculează forța de apăsare datorată oxigenului din butelie, pe fundul
+acesteia.
+
+**3.** Deduceți de aici bilanțul forțelor de apăsare pe fundul buteliei când ea
+este afară din apă.
+
+**4.** Care este forța de apăsare datorată apei, pe fundul buteliei, când
+aceasta se află la $50$ de metri adâncime?
+
+**5.** Deduceți de aici bilanțul forțelor de apăsare pe fundul buteliei, la
+adâncimea asta.
+
+**6.** Același lucru la $100$ de metri adâncime.
+
+*Date:*
+
+- intensitatea gravitațională: $g = 10\ \text{N/kg}$;
+- presiunea aerului din jur: $1\ \text{bar} = 10^5\ \text{Pa}$;
+- masa volumică a apei: $\rho = 10^3\ \text{kg/m}^3$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forța de apăsare exercitată de aerul din jur pe fundul buteliei este
+egală cu presiunea din jur înmulțită cu suprafața fundului, adică:
+
+$$
+F_{\text{jur}} = P_{\text{jur}} \times \pi r^2
+$$
+
+Aplicația numerică dă:
+
+$$
+F_{\text{jur}} = 10^5 \times 3{,}14 \times (5 \times 10^{-2})^2 \approx 790\ \text{N}
+$$
+
+De notat că am transformat mai întâi valoarea presiunii în pascali.
+
+**2.** Forța de apăsare datorată oxigenului din butelie se evaluează printr-o
+expresie asemănătoare. Obținem:
+
+$$
+F_{\text{oxi}} = 6 \times 10^5 \times 3{,}14 \times (5 \times 10^{-2})^2 \approx 4{,}71 \times 10^3\ \text{N}
+$$
+
+**3.** Bilanțul forțelor de apăsare pe fundul buteliei când aceasta este afară
+din apă se obține din figura următoare:
+
+<FiguraManual
+  src="r3-butelie.png"
+  lat={714}
+  inalt={270}
+  latime={480}
+  eticheta="Bilanțul forțelor de apăsare pe fundul buteliei aflate în aer"
+  legenda="Bilanțul forțelor de apăsare pe fundul buteliei."
+>
+  <Et x={66} y={14} w={118} h={19} corp={13} culoare="#7a4f9c" fond="#ecf6eb">rezultanta</Et>
+  <Et x={24} y={191} w={180} h={26} corp={14} culoare="#cf3d33" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={35} y={225} w={152} h={25} corp={13} culoare="#cf3d33" fond="#ecf6eb">a oxigenului</Et>
+  <Et x={359} y={204} w={180} h={26} corp={14} culoare="#2d80ad" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={355} y={238} w={100} h={19} corp={13} culoare="#2d80ad" fond="#ecf6eb">a aerului</Et>
+  <Et x={455} y={238} w={88} h={19} corp={14} culoare="#2d80ad" fond="#ecf6eb">din jur</Et>
+</FiguraManual>
+
+Forța rezultantă a forțelor de apăsare este îndreptată spre exteriorul buteliei
+și are valoarea:
+
+$$
+F = F_{\text{oxi}} - F_{\text{jur}} = 4\,700 - 790 \approx 3{,}9 \times 10^3\ \text{N}
+$$
+
+**4.** Calculăm presiunea $p'$ a apei la adâncimea $h = 50$ de metri.
+Folosind relația fundamentală a hidrostaticii, avem:
+
+$$
+p' - p = \rho \times g \times h
+$$
+
+ceea ce ne dă:
+
+$$
+p' = p + \rho \times g \times h = 10^5 + 10^3 \times 50 \times 10 = 6 \times 10^5\ \text{Pa} = 6{,}0\ \text{bar}
+$$
+
+*Observație*: poate fi util de știut că presiunea apei crește cu un bar de
+fiecare dată când coborâm zece metri. Aici ea crește deci cu $5$ bari și trece
+de la $1$ la $6$ bari.
+
+Forța de apăsare $F'$ datorată apei pe fundul buteliei se evaluează ca mai
+înainte. Fiindcă presiunea este de $6 \times 10^5\ \text{Pa}$, regăsim
+rezultatul de la a doua întrebare:
+
+$$
+F' = 6 \times 10^5 \times 3{,}14 \times (5 \times 10^{-2})^2 \approx 4{,}71 \times 10^3\ \text{N}
+$$
+
+**5.** Se vede că forța asta de apăsare și cea a oxigenului din butelie se
+anulează. Forța rezultantă este deci de valoare nulă.
+
+<FiguraManual
+  src="r3-butelie-anulare.png"
+  lat={730}
+  inalt={300}
+  latime={480}
+  eticheta="La 50 de metri adâncime cele două forțe de apăsare se anulează"
+  legenda="Forțele de apăsare pe fundul buteliei se anulează."
+>
+  <Et x={50} y={19} w={180} h={25} corp={13} culoare="#cf3d33" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={62} y={52} w={152} h={26} corp={14} culoare="#cf3d33" fond="#ecf6eb">a oxigenului</Et>
+  <Et x={354} y={226} w={180} h={26} corp={14} culoare="#2d80ad" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={393} y={260} w={96} h={19} corp={13} culoare="#2d80ad" fond="#ecf6eb">a apei</Et>
+</FiguraManual>
+
+**6.** Un calcul asemănător celui de la întrebarea precedentă arată că presiunea
+apei valorează $p'' = 1{,}1 \times 10^6\ \text{Pa} = 11\ \text{bar}$. Forța de
+apăsare a apei este deci:
+
+$$
+F'' = 1{,}1 \times 10^6 \times 3{,}14 \times (5 \times 10^{-2})^2 \approx 8{,}64 \times 10^3\ \text{N}
+$$
+
+Bilanțul forțelor de apăsare este de data asta îndreptat spre **interiorul**
+buteliei și valorează: $8\,600 - 4\,700 = 3\,900\ \text{N}$.
+
+<FiguraManual
+  src="r3-butelie-100m.png"
+  lat={835}
+  inalt={300}
+  latime={520}
+  eticheta="La 100 de metri adâncime forța apei o depășește pe cea a oxigenului"
+  legenda="Forța de apăsare a apei este mai mare decât cea a oxigenului din butelie."
+>
+  <Et x={30} y={16} w={180} h={26} corp={13} culoare="#cf3d33" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={42} y={50} w={152} h={25} corp={13} culoare="#cf3d33" fond="#ecf6eb">a oxigenului</Et>
+  <Et x={328} y={222} w={182} h={27} corp={14} culoare="#2d80ad" fond="#ecf6eb">forța de apăsare</Et>
+  <Et x={368} y={257} w={96} h={20} corp={14} culoare="#2d80ad" fond="#ecf6eb">a apei</Et>
+</FiguraManual>
+
+</details>
+
+---
+
+## 3. Profilul unei scufundări
+
+**Liceul Notre-Dame de Sion, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **12 minute**
+
+Un scafandru își pregătește imersiunea studiind profilul de scufundare
+reprezentat mai jos.
+
+<FiguraManual
+  src="r3-profil-scufundare.png"
+  lat={840}
+  inalt={440}
+  latime={560}
+  eticheta="Profilul unei scufundări: coborâre la 25 m, palier, urcare cu oprire la 3 m"
+  legenda="Profilul scufundării, cu punctul A la suprafață și punctul B la adâncimea maximă."
+>
+  <Et x={57} y={36} w={96} h={20} corp={13}>suprafața</Et>
+  <Et x={713} y={36} w={96} h={20} corp={13}>suprafața</Et>
+  <Et x={283} y={329} w={192} h={25} corp={14}>durata coborârii</Et>
+  <Et x={554} y={333} w={96} h={20} corp={14}>durata</Et>
+  <Et x={550} y={366} w={104} h={20} corp={14}>urcării</Et>
+</FiguraManual>
+
+**1.** Care este durata totală $\Delta t$ a scufundării, inclusiv urcarea?
+
+**2.** Care este presiunea $P_A$ în punctul A? Justifică.
+
+**3.** Diferența de presiune $\Delta P$ dintre două puncte ale unui lichid este
+proporțională cu diferența de adâncime $\Delta h$ dintre aceste două puncte.
+Coeficientul de proporționalitate este
+$k = 1{,}0 \times 10^4\ \text{Pa/m}$.
+
+**(a)** Care este presiunea $P_B$ exercitată asupra scafandrului când se află
+la adâncimea maximă?
+
+**(b)** Palma scafandrului are suprafața $S = 30\ \text{cm}^2$. Care este
+valoarea $F$ a forței de apăsare suportate de palma scafandrului la adâncimea
+asta?
+
+*Dat:* presiunea atmosferică valorează
+$P_{\text{atm}} = 1{,}0 \times 10^5\ \text{Pa}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Durata totală a scufundării este intervalul de timp care desparte
+imersiunea scafandrului de întoarcerea lui la suprafață, adică $40$ de minute
+($36$ de minute de scufundare și $4$ minute de urcare).
+
+**2.** Presiunea în punctul A este presiunea atmosferică, fiindcă punctul ăsta
+se află la suprafața mării.
+
+**3. (a)** Scriem:
+
+$$
+\Delta P = k \Delta h
+\qquad\text{adică}\qquad
+P_B - P_A = k \Delta h
+$$
+
+unde $\Delta h$ valorează aici $25\ \text{m}$. Deducem:
+
+$$
+P_B = P_A + k \Delta h = 1{,}0 \times 10^5 + 1{,}0 \times 10^4 \times 25 = 3{,}5 \times 10^5\ \text{Pa}
+$$
+
+**(b)** Folosim relația $F = P \times S$. Transformăm mai întâi $S$ în unitățile
+Sistemului Internațional:
+
+$$
+S = 30\ \text{cm}^2 = 30 \times (10^{-2})^2\ \text{m}^2 = 3{,}0 \times 10^{-3}\ \text{m}^2
+$$
+
+Deducem:
+
+$$
+F = 3{,}5 \times 10^5 \times 3{,}0 \times 10^{-3} = 1{,}1 \times 10^3\ \text{N}
+$$
+
+</details>
+
+---
+
+## 4. Ochelarii de scufundare
+
+**Liceul Pierre de Fermat, Toulouse** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **8 minute**
+
+Se consideră niște ochelari de scufundare alcătuiți dintr-o garnitură de
+cauciuc, din două lentile circulare cu diametrul de $5{,}0\ \text{cm}$ și
+dintr-o curea.
+
+<FiguraManual
+  src="r3-ochelari.png"
+  lat={380}
+  inalt={140}
+  latime={300}
+  eticheta="Ochelari de scufundare cu lentile circulare de 5 cm diametru"
+  legenda="Ochelarii de scufundare, cu lentilele de 5 cm în diametru."
+/>
+
+**1.** Care este aria totală a lentilelor acestor ochelari?
+
+**2.** Care este forța de apăsare totală exercitată de aer pe partea din afară a
+lentilelor, la nivelul mării, înainte de scufundare?
+
+**3.** Care este forța de apăsare totală exercitată de aer pe partea dinăuntru a
+lentilelor, la nivelul mării, înainte de scufundare?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Fiecare lentilă are aria dată de:
+
+$$
+A = \pi \times r^2
+$$
+
+unde $r = 5/2 = 2{,}5\ \text{cm}$ este raza lentilei. Aplicația numerică dă:
+
+$$
+A = \pi \times (2{,}5 \times 10^{-2})^2 = 2{,}0 \times 10^{-3}\ \text{m}^2
+$$
+
+deci aria totală a lentilelor ochelarilor valorează
+$A' = 2 \times A = 4{,}0 \times 10^{-3}\ \text{m}^2$.
+
+**2.** Forța de apăsare totală exercitată de aer pe partea din afară a
+lentilelor, la nivelul mării, înainte de scufundare, este dată de produsul
+dintre arie și presiunea atmosferică:
+
+$$
+F = P_{\text{atm}} \times A' = 1{,}0 \times 10^5 \times 4{,}0 \times 10^{-3} = 4{,}0 \times 10^2\ \text{N}
+$$
+
+**3.** Aerul dinăuntrul ochelarilor se află la aceeași presiune atmosferică,
+fiindcă ochelarii au fost puși pe față la suprafață. Forța de apăsare pe partea
+dinăuntru are deci aceeași valoare, $4{,}0 \times 10^2\ \text{N}$, dar sens
+opus. Cele două forțe se compensează, iar lentilele nu se sparg.
+
+</details>

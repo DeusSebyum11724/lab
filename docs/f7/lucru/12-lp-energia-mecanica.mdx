@@ -1,0 +1,371 @@
+---
+sidebar_position: 12
+sidebar_label: "LP4 — Energia mecanică și conservarea ei"
+slug: /f7/lucru/lp4
+title: "LP4 — Energia mecanică și conservarea ei"
+description: "Lucrare practică: întrebări scurte, piatra aruncată în sus, vitezele vagonetului și ciclistul în roată liberă."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP4 — Energia mecanică și conservarea ei
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C4 — Energia mecanică și conservarea ei](./10-curs-energia-mecanica.mdx)**,
+cu formulele din **[S4](./11-s-energia-mecanica.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Întrebări scurte | ★ | 8 min |
+| 2 | Piatra aruncată în sus | ★ | 12 min |
+| 3 | Vitezele vagonetului | ★★ | 15 min |
+| 4 | Ciclistul în roată liberă | ★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Întrebări scurte
+
+★ &nbsp;·&nbsp; **8 minute**
+
+**1.** Energia mecanică a unui punct material supus câmpului gravitațional:
+
+**a.** este definită prin $E_m = E_c - E_p$;
+**b.** este constantă în lipsa frecărilor;
+**c.** este întotdeauna constantă la suprafața Pământului.
+
+**2.** Un schior de masă $m = 70\ \text{kg}$ coboară o pistă înclinată.
+Lungimea pistei este $L = 100\ \text{m}$, iar capătul de jos al pistei se află
+cu $50\ \text{m}$ mai jos decât capătul de sus. Neglijând frecările, care este
+viteza $v$ a schiorului la sfârșitul coborârii, dacă pleacă fără viteză
+inițială?
+
+**a.** $v = 14\ \text{m/s}$ &nbsp;&nbsp; **b.** $v = 24\ \text{m/s}$
+&nbsp;&nbsp; **c.** $v = 32\ \text{m/s}$ &nbsp;&nbsp;
+**d.** $v = 44\ \text{m/s}$
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Un punct material de energie cinetică $E_c$ și energie
+potențială de greutate $E_p$ are energia mecanică definită prin
+
+$$
+E_m = E_c + E_p
+$$
+
+care este constantă **în lipsa frecărilor**. Răspunsul **a** greșește semnul,
+iar **c** uită condiția: în prezența frecărilor energia mecanică scade.
+
+**2.** Răspunsul **c**. În lipsa frecărilor, energia potențială inițială este
+transformată în întregime în energie cinetică:
+
+$$
+m g h = \frac{1}{2} m v^2
+$$
+
+Deci, după simplificarea prin $m$:
+
+$$
+v = \sqrt{2 g h}
+$$
+
+Coborârea pe verticală este $h = 50\ \text{m}$, deci:
+
+$$
+v = \sqrt{2 \times 10 \times 50} = \sqrt{1\,000} \approx 31{,}6 \approx 32\ \text{m/s}
+$$
+
+Lungimea pistei ($100\ \text{m}$) **nu intră în calcul**: contează numai cât a
+coborât schiorul pe verticală.
+
+</details>
+
+---
+
+## 2. Piatra aruncată în sus
+
+**Liceul Félix Faure, Beauvais** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **12 minute**
+
+Se aruncă o pietricică de masă $m = 100\ \text{g}$ pe verticală, în sus. Piatra
+pleacă dintr-un punct $O$, luat ca origine a altitudinilor, cu viteza inițială
+$v_0 = 15\ \text{m/s}$. Se neglijează acțiunea aerului.
+
+<FiguraManual
+  src="r4-piatra.png"
+  lat={110}
+  inalt={170}
+  latime={110}
+  eticheta="Piatra urcă din punctul O până în punctul A, la altitudinea zA"
+  legenda="Piatra pleacă din O și urcă până în punctul A, cel mai înalt al traiectoriei."
+/>
+
+Calculează altitudinea maximă atinsă.
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+Calculăm energia mecanică a pietrei la cele două capete ale traiectoriei.
+
+**În punctul $O$**, cel mai de jos, de altitudine $z_O = 0$, piatra are viteza
+$v_O = 15\ \text{m/s}$. Deci energia ei potențială de greutate valorează:
+
+$$
+E_p = m g z_O = 0
+$$
+
+iar energia ei cinetică valorează $E_c(O) = \dfrac{1}{2} m v_O^2$. Prin urmare,
+piatra are energia mecanică:
+
+$$
+E_m(O) = E_p(O) + E_c(O) = \frac{1}{2} m v_O^2
+$$
+
+**În punctul $A$**, cel mai înalt, de altitudine $z_A$, piatra are viteza $v_A$
+nulă (altfel ar continua să urce). De aceea energia ei potențială de greutate și
+energia ei cinetică valorează:
+
+$$
+E_p(A) = m g z_A
+\qquad\text{și}\qquad
+E_c(A) = \frac{1}{2} m v_A^2 = 0
+$$
+
+și definesc energia mecanică:
+
+$$
+E_m(A) = E_p(A) + E_c(A) = m g z_A
+$$
+
+Neglijând frecările legate de aer, admitem conservarea energiei mecanice a
+pietrei în timpul mișcării ei:
+
+$$
+E_m(A) = E_m(O)
+\quad\Longrightarrow\quad
+m g z_A = \frac{1}{2} m v_O^2
+$$
+
+$$
+\Longrightarrow\quad z_A = \frac{v_O^2}{2 g} = \frac{(15)^2}{2 \times 10}
+\quad\Longrightarrow\quad z_A = 11\ \text{m}
+$$
+
+Masa de $100\ \text{g}$ **nu intră în calcul**: ea se simplifică. O piatră de
+zece ori mai grea, aruncată la fel de repede, ar urca tot atât.
+
+</details>
+
+---
+
+## 3. Vitezele vagonetului
+
+**Liceul Claude Bernard, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Într-un parc de distracții, un vagonet de masă $m = 65\ \text{kg}$ se deplasează
+pe niște șine al căror profil este dat mai jos. Se admite că **nu există
+frecări**.
+
+<FiguraManual
+  src="r4-vagonet.png"
+  lat={640}
+  inalt={270}
+  latime={560}
+  eticheta="Profilul șinelor cu punctele A, B, C, D și E la înălțimile lor față de sol"
+  legenda="Profilul șinelor. Vagonetul pleacă din A."
+>
+  <Et x={582} y={237} w={48} h={20} corp={14}>solul</Et>
+</FiguraManual>
+
+Înălțimile față de sol sunt $h_A = 20\ \text{m}$, $h_B = 10\ \text{m}$,
+$h_E = 18\ \text{m}$, iar $g = 10\ \text{N/kg}$.
+
+Din **[LP3](./09-lp-energia-potentiala.mdx)** se știe că
+$\Delta E_p(A/B) = -6\,500\ \text{J}$ și
+$\Delta E_p(A/E) = -1\,300\ \text{J}$.
+
+**1.** Vagonetul pleacă din $A$ fără viteză inițială. Calculează viteza lui în
+punctul $B$.
+
+**2.** Vagonetul pleacă din $A$ cu o viteză inițială $v_A = 1\ \text{m/s}$.
+Calculează viteza lui la trecerea prin $E$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În $A$, viteza vagonetului este nulă, deci și energia lui cinetică
+$E_c(A)$. De aceea energia lui mecanică valorează:
+
+$$
+E_m(A) = E_c(A) + E_p(A) = E_p(A)
+$$
+
+În schimb, viteza $v_B$ a vagonetului în $B$ îi dă o energie cinetică
+$E_c(B) = \dfrac{1}{2} m v_B^2$ și deci o energie mecanică:
+
+$$
+E_m(B) = E_c(B) + E_p(B) = \frac{1}{2} m v_B^2 + E_p(B)
+$$
+
+Lipsa frecărilor îndreptățește conservarea energiei mecanice a vagonetului
+între $A$ și $B$, ceea ce impune:
+
+$$
+E_m(B) = E_m(A)
+\;\Longrightarrow\;
+\frac{1}{2} m v_B^2 + E_p(B) = E_p(A)
+\;\Longrightarrow\;
+\frac{1}{2} m v_B^2 = E_p(A) - E_p(B)
+$$
+
+Cum $\Delta E_p(A/B) = E_p(B) - E_p(A)$, avem
+$\dfrac{1}{2} m v_B^2 = -\Delta E_p(A/B)$, de unde:
+
+$$
+v_B = \sqrt{-\frac{2}{m} \Delta E_p(A/B)} = \sqrt{-\frac{2}{65} \times (-6\,500)}
+$$
+
+$$
+v_B \approx 14{,}1\ \text{m/s}
+$$
+
+**2.** Acum vagonetul pleacă din $A$ cu viteza $v_A = 1\ \text{m/s}$ și deci cu
+energia cinetică $E_c(A) = \dfrac{1}{2} m v_A^2$. Energia lui mecanică
+valorează:
+
+$$
+E_m(A) = E_c(A) + E_p(A) = \frac{1}{2} m v_A^2 + E_p(A)
+$$
+
+Vagonetul ajunge în $E$ cu o viteză $v_E$, deci cu energia mecanică:
+
+$$
+E_m(E) = \frac{1}{2} m v_E^2 + E_p(E)
+$$
+
+Lipsa frecărilor între $A$ și $E$ îndreptățește conservarea energiei mecanice:
+
+$$
+\frac{1}{2} m v_E^2 + E_p(E) = \frac{1}{2} m v_A^2 + E_p(A)
+$$
+
+$$
+\Longrightarrow\quad \frac{1}{2} m v_E^2 = \frac{1}{2} m v_A^2 + E_p(A) - E_p(E)
+$$
+
+Cum $E_p(A) - E_p(E) = -\Delta E_p(A/E)$:
+
+$$
+v_E = \sqrt{v_A^2 - \frac{2}{m} \Delta E_p(A/E)} = \sqrt{1 - \frac{2}{65} \times (-1\,300)}
+$$
+
+$$
+v_E \approx 6{,}4\ \text{m/s}
+$$
+
+</details>
+
+---
+
+## 4. Ciclistul în roată liberă
+
+**Liceul Sainte-Marie, Antony** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Un ciclist rulează pe un drum plan și orizontal cu viteza
+$V = 20\ \text{km/h}$. Ajungând la piciorul unei urcări, el încetează să
+pedaleze.
+
+<FiguraManual
+  src="r4-ciclist.png"
+  lat={230}
+  inalt={100}
+  latime={230}
+  eticheta="Ciclistul ajunge la piciorul unei pante și încetează să pedaleze"
+  legenda="Ciclistul ajunge la piciorul urcării și nu mai pedalează."
+/>
+
+Ce distanță parcurge el pe pantă, dacă se neglijează frecările?
+
+*Date:*
+
+- intensitatea gravitațională: $g = 10\ \text{N/kg}$;
+- panta este de $15\%$, ceea ce înseamnă că, parcurgând $100\ \text{m}$ pe
+  pantă, ciclistul urcă $15\ \text{m}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**Ce ne spune panta.** Parcurgând lungimea $L = 100\ \text{m}$ pe pantă, se urcă
+$h = 15\ \text{m}$. Înseamnă că, pentru orice distanță $AB$ parcursă pe pantă,
+înălțimea câștigată este:
+
+$$
+z_B = \frac{15}{100} \times AB = 0{,}15 \times AB
+$$
+
+**La piciorul $A$ al urcării**, ciclistul are viteza:
+
+$$
+v_A = V = 20\ \text{km/h} = \frac{20}{3{,}6} \approx 5{,}56\ \text{m/s}
+$$
+
+și deci energia cinetică $E_c(A) = \dfrac{1}{2} m V^2$. Cât despre altitudinea
+lui $z_A = 0$, ea îi dă energia potențială de greutate
+$E_p(A) = m g z_A + E_0 = E_0$, unde $E_0$ este o constantă.
+
+Energia mecanică a ciclistului aflat în $A$ valorează atunci:
+
+$$
+E_m(A) = E_c(A) + E_p(A) = \frac{1}{2} m V^2 + E_0
+$$
+
+**În punctul $B$**, cel mai de sus al urcării lui, viteza valorează $v_B = 0$
+(altfel ciclistul ar continua să urce); energia lui cinetică valorează atunci:
+
+$$
+E_c(B) = \frac{1}{2} m v_B^2 = 0
+$$
+
+Energia lui potențială de greutate valorează:
+
+$$
+E_p(B) = m g z_B + E_0 = m g \times 0{,}15 \times AB + E_0
+$$
+
+iar energia lui mecanică:
+
+$$
+E_m(B) = E_c(B) + E_p(B) = m g \times 0{,}15 \times AB + E_0
+$$
+
+**Neglijând frecările**, admitem conservarea energiei mecanice între $A$ și $B$:
+
+$$
+m g \times 0{,}15 \times AB + E_0 = \frac{1}{2} m V^2 + E_0
+$$
+
+$$
+\Longrightarrow\quad g \times 0{,}15 \times AB = \frac{1}{2} V^2
+\quad\Longrightarrow\quad
+AB = \frac{V^2}{2 g \times 0{,}15}
+$$
+
+$$
+\Longrightarrow\quad AB = \frac{(5{,}56)^2}{2 \times 10 \times 0{,}15} = 10\ \text{m}
+$$
+
+Ciclistul mai urcă zece metri pe pantă și se oprește. Masa lui s-a simplificat:
+rezultatul e același pentru un copil și pentru un adult.
+
+</details>

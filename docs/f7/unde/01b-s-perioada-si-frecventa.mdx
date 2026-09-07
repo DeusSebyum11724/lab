@@ -1,0 +1,184 @@
+---
+sidebar_position: 1.5
+sidebar_label: "S1 — Perioada și frecvența"
+slug: /f7/unde/s1
+title: "S1 — Perioada și frecvența"
+description: "Suport de curs: relația dintre perioadă și frecvență, unitățile lor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S1 — Perioada și frecvența
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C1 — Perioada și frecvența](./01-curs-perioada-si-frecventa.mdx)**, strânse
+la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă
+când lucrezi la **[LP1](./02-lp-citirea-oscilogramelor.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Frecvența | $f$ | $f = \dfrac{1}{T}$ | hertz, $\text{Hz}$ |
+| Perioada | $T$ | $T = \dfrac{1}{f}$ | secundă, $\text{s}$ |
+| Perioada citită pe ecran | $T$ | $T = n_T \times s_h$ | secundă, $\text{s}$ |
+| Tensiunea citită pe ecran | $U$ | $U = n_V \times s_v$ | volt, $\text{V}$ |
+
+Relația de bază, în cele două sensuri:
+
+$$
+f = \frac{1}{T}
+\qquad\Longleftrightarrow\qquad
+T = \frac{1}{f}
+$$
+
+**Frecvența este numărul de perioade dintr-o secundă.**
+
+Pe ecranul osciloscopului, $n_T$ este numărul de diviziuni pe orizontală ocupate
+de o perioadă, iar $s_h$ este sensibilitatea orizontală (câte secunde
+înseamnă o diviziune). La fel pe verticală, cu $s_v$ în volți pe diviziune.
+
+---
+
+## 2. Unități și conversii
+
+| Unitatea | Cât face |
+|---|---|
+| $1\ \text{kHz}$ | $10^3\ \text{Hz}$ |
+| $1\ \text{MHz}$ | $10^6\ \text{Hz}$ |
+| $1\ \text{ms}$ | $10^{-3}\ \text{s}$ |
+| $1\ \mu\text{s}$ | $10^{-6}\ \text{s}$ |
+
+:::tip Scurtătura care merită știută
+
+Milisecundele și kilohertzii sunt **inverse una alteia**:
+
+$$
+T = 0{,}2\ \text{ms} \;\Longrightarrow\; f = \frac{1}{0{,}2} = 5\ \text{kHz}
+$$
+
+Poți lua inversul direct, fără să treci prin secunde — cu condiția să ții minte
+că răspunsul iese în kilohertzi.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Un fenomen e **periodic** dacă se reproduce identic după o durată fixă.
+- Perioada e o **durată**; frecvența e un **număr pe secundă**. Sunt inverse una
+  alteia: dacă una crește, cealaltă scade.
+- Pe osciloscop se citesc **diviziuni**, nu volți și nu secunde. Le transformi
+  înmulțind cu sensibilitatea.
+- Ca să măsori bine perioada, alege pe ecran o perioadă întreagă, de la un vârf
+  până la vârful următor.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+La intrarea unui osciloscop se aplică o tensiune sinusoidală de frecvență
+$f = 250\ \text{Hz}$, a cărei valoare maximă este de $1\ \text{V}$.
+
+Sensibilitatea verticală este reglată la $0{,}5\ \text{V}$ pe diviziune, iar
+baleiajul orizontal la $1\ \text{ms}$ pe diviziune.
+
+**1.** Cu câte diviziuni deviază spotul pe verticală?
+
+**2.** Care este perioada tensiunii analizate?
+
+**3.** Câte diviziuni ocupă o perioadă pe orizontală?
+
+**4.** Desenează alura curbei de pe ecran.
+
+### Pasul 1 — Ce se dă
+
+- frecvența: $f = 250\ \text{Hz}$;
+- tensiunea maximă: $1\ \text{V}$;
+- sensibilitatea verticală: $s_v = 0{,}5\ \text{V/div}$;
+- baleiajul orizontal: $s_h = 1\ \text{ms/div}$.
+
+### Pasul 2 — Ce se cere
+
+Devierea pe verticală, perioada, numărul de diviziuni pe perioadă și desenul.
+
+### Pasul 3 — Ce formule folosim
+
+Pe verticală: numărul de diviziuni este tensiunea împărțită la sensibilitate.
+Pe orizontală: întâi perioada din frecvență, apoi perioada împărțită la
+baleiaj.
+
+$$
+n_V = \frac{U}{s_v}
+\qquad
+T = \frac{1}{f}
+\qquad
+n_T = \frac{T}{s_h}
+$$
+
+### Pasul 4 — Devierea pe verticală
+
+La maximum, tensiunea de intrare valorează $1\ \text{V}$ în valoare absolută,
+ceea ce corespunde la:
+
+$$
+\frac{1}{0{,}5} = 2\ \text{diviziuni}
+$$
+
+Spotul deviază deci cel mult două diviziuni în sus sau în jos.
+
+### Pasul 5 — Perioada și diviziunile ei
+
+Perioada tensiunii analizate este:
+
+$$
+T = \frac{1}{f} = \frac{1}{250} = 0{,}004\ \text{s} = 4{,}00\ \text{ms}
+$$
+
+Cum o diviziune înseamnă $1\ \text{ms}$, avem:
+
+$$
+\frac{4}{1} = 4\ \text{diviziuni pe perioadă}
+$$
+
+### Pasul 6 — Desenul și verificarea
+
+Indicațiile de mai sus permit trasarea curbei următoare:
+
+<FiguraManual
+  src="c04-alura-exercitiu.png"
+  lat={641}
+  inalt={487}
+  eticheta="Ecran de osciloscop cu o sinusoidă de patru diviziuni pe perioadă și două diviziuni amplitudine"
+  legenda="Alura tensiunii pe ecran: o perioadă ocupă 4 diviziuni, iar spotul urcă și coboară câte 2 diviziuni."
+/>
+
+*Verificare*: o frecvență de $250\ \text{Hz}$ înseamnă $250$ de perioade pe
+secundă, deci o perioadă durează a $250$-a parte dintr-o secundă — adică
+$4\ \text{ms}$. Se potrivește.
+
+Și încă una: dacă am fi mărit baleiajul la $2\ \text{ms}$ pe diviziune, aceeași
+perioadă ar fi ocupat numai două diviziuni. Ecranul arată altfel, semnalul e
+același.
+
+### Răspuns
+
+Două diviziuni pe verticală, $T = 4{,}00\ \text{ms}$, patru diviziuni pe
+perioadă.
+
+---
+
+:::note Ora următoare
+
+**[LP1 — Perioada și frecvența](./02-lp-citirea-oscilogramelor.mdx).**
+
+:::

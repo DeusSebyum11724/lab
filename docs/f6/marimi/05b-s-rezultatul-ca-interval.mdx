@@ -1,0 +1,155 @@
+---
+sidebar_position: 5.5
+sidebar_label: "S3 — Incertitudinea de măsurare"
+slug: /f6/marimi/s3
+title: "S3 — Incertitudinea de măsurare"
+description: "Suport de curs: scrierea valoare ± incertitudine, regulile de rotunjire, toleranța și un exercițiu rezolvat pas cu pas."
+---
+
+# S3 — Incertitudinea de măsurare
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C3 — Incertitudinea de măsurare](./05-curs-rezultatul-ca-interval.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP3](./06-lp-rezultatul-ca-interval.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Formula | Ce înseamnă |
+|---|---|---|
+| Rezultatul măsurării | $x = (\overline{x} \pm \Delta x)\ \text{unitate}$ | valoarea și incertitudinea |
+| Incertitudinea | $\Delta x = \dfrac{x_{\max} - x_{\min}}{2}$ | semi-amplitudinea seriei |
+| Capătul de jos | $\overline{x} - \Delta x$ | marginea stângă a intervalului |
+| Capătul de sus | $\overline{x} + \Delta x$ | marginea dreaptă a intervalului |
+| Toleranța de $p\ \%$ | $x_{\text{nom}} \pm \dfrac{p}{100} \times x_{\text{nom}}$ | intervalul garantat de producător |
+
+Scrierea de bază:
+
+$$
+x = \overline{x} \pm \Delta x
+$$
+
+Simbolul $\pm$ se citește „plus sau minus". Ea spune că valoarea căutată se
+află undeva **între** $\overline{x} - \Delta x$ și $\overline{x} + \Delta x$.
+
+:::warning Atenție
+
+Unitatea de măsură se scrie **o singură dată**, după paranteză. Valoarea și
+incertitudinea au aceeași unitate.
+
+:::
+
+---
+
+## 2. Regulile de rotunjire
+
+| Regula | De ce |
+|---|---|
+| Incertitudinea se rotunjește **în sus** | rotunjind în jos ai micșora intervalul și ai pretinde o precizie pe care n-o ai |
+| Valoarea se scrie cu **tot atâtea zecimale** câte are incertitudinea rotunjită | zecimalele de dincolo de ea sunt închipuire |
+
+**Exemple lucrate în curs**
+
+| Media | Semi-amplitudinea | Incertitudinea rotunjită | Rezultatul scris |
+|---|---|---|---|
+| $155{,}48\ \text{k}\Omega$ | $2{,}05\ \text{k}\Omega$ | $2{,}1\ \text{k}\Omega$ | $(155{,}5 \pm 2{,}1)\ \text{k}\Omega$ |
+| $346{,}25\ \text{m/s}$ | $30\ \text{m/s}$ | $30\ \text{m/s}$ | $(346 \pm 30)\ \text{m/s}$ |
+
+---
+
+## 3. De reținut
+
+- Media spune **unde** cad rezultatele; semi-amplitudinea spune **cât de
+  răsfirate** sunt.
+- Cele patru inele ale unui rezistor se citesc în ordine: **cifră, cifră,
+  multiplicator, toleranță**.
+- Toleranța e dată în procente și se aplică **valorii nominale**.
+- Intervalul arată doar unde e **de crezut** că se află valoarea adevărată. Alți
+  elevi, cu alte aparate, ar putea obține alt interval.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Cele opt măsurători ale vitezei sunetului făcute de elevi au media
+$346{,}25\ \text{m/s}$, iar semi-amplitudinea seriei este $30\ \text{m/s}$.
+
+**1.** Scrie rezultatul măsurării sub forma valoare $\pm$ incertitudine.
+
+**2.** Între ce valori se află viteza sunetului, după această experiență?
+
+**3.** Ce înseamnă — și ce **nu** înseamnă — intervalul găsit?
+
+### Pasul 1 — Ce se dă
+
+- media: $\overline{c} = 346{,}25\ \text{m/s}$;
+- semi-amplitudinea: $30\ \text{m/s}$.
+
+### Pasul 2 — Ce se cere
+
+Rezultatul scris corect, intervalul lui și înțelesul acestuia.
+
+### Pasul 3 — Ce formulă folosim
+
+$$
+c = \overline{c} \pm \Delta c
+\qquad\text{cu}\qquad
+\Delta c = \frac{A}{2} = 30\ \text{m/s}
+$$
+
+### Pasul 4 — Rotunjirea
+
+Incertitudinea, $30\ \text{m/s}$, **nu are zecimale**. Regula spune atunci că
+nici valoarea nu se scrie cu zecimale: scriem $346\ \text{m/s}$ în loc de
+$346{,}25\ \text{m/s}$.
+
+Nu mai scriem aici cele două zecimale ale mediei, de vreme ce știm de-acum că
+împrăștierea măsurătorilor este cu mult mai mare de un metru pe secundă.
+
+### Pasul 5 — Rezultatul și intervalul
+
+$$
+c = (346 \pm 30)\ \text{m/s}
+$$
+
+Intervalul este deci:
+
+$$
+346 - 30 = 316\ \text{m/s}
+\qquad\text{până la}\qquad
+346 + 30 = 376\ \text{m/s}
+$$
+
+### Pasul 6 — Ce înseamnă, și verificarea
+
+Intervalul acesta arată doar unde este **de crezut** că se află valoarea
+adevărată a vitezei sunetului. El **nu** ne dă siguranța deplină că ea se află
+acolo: alți elevi, cu alte aparate, ar putea obține un alt interval.
+
+*Verificare*: toate cele opt măsurători ($320$ până la $380$) trebuie să încapă
+aproximativ în interval. Intervalul găsit, $316$–$376$, le acoperă pe toate în
+afară de $380$ — ceea ce e normal, fiindcă incertitudinea se măsoară de la
+**medie**, nu de la capete.
+
+Iar valoarea adevărată a vitezei sunetului la $20\ ^\circ\text{C}$, care e
+$343\ \text{m/s}$, cade chiar în interval. Experiența elevilor a nimerit-o.
+
+### Răspuns
+
+$c = (346 \pm 30)\ \text{m/s}$, adică între $316$ și $376\ \text{m/s}$.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Incertitudinea de măsurare](./06-lp-rezultatul-ca-interval.mdx).**
+
+:::

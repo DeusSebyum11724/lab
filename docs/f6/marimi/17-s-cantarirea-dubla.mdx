@@ -1,0 +1,180 @@
+---
+sidebar_position: 17
+sidebar_label: "S7 — Cântărirea dublă. Tipuri de balanțe"
+slug: /f6/marimi/s7
+title: "S7 — Cântărirea dublă. Tipuri de balanțe"
+description: "Suport de curs: tara, formula m = m₂ − m₁ la cântărirea dublă, felurile de balanțe și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S7 — Cântărirea dublă. Tipuri de balanțe
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C7 — Cântărirea dublă. Tipuri de balanțe](./16-curs-cantarirea-dubla.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP7](./18-lp-cantarirea-dubla.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Ce este | Unitatea în SI |
+|---|---|---|---|
+| Masa la prima cântărire | $m_1$ | masele marcate puse **lângă obiect** | kilogram, $\text{kg}$ |
+| Masa la a doua cântărire | $m_2$ | masele marcate rămase **după scoaterea obiectului** | kilogram, $\text{kg}$ |
+| Masa obiectului | $m$ | $m = m_2 - m_1$ | kilogram, $\text{kg}$ |
+| Masa tarei | — | egală cu $m_2$ | kilogram, $\text{kg}$ |
+
+$$
+m = m_2 - m_1
+$$
+
+Aceeași relație, scrisă în celelalte două feluri:
+
+$$
+m_2 = m + m_1
+\qquad\Longleftrightarrow\qquad
+m_1 = m_2 - m
+$$
+
+---
+
+## 2. Cele două cântăriri, față în față
+
+| | Cântărirea simplă | Cântărirea dublă |
+|---|---|---|
+| **Ce se pune pe talerul 1** | obiectul | obiectul **și** masele marcate |
+| **Ce se pune pe talerul 2** | masele marcate | tara |
+| **Masa obiectului** | suma maselor marcate | $m = m_2 - m_1$ |
+| **Se cere echilibrul în gol?** | da | **nu** |
+
+Tara este un obiect cu masa **mai mare** decât a obiectului de cântărit. Masa
+ei nu trebuie cunoscută dinainte.
+
+---
+
+## 3. De reținut
+
+- La cântărirea dublă, masele marcate stau în **același taler cu obiectul**, nu
+  în celălalt.
+- Între cele două etape, tara **nu se mișcă**. De aceea masa ei se scade
+  singură din diferență.
+- Cântărirea dublă îngăduie o cântărire corectă chiar cu o balanță al cărei ac
+  nu se poate aduce la zero în gol.
+- La etapa a doua, obiectul lipsește, deci masele marcate de pe taler
+  echilibrează singure tara: **masa tarei este chiar $m_2$**.
+- Balanțe: romană (produse agricole), cu un singur taler (negustori), cântar de
+  persoane, electronică (laborator), cântar de scrisori (colete), basculă
+  (camioane), balanță de precizie (mase mici).
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un coleg îți propune un exercițiu cu schemele de mai jos, care arată cântărirea
+unui solid.
+
+<FiguraManual
+  src="v6-s7-tara.png"
+  lat={503}
+  inalt={360}
+  latime={420}
+  eticheta="Două etape: în prima, solidul cu masele de 100 și 50 de grame față în față cu tara; în a doua, solidul e scos și pe taler sunt 20, 200 și 50 de grame"
+  legenda="Cele două etape ale cântăririi."
+>
+  <Et x={131} y={34}  w={70} h={27} corp={19} alinia="centru">Solidul</Et>
+  <Et x={360} y={49}  w={52} h={26} corp={18} alinia="centru">Tara</Et>
+  <Et x={212} y={151} w={84} h={31} corp={22} alinia="centru">Etapa 1</Et>
+  <Et x={348} y={232} w={52} h={26} corp={18} alinia="centru">Tara</Et>
+  <Et x={212} y={327} w={84} h={31} corp={22} alinia="centru">Etapa 2</Et>
+</FiguraManual>
+
+**1.** Spune ce tehnică de cântărire s-a folosit în experiența asta.
+
+**2.** Spune ce este o tară.
+
+**3.** Calculează masa tarei folosite.
+
+**4.** Află masa $m$ a solidului.
+
+### Pasul 1 — Ce se dă
+
+Pe figură se citesc masele marcate de la fiecare etapă:
+
+- **Etapa 1**: lângă solid sunt $100\ \text{g}$ și $50\ \text{g}$;
+- **Etapa 2**: pe același taler, fără solid, sunt $20\ \text{g}$,
+  $200\ \text{g}$ și $50\ \text{g}$.
+
+Pe celălalt taler stă tara, la amândouă etapele.
+
+### Pasul 2 — Ce se cere
+
+Tehnica folosită, înțelesul cuvântului „tară”, masa tarei și masa solidului.
+
+### Pasul 3 — Ce formulă folosim
+
+Tara de pe al doilea taler arată că avem o **cântărire dublă**. Masa obiectului
+se află cu:
+
+$$
+m = m_2 - m_1
+$$
+
+O **tară** este un obiect cu masa mai mare decât a obiectului de cântărit,
+folosit ca să se poată face echilibrul fără ca balanța să fie echilibrată în
+gol.
+
+### Pasul 4 — Cele două cântăriri
+
+$$
+m_1 = 100 + 50 = 150\ \text{g}
+$$
+
+$$
+m_2 = 20 + 200 + 50 = 270\ \text{g}
+$$
+
+Toate masele sunt în grame, deci nu transformăm nimic.
+
+### Pasul 5 — Masa tarei
+
+La etapa a doua, solidul nu mai este pe taler. Rămân doar masele marcate, care
+echilibrează singure tara. Masa tarei este deci egală cu $m_2$:
+
+$$
+m_{\text{tară}} = 270\ \text{g}
+$$
+
+### Pasul 6 — Masa solidului, și verificarea
+
+$$
+m = m_2 - m_1 = 270 - 150 = 120\ \text{g}
+$$
+
+*Prima verificare*: tara trebuie să fie **mai grea** decât solidul.
+$270\ \text{g} > 120\ \text{g}$. Se potrivește.
+
+*A doua verificare*: la etapa 1, pe talerul cu solidul avem
+$120 + 150 = 270\ \text{g}$ — exact cât cântărește tara de pe celălalt taler.
+Balanța este într-adevăr în echilibru.
+
+### Răspuns
+
+Este o cântărire dublă. Tara este un obiect mai greu decât solidul, pus pe
+celălalt taler. Masa tarei este $270\ \text{g}$, iar masa solidului
+$m = 120\ \text{g}$.
+
+---
+
+:::note Ora următoare
+
+**[LP7 — Cântărirea dublă. Tipuri de balanțe](./18-lp-cantarirea-dubla.mdx).**
+
+:::

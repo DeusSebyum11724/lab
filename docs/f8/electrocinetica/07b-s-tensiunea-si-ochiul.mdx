@@ -1,0 +1,139 @@
+---
+sidebar_position: 7.5
+sidebar_label: "S4 — Tensiunea electrică și ochiul de circuit"
+slug: /f8/electrocinetica/s4
+title: "S4 — Tensiunea electrică și ochiul de circuit"
+description: "Suport de curs: tensiunea și notarea ei, ochiul de circuit, legarea voltmetrului și un exercițiu rezolvat pas cu pas."
+---
+
+# S4 — Tensiunea electrică și ochiul de circuit
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C4 — Tensiunea electrică și ochiul de circuit](./07-curs-tensiunea-si-ochiul.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP4](./08-lp-tensiunea-si-ochiul.mdx)**.
+
+:::
+
+---
+
+## 1. Mărimile lecției
+
+| Mărimea | Simbol | Unitatea în SI | Se măsoară cu |
+|---|---|---|---|
+| Tensiunea între $A$ și $B$ | $U_{AB}$ | volt, $\text{V}$ | voltmetrul |
+
+$$
+U_{AB} = -U_{BA}
+$$
+
+Tensiunea are **sens**: se desenează pe circuit ca o săgeată, de la $B$ spre
+$A$ pentru $U_{AB}$. Dacă întorci indicii, întorci semnul.
+
+| Noțiunea | Definiția |
+|---|---|
+| **Ochi** | un **drum închis** al circuitului |
+| A parcurge un ochi | a descrie o dată drumul acesta, întorcându-te de unde ai plecat |
+
+---
+
+## 2. Voltmetrul
+
+| Regula | De ce |
+|---|---|
+| Voltmetrul se leagă **în derivație** (în paralel) | ca să vadă cele două puncte între care măsoară |
+| Borna **COM** la coada săgeții, borna **V** la vârf | ca semnul citit să fie cel al tensiunii desenate |
+
+:::warning Atenție
+
+Ampermetrul se leagă **în serie**, voltmetrul **în derivație**. E deosebirea de
+care depinde și măsurarea, și aparatul.
+
+:::
+
+Conversii: $1\ \text{mV} = 10^{-3}\ \text{V}$, $1\ \text{kV} = 10^{3}\ \text{V}$.
+
+---
+
+## 3. De reținut
+
+- Tensiunea se măsoară **între două puncte**; nu are sens să vorbești de
+  tensiunea „într-un punct".
+- Un ochi nu e neapărat un dreptunghi frumos: e orice drum care se închide.
+- Un circuit cu mai multe ramuri are mai multe ochiuri; le poți alege pe cele
+  care îți convin.
+- Dacă voltmetrul arată un număr **negativ**, ai legat bornele invers față de
+  săgeata desenată. Valoarea e bună, semnul spune doar asta.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Într-un circuit, un voltmetru legat între punctele $A$ și $B$ arată
+$U_{AB} = 4{,}5\ \text{V}$.
+
+**1.** Cât valorează $U_{BA}$?
+
+**2.** Cum a fost legat voltmetrul ca să arate $+4{,}5\ \text{V}$?
+
+**3.** Elevul întoarce bornele. Ce citește?
+
+**4.** Un al doilea elev spune că „tensiunea în punctul $A$ este
+$4{,}5\ \text{V}$". Ce e greșit în ce spune?
+
+### Pasul 1 — Ce se dă
+
+O singură măsurătoare: $U_{AB} = 4{,}5\ \text{V}$, deci un număr **pozitiv**.
+
+### Pasul 2 — Ce se cere
+
+Tensiunea în sens invers, modul de legare, ce se schimbă la întoarcerea bornelor
+și o îndreptare de vocabular.
+
+### Pasul 3 — Prima întrebare
+
+Întorcând indicii se întoarce semnul:
+
+$$
+U_{BA} = -U_{AB} = -4{,}5\ \text{V}
+$$
+
+### Pasul 4 — Cum a fost legat
+
+Săgeata lui $U_{AB}$ merge de la $B$ spre $A$. Pentru ca aparatul să arate un
+număr pozitiv, voltmetrul trebuie legat **în derivație**, cu borna **COM** la
+coada săgeții (adică în $B$) și borna **V** de partea vârfului (adică în $A$).
+
+### Pasul 5 — Cu bornele întoarse
+
+Aparatul măsoară atunci $U_{BA}$ și afișează **$-4{,}5\ \text{V}$**.
+
+Valoarea este aceeași; se schimbă numai semnul, care spune de care parte a fost
+legat aparatul. Nimic nu s-a stricat și nimic nu s-a schimbat în circuit.
+
+### Pasul 6 — Vocabularul, și verificarea
+
+Al doilea elev greșește: tensiunea se măsoară **între două puncte**, nu într-un
+punct. „Tensiunea în $A$" nu înseamnă nimic; corect e „tensiunea între $A$ și
+$B$".
+
+*Verificare*: cele două citiri trebuie să aibă aceeași valoare absolută și semne
+opuse: $+4{,}5$ și $-4{,}5$. Dacă la întoarcerea bornelor ar fi ieșit alt număr,
+înseamnă că s-a schimbat ceva în circuit între cele două măsurători.
+
+### Răspuns
+
+$U_{BA} = -4{,}5\ \text{V}$. Voltmetrul: COM în $B$, V în $A$. Întors, arată
+$-4{,}5\ \text{V}$. Tensiunea nu se măsoară într-un punct, ci între două.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Tensiunea electrică și ochiul de circuit](./08-lp-tensiunea-si-ochiul.mdx).**
+
+:::

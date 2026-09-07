@@ -1,0 +1,158 @@
+---
+sidebar_position: 23
+sidebar_label: "S11 — Efectul Joule"
+slug: /f8/electrocinetica/s11
+title: "S11 — Efectul Joule"
+description: "Suport de curs: cele trei forme ale puterii disipate prin efect Joule și un exercițiu rezolvat pas cu pas."
+---
+
+# S11 — Efectul Joule
+
+:::info Suportul lecției
+
+Toate formulele din **[C11 — Efectul Joule](./22-curs-efectul-joule.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP11](./24-lp-efectul-joule.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Legea lui Ohm | $U$ | $U = R \times I$ | volt, $\text{V}$ |
+| Puterea Joule (din $U$ și $I$) | $P$ | $P = U \times I$ | watt, $\text{W}$ |
+| Puterea Joule (din $R$ și $I$) | $P$ | $P = R I^2$ | watt, $\text{W}$ |
+| Puterea Joule (din $U$ și $R$) | $P$ | $P = \dfrac{U^2}{R}$ | watt, $\text{W}$ |
+| Intensitatea (din putere) | $I$ | $I = \sqrt{\dfrac{P}{R}}$ | amper, $\text{A}$ |
+| Energia degajată | $E$ | $E = R I^2 \times \Delta t$ | joule, $\text{J}$ |
+
+Cele trei forme ale puterii sunt **una și aceeași**:
+
+$$
+P_{\text{Joule}} = U \times I = R I^2 = \frac{U^2}{R}
+$$
+
+---
+
+## 2. Cum alegi formula
+
+| Ce ți se dă | Ce folosești |
+|---|---|
+| tensiunea și intensitatea | $P = U \times I$ |
+| rezistența și intensitatea | $P = R I^2$ |
+| tensiunea și rezistența | $P = \dfrac{U^2}{R}$ |
+| puterea și rezistența, vrei $I$ | $I = \sqrt{P/R}$ |
+| puterea și rezistența, vrei $U$ | $U = \sqrt{P \times R}$ |
+
+Unități: $R$ în ohmi, $I$ în amperi, $U$ în volți, $\Delta t$ în **secunde**.
+
+---
+
+## 3. De reținut
+
+- Un conductor ohmic transformă **toată** puterea primită în căldură.
+- $P = R I^2$: puterea crește cu **pătratul** intensității. Dublezi curentul,
+  împătrești căldura.
+- $P = U^2/R$: la aceeași tensiune, o rezistență **mică** disipă mai **mult**.
+- Peste puterea maximă admisibilă, rezistorul se încălzește până se strică.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Saint-Dominique, Herblain)*
+
+Un conductor ohmic este caracterizat prin rezistența lui $R = 100\ \Omega$ și
+prin puterea lui maximă admisibilă $P_{\max} = 0{,}50\ \text{W}$.
+
+**1.** Calculează intensitatea maximă a curentului pe care îl poate suporta fără
+pericol. Precizează care este pericolul.
+
+**2.** Calculează tensiunea maximă care i se poate aplica.
+
+### Pasul 1 — Ce se dă
+
+- rezistența: $R = 100\ \Omega$;
+- puterea maximă admisibilă: $P_{\max} = 0{,}50\ \text{W}$.
+
+### Pasul 2 — Ce se cere
+
+Intensitatea maximă $I_{\max}$, apoi tensiunea maximă $U_{\max}$.
+
+### Pasul 3 — Ce formule folosim
+
+Conductorul, de rezistență $R$ și străbătut de un curent de intensitate $I$,
+primește puterea $P = R I^2$. Condiția de siguranță este ca puterea asta să
+rămână sub puterea maximă admisibilă:
+
+$$
+P = R I^2 < P_{\max}
+\quad\Longrightarrow\quad
+I^2 < \frac{P_{\max}}{R}
+\quad\Longrightarrow\quad
+I < \sqrt{\frac{P_{\max}}{R}}
+$$
+
+### Pasul 4 — Verificăm unitățile
+
+Rezistența e în ohmi, puterea în wați. Amândouă sunt deja în unitățile
+Sistemului Internațional, deci nu transformăm nimic.
+
+### Pasul 5 — Calculul
+
+**Intensitatea maximă.** Astfel, intensitatea $I$ nu trebuie să depășească
+valoarea maximă:
+
+$$
+I_{\max} = \sqrt{\frac{P_{\max}}{R}} = \sqrt{\frac{0{,}5}{100}}
+\quad\Longrightarrow\quad
+I_{\max} \approx 7{,}1 \times 10^{-2}\ \text{A} = 71\ \text{mA}
+$$
+
+fără de care puterea primită de conductorul ăsta nu mai poate fi evacuată prin
+efect Joule: temperatura lui crește până la deteriorare.
+
+**Tensiunea maximă.** Legea lui Ohm leagă tensiunea $U$ de la bornele dipolului
+de intensitatea $I$: $U = R I$. În particular, inegalitatea $I < I_{\max}$
+arată că:
+
+$$
+U = R I < R I_{\max}
+$$
+
+adică $U$ admite și el o valoare maximă:
+
+$$
+U_{\max} = R \, I_{\max} \approx 100 \times 7{,}1 \times 10^{-2}
+\quad\Longrightarrow\quad
+U_{\max} \approx 7{,}1\ \text{V}
+$$
+
+### Pasul 6 — Verificarea
+
+Verificăm cu a treia formă a puterii:
+
+$$
+\frac{U_{\max}^2}{R} = \frac{(7{,}1)^2}{100} = \frac{50{,}4}{100} \approx 0{,}50\ \text{W}
+$$
+
+Se regăsește exact puterea maximă. Calculul e bun.
+
+### Răspuns
+
+Rezistorul suportă cel mult $71\ \text{mA}$ și cel mult $7{,}1\ \text{V}$. Peste
+aceste valori se supraîncălzește și se distruge.
+
+---
+
+:::note Ora următoare
+
+**[LP11 — Efectul Joule](./24-lp-efectul-joule.mdx).** Trei probe, în total 40
+de minute.
+
+:::

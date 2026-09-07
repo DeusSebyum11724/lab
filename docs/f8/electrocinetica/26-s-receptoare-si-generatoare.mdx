@@ -1,0 +1,211 @@
+---
+sidebar_position: 26
+sidebar_label: "S12 — Receptoare și generatoare"
+slug: /f8/electrocinetica/s12
+title: "S12 — Receptoare și generatoare"
+description: "Suport de curs: legile motorului, ale electrolizorului și ale generatorului, randamentul și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S12 — Receptoare și generatoare
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C12 — Receptoare și generatoare](./25-curs-receptoare-si-generatoare.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP12](./27-lp-receptoare-si-generatoare.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Formula | Unitatea în SI |
+|---|---|---|
+| Legea motorului (și a electrolizorului) | $U_{AB} = E + r I$ | volt, $\text{V}$ |
+| Legea generatorului | $U_{PN} = E - r I$ | volt, $\text{V}$ |
+| Puterea primită de un receptor | $P_{\text{primită}} = U_{AB} \times I$ | watt, $\text{W}$ |
+| Puterea mecanică (motor) | $P_{\text{mec}} = E \times I$ | watt, $\text{W}$ |
+| Puterea chimică (electrolizor) | $P_{\text{chim}} = E \times I$ | watt, $\text{W}$ |
+| Puterea generată | $P_{\text{generată}} = E \times I$ | watt, $\text{W}$ |
+| Puterea furnizată circuitului | $P_{\text{furnizată}} = U_{PN} \times I$ | watt, $\text{W}$ |
+| Puterea disipată | $P_{\text{Joule}} = r I^2$ | watt, $\text{W}$ |
+| Randamentul | $\eta = \dfrac{P_{\text{utilă}}}{P_{\text{consumată}}}$ | — |
+
+**Bilanțul care le leagă pe toate:**
+
+$$
+\underbrace{U_{AB} \times I}_{\text{primită}}
+= \underbrace{E \times I}_{\text{utilă}}
++ \underbrace{r I^2}_{\text{pierdută}}
+\qquad\text{(receptor)}
+$$
+
+$$
+\underbrace{E \times I}_{\text{generată}}
+= \underbrace{U_{PN} \times I}_{\text{utilă}}
++ \underbrace{r I^2}_{\text{pierdută}}
+\qquad\text{(generator)}
+$$
+
+- $E$ — tensiunea electromotoare (la generator) sau contraelectromotoare (la
+  motor), în volți;
+- $r$ — rezistența internă, în ohmi;
+- $I$ — intensitatea, în amperi.
+
+---
+
+## 2. Semnul care face diferența
+
+| Dipolul | Legea | De ce semnul ăsta |
+|---|---|---|
+| Receptor (motor, electrolizor) | $U_{AB} = E + r I$ | trebuie să-i **dai** mai mult decât folosește |
+| Generator | $U_{PN} = E - r I$ | îți **dă** mai puțin decât produce |
+
+:::warning Atenție
+
+Semnul e singura deosebire, dar schimbă tot. Ține minte de care parte stă
+pierderea: la receptor se adaugă la ce trebuie să dai, la generator se scade din
+ce primești.
+
+:::
+
+Randamentul e mereu **util împărțit la total**, iar totalul e mereu numărul mai
+mare. Dacă îți iese $\eta > 1$, ai împărțit invers.
+
+---
+
+## 3. De reținut
+
+- Curentul **iese** din generator prin borna pozitivă.
+- Rezistența internă $r$ face pierderi în amândouă cazurile: $r I^2$.
+- Randamentul unui motor: $\eta = \dfrac{P_{\text{mec}}}{P_{\text{primită}}}$.
+- Randamentul unui generator:
+  $\eta = \dfrac{P_{\text{furnizată}}}{P_{\text{generată}}}$.
+- Se poate lucra la fel de bine cu puteri sau cu energii — raportul e același.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Branly, Nogent-sur-Marne)*
+
+Un motor electric consumă o putere electrică de $1{,}50\ \text{kW}$. El
+furnizează o energie mecanică utilă de $4{,}32 \times 10^6\ \text{J}$ timp de o
+oră. Circuitele electrice care alcătuiesc motorul ăsta cedează o energie
+termică $Q = 7{,}20 \times 10^5\ \text{J}$.
+
+**1.** Care sunt celelalte pierderi de energie posibile în convertizorul ăsta
+(valoare și natură)?
+
+**2.** Calculează randamentul acestui motor.
+
+### Pasul 1 — Ce se dă
+
+- puterea electrică consumată: $P_{\text{primită}} = 1{,}50\ \text{kW}$;
+- energia mecanică utilă: $E_{\text{mec}} = 4{,}32 \times 10^6\ \text{J}$;
+- energia termică cedată: $Q = 7{,}20 \times 10^5\ \text{J}$;
+- durata: $\Delta t = 1$ oră.
+
+### Pasul 2 — Ce se cere
+
+Restul de energie care nu se regăsește nici în mecanic, nici în efectul Joule —
+și randamentul motorului.
+
+### Pasul 3 — Ce formule folosim
+
+Întâi energia primită, din putere și durată:
+
+$$
+E_{\text{primită}} = P_{\text{primită}} \times \Delta t
+$$
+
+Apoi bilanțul energetic, care spune că tot ce intră trebuie să iasă:
+
+$$
+E_{\text{primită}} = E_{\text{mec}} + E_{\text{Joule}} + E_{\text{alte pierderi}}
+$$
+
+Și, la sfârșit, randamentul:
+
+$$
+\eta = \frac{E_{\text{mec}}}{E_{\text{primită}}}
+$$
+
+### Pasul 4 — Trecem totul în unități SI
+
+$$
+P_{\text{primită}} = 1{,}50\ \text{kW} = 1\,500\ \text{W}
+\qquad
+\Delta t = 1\ \text{h} = 3\,600\ \text{s}
+$$
+
+### Pasul 5 — Calculul
+
+**Energia primită.** În timpul $\Delta t = 3\,600\ \text{s}$, motorul primește
+energia electrică:
+
+$$
+E_{\text{primită}} = P_{\text{primită}} \times \Delta t = 1\,500 \times 3\,600 = 5{,}40 \times 10^6\ \text{J}
+$$
+
+pe care o transformă:
+
+- sub formă mecanică, energia $E_{\text{mec}} = 4{,}32 \times 10^6\ \text{J}$;
+- în energie termică, în conductoarele ohmice (efectul Joule):
+  $E_{\text{Joule}} = Q = 7{,}20 \times 10^5\ \text{J}$;
+- în pierderi prin frecări, radiație și altele, a căror valoare o aflăm din
+  bilanț.
+
+**Celelalte pierderi.**
+
+$$
+E_{\text{alte pierderi}} = E_{\text{primită}} - E_{\text{mec}} - E_{\text{Joule}}
+$$
+
+$$
+= 5{,}40 \times 10^6 - 4{,}32 \times 10^6 - 7{,}2 \times 10^5
+$$
+
+$$
+\Longrightarrow\quad E_{\text{alte pierderi}} = 3{,}6 \times 10^5\ \text{J}
+$$
+
+**Randamentul.** Motorul a fost conceput ca să transforme energia electrică pe
+care o primește sub formă mecanică. De aceea randamentul lui se definește prin:
+
+$$
+\eta = \frac{E_{\text{mec}}}{E_{\text{primită}}} = \frac{4{,}32 \times 10^6}{5{,}40 \times 10^6}
+\qquad\Longrightarrow\qquad
+\eta \approx 0{,}80 = 80\%
+$$
+
+### Pasul 6 — Verificarea
+
+Adunăm tot ce iese și trebuie să regăsim ce intră:
+
+$$
+4{,}32 \times 10^6 + 7{,}2 \times 10^5 + 3{,}6 \times 10^5 = 5{,}40 \times 10^6\ \text{J}
+$$
+
+Se potrivește exact. Iar randamentul, $80\%$, este mai mic decât $1$, cum
+trebuie să fie.
+
+### Răspuns
+
+Motorul mai pierde $3{,}6 \times 10^5\ \text{J}$ prin frecări și radiație, iar
+randamentul lui este de $80\%$.
+
+---
+
+:::note Ora următoare
+
+**[LP12 — Receptoare și generatoare](./27-lp-receptoare-si-generatoare.mdx).**
+Patru probe, în total 50 de minute.
+
+:::

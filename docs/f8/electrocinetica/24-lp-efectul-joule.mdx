@@ -1,0 +1,239 @@
+---
+sidebar_position: 24
+sidebar_label: "LP11 — Efectul Joule"
+slug: /f8/electrocinetica/lp11
+title: "LP11 — Efectul Joule"
+description: "Lucrare practică: formulele efectului Joule, alegerea rezistenței într-un circuit de baterie și motorul blocat."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP11 — Efectul Joule
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C11 — Efectul Joule](./22-curs-efectul-joule.mdx)**, cu formulele din
+**[S11](./23-s-efectul-joule.mdx)** la îndemână. Trei probe; în total 40 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care formulă este cea bună | — | 6 min |
+| 2 | Bateria electrică | ★★ | 20 min |
+| 3 | Motorul blocat | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Care formulă este cea bună
+
+— &nbsp;·&nbsp; **6 minute**
+
+Un conductor ohmic, de rezistență $R$, este străbătut de un curent de
+intensitate $I$. Tensiunea $U_{AB}$ dintre bornele lui și puterea
+$P_{\text{Joule}}$ pe care o disipă prin efect Joule valorează respectiv:
+
+**a.** $U_{AB} = R I$ și $P_{\text{Joule}} = \dfrac{1}{2} R I^2$;
+
+**b.** $U_{AB} = R I^2$ și $P_{\text{Joule}} = R I$;
+
+**c.** $U_{AB} = \dfrac{1}{2} R I$ și $P_{\text{Joule}} = R I^2$;
+
+**d.** $U_{AB} = R I$ și $P_{\text{Joule}} = R I^2$.
+
+<details>
+<summary>Rezolvare</summary>
+
+Răspunsul **d**. Legea lui Ohm arată că un conductor ohmic străbătut de un
+curent de intensitate $I$ prezintă, între bornele lui, tensiunea:
+
+$$
+U_{AB} = R \times I
+$$
+
+El primește atunci puterea electrică:
+
+$$
+P_{\text{primită}} = U_{AB} \times I = R I^2
+$$
+
+pe care o disipă integral sub formă termică. Deci puterea disipată prin efect
+Joule valorează:
+
+$$
+P_{\text{Joule}} = R I^2
+$$
+
+</details>
+
+---
+
+## 2. Bateria electrică
+
+**Liceul Colbert, Lorient** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **20 minute**
+
+Se dispune de o baterie, de tensiune electromotoare $E = 12\ \text{V}$ și de
+rezistență internă neglijabilă, precum și de trei rezistențe de încălzire de
+valori $R_1 = 4\ \Omega$, $R_2 = 3\ \Omega$ și $R_3 = 2\ \Omega$.
+
+<FiguraManual
+  src="r5-baterie-circuit.png"
+  lat={245}
+  inalt={230}
+  latime={230}
+  eticheta="Bateria între bornele P și N, legată la o rezistență R între A și B"
+  legenda="Bateria legată la una dintre rezistențele de încălzire."
+/>
+
+**1.** Se conectează una dintre rezistențele astea la baterie. Precizează
+valoarea rezistenței pentru ca energia disipată prin efect Joule să fie
+**maximă** pentru o durată impusă $\Delta t$.
+
+Calculează atunci puterea electrică $P$ disponibilă la bornele alimentării.
+
+**2.** Ce rezistență trebuie conectată la baterie ca să obții, de data asta, o
+valoare **minimă** a energiei disipate prin efect Joule în timpul $\Delta t$?
+Calculează $P$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În lipsa rezistenței interne, tensiunea la bornele bateriei valorează:
+
+$$
+U_{PN} = E = 12\ \text{V}
+$$
+
+oricare ar fi valoarea intensității $I$ a curentului care circulă în circuit.
+
+Cât despre legea lui Ohm, ea arată că rezistența este supusă tensiunii
+$U_{AB} = R I$ și că disipă, prin efect Joule, puterea:
+
+$$
+P_{\text{Joule}} = \frac{U_{AB}^2}{R}
+$$
+
+cu
+
+$$
+U_{AB} = U_{PN} = E
+\qquad\Longrightarrow\qquad
+P_{\text{Joule}} = \frac{E^2}{R}
+$$
+
+Deci, în timpul $\Delta t$, rezistența disipă prin efect Joule energia:
+
+$$
+\mathcal{E} = P_{\text{Joule}} \times \Delta t = \frac{E^2}{R} \times \Delta t
+$$
+
+Relația asta arată că $\mathcal{E}$ este **maximă** atunci când $R$ este cea mai
+mică posibilă, adică pentru:
+
+$$
+R = R_3 = 2\ \Omega
+$$
+
+În sfârșit, fiindcă puterea $P$, eliberată de generator în circuit, se împarte
+între toate dipolurile circuitului (aici numai rezistența), urmează că:
+
+$$
+P = P_{\text{Joule}} = \frac{E^2}{R}
+$$
+
+Cu $R = 2\ \Omega$ găsim astfel:
+
+$$
+P = \frac{(12)^2}{2}
+\qquad\Longrightarrow\qquad
+P = 72\ \text{W}
+$$
+
+**2.** Aceeași relație arată că energia disipată prin efect Joule este
+**minimă** atunci când $R$ ia cea mai mare valoare posibilă, adică atunci când:
+
+$$
+R = R_1 = 4\ \Omega
+$$
+
+Puterea disponibilă la bornele generatorului este atunci:
+
+$$
+P = \frac{E^2}{R_1} = \frac{(12)^2}{4}
+\qquad\Longrightarrow\qquad
+P = 36\ \text{W}
+$$
+
+*De reținut*: la aceeași tensiune, o rezistență **mai mică** disipă **mai
+multă** căldură. Pare pe dos, dar formula $P = U^2/R$ o spune limpede.
+
+</details>
+
+---
+
+## 3. Motorul blocat
+
+**Liceul Jacques Monod, Clamart** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **14 minute**
+
+Un motor, de rezistență internă $r = 20{,}00\ \Omega$, este alimentat sub o
+tensiune de $220\ \text{V}$.
+
+<FiguraManual
+  src="r5-motor-ex.png"
+  lat={195}
+  inalt={110}
+  latime={190}
+  eticheta="Motorul între bornele A și B, cu tensiunea UAB și curentul I"
+  legenda="Motorul, cu tensiunea la borne și curentul care îl străbate."
+/>
+
+Motorul este **blocat**: rotorul lui nu se mai poate învârti, deci el nu mai
+furnizează nicio energie mecanică și se poartă ca un simplu conductor ohmic de
+rezistență $r$.
+
+**1.** Calculează intensitatea curentului care îl străbate.
+
+**2.** Calculează energia degajată în fiecare minut.
+
+**3.** De ce este periculoasă situația asta?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Când motorul este blocat, el nu mai poate furniza energie mecanică; toată
+puterea electrică primită se transformă în putere termică:
+
+$$
+P_{\text{primită}} = P_{\text{Joule}}
+\quad\Longrightarrow\quad
+U_{AB} \times I = r I^2
+\quad\Longrightarrow\quad
+U_{AB} = r I
+$$
+
+$$
+\Longrightarrow\quad I = \frac{U_{AB}}{r} = \frac{220}{20} = 11\ \text{A}
+$$
+
+**2.** În timpul $\Delta t = 1\ \text{min} = 60\ \text{s}$, motorul degajă
+atunci, sub formă exclusiv termică, energia:
+
+$$
+\mathcal{E}_J = P_J \times \Delta t = r I^2 \times \Delta t = 20 \times (11)^2 \times 60
+$$
+
+$$
+\Longrightarrow\quad \mathcal{E}_J = 1{,}452 \times 10^5\ \text{J} = 145{,}2\ \text{kJ}
+$$
+
+**3.** Peste $145$ de kilojouli de căldură într-un singur minut, degajați într-o
+bobină mică de sârmă, ridică foarte repede temperatura motorului. Izolația se
+topește, iar motorul arde. De aceea aparatele au siguranțe: ele întrerup
+curentul înainte ca motorul blocat să se distrugă.
+
+</details>

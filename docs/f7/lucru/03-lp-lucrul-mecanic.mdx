@@ -1,0 +1,174 @@
+---
+sidebar_position: 3
+sidebar_label: "LP1 — Lucrul mecanic al unei forțe"
+slug: /f7/lucru/lp1
+title: "LP1 — Lucrul mecanic al unei forțe"
+description: "Lucrare practică: lucrul unei forțe orizontale, lucrul greutății unui ciocan-pilon și forța de frânare a unui tren."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP1 — Lucrul mecanic al unei forțe
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C1 — Lucrul mecanic al unei forțe](./01-curs-lucrul-mecanic.mdx)**, cu
+formulele din **[S1](./02-s-lucrul-mecanic.mdx)** la îndemână. Trei probe; în
+total 35 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Semnul lucrului mecanic | — | 8 min |
+| 2 | Lucrul greutății unui ciocan-pilon | ★★ | 12 min |
+| 3 | Forța de frânare a unui tren | ★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Semnul lucrului mecanic
+
+— &nbsp;·&nbsp; **8 minute**
+
+Pentru fiecare situație de mai jos, spune dacă lucrul forței este **motor**,
+**rezistent** sau **nul**, și justifică într-o propoziție.
+
+**1.** Un copil trage o sanie pe zăpadă, cu funia întinsă orizontal, în sensul
+mersului.
+
+**2.** Frânele unui tren apasă pe roți în timp ce trenul înaintează.
+
+**3.** Reacțiunea solului asupra unei lăzi împinse pe podea.
+
+**4.** Greutatea unei mingi aruncate în sus, cât timp mingea urcă.
+
+**5.** Greutatea aceleiași mingi, cât timp ea coboară.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Motor.** Forța are aceeași direcție și același sens cu deplasarea, deci
+lucrul ei este pozitiv: ea ajută mișcarea.
+
+**2.** **Rezistent.** Forța de frânare are sens opus deplasării, deci lucrul ei
+este negativ: ea se împotrivește mișcării.
+
+**3.** **Nul.** Reacțiunea solului este perpendiculară pe deplasare, iar o forță
+perpendiculară pe deplasare are lucrul zero.
+
+**4.** **Rezistent.** Mingea urcă, deci $z_A < z_B$, iar
+$L^{\vec{G}} = mg(z_A - z_B)$ este negativ. Greutatea se împotrivește urcării.
+
+**5.** **Motor.** Mingea coboară, deci $z_A > z_B$, iar lucrul greutății este
+pozitiv. Greutatea ajută coborârea.
+
+</details>
+
+---
+
+## 2. Lucrul greutății unui ciocan-pilon
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Un ciocan-pilon, de masă $m = 2$ tone, cade de la înălțimea $h = 3\ \text{m}$
+peste un obiect de aluminiu. Viteza lui inițială este nulă. Frecările se
+neglijează în timpul căderii.
+
+<FiguraManual
+  src="r4-ciocan.png"
+  lat={160}
+  inalt={235}
+  latime={150}
+  eticheta="Ciocanul-pilon cade de la altitudinea zA la altitudinea zB, pe înălțimea h"
+  legenda="Ciocanul-pilon cade de la altitudinea zA la altitudinea zB."
+/>
+
+**1.** Cât valorează masa ciocanului, în kilograme?
+
+**2.** Care este lucrul efectuat de greutatea ciocanului în timpul căderii?
+
+**3.** Este un lucru motor sau rezistent? De ce?
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** O tonă are $1\,000\ \text{kg}$, deci
+
+$$
+m = 2\ \text{tone} = 2\,000\ \text{kg}
+$$
+
+**2.** Ciocanul trece de la altitudinea $z_A$ la altitudinea $z_B$, iar
+înălțimea căderii este $h = z_A - z_B = 3\ \text{m}$. Lucrul greutății este:
+
+$$
+L^{\vec{G}} = m g (z_A - z_B) = m g h
+$$
+
+$$
+L^{\vec{G}} = 2\,000 \times 10 \times 3 = 6 \times 10^4\ \text{J}
+$$
+
+**3.** Este un lucru **motor**: corpul coboară, deci $z_A > z_B$ și lucrul iese
+pozitiv. Greutatea ajută mișcarea.
+
+</details>
+
+---
+
+## 3. Forța de frânare a unui tren
+
+**Liceul Bellevue, Toulouse** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Un tren de mare viteză, de masă $m = 500$ de tone, rulează pe o cale ferată
+dreaptă și orizontală. Suferind o oprire de urgență, el își blochează roțile și
+se oprește după $3\,300\ \text{m}$.
+
+Se știe că, în timpul frânării, energia lui de mișcare a scăzut cu
+$1{,}73 \times 10^9\ \text{J}$, iar toată scăderea asta se datorează lucrului
+forței de frânare.
+
+**1.** Ce lucru a efectuat forța de frânare? Este motor sau rezistent?
+
+**2.** Presupunând că forța de frânare a fost constantă pe tot parcursul
+procesului, determină valoarea ei.
+
+**3.** Compară forța asta cu greutatea trenului. Ce observi?
+
+*Dat:* $g = 10\ \text{N/kg}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forța de frânare are sens opus deplasării, deci lucrul ei este
+**rezistent**, adică negativ. Valoarea lui absolută este chiar scăderea
+energiei de mișcare:
+
+$$
+|L| = 1{,}73 \times 10^9\ \text{J}
+$$
+
+**2.** Forța fiind constantă și având aceeași direcție cu deplasarea (dar sens
+opus), avem $|L| = F \times d$, de unde:
+
+$$
+F = \frac{|L|}{d} = \frac{1{,}73 \times 10^9}{3{,}3 \times 10^3} = 5{,}25 \times 10^5\ \text{N}
+$$
+
+**3.** Greutatea trenului este
+
+$$
+G = m g = 500\,000 \times 10 = 5 \times 10^6\ \text{N}
+$$
+
+Forța de frânare este de aproximativ zece ori mai mică decât greutatea
+trenului. Cu toate astea, aplicată pe $3\,300\ \text{m}$, ea oprește complet un
+tren de cinci sute de tone.
+
+</details>

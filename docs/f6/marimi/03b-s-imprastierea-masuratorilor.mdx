@@ -1,0 +1,156 @@
+---
+sidebar_position: 3.5
+sidebar_label: "S2 — Împrăștierea măsurătorilor"
+slug: /f6/marimi/s2
+title: "S2 — Împrăștierea măsurătorilor"
+description: "Suport de curs: amplitudinea și semi-amplitudinea, construirea unei histograme și un exercițiu rezolvat pas cu pas."
+---
+
+# S2 — Împrăștierea măsurătorilor
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C2 — Împrăștierea măsurătorilor](./03-curs-imprastierea-masuratorilor.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP2](./04-lp-imprastierea-masuratorilor.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea |
+|---|---|---|---|
+| Amplitudinea | $A$ | $A = x_{\max} - x_{\min}$ | ca a mărimii măsurate |
+| Semi-amplitudinea | $A/2$ | $\dfrac{A}{2} = \dfrac{x_{\max} - x_{\min}}{2}$ | ca a mărimii măsurate |
+| Media | $\overline{x}$ | $\overline{x} = \dfrac{x_1 + \dots + x_n}{n}$ | ca a mărimii măsurate |
+
+$$
+A = x_{\max} - x_{\min}
+\qquad\text{și}\qquad
+\frac{A}{2} = \frac{x_{\max} - x_{\min}}{2}
+$$
+
+- **Amplitudinea** dă lungimea intervalului în care cad toate măsurătorile.
+- **Semi-amplitudinea** spune cu cât se poate depărta cel mult o măsurătoare de
+  mijlocul acelui interval.
+
+---
+
+## 2. Cum se construiește o histogramă
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Alegi lățimea intervalului |
+| 2 | Numeri câte măsurători cad în fiecare interval |
+| 3 | Desenezi câte un dreptunghi peste fiecare interval, cu înălțimea egală cu numărul găsit |
+
+Suma înălțimilor trebuie să fie egală cu **numărul total de măsurători** — cea
+mai bună verificare.
+
+:::warning Atenție
+
+O măsurătoare care cade chiar pe granița dintre două intervale se numără **o
+singură dată**, la intervalul care începe acolo. Astfel, $340\ \text{m/s}$
+intră la intervalul $340$–$350$, nu la $330$–$340$.
+
+:::
+
+**Cât de late să fie intervalele.** De regulă, lățimea trebuie să fie o mică
+parte din amplitudine. Prea late — toate valorile ajung într-o singură bară;
+prea înguste — fiecare bară are înălțimea $1$. Nici așa, nici așa nu se mai
+vede nimic.
+
+---
+
+## 3. De reținut
+
+- Cu cât împrăștierea e mai mică, cu atât amplitudinea e mai mică.
+- Amplitudinea nu poate fi negativă; dacă toate măsurătorile ar fi identice, ea
+  ar fi nulă.
+- Cu cât instrumentul e mai precis, cu atât amplitudinea seriei e mai mică.
+- **Rezultatul nu poate fi mai precis decât instrumentul.** Zecimalele care ies
+  dintr-o împărțire nu sunt informație nouă.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Se reiau cele zece măsurători ale rezistenței unui conductor ohmic, în
+kiloohmi:
+
+$$
+155{,}1 \quad 153{,}1 \quad 155{,}7 \quad 155{,}8 \quad 156{,}1
+$$
+
+$$
+154{,}3 \quad 156{,}8 \quad 157{,}2 \quad 155{,}8 \quad 154{,}9
+$$
+
+Media lor este $\overline{R} = 155{,}48\ \text{k}\Omega$.
+
+**1.** Calculează amplitudinea seriei.
+
+**2.** Calculează semi-amplitudinea ei.
+
+**3.** Ce ne spune rezultatul despre cifrele mediei?
+
+### Pasul 1 — Ce se dă
+
+Zece valori și media lor. Toate în aceeași unitate, $\text{k}\Omega$.
+
+### Pasul 2 — Ce se cere
+
+Amplitudinea, semi-amplitudinea și ce urmează din ele pentru scrierea mediei.
+
+### Pasul 3 — Ce formulă folosim
+
+$$
+A = x_{\max} - x_{\min}
+$$
+
+Deci trebuie mai întâi găsite cea mai mică și cea mai mare valoare din serie.
+
+### Pasul 4 — Căutăm capetele
+
+Parcurgând lista: cea mai mică dintre cele zece măsurători ale rezistenței este
+$153{,}1\ \text{k}\Omega$, iar cea mai mare este $157{,}2\ \text{k}\Omega$.
+
+### Pasul 5 — Calculul
+
+$$
+A = 157{,}2 - 153{,}1 = 4{,}1\ \text{k}\Omega
+$$
+
+iar semi-amplitudinea:
+
+$$
+\frac{A}{2} = \frac{4{,}1}{2} = 2{,}05\ \text{k}\Omega
+$$
+
+### Pasul 6 — Ce urmează, și verificarea
+
+Cu alte cuvinte, o măsurătoare făcută de un elev se poate depărta cu vreo doi
+kiloohmi de mijlocul intervalului. Asta arată, în același timp, că **nu are rost
+să păstrăm sutimile** din media $155{,}48\ \text{k}\Omega$: împrăștierea le
+înghite.
+
+*Verificare*: media trebuie să cadă între $x_{\min}$ și $x_{\max}$, iar
+$153{,}1 < 155{,}48 < 157{,}2$. Și amplitudinea trebuie să fie pozitivă — este.
+
+### Răspuns
+
+$A = 4{,}1\ \text{k}\Omega$, iar $A/2 = 2{,}05\ \text{k}\Omega$. Împrăștierea e
+de ordinul kiloohmului, deci sutimile din medie nu înseamnă nimic.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Împrăștierea măsurătorilor](./04-lp-imprastierea-masuratorilor.mdx).**
+
+:::

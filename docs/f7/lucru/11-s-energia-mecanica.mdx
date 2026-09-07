@@ -1,0 +1,186 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Energia mecanică și conservarea ei"
+slug: /f7/lucru/s4
+title: "S4 — Energia mecanică și conservarea ei"
+description: "Suport de curs: formulele energiei mecanice, condiția de conservare și un exercițiu rezolvat pas cu pas."
+---
+
+# S4 — Energia mecanică și conservarea ei
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C4 — Energia mecanică și conservarea ei](./10-curs-energia-mecanica.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP4](./12-lp-energia-mecanica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Energia mecanică | $E_m$ | $E_m = E_c + E_p$ | joule, $\text{J}$ |
+| Conservarea (fără frecări) | — | $E_m(\text{final}) = E_m(\text{inițial})$ | — |
+| Viteza finală | $v_f$ | $v_f = \sqrt{v_i^2 + \dfrac{2}{m}\big[E_p(i) - E_p(f)\big]}$ | $\text{m/s}$ |
+| Cădere din repaus | $v$ | $v = \sqrt{2 g h}$ | $\text{m/s}$ |
+| Urcare până la oprire | $h$ | $h = \dfrac{v^2}{2 g}$ | metru, $\text{m}$ |
+| Energia pierdută prin frecare | $E_f$ | $E_f = E_m(i) - E_m(f)$ | joule, $\text{J}$ |
+
+Cele două formule din mijlocul tabelului sunt **aceeași conservare**, scrisă
+pentru cele două cazuri care apar cel mai des:
+
+$$
+m g h = \frac{1}{2} m v^2
+\qquad\Longrightarrow\qquad
+v = \sqrt{2 g h}
+\qquad\text{și}\qquad
+h = \frac{v^2}{2 g}
+$$
+
+Observă că **masa se simplifică**: viteza cu care ajunge jos un corp căzut de la
+înălțimea $h$ nu depinde de masa lui.
+
+---
+
+## 2. Când ai voie s-o folosești
+
+Conservarea energiei mecanice se poate folosi numai când **frecările se
+neglijează**. Enunțul îți spune asta prin una dintre formulele:
+
+- „se neglijează frecările";
+- „se neglijează acțiunea aerului";
+- „alunecare fără frecare".
+
+Dacă enunțul **nu** spune așa ceva, energia mecanică scade, iar diferența s-a
+dus în căldură.
+
+---
+
+## 3. De reținut
+
+- $E_m$ nu se schimbă de la un punct la altul, în lipsa frecărilor. Ce pierde
+  corpul din $E_p$ câștigă în $E_c$ — și invers.
+- În punctul cel mai de sus al unei urcări, viteza este **nulă** (altfel corpul
+  ar continua să urce), deci $E_c = 0$ acolo.
+- Într-o cădere care pleacă din repaus, $E_c = 0$ la început.
+- Masa se simplifică ori de câte ori toate energiile sunt de forma $mgh$ și
+  $\frac{1}{2}mv^2$.
+- Frecările nu „distrug" energia: o transformă în căldură.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Lakanal, Sceaux)*
+
+Se lasă să cadă, fără viteză inițială, o monedă de $5$ cenți, de masă
+$m = 4{,}0\ \text{g}$, din vârful turnului Montparnasse, de la
+$210\ \text{m}$ altitudine.
+
+**1.** Estimează viteza pe care ar avea-o moneda în clipa în care atinge solul,
+în lipsa frecărilor.
+
+**2.** În realitate, moneda ajunge la sol cu viteza de $25\ \text{m/s}$.
+Determină energia pierdută prin frecare.
+
+*Dat:* $g = 9{,}81\ \text{N/kg}$.
+
+### Pasul 1 — Ce se dă
+
+- masa monedei: $m = 4{,}0\ \text{g}$;
+- înălțimea turnului: $h = 210\ \text{m}$;
+- viteza inițială: nulă;
+- viteza reală la sol: $25\ \text{m/s}$;
+- $g = 9{,}81\ \text{N/kg}$.
+
+### Pasul 2 — Ce se cere
+
+Viteza teoretică la sol (fără frecări), apoi energia înghițită de frecări.
+
+### Pasul 3 — Ce formule folosim
+
+Numim $A$ punctul de plecare al monedei și $B$ punctul de lovire a solului.
+
+În $A$, viteza monedei este nulă, deci energia ei mecanică este numai
+potențială:
+
+$$
+E_m(A) = E_p(A) = m g h
+$$
+
+În $B$, moneda se află la înălțime nulă, deci energia ei mecanică este numai
+cinetică:
+
+$$
+E_m(B) = \frac{1}{2} m v_B^2
+$$
+
+### Pasul 4 — Prima întrebare: conservarea
+
+Prin conservarea energiei mecanice avem deci $m g h = \dfrac{1}{2} m v_B^2$,
+adică, după simplificarea prin $m$:
+
+$$
+v_B = \sqrt{2 g h} = \sqrt{2 \times 9{,}81 \times 210} = 64\ \text{m/s}
+$$
+
+Se observă că **masa monedei nu are nicio influență** asupra calculului. O
+monedă și o piatră ar ajunge jos cu aceeași viteză, dacă n-ar exista aerul.
+
+### Pasul 5 — A doua întrebare: energia pierdută
+
+Energia mecanică în $B$ este de fapt energia cinetică (fiindcă energia
+potențială e nulă acolo):
+
+$$
+E(B) = \frac{1}{2} m v_B^2
+$$
+
+Energia mecanică în $A$ era $E(A) = m g h$.
+
+Energia pierdută prin frecare este diferența dintre aceste două energii:
+
+$$
+E_f = E(A) - E(B) = m g h - \frac{1}{2} m v_B^2
+$$
+
+Aici $v_B$ este viteza **reală**, de $25\ \text{m/s}$, iar masa se pune în
+kilograme: $m = 4{,}0\ \text{g} = 4{,}0 \times 10^{-3}\ \text{kg}$.
+
+$$
+E_f = 4 \times 10^{-3} \times 9{,}81 \times 210 - \frac{1}{2} \times 4 \times 10^{-3} \times 25^2
+$$
+
+$$
+E_f \approx 7\ \text{J}
+$$
+
+### Pasul 6 — Verificarea
+
+Viteza reală ($25\ \text{m/s}$) este mult mai mică decât cea teoretică
+($64\ \text{m/s}$), deci ne așteptăm ca energia pierdută să fie o bună parte
+din cea inițială. Energia inițială era
+$4 \times 10^{-3} \times 9{,}81 \times 210 \approx 8{,}2\ \text{J}$, iar din ea
+s-au pierdut $7\ \text{J}$ — adică peste $80\%$. Se potrivește cu o monedă
+mică, ușoară, frânată puternic de aer.
+
+### Răspuns
+
+Fără frecări moneda ar ajunge la sol cu $64\ \text{m/s}$. În realitate ajunge
+cu $25\ \text{m/s}$, fiindcă aerul i-a înghițit aproximativ $7\ \text{J}$ din
+energie, transformați în căldură.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Energia mecanică și conservarea ei](./12-lp-energia-mecanica.mdx).**
+Patru probe, în total 50 de minute.
+
+:::

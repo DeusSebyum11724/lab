@@ -1,5 +1,5 @@
 {
-  "label": "Fenomene termice",
+  "label": "Temperatura corpurilor",
   "position": 4,
-  "link": { "type": "generated-index", "description": "Stare termică, temperatură, dilatare, transformări de stare" }
+  "link": { "type": "generated-index", "description": "Starea de cald și de rece, termometrul, citirea temperaturii" }
 }

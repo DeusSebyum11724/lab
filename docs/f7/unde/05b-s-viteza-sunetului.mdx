@@ -1,0 +1,159 @@
+---
+sidebar_position: 5.5
+sidebar_label: "S3 — Viteza sunetului și ecoul"
+slug: /f7/unde/s3
+title: "S3 — Viteza sunetului și ecoul"
+description: "Suport de curs: viteza sunetului, formula ecoului cu împărțirea la doi și un exercițiu rezolvat pas cu pas."
+---
+
+# S3 — Viteza sunetului și ecoul
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C3 — Viteza sunetului și ecoul](./05-curs-viteza-sunetului.mdx)**, strânse la
+un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă când
+lucrezi la **[LP3](./06-lp-ecoul-si-viteza-sunetului.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Durata dus-întors | $\Delta t$ | $\Delta t = \dfrac{2d}{v}$ | secundă, $\text{s}$ |
+| Distanța până la obstacol | $d$ | $d = \dfrac{v \times \Delta t}{2}$ | metru, $\text{m}$ |
+| Viteza undei | $v$ | $v = \dfrac{2d}{\Delta t}$ | $\text{m/s}$ |
+
+Unda parcurge distanța $d$ **de două ori**: o dată la ducere și o dată la
+întoarcere. De aici vine cifra $2$ din toate trei formulele.
+
+$$
+\Delta t = \frac{2d}{v}
+\qquad\Longleftrightarrow\qquad
+d = \frac{v\,\Delta t}{2}
+$$
+
+:::warning Atenție
+
+Împărțirea la $2$ nu e un amănunt: dacă o uiți, obții o distanță de două ori mai
+mare decât cea adevărată.
+
+:::
+
+---
+
+## 2. Numerele de reținut
+
+| Mediul | Viteza sunetului |
+|---|---|
+| Aer, în condiții normale | $c_s = 340\ \text{m/s}$ |
+| Apă | mult mai mare decât în aer |
+| Metale | mult mai mare decât în aer |
+
+Sunetul face $340$ de metri într-o secundă. De aceea vedem fulgerul înainte să
+auzim tunetul, deși ele se produc în același timp.
+
+**Regula fulgerului:** numeri secundele dintre fulger și tunet și înmulțești cu
+$340$ — obții distanța în metri. Trei secunde înseamnă cam un kilometru.
+
+---
+
+## 3. De reținut
+
+- Unda sonoră nu ajunge instantaneu de la sursă la ureche: se propagă din
+  aproape în aproape, cu o viteză bine determinată.
+- Viteza sunetului **nu e aceeași în toate mediile**. Ea ține de mediu, nu de
+  sursă.
+- La ecou, cronometrul măsoară **dus-întors**. Distanța căutată e jumătate din
+  drumul parcurs de undă.
+- Metoda ecoului se folosește la sonar (adâncimea apei), la ecograf și la
+  senzorii de parcare.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un vapor trimite spre fundul mării un semnal sonor și primește ecoul lui după
+$\Delta t = 0{,}12\ \text{s}$. Viteza sunetului în apa de mare este
+$v = 1\,500\ \text{m/s}$.
+
+**1.** Ce drum a parcurs unda între emisie și recepție?
+
+**2.** Care este adâncimea apei sub vapor?
+
+**3.** Cât ar fi fost durata dacă adâncimea ar fi fost de două ori mai mare?
+
+**4.** De ce nu se poate folosi aceeași metodă cu viteza sunetului în aer?
+
+### Pasul 1 — Ce se dă
+
+- durata dus-întors: $\Delta t = 0{,}12\ \text{s}$;
+- viteza sunetului în apa de mare: $v = 1\,500\ \text{m/s}$.
+
+### Pasul 2 — Ce se cere
+
+Drumul total al undei, adâncimea, durata în alt caz și de ce contează mediul.
+
+### Pasul 3 — Ce formulă folosim
+
+Unda parcurge distanța $d$ de două ori, deci drumul total este $2d$, iar
+
+$$
+\Delta t = \frac{2d}{v}
+\qquad\Longrightarrow\qquad
+d = \frac{v \times \Delta t}{2}
+$$
+
+Unitățile sunt deja cele din Sistemul Internațional — nu transformăm nimic.
+
+### Pasul 4 — Drumul total
+
+$$
+2d = v \times \Delta t = 1\,500 \times 0{,}12 = 180\ \text{m}
+$$
+
+Ăsta e drumul făcut de undă **cu totul**: la ducere și la întoarcere.
+
+### Pasul 5 — Adâncimea
+
+$$
+d = \frac{180}{2} = 90\ \text{m}
+$$
+
+Adâncimea apei sub vapor este de $90$ de metri.
+
+### Pasul 6 — Celelalte două întrebări, și verificarea
+
+**Dacă adâncimea ar fi de două ori mai mare** ($180\ \text{m}$), unda ar avea de
+făcut un drum de două ori mai lung, cu aceeași viteză. Durata s-ar dubla și ea:
+
+$$
+\Delta t' = \frac{2 \times 180}{1\,500} = 0{,}24\ \text{s}
+$$
+
+**Cu viteza din aer** ($340\ \text{m/s}$) rezultatul ar fi cu totul greșit:
+$d = 340 \times 0{,}12 : 2 = 20{,}4\ \text{m}$ în loc de $90$. Viteza trebuie
+luată **pentru mediul prin care merge unda**, iar aici mediul e apa.
+
+*Verificare*: adâncimea găsită trebuie să fie **jumătate** din drumul total:
+$90 = 180 : 2$. Dacă îți iese o adâncime egală cu drumul total, ai uitat
+împărțirea la doi.
+
+### Răspuns
+
+Unda a făcut $180\ \text{m}$ cu totul; adâncimea este de $90\ \text{m}$. La
+adâncime dublă, durata ar fi $0{,}24\ \text{s}$. Viteza trebuie luată pentru
+mediul potrivit — aici apa, nu aerul.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Viteza sunetului și ecoul](./06-lp-ecoul-si-viteza-sunetului.mdx).**
+
+:::

@@ -1,0 +1,165 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Mărimi scalare și mărimi vectoriale"
+slug: /f7/marimi/c1
+title: "C1 — Mărimi scalare și mărimi vectoriale"
+description: "Deosebirea dintre o mărime scalară și una vectorială, cele trei caracteristici ale unui vector și determinarea grafică a vectorului viteză."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C1 — Mărimi scalare și mărimi vectoriale
+
+:::info Planul orei
+
+1. Mărimi scalare
+2. Mărimi vectoriale
+3. Cele trei caracteristici ale unui vector
+4. Vectorul viteză
+5. Cum se determină grafic vectorul viteză
+
+:::
+
+---
+
+## 1. Mărimi scalare
+
+O mărime poate fi **scalară**, adică poate fi caracterizată numai prin
+**valoarea ei numerică**. De pildă:
+
+- **temperatura** $T$ este o mărime scalară: ea este caracterizată, în fiecare
+  punct din spațiu, printr-o valoare numerică;
+- **presiunea** $P$ este o mărime scalară, caracterizată tot printr-o valoare
+  numerică în fiecare punct din spațiu (de pildă, cu cât altitudinea crește, cu
+  atât presiunea atmosferică scade).
+
+Sunt tot mărimi scalare masa, volumul, densitatea, timpul, energia.
+
+:::tip De reținut
+
+O mărime scalară e complet spusă printr-un **număr și o unitate**:
+$20\ ^\circ\text{C}$, $3\ \text{kg}$, $5\ \text{J}$. Nu are nici direcție, nici
+sens.
+
+:::
+
+---
+
+## 2. Mărimi vectoriale
+
+O mărime poate fi și **vectorială**, de pildă în cazul curgerii aerului: în
+orice punct din spațiu, viteza aerului este caracterizată prin valoarea ei, dar
+și prin **direcția** sau **sensul** ei (care pot varia de la un punct la altul).
+
+Sunt mărimi vectoriale viteza, forța, greutatea.
+
+:::warning Atenție
+
+Ca să spui complet o mărime vectorială, un număr nu ajunge. „Vântul suflă cu
+$30\ \text{km/h}$" e o informație pe jumătate; „vântul suflă cu
+$30\ \text{km/h}$ dinspre nord" e informația întreagă.
+
+:::
+
+---
+
+## 3. Cele trei caracteristici ale unui vector
+
+:::danger Definiția 1
+
+Un **vector** $\vec{V}$ este o mărime caracterizată prin:
+
+- **direcția** lui (orizontală, verticală…);
+- **sensul** lui (spre dreapta, spre stânga…);
+- **norma** lui $V = \|\vec{V}\|$ (mărimea vectorului).
+
+:::
+
+Pe hârtie, un vector se desenează ca o **săgeată**:
+
+- dreapta pe care stă săgeata dă **direcția**;
+- vârful săgeții dă **sensul**;
+- lungimea săgeții dă **norma**, la o scară aleasă dinainte.
+
+**Scara** se scrie întotdeauna alături, de pildă
+„$1\ \text{cm}$ pentru $5 \times 10^{-2}\ \text{m/s}$".
+
+---
+
+## 4. Vectorul viteză
+
+Viteza unui corp poate fi reprezentată printr-un vector $\vec{v}$: **norma**
+$\|\vec{v}\|$ a vectorului corespunde valorii vitezei (în $\text{m/s}$, de
+pildă), iar **săgeata** arată direcția vitezei.
+
+În cazul general, vectorul ăsta nu este constant în timp: el își poate schimba
+norma și/sau direcția.
+
+---
+
+## 5. Cum se determină grafic vectorul viteză
+
+Să presupunem că vrem să aflăm viteza unui corp pornind de la traiectoria lui.
+
+<FiguraManual
+  src="r2-traiectorie.png"
+  lat={660}
+  inalt={200}
+  latime={580}
+  eticheta="Pozițiile succesive M1, M2, M3... ale unui punct, înregistrate la intervale egale de timp"
+  legenda="Pozițiile punctului la intervale egale de timp. Jos, scara desenului."
+/>
+
+Traiectoria asta reprezintă poziția punctului în timp. Două puncte succesive
+corespund întotdeauna aceluiași interval de timp $\Delta t$ (aici
+$40\ \text{ms}$).
+
+Ca să evaluăm viteza într-un punct dat $M$ (vom alege pentru exemplul nostru
+punctul $M_3$), procedăm în felul următor:
+
+- **direcția**: vectorul căutat se află pe paralela la $M_2 M_4$ care trece prin
+  $M_3$;
+- **norma** lui este egală cu
+
+$$
+\frac{M_2 M_3 + M_3 M_4}{2 \cdot \Delta t}
+$$
+
+:::warning Atenție
+
+Valorile luate pentru $M_2 M_3$ și $M_3 M_4$ trebuie să corespundă
+**deplasării reale** a obiectului, și nu distanței măsurate direct cu rigla.
+Nu trebuie uitat factorul de scară.
+
+:::
+
+În cazul nostru, ținând seama de scară, găsim $M_2 M_3 = 2{,}2\ \text{cm}$ și
+$M_3 M_4 = 1{,}9\ \text{cm}$.
+
+Valoarea vitezei este deci:
+
+$$
+v = \frac{(2{,}2 + 1{,}9) \times 10^{-2}}{2 \times 40 \times 10^{-3}} = 0{,}51\ \text{m/s}
+$$
+
+<FiguraManual
+  src="r2-traiectorie-v.png"
+  lat={660}
+  inalt={265}
+  latime={580}
+  eticheta="Vectorul viteză în M3, desenat pe paralela la M2M4 care trece prin M3"
+  legenda="Vectorul viteză în M₃: stă pe paralela la M₂M₄ și pleacă din M₃."
+/>
+
+---
+
+:::note Ora următoare
+
+**LP1 — Mărimi scalare și mărimi vectoriale.** Trei probe: recunoașterea
+mărimilor, câmpuri scalare și vectoriale, și un vector viteză de determinat.
+
+Înainte de ea, treci prin
+**[S1 — Mărimi scalare și mărimi vectoriale](./02-s-marimi-vectoriale.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

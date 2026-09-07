@@ -1,0 +1,136 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Presiunea"
+slug: /f7/fluide/c1
+title: "C1 — Presiunea"
+description: "Forța de apăsare exercitată de un fluid pe o suprafață, presiunea ca forță pe unitatea de suprafață, pascalul și celelalte unități."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C1 — Presiunea
+
+:::info Planul orei
+
+1. De unde vine apăsarea unui gaz
+2. Forța de apăsare suportată de o suprafață
+3. Presiunea
+4. Unități și măsurare
+
+:::
+
+---
+
+## 1. De unde vine apăsarea unui gaz
+
+Un gaz — aerul dintr-o sală de clasă, de pildă — conține un număr uriaș de
+particule. În condiții obișnuite, moleculele astea se mișcă cu viteze de
+ordinul a $500\ \text{m/s}$, pe traiectorii cu totul întâmplătoare, mereu
+schimbate de ciocnirile cu pereții și de ciocnirile dintre particule. Între
+două ciocniri, traiectoriile sunt segmente de dreaptă.
+
+Un balon este umflat de agitația moleculelor care vin și lovesc pereții lui
+dinăuntru.
+
+:::tip De reținut
+
+Temperatura arată **viteza de agitație** a particulelor dintr-un gaz.
+Presiunea arată **intensitatea tuturor ciocnirilor** de particule pe care le
+suportă un perete.
+
+:::
+
+---
+
+## 2. Forța de apăsare suportată de o suprafață
+
+Când o suprafață plană este scufundată într-un fluid — lichid sau gaz — ea
+primește din partea fluidului o forță, numită **forță de apăsare**, care este
+perpendiculară pe suprafață și proporțională cu ea.
+
+<FiguraManual
+  src="r3-forta-presanta.png"
+  lat={376}
+  inalt={318}
+  latime={320}
+  eticheta="O suprafață plană scufundată într-un fluid primește o forță perpendiculară pe ea"
+  legenda="Forța de apăsare este perpendiculară pe suprafață. Forța e exercitată de un fluid care se află la stânga suprafeței."
+>
+  <Et x={196} y={149} w={62} h={20} corp={14}>forța</Et>
+  <Et x={196} y={180} w={118} h={22} corp={14}>de apăsare</Et>
+</FiguraManual>
+
+Dacă suprafața este în contact cu **același** fluid pe amândouă fețele, ea
+primește două forțe de apăsare care se compensează. În schimb, dacă are fluide
+**diferite** pe cele două fețe — geamul unui acvariu, hubloul unui avion,
+hubloul unui submarin — forțele de apăsare nu se mai compensează.
+
+---
+
+## 3. Presiunea
+
+:::danger Definiția 1
+
+Presiunea este forța exercitată pe unitatea de suprafață.
+
+:::
+
+Dacă notăm cu $P$ presiunea, ea este dată de:
+
+$$
+P = \frac{F}{S}
+$$
+
+unde $F$ este forța de apăsare exercitată de fluid pe o suprafață plană de
+arie $S$.
+
+---
+
+## 4. Unități și măsurare
+
+În unitățile Sistemului Internațional, presiunea se măsoară în $\text{N/m}^2$,
+numit și **pascal**, cu simbolul $\text{Pa}$. Se folosește adesea
+hectopascalul, cu simbolul $\text{hPa}$:
+
+$$
+1\ \text{hPa} = 100\ \text{Pa}
+$$
+
+Presiunea standard este
+
+$$
+P_0 = 101\,325\ \text{Pa} = 1\,013{,}25\ \text{hPa}
+$$
+
+Alte unități folosite des sunt:
+
+- **atmosfera**, cu simbolul $\text{atm}$. Avem
+  $1\ \text{atm} = P_0 = 101\,325\ \text{Pa}$.
+
+  *Exemplu*: o presiune $p = 3\ \text{atm}$ valorează, în pascali,
+  $p = 3 \times 101\,325 = 303\,975\ \text{Pa}$.
+
+- **milimetrul coloană de mercur**, cu simbolul $\text{mm Hg}$.
+
+O presiune se măsoară cu ajutorul unui **manometru**.
+
+:::warning Atenție
+
+Presiunea atmosferică valorează aproximativ **o sută de mii de pascali**.
+Când obții o presiune în pascali, compar-o mereu cu numărul ăsta: îți spune
+imediat dacă rezultatul e mare sau mic.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP1 — Presiunea.** Cinci probe: piuneza, forța de apăsare pe o masă,
+presiunea gazului de sub un piston, forțele de pe un geam și deducerea masei
+unui piston.
+
+Înainte de ea, treci prin **[S1 — Presiunea](./02-s-presiunea.mdx)**: formulele
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

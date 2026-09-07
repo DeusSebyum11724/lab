@@ -1,0 +1,176 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Presiunea hidrostatică"
+slug: /f7/fluide/s2
+title: "S2 — Presiunea hidrostatică"
+description: "Suport de curs: formulele hidrostaticii, masele volumice uzuale și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Presiunea hidrostatică
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C2 — Presiunea hidrostatică](./04-curs-presiunea-hidrostatica.mdx)**, strânse
+la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-presiunea-hidrostatica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Masa volumică | $\rho$ | $\rho = \dfrac{m}{V}$ | $\text{kg/m}^3$ |
+| Diferența de presiune | $\Delta P$ | $P_B - P_A = \rho\,g\,h$ | pascal, $\text{Pa}$ |
+| Presiunea la adâncimea $h$ | $P$ | $P = P_{\text{atm}} + \rho\,g\,h$ | pascal, $\text{Pa}$ |
+| Forța de apăsare | $F$ | $F = P \times S$ | newton, $\text{N}$ |
+
+**Relația fundamentală a hidrostaticii**, scrisă în cele două feluri în care o
+vei folosi:
+
+$$
+P_B - P_A = \rho \times g \times h
+\qquad\Longleftrightarrow\qquad
+P_B = P_A + \rho \times g \times h
+$$
+
+- $P_A$, $P_B$ — presiunile în cele două puncte, în pascali;
+- $\rho$ — masa volumică a lichidului, în $\text{kg/m}^3$;
+- $g$ — intensitatea gravitațională, $10\ \text{N/kg}$ (sau $9{,}8\ \text{N/kg}$);
+- $h$ — **diferența de altitudine** dintre puncte, în metri. B este punctul de
+  jos.
+
+Când punctul de sus este chiar suprafața liberă a lichidului,
+$P_A = P_{\text{atm}}$ și relația devine:
+
+$$
+P = P_{\text{atm}} + \rho \times g \times h
+$$
+
+---
+
+## 2. Mase volumice și conversii
+
+| Substanța | Masa volumică |
+|---|---|
+| Apă | $1{,}0\ \text{g/cm}^3 = 1{,}0 \times 10^3\ \text{kg/m}^3$ |
+| Mercur | $13{,}6\ \text{g/cm}^3 = 13\,600\ \text{kg/m}^3$ |
+
+**Conversia care se greșește cel mai des:**
+
+$$
+1\ \text{g/cm}^3 = 1\,000\ \text{kg/m}^3 = 10^3\ \text{kg/m}^3
+$$
+
+Masa volumică **trebuie trecută în $\text{kg/m}^3$** înainte de a intra în
+formulă. Altfel rezultatul iese de o mie de ori greșit.
+
+Adâncimea se dă în metri, nu în centimetri:
+$1\ \text{cm} = 0{,}01\ \text{m}$.
+
+---
+
+## 3. De reținut
+
+- Presiunea e mai mare jos. Dacă îți iese invers, ai greșit semnul.
+- $h$ e **diferența de altitudine**, nu distanța dintre puncte. Două puncte la
+  aceeași adâncime au aceeași presiune, oricât de departe ar fi unul de altul.
+- Poți folosi relația doar dacă treci din A în B rămânând tot timpul în același
+  fluid.
+- În apă, presiunea crește cu **un bar la fiecare zece metri**. Folosește regula
+  asta ca verificare rapidă.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Pierre de Fermat, Toulouse)*
+
+Se consideră un sportiv care efectuează o coborâre în apnee până la adâncimea
+$h = 32\ \text{m}$. El își trage aer în piept la suprafață, chiar înainte de
+scufundare.
+
+Care este presiunea apei în punctul cel mai adânc al coborârii lui?
+
+*Date:*
+
+- masa volumică a apei: $\rho = 1{,}0\ \text{g/cm}^3$;
+- intensitatea gravitațională: $g = 9{,}8\ \text{N/kg}$;
+- presiunea atmosferică: $P_{\text{atm}} = 101\,325\ \text{Pa}$.
+
+### Pasul 1 — Ce se dă
+
+- adâncimea: $h = 32\ \text{m}$;
+- masa volumică a apei: $\rho = 1{,}0\ \text{g/cm}^3$;
+- $g = 9{,}8\ \text{N/kg}$;
+- $P_{\text{atm}} = 101\,325\ \text{Pa}$.
+
+### Pasul 2 — Ce se cere
+
+Presiunea $P$ a apei la adâncimea de $32$ de metri.
+
+### Pasul 3 — Ce formulă folosim
+
+Scriem relația fundamentală a hidrostaticii între **suprafață** (unde presiunea
+valorează $P_{\text{atm}}$) și **punctul cel mai adânc** al scufundării (unde
+presiunea valorează $P$):
+
+$$
+P - P_{\text{atm}} = \rho \times g \times h
+$$
+
+adică
+
+$$
+P = P_{\text{atm}} + \rho \times g \times h
+$$
+
+### Pasul 4 — Trecem totul în unități SI
+
+Masa volumică e dată în grame pe centimetru cub, iar formula cere kilograme pe
+metru cub:
+
+$$
+\rho = 1{,}0\ \text{g/cm}^3 = 1{,}0 \times 10^3\ \text{kg/m}^3
+$$
+
+Adâncimea e deja în metri, presiunea în pascali. Nu mai avem nimic de
+transformat.
+
+### Pasul 5 — Calculul
+
+$$
+P = 101\,325 + 9{,}8 \times 1{,}0 \times 10^3 \times 32 = 4{,}1 \times 10^5\ \text{Pa}
+$$
+
+Păstrăm două cifre, fiindcă asta e precizia cu care sunt date indicațiile din
+enunț.
+
+### Pasul 6 — Verificarea
+
+Regula rapidă spune că presiunea apei crește cu un bar — adică
+$10^5\ \text{Pa}$ — la fiecare zece metri. La $32$ de metri creșterea trebuie
+să fie de aproximativ trei bari și ceva, deci presiunea totală în jur de patru
+bari. Am obținut $4{,}1 \times 10^5\ \text{Pa}$, adică $4{,}1$ bari. Se
+potrivește.
+
+### Răspuns
+
+La adâncimea de $32$ de metri, apa apasă cu $4{,}1 \times 10^5\ \text{Pa}$,
+adică de aproximativ patru ori mai tare decât aerul la suprafață.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Presiunea hidrostatică](./06-lp-presiunea-hidrostatica.mdx).** Patru
+probe, în total 50 de minute.
+
+:::

@@ -1,0 +1,144 @@
+---
+sidebar_position: 19
+sidebar_label: "C10 — Energia și puterea electrică"
+slug: /f8/electrocinetica/c10
+title: "C10 — Energia și puterea electrică"
+description: "Gruparea în serie și în paralel, energia schimbată de un dipol, puterea electrică și wattul."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C10 — Energia și puterea electrică
+
+:::info Planul orei
+
+1. Gruparea în paralel
+2. Gruparea în serie
+3. Energia și puterea
+4. Puterea electrică primită de un dipol
+
+:::
+
+---
+
+## 1. Gruparea în paralel
+
+:::danger Definiția 1
+
+Două dipoluri $D_1$ și $D_2$ sunt montate **în paralel** atunci când bornele lor
+sunt legate două câte două (bornele $A$ și $P$ sunt legate printr-un fir
+electric, la fel și $B$ cu $N$).
+
+:::
+
+<FiguraManual
+  src="r5-paralel.png"
+  lat={355}
+  inalt={295}
+  latime={310}
+  eticheta="Două dipoluri montate în paralel, cu bornele legate două câte două"
+  legenda="Dipolurile D₁ și D₂ montate în paralel."
+/>
+
+Când două dipoluri sunt montate în paralel, tensiunile dintre bornele lor sunt
+egale:
+
+$$
+U_{AB} = U_{PN}
+$$
+
+---
+
+## 2. Gruparea în serie
+
+:::danger Definiția 2
+
+Două dipoluri $D_1$ și $D_2$ sunt montate **în serie** atunci când curentul
+electric $I$ care trece prin unul trece și prin celălalt.
+
+:::
+
+<FiguraManual
+  src="r5-serie.png"
+  lat={335}
+  inalt={70}
+  latime={300}
+  eticheta="Două dipoluri montate în serie, parcurse de același curent"
+  legenda="Dipolurile D₁ și D₂ montate în serie: același curent trece prin amândouă."
+/>
+
+---
+
+## 3. Energia și puterea
+
+:::danger Definiția 3
+
+Când un sistem schimbă o energie $E$ (în joule, $\text{J}$) în intervalul de
+timp $\Delta t$ (în secunde, $\text{s}$), puterea $P$ pe care o schimbă
+valorează:
+
+$$
+P = \frac{E}{\Delta t} \quad \text{(în watt: W)}
+$$
+
+:::
+
+Puterea spune **cât de repede** se schimbă energia. Aceeași energie livrată în
+jumătate din timp înseamnă putere dublă.
+
+Relația se poate întoarce, ca să afli energia dintr-o putere care lucrează un
+anumit timp:
+
+$$
+E = P \times \Delta t
+$$
+
+:::warning Atenție
+
+$\Delta t$ trebuie pus în **secunde**. Un minut are $60\ \text{s}$, o oră are
+$3\,600\ \text{s}$. E greșeala care se face cel mai des.
+
+:::
+
+---
+
+## 4. Puterea electrică primită de un dipol
+
+Un dipol supus tensiunii $U_{AB}$ și străbătut de curentul de intensitate $I$
+primește de la circuit puterea electrică:
+
+$$
+P_{\text{primită}} = U_{AB} \times I
+$$
+
+cu $U_{AB}$ în volți, $I$ în amperi și puterea în wați.
+
+Combinând cele două relații, energia electrică primită de dipol în timpul
+$\Delta t$ este:
+
+$$
+E = U_{AB} \times I \times \Delta t
+$$
+
+:::tip De reținut
+
+Trei mărimi, o singură idee:
+
+- **tensiunea** $U$ spune cât împinge circuitul;
+- **intensitatea** $I$ spune câtă sarcină trece;
+- **puterea** $U \times I$ spune cât de repede se transferă energia.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP10 — Energia și puterea electrică.** Trei probe: întrebări scurte despre
+grupări, calcule de energie și putere, și compararea a două feluri de becuri.
+
+Înainte de ea, treci prin
+**[S10 — Energia și puterea electrică](./20-s-energia-si-puterea.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

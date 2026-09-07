@@ -1,0 +1,198 @@
+---
+sidebar_position: 21
+sidebar_label: "LP10 — Energia și puterea electrică"
+slug: /f8/electrocinetica/lp10
+title: "LP10 — Energia și puterea electrică"
+description: "Lucrare practică: grupările în serie și în paralel, calcule de energie și putere, compararea unui bec halogen cu unul cu LED-uri."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP10 — Energia și puterea electrică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C10 — Energia și puterea electrică](./19-curs-energia-si-puterea.mdx)**, cu
+formulele din **[S10](./20-s-energia-si-puterea.mdx)** la îndemână. Trei probe;
+în total 38 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Serie sau paralel | — | 8 min |
+| 2 | Energie, putere, intensitate | ★ | 10 min |
+| 3 | Două feluri de becuri | ★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Serie sau paralel
+
+— &nbsp;·&nbsp; **8 minute**
+
+**1.** Când două dipoluri sunt montate în paralel:
+
+**a.** bornele lor sunt legate două câte două;
+**b.** curentul care străbate unul dintre dipoluri îl străbate și pe celălalt;
+**c.** tensiunile dintre bornele lor sunt în general diferite;
+**d.** ele au aceeași direcție.
+
+**2.** Un dipol schimbă o energie $E$ (în joule) în intervalul de timp
+$\Delta t$ (în secunde). Puterea $P$ (în wați) transferată dipolului valorează:
+
+**a.** $P = E \times \Delta t$ &nbsp;&nbsp;
+**b.** $P = \dfrac{E}{\Delta t}$ &nbsp;&nbsp;
+**c.** $P = \dfrac{\Delta t}{E}$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **a**. Prin definiție, două dipoluri sunt montate în paralel
+dacă bornele lor sunt legate două câte două; tensiunile dintre bornele lor sunt
+atunci **întotdeauna identice** — deci **c** este fals. Răspunsul **b** descrie
+gruparea **în serie**.
+
+**2.** Răspunsul **b**. Când o putere $P$ este transferată unui dipol în
+intervalul de timp $\Delta t$, dipolul primește energia:
+
+$$
+E = P \times \Delta t
+\qquad\Longrightarrow\qquad
+P = \frac{E}{\Delta t}
+$$
+
+</details>
+
+---
+
+## 2. Energie, putere, intensitate
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** Un generator livrează o tensiune $U = 6{,}0\ \text{V}$ și o intensitate
+$I = 0{,}5\ \text{A}$ timp de $\Delta t = 2\ \text{min}$. Care este energia
+electrică $E$ transferată?
+
+**a.** $E = 360\ \text{J}$ &nbsp;&nbsp; **b.** $E = 120\ \text{J}$
+&nbsp;&nbsp; **c.** $E = 600\ \text{J}$ &nbsp;&nbsp;
+**d.** $E = 180\ \text{J}$
+
+**2.** Un receptor electric are puterea nominală $P = 50\ \text{W}$ și este
+alimentat sub tensiunea $U = 230\ \text{V}$. Care este intensitatea $I$ care îl
+străbate?
+
+**a.** $I = 0{,}22\ \text{A}$ &nbsp;&nbsp; **b.** $I = 2{,}2\ \text{A}$
+&nbsp;&nbsp; **c.** $I = 0{,}43\ \text{A}$ &nbsp;&nbsp;
+**d.** $I = 4{,}3\ \text{A}$
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **a**. Într-un sistem care schimbă o putere $P$ în timpul
+$\Delta t$, energia schimbată $E$ este dată de $E = P \times \Delta t$. Or,
+puterea $P$ primită este $P = U \times I$. În final:
+
+$$
+E = P \times \Delta t = U \times I \times \Delta t
+$$
+
+Înainte de a face calculul, trebuie mai întâi transformat $\Delta t$ în
+secunde: $\Delta t = 120\ \text{s}$. Calculul dă:
+
+$$
+E = 6{,}0 \times 0{,}5 \times 120 = 360\ \text{J}
+$$
+
+**2.** Răspunsul **a**. Puterea receptorului este dată de $P = U \times I$.
+Calculul dă:
+
+$$
+I = \frac{P}{U} = \frac{50}{230} \approx 0{,}22\ \text{A}
+$$
+
+</details>
+
+---
+
+## 3. Două feluri de becuri
+
+**Liceul Claude Bernard, Paris** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **20 minute**
+
+Se dorește luminarea unei camere cu același flux luminos (măsurat în lumeni) de
+$1\,500\ \text{lm}$. Sunt disponibile două tipuri de becuri:
+
+- bec cu halogen (randament luminos de $25\ \text{lm/W}$);
+- bec cu LED-uri (randament luminos de $100\ \text{lm/W}$).
+
+Prețul unui megajoule de electricitate este de $0{,}05$ lei.
+
+**1.** Calculează puterea electrică (în wați) necesară fiecărui tip de bec ca să
+se obțină un flux luminos de $1\,500$ lumeni.
+
+**2.** Calculează energia consumată (în MJ) de fiecare bec, pentru o funcționare
+zilnică de $5$ ore timp de $30$ de zile.
+
+**3.** Calculează costul pentru $30$ de zile de folosire, pentru fiecare tip de
+bec.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Calculul puterii electrice necesare pentru a obține un flux luminos de
+$1\,500\ \text{lm}$. Randamentul luminos spune câți lumeni dă fiecare watt, deci
+puterea se obține împărțind fluxul la randament.
+
+Pentru becul cu halogen:
+
+$$
+P_{\text{halogen}} = \frac{1\,500}{25} = 60\ \text{W}
+$$
+
+Pentru becul cu LED-uri:
+
+$$
+P_{\text{LED}} = \frac{1\,500}{100} = 15\ \text{W}
+$$
+
+**2.** Energia consumată în $30$ de zile este dată de formula
+$E = P \times \Delta t$, cu $\Delta t$ durata totală în secunde. O zi înseamnă
+$5$ ore, adică $5 \times 3\,600\ \text{s}$; în $30$ de zile avem
+$30 \times 5 \times 3\,600\ \text{s}$.
+
+Pentru becul cu halogen, asta dă:
+
+$$
+E_{\text{halogen}} = 60 \times 30 \times 5 \times 3\,600 = 32{,}4\ \text{MJ}
+$$
+
+Pentru becul cu LED-uri:
+
+$$
+E_{\text{LED}} = 15 \times 30 \times 5 \times 3\,600 = 8{,}1\ \text{MJ}
+$$
+
+**3.** Calculul costului pentru $30$ de zile de folosire.
+
+Pentru becul cu halogen:
+
+$$
+32{,}4 \times 0{,}05 = 1{,}62 \text{ lei}
+$$
+
+Pentru becul cu LED-uri:
+
+$$
+8{,}1 \times 0{,}05 = 0{,}405 \text{ lei}
+$$
+
+Se rotunjește la $0{,}41$ lei.
+
+*Observație*: becul cu LED-uri consumă de **patru ori** mai puțină energie decât
+becul cu halogen, pentru același flux luminos. În plus, durata de viață a unui
+bec cu LED-uri este cu mult mai mare decât a unuia cu halogen.
+
+</details>

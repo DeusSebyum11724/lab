@@ -1,0 +1,139 @@
+---
+sidebar_position: 1
+sidebar_label: "C1 — Lucrul mecanic al unei forțe"
+slug: /f7/lucru/c1
+title: "C1 — Lucrul mecanic al unei forțe"
+description: "Lucrul unei forțe constante pe direcția deplasării, joule-ul, lucrul motor și lucrul rezistent, lucrul greutății."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C1 — Lucrul mecanic al unei forțe
+
+:::info Planul orei
+
+1. Lucrul unei forțe constante
+2. Unitatea de măsură
+3. Lucru motor și lucru rezistent
+4. Lucrul greutății
+
+:::
+
+---
+
+## 1. Lucrul unei forțe constante
+
+Se consideră o forță constantă $\vec{F}$ aplicată sistemului studiat. În timp,
+punctul de aplicație al acestei forțe se deplasează din punctul A în punctul B.
+
+Se numește **lucrul forței $\vec{F}$ între punctele A și B** — și se notează
+$L_{A \to B}$ — mărimea obținută înmulțind valoarea forței cu lungimea
+deplasării, atunci când forța are aceeași direcție și același sens cu
+deplasarea:
+
+$$
+L_{A \to B} = F \times AB
+$$
+
+:::warning Atenție
+
+Expresia asta este valabilă **numai dacă forța este constantă** și **numai dacă
+ea are aceeași direcție și același sens cu deplasarea**.
+
+Dacă forța este **perpendiculară** pe deplasare, lucrul ei este **nul**. Așa se
+întâmplă, de pildă, cu reacțiunea solului asupra unui corp care alunecă pe el.
+
+:::
+
+---
+
+## 2. Unitatea de măsură
+
+În unitățile Sistemului Internațional, lucrul mecanic se exprimă în **jouli**,
+cu simbolul $\text{J}$.
+
+Un joule este lucrul efectuat de o forță de un newton al cărei punct de
+aplicație se deplasează cu un metru pe direcția și în sensul forței:
+
+$$
+1\ \text{J} = 1\ \text{N} \times 1\ \text{m}
+$$
+
+---
+
+## 3. Lucru motor și lucru rezistent
+
+:::danger Definiția 1
+
+Un lucru **pozitiv** se numește **lucru motor**. Un lucru **negativ** este un
+**lucru rezistent**.
+
+:::
+
+Forța care are același sens cu deplasarea efectuează un lucru motor: ea ajută
+mișcarea. Forța care are sens opus deplasării efectuează un lucru rezistent: ea
+se împotrivește mișcării. Forța de frânare a unui tren, de pildă, efectuează un
+lucru rezistent.
+
+:::tip De reținut
+
+Lucrul unei forțe constante între A și B **nu depinde de drumul urmat** ca să
+mergi de la A la B, care poate fi absolut oricare.
+
+:::
+
+---
+
+## 4. Lucrul greutății
+
+Un caz aparte, dar foarte des întâlnit, este lucrul greutății.
+
+:::tip De reținut
+
+Lucrul efectuat de greutatea unui sistem de masă $m$, între punctele A și B,
+este:
+
+$$
+L^{\,\vec{G}}_{A \to B} = m g (z_A - z_B)
+$$
+
+unde $z_A$ (respectiv $z_B$) este altitudinea punctului A (respectiv a
+punctului B), socotită pozitivă în sus.
+
+:::
+
+Așadar:
+
+- când corpul **coboară**, $z_A > z_B$, deci lucrul greutății este **pozitiv**:
+  greutatea este motoare;
+- când corpul **urcă**, $z_A < z_B$, deci lucrul greutății este **negativ**:
+  greutatea este rezistentă.
+
+<FiguraManual
+  src="r4-ciocan.png"
+  lat={160}
+  inalt={235}
+  latime={150}
+  eticheta="Un corp care cade de la altitudinea zA la altitudinea zB, pe înălțimea h"
+  legenda="Corpul cade de la altitudinea zA la altitudinea zB. Înălțimea căderii este h = zA − zB."
+/>
+
+Pe figura de mai sus, corpul cade pe înălțimea $h = z_A - z_B$, iar lucrul
+greutății lui este
+
+$$
+L^{\,\vec{G}} = m g h
+$$
+
+---
+
+:::note Ora următoare
+
+**LP1 — Lucrul mecanic al unei forțe.** Trei probe: lucrul unei forțe orizontale,
+lucrul greutății unui ciocan-pilon și forța de frânare a unui tren.
+
+Înainte de ea, treci prin
+**[S1 — Lucrul mecanic al unei forțe](./02-s-lucrul-mecanic.mdx)**: formulele
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

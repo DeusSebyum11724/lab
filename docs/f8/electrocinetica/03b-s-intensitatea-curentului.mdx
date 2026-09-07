@@ -1,0 +1,158 @@
+---
+sidebar_position: 3.5
+sidebar_label: "S2 — Intensitatea curentului și ampermetrul"
+slug: /f8/electrocinetica/s2
+title: "S2 — Intensitatea curentului și ampermetrul"
+description: "Suport de curs: intensitatea, legarea ampermetrului, alegerea calibrului și un exercițiu rezolvat pas cu pas."
+---
+
+# S2 — Intensitatea curentului și ampermetrul
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Intensitatea curentului și ampermetrul](./03-curs-intensitatea-curentului.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./04-lp-intensitatea-curentului.mdx)**.
+
+:::
+
+---
+
+## 1. Mărimea lecției
+
+| Mărimea | Simbol | Ce este | Unitatea în SI |
+|---|---|---|---|
+| Intensitatea | $I$ | cantitatea de sarcină care traversează conductorul în unitatea de timp | amper, $\text{A}$ |
+
+**Intensitatea** este, într-un fel, „debitul" electric care trece prin
+conductor: cât de multă sarcină trece pe secundă.
+
+:::tip De reținut
+
+Într-un **circuit simplu** — care nu are decât o singură ramură — intensitatea
+este **peste tot aceeași**. Oriunde ai pune ampermetrul pe ramura aceea, găsești
+același număr.
+
+:::
+
+---
+
+## 2. Ampermetrul și calibrul
+
+| Regula | De ce |
+|---|---|
+| Ampermetrul se leagă **în serie** | ca tot curentul de măsurat să treacă prin el |
+| Se alege **cel mai mic calibru** care e totuși mai mare decât intensitatea așteptată | ca măsurarea să fie cât mai precisă |
+| Dacă nu știi la ce să te aștepți, începi de la **cel mai mare** calibru | ca să nu strici aparatul |
+
+**Calibrul** este valoarea maximă pe care ampermetrul o poate măsura.
+
+Conversii:
+
+$$
+1\ \text{mA} = 10^{-3}\ \text{A}
+\qquad
+1\ \mu\text{A} = 10^{-6}\ \text{A}
+$$
+
+---
+
+## 3. De reținut
+
+- Ampermetrul **în serie**, voltmetrul în derivație. Sunt cele două reguli care
+  nu se încurcă niciodată una cu alta.
+- Un ampermetru legat greșit, în derivație, poate fi distrus: prin el ar trece
+  un curent foarte mare.
+- Într-un circuit simplu, becul nu „consumă" curent: prin el trece exact atât
+  cât intră.
+- Calibrul prea mare dă o citire imprecisă; calibrul prea mic scoate aparatul
+  din scală.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Într-un circuit simplu cu o pilă și un bec, un elev vrea să măsoare
+intensitatea. Ampermetrul lui are calibrele $10\ \text{mA}$, $100\ \text{mA}$,
+$1\ \text{A}$ și $10\ \text{A}$.
+
+Măsurarea dă $0{,}085\ \text{A}$.
+
+**1.** Cum trebuie legat ampermetrul?
+
+**2.** Care este calibrul cel mai potrivit?
+
+**3.** Ce ar fi arătat aparatul pe calibrul de $10\ \text{mA}$?
+
+**4.** Dacă mută ampermetrul de cealaltă parte a becului, ce citește?
+
+### Pasul 1 — Ce se dă
+
+- circuit **simplu** (o singură ramură);
+- intensitatea măsurată: $0{,}085\ \text{A}$;
+- patru calibre disponibile.
+
+### Pasul 2 — Ce se cere
+
+Modul de legare, calibrul potrivit, ce se întâmplă pe un calibru prea mic și ce
+se citește în alt punct al ramurii.
+
+### Pasul 3 — Legarea
+
+Ampermetrul se leagă întotdeauna **în serie** pe ramura de circuit a cărei
+intensitate vrem s-o măsurăm. Se întrerupe firul și se intercalează aparatul,
+ca tot curentul să treacă prin el.
+
+### Pasul 4 — Alegerea calibrului
+
+Trecem întâi măsurătoarea în miliamperi, ca s-o putem compara cu calibrele:
+
+$$
+0{,}085\ \text{A} = 85\ \text{mA}
+$$
+
+Regula spune: **cel mai mic calibru care este totuși mai mare** decât
+intensitatea.
+
+| Calibrul | Ajunge? |
+|---|---|
+| $10\ \text{mA}$ | nu — $85 > 10$ |
+| $100\ \text{mA}$ | **da**, și e cel mai mic dintre cele care ajung |
+| $1\ \text{A}$ | da, dar e prea larg |
+| $10\ \text{A}$ | da, dar e mult prea larg |
+
+Calibrul potrivit este deci **$100\ \text{mA}$**.
+
+### Pasul 5 — Pe calibrul prea mic
+
+Pe $10\ \text{mA}$, intensitatea de $85\ \text{mA}$ depășește de peste opt ori
+capătul scalei. Aparatul ar ieși din scală și ar arăta o **depășire de calibru**
+— la aparatele digitale, de obicei un „1" singur pe afișaj.
+
+### Pasul 6 — În alt punct, și verificarea
+
+Circuitul este **simplu**, deci intensitatea este peste tot aceeași. Mutând
+ampermetrul de cealaltă parte a becului, elevul citește **tot
+$0{,}085\ \text{A}$**.
+
+*Verificare*: dacă ar fi citit altceva, ar fi însemnat că circuitul nu e simplu —
+că are undeva o ramificație pe care n-a văzut-o.
+
+*A doua verificare*: $85\ \text{mA}$ e o valoare plauzibilă pentru un beculeț de
+lanternă. Un rezultat de $85\ \text{A}$ ar fi fost semn de eroare de conversie.
+
+### Răspuns
+
+În serie; calibrul de $100\ \text{mA}$; pe $10\ \text{mA}$ ar ieși din scală; în
+alt punct al aceleiași ramuri citește exact aceeași valoare.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Intensitatea curentului și ampermetrul](./04-lp-intensitatea-curentului.mdx).**
+
+:::

@@ -1,0 +1,167 @@
+---
+sidebar_position: 11.5
+sidebar_label: "S6 — Legea ochiurilor"
+slug: /f8/electrocinetica/s6
+title: "S6 — Legea ochiurilor"
+description: "Suport de curs: enunțul legii ochiurilor, metoda sensului de parcurgere și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S6 — Legea ochiurilor
+
+:::info Suportul lecției
+
+Toate formulele din **[C6 — Legea ochiurilor](./11-curs-legea-ochiurilor.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP6](./12-lp-legea-ochiurilor.mdx)**.
+
+:::
+
+---
+
+## 1. Legea lecției
+
+:::danger Legea ochiurilor
+
+Într-un ochi de circuit, suma tensiunilor orientate într-un sens este egală cu
+suma tensiunilor orientate în celălalt sens.
+
+$$
+\sum U_{\text{într-un sens}} = \sum U_{\text{în celălalt sens}}
+$$
+
+:::
+
+**Exemplu:** într-un ochi în care $U$ merge în sensul acelor de ceasornic, iar
+$U_1$ și $U_2$ merg în sens contrar:
+
+$$
+U = U_1 + U_2
+$$
+
+---
+
+## 2. Metoda, în patru pași
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Alegi ochiul (un drum închis) |
+| 2 | Alegi un **sens de parcurgere** și îl desenezi |
+| 3 | Pui într-o parte a egalității tensiunile cu săgeata în sensul ales, în cealaltă parte pe celelalte |
+| 4 | Scoți necunoscuta |
+
+:::warning Atenție
+
+**Sensul unei tensiuni depinde de ochi.** Aceeași tensiune poate fi „în sensul
+acelor de ceasornic" într-un ochi și „în sens contrar" în altul. De asta se
+desenează întâi ochiul, apoi se citesc săgețile.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Legea ochiurilor e altă față a aditivității tensiunilor: un drum închis dă
+  tensiune totală nulă.
+- Într-un circuit cu mai multe ochiuri, le iei **pe rând**; unul îți dă mărimea
+  de care are nevoie celălalt.
+- Toate tensiunile trebuie să fie în aceeași unitate înainte de a le aduna.
+- Un rezultat negativ înseamnă doar că săgeata desenată era în sens invers celui
+  real.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+<FiguraManual
+  src="c02-exercitiu-tip.png"
+  lat={447}
+  latime={313}
+  inalt={352}
+  eticheta="Circuit cu o pilă, două rezistoare în ramura din mijloc, un rezistor orizontal și un bec"
+  legenda="Se cunosc U = 6,0 V, U₁ = 3,0 V și U₃ = 1,4 V. Se cer U₂ și U₄."
+/>
+
+Generatorul dă o tensiune constantă $U = 6{,}0\ \text{V}$. Se mai măsoară
+$U_1 = 3{,}0\ \text{V}$ și $U_3 = 1{,}4\ \text{V}$.
+
+Folosind legea ochiurilor, determină tensiunile $U_2$ și $U_4$.
+
+### Pasul 1 — Ce se dă
+
+- $U = 6{,}0\ \text{V}$, $U_1 = 3{,}0\ \text{V}$, $U_3 = 1{,}4\ \text{V}$;
+- circuitul are **două** ochiuri: unul în stânga, unul în dreapta.
+
+### Pasul 2 — Ce se cere
+
+$U_2$ și $U_4$.
+
+### Pasul 3 — Alegem ordinea
+
+Ochiul din stânga conține $U$, $U_1$ și $U_2$ — deci ne dă direct $U_2$.
+Ochiul din dreapta conține $U_1$, $U_3$ și $U_4$ — ne dă $U_4$. Începem cu cel
+din stânga.
+
+### Pasul 4 — Ochiul din stânga
+
+În ochiul din stânga nu există decât o singură tensiune care merge în sensul
+acelor de ceasornic ($U$) și două tensiuni care merg în sens contrar ($U_1$ și
+$U_2$), deci avem:
+
+$$
+U = U_1 + U_2
+$$
+
+de unde deducem:
+
+$$
+U_2 = U - U_1 = 6{,}0 - 3{,}0 = 3{,}0\ \text{V}
+$$
+
+### Pasul 5 — Ochiul din dreapta
+
+În ochiul din dreapta nu există decât tensiunea $U_1$ care merge în sensul
+acelor de ceasornic, în timp ce $U_3$ și $U_4$ merg în sens contrar.
+
+Observă că $U_1$ **și-a schimbat rolul**: era „în sens contrar" în ochiul din
+stânga și e „în sensul acelor" în cel din dreapta. Sensul unei tensiuni depinde
+de ochi.
+
+Putem deci scrie:
+
+$$
+U_1 = U_3 + U_4
+$$
+
+deci:
+
+$$
+U_4 = U_1 - U_3 = 3{,}0 - 1{,}4 = 1{,}6\ \text{V}
+$$
+
+### Pasul 6 — Verificarea
+
+Facem drumul mare, prin generator, prin $U_3$ și prin $U_4$:
+
+$$
+U = U_2 + U_3 + U_4 = 3{,}0 + 1{,}4 + 1{,}6 = 6{,}0\ \text{V}
+$$
+
+Se regăsește tensiunea generatorului. Toate tensiunile găsite se potrivesc între
+ele.
+
+### Răspuns
+
+$U_2 = 3{,}0\ \text{V}$ și $U_4 = 1{,}6\ \text{V}$.
+
+---
+
+:::note Ora următoare
+
+**[LP6 — Legea ochiurilor](./12-lp-legea-ochiurilor.mdx).**
+
+:::

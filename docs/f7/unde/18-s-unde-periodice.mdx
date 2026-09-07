@@ -1,0 +1,162 @@
+---
+sidebar_position: 18
+sidebar_label: "S8 — Unde progresive periodice"
+slug: /f7/unde/s8
+title: "S8 — Unde progresive periodice"
+description: "Suport de curs: cele patru relații dintre lungimea de undă, celeritate, perioadă și frecvență, plus un exercițiu rezolvat pas cu pas."
+---
+
+# S8 — Unde progresive periodice
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C8 — Unde progresive periodice](./17-curs-unde-periodice.mdx)**, strânse la
+un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă când
+lucrezi la **[LP8](./19-lp-unde-periodice.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Lungimea de undă | $\lambda$ | $\lambda = v T = \dfrac{v}{\nu}$ | metru, $\text{m}$ |
+| Perioada | $T$ | $T = \dfrac{\lambda}{v} = \dfrac{1}{\nu}$ | secundă, $\text{s}$ |
+| Frecvența | $\nu$ | $\nu = \dfrac{1}{T} = \dfrac{v}{\lambda}$ | hertz, $\text{Hz}$ |
+| Celeritatea | $v$ | $v = \lambda \nu = \dfrac{\lambda}{T}$ | $\text{m/s}$ |
+
+Cele patru relații sunt **una singură**, scrisă în patru feluri:
+
+$$
+v = \lambda \nu
+\qquad
+T = \frac{\lambda}{v}
+\qquad
+\lambda = v T
+\qquad
+\lambda = \frac{v}{\nu}
+$$
+
+- $\lambda$ — lungimea de undă: cât de departe se repetă profilul **în spațiu**;
+- $T$ — perioada: după cât timp se repetă **în timp**;
+- $\nu$ — frecvența: câte repetări pe secundă;
+- $v$ — celeritatea: cât de repede se propagă profilul.
+
+---
+
+## 2. Unități și conversii
+
+$$
+1\ \text{Hz} = 1\ \text{s}^{-1}
+\qquad
+1\ \text{kHz} = 10^3\ \text{Hz}
+\qquad
+1\ \text{MHz} = 10^6\ \text{Hz}
+$$
+
+| Ce ai | Ce faci |
+|---|---|
+| $\text{km/h}$ | împarți la $3{,}6$ ca să ai $\text{m/s}$ |
+| minute | înmulțești cu $60$ |
+| $\text{kHz}$ | înmulțești cu $1\,000$ |
+| $\text{cm}$ | împarți la $100$ |
+
+**Verificarea prin unități** e cea mai bună apărare. De pildă
+$\lambda = v/\nu$ dă $\dfrac{\text{m/s}}{\text{s}^{-1}} = \text{m}$ — o
+lungime, cum trebuie. Dacă îți iese altceva, ai întors formula greșit.
+
+---
+
+## 3. De reținut
+
+- $\lambda$ și $T$ merg **împreună**: cresc și scad odată, la celeritate
+  neschimbată.
+- Frecvența mare $\Rightarrow$ lungime de undă mică. Sunetele înalte au lungimi
+  de undă mici, cele joase, mari.
+- Dacă înmulțești frecvența cu doi, împarți lungimea de undă la doi.
+- Celeritatea nu se schimbă când schimbi frecvența: ea ține de **mediu**.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+*(Liceul Claude Bernard, Paris)*
+
+Un pescar observă că valurile (hula) ajung pe plajă la fiecare $8$ secunde. El
+măsoară că distanța dintre două creste succesive este de $50$ de metri.
+
+**1.** Calculează celeritatea valurilor.
+
+**2.** Dacă vântul se schimbă și perioada valurilor devine $6$ secunde, ce
+devine lungimea de undă, dacă celeritatea rămâne constantă?
+
+### Pasul 1 — Ce se dă
+
+- perioada: $T = 8\ \text{s}$ (valurile ajung la fiecare $8$ secunde);
+- lungimea de undă: $\lambda = 50\ \text{m}$ (distanța dintre două creste
+  succesive);
+- noua perioadă: $T' = 6\ \text{s}$, cu aceeași celeritate.
+
+### Pasul 2 — Ce se cere
+
+Celeritatea valurilor, apoi noua lungime de undă.
+
+### Pasul 3 — Ce formule folosim
+
+$$
+v = \frac{\lambda}{T}
+\qquad\text{și}\qquad
+\lambda' = v \times T'
+$$
+
+### Pasul 4 — Ce e ce
+
+Aici e capcana: „ajung la fiecare $8$ secunde" este **perioada**, iar „distanța
+dintre două creste" este **lungimea de undă**. Amândouă sunt deja în unități SI,
+deci nu transformăm nimic.
+
+### Pasul 5 — Calculul
+
+**Celeritatea.** Celeritatea $v$ a unei unde periodice este dată de:
+
+$$
+v = \frac{\lambda}{T} = \frac{50}{8} = 6{,}25\ \text{m/s}
+$$
+
+Celeritatea valurilor este de $6{,}25\ \text{m/s}$.
+
+**Noua lungime de undă.** Dacă celeritatea rămâne aceeași, dar perioada $T$ este
+înlocuită cu o altă perioadă $T'$, putem calcula noua lungime de undă
+$\lambda'$ astfel:
+
+$$
+\lambda' = v \times T' = 6{,}25 \times 6 = 37{,}5\ \text{m}
+$$
+
+### Pasul 6 — Verificarea
+
+Perioada a scăzut de la $8$ la $6$ secunde, adică s-a înmulțit cu $6/8 = 0{,}75$.
+La celeritate neschimbată, lungimea de undă trebuie să se înmulțească cu același
+număr: $50 \times 0{,}75 = 37{,}5\ \text{m}$. Se potrivește.
+
+Ordinul de mărime: $6{,}25\ \text{m/s}$ înseamnă cam $22\ \text{km/h}$ — o
+viteză plauzibilă pentru valurile care ajung la mal.
+
+### Răspuns
+
+Valurile merg cu $6{,}25\ \text{m/s}$. Când perioada scade la $6$ secunde,
+crestele se apropie: lungimea de undă scade de la $50$ la $37{,}5\ \text{m}$.
+
+---
+
+:::note Ora următoare
+
+**[LP8 — Unde progresive periodice](./19-lp-unde-periodice.mdx).** Trei probe, în
+total 42 de minute.
+
+:::
