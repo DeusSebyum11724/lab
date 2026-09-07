@@ -1,0 +1,307 @@
+---
+sidebar_position: 18
+sidebar_label: "LP6 — Legea lui Ohm și rezistența"
+slug: /f8/electrocinetica/lp6
+title: "LP6 — Legea lui Ohm și rezistența"
+description: "Lucrare practică: calculul rezistenței dintr-un punct al caracteristicii, lucrul cu miliamperii și studiul unui circuit cu ramificații."
+---
+
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP6 — Legea lui Ohm și rezistența
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C6 — Legea lui Ohm și rezistența](./16-curs-legea-lui-ohm.mdx)**, cu
+formulele din **[S6](./17-s-legea-lui-ohm.mdx)** la îndemână. Patru probe, cu
+timpul de lucru al fiecăreia; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Studiul unui dipol | ★ | 10 min |
+| 3 | Conductor ohmic | ★★ | 15 min |
+| 4 | Studiul unui circuit | ★★★ | 20 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+### Întrebarea 1
+
+În ce unitate se exprimă rezistența unui conductor ohmic în Sistemul
+Internațional?
+
+**a.** în amperi &nbsp;&nbsp; **b.** în volți &nbsp;&nbsp; **c.** în ohmi
+
+### Întrebarea 2
+
+Care dintre următoarele două conductoare ohmice are rezistența mai mare?
+
+<FiguraManual
+  src="c03-doua-drepte.png"
+  lat={761}
+  inalt={270}
+  eticheta="Două caracteristici cu aceeași înclinare aparentă, dar cu scări diferite pe axa intensității"
+  legenda="Două conductoare ohmice: aceeași tensiune de 3 V, dar intensități diferite."
+/>
+
+### Întrebarea 3
+
+Răspunde cu adevărat sau fals: când tensiunea de la bornele unui conductor
+ohmic este nulă, intensitatea curentului care îl străbate este nulă.
+
+### Întrebarea 4
+
+Știind că pe ampermetru se măsoară o intensitate $I = 200\ \text{mA}$, ce
+valoare se citește pe voltmetru?
+
+<FiguraManual
+  src="c03-montaj-qcm.png"
+  lat={441}
+  inalt={170}
+  latime={320}
+  eticheta="Un conductor ohmic de 50 de ohmi cu voltmetru în derivație și ampermetru în serie"
+  legenda="Ampermetrul arată I = 200 mA. Ce arată voltmetrul?"
+/>
+
+**a.** $200\ \text{mV}$ &nbsp;&nbsp; **b.** $1\ \text{V}$ &nbsp;&nbsp;
+**c.** $10\ \text{V}$ &nbsp;&nbsp; **d.** Nu se măsoară nimic, fiindcă
+voltmetrul nu e legat corect.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **c**: este ohmul, cu simbolul $\Omega$.
+
+**2.** Răspunsul **b**. Cele două drepte arată la fel, dar numerele de pe axa
+intensității sunt diferite. Pentru **b** avem:
+
+$$
+R = \frac{U}{I} = \frac{3}{0{,}1} = 30\ \Omega
+$$
+
+față de $6\ \Omega$ pentru răspunsul **a**, unde aceleiași tensiuni de
+$3\ \text{V}$ îi corespunde o intensitate de $0{,}5\ \text{A}$.
+
+**3.** **Adevărat.** Avem $U = R \times I$, deci dacă $U = 0$, atunci și
+$I = 0$ — pentru un conductor ohmic cu rezistența nenulă.
+
+**4.** Răspunsul **c**. Voltmetrul e legat în derivație la bornele
+conductorului ohmic, iar ampermetrul în serie, deci montajul este corect.
+Legea lui Ohm dă:
+
+$$
+U = R \times I = 50 \times 0{,}2 = 10\ \text{V}
+$$
+
+</details>
+
+---
+
+## 2. Studiul unui dipol
+
+**Liceul Gabriel Fauré, Paris** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Caracteristica intensitate–tensiune a unui dipol este o dreaptă care trece prin
+originea coordonatelor și prin punctul
+$M\ (12{,}5\ \text{mA}\ ;\ 5{,}0\ \text{V})$.
+
+**1.** Care este natura acestui dipol?
+
+**2.** Calculează rezistența lui. Precizează unitatea.
+
+**3.** Ce tensiune trebuie impusă la bornele lui ca să fie parcurs de un curent
+de intensitate $50{,}0\ \text{mA}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Caracteristica acestui dipol fiind o dreaptă care trece prin origine,
+este vorba, prin definiție, de un **conductor ohmic**.
+
+**2.** Rezistența lui se obține din legea lui Ohm. Scriem mai întâi
+intensitatea în amperi: $12{,}5\ \text{mA} = 0{,}0125\ \text{A}$.
+
+$$
+R = \frac{U}{I} = \frac{5{,}0}{0{,}0125} = 400\ \Omega
+$$
+
+Unitatea este ohmul.
+
+**3.** Folosim din nou legea lui Ohm, cu
+$50{,}0\ \text{mA} = 0{,}0500\ \text{A}$:
+
+$$
+U = R \times I = 400 \times 0{,}0500 = 20\ \text{V}
+$$
+
+</details>
+
+---
+
+## 3. Conductor ohmic
+
+**Liceul Marie Curie, Sceaux** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **15 minute**
+
+Caracteristica unui conductor ohmic trece printr-un punct de coordonate
+$I = 62{,}5\ \text{mA}$ și $U = 3{,}0\ \text{V}$.
+
+**1.** Care este valoarea rezistenței lui?
+
+**2.** Știind că puterea electrică pe care o consumă se scrie
+$P = U \times I$ și că fabricantul precizează $P_{max} = 0{,}25\ \text{W}$, se
+cere:
+
+**a.** Care este intensitatea maximă a curentului care îl poate străbate fără
+să-l strice?
+
+**b.** Care este atunci tensiunea de la bornele lui?
+
+<details>
+<summary>Rezolvare</summary>
+
+Reprezentăm mai jos caracteristica conductorului ohmic.
+
+<FiguraManual
+  src="c03-caract-48.png"
+  lat={413}
+  inalt={327}
+  latime={300}
+  eticheta="Dreaptă prin origine care trece prin punctul de coordonate 62,5 mA și 3,0 V"
+  legenda="Caracteristica conductorului ohmic, trasată prin punctul dat în enunț."
+/>
+
+**1.** Ca să aflăm valoarea rezistenței, e destul să aplicăm legea lui Ohm în
+punctul particular dat de enunț. Cu
+$62{,}5\ \text{mA} = 0{,}0625\ \text{A}$, avem:
+
+$$
+R = \frac{U}{I} = \frac{3{,}0}{0{,}0625} = 48\ \Omega
+$$
+
+**2. a.** Avem $P = U \times I$, iar $U = R \times I$, deci:
+
+$$
+P = (R \times I) \times I = R \times I^2
+$$
+
+Asta ne dă intensitatea în funcție de puterea consumată în conductorul ohmic:
+
+$$
+I^2 = \frac{P}{R}
+$$
+
+În particular, pentru valorile maxime:
+
+$$
+I_{max}^2 = \frac{P_{max}}{R} = \frac{0{,}25}{48} = 0{,}0052
+$$
+
+de unde $I_{max} = 0{,}072\ \text{A} = 72\ \text{mA}$.
+
+**b.** Valoarea tensiunii de la bornele conductorului ohmic este atunci:
+
+$$
+U = R \times I_{max} = 48 \times 0{,}072 = 3{,}4\ \text{V}
+$$
+
+:::warning Atenție
+
+Fiind vorba de valori maxime tolerabile, rezultatele se rotunjesc sistematic
+**în jos**, ca să nu distrugem componenta.
+
+:::
+
+</details>
+
+---
+
+## 4. Studiul unui circuit
+
+**Liceul Louis-le-Grand, Paris** &nbsp;·&nbsp; ★★★ &nbsp;·&nbsp; **20 minute**
+
+Se consideră circuitul reprezentat mai jos. Se dau $R_2 = 100\ \Omega$,
+$R = 50\ \Omega$ și $U_2 = 4{,}0\ \text{V}$. Ampermetrul indică o valoare de
+$100\ \text{mA}$.
+
+<FiguraManual
+  src="c03-studiu-circuit.png"
+  lat={367}
+  inalt={273}
+  latime={330}
+  eticheta="Generator, un conductor ohmic R pe ramura din stânga, apoi două ramuri în derivație: una cu R1 și ampermetrul, alta cu R2"
+  legenda="Se dau R₂ = 100 Ω, R = 50 Ω, U₂ = 4,0 V, iar ampermetrul indică 100 mA."
+/>
+
+**1.** Determină valoarea lui $I_2$.
+
+**2.** Deduce valoarea lui $I$ și apoi pe cea a lui $U$.
+
+**3.** Care este valoarea tensiunii $U_0$ de la bornele generatorului?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Săgețile lui $I_2$ și $U_2$ au sensuri contrare, deci legea lui Ohm
+pentru conductorul ohmic de pe ramura de jos se scrie:
+
+$$
+U_2 = R_2 \times I_2
+$$
+
+adică:
+
+$$
+I_2 = \frac{U_2}{R_2} = \frac{4{,}0}{100} = 0{,}040\ \text{A} = 40\ \text{mA}
+$$
+
+**2.** Aplicăm acum legea nodurilor în nodul de pe ramura din stânga. În acest
+nod ajunge un singur curent, de intensitate $I$, iar din el pleacă doi curenți,
+de intensități $I_1$ și $I_2$. Legea nodurilor se scrie deci aici:
+
+$$
+I = I_1 + I_2
+$$
+
+Cunoaștem valoarea lui $I_2$. Ce e cu $I_1$? Ampermetrul se află pe ramura pe
+care circulă curentul de intensitate $I_1$. El măsoară deci această
+intensitate: $I_1 = 100\ \text{mA}$. Prin urmare:
+
+$$
+I = 100 + 40 = 140\ \text{mA}
+$$
+
+Putem aplica acum legea lui Ohm conductorului ohmic de pe ramura din stânga.
+Săgețile curentului și ale tensiunii au sensuri contrare, deci legea lui Ohm se
+scrie $U = R \times I$, iar aplicația numerică dă:
+
+$$
+U = 50 \times 0{,}140 = 7{,}0\ \text{V}
+$$
+
+**3.** Scriem legea ochiurilor în ochiul care corespunde părții exterioare a
+circuitului. Tensiunile care merg în sensul acelor de ceasornic sunt $U$ și
+$U_2$, iar cea care merge în sens contrar este $U_0$. Avem deci:
+
+$$
+U_0 = U + U_2
+$$
+
+Aplicația numerică dă:
+
+$$
+U_0 = 7{,}0 + 4{,}0 = 11{,}0\ \text{V}
+$$
+
+</details>
+
+---

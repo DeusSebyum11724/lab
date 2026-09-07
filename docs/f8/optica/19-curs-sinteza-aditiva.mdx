@@ -1,0 +1,159 @@
+---
+sidebar_position: 19
+sidebar_label: "C7 — Culoarea obiectelor. Sinteza aditivă"
+slug: /f8/optica/c7
+title: "C7 — Culoarea obiectelor. Sinteza aditivă"
+description: "Lungimea de undă și culoarea, lumina albă, cele trei culori primare, sinteza aditivă și culorile secundare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C7 — Culoarea obiectelor. Sinteza aditivă
+
+:::info Planul orei
+
+1. Lungimea de undă hotărăște culoarea
+2. Lumina albă și culorile primare
+3. Sinteza aditivă
+4. Cercul culorilor
+5. Filtrele colorate
+
+:::
+
+---
+
+## 1. Lungimea de undă hotărăște culoarea
+
+Lumina este o undă a cărei **lungime de undă** ($\lambda$) hotărăște culoarea.
+
+<FiguraManual
+  src="r7-spectru.png"
+  lat={890}
+  inalt={90}
+  latime={720}
+  eticheta="Scara lungimilor de undă de la 400 la 700 nanometri, cu culorile corespunzătoare"
+  legenda="Lungimea de undă, în nanometri, și culoarea pe care o vedem."
+>
+  <Et x={72} y={46} w={68} h={20} corp={13} culoare="#7b3fa0">violet</Et>
+  <Et x={191} y={46} w={78} h={19} corp={13} culoare="#2b6fb5">albastru</Et>
+  <Et x={313} y={47} w={52} h={18} corp={13} culoare="#1a9e5a">verde</Et>
+  <Et x={428} y={51} w={72} h={17} corp={13} culoare="#d4b400">galben</Et>
+  <Et x={538} y={51} w={106} h={17} corp={13} culoare="#dd8a2a">portocaliu</Et>
+  <Et x={666} y={52} w={64} h={19} corp={13} culoare="#cf3a41">roșu</Et>
+</FiguraManual>
+
+---
+
+## 2. Lumina albă și culorile primare
+
+Lumina albă conține toate radiațiile vizibile
+($400\ \text{nm} < \lambda < 700\ \text{nm}$), adică toate culorile. Ea poate fi
+recompusă asociind fascicule de lumină **roșie, verde și albastră**; aceste trei
+culori se numesc **culori primare**.
+
+<FiguraManual
+  src="r7-rvb-alb.png"
+  lat={355}
+  inalt={160}
+  latime={320}
+  eticheta="Fasciculele roșu, verde și albastru se adună și dau lumină albă"
+  legenda="Cele trei culori primare, adunate, dau lumina albă."
+>
+  <Et x={13} y={28} w={120} h={24} corp={15} alinia="centru" culoare="#ffffff" fond="#eb1c25">roșu</Et>
+  <Et x={13} y={72} w={120} h={24} corp={15} alinia="centru" culoare="#ffffff" fond="#00a54f">verde</Et>
+  <Et x={13} y={116} w={120} h={24} corp={15} alinia="centru" culoare="#ffffff" fond="#00adef">albastru</Et>
+  <Et x={275} y={70} w={62} h={20} corp={16}>alb</Et>
+</FiguraManual>
+
+---
+
+## 3. Sinteza aditivă
+
+:::danger Definiția 1
+
+Tehnica prin care se asociază fascicule de culori diferite se numește
+**sinteză aditivă**. Sinteza aditivă a două culori primare produce o **culoare
+secundară**.
+
+:::
+
+<FiguraManual
+  src="r7-sinteza-aditiva.png"
+  lat={910}
+  inalt={115}
+  latime={740}
+  eticheta="Roșu plus verde dau galben, verde plus albastru dau cian, roșu plus albastru dau magenta"
+  legenda="Cele trei culori secundare, obținute prin sinteză aditivă."
+>
+  <Et x={17} y={26} w={119} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#eb1c25">roșu</Et>
+  <Et x={17} y={71} w={119} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#00a54f">verde</Et>
+  <Et x={287} y={27} w={120} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#00a54f">verde</Et>
+  <Et x={287} y={71} w={120} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#00adef">albastru</Et>
+  <Et x={601} y={26} w={119} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#eb1c25">roșu</Et>
+  <Et x={601} y={71} w={119} h={24} corp={14} alinia="centru" culoare="#ffffff" fond="#00adef">albastru</Et>
+  <Et x={205} y={53} w={76} h={19} corp={13}>galben</Et>
+  <Et x={486} y={53} w={55} h={19} corp={14}>cian</Et>
+</FiguraManual>
+
+Cele trei culori secundare sunt deci **galbenul**, **cianul** și **magenta**.
+
+---
+
+## 4. Cercul culorilor
+
+<FiguraManual
+  src="r7-cerc-aditiv.png"
+  lat={290}
+  inalt={242}
+  latime={280}
+  eticheta="Cercul culorilor pentru sinteza aditivă: trei cercuri roșu, verde și albastru care se suprapun"
+  legenda="Cercul culorilor. Cele trei culori primare sunt figurate prin trei cercuri."
+>
+  <Et x={27} y={68} w={76} h={23} corp={17} alinia="centru" culoare="#ffffff" fond="transparent">Roșu</Et>
+  <Et x={201} y={68} w={54} h={23} corp={17} alinia="centru" culoare="#ffffff" fond="transparent">Verde</Et>
+  <Et x={108} y={50} w={68} h={23} corp={17} alinia="centru" fond="transparent">Galben</Et>
+  <Et x={113} y={96} w={62} h={23} corp={17} alinia="centru" fond="transparent">Alb</Et>
+  <Et x={22} y={120} w={100} h={20} corp={14} alinia="centru" culoare="#ffffff" fond="transparent">Magenta</Et>
+  <Et x={159} y={133} w={58} h={23} corp={16} alinia="centru" culoare="#ffffff" fond="transparent">Cian</Et>
+  <Et x={112} y={183} w={68} h={23} corp={17} alinia="centru" culoare="#ffffff" fond="transparent">Albastru</Et>
+</FiguraManual>
+
+Cele trei culori primare sunt figurate prin trei cercuri. Prin sinteza aditivă a
+două culori primare (de pildă verde + roșu), se obține culoarea secundară,
+intermediară, situată între cele două cercuri corespunzătoare (de pildă
+galbenul).
+
+În mijloc, unde se suprapun toate trei, se obține **albul**.
+
+---
+
+## 5. Filtrele colorate
+
+Sinteza aditivă se poate realiza cu ajutorul **filtrelor colorate** (de altfel
+tocmai așa se obțin culorile ecranelor plate ale computerelor și ale
+telefoanelor).
+
+Un asemenea filtru **absoarbe toate radiațiile luminoase**, în afară de acelea
+a căror lungime de undă corespunde lungimii de undă a filtrului; unda
+electromagnetică este atunci transmisă de filtru.
+
+:::tip De reținut
+
+Un filtru nu „colorează" lumina. El **taie** din ea tot ce nu e culoarea lui.
+De asta lumina care iese dintr-un filtru e întotdeauna mai slabă decât cea care
+a intrat.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP7 — Culoarea obiectelor. Sinteza aditivă.** Trei probe: proiectoarele
+colorate, culoarea unui copac și ce vede ochiul printr-un filtru.
+
+Înainte de ea, treci prin
+**[S7 — Culoarea obiectelor. Sinteza aditivă](./20-s-sinteza-aditiva.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

@@ -1,0 +1,173 @@
+---
+sidebar_position: 29
+sidebar_label: "S10 — Scurtcircuitul și protecția instalațiilor"
+slug: /f8/electrocinetica/s10
+title: "S10 — Scurtcircuitul și protecția instalațiilor"
+description: "Suport de curs: definiția scurtcircuitului, cauzele, pericolele, cele două dispozitive de protecție și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S10 — Scurtcircuitul și protecția instalațiilor
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C10 — Scurtcircuitul și protecția instalațiilor](./28-curs-scurtcircuitul.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP10](./30-lp-scurtcircuitul.mdx)**.
+
+:::
+
+---
+
+## 1. Noțiunile lecției
+
+| Noțiunea | Ce este |
+|---|---|
+| **Scurtcircuit** | cele două borne ale unui aparat sunt legate direct printr-un conductor |
+| **Pană** | circuitul e închis, dar lampa nu se aprinde |
+| **Siguranță fuzibilă** | firul care se topește și rupe linia când curentul devine intens |
+| **Disjunctor** | întrerupătorul automat care rupe circuitul general |
+
+---
+
+## 2. Tabelul lecției
+
+**Cauzele unui scurtcircuit:**
+
+- două fire de legătură **dezgolite** se ating;
+- două fire cărora li s-a stricat izolația se ating;
+- un fir intră în atingere cu un conductor legat la pământ.
+
+**Pericolele:**
+
+- firele conductoare se **încălzesc** și pot provoca un **incendiu**;
+- **generatorul** se strică.
+
+**Cele două dispozitive de protecție:**
+
+| | Siguranța fuzibilă | Disjunctorul |
+|---|---|---|
+| **Unde stă** | în cutiile instalației | lângă contorul electric |
+| **Ce apără** | linia pe care se află | toată instalația |
+| **Cum lucrează** | se topește | se deschide automat |
+| **După ce s-a declanșat** | se **înlocuiește** | se **rearmează** |
+
+**Greșeala care se face cel mai des:** se crede că siguranța și disjunctorul se
+declanșează când curentul devine **prea slab**. Este pe dos: ele se declanșează
+când curentul devine **prea intens**.
+
+---
+
+## 3. De reținut
+
+- Curentul alege drumul cel mai ușor. Un fir pus peste o lampă îi ia curentul
+  și lampa se stinge.
+- Scurtcircuitarea **bateriei** o strică. Scurtcircuitarea **întrerupătorului**
+  nu strică nimic — doar face circuitul să rămână închis.
+- Ca să găsești un element defect, folosești un **multimetru** sau un
+  **circuit-test**.
+- Etapele căutării: lampa, bateria, firele, contactele.
+- Repararea = **înlocuirea** elementului defect sau **asigurarea unui contact
+  mai bun**.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+La o oră de fizică, grupul tău face un circuit electric cu o baterie, o lampă
+electrică, un întrerupător și fire de legătură. Profesorul îi cere șefului de
+grup să scurtcircuiteze lampa. Acesta ia un fir conductor și îl pune în circuit
+așa cum arată schema de mai jos.
+
+Tu nu ești de acord cu schema asta și vrei să faci experiența corect.
+
+<FiguraManual
+  src="v6-lp-scurtcircuit-1.png"
+  lat={600}
+  inalt={347}
+  latime={440}
+  eticheta="Schema unui circuit cu baterie, lampă și întrerupător, în care un fir conductor leagă cele două ramuri pe deasupra întrerupătorului"
+  legenda="Schema făcută de șeful de grup."
+>
+  <Et x={230} y={218} w={180} h={34} corp={22} alinia="centru">Fir conductor</Et>
+</FiguraManual>
+
+**1.** Spune ce înseamnă „a scurtcircuita o lampă electrică”.
+
+**2.** Arată starea lămpii în circuitul făcut de șeful de grup.
+
+**3.** Explică de ce scurtcircuitul făcut este greșit.
+
+**4.** Desenează schema circuitului pe care ar fi trebuit să-l facă.
+
+### Pasul 1 — Ce se dă
+
+Un circuit cu patru elemente — baterie, lampă, întrerupător și fire — plus un
+fir conductor pus în plus, care leagă cele două ramuri ale circuitului.
+
+### Pasul 2 — Ce se cere
+
+Înțelesul cuvântului, starea lămpii, greșeala și schema corectă.
+
+### Pasul 3 — Ce înseamnă „a scurtcircuita”
+
+A scurtcircuita o lampă electrică înseamnă a lega **cele două borne ale ei**
+direct printr-un conductor electric.
+
+Cuvântul cheie este **bornele ei**: firul trebuie pus de o parte și de alta a
+lămpii, nu oriunde în circuit.
+
+### Pasul 4 — Unde a fost pus firul
+
+Urmărim schema. Firul conductor pleacă din ramura de jos-stânga și ajunge în
+ramura de jos-dreapta, **pe deasupra întrerupătorului**. Lampa rămâne în afara
+buclei pe care o închide firul.
+
+Firul nu leagă bornele lămpii, ci bornele **întrerupătorului**.
+
+### Pasul 5 — Starea lămpii
+
+Cum firul ocolește întrerupătorul, curentul are drum spre lampă chiar și cu
+întrerupătorul deschis. Lampa rămâne **aprinsă**.
+
+Asta arată limpede că experiența n-a ieșit: dacă lampa ar fi fost
+scurtcircuitată, ea s-ar fi stins.
+
+### Pasul 6 — De ce e greșit, și schema corectă
+
+Scurtcircuitul făcut este greșit fiindcă firul conductor a fost pus la bornele
+**întrerupătorului**, nu la bornele **lămpii**. S-a scurtcircuitat alt element
+decât cel cerut.
+
+Schema corectă pune firul de o parte și de alta a lămpii:
+
+<FiguraManual
+  src="v6-scurtcircuit-schema.png"
+  lat={242}
+  inalt={190}
+  latime={250}
+  eticheta="Schema corectă: firul conductor leagă cele două borne ale lămpii"
+  legenda="Schema corectă: firul leagă bornele lămpii."
+/>
+
+*Verificare*: în schema corectă, lampa se stinge de îndată ce firul e pus —
+semn că scurtcircuitul chiar s-a făcut. În schema greșită, lampa rămâne
+aprinsă.
+
+### Răspuns
+
+A scurtcircuita o lampă înseamnă a-i lega bornele printr-un conductor. În
+circuitul șefului de grup, lampa rămâne **aprinsă**, fiindcă firul a fost pus la
+bornele întrerupătorului, nu ale lămpii. Schema corectă este cea de mai sus.
+
+---
+
+:::note Ora următoare
+
+**[LP10 — Scurtcircuitul și protecția instalațiilor](./30-lp-scurtcircuitul.mdx).**
+
+:::

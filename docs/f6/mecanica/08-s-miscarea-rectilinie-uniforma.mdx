@@ -1,0 +1,179 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Mișcare rectilinie și mișcare uniformă"
+slug: /f6/mecanica/s3
+title: "S3 — Mișcare rectilinie și mișcare uniformă"
+description: "Suport de curs: cele două însușiri ale unei mișcări, compunerea vitezelor și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Mișcare rectilinie și mișcare uniformă
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Mișcare rectilinie și mișcare uniformă](./07-curs-miscarea-rectilinie-uniforma.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-compunerea-vitezelor.mdx)**.
+
+:::
+
+---
+
+## 1. Cele două însușiri, independente una de alta
+
+| Însușirea | Ce înseamnă | Ce privește |
+|---|---|---|
+| **rectilinie** | traiectoria este o **dreaptă** | forma drumului |
+| **uniformă** | viteza instantanee **nu se schimbă** | cât de repede |
+
+Cele două nu merg neapărat împreună:
+
+| Mișcarea | Rectilinie? | Uniformă? | Exemplu |
+|---|---|---|---|
+| rectilinie uniformă | da | da | tren pe linie dreaptă, fără să frâneze |
+| rectilinie neuniformă | da | nu | mărul care cade din catarg |
+| circulară uniformă | nu | da | capătul unei elice care se rotește regulat |
+
+---
+
+## 2. Compunerea vitezelor
+
+Când un corp se mișcă **într-un alt corp** care se mișcă și el, vitezele se
+adună (dacă merg în același sens) sau se scad (dacă merg în sensuri opuse):
+
+$$
+V_{\text{față de sol}} = V_{\text{față de vehicul}} + V_{\text{vehicul față de sol}}
+$$
+
+**Exemplu din curs.** Viteza pasagerului care merge prin tren este de
+$2\ \text{km/h}$ în referențialul trenului; viteza trenului este de
+$160\ \text{km/h}$ în referențialul terestru. În referențialul terestru,
+pasagerul are viteza de $162\ \text{km/h}$.
+
+<FiguraManual
+  src="c08-tren-pasager.png"
+  lat={621}
+  inalt={216}
+  eticheta="Un tren merge cu 160 km pe oră față de sol, iar un pasager merge prin tren cu 2 km pe oră față de tren."
+  legenda="Viteza unui corp depinde de referențialul în care se studiază mișcarea."
+>
+  <Et x={238} y={34}  w={174} h={22} corp={12} culoare="#595757">față de sol</Et>
+  <Et x={238} y={152} w={192} h={19} corp={12} culoare="#4e4b4b">față de tren</Et>
+</FiguraManual>
+
+:::warning Atenție
+
+Vitezele se pot aduna **numai dacă sunt date în aceeași unitate**. Dacă una e în
+$\text{km/h}$ și cealaltă în $\text{m/s}$, transformi întâi.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Când spui cât este viteza unui corp, trebuie să spui și **în ce referențial**.
+  Fără referențial, un număr de kilometri pe oră nu înseamnă nimic.
+- „Uniformă" nu înseamnă „în linie dreaptă". O mișcare circulară poate fi
+  uniformă.
+- „Rectilinie" nu înseamnă „cu viteză constantă". Un corp care cade drept în jos
+  merge din ce în ce mai repede.
+- Pasagerul care merge **spre coada** trenului are, față de sol, viteza
+  $160 - 2 = 158\ \text{km/h}$: sensurile opuse se scad.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un tren merge pe o linie dreaptă cu viteza constantă de $160\ \text{km/h}$ față
+de sol. Un pasager merge prin vagon cu $2\ \text{km/h}$ față de tren, înspre
+locomotivă.
+
+**1.** Cum este mișcarea trenului în referențialul terestru — rectilinie?
+uniformă?
+
+**2.** Care este viteza pasagerului în referențialul trenului? Dar în cel
+terestru?
+
+**3.** Ce viteză ar avea pasagerul față de sol dacă ar merge spre coada
+trenului?
+
+**4.** Cum este mișcarea pasagerului în referențialul trenului?
+
+### Pasul 1 — Ce se dă
+
+- viteza trenului față de sol: $160\ \text{km/h}$, constantă;
+- viteza pasagerului față de tren: $2\ \text{km/h}$, spre locomotivă;
+- linia este dreaptă.
+
+### Pasul 2 — Ce se cere
+
+Natura mișcării trenului, cele două viteze ale pasagerului, cazul mersului
+invers și natura mișcării pasagerului.
+
+### Pasul 3 — Mișcarea trenului
+
+Traiectoria trenului este linia ferată, care este **dreaptă**: mișcarea este
+deci **rectilinie**. Viteza lui nu se schimbă în timp: mișcarea este deci și
+**uniformă**.
+
+Mișcarea trenului este rectilinie și uniformă în referențialul terestru, dacă
+linia ferată este dreaptă și dacă trenul nici nu accelerează, nici nu frânează.
+
+### Pasul 4 — Viteza pasagerului
+
+**În referențialul trenului**, viteza pasagerului este cea dată direct de enunț:
+
+$$
+V = 2\ \text{km/h}
+$$
+
+**În referențialul terestru**, pasagerul e dus și de tren, și de propriul lui
+mers, în același sens. Vitezele se adună:
+
+$$
+V' = 2 + 160 = 162\ \text{km/h}
+$$
+
+### Pasul 5 — Dacă merge invers
+
+Mergând spre coada trenului, pasagerul se mișcă **în sens opus** mersului
+trenului. Vitezele se scad:
+
+$$
+V'' = 160 - 2 = 158\ \text{km/h}
+$$
+
+Față de sol, el înaintează tot spre locomotivă — fiindcă trenul e mult mai
+rapid decât el —, doar puțin mai încet.
+
+### Pasul 6 — Natura mișcării pasagerului, și verificarea
+
+În referențialul trenului, pasagerul merge de-a lungul culoarului, în linie
+dreaptă și cu pas regulat: mișcare **rectilinie uniformă**.
+
+*Verificare*: cele trei viteze față de sol — $162$, $160$ și $158$ — se aranjează
+firesc în jurul vitezei trenului. Dacă îți iese o viteză a pasagerului mai mică
+decât $158$ sau mai mare decât $162$, ai greșit adunarea.
+
+Și încă o verificare: cele două viteze erau amândouă în $\text{km/h}$, deci se
+puteau aduna direct. Dacă una ar fi fost în $\text{m/s}$, ar fi trebuit
+transformată întâi.
+
+### Răspuns
+
+Trenul: rectilinie uniformă. Pasagerul: $2\ \text{km/h}$ față de tren,
+$162\ \text{km/h}$ față de sol; $158\ \text{km/h}$ dacă merge invers. Față de
+tren, mișcarea lui e tot rectilinie uniformă.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Compunerea vitezelor](./09-lp-compunerea-vitezelor.mdx).**
+
+:::

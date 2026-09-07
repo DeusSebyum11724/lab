@@ -1,0 +1,166 @@
+---
+sidebar_position: 14
+sidebar_label: "S5 — Aditivitatea tensiunilor"
+slug: /f8/electrocinetica/s5
+title: "S5 — Aditivitatea tensiunilor"
+description: "Suport de curs: regula literelor, extinderea la mai multe tensiuni și un exercițiu rezolvat pas cu pas."
+---
+
+# S5 — Aditivitatea tensiunilor
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C5 — Aditivitatea tensiunilor](./13-curs-aditivitatea-tensiunilor.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP5](./15-lp-aditivitatea-tensiunilor.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Relația | Formula |
+|---|---|
+| Aditivitatea | $U_{AB} + U_{BC} = U_{AC}$ |
+| Mai multe la rând | $U_{AD} = U_{AB} + U_{BC} + U_{CD}$ |
+| Întoarcerea săgeții | $U_{BA} = -\,U_{AB}$ |
+| Drumul închis | $U_{AA} = 0$ |
+
+:::tip Regula literelor
+
+$$
+U_{A\textcolor{#c0392b}{B}} + U_{\textcolor{#c0392b}{B}C} = U_{AC}
+$$
+
+**Litera din mijloc se repetă și dispare; rămân literele de la capete.**
+
+:::
+
+De aici se vede și de ce ordinea literelor contează:
+
+$$
+U_{AB} + U_{BA} = U_{AA} = 0
+\qquad\Longrightarrow\qquad
+U_{BA} = -\,U_{AB}
+$$
+
+---
+
+## 2. Cum se folosește
+
+| Ce ai | Ce faci |
+|---|---|
+| tensiunile pe bucăți, vrei totalul | le **aduni**, punând literele cap la cap |
+| totalul și o bucată, vrei cealaltă bucată | **scazi** |
+| o tensiune scrisă „invers" față de ce ai | îi **schimbi semnul** și întorci literele |
+
+**Trucul care nu dă greș:** scrii lanțul de litere de la punctul de plecare până
+la cel de sosire, oricâte puncte ai avea la mijloc. Toate literele din mijloc se
+simplifică două câte două.
+
+---
+
+## 3. De reținut
+
+- Relația e adevărată oricare ar fi componentele dintre puncte: rezistoare,
+  becuri, pile — nu contează.
+- Punctele $A$, $B$, $C$ trebuie luate **pe același drum**, unul după altul.
+- Un drum care se închide dă tensiune totală nulă. E chiar legea ochiurilor,
+  scrisă altfel.
+- Semnul minus nu e o greșeală: el spune doar de care parte ai desenat săgeata.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Pe o porțiune de circuit se află, în ordine, punctele $A$, $B$, $C$ și $D$. Se
+măsoară:
+
+$$
+U_{AB} = 2{,}0\ \text{V}, \qquad U_{BC} = 1{,}5\ \text{V}, \qquad U_{CD} = 2{,}5\ \text{V}
+$$
+
+**1.** Cât valorează $U_{AD}$?
+
+**2.** Cât valorează $U_{AC}$?
+
+**3.** Cât valorează $U_{DA}$?
+
+**4.** Un elev scrie $U_{AC} = U_{AB} + U_{CB}$. Unde greșește?
+
+### Pasul 1 — Ce se dă
+
+Trei tensiuni măsurate pe bucăți consecutive ale aceluiași drum, toate în volți.
+
+### Pasul 2 — Ce se cere
+
+Totalul $A \to D$, o bucată intermediară, tensiunea în sens invers și
+îndreptarea unei greșeli.
+
+### Pasul 3 — Ce formulă folosim
+
+Regula literelor, extinsă:
+
+$$
+U_{AD} = U_{AB} + U_{BC} + U_{CD}
+$$
+
+Aici literele extreme se păstrează ($A$ și $D$), iar literele din mijloc ($B$ și
+$C$) dispar.
+
+### Pasul 4 — Primele două întrebări
+
+$$
+U_{AD} = 2{,}0 + 1{,}5 + 2{,}5 = 6{,}0\ \text{V}
+$$
+
+$$
+U_{AC} = U_{AB} + U_{BC} = 2{,}0 + 1{,}5 = 3{,}5\ \text{V}
+$$
+
+### Pasul 5 — Sensul invers
+
+$$
+U_{DA} = -\,U_{AD} = -6{,}0\ \text{V}
+$$
+
+Valoarea e aceeași, semnul se întoarce — ca la voltmetrul legat invers.
+
+### Pasul 6 — Greșeala elevului, și verificarea
+
+Elevul a scris $U_{AB} + U_{CB}$. Punând literele cap la cap se vede imediat că
+lanțul nu se leagă: după $B$ trebuie să urmeze o tensiune care **începe** cu
+$B$, nu una care se termină cu $B$.
+
+Scrierea corectă este:
+
+$$
+U_{AC} = U_{AB} + U_{BC}
+$$
+
+Dacă vrea neapărat să folosească $U_{CB}$, atunci trebuie să-i schimbe semnul,
+fiindcă $U_{BC} = -\,U_{CB}$:
+
+$$
+U_{AC} = U_{AB} - U_{CB}
+$$
+
+*Verificare*: $U_{AC} + U_{CD}$ trebuie să dea $U_{AD}$:
+$3{,}5 + 2{,}5 = 6{,}0\ \text{V}$. Se potrivește.
+
+### Răspuns
+
+$U_{AD} = 6{,}0\ \text{V}$, $U_{AC} = 3{,}5\ \text{V}$,
+$U_{DA} = -6{,}0\ \text{V}$. Elevul a rupt lanțul literelor.
+
+---
+
+:::note Ora următoare
+
+**[LP5 — Aditivitatea tensiunilor](./15-lp-aditivitatea-tensiunilor.mdx).**
+
+:::

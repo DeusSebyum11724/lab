@@ -1,0 +1,209 @@
+---
+sidebar_position: 15
+sidebar_label: "LP5 — Aditivitatea tensiunilor"
+slug: /f8/electrocinetica/lp5
+title: "LP5 — Aditivitatea tensiunilor"
+description: "Lucrare practică: tabelul tensiunilor unui circuit serie, verificarea sumei și calcule cu regula literelor."
+---
+
+import { FigSerieTreiConsumatoare } from '@site/src/components/Schema/legea-ochiurilor';
+import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
+
+# LP5 — Aditivitatea tensiunilor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C5 — Aditivitatea tensiunilor](./13-curs-aditivitatea-tensiunilor.mdx)**, cu
+formulele din **[S5](./14-s-aditivitatea-tensiunilor.mdx)** la îndemână. Trei
+probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Tabelul tensiunilor | ★ | 15 min |
+| 3 | Aditivitatea tensiunilor | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+### Întrebarea 1
+
+Care dintre expresiile următoare este corectă?
+
+**a.** $U_{EG} = U_{FE} + U_{FG}$ &nbsp;&nbsp; **b.** $U_{EG} = U_{FE} + U_{GF}$
+
+**c.** $U_{EG} = U_{EF} + U_{FG}$ &nbsp;&nbsp; **d.** $U_{EG} = U_{GE} + U_{GF}$
+
+### Întrebarea 2
+
+Tensiunea este aceeași la bornele dipolilor montați
+
+**a.** în serie &nbsp;&nbsp; **b.** în derivație
+
+### Întrebarea 3
+
+Pe care voltmetru se citește o tensiune nulă?
+
+<FiguraManual
+  src="c02-tensiune-nula.png"
+  lat={755}
+  latime={528}
+  inalt={532}
+  eticheta="Patru voltmetre legate în derivație: pe un întrerupător deschis, pe unul închis, pe o pilă și pe un rezistor"
+  legenda="Pe care dintre cele patru voltmetre se citește o tensiune nulă?"
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **c**. Este singurul care corespunde unei aplicări corecte a
+legii de aditivitate a tensiunilor: literele de la capete sunt $E$ și $G$, iar
+litera din mijloc, $F$, se repetă ca la domino.
+
+**2.** Răspunsul **b**.
+
+**3.** Răspunsul **b**: tensiunea este nulă la bornele unui conductor perfect,
+iar un întrerupător închis este un conductor perfect.
+
+La **a** întrerupătorul este deschis, la **c** voltmetrul stă pe o pilă, iar la
+**d** pe un rezistor: în niciunul dintre cazurile astea tensiunea nu este nulă.
+
+</details>
+
+---
+
+## 2. Tabelul tensiunilor
+
+★ &nbsp;·&nbsp; **15 minute**
+
+Realizează circuitul serie de mai jos: o pilă, un bec și două rezistoare, legate
+unul după altul. Punctele $A$, $B$, $C$ și $D$ sunt marcate pe schemă.
+
+<FigSerieTreiConsumatoare />
+
+**1.** Măsoară pe rând, cu voltmetrul legat în derivație, tensiunile
+$U_1 = U_{AB}$, $U_2 = U_{BC}$ și $U_3 = U_{CD}$, apoi tensiunea $U$ de la
+bornele pilei. Trece rezultatele în tabel.
+
+| Tensiunea | $U_1$ | $U_2$ | $U_3$ | $U$ |
+|---|---|---|---|---|
+| Între punctele | A și B | B și C | C și D | bornele pilei |
+| Valoarea măsurată (V) | | | | |
+
+**2.** Scrie tensiunea $U_{AD}$ cu regula literelor, folosind $U_1$, $U_2$ și
+$U_3$.
+
+**3.** Ce legătură este între $U_{AD}$ și tensiunea $U$ de la bornele pilei?
+
+**4.** Verifică pe măsurătorile tale egalitatea găsită la punctul 3.
+
+**5.** Un coleg obține pentru $U_2$ un număr negativ. Ce a greșit?
+
+<details>
+<summary>Rezolvare</summary>
+
+**2.** Cu regula literelor, luând punctele în ordine:
+
+$$
+U_{AD} = U_{AB} + U_{BC} + U_{CD} = U_1 + U_2 + U_3
+$$
+
+**3.** Borna de sus a pilei este legată de punctul $A$ numai prin fir, iar borna
+de jos este legată de punctul $D$ tot numai prin fir. Pe fire tensiunea este
+nulă, deci cele două perechi de puncte se comportă ca un singur punct fiecare:
+
+$$
+U = U_{AD}
+$$
+
+**4.** Suma celor trei tensiuni măsurate trebuie să dea tensiunea de la bornele
+pilei:
+
+$$
+U = U_1 + U_2 + U_3
+$$
+
+Cele două numere nu vor ieși niciodată identice până la ultima zecimală: fiecare
+citire are precizia ei. Verificarea este bună dacă diferența e de ordinul
+ultimei cifre pe care o afișează aparatul.
+
+**5.** A legat voltmetrul cu bornele invers: cu borna V în $C$ și borna COM în
+$B$, aparatul măsoară $U_{CB}$, adică $-U_{BC}$. Ca să obțină $U_2$, trebuie
+fie să schimbe bornele între ele, fie să schimbe semnul numărului citit.
+
+</details>
+
+---
+
+## 3. Aditivitatea tensiunilor
+
+**Liceul Pierre d'Aragon, Muret** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Fie $A$, $B$, $C$, $D$ și $E$ punctele unui circuit electric ($A$, $B$, $C$, $D$
+și $E$ sunt consecutive). Se dau $U_{AE} = 24\ \text{V}$,
+$U_{AB} = 2{,}0\ \text{V}$ și $U_{DE} = -6{,}0\ \text{V}$.
+
+**1.** Calculează $U_{AD}$ și $U_{BD}$.
+
+**2.** Știind că, pentru circuitul acesta, avem relația $U_{DE} = U_{BC} + U_{DC}$,
+calculează $U_{BC}$ și $U_{CD}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** După legea de aditivitate a tensiunilor, avem:
+
+$$
+U_{AD} = U_{AE} + U_{ED} = U_{AE} - U_{DE} = 24 - (-6) = 30\ \text{V}
+$$
+
+La fel:
+
+$$
+U_{BD} = U_{BA} + U_{AD} = -\,U_{AB} + U_{AD} = -2 + 30 = 28\ \text{V}
+$$
+
+(am folosit tensiunea $U_{AD}$ pe care tocmai am determinat-o).
+
+**2.** Folosind relația nouă dată în enunț:
+
+$$
+U_{BC} = U_{BD} + U_{DC} = U_{BD} + U_{DE} - U_{BC}
+$$
+
+deci:
+
+$$
+2\,U_{BC} = U_{BD} + U_{DE}
+$$
+
+și prin urmare:
+
+$$
+U_{BC} = \frac{U_{BD} + U_{DE}}{2} = \frac{28 - 6}{2} = 11\ \text{V}
+$$
+
+De aici deducem valoarea lui $U_{DC}$:
+
+$$
+U_{DC} = U_{DE} - U_{BC} = -6 - 11 = -17\ \text{V}
+$$
+
+deci:
+
+$$
+U_{CD} = -\,U_{DC} = +17\ \text{V}
+$$
+
+</details>
+
+---

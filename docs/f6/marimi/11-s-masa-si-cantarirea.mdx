@@ -1,0 +1,174 @@
+---
+sidebar_position: 11
+sidebar_label: "S4 — Masa unui corp. Cântărirea simplă"
+slug: /f6/marimi/s4
+title: "S4 — Masa unui corp. Cântărirea simplă"
+description: "Suport de curs: unitățile de masă, etapele cântăririi simple, formula m = m₂ − m₁ și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S4 — Masa unui corp. Cântărirea simplă
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C4 — Masa unui corp. Cântărirea simplă](./10-curs-masa-si-cantarirea.mdx)**,
+strânse la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta
+deschisă când lucrezi la **[LP4](./12-lp-masa-si-cantarirea.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Masa unui solid | $m$ | suma maselor marcate folosite | kilogram, $\text{kg}$ |
+| Masa unui lichid | $m$ | $m = m_2 - m_1$ | kilogram, $\text{kg}$ |
+| Masa vasului gol | $m_1$ | se citește la prima cântărire | kilogram, $\text{kg}$ |
+| Masa vasului cu lichid | $m_2$ | se citește la a doua cântărire | kilogram, $\text{kg}$ |
+
+$$
+m = m_2 - m_1
+$$
+
+Masa unui corp este mărimea pe care o măsurăm cu o **balanță**.
+
+---
+
+## 2. Unități și conversii
+
+| tonă | chintal | | kilogram | hectogram | decagram |
+|---|---|---|---|---|---|
+| $\text{t}$ | $\text{q}$ | | $\text{kg}$ | $\text{hg}$ | $\text{dag}$ |
+
+| gram | decigram | centigram | miligram |
+|---|---|---|---|
+| $\text{g}$ | $\text{dg}$ | $\text{cg}$ | $\text{mg}$ |
+
+| Ce ai | Ce faci | Ce obții |
+|---|---|---|
+| $\text{kg}$ | $\times\ 1\,000$ | $\text{g}$ |
+| $\text{g}$ | $:\ 1\,000$ | $\text{kg}$ |
+| $\text{t}$ | $\times\ 1\,000$ | $\text{kg}$ |
+| $\text{g}$ | $\times\ 1\,000$ | $\text{mg}$ |
+
+**Greșeala care se face cel mai des:** se adună masele marcate fără să se
+verifice că sunt toate în aceeași unitate. $100\ \text{g}$ și
+$0{,}1\ \text{kg}$ sunt aceeași masă, dar nu se pot aduna ca numere:
+$100 + 0{,}1$ nu înseamnă nimic.
+
+---
+
+## 3. De reținut
+
+- Balanța se **echilibrează în gol** înainte de orice cântărire.
+- Masele marcate se pun **în ordine descrescătoare**: începi cu cea mai mare
+  care încă nu dezechilibrează balanța.
+- Masa solidului este **suma** maselor marcate rămase pe taler.
+- Un lichid nu se poate pune direct pe taler. Balanța cântărește întotdeauna
+  **vasul împreună cu lichidul**, de aceea se cântărește și vasul gol.
+- O cutie de mase marcate de un kilogram conține: $500\ \text{g}$,
+  $200\ \text{g}$, $100\ \text{g}$, $100\ \text{g}$, $50\ \text{g}$,
+  $20\ \text{g}$, $10\ \text{g}$, $10\ \text{g}$, $5\ \text{g}$, $2\ \text{g}$,
+  $2\ \text{g}$ și $1\ \text{g}$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+La o oră de fizică, profesorul cântărește un volum de ulei așa cum arată
+schema de mai jos. Ți se cere apoi să folosești măsurătorile obținute.
+
+<FiguraManual
+  src="v6-cantarire-ulei.png"
+  lat={566}
+  inalt={230}
+  latime={460}
+  eticheta="Două cântăriri pe cântar: cilindrul gradat gol arată 56,2 grame, iar cilindrul cu ulei arată 92,4 grame"
+  legenda="Cele două etape ale cântăririi uleiului."
+>
+  <Et x={68}  y={190} w={110} h={38} corp={26} alinia="centru">Etapa 1</Et>
+  <Et x={361} y={190} w={110} h={38} corp={26} alinia="centru">Etapa 2</Et>
+</FiguraManual>
+
+**1.** Cum se numește această cântărire?
+
+**2.** Spune ce masă s-a obținut la fiecare dintre cele două etape.
+
+**3.** Află masa $m$ a uleiului.
+
+### Pasul 1 — Ce se dă
+
+- la etapa 1, cântarul arată $56{,}2\ \text{g}$;
+- la etapa 2, cântarul arată $92{,}4\ \text{g}$.
+
+### Pasul 2 — Ce se cere
+
+Numele cântăririi, înțelesul fiecărei citiri și masa uleiului.
+
+### Pasul 3 — Ce formulă folosim
+
+Uleiul este un lichid, deci nu se poate pune direct pe cântar: el se află
+într-un cilindru gradat. Masa lichidului se află scăzând masa vasului gol din
+masa vasului plin:
+
+$$
+m = m_2 - m_1
+$$
+
+Este o **cântărire simplă a unui lichid**.
+
+### Pasul 4 — Ce înseamnă cele două citiri
+
+- **Etapa 1** — pe cântar este doar cilindrul gradat **gol**. Citirea este masa
+  vasului gol:
+
+$$
+m_1 = 56{,}2\ \text{g}
+$$
+
+- **Etapa 2** — în cilindru s-a turnat uleiul. Citirea este masa vasului
+  **împreună cu uleiul**:
+
+$$
+m_2 = 92{,}4\ \text{g}
+$$
+
+### Pasul 5 — Calculul
+
+Amândouă citirile sunt în grame, deci nu transformăm nimic:
+
+$$
+m = m_2 - m_1 = 92{,}4 - 56{,}2 = 36{,}2\ \text{g}
+$$
+
+### Pasul 6 — Verificarea
+
+*Prima verificare*: masa uleiului trebuie să fie **mai mică** decât cea de-a
+doua citire, fiindcă aceasta cuprinde și vasul. $36{,}2$ este mai mic decât
+$92{,}4$. Se potrivește.
+
+*A doua verificare*: adunăm înapoi. $56{,}2 + 36{,}2 = 92{,}4$ — exact citirea
+de la etapa a doua.
+
+*Capcana*: dacă ai fi luat drept masă a uleiului direct citirea de la etapa 2,
+ai fi cântărit și sticla o dată cu uleiul.
+
+### Răspuns
+
+Este o cântărire simplă a unui lichid. $m_1 = 56{,}2\ \text{g}$ este masa
+vasului gol, $m_2 = 92{,}4\ \text{g}$ este masa vasului cu ulei, iar masa
+uleiului este $m = 36{,}2\ \text{g}$.
+
+---
+
+:::note Ora următoare
+
+**[LP4 — Masa unui corp. Cântărirea simplă](./12-lp-masa-si-cantarirea.mdx).**
+
+:::

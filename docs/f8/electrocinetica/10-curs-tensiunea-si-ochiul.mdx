@@ -1,0 +1,158 @@
+---
+sidebar_position: 10
+sidebar_label: "C4 — Tensiunea electrică și ochiul de circuit"
+slug: /f8/electrocinetica/c4
+title: "C4 — Tensiunea electrică și ochiul de circuit"
+description: "Tensiunea electrică și voltul, ochiul unui circuit ca drum închis și măsurarea tensiunii cu voltmetrul."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C4 — Tensiunea electrică și ochiul de circuit
+
+:::info Planul orei
+
+1. Tensiunea electrică
+2. Ochiul unui circuit
+3. Măsurarea tensiunii
+
+:::
+
+---
+
+## 1. Tensiunea electrică
+
+Între două puncte $A$ și $B$ ale unui circuit electric există o **tensiune
+electrică**, pe care o notăm $U_{AB}$.
+
+:::tip De reținut
+
+În Sistemul Internațional, unitatea de tensiune este **voltul**, cu simbolul
+**V**.
+
+:::
+
+Pe o schemă, tensiunea se arată printr-o **săgeată**. Săgeata tensiunii
+$U_{AB}$ are vârful în punctul $A$, adică în punctul dat de **prima literă**,
+și coada în punctul $B$.
+
+Ordinea literelor contează: dacă întoarcem săgeata, obținem tensiunea $U_{BA}$,
+care este **opusul** lui $U_{AB}$.
+
+---
+
+## 2. Ochiul unui circuit
+
+:::danger Definiția 1
+
+Numim **ochi** al unui circuit electric un **drum închis** al circuitului.
+
+:::
+
+A parcurge un ochi înseamnă a descrie o dată drumul acesta, astfel încât să ne
+întoarcem în punctul de plecare.
+
+**Exemplu:** să considerăm circuitul următor.
+
+<FiguraManual
+  src="c02-ochiuri-circuit.png"
+  lat={267}
+  latime={187}
+  inalt={282}
+  eticheta="Circuit cu trei ramuri între aceleași două noduri: una cu pilă și un rezistor, una cu un rezistor și un bec, una cu trei rezistoare"
+  legenda="Circuitul are trei ramuri între cele două noduri, deci trei ochiuri."
+/>
+
+Circuitul acesta are **trei ochiuri**, desenate mai jos cu roșu.
+
+<FiguraManual
+  src="c02-ochi-1.png"
+  lat={267}
+  latime={187}
+  inalt={282}
+  eticheta="Același circuit, cu ochiul 1 trasat cu roșu"
+  legenda="Ochiul 1: ramura de sus și ramura din mijloc."
+/>
+
+<FiguraManual
+  src="c02-ochi-2.png"
+  lat={267}
+  latime={187}
+  inalt={282}
+  eticheta="Același circuit, cu ochiul 2 trasat cu roșu"
+  legenda="Ochiul 2: ramura din mijloc și ramura de jos."
+/>
+
+<FiguraManual
+  src="c02-ochi-3.png"
+  lat={267}
+  latime={187}
+  inalt={282}
+  eticheta="Același circuit, cu ochiul 3 trasat cu roșu"
+  legenda="Ochiul 3: ramura de sus și ramura de jos."
+/>
+
+Cele trei ochiuri se obțin luând ramurile dintre nodurile $A$ și $B$ două câte
+două: ramura de sus cu cea din mijloc, ramura din mijloc cu cea de jos, ramura
+de sus cu cea de jos.
+
+---
+
+## 3. Măsurarea tensiunii
+
+Tensiunile se măsoară cu **voltmetrul** (sau cu un multimetru folosit ca
+voltmetru).
+
+:::warning Atenție
+
+Voltmetrul trebuie legat întotdeauna **în derivație** între cele două puncte
+ale circuitului între care vrem să măsurăm tensiunea.
+
+:::
+
+Ca să măsurăm cu un multimetru numeric o tensiune $U_{AB}$, legăm borna **V**
+în punctul $A$ al circuitului și borna **COM** în punctul $B$, așa cum este
+reprezentat mai jos.
+
+<FiguraManual
+  src="c02-voltmetru-derivatie.png"
+  lat={358}
+  latime={251}
+  inalt={241}
+  eticheta="Rezistor între punctele A și B, cu un voltmetru legat în derivație pe el"
+  legenda="Ca să măsurăm U_AB, legăm borna V în punctul A și borna COM în punctul B."
+/>
+
+Cu alte cuvinte: borna **V** merge în vârful săgeții, iar borna **COM** în
+coada ei.
+
+Dacă legăm bornele invers, aparatul măsoară $U_{BA}$:
+
+<FiguraManual
+  src="c02-voltmetru-derivatie.png"
+  lat={358}
+  latime={251}
+  inalt={241}
+  eticheta="Același montaj, cu bornele voltmetrului schimbate între ele"
+  legenda="Cu bornele schimbate, voltmetrul măsoară U_BA: același număr, dar cu semn schimbat."
+>
+  <Et x={84}  y={212} w={51} h={16} corp={15} alinia="dreapta">COM</Et>
+  <Et x={221} y={212} w={51} h={16} corp={16}>V</Et>
+</FiguraManual>
+
+Numărul citit este atunci opusul celui căutat, iar ca să obținem $U_{AB}$
+trebuie să-i schimbăm semnul.
+
+---
+
+:::note Ora următoare
+
+**LP4 — Tensiunea electrică și ochiul de circuit** Recunoașterea montajelor
+corecte ale voltmetrului, numărarea ochiurilor pe o schemă și măsurarea unei
+tensiuni.
+
+Înainte de ea, treci prin
+**[S4 — Tensiunea electrică și ochiul de circuit](./11-s-tensiunea-si-ochiul.mdx)**:
+mărimile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

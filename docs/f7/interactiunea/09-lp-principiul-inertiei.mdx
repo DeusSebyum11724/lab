@@ -1,0 +1,287 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Principiul inerției"
+slug: /f7/interactiunea/lp3
+title: "LP3 — Principiul inerției"
+description: "Lucrare practică: schiorul care coboară, cele trei faze ale mișcării unui automobil, paletul de hochei cu și fără frecare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Principiul inerției
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Principiul inerției](./07-curs-principiul-inertiei.mdx)**, cu noțiunile
+din **[S3](./08-s-principiul-inertiei.mdx)** la îndemână. Cinci probe, cu
+timpul de lucru al fiecăreia; în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Schiorul în coborâre | ★ | 10 min |
+| 3 | Mișcarea unui automobil | ★ | 10 min |
+| 4 | Se compensează sau nu? | ★ | 15 min |
+| 5 | Alunecare fără frecare | ★★ | 10 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+### Întrebarea 1
+
+Aristotel spunea: „Fără forță, fără mișcare”. Avea dreptate?
+
+**a.** da &nbsp;&nbsp; **b.** nu
+
+### Întrebarea 2
+
+Un corp supus unei singure forțe, cu valoare diferită de zero, are o traiectorie
+rectilinie. Poate fi mișcarea lui uniformă?
+
+**a.** da &nbsp;&nbsp; **b.** nu
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**. Aristotel se înșela: „fără forță” înseamnă „fără
+mișcare" **sau** „mișcare rectilinie uniformă”.
+
+**2.** Răspunsul **b**. Forța fiind singura aplicată și valoarea ei nefiind
+nulă, ea schimbă negreșit valoarea vitezei.
+
+</details>
+
+---
+
+## 2. Schiorul în coborâre
+
+**Liceul Montaigne, Bordeaux** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Un schior coboară o pârtie înzăpezită, cu pantă constantă, cu viteză constantă.
+
+<FiguraManual
+  src="c09-schior.png"
+  lat={375}
+  inalt={225}
+  eticheta="Un schior coboară o pârtie înclinată, cu viteză constantă"
+  legenda="Schiorul coboară cu viteză constantă o pârtie înzăpezită, cu pantă constantă."
+>
+  <Et x={90} y={106} w={47} h={20} corp={12} culoare="#4b4848">pârtia</Et>
+</FiguraManual>
+
+**1.** Fă inventarul forțelor care se exercită asupra schiorului.
+
+**2.** Ce legătură există între aceste forțe? Justifică.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Schiorul este supus la două forțe: **greutatea** lui $P$, verticală și
+îndreptată în jos, și **reacțiunea $R$ a pârtiei** asupra schiurilor. Această
+reacțiune poate fi privită ca fiind alcătuită dintr-o parte perpendiculară pe
+pârtie ($N$) și o forță de frecare, datorată vântului și schiurilor, notată
+$F$, paralelă cu pârtia.
+
+**2.** Pârtia are pantă constantă, deci este dreaptă, iar schiorul o coboară cu
+viteză constantă: schiorul are așadar o mișcare rectilinie uniformă și i se
+poate aplica principiul inerției. Greutatea $P$ și reacțiunea $R$ **se
+compensează**. Reacțiunea pârtiei este deci opusă greutății, așa cum e
+reprezentată în figura de mai jos.
+
+<FiguraManual
+  src="c09-schior-forte.png"
+  lat={410}
+  inalt={260}
+  eticheta="Un schior coboară o pârtie înclinată, cu greutatea și reacțiunea pârtiei desenate"
+  legenda="Schiorul coboară cu viteză constantă pe o pârtie dreaptă: greutatea P și reacțiunea R a pârtiei se compensează. Reacțiunea are o parte perpendiculară pe pârtie (N) și una de frecare, paralelă cu pârtia (F)."
+/>
+
+Se constată că reacțiunea pârtiei nu este perpendiculară pe ea, deci alunecarea
+schiurilor se face cu frecări: $F$ nu este nulă. Lucrul acesta e cât se poate de
+firesc: dacă n-ar fi frecări, mișcarea schiorului ar fi o mișcare accelerată, nu
+una uniformă.
+
+</details>
+
+---
+
+## 3. Mișcarea unui automobil
+
+**Liceul Janson de Sailly, Paris** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+
+Mișcarea unui automobil pe o șosea dreaptă și orizontală are următoarele trei
+faze:
+
+- accelerare uniformă de la 0 la 80 km/h, în $t_1 = 9$ s;
+- viteză constantă $v = 80$ km/h timp de $t_2 = 12$ s;
+- încetinire uniformă până la oprirea vehiculului, în $t_3 = 5$ s.
+
+**1.** În ce fază a drumului se compensează forțele care se exercită asupra
+mașinii?
+
+**2.** Reprezintă graficul vitezei în funcție de timp.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Prin aplicarea principiului inerției, forțele care se exercită asupra
+mașinii se compensează atunci când ea are o mișcare rectilinie uniformă față de
+Pământ, adică în timpul **fazei a doua** a drumului.
+
+**2.** Viteza în funcție de timp arată ca în figura de mai jos.
+
+<FiguraManual
+  src="c09-grafic-viteza-masina.png"
+  lat={510}
+  inalt={270}
+  eticheta="Graficul vitezei automobilului în funcție de timp"
+  legenda="Viteza automobilului în funcție de timp: crește 9 s, rămâne constantă 12 s, apoi scade până la oprire, în 5 s."
+>
+  <Et x={28}  y={13}  w={60} h={12} corp={10} culoare="#636461" fond="#edf6eb">viteza</Et>
+  <Et x={19}  y={31}  w={82} h={20} corp={11} culoare="#464543" fond="#edf6eb">(km/h)</Et>
+  <Et x={383} y={218} w={82} h={19} corp={12} culoare="#4a4947" fond="#edf6eb">timpul (s)</Et>
+</FiguraManual>
+
+</details>
+
+---
+
+## 4. Se compensează sau nu?
+
+**Liceul Florent Schmitt, Saint-Cloud** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **15 minute**
+
+**1.** Enunță principiul inerției.
+
+**2.** Spune dacă fiecare dintre sistemele de mai jos este supus unui ansamblu
+de forțe care se compensează, justificând.
+
+**(a)** Un avion în zbor de croazieră, cu viteză și altitudine constante, cu
+vânt din față.
+
+**(b)** Un avion în zbor de croazieră, cu viteză și altitudine constante, cu
+vânt din spate.
+
+**(c)** Pasagerul unei mașini care accelerează.
+
+**(d)** Un vizitator în vagonetul unui roller-coaster.
+
+**(e)** O valiză în portbagajul unei mașini care rulează cu 120 km/h pe o
+autostradă dreaptă.
+
+**(f)** Aceeași valiză, atunci când mașina intră într-o curbă cu 80 km/h
+(viteză constantă).
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Principiul inerției: față de Pământ, orice corp rămâne în repaus sau își
+păstrează mișcarea rectilinie uniformă dacă forțele care se exercită asupra lui
+se compensează.
+
+**2. (a)** Avionul are o mișcare rectilinie uniformă, deci forțele care se
+exercită asupra lui (greutatea, rezistența aerului și forța de împingere a
+reactoarelor) **se compensează**.
+
+**(b)** Același lucru ca la întrebarea precedentă. Faptul că primește vânt din
+față sau din spate nu schimbă cu nimic concluzia: forțele se compensează.
+
+**(c)** Ne așezăm față de Pământ. Putem aplica aici principiul inerției.
+Fiindcă față de Pământ pasagerul nu este nici în repaus, nici în mișcare
+rectilinie uniformă, forțele care se exercită asupra lui (greutatea și
+reacțiunea mașinii) **nu se compensează**.
+
+**(d)** Ne așezăm din nou față de Pământ. Față de el, traiectoria vizitatorului
+nu este rectilinie. Atât e de ajuns ca să fim siguri că forțele care se
+exercită asupra lui **nu se compensează**. Ca și la întrebarea precedentă, e
+exclus să ne așezăm în vagonet.
+
+**(e)** Față de Pământ, mașina (și valiza) au o mișcare rectilinie uniformă,
+deci, prin aplicarea principiului inerției, valiza este supusă unui ansamblu de
+forțe care **se compensează**.
+
+**(f)** Față de același Pământ, valiza nu mai are o mișcare rectilinie (faptul
+că merge cu viteză constantă nu e de ajuns). Deci forțele la care este supusă
+**nu se compensează**.
+
+:::warning Atenție
+
+E greșit să vrem să aplicăm principiul inerției față de mașină. Am trage astfel
+concluzia greșită că forțele care se exercită asupra pasagerului se
+compensează. Trebuie avut grijă față de ce anume se studiază mișcarea, atunci
+când aplicăm principiul inerției.
+
+:::
+
+</details>
+
+---
+
+## 5. Alunecare fără frecare
+
+**Liceul Saint-Martin, Pontoise** &nbsp;·&nbsp; ★★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră un palet de hochei pe gheață, nemișcat, pe un sol de gheață
+orizontal. Masa lui este $m = 100$ g.
+
+**1.** Fă bilanțul forțelor care se exercită asupra acestui palet. Ce se obține
+dacă le compunem? Se va face o schemă îngrijită.
+
+**2.** Se lovește paletul cu crosa, tangențial la gheață. Dacă neglijăm
+frecările paletului pe gheață, ce fel de mișcare are paletul după lovitură?
+
+**3.** Ce se întâmplă dacă frecările paletului pe gheață nu sunt neglijabile? Se
+va face o schemă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Paletul este supus greutății lui $P$, verticală și îndreptată în jos, și
+reacțiunii $R$ a gheții, verticală și îndreptată în sus. Fiind nemișcat (adică
+în repaus față de Pământ), aceste două forțe **se compensează**: compunerea lor
+dă zero.
+
+<FiguraManual
+  src="c09-palet.png"
+  lat={610}
+  inalt={270}
+  eticheta="Un palet de hochei nemișcat pe gheață, cu greutatea și reacțiunea gheții"
+  legenda="Paletul stă nemișcat pe gheață: greutatea P și reacțiunea R a gheții se compensează."
+>
+  <Et x={454} y={83}  w={48} h={21} corp={14} culoare="#474644" fond="#edf6eb">paletul</Et>
+  <Et x={17}  y={102} w={52} h={21} corp={11} culoare="#343231" fond="#edf6eb">gheața</Et>
+</FiguraManual>
+
+**2.** Dacă lovim paletul tangențial la gheață, îi dăm o viteză orizontală. Dacă
+neglijăm frecările cu gheața, reacțiunea acesteia asupra paletului este aceeași
+ca în repaus și compensează deci exact greutatea lui: paletul este supus unui
+ansamblu de forțe care se compensează și, prin aplicarea principiului inerției
+față de Pământ, el are o **mișcare rectilinie uniformă**.
+
+**3.** Dacă frecările paletului pe gheață nu mai sunt neglijabile, apare o parte
+orizontală a reacțiunii gheții, care se opune mișcării. Greutatea (care rămâne
+strict verticală) și reacțiunea gheții nu se mai compensează, iar forța care
+rezultă din compunerea lor tinde să încetinească mișcarea paletului, care
+sfârșește prin a se opri.
+
+<FiguraManual
+  src="c09-palet-frecare.png"
+  lat={620}
+  inalt={280}
+  eticheta="Paletul alunecă pe gheață, iar reacțiunea gheții este înclinată"
+  legenda="Când frecările nu mai sunt neglijabile, reacțiunea gheții se înclină: are și o parte orizontală, care se opune mișcării. Greutatea și reacțiunea nu se mai compensează, iar paletul încetinește."
+>
+  <Et x={341} y={28} w={49} h={21} corp={14} culoare="#474644" fond="#edf6eb">paletul</Et>
+</FiguraManual>
+
+</details>
+
+---

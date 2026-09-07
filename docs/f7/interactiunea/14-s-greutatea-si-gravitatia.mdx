@@ -1,0 +1,172 @@
+---
+sidebar_position: 14
+sidebar_label: "S5 — Greutatea unui corp"
+slug: /f7/interactiunea/s5
+title: "S5 — Greutatea unui corp"
+description: "Suport de curs: legătura dintre greutate și gravitație, formula lui g și un exercițiu rezolvat pas cu pas."
+---
+
+# S5 — Greutatea unui corp
+
+:::info Suportul lecției
+
+Toate formulele din
+**[C5 — Greutatea unui corp](./13-curs-greutatea-si-gravitatia.mdx)**, strânse
+la un loc, și un exercițiu rezolvat cap-coadă cu ele. Ține foaia asta deschisă
+când lucrezi la **[LP5](./15-lp-greutatea-pe-alti-astri.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Greutatea | $P$ | $P = m \cdot g$ | newton, $\text{N}$ |
+| Intensitatea gravitațională | $g$ | $g = \dfrac{G \times M}{R^{2}}$ | $\text{N/kg}$ |
+| Masa astrului | $M$ | $M = \dfrac{g \, R^{2}}{G}$ | kilogram, $\text{kg}$ |
+| Raza astrului | $R$ | $R = \sqrt{\dfrac{G \, M}{g}}$ | metru, $\text{m}$ |
+
+Cele două formule se leagă una de alta:
+
+$$
+P = m \cdot g
+\qquad\text{cu}\qquad
+g = \frac{G \times M}{R^{2}}
+$$
+
+- $M$ — masa **astrului** (Pământ, Lună, Marte…);
+- $R$ — raza astrului;
+- $m$ — masa **corpului** aflat la suprafață.
+
+:::tip De reținut
+
+$g$ **nu depinde de corp**, ci numai de astrul pe care te afli. De asta toate
+corpurile de pe Pământ au aceeași valoare a lui $g$, oricare le-ar fi masa.
+
+:::
+
+---
+
+## 2. Unități și numere
+
+| Mărimea | Valoarea |
+|---|---|
+| $G$ | $6{,}67 \times 10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$ |
+| $g$ pe Pământ | $\approx 9{,}8\ \text{N/kg}$ |
+
+Razele astrilor se dau aproape întotdeauna în **kilometri**: le treci în metri
+înmulțind cu $1\,000$, **înainte** de a le ridica la pătrat.
+
+$$
+6\,400\ \text{km} = 6{,}4 \times 10^{6}\ \text{m}
+\qquad\Longrightarrow\qquad
+R^2 = 41 \times 10^{12}\ \text{m}^2
+$$
+
+---
+
+## 3. De reținut
+
+- Greutatea unui corp **este** interacțiunea gravitațională dintre el și astrul
+  pe care se află.
+- Formula gravitației e scrisă pentru mase punctiforme, dar se poate folosi și
+  pentru aștri: între doi aștri cu **simetrie sferică**, interacțiunea are exact
+  aceeași valoare ca și cum toată masa lor ar fi strânsă în centre.
+- **Masa nu se schimbă** când pleci pe altă planetă; **greutatea se schimbă**,
+  fiindcă $g$ e altul.
+- Un astru mai mic dar mai dens poate avea un $g$ mai mare decât unul mare și
+  rarefiat: contează raportul $M/R^2$, nu mărimea singură.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Se dau, pentru Pământ, masa $M = 6{,}0 \times 10^{24}\ \text{kg}$ și raza
+$R = 6\,400\ \text{km}$.
+
+**1.** Calculează intensitatea gravitațională $g$ la suprafața Pământului.
+
+**2.** Care este greutatea unui elev de $55\ \text{kg}$?
+
+**3.** Pe Lună, $g_L = 1{,}6\ \text{N/kg}$. Cât ar fi masa și greutatea aceluiași
+elev acolo?
+
+*Dat:* $G = 6{,}67 \times 10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$.
+
+### Pasul 1 — Ce se dă
+
+- masa și raza Pământului;
+- masa elevului: $m = 55\ \text{kg}$;
+- $g$ pe Lună.
+
+### Pasul 2 — Ce se cere
+
+$g$ pe Pământ, greutatea aici și masa plus greutatea pe Lună.
+
+### Pasul 3 — Ce formule folosim
+
+$$
+g = \frac{G \times M}{R^{2}}
+\qquad\text{apoi}\qquad
+P = m \cdot g
+$$
+
+### Pasul 4 — Trecem în unități SI
+
+Raza e dată în kilometri; formula cere metri:
+
+$$
+R = 6\,400\ \text{km} = 6{,}4 \times 10^{6}\ \text{m}
+$$
+
+$$
+R^2 = (6{,}4 \times 10^{6})^2 = 41 \times 10^{12}\ \text{m}^2
+$$
+
+### Pasul 5 — Calculul lui g și al greutății
+
+$$
+g = \frac{6{,}67 \times 10^{-11} \times 6{,}0 \times 10^{24}}{41 \times 10^{12}} \approx 9{,}8\ \text{N/kg}
+$$
+
+Regăsim valoarea cunoscută. Greutatea elevului:
+
+$$
+P = m \cdot g = 55 \times 9{,}8 = 539\ \text{N} \approx 5{,}4 \times 10^{2}\ \text{N}
+$$
+
+### Pasul 6 — Pe Lună, și verificarea
+
+**Masa nu se schimbă**: elevul are tot $55\ \text{kg}$. Masa e o însușire a
+corpului, nu a locului.
+
+**Greutatea se schimbă**, fiindcă $g$ e altul:
+
+$$
+P_L = m \cdot g_L = 55 \times 1{,}6 = 88\ \text{N}
+$$
+
+*Verificare*: raportul greutăților trebuie să fie egal cu raportul valorilor lui
+$g$: $539 : 88 \approx 6$ și $9{,}8 : 1{,}6 \approx 6$. Se potrivește — pe Lună
+„cântărești" de vreo șase ori mai puțin.
+
+*A doua verificare*: dacă $g$ nu-ți ieșea în jur de $9{,}8$, aproape sigur ai
+uitat să treci raza în metri. Cu kilometri, rezultatul iese de un milion de ori
+mai mare.
+
+### Răspuns
+
+$g \approx 9{,}8\ \text{N/kg}$, $P \approx 5{,}4 \times 10^{2}\ \text{N}$. Pe
+Lună: masa tot $55\ \text{kg}$, greutatea $88\ \text{N}$.
+
+---
+
+:::note Ora următoare
+
+**[LP5 — Greutatea unui corp](./15-lp-greutatea-pe-alti-astri.mdx).**
+
+:::

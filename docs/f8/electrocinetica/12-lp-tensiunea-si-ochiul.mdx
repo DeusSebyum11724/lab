@@ -1,0 +1,183 @@
+---
+sidebar_position: 12
+sidebar_label: "LP4 — Tensiunea electrică și ochiul de circuit"
+slug: /f8/electrocinetica/lp4
+title: "LP4 — Tensiunea electrică și ochiul de circuit"
+description: "Lucrare practică: montajul corect al voltmetrului, identificarea ochiurilor și măsurarea unei tensiuni."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP4 — Tensiunea electrică și ochiul de circuit
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C4 — Tensiunea electrică și ochiul de circuit](./10-curs-tensiunea-si-ochiul.mdx)**,
+cu mărimile din **[S4](./11-s-tensiunea-si-ochiul.mdx)** la îndemână. Trei
+probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Verifică-ți cunoștințele | — | 5 min |
+| 2 | Ochiurile unui circuit | ★ | 10 min |
+| 3 | Măsurarea unei tensiuni | ★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Verifică-ți cunoștințele
+
+**Timp de lucru: 5 minute.**
+
+### Întrebarea 1
+
+Care este unitatea de tensiune în Sistemul Internațional?
+
+**a.** amperul &nbsp;&nbsp; **b.** voltul &nbsp;&nbsp; **c.** ohmul
+
+### Întrebarea 2
+
+Care dintre montajele următoare permite măsurarea tensiunii $U_{AB}$?
+
+<FiguraManual
+  src="c02-voltmetru-variante.png"
+  lat={755}
+  latime={528}
+  inalt={437}
+  eticheta="Patru montaje ale unui voltmetru pe un rezistor între A și B: două în serie, două în derivație"
+  legenda="Care dintre cele patru montaje permite măsurarea tensiunii U_AB?"
+/>
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul **b**: este voltul, cu simbolul V.
+
+**2.** Răspunsul **d**: voltmetrul trebuie legat în derivație, cu borna V de
+partea primei litere, adică în punctul $A$.
+
+Răspunsul **c** este și el acceptabil, cu condiția să precizăm că trebuie luat
+opusul rezultatului măsurării ca să obținem $U_{AB}$, fiindcă acolo se măsoară
+de fapt $U_{BA}$.
+
+Montajele **a** și **b** nu sunt bune: acolo voltmetrul este legat în serie, nu
+în derivație.
+
+</details>
+
+---
+
+## 2. Ochiurile unui circuit
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Se consideră circuitul următor.
+
+<FiguraManual
+  src="c02-ochiuri-circuit.png"
+  lat={267}
+  latime={187}
+  inalt={282}
+  eticheta="Circuit cu trei ramuri între aceleași două noduri: una cu pilă și un rezistor, una cu un rezistor și un bec, una cu trei rezistoare"
+  legenda="Circuitul are trei ramuri între cele două noduri, deci trei ochiuri."
+/>
+
+**1.** Care dintre punctele marcate sunt noduri? Câte ramuri are circuitul?
+
+**2.** Câte ochiuri are circuitul?
+
+**3.** Descrie fiecare ochi prin componentele pe care le întâlnești parcurgându-l.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Nodurile sunt $A$ și $B$: din fiecare pleacă trei conductoare. Între ele
+sunt **trei ramuri**: ramura de sus, cea cu pila; ramura din mijloc, cea cu un
+rezistor și un bec; ramura de jos, cea cu trei rezistoare.
+
+**2.** Circuitul are **trei ochiuri**. Un ochi este un drum închis, iar un drum
+închis se obține luând două dintre cele trei ramuri: ramurile se pot lua două
+câte două în trei feluri.
+
+**3.** Ochiurile sunt:
+
+- **Ochiul 1**, prin ramura de sus și cea din mijloc: pila, rezistorul din
+  dreapta, becul și rezistorul din mijloc.
+- **Ochiul 2**, prin ramura din mijloc și cea de jos: rezistorul din mijloc,
+  becul, rezistorul din stânga și cele două rezistoare de jos.
+- **Ochiul 3**, prin ramura de sus și cea de jos: pila, rezistorul din dreapta,
+  cele două rezistoare de jos și rezistorul din stânga.
+
+</details>
+
+---
+
+## 3. Măsurarea unei tensiuni
+
+★ &nbsp;·&nbsp; **15 minute**
+
+Ai la dispoziție o pilă, un rezistor, fire de legătură și un multimetru numeric
+folosit ca voltmetru. Rezistorul este legat între două puncte $A$ și $B$ ale
+circuitului.
+
+**1.** Desenează schema montajului cu care măsori tensiunea $U_{AB}$. Marchează
+pe schemă săgeata tensiunii și numele celor două borne ale voltmetrului.
+
+**2.** Realizează montajul și notează numărul citit.
+
+**3.** Schimbă acum între ele cele două borne ale voltmetrului și citește din
+nou. Ce tensiune ai măsurat de data asta?
+
+**4.** Scrie relația dintre cele două numere citite.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Voltmetrul se leagă **în derivație** pe rezistor, borna **V** în punctul
+$A$ și borna **COM** în punctul $B$:
+
+<FiguraManual
+  src="c02-voltmetru-derivatie.png"
+  lat={358}
+  latime={251}
+  inalt={241}
+  eticheta="Rezistor între punctele A și B, cu un voltmetru legat în derivație pe el"
+  legenda="Borna V în punctul A, borna COM în punctul B: voltmetrul măsoară U_AB."
+/>
+
+Săgeata tensiunii $U_{AB}$ are vârful în $A$, adică de partea bornei V.
+
+**2.** Numărul citit este chiar valoarea lui $U_{AB}$.
+
+**3.** Cu bornele schimbate între ele, borna V ajunge în $B$ și borna COM în
+$A$: aparatul măsoară acum $U_{BA}$.
+
+<FiguraManual
+  src="c02-voltmetru-derivatie.png"
+  lat={358}
+  latime={251}
+  inalt={241}
+  eticheta="Același montaj, cu bornele voltmetrului schimbate între ele"
+  legenda="Cu bornele schimbate, voltmetrul măsoară U_BA."
+>
+  <Et x={84}  y={212} w={51} h={16} corp={15} alinia="dreapta">COM</Et>
+  <Et x={221} y={212} w={51} h={16} corp={16}>V</Et>
+</FiguraManual>
+
+**4.** Cele două citiri au aceeași valoare, dar semne diferite:
+
+$$
+U_{BA} = -\,U_{AB}
+$$
+
+Dacă la prima măsurare voltmetrul a arătat, de pildă, un număr pozitiv, la a
+doua va arăta același număr cu semnul minus în față.
+
+</details>
+
+---
