@@ -1,0 +1,201 @@
+---
+sidebar_position: 13
+sidebar_label: "C5 — Viteza luminii"
+slug: /f6/optice/c5
+title: "C5 — Viteza luminii"
+description: "Cum a fost măsurată viteza luminii de-a lungul veacurilor, valoarea ei, cum se schimbă cu mediul și cum se măsoară distanțe cu ea."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C5 — Viteza luminii
+
+:::info Planul orei
+
+1. Introducere
+2. Cele patru încercări de-a lungul veacurilor
+3. Valoarea vitezei luminii
+4. Viteza luminii în alte medii
+5. Măsurarea distanțelor cu lumina
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Vreme de câteva veacuri, învățații au căutat să afle viteza cu care se
+propagă lumina.**
+
+**1.** Cine a încercat cel dintâi să măsoare viteza luminii? Pe ce se sprijinea
+experiența lui?
+
+**2.** Se schimbă viteza luminii după mediu?
+
+**3.** Ce formulă se folosește la calculul vitezei luminii?
+
+**4.** Ce valoare se reține astăzi pentru viteza luminii? Scrie-o în m/s, în
+notație științifică.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Cele patru încercări de-a lungul veacurilor
+
+**Alhazen**, în veacul al X-lea, a avut cel dintâi bănuiala că lumina se propagă
+cu o viteză — foarte mare, dar nu nesfârșită.
+
+**Galilei**, în veacul al XVII-lea, a făcut cea dintâi experiență. El și un
+ajutor s-au așezat pe două dealuri, la $1{,}8$ kilometri unul de altul, fiecare
+cu o lanternă. Galilei își descoperea lanterna; ajutorul, văzând lumina, o
+descoperea pe a lui; Galilei măsura timpul dus-întors.
+
+Măsurând timpul dus-întors și cunoscând distanța, el voia să afle viteza. Nu a
+izbutit: **lumina merge mult prea repede** pentru ca timpul acela să poată fi
+măsurat cu mijloacele vremii.
+
+**Ole Rømer**, tot în veacul al XVII-lea, a izbutit cel dintâi, dar altfel:
+observând sateliții lui Jupiter, el a văzut că eclipsele lor par să întârzie
+atunci când Pământul este mai departe de Jupiter. Întârzierea era chiar timpul
+de care avea nevoie lumina ca să străbată drumul în plus.
+
+**Hippolyte Fizeau**, în veacul al XIX-lea, a măsurat pe Pământ viteza luminii
+în aer și a găsit aproximativ $315\,300$ km/s.
+
+**Léon Foucault** a arătat că lumina **nu merge cu aceeași viteză în toate
+mediile transparente**: în apă ea se propagă cu aproximativ $225\,400$ km/s.
+
+**Albert Einstein**, în veacul al XX-lea, a arătat că **nicio viteză nu poate
+trece de viteza luminii în vid**.
+
+---
+
+## 3. Valoarea vitezei luminii
+
+:::tip De reținut
+
+Lumina se propagă în vid și în aer cu viteza
+
+$$
+v = 300\,000\ \text{km/s} = 3 \times 10^{8}\ \text{m/s}
+$$
+
+:::
+
+Astăzi valoarea măsurată este $299\,792{,}5$ km/s; se reține rotunjirea
+$300\,000$ km/s.
+
+Ia seama cât de mare este: lumina ar înconjura Pământul de șapte ori și
+jumătate într-o singură secundă.
+
+$$
+\frac{v_{\text{lumină}}}{v_{\text{sunet}}}
+= \frac{300\,000\ \text{km/s}}{0{,}34\ \text{km/s}} \approx 880\,000
+$$
+
+De aproape **un milion de ori** mai repede decât sunetul. De aici vine
+întârzierea dintre fulger și tunet.
+
+---
+
+## 4. Viteza luminii în alte medii
+
+| Mediul | Viteza luminii |
+|---|---|
+| vid | $300\,000$ km/s |
+| aer | $300\,000$ km/s (practic aceeași) |
+| apă | $225\,000$ km/s |
+| sticlă | mai mică decât în apă |
+
+:::warning Atenție
+
+Viteza luminii **scade** în mediile transparente, dar nu poate niciodată să
+crească peste valoarea din vid. Aceasta este marginea de sus a oricărei viteze
+din natură.
+
+Ia seama la deosebirea față de sunet: sunetul merge **mai repede** în apă decât
+în aer, lumina merge **mai încet**.
+
+:::
+
+---
+
+## 5. Măsurarea distanțelor cu lumina
+
+Fiindcă viteza luminii este cunoscută foarte exact, ea slujește la măsurarea
+distanțelor mari:
+
+$$
+d = v \times t
+$$
+
+<FiguraManual
+  src="h32-distanta-luna.png"
+  lat={386}
+  inalt={518}
+  latime={320}
+  eticheta="Un observator astronomic pe un deal, noaptea, cu un fascicul verde de laser îndreptat spre Lună"
+  legenda="Măsurarea distanței Pământ – Lună cu un laser."
+>
+  <Et x={96}  y={405} w={195} h={22} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">Semnalul străbate</Et>
+  <Et x={83}  y={434} w={220} h={18} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">de două ori distanța</Et>
+  <Et x={110} y={465} w={166} h={16} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">Pământ – Lună.</Et>
+</FiguraManual>
+
+Un laser trimis de pe Pământ către oglinzile lăsate pe Lună se întoarce după
+aproximativ $2{,}56$ secunde.
+
+:::warning Atenție
+
+Ca și la ecoul sonar, semnalul face drumul **de două ori**. Distanța se află
+împărțind la doi:
+
+$$
+d = \frac{v \times t}{2}
+$$
+
+:::
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.** **Galilei** a fost cel dintâi care a încercat o măsurătoare. El se
+sprijinea pe formula $v = \dfrac{d}{t}$: cunoscând distanța dintre cele două
+dealuri, $1{,}8$ km, și măsurând timpul dus-întors al semnalului luminos, ar fi
+putut afla viteza. Experiența n-a izbutit, fiindcă timpul acela era mult prea
+scurt pentru a fi măsurat.
+
+**2.** **Da.** Foucault a arătat că lumina nu merge cu aceeași viteză în toate
+mediile transparente: în apă ea se propagă cu aproximativ $225\,400$ km/s, față
+de $300\,000$ km/s în aer și în vid.
+
+**3.** Se folosește
+
+$$
+v = \frac{d}{t}
+$$
+
+aceeași formulă ca la orice viteză.
+
+**4.**
+
+$$
+v = 300\,000\ \text{km/s} = 3 \times 10^{8}\ \text{m/s}
+$$
+
+*Preschimbarea*: $300\,000$ km $= 300\,000\,000$ m $= 3 \times 10^{8}$ m.
+
+---
+
+:::note Ora următoare
+
+**LP5 — Viteza luminii.** Patru probe: experiența lui Galilei, lumina și
+sunetul, distanța Pământ – Lună și lumina stelelor.
+
+Înainte de ea, treci prin **[S5 — Viteza luminii](./14-s-viteza-luminii.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

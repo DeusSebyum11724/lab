@@ -1,0 +1,219 @@
+---
+sidebar_position: 15
+sidebar_label: "LP5 — Viteza luminii"
+slug: /f6/optice/lp5
+title: "LP5 — Viteza luminii"
+description: "Lucrare practică: experiența lui Galilei, fulgerul și tunetul, distanța Pământ – Lună și lumina stelelor."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP5 — Viteza luminii
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C5 — Viteza luminii](./13-curs-viteza-luminii.mdx)**,
+cu formulele din **[S5](./14-s-viteza-luminii.mdx)** la îndemână. Patru probe;
+în total 50 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Testează-ți cunoștințele | ★ | 10 min |
+| 2 | De ce a dat greș Galilei | ★★ | 15 min |
+| 3 | Distanța Pământ – Lună | ★★ | 10 min |
+| 4 | Lumina stelelor | ★★★ | 15 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
+răspunsul tău.
+
+:::
+
+---
+
+## 1. Testează-ți cunoștințele
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**1.** În aer și în vid, lumina se propagă:
+
+- **A.** pe loc, fără să treacă timp; &nbsp;·&nbsp; **B.** cu $300\,000$ km/s;
+&nbsp;·&nbsp; **C.** cu $300\,000$ km/h.
+
+**2.** Viteza de propagare a unui semnal luminos se află cu:
+
+- **A.** $v = \dfrac{d}{t}$ &nbsp;·&nbsp; **B.** $v = d \times t$
+&nbsp;·&nbsp; **C.** $v = \dfrac{t}{d}$
+
+**3.** Viteza luminii este cea mai mare în:
+
+- **A.** apă &nbsp;·&nbsp; **B.** vid &nbsp;·&nbsp; **C.** sticlă
+
+**4.** Preschimbă $300\,000$ km/s în m/s, în notație științifică.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Răspunsul este **B**. Lumina merge foarte repede, dar nu pe loc: și ea are
+nevoie de timp.
+
+**2.** Răspunsul este **A**, ca la orice viteză.
+
+**3.** Răspunsul este **B**: în vid. În orice mediu transparent viteza scade.
+
+**4.** $300\,000\ \text{km} = 300\,000\,000\ \text{m}$, deci
+
+$$
+v = 3 \times 10^{8}\ \text{m/s}
+$$
+
+</details>
+
+---
+
+## 2. De ce a dat greș Galilei
+
+★★ &nbsp;·&nbsp; **15 minute**
+
+Galilei și ajutorul lui s-au așezat pe două dealuri, la $1{,}8$ kilometri unul
+de altul, fiecare cu o lanternă acoperită. Galilei descoperea lanterna;
+ajutorul, văzând lumina, o descoperea pe a lui; Galilei măsura timpul
+dus-întors.
+
+**1.** Ce distanță străbate lumina, dus-întors, între cei doi?
+
+**2.** Calculează timpul de care are nevoie lumina pentru acest drum.
+
+**3.** Timpul de reacție al unui om este de aproximativ $1$ secundă. Compară-l
+cu rezultatul de la punctul **2**. Ce constați?
+
+**4.** De ce a izbutit Rømer, cu sateliții lui Jupiter, acolo unde Galilei a dat
+greș?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+d = 2 \times 1{,}8 = 3{,}6\ \text{km}
+$$
+
+**2.**
+
+$$
+t = \frac{d}{v} = \frac{3{,}6\ \text{km}}{300\,000\ \text{km/s}}
+= 1{,}2 \times 10^{-5}\ \text{s}
+$$
+
+adică $0{,}000012$ secunde, sau $12$ microsecunde.
+
+**3.** Timpul de reacție al omului, $1$ secundă, este de aproximativ
+
+$$
+\frac{1}{1{,}2 \times 10^{-5}} \approx 83\,000
+$$
+
+de **ori mai mare** decât timpul pe care Galilei voia să-l măsoare. Tot ce a
+măsurat el a fost, de fapt, timpul de reacție al ajutorului său.
+
+**4.** Fiindcă el a folosit **distanțe uriașe**. Depărtarea Pământ – Jupiter se
+schimbă, de-a lungul anului, cu sute de milioane de kilometri. La astfel de
+distanțe, întârzierea luminii nu mai e de microsecunde, ci de **minute** — și
+minutele se pot măsura.
+
+Aceasta este o învățătură de căpetenie: când mărimea căutată e prea mică pentru
+aparatele tale, nu schimba aparatul, **schimbă scara experienței**.
+
+</details>
+
+---
+
+## 3. Distanța Pământ – Lună
+
+★★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="h32-distanta-luna.png"
+  lat={386}
+  inalt={518}
+  latime={300}
+  eticheta="Un observator astronomic pe un deal, noaptea, cu un fascicul verde de laser îndreptat spre Lună"
+  legenda="Măsurarea distanței Pământ – Lună cu un laser."
+>
+  <Et x={96}  y={405} w={195} h={22} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">Semnalul străbate</Et>
+  <Et x={83}  y={434} w={220} h={18} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">de două ori distanța</Et>
+  <Et x={110} y={465} w={166} h={16} corp={19} fond="#1c1a3a" culoare="#ffffff" alinia="centru">Pământ – Lună.</Et>
+</FiguraManual>
+
+Un laser trimis spre oglinzile de pe Lună se întoarce după $2{,}56$ secunde.
+
+**1.** Ce drum a străbătut semnalul?
+
+**2.** La ce depărtare se află Luna?
+
+**3.** De ce se împarte la doi?
+
+**4.** Ce s-ar întâmpla cu rezultatul dacă s-ar uita împărțirea?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** $d_{\text{total}} = 300\,000 \times 2{,}56 = 768\,000\ \text{km}$.
+
+**2.** $d = \dfrac{768\,000}{2} = 384\,000\ \text{km}$.
+
+**3.** Fiindcă semnalul face drumul **de două ori**: de la Pământ la Lună și
+înapoi. Timpul măsurat cuprinde amândouă drumurile.
+
+**4.** Rezultatul ar ieși **de două ori mai mare**: $768\,000$ km în loc de
+$384\,000$. Aceeași greșeală se face și la sonar, cu ecoul sonor.
+
+</details>
+
+---
+
+## 4. Lumina stelelor
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Lumina Soarelui are nevoie de aproximativ $8$ minute ca să ajungă la Pământ.
+Steaua Proxima Centauri se află la aproximativ $4{,}2$ ani-lumină.
+
+**1.** Calculează depărtarea Pământ – Soare, în kilometri.
+
+**2.** Ce înseamnă „un an-lumină”? Este o unitate de timp sau de distanță?
+
+**3.** Dacă Soarele s-ar stinge acum, când am afla?
+
+**4.** Privind o stea aflată la $4{,}2$ ani-lumină, ce vedem de fapt?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+t = 8\ \text{min} = 480\ \text{s}
+$$
+
+$$
+d = v \times t = 300\,000 \times 480 = 144\,000\,000\ \text{km}
+$$
+
+adică aproximativ $1{,}44 \times 10^{8}$ km — apropiat de valoarea cunoscută,
+$150$ de milioane de kilometri.
+
+**2.** Un **an-lumină** este distanța pe care o străbate lumina într-un an. Este
+deci o unitate de **distanță**, nu de timp — numele înșală.
+
+**3.** Abia peste **8 minute**. Până atunci am vedea Soarele mai departe, deși
+el n-ar mai exista: lumina plecată de la el înainte de stingere e încă pe drum.
+
+**4.** Vedem steaua **așa cum era acum $4{,}2$ ani**. Lumina care ne ajunge azi
+a plecat de acolo atunci.
+
+Cu cât un astru e mai depărtat, cu atât îl vedem mai în urmă. Privind cerul,
+privim de fapt **trecutul** — și cu atât mai departe în trecut, cu cât ne uităm
+mai departe.
+
+</details>
