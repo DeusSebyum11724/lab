@@ -1,0 +1,203 @@
+---
+sidebar_position: 28
+sidebar_label: "C10 — Motorul termic"
+slug: /f8/termice/c10
+title: "C10 — Motorul termic"
+description: "Motoarele cu ardere internă și externă, schema energetică a motorului, randamentul termic și cei patru timpi."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C10 — Motorul termic
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Ce este un motor termic
+3. Ardere externă și ardere internă
+4. Schema energetică a motorului
+5. Randamentul termic
+6. Experiment: seringa în apă fierbinte
+7. Cei patru timpi
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Observă mijloacele de transport din imagine și explică modul în care se
+produce propulsarea lor.
+
+<FiguraManual
+  src="ro8-mijloace-transport.png"
+  lat={1385}
+  inalt={238}
+  latime={680}
+  eticheta="Patru fotografii alăturate: un automobil roșu, un tren modern, un avion de linie în zbor, un iaht alb"
+  legenda="Mijloace de transport terestre, aeriene, maritime."
+/>
+
+**2.** Ce deosebire există între navele și locomotivele de mai jos și cele din
+imaginea de sus?
+
+<FiguraManual
+  src="ro8-nava-locomotiva.png"
+  lat={439}
+  inalt={585}
+  latime={330}
+  eticheta="Sus: un vapor cu aburi, cu zbaturi și coșuri. Jos: o locomotivă cu aburi care scoate un nor gros de fum"
+  legenda="Navă și locomotivă cu aburi."
+/>
+
+---
+
+## 2. Ce este un motor termic
+
+Toate mijloacele de transport efectuează **lucru mecanic** atunci când se
+deplasează. Pentru asta, sistemul trebuie să primească energie.
+
+Combustibilul care arde — benzină, motorină, kerosen — degajă **căldură**, care
+este transformată în lucru mecanic, iar acesta determină propulsarea. Nu toată
+căldura obținută prin ardere se transformă însă în lucru mecanic: o parte este
+cedată mediului exterior.
+
+:::danger Definiția 1
+
+Un **motor termic** este un sistem care transformă căldura primită, prin arderea
+unui combustibil, în lucru mecanic.
+
+:::
+
+Cuvântul „motor" vine din latină și înseamnă „care pune ceva în mișcare".
+
+---
+
+## 3. Ardere externă și ardere internă
+
+Deosebirea dintre locomotiva modernă și cea cu aburi, sau dintre iaht și
+vaporul cu zbaturi, este **unde arde combustibilul**.
+
+| Felul motorului | Unde are loc arderea | Exemple |
+|---|---|---|
+| cu **ardere externă** | în afara motorului | locomotiva cu aburi, vaporul cu aburi |
+| cu **ardere internă** | în interiorul motorului | motorul Otto (benzină), motorul Diesel (motorină) |
+
+---
+
+## 4. Schema energetică a motorului
+
+<FiguraManual
+  src="ro8-schema-motor.png"
+  lat={443}
+  inalt={354}
+  latime={430}
+  eticheta="Schemă: din sursa caldă de sus intră în motor căldura primită Qp; din motor iese lateral lucrul mecanic L, iar în jos, spre sursa rece, căldura cedată Qc"
+  legenda="Schema energetică a motorului termic. Ce intră de sus se împarte între lucru mecanic și căldura pierdută."
+/>
+
+Notând cu $Q_p$ căldura care provine din arderea combustibilului — de la **sursa
+caldă** — și cu $Q_c$ căldura cedată sistemului de răcire — către **sursa rece**
+— observăm că motorul transformă în lucru mecanic **diferența** dintre ele:
+
+$$
+L = Q_p - \lvert Q_c \rvert
+$$
+
+Sursa rece nu e o alegere a constructorului, ci o necesitate: **niciun motor
+termic nu poate transforma toată căldura primită în lucru mecanic**.
+
+---
+
+## 5. Randamentul termic
+
+:::danger Definiția 2
+
+**Randamentul termic** al motorului, notat cu litera grecească $\eta$ (eta),
+este raportul dintre lucrul mecanic efectuat de motor și căldura degajată prin
+arderea combustibilului:
+
+$$
+\eta = \frac{L}{Q_p} = \frac{Q_p - \lvert Q_c \rvert}{Q_p}
+$$
+
+:::
+
+| Motorul | Randamentul, aproximativ |
+|---|---|
+| cu benzină (Otto) | $30\%$ |
+| cu motorină (Diesel) | $40\%$ |
+
+Cu alte cuvinte, din fiecare litru de benzină ars, cam **două treimi** se pierd
+sub formă de căldură — prin țeava de eșapament, prin radiator și prin frecări.
+De asta motorul unei mașini trebuie răcit tot timpul.
+
+---
+
+## 6. Experiment: seringa în apă fierbinte
+
+**Scop:** evidențierea transformării căldurii în lucru mecanic.
+
+**Materiale:** seringă, apă fierbinte, adeziv.
+
+**Mod de lucru.**
+
+1. Trage de pistonul seringii astfel încât să intre aer în ea — de pildă
+   jumătate din volum — și notează gradația.
+2. Astupă orificiul seringii cu adeziv.
+3. Introdu seringa în apa fierbinte și lasă pistonul liber.
+4. După câteva minute, verifică poziția pistonului și notează noua gradație.
+
+**Constatări.** Pistonul s-a deplasat.
+
+:::note Explicația
+
+Apa, având temperatură mai mare, cedează căldură aerului din seringă. Creșterea
+temperaturii aerului **intensifică agitația termică** a moleculelor, care lovesc
+mai des și mai tare pistonul, punându-l în mișcare.
+
+Căldura primită de sistem a fost transformată în **lucru mecanic** — iar seringa
+a fost, pentru câteva minute, un motor termic.
+
+:::
+
+---
+
+## 7. Cei patru timpi
+
+Motoarele termice cu ardere internă pot funcționa în **patru timpi** sau în doi
+timpi. Pentru motorul cu benzină, cei patru timpi sunt:
+
+<FiguraManual
+  src="ro8-motor-4-timpi.png"
+  lat={1281}
+  inalt={423}
+  latime={680}
+  eticheta="Patru secțiuni prin același cilindru, numerotate 1 la 4 și intitulate admisie, compresie, arderea amestecului carburant și destinderea gazelor arse, evacuare; în fiecare, pistonul e desenat în altă poziție și supapele sunt când deschise, când închise"
+  legenda="Schema funcționării motorului în 4 timpi."
+/>
+
+| Timpul | Numele | Ce se întâmplă |
+|---|---|---|
+| 1 | **admisia** | pistonul coboară și trage în cilindru amestecul de aer și vapori de benzină |
+| 2 | **compresia** | pistonul urcă, amestecul e comprimat, iar presiunea crește foarte mult |
+| 3 | **aprinderea și detenta** | bujia produce scânteia; amestecul arde, temperatura și presiunea cresc mult, iar pistonul e împins în jos, efectuând lucru mecanic |
+| 4 | **evacuarea** | pistonul urcă din nou, iar gazele arse sunt evacuate |
+
+În timpul $3$, temperatura din cilindru atinge aproximativ
+$2000\ ^\circ\text{C}$. **Numai timpul $3$ produce lucru mecanic**; ceilalți
+trei îl consumă — de aceea motorul are un volant greu, care duce pistonul prin
+timpii „morți".
+
+---
+
+:::note Ora următoare
+
+**LP10 — Motorul termic.** Trei probe: recunoașterea tipurilor de motoare, un
+randament de calculat și consumul unei mașini.
+
+Înainte de ea, treci prin
+**[S10 — Motorul termic](./29-s-motorul-termic.mdx)**: formulele lecției strânse
+la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

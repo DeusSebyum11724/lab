@@ -1,0 +1,147 @@
+---
+sidebar_position: 29
+sidebar_label: "S10 — Motorul termic"
+slug: /f8/termice/s10
+title: "S10 — Motorul termic"
+description: "Suport de curs: formulele motorului termic, cei patru timpi la un loc și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S10 — Motorul termic
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din **[C10 — Motorul termic](./28-curs-motorul-termic.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP10](./30-lp-motorul-termic.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Lucrul mecanic al motorului | $L$ | $L = Q_p - \lvert Q_c \rvert$ | joule, $\text{J}$ |
+| Randamentul termic | $\eta$ | $\eta = \dfrac{L}{Q_p}$ | fără unitate |
+| Căldura primită | $Q_p$ | $Q_p = \dfrac{L}{\eta}$ | joule, $\text{J}$ |
+| Căldura cedată | $\lvert Q_c \rvert$ | $\lvert Q_c \rvert = Q_p - L$ | joule, $\text{J}$ |
+| Puterea motorului | $P$ | $P = \dfrac{L}{\Delta t}$ | watt, $\text{W}$ |
+
+**Valori de reținut:** motor Otto (benzină), $\eta \approx 30\%$; motor Diesel
+(motorină), $\eta \approx 40\%$.
+
+---
+
+## 2. Cei patru timpi, la un loc
+
+| Timpul | Pistonul | Supapele | Produce lucru mecanic? |
+|---|---|---|---|
+| 1 — admisia | coboară | admisia deschisă | nu |
+| 2 — compresia | urcă | amândouă închise | nu |
+| 3 — aprinderea și detenta | coboară | amândouă închise | **da** |
+| 4 — evacuarea | urcă | evacuarea deschisă | nu |
+
+---
+
+## 3. De reținut
+
+- Un motor termic are nevoie de **două** surse: una caldă și una rece. Fără
+  sursă rece nu funcționează.
+- $\eta$ este întotdeauna **subunitar**: un randament de $100\%$ ar însemna
+  $Q_c = 0$, ceea ce nu se poate.
+- $L$, $Q_p$ și $Q_c$ se măsoară toate în **jouli**.
+- Randamentul mai mare al motorului Diesel vine din compresia mai puternică.
+- $\eta$ se poate scrie și în procente: $\eta = 0{,}3 = 30\%$. La calcule se
+  folosește forma zecimală.
+- Motorul cu ardere externă are focul **în afara** cilindrului; cel cu ardere
+  internă, chiar înăuntru.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Motorul unei mașini primește, prin arderea combustibilului,
+$Q_p = 5 \times 10^7\ \text{J}$ într-o oră de mers și cedează mediului
+$\lvert Q_c \rvert = 3{,}5 \times 10^7\ \text{J}$.
+
+**a)** Ce lucru mecanic efectuează motorul?
+
+**b)** Cât este randamentul lui? Ce fel de motor este, probabil?
+
+**c)** Ce putere dezvoltă, în watti și în cai-putere
+($1\ \text{CP} = 736\ \text{W}$)?
+
+**d)** Cât ar fi lucrul mecanic la același consum, dacă randamentul ar crește la
+$40\%$?
+
+### Pasul 1 — Ce se dă
+
+- $Q_p = 5 \times 10^7\ \text{J}$;
+- $\lvert Q_c \rvert = 3{,}5 \times 10^7\ \text{J}$;
+- $\Delta t = 1\ \text{oră} = 3600\ \text{s}$.
+
+### Pasul 2 — Lucrul mecanic
+
+$$
+L = Q_p - \lvert Q_c \rvert = 5 \times 10^7 - 3{,}5 \times 10^7 = 1{,}5 \times 10^7\ \text{J}
+$$
+
+### Pasul 3 — Randamentul
+
+$$
+\eta = \frac{L}{Q_p} = \frac{1{,}5 \times 10^7}{5 \times 10^7} = 0{,}3 = 30\%
+$$
+
+Valoarea se potrivește cu un **motor cu benzină**, de tip Otto.
+
+### Pasul 4 — Puterea
+
+$$
+P = \frac{L}{\Delta t} = \frac{1{,}5 \times 10^7}{3600} \approx 4167\ \text{W}
+$$
+
+În cai-putere:
+
+$$
+\frac{4167}{736} \approx 5{,}7\ \text{CP}
+$$
+
+### Pasul 5 — Cu randament de $40\%$
+
+$$
+L' = \eta' \cdot Q_p = 0{,}4 \times 5 \times 10^7 = 2 \times 10^7\ \text{J}
+$$
+
+Cu **același** consum de combustibil, motorul ar da cu
+$0{,}5 \times 10^7\ \text{J}$ mai mult lucru mecanic — adică o treime în plus.
+
+### Pasul 6 — Verificarea
+
+Suma iese: $L + \lvert Q_c \rvert = 1{,}5 \times 10^7 + 3{,}5 \times 10^7 = 5 \times 10^7 = Q_p$.
+Nimic nu s-a pierdut pe drum, cum cere conservarea energiei.
+
+Iar randamentul, $0{,}3$, e subunitar — cum trebuie.
+
+*Observație:* puterea de $5{,}7\ \text{CP}$ pare mică pentru o mașină. Ea e
+puterea **medie** pe toată ora, în care mașina merge lin; la accelerații, motorul
+dă de multe ori mai mult, iar consumul crește pe măsură.
+
+### Răspuns
+
+**a)** $L = 1{,}5 \times 10^7\ \text{J}$; **b)** $\eta = 30\%$, motor cu
+benzină; **c)** $P \approx 4167\ \text{W} \approx 5{,}7\ \text{CP}$;
+**d)** $L' = 2 \times 10^7\ \text{J}$.
+
+---
+
+:::note Ora următoare
+
+**[LP10 — Motorul termic](./30-lp-motorul-termic.mdx).** Trei probe, în total 32
+de minute.
+
+:::

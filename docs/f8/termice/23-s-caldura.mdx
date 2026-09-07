@@ -1,0 +1,162 @@
+---
+sidebar_position: 23
+sidebar_label: "S8 — Căldura, mărime de proces"
+slug: /f8/termice/s8
+title: "S8 — Căldura, mărime de proces"
+description: "Suport de curs: unitățile căldurii, convenția de semn, bilanțul într-un sistem izolat și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S8 — Căldura, mărime de proces
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C8 — Căldura, mărime de proces](./22-curs-caldura.mdx)**, strâns la un loc, și
+un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi la
+**[LP8](./24-lp-caldura.mdx)**.
+
+:::
+
+---
+
+## 1. Ce trebuie știut
+
+| Mărimea | Simbol | Felul ei | Unitatea în SI |
+|---|---|---|---|
+| Căldura | $Q$ | scalară, **de proces** | joule, $\text{J}$ |
+| Temperatura | $t$ sau $T$ | scalară, **de stare** | kelvin, $\text{K}$ |
+
+**Legături între unități:**
+
+$$
+1\ \text{cal} = 4{,}1868\ \text{J} \qquad 1\ \text{kcal} = 1000\ \text{cal} \approx 4186\ \text{J}
+$$
+
+**Convenția de semn:**
+
+| Procesul | Semnul lui $Q$ |
+|---|---|
+| corpul **primește** căldură (se încălzește) | $Q > 0$ |
+| corpul **cedează** căldură (se răcește) | $Q < 0$ |
+
+---
+
+## 2. Bilanțul într-un sistem izolat
+
+Într-un sistem izolat adiabatic — de pildă interiorul unui calorimetru — nu se
+pierde căldură spre exterior. Tot ce cedează un corp primește celălalt:
+
+$$
+|Q_{\text{cedat}}| = Q_{\text{primit}}
+$$
+
+Sau, ținând seama de semne:
+
+$$
+Q_1 + Q_2 = 0
+$$
+
+Temperatura finală iese întotdeauna **între** cele două temperaturi inițiale.
+
+---
+
+## 3. De reținut
+
+- Căldura nu se află într-un corp; ea **trece** de la un corp la altul.
+- Căldura curge de la sine numai **de la cald spre rece**, niciodată invers.
+- Transferul se oprește la **echilibru termic**, adică atunci când temperaturile
+  s-au egalat.
+- Temperatura finală a unui amestec e mereu între cele două temperaturi
+  inițiale. Dacă îți iese în afara lor, ai greșit.
+- Calorimetrul și termosul folosesc același truc: două vase izolate între ele.
+- La cantități **egale** din aceeași substanță, temperatura de echilibru cade
+  chiar la mijloc.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Într-un calorimetru se toarnă $200\ \text{g}$ de apă la $20\ ^\circ\text{C}$ și
+$200\ \text{g}$ de apă la $50\ ^\circ\text{C}$. Se neglijează schimbul de
+căldură cu vasul și cu exteriorul.
+
+**a)** Care corp cedează și care primește căldură?
+
+**b)** Ce temperatură va avea apa din calorimetru la echilibru?
+
+**c)** Ce s-ar schimba dacă apa caldă ar fi de $600\ \text{g}$ în loc de
+$200\ \text{g}$? Răspunde **fără să calculezi**, apoi verifică.
+
+### Pasul 1 — Ce se dă
+
+- $m_1 = 200\ \text{g}$ la $t_1 = 20\ ^\circ\text{C}$;
+- $m_2 = 200\ \text{g}$ la $t_2 = 50\ ^\circ\text{C}$;
+- sistem izolat adiabatic.
+
+### Pasul 2 — Cine cedează, cine primește
+
+Căldura trece de la sine de la corpul mai cald spre cel mai rece. Deci apa de
+$50\ ^\circ\text{C}$ **cedează**, iar apa de $20\ ^\circ\text{C}$ **primește**.
+
+### Pasul 3 — Temperatura de echilibru
+
+Cele două cantități sunt **egale** și din aceeași substanță. Ce pierde una
+câștigă cealaltă, deci scăderea de temperatură a apei calde e egală cu creșterea
+de temperatură a apei reci. Temperatura finală cade exact la mijloc:
+
+$$
+t = \frac{t_1 + t_2}{2} = \frac{20 + 50}{2} = 35\ ^\circ\text{C}
+$$
+
+### Pasul 4 — Verificarea încadrării
+
+$$
+20\ ^\circ\text{C} < 35\ ^\circ\text{C} < 50\ ^\circ\text{C}
+$$
+
+Temperatura finală e între cele două inițiale, cum trebuie.
+
+### Pasul 5 — Cu de trei ori mai multă apă caldă
+
+**Fără calcul:** apa caldă e acum majoritară, deci temperatura finală se va
+apropia **mult mai mult** de $50\ ^\circ\text{C}$ decât de $20\ ^\circ\text{C}$.
+
+**Cu calcul:** apa caldă e de trei ori mai multă, deci ea se răcește de trei ori
+mai puțin decât se încălzește apa rece. Dacă apa rece urcă cu $x$ grade, apa
+caldă coboară cu $x/3$ grade, iar cele două temperaturi trebuie să se
+întâlnească:
+
+$$
+20 + x = 50 - \frac{x}{3}
+$$
+
+$$
+x + \frac{x}{3} = 30 \quad\Longrightarrow\quad \frac{4x}{3} = 30 \quad\Longrightarrow\quad x = 22{,}5
+$$
+
+$$
+t = 20 + 22{,}5 = 42{,}5\ ^\circ\text{C}
+$$
+
+### Pasul 6 — Verificarea
+
+$42{,}5\ ^\circ\text{C}$ e într-adevăr mult mai aproape de $50$ decât de $20$ —
+cum spusese raționamentul. Iar verificarea pe cealaltă parte:
+$50 - 22{,}5 : 3 = 50 - 7{,}5 = 42{,}5\ ^\circ\text{C}$. Se potrivește.
+
+### Răspuns
+
+**a)** apa caldă cedează, apa rece primește; **b)** $35\ ^\circ\text{C}$;
+**c)** $42{,}5\ ^\circ\text{C}$.
+
+---
+
+:::note Ora următoare
+
+**[LP8 — Căldura](./24-lp-caldura.mdx).** Trei probe, în total 32 de minute.
+
+:::

@@ -1,0 +1,166 @@
+---
+sidebar_position: 26
+sidebar_label: "S9 — Coeficienți calorici. Calorimetrie"
+slug: /f8/termice/s9
+title: "S9 — Coeficienți calorici. Calorimetrie"
+description: "Suport de curs: formulele coeficienților calorici, pașii unei probleme de calorimetrie și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S9 — Coeficienți calorici. Calorimetrie
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C9 — Coeficienți calorici. Calorimetrie](./25-curs-coeficienti-calorici.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP9](./27-lp-coeficienti-calorici.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Căldura schimbată | $Q$ | $Q = m \cdot c \cdot \Delta T$ | joule, $\text{J}$ |
+| Căldura, prin capacitate calorică | $Q$ | $Q = C \cdot \Delta T$ | joule, $\text{J}$ |
+| Capacitatea calorică | $C$ | $C = \dfrac{Q}{\Delta T} = m \cdot c$ | $\text{J/K}$ |
+| Căldura specifică | $c$ | $c = \dfrac{Q}{m \cdot \Delta T}$ | $\text{J/(kg} \cdot \text{K)}$ |
+| Variația temperaturii | $\Delta T$ | $\Delta T = T_f - T_i$ | kelvin, $\text{K}$ |
+| Ecuația calorimetrică | — | $\lvert Q_{\text{cedat}} \rvert = Q_{\text{primit}}$ | — |
+
+---
+
+## 2. Pașii unei probleme de calorimetrie
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Treci masele în kilograme și notează temperaturile |
+| 2 | Vezi **cine cedează** (cel mai cald) și **cine primește** (cel mai rece) |
+| 3 | Scrii $\lvert Q_{\text{cedat}} \rvert$ ca sumă peste corpurile calde |
+| 4 | Scrii $Q_{\text{primit}}$ ca sumă peste corpurile reci |
+| 5 | Egalezi și scoți necunoscuta |
+| 6 | Verifici că $t$ final e **între** temperaturile inițiale |
+
+Calorimetrul intră **alături de apa turnată în el**: are aceeași temperatură
+inițială cu ea.
+
+---
+
+## 3. De reținut
+
+- $\Delta T$ are aceeași valoare în grade Celsius și în kelvin, deci se poate
+  lucra direct cu diferențe de grade Celsius.
+- Pentru corpul care **se răcește**, ia diferența $T_i - T_f$, ca să lucrezi cu
+  valori pozitive de amândouă părțile ecuației.
+- $c$ ține de substanță, $C$ ține de corp: $C = m c$.
+- Masele se trec în **kilograme**: $100\ \text{g} = 0{,}1\ \text{kg}$.
+- Pentru apă, dacă e dată în litri: $1\ \text{L}$ de apă are masa
+  $1\ \text{kg}$, fiindcă $\rho = 1000\ \text{kg/m}^3$.
+- Apa are căldura specifică cea mai mare dintre lichidele obișnuite:
+  $4185\ \text{J/(kg} \cdot \text{K)}$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Determină capacitatea calorică a unui calorimetru în care se află o masă
+$m = 100\ \text{g}$ de apă la temperatura $t_1 = 60\ ^\circ\text{C}$ și în care
+se adaugă o masă $M = 300\ \text{g}$ de alcool etilic la temperatura
+$t_2 = 30\ ^\circ\text{C}$. Se cunosc
+$c_{\text{apă}} = 4185\ \text{J/(kg} \cdot \text{K)}$,
+$c_{\text{alcool}} = 2430\ \text{J/(kg} \cdot \text{K)}$ și temperatura de
+echilibru $t = 50\ ^\circ\text{C}$.
+
+<FiguraManual
+  src="ro8-diagrama-calorimetrie.png"
+  lat={430}
+  inalt={353}
+  latime={400}
+  eticheta="Grafic cu temperatura în kelvini pe verticală și timpul în minute pe orizontală; curba roșie, marcată „m și calorimetru”, coboară de la 333 K; curba albastră, marcată „M”, urcă de la 303 K; ele se întâlnesc la 323 K"
+  legenda="Variația temperaturii corpurilor în timpul schimbului de căldură."
+/>
+
+### Pasul 1 — Ce se dă
+
+- $m = 100\ \text{g} = 0{,}1\ \text{kg}$ apă, la $60\ ^\circ\text{C}$;
+- $M = 300\ \text{g} = 0{,}3\ \text{kg}$ alcool etilic, la $30\ ^\circ\text{C}$;
+- $t = 50\ ^\circ\text{C}$;
+- căldurile specifice date.
+
+### Pasul 2 — Cine cedează, cine primește
+
+Apa și **calorimetrul** au temperatura mai mare ($60\ ^\circ\text{C}$ — vasul a
+stat cu apa în el, deci s-a pus la aceeași temperatură cu ea). Ele **cedează**.
+
+Alcoolul etilic e mai rece ($30\ ^\circ\text{C}$). El **primește**.
+
+### Pasul 3 — Căldura cedată
+
+$$
+\lvert Q_{\text{cedat}} \rvert = (m \, c_{\text{apă}} + C) \, (t_1 - t)
+$$
+
+$$
+m \, c_{\text{apă}} = 0{,}1 \times 4185 = 418{,}5\ \text{J/K}
+$$
+
+$$
+t_1 - t = 60 - 50 = 10\ \text{K}
+$$
+
+$$
+\lvert Q_{\text{cedat}} \rvert = (418{,}5 + C) \times 10
+$$
+
+### Pasul 4 — Căldura primită
+
+$$
+Q_{\text{primit}} = M \, c_{\text{alcool}} \, (t - t_2) = 0{,}3 \times 2430 \times (50 - 30)
+$$
+
+$$
+Q_{\text{primit}} = 729 \times 20 = 14\,580\ \text{J}
+$$
+
+### Pasul 5 — Ecuația calorimetrică
+
+$$
+(418{,}5 + C) \times 10 = 14\,580
+$$
+
+$$
+418{,}5 + C = 1458
+$$
+
+$$
+C = 1458 - 418{,}5 = 1039{,}5\ \text{J/K}
+$$
+
+### Pasul 6 — Verificarea
+
+Temperatura de echilibru, $50\ ^\circ\text{C}$, este între $30$ și
+$60\ ^\circ\text{C}$ — cum trebuie. Graficul arată același lucru: cele două
+curbe pornesc de la $333\ \text{K}$ și de la $303\ \text{K}$ și se întâlnesc la
+$323\ \text{K}$.
+
+Verificăm și numeric: $\lvert Q_{\text{cedat}} \rvert = (418{,}5 + 1039{,}5) \times 10 = 14\,580\ \text{J}$,
+egal cu $Q_{\text{primit}}$.
+
+### Răspuns
+
+$C = 1039{,}5\ \text{J/K}$.
+
+---
+
+:::note Ora următoare
+
+**[LP9 — Calorimetria](./27-lp-coeficienti-calorici.mdx).** Trei probe, în total
+36 de minute.
+
+:::

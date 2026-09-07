@@ -1,0 +1,223 @@
+---
+sidebar_position: 27
+sidebar_label: "LP9 — Calorimetria"
+slug: /f8/termice/lp9
+title: "LP9 — Calorimetria"
+description: "Lucrare practică: un raport de mase, apa de baie amestecată și determinarea unei călduri specifice necunoscute."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP9 — Calorimetria
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C9 — Coeficienți calorici. Calorimetrie](./25-curs-coeficienti-calorici.mdx)**,
+cu formulele din **[S9](./26-s-coeficienti-calorici.mdx)** la îndemână. Trei
+probe; în total 36 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Raportul maselor | — | 10 min |
+| 2 | Apa de baie | ★★ | 14 min |
+| 3 | O căldură specifică necunoscută | ★ | 12 min |
+
+Peste tot $c_{\text{apă}} = 4185\ \text{J/(kg} \cdot \text{K)}$ și
+$\rho_{\text{apă}} = 1000\ \text{kg/m}^3$.
+
+:::
+
+---
+
+## 1. Raportul maselor
+
+— &nbsp;·&nbsp; **10 minute**
+
+În ce raport se găsesc masele a două cantități de apă, amestecate într-un vas de
+capacitate calorică **neglijabilă**, dacă ele au temperaturile inițiale
+$t_1 = 10\ ^\circ\text{C}$ și $t_2 = 60\ ^\circ\text{C}$, iar temperatura de
+echilibru este de $25\ ^\circ\text{C}$?
+
+**1.** Care cantitate cedează și care primește căldură?
+
+**2.** Scrie ecuația calorimetrică.
+
+**3.** Află raportul $m_1 / m_2$.
+
+**4.** Fără să calculezi, spune care dintre cele două cantități e mai mare. Se
+potrivește cu rezultatul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Apa de $60\ ^\circ\text{C}$ **cedează**; apa de $10\ ^\circ\text{C}$
+**primește**.
+
+**2.** Vasul are capacitate calorică neglijabilă, deci nu intră în bilanț:
+
+$$
+m_1 \, c \, (t - t_1) = m_2 \, c \, (t_2 - t)
+$$
+
+Căldura specifică fiind aceeași — e apă în amândouă părțile — se simplifică:
+
+$$
+m_1 \, (25 - 10) = m_2 \, (60 - 25)
+$$
+
+**3.**
+
+$$
+15 \, m_1 = 35 \, m_2 \quad\Longrightarrow\quad \frac{m_1}{m_2} = \frac{35}{15} = \frac{7}{3}
+$$
+
+**4.** Temperatura de echilibru, $25\ ^\circ\text{C}$, e **mult mai aproape** de
+$10\ ^\circ\text{C}$ decât de $60\ ^\circ\text{C}$. Semn că apa rece e
+majoritară.
+
+Rezultatul confirmă: $m_1 / m_2 = 7/3$, deci apa rece e de peste două ori mai
+multă decât cea caldă.
+
+</details>
+
+---
+
+## 2. Apa de baie
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Diana își pregătește apa pentru baie și amestecă, în cada cu volumul
+$V = 150\ \text{L}$, apă caldă la $t_1 = 80\ ^\circ\text{C}$ și apă rece la
+$t_2 = 10\ ^\circ\text{C}$. În final, apa pentru baie are $t = 36\ ^\circ\text{C}$.
+
+**1.** Ce masă totală de apă are cada?
+
+**2.** Scrie cele două relații dintre masele de apă caldă și rece.
+
+**3.** Ce cantități de apă rece și caldă a folosit Diana?
+
+**4.** Verifică rezultatul.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** $150\ \text{L}$ de apă înseamnă $0{,}15\ \text{m}^3$, iar cu
+$\rho = 1000\ \text{kg/m}^3$:
+
+$$
+m = \rho V = 1000 \times 0{,}15 = 150\ \text{kg}
+$$
+
+**2.** Prima relație — masele se adună:
+
+$$
+m_1 + m_2 = 150
+$$
+
+A doua — ecuația calorimetrică, cu $c$ simplificat:
+
+$$
+m_1 \, (t_1 - t) = m_2 \, (t - t_2)
+$$
+
+$$
+m_1 \, (80 - 36) = m_2 \, (36 - 10) \quad\Longrightarrow\quad 44 \, m_1 = 26 \, m_2
+$$
+
+**3.** Din a doua relație:
+
+$$
+m_2 = \frac{44}{26} \, m_1 = \frac{22}{13} \, m_1
+$$
+
+Înlocuim în prima:
+
+$$
+m_1 + \frac{22}{13} \, m_1 = 150 \quad\Longrightarrow\quad \frac{35}{13} \, m_1 = 150
+$$
+
+$$
+m_1 = \frac{150 \times 13}{35} \approx 55{,}7\ \text{kg}
+$$
+
+$$
+m_2 = 150 - 55{,}7 = 94{,}3\ \text{kg}
+$$
+
+Deci circa $55{,}7\ \text{L}$ de apă caldă și $94{,}3\ \text{L}$ de apă rece.
+
+**4.**
+
+$$
+55{,}7 \times 44 = 2451 \qquad 94{,}3 \times 26 = 2452
+$$
+
+Egale, până la rotunjire. Și se potrivește cu bunul-simț: $36\ ^\circ\text{C}$
+e mai aproape de $10$ decât de $80$, deci apa rece trebuie să fie mai multă.
+
+</details>
+
+---
+
+## 3. O căldură specifică necunoscută
+
+★ &nbsp;·&nbsp; **12 minute**
+
+Într-un calorimetru cu capacitate calorică neglijabilă se află
+$400\ \text{g}$ de apă la $20\ ^\circ\text{C}$. Se introduce în ea o bilă
+metalică de $200\ \text{g}$, încălzită în prealabil la $100\ ^\circ\text{C}$.
+Temperatura de echilibru măsurată este $27\ ^\circ\text{C}$.
+
+**1.** Cine cedează și cine primește căldură?
+
+**2.** Calculează căldura primită de apă.
+
+**3.** Află căldura specifică a metalului.
+
+**4.** Compară cu tabelul din curs. Din ce metal ar putea fi bila?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Bila, fiind la $100\ ^\circ\text{C}$, **cedează**. Apa, la
+$20\ ^\circ\text{C}$, **primește**.
+
+**2.**
+
+$$
+Q_{\text{primit}} = m_{\text{apă}} \, c_{\text{apă}} \, (t - t_{\text{apă}})
+$$
+
+$$
+Q_{\text{primit}} = 0{,}4 \times 4185 \times (27 - 20) = 1674 \times 7 = 11\,718\ \text{J}
+$$
+
+**3.** Ecuația calorimetrică:
+
+$$
+m_{\text{bilă}} \, c \, (t_{\text{bilă}} - t) = Q_{\text{primit}}
+$$
+
+$$
+0{,}2 \times c \times (100 - 27) = 11\,718
+$$
+
+$$
+0{,}2 \times 73 \times c = 11\,718 \quad\Longrightarrow\quad 14{,}6 \, c = 11\,718
+$$
+
+$$
+c = \frac{11\,718}{14{,}6} \approx 803\ \text{J/(kg} \cdot \text{K)}
+$$
+
+**4.** Cea mai apropiată valoare din tabel este a **aluminiului**,
+$880\ \text{J/(kg} \cdot \text{K)}$. Deosebirea de vreo $9\%$ se explică prin
+căldura preluată totuși de calorimetru și de termometru și prin pierderile spre
+exterior — mereu în același sens, deci rezultatul măsurat iese mai mic decât cel
+adevărat.
+
+*Ce se învață:* metoda amestecurilor permite **identificarea unui material** din
+măsurători pur termice, fără să tai și fără să cântărești volume.
+
+</details>

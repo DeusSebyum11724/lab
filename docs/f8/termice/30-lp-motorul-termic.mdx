@@ -1,0 +1,203 @@
+---
+sidebar_position: 30
+sidebar_label: "LP10 — Motorul termic"
+slug: /f8/termice/lp10
+title: "LP10 — Motorul termic"
+description: "Lucrare practică: recunoașterea timpilor, experimentul cu seringa și consumul de combustibil al unei mașini."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP10 — Motorul termic
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din **[C10 — Motorul termic](./28-curs-motorul-termic.mdx)**,
+cu formulele din **[S10](./29-s-motorul-termic.mdx)** la îndemână. Trei probe;
+în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Cei patru timpi | — | 10 min |
+| 2 | Seringa care împinge | ★ | 10 min |
+| 3 | Un plin de benzină | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Cei patru timpi
+
+— &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-motor-4-timpi.png"
+  lat={1281}
+  inalt={423}
+  latime={680}
+  eticheta="Patru secțiuni prin același cilindru, numerotate 1 la 4, cu pistonul în poziții diferite și supapele când deschise, când închise"
+  legenda="Cei patru timpi ai motorului cu ardere internă."
+/>
+
+**1.** Pune în ordine cei patru timpi și spune, pentru fiecare, dacă pistonul
+urcă sau coboară.
+
+**2.** În care timp se produce lucru mecanic? Ce se întâmplă în ceilalți trei?
+
+**3.** De ce are motorul un volant greu?
+
+**4.** În ce fel se deosebește motorul Diesel de cel Otto la timpul $3$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+| Timpul | Numele | Pistonul |
+|---|---|---|
+| 1 | admisia | coboară |
+| 2 | compresia | urcă |
+| 3 | aprinderea și detenta | coboară |
+| 4 | evacuarea | urcă |
+
+**2.** Numai la timpul **3**, când gazele arse, la temperatură și presiune mari,
+împing pistonul în jos. Ceilalți trei timpi **consumă** lucru mecanic: pistonul
+trebuie mișcat din afară.
+
+**3.** Tocmai fiindcă trei din patru timpi nu produc nimic. **Volantul** este un
+disc greu care se învârte odată cu arborele motorului: el înmagazinează energie
+cinetică la timpul $3$ și o cedează în ceilalți trei, ducând pistonul mai
+departe. Fără el, motorul s-ar opri după fiecare aprindere.
+
+**4.** La motorul **Otto**, amestecul de aer și benzină e aprins de **scânteia
+bujiei**. La motorul **Diesel**, aerul e comprimat atât de tare încât se
+încălzește singur peste temperatura de aprindere, iar motorina, pulverizată în
+el, se aprinde **fără bujie**.
+
+Compresia mai puternică e și motivul pentru care motorul Diesel are randament
+mai bun.
+
+</details>
+
+---
+
+## 2. Seringa care împinge
+
+★ &nbsp;·&nbsp; **10 minute**
+
+**Scop:** evidențierea transformării căldurii în lucru mecanic.
+
+**Materiale:** seringă, apă fierbinte, adeziv.
+
+**Mod de lucru.** Trage pistonul până la jumătatea seringii, notează gradația,
+astupă orificiul cu adeziv, introdu seringa în apă fierbinte și lasă pistonul
+liber. După câteva minute, notează noua gradație.
+
+**1.** Ce constați? Explică prin agitația termică.
+
+**2.** În ce sens este seringa un motor termic? Care e sursa caldă și care e
+sursa rece?
+
+**3.** Ce s-ar întâmpla dacă ai scoate seringa din apa fierbinte și ai lăsa-o să
+se răcească?
+
+**4.** De ce e nevoie de adeziv la orificiu?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Pistonul se deplasează în afară. Apa, mai caldă, cedează căldură aerului
+din seringă; creșterea temperaturii **intensifică agitația termică** a
+moleculelor de aer, care lovesc pistonul mai des și mai tare și îl împing.
+
+**2.** Sistemul primește căldură și efectuează lucru mecanic — chiar asta face
+un motor termic. **Sursa caldă** este apa fierbinte; **sursa rece** este aerul
+din cameră, spre care sistemul va ceda căldură la răcire.
+
+Deosebirea față de un motor adevărat: seringa lucrează **o singură dată**, nu
+ciclic.
+
+**3.** Aerul s-ar răci, agitația termică ar slăbi, iar presiunea aerului
+atmosferic ar împinge pistonul înapoi. Sistemul ar reveni aproape la poziția
+inițială — și ar fi cedat mediului căldura primită.
+
+**4.** Ca aerul din seringă să fie **închis**. Fără adeziv, aerul cald ar ieși
+pur și simplu pe orificiu, presiunea n-ar crește și pistonul n-ar simți nimic.
+
+</details>
+
+---
+
+## 3. Un plin de benzină
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Prin arderea unui kilogram de benzină se degajă aproximativ
+$4{,}4 \times 10^7\ \text{J}$. O mașină cu motor Otto, cu randamentul
+$\eta = 30\%$, are rezervorul plin cu $40\ \text{kg}$ de benzină.
+
+**1.** Ce căldură se degajă prin arderea întregului rezervor?
+
+**2.** Ce lucru mecanic poate efectua motorul cu acest combustibil?
+
+**3.** Ce căldură se pierde spre mediu?
+
+**4.** Dacă forța de rezistență la înaintare este de $600\ \text{N}$ și e
+constantă, câți kilometri poate parcurge mașina cu un plin?
+
+**5.** Ce distanță ar parcurge cu un motor Diesel de $\eta = 40\%$, la același
+rezervor?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+Q_p = 40 \times 4{,}4 \times 10^7 = 1{,}76 \times 10^9\ \text{J}
+$$
+
+**2.**
+
+$$
+L = \eta \cdot Q_p = 0{,}3 \times 1{,}76 \times 10^9 = 5{,}28 \times 10^8\ \text{J}
+$$
+
+**3.**
+
+$$
+\lvert Q_c \rvert = Q_p - L = 1{,}76 \times 10^9 - 5{,}28 \times 10^8 = 1{,}232 \times 10^9\ \text{J}
+$$
+
+Adică **peste două treimi** din energia benzinei se duce în căldură.
+
+**4.** Mașina merge uniform, deci forța motoare egalează rezistența. Lucrul
+mecanic se consumă pe distanța $d$:
+
+$$
+L = F \cdot d \quad\Longrightarrow\quad d = \frac{L}{F} = \frac{5{,}28 \times 10^8}{600} = 880\,000\ \text{m}
+$$
+
+$$
+d = 880\ \text{km}
+$$
+
+**5.**
+
+$$
+L' = 0{,}4 \times 1{,}76 \times 10^9 = 7{,}04 \times 10^8\ \text{J}
+$$
+
+$$
+d' = \frac{7{,}04 \times 10^8}{600} \approx 1\,173\,000\ \text{m} \approx 1173\ \text{km}
+$$
+
+Cu circa $293\ \text{km}$ mai mult — o treime în plus, exact cât e și raportul
+randamentelor ($40 : 30$).
+
+*Ce se învață:* fiecare punct de randament câștigat înseamnă drum în plus la
+același rezervor. De asta constructorii se luptă pentru procente.
+
+</details>

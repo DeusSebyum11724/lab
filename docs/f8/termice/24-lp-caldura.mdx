@@ -1,0 +1,196 @@
+---
+sidebar_position: 24
+sidebar_label: "LP8 — Căldura"
+slug: /f8/termice/lp8
+title: "LP8 — Căldura"
+description: "Lucrare practică: enunțuri adevărat-fals, experimentul cu calorimetrul și caloriile de pe ambalaje."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP8 — Căldura
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C8 — Căldura, mărime de proces](./22-curs-caldura.mdx)**, cu tabelele din
+**[S8](./23-s-caldura.mdx)** la îndemână. Trei probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Adevărat sau fals | — | 8 min |
+| 2 | Experimentul cu calorimetrul | ★ | 12 min |
+| 3 | Caloriile de pe ambalaj | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Adevărat sau fals
+
+— &nbsp;·&nbsp; **8 minute**
+
+Notează **A** dacă propoziția este adevărată și **F** dacă este falsă.
+Reformulează corect enunțurile false.
+
+**a)** Două corpuri sunt în echilibru termic dacă au aceeași temperatură.
+
+**b)** Temperatura este o mărime fizică de proces.
+
+**c)** Un corp care se răcește cedează căldură.
+
+**d)** Unitatea de măsură pentru căldură în Sistemul Internațional este gradul
+Kelvin.
+
+**e)** La contactul termic dintre două corpuri cu temperaturi diferite,
+temperatura corpurilor nu va fi niciodată aceeași.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) A.** Este chiar definiția echilibrului termic.
+
+**b) F.** Temperatura este o mărime fizică **de stare**. Căldura e cea de
+proces.
+
+**c) A.** Se răcește tocmai fiindcă cedează căldură — și atunci $Q < 0$.
+
+**d) F.** Unitatea căldurii în SI este **joule-ul** ($\text{J}$). Kelvinul este
+unitatea temperaturii.
+
+**e) F.** Dimpotrivă: după un timp, cele două corpuri ajung la **aceeași**
+temperatură, adică în echilibru termic. Asta se întâmplă întotdeauna, dacă sunt
+lăsate destul în contact.
+
+</details>
+
+---
+
+## 2. Experimentul cu calorimetrul
+
+★ &nbsp;·&nbsp; **12 minute**
+
+<FiguraManual
+  src="ro8-calorimetru-schema.png"
+  lat={462}
+  inalt={319}
+  latime={420}
+  eticheta="Secțiune prin calorimetru: vasul interior cu apă, vasul exterior, stratul de aer dintre ele, capacul izolator, inelul izolator, termometrul și agitatorul"
+  legenda="Calorimetrul, în secțiune."
+/>
+
+Într-un calorimetru se toarnă $150\ \text{g}$ de apă la $18\ ^\circ\text{C}$ și
+$150\ \text{g}$ de apă la $62\ ^\circ\text{C}$.
+
+**1.** Ce rol are stratul de aer dintre cele două vase? Dar agitatorul?
+
+**2.** Ce temperatură va arăta termometrul la echilibru?
+
+**3.** Elevii măsoară de fapt $38\ ^\circ\text{C}$. Cum explici deosebirea față
+de valoarea așteptată?
+
+**4.** De ce trebuie așteptat un timp înainte de a citi termometrul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Stratul de aer este un **izolator termic**: el împiedică schimbul de
+căldură între interiorul calorimetrului și mediul din jur. Fără el, o parte din
+căldură s-ar pierde în cameră, iar bilanțul n-ar mai fi corect.
+
+Agitatorul **uniformizează** temperatura în tot vasul. Fără el, ai avea apă mai
+caldă sus și mai rece jos, iar termometrul ar arăta temperatura dintr-un singur
+loc.
+
+**2.** Cantitățile fiind egale și din aceeași substanță, temperatura finală cade
+la mijloc:
+
+$$
+t = \frac{18 + 62}{2} = 40\ ^\circ\text{C}
+$$
+
+**3.** Valoarea măsurată e mai mică cu $2\ ^\circ\text{C}$. Cauzele obișnuite:
+
+- calorimetrul însuși — vasul, agitatorul, termometrul — a primit și el o parte
+  din căldură, fiindcă era mai rece la început;
+- o parte din căldură s-a pierdut totuși spre exterior, prin capac și prin
+  orificii;
+- un mic timp s-a scurs între turnare și citire.
+
+Prima cauză e cea mai importantă și tocmai ea se ia în calcul la ora următoare,
+prin **capacitatea calorică a calorimetrului**.
+
+**4.** Fiindcă echilibrul termic **nu se stabilește instantaneu**. Termometrul
+însuși trebuie să ajungă în echilibru cu apa. Citit prea devreme, el arată o
+valoare aflată încă în schimbare.
+
+</details>
+
+---
+
+## 3. Caloriile de pe ambalaj
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Pe eticheta unei tablete de ciocolată scrie: **$530\ \text{kcal}$ la
+$100\ \text{g}$**.
+
+**1.** Exprimă această energie în jouli.
+
+**2.** Un elev de $50\ \text{kg}$ urcă $10\ \text{m}$ pe scări. Ce lucru mecanic
+efectuează, cu $g = 10\ \text{N/kg}$?
+
+**3.** De câte ori ar trebui să urce scările ca să „consume" energia dintr-o
+tabletă de $100\ \text{g}$, presupunând că toată s-ar transforma în lucru
+mecanic?
+
+**4.** Randamentul mușchilor omenești este de circa $25\%$. Cum schimbă asta
+rezultatul de la punctul **3**?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+E = 530\ \text{kcal} = 530 \times 1000 \times 4{,}1868\ \text{J} \approx 2\,219\,000\ \text{J}
+$$
+
+adică peste **două milioane de jouli**, sau circa $2{,}2\ \text{MJ}$.
+
+**2.**
+
+$$
+L = G \cdot h = m g h = 50 \times 10 \times 10 = 5000\ \text{J}
+$$
+
+**3.**
+
+$$
+n = \frac{2\,219\,000}{5000} \approx 444
+$$
+
+De aproape **450 de ori** — adică vreo $4{,}4\ \text{km}$ urcați pe verticală.
+
+**4.** Organismul **nu transformă toată** energia hranei în lucru mecanic:
+restul se pierde sub formă de căldură — de aceea transpiri când urci scările.
+
+Cu un randament de $25\%$, fiecare urcare de $5000\ \text{J}$ de lucru mecanic
+consumă de fapt:
+
+$$
+E_{\text{consumată}} = \frac{5000}{0{,}25} = 20\,000\ \text{J}
+$$
+
+Deci numărul de urcări scade de patru ori:
+
+$$
+n' = \frac{2\,219\,000}{20\,000} \approx 111
+$$
+
+Rămâne mult — vreo $1{,}1\ \text{km}$ urcați pe verticală pentru o tabletă de
+ciocolată. Randamentul mic al mușchilor lucrează, aici, în favoarea ta.
+
+</details>

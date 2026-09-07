@@ -1,0 +1,162 @@
+---
+sidebar_position: 20
+sidebar_label: "S7 — Temperatura. Echilibrul termic"
+slug: /f8/termice/s7
+title: "S7 — Temperatura. Echilibrul termic"
+description: "Suport de curs: formulele de trecere între scări, deosebirea dintre mărime de stare și de proces, și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S7 — Temperatura. Echilibrul termic
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C7 — Stare de încălzire. Echilibru termic. Temperatura](./19-curs-temperatura.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP7](./21-lp-temperatura.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Trecerea | Formula |
+|---|---|
+| Celsius $\rightarrow$ kelvin | $T(\text{K}) = t(^\circ\text{C}) + 273$ |
+| kelvin $\rightarrow$ Celsius | $t(^\circ\text{C}) = T(\text{K}) - 273$ |
+| Fahrenheit $\rightarrow$ Celsius | $t(^\circ\text{C}) = \dfrac{5}{9} \left[ t(^\circ\text{F}) - 32 \right]$ |
+| Celsius $\rightarrow$ Fahrenheit | $t(^\circ\text{F}) = \dfrac{9}{5} \, t(^\circ\text{C}) + 32$ |
+
+**Punctele de reper ale scării Celsius:**
+
+| Starea | Celsius | Kelvin | Fahrenheit |
+|---|---|---|---|
+| topirea gheții | $0\ ^\circ\text{C}$ | $273\ \text{K}$ | $32\ ^\circ\text{F}$ |
+| fierberea apei | $100\ ^\circ\text{C}$ | $373\ \text{K}$ | $212\ ^\circ\text{F}$ |
+
+---
+
+## 2. Mărime de stare și mărime de proces
+
+| Mărimea | Ce descrie | Exemplu |
+|---|---|---|
+| **de stare** | cum se află corpul **într-un moment** | temperatura, masa, volumul |
+| **de proces** | ce se **întâmplă** în timpul unei transformări | căldura, lucrul mecanic |
+
+Temperatura e o mărime **de stare**: are sens să întrebi „ce temperatură are
+apa acum?". La căldură, întrebarea asta n-are sens — la ea se întreabă „câtă
+căldură a primit apa de-atunci până acum?".
+
+---
+
+## 3. De reținut
+
+- Senzația de cald sau rece e **subiectivă**; temperatura e o mărime obiectivă,
+  citită pe un instrument.
+- Termoscopul **compară** stări de încălzire; termometrul le **măsoară**, fiindcă
+  are o scară.
+- La echilibru termic, corpurile au **aceeași temperatură**, nu aceeași căldură.
+- Diferența dintre două temperaturi este **aceeași** în Celsius și în kelvin: o
+  creștere de $10\ ^\circ\text{C}$ este o creștere de $10\ \text{K}$.
+- $273$ se **adună**, nu se înmulțește. E cea mai deasă greșeală la
+  transformări.
+- Termometrul arată propria lui temperatură. El e bun tocmai fiindcă, după
+  echilibru, ea e egală cu a corpului măsurat.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+**a)** Pentru temperaturile de $25\ ^\circ\text{C}$ și $-3\ ^\circ\text{C}$,
+determină valorile în scările Kelvin și Fahrenheit.
+
+**b)** Exprimă temperatura de $122\ ^\circ\text{F}$ în grade Celsius.
+
+**c)** Un corp se încălzește de la $20\ ^\circ\text{C}$ la $50\ ^\circ\text{C}$.
+Cu câți kelvini i-a crescut temperatura?
+
+### Pasul 1 — Ce se dă
+
+Trei temperaturi de transformat și o variație de exprimat.
+
+### Pasul 2 — Din Celsius în kelvin
+
+$$
+T = t + 273
+$$
+
+$$
+T_1 = 25 + 273 = 298\ \text{K}
+$$
+
+$$
+T_2 = -3 + 273 = 270\ \text{K}
+$$
+
+Amândouă ies pozitive — și așa trebuie: scara Kelvin nu are valori negative.
+
+### Pasul 3 — Din Celsius în Fahrenheit
+
+$$
+t(^\circ\text{F}) = \frac{9}{5} \, t(^\circ\text{C}) + 32
+$$
+
+$$
+t_1 = \frac{9}{5} \times 25 + 32 = 45 + 32 = 77\ ^\circ\text{F}
+$$
+
+$$
+t_2 = \frac{9}{5} \times (-3) + 32 = -5{,}4 + 32 = 26{,}6\ ^\circ\text{F}
+$$
+
+### Pasul 4 — Din Fahrenheit în Celsius
+
+$$
+t(^\circ\text{C}) = \frac{5}{9} \left[ t(^\circ\text{F}) - 32 \right]
+$$
+
+$$
+t = \frac{5}{9} \, (122 - 32) = \frac{5}{9} \times 90 = 50\ ^\circ\text{C}
+$$
+
+### Pasul 5 — Variația de temperatură
+
+$$
+\Delta t = 50 - 20 = 30\ ^\circ\text{C}
+$$
+
+În kelvini:
+
+$$
+\Delta T = (50 + 273) - (20 + 273) = 323 - 293 = 30\ \text{K}
+$$
+
+**Aceeași valoare.** Cei $273$ se scad între ei și dispar — de aceea o
+**variație** de temperatură are același număr în Celsius și în kelvini.
+
+### Pasul 6 — Verificarea
+
+$-3\ ^\circ\text{C}$ a ieșit $26{,}6\ ^\circ\text{F}$, adică **sub** $32$ —
+corect, fiindcă $32\ ^\circ\text{F}$ e chiar punctul de îngheț. Iar
+$122\ ^\circ\text{F}$ a ieșit $50\ ^\circ\text{C}$, între $32$ și $212$, deci
+între $0$ și $100$. Se potrivește.
+
+### Răspuns
+
+**a)** $25\ ^\circ\text{C} = 298\ \text{K} = 77\ ^\circ\text{F}$;
+$-3\ ^\circ\text{C} = 270\ \text{K} = 26{,}6\ ^\circ\text{F}$;
+**b)** $50\ ^\circ\text{C}$; **c)** $30\ \text{K}$.
+
+---
+
+:::note Ora următoare
+
+**[LP7 — Temperatura și echilibrul termic](./21-lp-temperatura.mdx).** Trei
+probe, în total 32 de minute.
+
+:::
