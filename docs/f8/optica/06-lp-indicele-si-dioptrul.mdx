@@ -1,28 +1,28 @@
 ---
 sidebar_position: 6
-sidebar_label: "LP2 — Indicele de refracție și dioptrul"
+sidebar_label: "LP2 — Indicele de refracție și suprafața de separare"
 slug: /f8/optica/lp2
-title: "LP2 — Indicele de refracție și dioptrul"
-description: "Lucrare practică: semidiscul de plexiglas, tabelul sinusurilor și constatarea că raportul sinusurilor este constant."
+title: "LP2 — Indicele de refracție și suprafața de separare"
+description: "Lucrare practică: semidiscul de plexiglas, compararea mediilor după indicele lor, calculul vitezei luminii într-un mediu și paiul care pare frânt."
 ---
 
 import { FigSemidisc } from '@site/src/components/Schema/reflexie-refractie';
-import { FiguraManual } from '@site/src/components/Schema/FiguraManual';
 
-# LP2 — Indicele de refracție și dioptrul
+# LP2 — Indicele de refracție și suprafața de separare
 
 :::info Ora de lucru practic
 
 Se lucrează pe noțiunile din
 **[C2 — Indicele de refracție și dioptrul](./04-curs-indicele-si-dioptrul.mdx)**,
-cu formulele din **[S2](./05-s-indicele-si-dioptrul.mdx)** la îndemână. Trei
-probe, cu timpul de lucru al fiecăreia; în total 30 de minute.
+cu formulele din **[S2](./05-s-indicele-si-dioptrul.mdx)** la îndemână. Patru
+probe; în total 50 de minute.
 
 | # | Proba | Dificultate | Timp |
 |---|-------|-------------|------|
-| 1 | Completează frazele | ★ | 5 min |
+| 1 | Completează frazele | ★ | 10 min |
 | 2 | Semidiscul de plexiglas | ★★ | 15 min |
-| 3 | Cuva de refracție | ★ | 10 min |
+| 3 | Compară mediile | ★★ | 10 min |
+| 4 | Paiul care pare frânt | ★★★ | 15 min |
 
 Rezolvarea fiecărei probe e ascunsă sub ea. Deschide-o abia după ce ai scris
 răspunsul tău.
@@ -31,56 +31,52 @@ răspunsul tău.
 
 ---
 
-## Tabelul sinusurilor
-
-Îl vei folosi la fiecare probă de aici încolo. Se citește în ambele sensuri: fie
-pornești de la unghi și cauți sinusul, fie pornești de la sinus și cauți unghiul.
-
-| Unghi | sin | Unghi | sin |
-|---|---|---|---|
-| 0° | 0,000 | 50° | 0,766 |
-| 5° | 0,087 | 55° | 0,819 |
-| 10° | 0,174 | 60° | 0,866 |
-| 15° | 0,259 | 65° | 0,906 |
-| 20° | 0,342 | 70° | 0,940 |
-| 25° | 0,423 | 75° | 0,966 |
-| 30° | 0,500 | 80° | 0,985 |
-| 35° | 0,574 | 85° | 0,996 |
-| 40° | 0,643 | 90° | 1,000 |
-| 45° | 0,707 | | |
-
-Când unghiul de care ai nevoie cade între două rânduri, valoarea lui este dată
-în enunț.
-
----
-
 ## 1. Completează frazele
 
-**Liceul Jacques Decour, Paris** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **5 minute**
+★ &nbsp;·&nbsp; **10 minute**
 
-**1.** Schimbarea de direcție pe care o suferă lumina când își schimbă mediul de
-propagare se numește … .
+**1.** Completează cu: *încetinește · nu poate fi mai mic decât 1 · viteza
+luminii în vid · suprafața de separare*.
 
-**2.** Pentru o radiație dată, un mediu transparent este caracterizat printr-un
-număr numit … .
+**a.** Indicele de refracție al unui mediu se află împărțind … (1) … la viteza
+luminii în acel mediu.
 
-**3.** Unghiul de incidență este unghiul dintre raza incidentă și … la dioptru.
+**b.** Indicele de refracție … (2) …, fiindcă lumina nu merge nicăieri mai
+repede decât în vid.
 
-**4.** Adevărat sau fals: un dioptru este o suprafață de separare între două
-medii cu indici egali.
+**c.** Cu cât indicele unui mediu este mai mare, cu atât mediul … (3) … mai mult
+lumina.
+
+**d.** Refracția are loc la … (4) … dintre două medii transparente.
+
+**2.** Scrie, pentru fiecare propoziție, „Adevărat” sau „Fals”.
+
+**a.** Indicele de refracție are ca unitate metrul.
+
+**b.** Indicele apei ($1{,}33$) este mai mare decât al aerului ($1{,}00$).
+
+**c.** În diamant lumina merge mai repede decât în apă.
 
 <details>
 <summary>Rezolvare</summary>
 
-**1.** … se numește **refracție**.
+**1. a.** … **viteza luminii în vid** … &nbsp;·&nbsp; **b.** … **nu poate fi
+mai mic decât 1** … &nbsp;·&nbsp; **c.** … **încetinește** … &nbsp;·&nbsp;
+**d.** … **suprafața de separare** …
 
-**2.** … un număr numit **indice de refracție**.
+**2. a. Fals.** Indicele de refracție este un cât de două viteze, deci este un
+număr **fără unitate**.
 
-**3.** … și **normala** la dioptru.
+**2. b. Adevărat.**
 
-**4.** *Fals.* Indicii celor două medii trebuie să fie **diferiți**. Dacă ar fi
-egali, lumina ar trece mai departe fără să se abată și n-ar exista nicio
-suprafață de separare de care să ne pese.
+**2. c. Fals.** Diamantul are $n = 2{,}42$, apa are $n = 1{,}33$. Indicele mai
+mare înseamnă viteză **mai mică**:
+
+$$
+v = \frac{c}{n}
+$$
+
+deci în diamant lumina merge mai **încet** decât în apă.
 
 </details>
 
@@ -97,88 +93,155 @@ Un semidisc de plexiglas se așază pe un disc gradat, cu fața plană pe diamet
 <FigSemidisc />
 
 La ieșirea prin fața curbă raza merge chiar pe o rază a cercului, deci cade
-perpendicular pe suprafață: are incidență normală și nu mai este deviată a doua
-oară. Tot ce se vede în afară vine, așadar, de la o singură refracție.
+perpendicular pe suprafață: nu mai este deviată a doua oară. Tot ce se vede în
+afară vine, așadar, de la **o singură** refracție.
 
-**1.** Măsoară unghiul de refracție $i_2$ pentru unghiurile de incidență din
-tabel.
+Măsurătorile dau:
 
-**2.** Completează coloanele cu sinusurile și calculează raportul
-$\dfrac{\sin i_1}{\sin i_2}$ pentru fiecare linie.
+| Unghiul de incidență $i_1$ | 20° | 30° | 40° | 50° | 60° |
+|---|---|---|---|---|---|
+| Unghiul de refracție $i_2$ | 13° | 20° | 25° | 31° | 35° |
 
-**3.** Ce constați? Ce mărime ai măsurat, de fapt?
+**1.** Compară, pentru fiecare pereche, unghiul de refracție cu cel de
+incidență. Ce constați?
+
+**2.** Se apropie raza de normală sau se depărtează de ea când intră în
+plexiglas?
+
+**3.** Ce spune asta despre indicele plexiglasului față de cel al aerului?
+
+**4.** De ce a fost aleasă o piesă cu fața curbă, și nu una dreptunghiulară?
 
 <details>
 <summary>Rezolvare</summary>
 
-**1. și 2.** Măsurătorile și calculele dau:
+**1.** Unghiul de refracție este de fiecare dată **mai mic** decât cel de
+incidență: $13 < 20$, $20 < 30$, $25 < 40$, $31 < 50$, $35 < 60$.
 
-| $i_1$ | $i_2$ | $\sin i_1$ | $\sin i_2$ | $\dfrac{\sin i_1}{\sin i_2}$ |
-|---|---|---|---|---|
-| 20° | 13° | 0,342 | 0,225 | 1,52 |
-| 30° | 20° | 0,500 | 0,342 | 1,46 |
-| 40° | 25° | 0,643 | 0,423 | 1,52 |
-| 50° | 31° | 0,766 | 0,515 | 1,49 |
-| 60° | 35° | 0,866 | 0,574 | 1,51 |
+**2.** Se **apropie de normală**. Normala este perpendiculara pe suprafață; un
+unghi mai mic față de ea înseamnă o rază mai apropiată de ea.
 
-**3.** Unghiul de refracție este de fiecare dată mai mic decât cel de incidență:
-raza se apropie de normală când intră în plexiglas. Raportul sinusurilor rămâne
-însă, în limita preciziei măsurătorilor, mereu **același număr**, aproximativ
-$1{,}5$.
+**3.** Că plexiglasul are indicele **mai mare** decât aerul. Regula este:
 
-Numărul acesta nu depinde de unghiul sub care trimitem raza, ci numai de
-materialul semidiscului: el este **indicele de refracție al plexiglasului**.
+| Când lumina trece | Raza |
+|---|---|
+| dintr-un mediu cu $n$ mic într-unul cu $n$ mare | **se apropie** de normală |
+| dintr-un mediu cu $n$ mare într-unul cu $n$ mic | **se depărtează** de normală |
+
+**4.** Fiindcă la ieșirea prin fața curbă raza merge chiar de-a lungul unei raze
+a cercului, deci cade **perpendicular** pe suprafață și nu mai este deviată. Cu
+o piesă dreptunghiulară, raza s-ar fi refractat **de două ori** — la intrare și
+la ieșire — iar din unghiurile măsurate n-am mai fi putut spune ce se datorează
+fiecărei suprafețe.
+
+Aceasta este chiar regula unui singur lucru schimbat, aplicată la geometrie.
 
 </details>
 
 ---
 
-## 3. Cuva de refracție
+## 3. Compară mediile
 
-**Liceul Bergson, Paris** &nbsp;·&nbsp; ★ &nbsp;·&nbsp; **10 minute**
+★★ &nbsp;·&nbsp; **10 minute**
 
-Se umple o cuvă de refracție cu un lichid transparent, cu indicele de refracție
-$n$. Un fascicul luminos care face un unghi de incidență $i = 60^\circ$ cu fața
-plană a cuvei este refractat în lichid. Unghiul de refracție măsurat este
-$i' = 42^\circ$.
+| Mediul | vid | aer | apă | sticlă | diamant |
+|---|---|---|---|---|---|
+| $n$ | 1 | 1,00 | 1,33 | 1,5 | 2,42 |
 
-**Se dă:** $\sin 42^\circ = 0{,}669$; indicele aerului este $1{,}00$.
+**1.** În care dintre aceste medii merge lumina cel mai repede? În care cel mai
+încet?
 
-**1.** Fă o schemă clară a dispozitivului experimental și pune pe ea unghiurile
-$i$ și $i'$.
+**2.** Calculează viteza luminii în apă, luând $c = 300\,000$ km/s.
 
-**2.** Calculează indicele de refracție al lichidului.
+**3.** Calculează-o în diamant.
+
+**4.** De câte ori merge lumina mai încet în diamant decât în apă?
 
 <details>
 <summary>Rezolvare</summary>
 
-**1.** Dispozitivul experimental arată așa:
+**1.** Cel mai repede în **vid** ($n = 1$, deci $v = c$); cel mai încet în
+**diamant** ($n = 2{,}42$, cel mai mare indice).
 
-<FiguraManual
-  src="c05-cuva-rezolvare.png"
-  lat={396}
-  inalt={293}
-  latime={280}
-  eticheta="Cuvă de refracție semicirculară: fasciculul intră prin fața plană cu 60° și se refractă cu 42°"
-  legenda="Fasciculul intră prin fața plană a cuvei și se refractă în lichid."
-/>
-
-**2.** Raportul sinusurilor la trecerea dioptrului aer/lichid este chiar
-indicele lichidului:
+**2.**
 
 $$
-n_{\text{aer}} \times \sin 60^\circ = n \times \sin 42^\circ
+v = \frac{c}{n} = \frac{300\,000}{1{,}33} \approx 225\,000\ \text{km/s}
 $$
 
-de unde
+**3.**
 
 $$
-n = n_{\text{aer}} \times \frac{\sin 60^\circ}{\sin 42^\circ}
-= 1{,}00 \times \frac{0{,}866}{0{,}669} = 1{,}3
+v = \frac{300\,000}{2{,}42} \approx 124\,000\ \text{km/s}
 $$
 
-Lichidul are indicele de refracție $1{,}3$ — foarte aproape de indicele apei.
+**4.**
+
+$$
+\frac{225\,000}{124\,000} \approx 1{,}8
+$$
+
+Sau, mai scurt, direct din indici:
+
+$$
+\frac{2{,}42}{1{,}33} \approx 1{,}8
+$$
+
+Cele două căi dau același rezultat, fiindcă viteza este invers proporțională cu
+indicele.
 
 </details>
 
 ---
+
+## 4. Paiul care pare frânt
+
+★★★ &nbsp;·&nbsp; **15 minute**
+
+Un pai băgat oblic într-un pahar cu apă pare frânt la suprafața apei.
+
+**1.** De ce pare frânt?
+
+**2.** Pare el frânt și dacă îl bagi **drept în jos**, perpendicular pe
+suprafață? Lămurește.
+
+**3.** Un pește văzut de pe mal pare mai sus sau mai jos decât este de fapt? Ce
+înseamnă asta pentru cine pescuiește cu sulița?
+
+**4.** Un elev spune că paiul „chiar se îndoaie în apă”. Cum îi dovedești că nu?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Fiindcă razele care pleacă de la partea scufundată a paiului **se
+refractă** la suprafața apei: trecând din apă ($n = 1{,}33$) în aer
+($n = 1{,}00$), ele se **depărtează de normală**.
+
+Ochiul nostru nu știe asta: el presupune întotdeauna că lumina a venit în linie
+dreaptă. Prelungind razele înapoi, el așază capătul paiului în altă parte decât
+este — și paiul pare rupt exact la suprafață, adică acolo unde se face
+refracția.
+
+**2.** **Nu.** Băgat perpendicular pe suprafață, paiul merge chiar de-a lungul
+normalei. O rază care cade pe suprafață sub incidență normală **nu este
+deviată**, deci nimic nu se schimbă în drumul luminii și paiul pare drept.
+
+Aceasta este și proba cea mai simplă că fenomenul ține de refracție, nu de pai.
+
+**3.** Peștele pare **mai sus** decât este. Din aceeași pricină: razele care
+pleacă de la el se depărtează de normală la ieșirea din apă, iar ochiul le
+prelungește înapoi în linie dreaptă, ajungând deasupra locului adevărat.
+
+Cine pescuiește cu sulița trebuie deci să **țintească mai jos** decât vede.
+
+**4.** Prin trei observații, oricare dintre ele fiind de ajuns:
+
+- **scoate paiul** din apă: el este drept;
+- **bagă-l perpendicular**: nu mai pare frânt, deși e același pai;
+- **privește-l din alt unghi**: locul unde pare frânt se schimbă odată cu
+  poziția ochiului — un pai chiar îndoit s-ar vedea la fel de oriunde.
+
+Ultima este cea mai puternică: dacă înfățișarea atârnă de unde stă privitorul,
+atunci ea ține de drumul luminii, nu de obiect.
+
+</details>

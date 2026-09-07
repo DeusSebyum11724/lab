@@ -22,17 +22,23 @@ import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
 
 ---
 
-## 1. Lungimea de undă hotărăște culoarea
+## 1. Fiecare radiație are culoarea ei
 
-Lumina este o undă a cărei **lungime de undă** ($\lambda$) hotărăște culoarea.
+Lumina albă nu este simplă: ea este alcătuită din mai multe **radiații**, iar
+ochiul vede fiecare radiație ca pe o culoare. Radiațiile se așază într-o
+**ordine statornică**, de la violet la roșu — aceeași ordine pe care o vezi în
+curcubeu.
+
+Fiecare radiație este însemnată printr-un număr, măsurat în **nanometri**
+($\text{nm}$), care crește de la violet spre roșu.
 
 <FiguraManual
   src="r7-spectru.png"
   lat={890}
   inalt={90}
   latime={720}
-  eticheta="Scara lungimilor de undă de la 400 la 700 nanometri, cu culorile corespunzătoare"
-  legenda="Lungimea de undă, în nanometri, și culoarea pe care o vedem."
+  eticheta="Banda radiațiilor vizibile, de la 400 la 700 nanometri, cu culorile corespunzătoare"
+  legenda="Radiațiile vizibile, în nanometri, și culoarea pe care o vedem."
 >
   <Et x={72} y={46} w={68} h={20} corp={13} culoare="#7b3fa0">violet</Et>
   <Et x={191} y={46} w={78} h={19} corp={13} culoare="#2b6fb5">albastru</Et>
@@ -46,8 +52,8 @@ Lumina este o undă a cărei **lungime de undă** ($\lambda$) hotărăște culoa
 
 ## 2. Lumina albă și culorile primare
 
-Lumina albă conține toate radiațiile vizibile
-($400\ \text{nm} < \lambda < 700\ \text{nm}$), adică toate culorile. Ea poate fi
+Lumina albă conține **toate radiațiile vizibile** — de la $400$ la
+$700\ \text{nm}$ — adică toate culorile. Ea poate fi
 recompusă asociind fascicule de lumină **roșie, verde și albastră**; aceste trei
 culori se numesc **culori primare**.
 
