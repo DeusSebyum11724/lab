@@ -1,0 +1,137 @@
+---
+sidebar_position: 23
+sidebar_label: "S8 — Energia potențială elastică"
+slug: /f7/lucru/s8
+title: "S8 — Energia potențială elastică"
+description: "Suport de curs: formula energiei potențiale elastice, cele trei feluri de energie mecanică și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S8 — Energia potențială elastică
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C8 — Energia potențială elastică](./22-curs-energia-potentiala-elastica.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP8](./24-lp-energia-potentiala-elastica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Energia potențială elastică | $E_{pe}$ | $E_{pe} = \dfrac{k \, (\Delta l)^2}{2}$ | joule, $\text{J}$ |
+| Lucrul forței elastice la destindere | $L$ | $L = E_{pe}$ | joule, $\text{J}$ |
+| Forța elastică | $F_e$ | $F_e = k \cdot \Delta l$ | newton, $\text{N}$ |
+| Aria de sub graficul $F_e(\Delta l)$ | $A$ | $A = \dfrac{F_e \cdot \Delta l}{2}$ | joule, $\text{J}$ |
+
+---
+
+## 2. Cele trei feluri de energie mecanică
+
+| Energia | Formula | De ce depinde |
+|---|---|---|
+| cinetică | $E_c = \dfrac{m v^2}{2}$ | de viteză |
+| potențială gravitațională | $E_p = m g h$ | de înălțime |
+| potențială elastică | $E_{pe} = \dfrac{k (\Delta l)^2}{2}$ | de deformare |
+
+Toate trei se măsoară în **jouli** și toate trei intră în energia mecanică
+totală a unui sistem.
+
+Cele două formule cu pătrat se aseamănă la scris, dar nu le confunda: la
+energia cinetică se ridică la pătrat **viteza**, la cea elastică **deformarea**.
+
+---
+
+## 3. De reținut
+
+- Un resort nedeformat are $E_{pe} = 0$, oricât de tare ar fi el.
+- Nu contează dacă resortul e întins sau comprimat: $\Delta l$ intră la pătrat,
+  deci energia iese pozitivă în amândouă cazurile.
+- Deformare dublă $\Rightarrow$ energie de patru ori mai mare.
+- Când resortul se destinde, energia lui potențială elastică se transformă în
+  energie cinetică a corpului lansat.
+- $\Delta l$ se trece **în metri** înainte de ridicarea la pătrat. O comprimare
+  de $2\ \text{cm}$ înseamnă $0{,}02\ \text{m}$, iar pătratul ei este
+  $0{,}0004\ \text{m}^2$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un resort elastic cu constanta $k = 20\ \text{N/m}$ este comprimat cu
+$\Delta l = 1\ \text{cm}$ și apoi se destinde.
+
+**a)** Care este lucrul mecanic al forței elastice în timpul acestei
+destinderi?
+
+**b)** De câte ori se mărește lucrul mecanic al forței elastice dacă se mărește
+comprimarea de două ori?
+
+### Pasul 1 — Ce se dă
+
+- $k = 20\ \text{N/m}$;
+- $\Delta l = 1\ \text{cm}$.
+
+### Pasul 2 — Trecem în unități SI
+
+$$
+\Delta l = 1\ \text{cm} = 0{,}01\ \text{m} = 10^{-2}\ \text{m}
+$$
+
+### Pasul 3 — Ce formulă folosim
+
+La destindere, resortul cedează toată energia lui potențială elastică, deci
+lucrul mecanic al forței elastice este egal cu energia acumulată:
+
+$$
+L = E_{pe} = \frac{k \, (\Delta l)^2}{2}
+$$
+
+### Pasul 4 — Calculul
+
+$$
+L = \frac{20 \times (10^{-2})^2}{2} = \frac{20 \times 10^{-4}}{2} = 10 \times 10^{-4} = 10^{-3}\ \text{J}
+$$
+
+Adică $0{,}001\ \text{J}$, sau un milijoule.
+
+### Pasul 5 — Cu comprimarea dublă
+
+Noua comprimare este $\Delta l' = 2\ \text{cm} = 2 \times 10^{-2}\ \text{m}$:
+
+$$
+L' = \frac{20 \times (2 \times 10^{-2})^2}{2} = \frac{20 \times 4 \times 10^{-4}}{2} = 4 \times 10^{-3}\ \text{J}
+$$
+
+Raportul:
+
+$$
+\frac{L'}{L} = \frac{4 \times 10^{-3}}{10^{-3}} = 4
+$$
+
+### Pasul 6 — Verificarea
+
+Rezultatul se putea vedea și fără calcul: deformarea intră la pătrat, deci
+dublând-o, energia se face de $2^2 = 4$ ori mai mare. Calculul confirmă
+raționamentul.
+
+### Răspuns
+
+**a)** $L = 10^{-3}\ \text{J}$; **b)** de **4 ori** mai mare.
+
+---
+
+:::note Ora următoare
+
+**[LP8 — Energia potențială elastică](./24-lp-energia-potentiala-elastica.mdx).**
+Trei probe, în total 34 de minute.
+
+:::

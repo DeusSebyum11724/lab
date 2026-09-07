@@ -1,0 +1,153 @@
+---
+sidebar_position: 17
+sidebar_label: "S6 — Puterea mecanică"
+slug: /f7/lucru/s6
+title: "S6 — Puterea mecanică"
+description: "Suport de curs: formulele puterii, wattul și calul-putere, și un exercițiu rezolvat pas cu pas cu o macara."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S6 — Puterea mecanică
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C6 — Puterea mecanică. Unități de măsură ale puterii](./16-curs-puterea-mecanica.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP6](./18-lp-puterea-mecanica.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Puterea mecanică medie | $P_m$ | $P_m = \dfrac{L}{\Delta t}$ | watt, $\text{W}$ |
+| Puterea la viteză constantă | $P$ | $P = F \cdot v$ | watt, $\text{W}$ |
+| Lucrul mecanic, din putere | $L$ | $L = P \cdot \Delta t$ | joule, $\text{J}$ |
+| Timpul, din putere | $\Delta t$ | $\Delta t = \dfrac{L}{P}$ | secundă, $\text{s}$ |
+
+**Legătura dintre unități:**
+
+$$
+1\ \text{W} = 1\ \frac{\text{J}}{\text{s}} \qquad\qquad 1\ \text{CP} = 736\ \text{W}
+$$
+
+---
+
+## 2. Unități care se încurcă des
+
+| Se scrie | Ce este | Nu confunda cu |
+|---|---|---|
+| $\text{W}$ | wattul, unitate de **putere** | $\text{J}$, unitate de energie |
+| $\text{Wh}$ | wattul-oră, unitate de **energie** | $\text{W}$ |
+| $\text{CP}$ | calul-putere, unitate de **putere** | nu e din SI |
+
+Un aparat de $300\ \text{W}$ lăsat să meargă o oră consumă
+$300\ \text{Wh}$ de energie — adică $300 \times 3600 = 1\,080\,000\ \text{J}$.
+
+---
+
+## 3. De reținut
+
+- Puterea este o mărime **scalară**: n-are direcție și n-are sens.
+- Timpul se trece în **secunde**, nu în minute sau ore: o oră înseamnă
+  $3600\ \text{s}$.
+- $P = F v$ merge **numai** la mișcare uniformă, cu forța pe direcția și în
+  sensul vitezei.
+- Puterea mare nu înseamnă lucru mecanic mare, ci lucru mecanic **făcut repede**.
+- Când un corp urcă uniform, forța motoare învinge greutatea și frecările; la
+  putere se folosește **forța motoare**, nu greutatea singură.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O macara ridică uniform un corp cu masa de $400\ \text{kg}$. În $30\ \text{s}$,
+corpul ajunge la înălțimea $h = 20\ \text{m}$. Se cunoaște
+$g = 10\ \text{N/kg}$.
+
+<FiguraManual
+  src="ro-macara.png"
+  lat={436}
+  inalt={336}
+  latime={360}
+  eticheta="Brațul unei macarale ridicând, pe cer senin, o încărcătură prinsă în chingi"
+  legenda="Macara. Sarcina urcă uniform, pe verticală."
+/>
+
+**a)** Calculează lucrul mecanic dezvoltat de motorul macaralei.
+
+**b)** Calculează puterea mecanică dezvoltată de motorul macaralei.
+
+### Pasul 1 — Ce se dă
+
+- $m = 400\ \text{kg}$;
+- $h = 20\ \text{m}$;
+- $\Delta t = 30\ \text{s}$;
+- $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Ce se cere
+
+$L$ și $P$.
+
+### Pasul 3 — Ce forță face lucrul mecanic
+
+Corpul urcă **uniform**, deci forța de tracțiune a cablului echilibrează
+greutatea:
+
+$$
+F = G = m g = 400 \times 10 = 4000\ \text{N}
+$$
+
+### Pasul 4 — Lucrul mecanic
+
+Forța e pe direcția și în sensul deplasării, iar deplasarea este $h$:
+
+$$
+L = F \cdot h = 4000 \times 20 = 80\,000\ \text{J} = 80\ \text{kJ}
+$$
+
+### Pasul 5 — Puterea
+
+$$
+P = \frac{L}{\Delta t} = \frac{80\,000}{30} \approx 2667\ \text{W}
+$$
+
+Adică aproximativ $2{,}7\ \text{kW}$.
+
+### Pasul 6 — Verificarea
+
+Se poate ajunge la același rezultat și pe drumul celălalt. Viteza de urcare:
+
+$$
+v = \frac{h}{\Delta t} = \frac{20}{30} \approx 0{,}67\ \text{m/s}
+$$
+
+$$
+P = F v = 4000 \times 0{,}67 \approx 2667\ \text{W}
+$$
+
+Cele două căi dau același număr, deci calculul e bun.
+
+În cai-putere, asta ar însemna $2667 : 736 \approx 3{,}6\ \text{CP}$ — cât un
+motor de motoretă. Macaralele urcă greutăți mari **încet**, tocmai ca să nu
+ceară puteri uriașe.
+
+### Răspuns
+
+$L = 80\,000\ \text{J}$ și $P \approx 2667\ \text{W}$.
+
+---
+
+:::note Ora următoare
+
+**[LP6 — Puterea mecanică](./18-lp-puterea-mecanica.mdx).** Trei probe, în total
+32 de minute.
+
+:::

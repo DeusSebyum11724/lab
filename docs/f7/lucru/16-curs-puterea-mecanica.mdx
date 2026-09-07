@@ -1,0 +1,210 @@
+---
+sidebar_position: 16
+sidebar_label: "C6 — Puterea mecanică"
+slug: /f7/lucru/c6
+title: "C6 — Puterea mecanică. Unități de măsură ale puterii"
+description: "Puterea mecanică medie ca raport dintre lucrul mecanic și timp, wattul și calul-putere, și relația P = F·v."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C6 — Puterea mecanică. Unități de măsură ale puterii
+
+:::info Planul orei
+
+1. Din experiența ta
+2. De ce nu ajunge lucrul mecanic
+3. Puterea mecanică medie
+4. Wattul
+5. Calul-putere
+6. Puterea la viteză constantă
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+Dan și Andreea au ieșit la o plimbare cu bicicleta și au hotărât să facă un
+experiment. Fiecare a parcurs **aceeași distanță**, pedalând astfel încât să se
+deplaseze rectiliniu uniform, cu viteza maximă posibilă. Pentru a pune în
+mișcare bicicleta cu viteză constantă, amândoi au avut de învins **aceleași**
+forțe de rezistență la înaintare.
+
+Măsurând timpul în care au parcurs distanța, au constatat că **Dan a fost mai
+rapid** decât Andreea. Andreea a considerat că Dan este mai „puternic" decât ea.
+Tu ce crezi?
+
+<FiguraManual
+  src="ro-biciclete.png"
+  lat={439}
+  inalt={347}
+  latime={380}
+  eticheta="Doi copii cu căști de protecție, pe biciclete, într-o zi însorită"
+  legenda="Biciclete. Aceeași distanță, aceleași forțe de învins — dar nu același timp."
+/>
+
+**A.** Cum sunt forțele cu care fiecare copil acționează asupra bicicletei, dacă
+acestea se deplasează uniform?
+
+**a)** egale; **b)** forța lui Dan e mai mare; **c)** forța Andreei e mai mare.
+
+**B.** Lucrul mecanic al forței lui Dan față de lucrul mecanic al forței Andreei
+este: **a)** mai mic; **b)** mai mare; **c)** egal.
+
+**C.** Compară raportul $L_F / \Delta t$ pentru fiecare copil. Ce ai constatat?
+
+---
+
+## 2. De ce nu ajunge lucrul mecanic
+
+În exemplul de mai sus, forțele de tracțiune exercitate de cei doi copii sunt
+egale și, de asemenea, lucrul mecanic dezvoltat de ele. Ce diferă este
+**raportul dintre lucrul mecanic și intervalul de timp** în care s-a efectuat.
+
+În activitățile practice, timpul în care un motor efectuează un anumit lucru
+mecanic prezintă o importanță deosebită. Dacă o mașină poate accelera din repaus
+până la $100\ \text{km/h}$ în $10\ \text{s}$, spunem că este **mai puternică**
+decât altă mașină care ajunge tot la $100\ \text{km/h}$, dar în
+$20\ \text{s}$.
+
+<FiguraManual
+  src="ro-masini.png"
+  lat={439}
+  inalt={185}
+  latime={400}
+  eticheta="Un monopost roșu de Formula 1 alături de o berlină neagră de oraș"
+  legenda="Aceleași drumuri, alt timp: de aici vine deosebirea dintre cele două mașini."
+/>
+
+---
+
+## 3. Puterea mecanică medie
+
+:::danger Definiția 1
+
+**Puterea mecanică medie** $P_m$ este mărimea fizică **scalară** egală cu
+raportul dintre lucrul mecanic $L$ efectuat de o forță și intervalul de timp în
+care se efectuează acel lucru mecanic:
+
+$$
+P_m = \frac{L}{\Delta t}
+$$
+
+:::
+
+Puterea nu spune **cât** lucru mecanic se face, ci **cât de repede** se face.
+Doi hamali care urcă același pian la etaj fac același lucru mecanic; cel care îl
+urcă în jumătate de timp dezvoltă o putere de două ori mai mare.
+
+---
+
+## 4. Wattul
+
+Unitatea de măsură în SI pentru putere este **wattul**, notat $\text{W}$:
+
+$$
+[P_m]_{SI} = \frac{[L]_{SI}}{[\Delta t]_{SI}} = \frac{\text{J}}{\text{s}} = \text{W}
+$$
+
+:::tip De reținut
+
+Un **watt** este puterea unei forțe care efectuează un lucru mecanic de un joule
+în timp de o secundă.
+
+:::
+
+---
+
+## 5. Calul-putere
+
+În practică se folosește și altă unitate de măsură, numită **cal-putere**,
+notată $\text{CP}$:
+
+$$
+1\ \text{CP} = 736\ \text{W}
+$$
+
+Această unitate este folosită mai ales de constructorii de automobile.
+Automobilele obișnuite au puteri de $50$, $110$ sau $130\ \text{CP}$, în timp ce
+un automobil de Formula 1 ajunge și la $1000\ \text{CP}$.
+
+<FiguraManual
+  src="ro-formula1.png"
+  lat={214}
+  inalt={306}
+  latime={230}
+  eticheta="Un monopost roșu de Formula 1 văzut din față, în viraj"
+  legenda="Automobil de Formula 1."
+/>
+
+:::warning Atenție
+
+Calul-putere **nu** este o unitate din SI. La calcule se trece întotdeauna în
+watti; se lasă în cai-putere numai când răspunsul se cere așa.
+
+:::
+
+---
+
+## 6. Puterea la viteză constantă
+
+Să considerăm o forță constantă $F$ care acționează asupra unui corp, orientată
+pe direcția și în sensul mișcării. Sub acțiunea ei, corpul se deplasează cu
+viteza constantă $v$.
+
+<FiguraManual
+  src="ro-corp-miscare-putere.png"
+  lat={439}
+  inalt={284}
+  latime={430}
+  eticheta="Un om împinge o ladă pe o suprafață orizontală; forța F e orientată înainte, forța de frecare Ff înapoi, viteza e constantă, iar deplasarea d e marcată între poziția inițială și cea finală"
+  legenda="Corp în mișcare rectilinie uniformă sub acțiunea unei forțe constante."
+/>
+
+Lucrul mecanic al forței pe deplasarea $d$ este:
+
+$$
+L = F \cdot d
+$$
+
+Mișcarea fiind uniformă, deplasarea se scrie $d = v \cdot \Delta t$, deci:
+
+$$
+L = F \cdot v \cdot \Delta t
+$$
+
+Împărțim la $\Delta t$ și obținem puterea:
+
+$$
+P = \frac{L}{\Delta t} = \frac{F \, v \, \Delta t}{\Delta t}
+$$
+
+:::danger Definiția 2
+
+Dacă viteza corpului este constantă și orientată pe aceeași direcție și în
+același sens cu forța constantă care acționează asupra lui, puterea mecanică
+dezvoltată de forță se scrie:
+
+$$
+P = F \cdot v
+$$
+
+:::
+
+Formula asta explică de ce un camion urcă dealul într-o treaptă mică: motorul dă
+cam aceeași putere, așa că dacă forța trebuie să fie mare, viteza trebuie să fie
+mică.
+
+---
+
+:::note Ora următoare
+
+**LP6 — Puterea mecanică.** Trei probe: enunțuri de judecat, o trotinetă și o
+macara, și o ladă urcată pe plan înclinat.
+
+Înainte de ea, treci prin
+**[S6 — Puterea mecanică](./17-s-puterea-mecanica.mdx)**: formulele lecției
+strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

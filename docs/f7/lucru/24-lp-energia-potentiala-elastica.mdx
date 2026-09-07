@@ -1,0 +1,188 @@
+---
+sidebar_position: 24
+sidebar_label: "LP8 — Energia potențială elastică"
+slug: /f7/lucru/lp8
+title: "LP8 — Energia potențială elastică"
+description: "Lucrare practică: aria de sub graficul forței elastice, două resorturi comparate și o praștie care lansează o piatră."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP8 — Energia potențială elastică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C8 — Energia potențială elastică](./22-curs-energia-potentiala-elastica.mdx)**,
+cu formulele din **[S8](./23-s-energia-potentiala-elastica.mdx)** la îndemână.
+Trei probe; în total 34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Aria de sub grafic | — | 10 min |
+| 2 | Două resorturi | ★ | 10 min |
+| 3 | Praștia | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Aria de sub grafic
+
+— &nbsp;·&nbsp; **10 minute**
+
+Un resort cu constanta elastică $k = 100\ \text{N/m}$ este întins treptat, până
+la o alungire maximă de $5\ \text{cm}$.
+
+**1.** Completează tabelul, calculând forța elastică pentru fiecare alungire.
+
+| $\Delta l$ ($\text{cm}$) | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| $F_e$ ($\text{N}$) | | | | | | |
+
+**2.** Trasează graficul forței elastice în funcție de alungire. Ce fel de linie
+obții?
+
+**3.** Calculează aria figurii de sub grafic și spune ce semnificație fizică
+are.
+
+**4.** Cât este energia potențială elastică a resortului la alungirea maximă?
+Verifică pe formulă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Din $F_e = k \, \Delta l$, cu alungirile trecute în metri:
+
+| $\Delta l$ ($\text{cm}$) | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| $F_e$ ($\text{N}$) | 0 | 1 | 2 | 3 | 4 | 5 |
+
+De pildă, pentru $\Delta l = 3\ \text{cm} = 0{,}03\ \text{m}$:
+$F_e = 100 \times 0{,}03 = 3\ \text{N}$.
+
+**2.** O **dreaptă care trece prin origine**: fără deformare, nu există forță
+elastică.
+
+**3.** Figura de sub grafic este un triunghi dreptunghic cu catetele
+$\Delta l = 5\ \text{cm} = 5 \times 10^{-2}\ \text{m}$ și
+$F_e = 5\ \text{N}$:
+
+$$
+A = \frac{F_e \cdot \Delta l}{2} = \frac{5 \times 5 \times 10^{-2}}{2} = 12{,}5 \times 10^{-2} = 0{,}125\ \text{J}
+$$
+
+Prin unități: $\text{N} \cdot \text{m} = \text{J}$. Deci aria reprezintă un
+**lucru mecanic** — cel efectuat de forța elastică.
+
+**4.** Cu formula:
+
+$$
+E_{pe} = \frac{k (\Delta l)^2}{2} = \frac{100 \times (5 \times 10^{-2})^2}{2} = \frac{100 \times 25 \times 10^{-4}}{2} = 0{,}125\ \text{J}
+$$
+
+Aceeași valoare ca aria — și așa trebuie: aria de sub grafic **este** energia
+acumulată.
+
+</details>
+
+---
+
+## 2. Două resorturi
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Resortul $A$ are $k_A = 50\ \text{N/m}$ și e comprimat cu $4\ \text{cm}$.
+Resortul $B$ are $k_B = 200\ \text{N/m}$ și e comprimat cu $2\ \text{cm}$.
+
+**1.** Care resort a acumulat mai multă energie?
+
+**2.** Cu ce comprimare ar trebui strâns resortul $A$ pentru a acumula aceeași
+energie ca $B$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Trecem comprimările în metri și calculăm.
+
+*Resortul A:*
+
+$$
+E_A = \frac{50 \times (0{,}04)^2}{2} = \frac{50 \times 0{,}0016}{2} = 0{,}04\ \text{J}
+$$
+
+*Resortul B:*
+
+$$
+E_B = \frac{200 \times (0{,}02)^2}{2} = \frac{200 \times 0{,}0004}{2} = 0{,}04\ \text{J}
+$$
+
+**Sunt egale.** Resortul $B$ e de patru ori mai tare, dar e comprimat de două
+ori mai puțin — iar pătratul face ca cele două efecte să se anuleze exact.
+
+**2.** Ele au deja aceeași energie, deci comprimarea de $4\ \text{cm}$ e
+răspunsul. Întrebarea are însă un rost: arată că nu poți spune care resort
+„ține mai multă energie" numai după $k$ sau numai după $\Delta l$ — contează
+amândouă.
+
+</details>
+
+---
+
+## 3. Praștia
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Elasticul unei praștii se comportă ca un resort cu constanta elastică
+$k = 400\ \text{N/m}$. Un copil îl întinde cu $\Delta l = 10\ \text{cm}$ și
+lansează o piatră cu masa $m = 20\ \text{g}$. Se neglijează frecarea cu aerul.
+
+**1.** Ce energie potențială elastică acumulează elasticul întins?
+
+**2.** Ce viteză are piatra la desprinderea de praștie?
+
+**3.** Dacă piatra e trasă vertical în sus, la ce înălțime maximă ajunge?
+
+**4.** Ce s-ar schimba dacă elasticul ar fi întins cu $20\ \text{cm}$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cu $\Delta l = 0{,}1\ \text{m}$:
+
+$$
+E_{pe} = \frac{k (\Delta l)^2}{2} = \frac{400 \times (0{,}1)^2}{2} = \frac{400 \times 0{,}01}{2} = 2\ \text{J}
+$$
+
+**2.** La desprindere, toată energia elastică a trecut în energie cinetică:
+
+$$
+E_c = E_{pe} = 2\ \text{J}
+$$
+
+$$
+\frac{m v^2}{2} = 2 \quad\Longrightarrow\quad v^2 = \frac{2 \times 2}{0{,}02} = 200
+$$
+
+$$
+v = \sqrt{200} \approx 14{,}1\ \text{m/s}
+$$
+
+Adică peste $50\ \text{km/h}$ — de aceea praștia nu e o jucărie nevinovată.
+
+**3.** La înălțimea maximă piatra s-a oprit, deci toată energia cinetică a
+devenit energie potențială gravitațională:
+
+$$
+m g h = 2 \quad\Longrightarrow\quad h = \frac{2}{0{,}02 \times 10} = 10\ \text{m}
+$$
+
+**4.** Deformarea s-ar dubla, deci energia s-ar face de **patru ori** mai mare:
+$8\ \text{J}$. Înălțimea ar fi și ea de patru ori mai mare, adică
+$40\ \text{m}$. Viteza, în schimb, s-ar **dubla** doar, ajungând la
+$28{,}2\ \text{m/s}$ — fiindcă și ea intră la pătrat în energie.
+
+</details>

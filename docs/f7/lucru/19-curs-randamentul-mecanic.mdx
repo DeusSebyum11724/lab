@@ -1,0 +1,193 @@
+---
+sidebar_position: 19
+sidebar_label: "C7 — Randamentul mecanic"
+slug: /f7/lucru/c7
+title: "C7 — Randamentul mecanic"
+description: "Forța activă și forța rezistentă, lucrul mecanic util și consumat, randamentul mecanic și randamentul planului înclinat."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C7 — Randamentul mecanic
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Forța activă și forța rezistentă
+3. Lucrul mecanic util și lucrul mecanic consumat
+4. Experiment: cele două valori nu sunt egale
+5. Randamentul mecanic
+6. Randamentul planului înclinat
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Un corp cu masa de $10\ \text{kg}$ este ridicat uniform, pe direcția
+verticală, la înălțimea de $2\ \text{m}$. Dacă se neglijează toate forțele de
+frecare și $g = 10\ \text{N/kg}$, calculează:
+
+**a)** lucrul mecanic efectuat de **forța activă** — cea care produce mișcarea;
+**b)** lucrul mecanic al **forței rezistente** — cea care se opune mișcării;
+**c)** compară valorile celor două mărimi.
+
+<FiguraManual
+  src="ro-corp-ridicat.png"
+  lat={377}
+  inalt={387}
+  latime={340}
+  eticheta="Un corp greu atârnat de un fir trecut peste un scripete fix; forța activă Fa trage în jos de celălalt capăt al firului, forța rezistentă Fr este greutatea corpului, iar cele două sunt egale"
+  legenda="Corp ridicat uniform. Forța activă și forța rezistentă sunt egale în modul."
+/>
+
+**2.** O ladă cu masa de $300\ \text{kg}$ este urcată uniform pe un plan
+înclinat care are lungimea de $4\ \text{m}$ și înălțimea de $2\ \text{m}$.
+Calculează lucrul mecanic al forței active și al forței rezistente **în absența
+frecării**. Va fi forța activă aceeași dacă nu se neglijează frecarea?
+
+<FiguraManual
+  src="ro-plan-inclinat-lada.png"
+  lat={439}
+  inalt={216}
+  latime={400}
+  eticheta="Un om împinge o ladă mare de lemn în sus pe o rampă înclinată"
+  legenda="Plan înclinat. Drumul e mai lung, dar forța cerută e mai mică."
+/>
+
+---
+
+## 2. Forța activă și forța rezistentă
+
+La orice ridicare a unui corp deosebim două feluri de forțe:
+
+| Forța | Ce face |
+|---|---|
+| **activă** | produce mișcarea; este forța pe care o exerciți tu sau motorul |
+| **rezistentă** | se opune mișcării; aici, greutatea corpului și frecările |
+
+---
+
+## 3. Lucrul mecanic util și lucrul mecanic consumat
+
+Atunci când ridici corpul uniform pe planul înclinat **în absența frecării**,
+lucrul mecanic al forței active este mai mic decât în cazul în care există
+frecare cu suprafața pe care se deplasează corpul.
+
+:::danger Definiția 1
+
+Lucrul mecanic efectuat de forța activă se numește **lucru mecanic consumat**,
+notat $L_c$.
+
+Lucrul mecanic necesar pentru a învinge forța rezistentă se numește **lucru
+mecanic util**, notat $L_u$.
+
+:::
+
+Cu alte cuvinte: $L_c$ este ce **dai**, iar $L_u$ este ce **obții**.
+
+---
+
+## 4. Experiment: cele două valori nu sunt egale
+
+**Scop:** definirea randamentului mecanic.
+
+**Materiale necesare:** plan înclinat, dinamometru, corp paralelipipedic.
+
+<FiguraManual
+  src="ro-randament-plan.png"
+  lat={414}
+  inalt={297}
+  latime={420}
+  eticheta="Un corp verde pe un plan înclinat de lungime l și înălțime h; forța F trage în sus pe plan, N e perpendiculară pe plan, Ff se opune mișcării, iar greutatea G e descompusă în Gp și Gn"
+  legenda="Montajul experimentului: corpul e tras uniform de la baza planului până în vârf."
+/>
+
+**Mod de lucru.**
+
+1. Măsoară lungimea $l$ și înălțimea $h$ ale planului înclinat.
+2. Măsoară cu dinamometrul greutatea $G$ a corpului paralelipipedic.
+3. Deplasează uniform corpul de la bază până în vârful planului înclinat cu
+   ajutorul dinamometrului și citește valoarea forței $F$ indicate de acesta.
+4. Calculează lucrul mecanic util $L_u = G \cdot h$ și lucrul mecanic consumat
+   $L_c = F \cdot l$, apoi compară-le.
+
+**Constatări.** Deși ridici corpul la aceeași înălțime — mai întâi direct pe
+verticală, apoi pe planul înclinat — cele două valori ale lucrului mecanic **nu
+sunt egale**:
+
+$$
+L_u < L_c
+$$
+
+Diferența s-a dus în frecare, adică în încălzirea suprafețelor.
+
+---
+
+## 5. Randamentul mecanic
+
+:::danger Definiția 2
+
+Raportul dintre lucrul mecanic util și lucrul mecanic consumat se numește
+**randament mecanic** și se notează cu litera grecească $\eta$ (eta):
+
+$$
+\eta = \frac{L_u}{L_c}
+$$
+
+:::
+
+:::tip De reținut
+
+Randamentul mecanic:
+
+- este **adimensional** — nu are unitate de măsură;
+- este **subunitar și pozitiv**: $0 < \eta < 1$;
+- se exprimă adesea **în procente**. De pildă $\eta = 0{,}75 = 75\%$.
+
+:::
+
+De ce nu poate fi $\eta = 1$? Fiindcă ar însemna că tot ce ai dat s-a
+transformat în lucru util, adică frecarea a fost zero — ceea ce în practică nu
+se întâmplă niciodată.
+
+---
+
+## 6. Randamentul planului înclinat
+
+Punând cele două expresii ale lucrului mecanic în formula randamentului:
+
+$$
+\eta = \frac{L_u}{L_c} = \frac{G \cdot h}{F \cdot l}
+$$
+
+unde $G$ este greutatea corpului, $h$ înălțimea planului, $F$ forța cu care se
+ridică uniform corpul pe plan, iar $l$ lungimea planului.
+
+**Un exemplu.** Un corp de $200\ \text{N}$ e urcat pe un plan cu
+$l = 4\ \text{m}$ și $h = 1\ \text{m}$, trăgând cu $F = 60\ \text{N}$:
+
+$$
+L_u = 200 \times 1 = 200\ \text{J} \qquad L_c = 60 \times 4 = 240\ \text{J}
+$$
+
+$$
+\eta = \frac{200}{240} \approx 0{,}83 = 83\%
+$$
+
+Din fiecare $100\ \text{J}$ cheltuiți, $83\ \text{J}$ ajung să ridice corpul,
+iar $17\ \text{J}$ se pierd în frecare.
+
+---
+
+:::note Ora următoare
+
+**LP7 — Randamentul mecanic.** Trei probe: ridicare pe verticală, lada de pe
+plan înclinat și lucrarea de laborator.
+
+Înainte de ea, treci prin
+**[S7 — Randamentul mecanic](./20-s-randamentul-mecanic.mdx)**: formulele
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

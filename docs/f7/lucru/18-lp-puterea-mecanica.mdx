@@ -1,0 +1,187 @@
+---
+sidebar_position: 18
+sidebar_label: "LP6 — Puterea mecanică"
+slug: /f7/lucru/lp6
+title: "LP6 — Puterea mecanică"
+description: "Lucrare practică: enunțuri de judecat, o trotinetă electrică și o ladă urcată pe plan înclinat."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP6 — Puterea mecanică
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C6 — Puterea mecanică](./16-curs-puterea-mecanica.mdx)**, cu formulele din
+**[S6](./17-s-puterea-mecanica.mdx)** la îndemână. Trei probe; în total 32 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Adevărat sau fals | — | 8 min |
+| 2 | Trotineta Ioanei | ★ | 10 min |
+| 3 | Lada de pe plan înclinat | ★★ | 14 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Adevărat sau fals
+
+— &nbsp;·&nbsp; **8 minute**
+
+Notează cu **A** dacă enunțul este adevărat și cu **F** dacă este fals.
+
+**a)** Puterea mecanică este o mărime fizică vectorială.
+
+**b)** Puterea mecanică medie se calculează ca raport între lucrul mecanic
+efectuat de forță și intervalul de timp în care se efectuează acel lucru
+mecanic.
+
+**c)** Doi muncitori care urcă aceeași ladă la același etaj efectuează același
+lucru mecanic, dar pot dezvolta puteri diferite.
+
+**d)** $1\ \text{CP}$ este mai mare decât $1\ \text{kW}$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) F.** Puterea este o mărime **scalară**: e complet spusă printr-un număr și
+o unitate. N-are nici direcție, nici sens.
+
+**b) A.** Este chiar definiția: $P_m = L / \Delta t$.
+
+**c) A.** Lucrul mecanic depinde numai de forță și de deplasare — aceleași
+pentru amândoi. Puterea depinde și de timp: cine urcă mai repede dezvoltă o
+putere mai mare.
+
+**d) F.** $1\ \text{CP} = 736\ \text{W}$, iar $1\ \text{kW} = 1000\ \text{W}$.
+Deci calul-putere este **mai mic** decât kilowattul.
+
+</details>
+
+---
+
+## 2. Trotineta Ioanei
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Ioana a primit de ziua ei o trotinetă electrică, pe mânerul căreia scrie
+$300\ \text{W}$.
+
+**1.** Ce lucru mecanic efectuează forța dezvoltată de motor timp de o oră, cât
+se plimbă Ioana?
+
+**2.** Dacă trotineta merge uniform cu $18\ \text{km/h}$, ce forță de tracțiune
+dezvoltă motorul?
+
+**3.** Cât înseamnă $300\ \text{W}$ în cai-putere?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Trecem timpul în secunde:
+
+$$
+\Delta t = 1\ \text{h} = 3600\ \text{s}
+$$
+
+$$
+L = P \cdot \Delta t = 300 \times 3600 = 1\,080\,000\ \text{J} = 1080\ \text{kJ}
+$$
+
+**2.** Trecem viteza în $\text{m/s}$:
+
+$$
+v = 18\ \text{km/h} = \frac{18\,000}{3600} = 5\ \text{m/s}
+$$
+
+Mișcarea fiind uniformă, se poate folosi $P = F v$:
+
+$$
+F = \frac{P}{v} = \frac{300}{5} = 60\ \text{N}
+$$
+
+**3.**
+
+$$
+\frac{300}{736} \approx 0{,}41\ \text{CP}
+$$
+
+Mai puțin de jumătate de cal-putere — și totuși destul cât să ducă un om.
+
+</details>
+
+---
+
+## 3. Lada de pe plan înclinat
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+O ladă cu masa de $100\ \text{kg}$ este ridicată uniform, în $20\ \text{s}$, în
+vârful unui plan înclinat care are lungimea $l = 10\ \text{m}$ și înălțimea
+$h = 5\ \text{m}$. Forța de frecare dintre ladă și plan este de $200\ \text{N}$.
+
+**1.** Calculează componenta tangențială a greutății lăzii.
+
+**2.** Ce forță trebuie să dezvolte motorul care trage lada?
+
+**3.** Calculează lucrul mecanic al forței motoare și puterea mecanică
+dezvoltată.
+
+**4.** Cât ar fi fost puterea necesară dacă lada ar fi fost ridicată pe
+verticală, tot în $20\ \text{s}$, fără frecare?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Greutatea lăzii:
+
+$$
+G = m g = 100 \times 10 = 1000\ \text{N}
+$$
+
+Componenta tangențială, pe planul înclinat:
+
+$$
+G_t = \frac{G h}{l} = \frac{1000 \times 5}{10} = 500\ \text{N}
+$$
+
+**2.** Lada urcă uniform, deci forța motoare învinge și componenta tangențială,
+și frecarea:
+
+$$
+F = G_t + F_f = 500 + 200 = 700\ \text{N}
+$$
+
+**3.** Deplasarea se face de-a lungul planului, adică pe $l = 10\ \text{m}$:
+
+$$
+L = F \cdot l = 700 \times 10 = 7000\ \text{J}
+$$
+
+$$
+P = \frac{L}{\Delta t} = \frac{7000}{20} = 350\ \text{W}
+$$
+
+**4.** Pe verticală, forța ar fi fost toată greutatea, iar deplasarea numai
+$h = 5\ \text{m}$:
+
+$$
+L' = G \cdot h = 1000 \times 5 = 5000\ \text{J}
+$$
+
+$$
+P' = \frac{5000}{20} = 250\ \text{W}
+$$
+
+**Ce se învață de aici.** Planul înclinat scade **forța** de la $1000\ \text{N}$
+la $700\ \text{N}$, dar nu scade lucrul mecanic — dimpotrivă, îl mărește de la
+$5000$ la $7000\ \text{J}$, din cauza frecării. Un mecanism simplu ușurează
+efortul, nu îl desființează.
+
+</details>

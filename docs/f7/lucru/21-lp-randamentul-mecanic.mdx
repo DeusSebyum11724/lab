@@ -1,0 +1,239 @@
+---
+sidebar_position: 21
+sidebar_label: "LP7 — Randamentul mecanic"
+slug: /f7/lucru/lp7
+title: "LP7 — Randamentul mecanic"
+description: "Lucrare practică: ridicarea pe verticală, două plane înclinate comparate și lucrarea de laborator pentru determinarea randamentului."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP7 — Randamentul mecanic
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C7 — Randamentul mecanic](./19-curs-randamentul-mecanic.mdx)**, cu formulele
+din **[S7](./20-s-randamentul-mecanic.mdx)** la îndemână. Trei probe; în total
+34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Ridicarea pe verticală | — | 8 min |
+| 2 | Două plane, două randamente | ★★ | 14 min |
+| 3 | Lucrare de laborator | ★ | 12 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Ridicarea pe verticală
+
+— &nbsp;·&nbsp; **8 minute**
+
+Un corp cu masa de $10\ \text{kg}$ este ridicat uniform, pe direcția verticală,
+la înălțimea de $2\ \text{m}$. Se neglijează toate forțele de frecare.
+
+**1.** Calculează lucrul mecanic efectuat de forța activă.
+
+**2.** Calculează lucrul mecanic al forței rezistente.
+
+**3.** Compară cele două valori și spune cât este randamentul.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Corpul urcă **uniform**, deci forța activă echilibrează greutatea:
+
+$$
+F_a = G = m g = 10 \times 10 = 100\ \text{N}
+$$
+
+$$
+L_c = F_a \cdot h = 100 \times 2 = 200\ \text{J}
+$$
+
+**2.** Forța rezistentă este chiar greutatea, iar deplasarea e aceeași:
+
+$$
+L_u = G \cdot h = 100 \times 2 = 200\ \text{J}
+$$
+
+**3.** Cele două sunt **egale**, deci:
+
+$$
+\eta = \frac{L_u}{L_c} = \frac{200}{200} = 1 = 100\%
+$$
+
+La ridicarea directă pe verticală, fără frecări, nu se pierde nimic: tot ce dai
+se regăsește în înălțimea câștigată. E cazul ideal — în realitate, scripeții și
+cablurile au și ele frecări, deci randamentul iese ceva mai mic.
+
+</details>
+
+---
+
+## 2. Două plane, două randamente
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Aceeași ladă, cu masa $m = 50\ \text{kg}$, este urcată uniform la înălțimea
+$h = 2\ \text{m}$ pe două plane înclinate diferite:
+
+- **planul A**, cu lungimea $l_A = 4\ \text{m}$, unde forța de frecare este
+  $F_{fA} = 100\ \text{N}$;
+- **planul B**, cu lungimea $l_B = 8\ \text{m}$, unde forța de frecare este
+  $F_{fB} = 150\ \text{N}$.
+
+**1.** Calculează lucrul mecanic util. Este el același pe cele două plane?
+
+**2.** Calculează, pentru fiecare plan, forța activă și lucrul mecanic consumat.
+
+**3.** Calculează cele două randamente și spune care plan e mai bun.
+
+**4.** De ce, deși planul $B$ cere o forță mai mică, randamentul lui e mai
+prost?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Greutatea lăzii:
+
+$$
+G = m g = 50 \times 10 = 500\ \text{N}
+$$
+
+$$
+L_u = G \cdot h = 500 \times 2 = 1000\ \text{J}
+$$
+
+**Da, este același** pe amândouă: lada ajunge la aceeași înălțime, iar utilul se
+socotește pe verticală.
+
+**2.** *Planul A:*
+
+$$
+G_{tA} = \frac{G h}{l_A} = \frac{500 \times 2}{4} = 250\ \text{N}
+$$
+
+$$
+F_A = G_{tA} + F_{fA} = 250 + 100 = 350\ \text{N}
+$$
+
+$$
+L_{cA} = F_A \cdot l_A = 350 \times 4 = 1400\ \text{J}
+$$
+
+*Planul B:*
+
+$$
+G_{tB} = \frac{500 \times 2}{8} = 125\ \text{N}
+$$
+
+$$
+F_B = 125 + 150 = 275\ \text{N}
+$$
+
+$$
+L_{cB} = 275 \times 8 = 2200\ \text{J}
+$$
+
+**3.**
+
+$$
+\eta_A = \frac{1000}{1400} \approx 0{,}71 = 71\%
+$$
+
+$$
+\eta_B = \frac{1000}{2200} \approx 0{,}45 = 45\%
+$$
+
+**Planul A este mai bun**: din efortul depus, mai mult ajunge să ridice lada.
+
+**4.** Fiindcă planul $B$ e de două ori mai lung. Chiar dacă forța cerută e mai
+mică, ea se exercită pe un drum de două ori mai mare — iar frecarea, care e și
+ea mai mare, lucrează tot pe drumul acela lung.
+
+Verificare: pierderile prin frecare sunt
+$L_{fA} = 100 \times 4 = 400\ \text{J}$ și
+$L_{fB} = 150 \times 8 = 1200\ \text{J}$. Într-adevăr,
+$1000 + 400 = 1400$ și $1000 + 1200 = 2200$.
+
+**Concluzia:** o pantă mai lină e mai ușoară pentru brațe, dar mai risipitoare.
+Alegerea depinde de ce te încurcă mai tare — forța sau energia.
+
+</details>
+
+---
+
+## 3. Lucrare de laborator
+
+★ &nbsp;·&nbsp; **12 minute**
+
+**Scop:** determinarea randamentului unui plan înclinat.
+
+**Materiale necesare:** plan înclinat de unghi variabil, dinamometru, corp
+paralelipipedic, riglă, scripete pentru plan înclinat, greutăți de mase
+cunoscute, cârlig pentru greutăți.
+
+**Mod de lucru.**
+
+1. Fixează planul înclinat la un anumit unghi.
+2. Măsoară cu dinamometrul greutatea $G_1$ a corpului paralelipipedic.
+3. Măsoară cu rigla lungimea $l$ și înălțimea $h$ ale planului.
+4. Leagă firul de corpul așezat pe planul înclinat și trece firul peste
+   scripetele montat în vârful planului.
+5. La celălalt capăt al firului leagă cârligul și așază greutăți cunoscute
+   până când corpul începe să urce **aproximativ uniform**. De fiecare dată când
+   mai pui o greutate, lovește ușor planul înclinat.
+6. Calculează masa $m_2$ adunând la masa cârligului masele greutăților puse pe
+   el.
+7. Efectuează mai multe măsurători și completează tabelul.
+
+| Nr. | $G_1$ ($\text{N}$) | $l$ ($\text{m}$) | $h$ ($\text{m}$) | $m_2$ ($\text{kg}$) | $G_2$ ($\text{N}$) | $L_u$ ($\text{J}$) | $L_c$ ($\text{J}$) | $\eta$ (%) |
+|---|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | | |
+| 2 | | | | | | | | |
+| 3 | | | | | | | | |
+
+8. Reia experimentul pentru alt unghi al planului și compară randamentele
+   obținute. Precizează sursele de erori care apar.
+
+<details>
+<summary>Rezolvare</summary>
+
+**Ce se calculează.** Greutatea de pe cârlig este chiar forța care trage corpul
+pe plan, deci:
+
+$$
+G_2 = m_2 \cdot g \qquad L_u = G_1 \cdot h \qquad L_c = G_2 \cdot l
+$$
+
+$$
+\eta = \frac{L_u}{L_c} = \frac{G_1 \cdot h}{m_2 \, g \, l}
+$$
+
+La sfârșit se ia $\eta_m$, media randamentelor din toate determinările.
+
+**De ce se lovește ușor planul.** Ca să învingi frecarea de repaus, care e mai
+mare decât cea de alunecare. Fără mica lovitură ai avea nevoie de mai multe
+greutăți decât cere de fapt mișcarea uniformă, iar randamentul ar ieși mai mic
+decât e în realitate.
+
+**Ce se așteaptă.** Toate determinările trebuie să dea randamente apropiate
+între ele. La un unghi mai mare, componenta tangențială crește mai repede decât
+frecarea, deci randamentul iese de obicei **mai bun** — planul mai abrupt
+risipește mai puțin, chiar dacă cere o forță mai mare.
+
+**Surse de erori.**
+
+- mișcarea nu e perfect uniformă — corpul o ia din loc cu o smucitură;
+- greutățile se pun în trepte, deci forța nu se poate potrivi exact;
+- frecarea din scripete și greutatea firului nu sunt zero;
+- lungimea și înălțimea, măsurate cu rigla, au și ele erorile lor;
+- corpul nu urcă drept, ci se freacă și de marginile planului.
+
+</details>

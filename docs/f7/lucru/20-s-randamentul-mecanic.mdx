@@ -1,0 +1,173 @@
+---
+sidebar_position: 20
+sidebar_label: "S7 — Randamentul mecanic"
+slug: /f7/lucru/s7
+title: "S7 — Randamentul mecanic"
+description: "Suport de curs: formulele randamentului, cum se recunoaște lucrul util de cel consumat și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S7 — Randamentul mecanic
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C7 — Randamentul mecanic](./19-curs-randamentul-mecanic.mdx)**, strâns la un
+loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi
+la **[LP7](./21-lp-randamentul-mecanic.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Lucrul mecanic util | $L_u$ | $L_u = G \cdot h$ | joule, $\text{J}$ |
+| Lucrul mecanic consumat | $L_c$ | $L_c = F \cdot l$ | joule, $\text{J}$ |
+| Randamentul mecanic | $\eta$ | $\eta = \dfrac{L_u}{L_c}$ | fără unitate |
+| Randamentul planului înclinat | $\eta$ | $\eta = \dfrac{G \cdot h}{F \cdot l}$ | fără unitate |
+| Randamentul în procente | $\eta$ | $\eta\% = \dfrac{L_u}{L_c} \times 100$ | procente |
+
+---
+
+## 2. Cum recunoști cele două lucruri mecanice
+
+| Întrebarea | Răspunsul îți dă |
+|---|---|
+| Ce am **obținut**? Corpul e cu $h$ mai sus. | $L_u = G h$ |
+| Ce am **cheltuit**? Am tras cu $F$ pe lungimea $l$. | $L_c = F l$ |
+
+Regula practică: **utilul se socotește pe verticală, consumatul pe drumul
+făcut**.
+
+$L_c$ este întotdeauna cel mai mare dintre cele două. Dacă îți iese invers, ai
+încurcat forțele sau distanțele.
+
+---
+
+## 3. De reținut
+
+- $\eta$ nu are unitate de măsură: e un raport între două lucruri mecanice, iar
+  joule-ii se simplifică.
+- $\eta$ este întotdeauna **subunitar**. Un randament de $120\%$ e semn sigur de
+  greșeală.
+- Diferența $L_c - L_u$ este lucrul mecanic pierdut prin frecare, care se
+  transformă în căldură.
+- Planul înclinat **nu** micșorează lucrul mecanic: micșorează forța și
+  lungește drumul.
+- Cu cât frecarea e mai mică, cu atât randamentul e mai aproape de $1$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O ladă cu masa de $300\ \text{kg}$ este urcată uniform pe un plan înclinat care
+are lungimea de $4\ \text{m}$ și înălțimea de $2\ \text{m}$. Se ia
+$g = 10\ \text{N/kg}$.
+
+**a)** Calculează lucrul mecanic al forței active și pe cel al forței rezistente
+**în absența frecării**.
+
+**b)** Va fi forța activă aceeași dacă frecarea nu se neglijează,
+$F_f = 500\ \text{N}$?
+
+**c)** Cât este randamentul planului înclinat în al doilea caz?
+
+### Pasul 1 — Ce se dă
+
+- $m = 300\ \text{kg}$;
+- $l = 4\ \text{m}$, $h = 2\ \text{m}$;
+- $F_f = 500\ \text{N}$ la punctul **b)**;
+- $g = 10\ \text{N/kg}$.
+
+### Pasul 2 — Greutatea și componenta tangențială
+
+$$
+G = m g = 300 \times 10 = 3000\ \text{N}
+$$
+
+$$
+G_t = \frac{G h}{l} = \frac{3000 \times 2}{4} = 1500\ \text{N}
+$$
+
+### Pasul 3 — Fără frecare
+
+Forța activă echilibrează doar componenta tangențială:
+
+$$
+F_a = G_t = 1500\ \text{N}
+$$
+
+$$
+L_c = F_a \cdot l = 1500 \times 4 = 6000\ \text{J}
+$$
+
+Lucrul mecanic util, adică cel al forței rezistente învinse:
+
+$$
+L_u = G \cdot h = 3000 \times 2 = 6000\ \text{J}
+$$
+
+Cele două sunt **egale**: fără frecare, tot ce dai se regăsește în ridicarea
+corpului. Randamentul ar fi $\eta = 1 = 100\%$ — cazul ideal, care în realitate
+nu apare.
+
+### Pasul 4 — Cu frecare
+
+Forța activă trebuie acum să învingă și frecarea:
+
+$$
+F_a' = G_t + F_f = 1500 + 500 = 2000\ \text{N}
+$$
+
+Deci **nu**, forța activă nu mai e aceeași: crește cu exact cât e frecarea.
+
+$$
+L_c' = F_a' \cdot l = 2000 \times 4 = 8000\ \text{J}
+$$
+
+Lucrul util rămâne același, fiindcă lada ajunge la aceeași înălțime:
+
+$$
+L_u = 6000\ \text{J}
+$$
+
+### Pasul 5 — Randamentul
+
+$$
+\eta = \frac{L_u}{L_c'} = \frac{6000}{8000} = 0{,}75 = 75\%
+$$
+
+### Pasul 6 — Verificarea
+
+Lucrul mecanic pierdut prin frecare ar trebui să fie chiar lucrul forței de
+frecare pe lungimea planului:
+
+$$
+L_c' - L_u = 8000 - 6000 = 2000\ \text{J}
+$$
+
+$$
+L_f = F_f \cdot l = 500 \times 4 = 2000\ \text{J}
+$$
+
+Se potrivește. Un sfert din efortul depus s-a dus în încălzirea suprafețelor.
+
+### Răspuns
+
+**a)** $L_c = L_u = 6000\ \text{J}$; **b)** nu — forța activă devine
+$2000\ \text{N}$; **c)** $\eta = 75\%$.
+
+---
+
+:::note Ora următoare
+
+**[LP7 — Randamentul mecanic](./21-lp-randamentul-mecanic.mdx).** Trei probe, în
+total 34 de minute.
+
+:::

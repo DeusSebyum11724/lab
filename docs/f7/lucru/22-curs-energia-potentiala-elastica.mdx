@@ -1,0 +1,206 @@
+---
+sidebar_position: 22
+sidebar_label: "C8 — Energia potențială elastică"
+slug: /f7/lucru/c8
+title: "C8 — Energia potențială elastică"
+description: "Energia acumulată într-un resort deformat, de ce ea este o energie de poziție și cum se ajunge la formula ei din aria de sub grafic."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C8 — Energia potențială elastică
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Experiment: resortul comprimat
+3. De ce este vorba de energie
+4. Energie de poziție
+5. De la grafic la formulă
+6. Formula energiei potențiale elastice
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+Te-ai jucat cu o praștie? Dar cu un pistol de jucărie? **Cum este propulsat
+corpul din praștie sau din pistol? Cine acționează asupra lui? Efectuează
+această forță lucru mecanic?**
+
+<FiguraManual
+  src="ro-prastie-pistol.png"
+  lat={892}
+  inalt={259}
+  latime={620}
+  eticheta="Stânga: un băiat întinde elasticul unei praștii. Dreapta: un copil costumat în cowboy ține două pistoale de jucărie"
+  legenda="Praștie și pistol de jucărie. Amândouă păstrează ceva atâta timp cât stau întinse."
+/>
+
+---
+
+## 2. Experiment: resortul comprimat
+
+**Scop:** evidențierea energiei potențiale elastice.
+
+**Materiale necesare:** resort, corp, suprafață lucioasă.
+
+<FiguraManual
+  src="ro-exp-resort-comprimat.png"
+  lat={394}
+  inalt={358}
+  latime={380}
+  eticheta="Trei situații suprapuse: A, resortul nedeformat cu bila la capătul lui; B, resortul comprimat cu 20 cm și bila împinsă înăuntru; C, resortul destins care aruncă bila spre dreapta"
+  legenda="Resortul comprimat și apoi eliberat. Cu cât comprimi mai mult, cu atât bila pleacă mai repede."
+/>
+
+**Mod de lucru.**
+
+1. Prinde corpul de capătul liber al resortului așezat orizontal pe o suprafață
+   lucioasă — ca să putem neglija frecarea.
+2. Comprimă resortul, întâi cu $10\ \text{cm}$, apoi cu $20\ \text{cm}$,
+   împingând de corpul atașat.
+3. Lasă liber sistemul format din resort și corp.
+
+**Constatări.** Ce se întâmplă? Compară cele două situații. Cine determină
+mișcarea corpului?
+
+---
+
+## 3. De ce este vorba de energie
+
+Resortul elastic, praștia și arcul pistolului de jucărie au proprietăți
+elastice: după încetarea acțiunii forței deformatoare, ele își revin la forma
+inițială sub acțiunea **forței elastice**.
+
+Asupra corpului legat de resortul comprimat — ca și asupra pietrei lansate de
+praștie — acționează, așadar, forța elastică. Aceasta determină mișcarea
+corpurilor, deci efectuează **lucru mecanic** asupra lor.
+
+:::tip Raționamentul
+
+Sistemul are capacitatea de a efectua lucru mecanic $\Rightarrow$ sistemul are
+**energie**.
+
+Inițial sistemul este în repaus $\Rightarrow$ energia asta **nu** este cinetică.
+
+Deci este o **energie potențială** — dar alta decât cea gravitațională.
+
+:::
+
+---
+
+## 4. Energie de poziție
+
+:::danger Definiția 1
+
+Energia acumulată într-un corp elastic deformat se numește **energie potențială
+elastică**, notată $E_{pe}$.
+
+:::
+
+Energia potențială elastică acumulată în resort se datorează **modificării
+poziției relative a spirelor** resortului unele față de altele, în urma unei
+acțiuni exterioare.
+
+Din acest motiv, energia potențială — gravitațională sau elastică — se mai
+numește și **energie de poziție**.
+
+| Felul energiei potențiale | Poziția cui contează |
+|---|---|
+| gravitațională | a corpului față de Pământ |
+| elastică | a părților corpului elastic unele față de altele |
+
+Deoarece lucrul mecanic efectuat de forța elastică este cu atât mai mare cu cât
+deformarea este mai mare — ai văzut asta comprimând a doua oară resortul mai
+mult — și energia potențială elastică este cu atât mai mare cu cât deformarea
+resortului este mai mare.
+
+---
+
+## 5. De la grafic la formulă
+
+Un resort cu constanta elastică $k = 100\ \text{N/m}$ este deformat sub acțiunea
+unei forțe și apoi lăsat liber. Alungirea maximă este
+$\Delta l = 5\ \text{cm}$.
+
+**Pasul 1 — tabelul.** Din $F_e = k \, \Delta l$, cu $\Delta l$ trecut în metri:
+
+| $\Delta l$ ($\text{cm}$) | 0 | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| $F_e$ ($\text{N}$) | 0 | 1 | 2 | 3 | 4 | 5 |
+
+**Pasul 2 — graficul.** Punctele se așază pe o dreaptă care pleacă din origine.
+
+<FiguraManual
+  src="ro-grafic-forta-elastica.png"
+  lat={433}
+  inalt={394}
+  latime={400}
+  eticheta="Grafic cu alungirea Δl în centimetri pe axa orizontală și modulul forței elastice în newtoni pe axa verticală; punctele se așază pe o dreaptă care pleacă din origine și ajunge la 5 N pentru 5 cm"
+  legenda="Graficul variației forței elastice în funcție de alungire."
+/>
+
+**Pasul 3 — aria de sub grafic.** Figura de sub dreaptă este un **triunghi
+dreptunghic** cu catetele $\Delta l$ și $F_e$:
+
+$$
+A = \frac{F_e \cdot \Delta l}{2} = \frac{5 \times 5 \times 10^{-2}}{2} = 12{,}5 \times 10^{-2}\ \text{J}
+$$
+
+**Pasul 4 — ce înseamnă aria.** Verificăm prin unități de măsură:
+$\text{N} \cdot \text{m} = \text{J}$. Produsul dintre o forță și o deplasare
+este un **lucru mecanic** — deci aria de sub grafic este chiar lucrul mecanic al
+forței elastice.
+
+---
+
+## 6. Formula energiei potențiale elastice
+
+Înlocuim $F_e = k \, \Delta l$ în expresia ariei:
+
+$$
+L_{F_e} = \frac{k \, (\Delta l)^2}{2}
+$$
+
+La lecția despre energia potențială gravitațională ai învățat că lucrul mecanic
+este egal cu scăderea energiei potențiale: $E_{p1} - E_{p2} = L$. Aici resortul
+pornește nedeformat, deci $E_{p1} = 0$, și rezultă:
+
+:::danger Definiția 2
+
+Energia potențială elastică a unui resort deformat este:
+
+$$
+E_{pe} = \frac{k \, (\Delta l)^2}{2}
+$$
+
+unde $\Delta l$ este deformarea resortului — alungire sau comprimare — iar $k$
+este constanta lui elastică.
+
+:::
+
+:::warning Atenție la pătrat
+
+Deformarea intră **la pătrat**. Dacă întinzi resortul de două ori mai mult,
+energia nu se dublează, ci se face de **patru** ori mai mare. De aceea o praștie
+întinsă până la capăt trimite piatra mult mai departe decât una întinsă pe
+jumătate.
+
+Și încă ceva: $\Delta l$ se trece **în metri** înainte de a-l ridica la pătrat.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP8 — Energia potențială elastică.** Trei probe: resortul care se destinde,
+aria de sub grafic și o praștie care lansează o piatră.
+
+Înainte de ea, treci prin
+**[S8 — Energia potențială elastică](./23-s-energia-potentiala-elastica.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::
