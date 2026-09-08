@@ -1,0 +1,205 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Aplicații ale electromagneților"
+slug: /f8/magnetic/lp3
+title: "LP3 — Aplicații ale electromagneților"
+description: "Lucrare practică: recunoașterea dispozitivelor, soneria explicată pas cu pas și forța macaralei electromagnetice."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Aplicații ale electromagneților
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Aplicații ale electromagneților](./07-curs-aplicatii-electromagneti.mdx)**,
+cu tabelele din **[S3](./08-s-aplicatii-electromagneti.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Magnet permanent sau electromagnet | — | 8 min |
+| 2 | Soneria pas cu pas | ★ | 12 min |
+| 3 | Macaraua electromagnetică | ★★ | 12 min |
+
+Peste tot se ia $g = 10\ \text{N/kg}$. Rezolvarea fiecărei probe e ascunsă sub
+ea.
+
+:::
+
+---
+
+## 1. Magnet permanent sau electromagnet
+
+— &nbsp;·&nbsp; **8 minute**
+
+Pentru fiecare situație, spune ce fel de magnet se folosește și **de ce nu se
+poate celălalt**.
+
+**a)** magnetul de pe ușa frigiderului;
+**b)** macaraua care ridică fier vechi;
+**c)** acul busolei;
+**d)** siguranța automată din tabloul electric;
+**e)** magnetul de prins bilețele pe tablă;
+**f)** încuietoarea electromagnetică a unei uși de bloc.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) Magnet permanent.** N-are nevoie de curent și trebuie să țină tot timpul.
+Un electromagnet ar consuma energie zi și noapte.
+
+**b) Electromagnet.** Trebuie să **elibereze** încărcătura la comandă. Un magnet
+permanent n-ar lăsa fierul jos.
+
+**c) Magnet permanent.** Busola trebuie să funcționeze oriunde, fără sursă de
+curent.
+
+**d) Electromagnet.** Trebuie să acționeze **numai** când curentul depășește un
+prag; forța lui e chiar măsura curentului supravegheat.
+
+**e) Magnet permanent.** Aceleași motive ca la a).
+
+**f) Electromagnet.** Ușa trebuie să se poată **descuia** la comandă, iar forța
+trebuie să fie mare — mii de newtoni.
+
+*Regula:* dacă trebuie **oprit sau reglat**, e electromagnet. Dacă trebuie doar
+să țină, fără curent, e magnet permanent.
+
+</details>
+
+---
+
+## 2. Soneria pas cu pas
+
+★ &nbsp;·&nbsp; **12 minute**
+
+<FiguraManual
+  src="ro8-sonerie-electrica.png"
+  lat={444}
+  inalt={537}
+  latime={340}
+  eticheta="Schema unei sonerii: electromagnetul în formă de U cu polii N și S, lamela metalică elastică, ciocănelul și clopotul"
+  legenda="Soneria electrică, în schemă."
+/>
+
+**1.** Pune în ordine etapele funcționării soneriei: *ciocănelul lovește
+clopotul* · *lamela e atrasă* · *se apasă butonul* · *circuitul se întrerupe* ·
+*lamela revine* · *electromagnetul se demagnetizează*.
+
+**2.** De ce soneria zbârnâie în loc să scoată un singur sunet?
+
+**3.** Ce s-ar întâmpla dacă lamela ar fi rigidă, nu elastică?
+
+**4.** Ce s-ar întâmpla dacă, în locul electromagnetului, s-ar pune un magnet
+permanent?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Ordinea:
+
+1. se apasă butonul;
+2. lamela e atrasă de electromagnet;
+3. ciocănelul lovește clopotul;
+4. circuitul se întrerupe — prin chiar deplasarea lamelei;
+5. electromagnetul se demagnetizează;
+6. lamela revine, iar circuitul se reface.
+
+Apoi ciclul o ia de la capăt.
+
+**2.** Fiindcă lamela, deplasându-se, **rupe singură** circuitul care a atras-o.
+Se creează un ciclu care se repetă de zeci de ori pe secundă, atâta timp cât
+butonul e apăsat. Ce auzi e succesiunea rapidă a loviturilor.
+
+**3.** N-ar reveni la loc. Ea ar rămâne lipită de electromagnet, circuitul ar
+rămâne rupt, iar soneria ar scoate **un singur** sunet — sau, dacă rămâne
+închis, ar rămâne lipită și n-ar mai lovi deloc.
+
+Elasticitatea lamelei e piesa care face ciclul posibil.
+
+**4.** Un magnet permanent ar atrage lamela **tot timpul**, indiferent de buton.
+Lamela ar sta lipită de el, ciocănelul ar rămâne pe clopot, iar soneria n-ar
+suna niciodată.
+
+</details>
+
+---
+
+## 3. Macaraua electromagnetică
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+<FiguraManual
+  src="ro8-macara-electromagnetica.png"
+  lat={379}
+  inalt={211}
+  latime={380}
+  eticheta="O macara cu braț lung, care ridică fier vechi cu ajutorul unui electromagnet în formă de disc"
+  legenda="Macara electromagnetică."
+/>
+
+Electromagnetul unei macarale poate dezvolta o forță maximă de atracție de
+$10\ \text{kN}$. Bobina lui are $N = 4000$ de spire și rezistența
+$R = 5\ \Omega$, iar sursa dă $U = 200\ \text{V}$.
+
+**1.** Ce masă maximă de fier poate ridica macaraua?
+
+**2.** Calculează intensitatea curentului prin bobină și puterea disipată în ea.
+
+**3.** De ce macaraua nu poate ridica un bloc de aluminiu de aceeași masă?
+
+**4.** Ce se întâmplă cu încărcătura când se întrerupe curentul? De ce e asta un
+avantaj și, în același timp, un pericol?
+
+**5.** De ce bobina are atâtea spire, în loc să se mărească doar curentul?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+F = 10\ \text{kN} = 10\,000\ \text{N}
+$$
+
+$$
+m = \frac{F}{g} = \frac{10\,000}{10} = 1000\ \text{kg} = 1 \text{ tonă}
+$$
+
+**2.**
+
+$$
+I = \frac{U}{R} = \frac{200}{5} = 40\ \text{A}
+$$
+
+$$
+P = R I^2 = 5 \times 1600 = 8000\ \text{W} = 8\ \text{kW}
+$$
+
+Opt kilowați se pierd sub formă de căldură — de asta bobinele macaralelor sunt
+prevăzute cu răcire.
+
+**3.** Fiindcă **aluminiul nu este feromagnetic**: el nu se magnetizează în
+câmpul electromagnetului și nu e atras de el. Macaraua electromagnetică ridică
+fier, oțel și fontă — nu aluminiu, cupru sau plastic.
+
+**4.** Încărcătura **cade**. E un avantaj, fiindcă exact așa se descarcă fierul
+vechi acolo unde trebuie: se oprește curentul, iar încărcătura se eliberează.
+
+E și un pericol: la o pană de curent, tona de fier cade necontrolat. De aceea
+sub o macara electromagnetică în lucru nu are voie să se afle nimeni.
+
+**5.** Fiindcă forța crește și cu numărul de spire, și cu intensitatea
+curentului — dar **încălzirea crește cu pătratul curentului**:
+
+$$
+P = R I^2
+$$
+
+Dublând curentul, forța crește de vreo două ori, dar căldura de patru ori. Cu
+spirele, câștigul e „mai ieftin": ele măresc câmpul fără să crească pierderile
+în același ritm.
+
+</details>

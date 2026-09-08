@@ -1,0 +1,201 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Forța electromagnetului"
+slug: /f8/magnetic/lp2
+title: "LP2 — Forța electromagnetului"
+description: "Lucrare practică: patru bobine de comparat, măsurători cu dinamometrul și un electromagnet de proiectat."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Forța electromagnetului
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Forța exercitată de un electromagnet](./04-curs-forta-electromagnetului.mdx)**,
+cu tabelele din **[S2](./05-s-forta-electromagnetului.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care bobină trage mai tare | — | 10 min |
+| 2 | Măsurători cu dinamometrul | ★ | 10 min |
+| 3 | Un electromagnet de proiectat | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Care bobină trage mai tare
+
+— &nbsp;·&nbsp; **10 minute**
+
+Toate bobinele de mai jos sunt legate **în serie** la aceeași sursă. Pentru
+fiecare pereche, spune care exercită forța mai mare și de ce.
+
+**a)** bobina $A$: $200$ de spire, miez de fier · bobina $B$: $100$ de spire,
+miez de fier — aceeași lungime;
+
+**b)** bobina $C$: $100$ de spire pe $5\ \text{cm}$ · bobina $D$: $100$ de spire
+pe $10\ \text{cm}$ — același miez;
+
+**c)** bobina $E$: cu miez de fier · bobina $F$: cu miez de aer — identice în
+rest;
+
+**d)** bobina $G$: miez de fier în formă de U, cu circuit închis · bobina $H$:
+miez drept — identice în rest;
+
+**e)** bobina $I$, alimentată cu curent în sens invers față de bobina $J$ —
+identice în rest.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) Bobina $A$.** Mai multe spire, deci câmp mai puternic.
+
+**b) Bobina $C$.** La același număr de spire, cea mai **scurtă** are câmpul mai
+concentrat.
+
+**c) Bobina $E$.** Miezul de fier mărește forța de zeci de ori față de aer.
+
+**d) Bobina $G$.** Circuitul magnetic închis ține liniile de câmp adunate pe tot
+drumul.
+
+**e) Egale.** Sensul curentului schimbă **polii**, nu mărimea forței. Un corp de
+fier e atras la fel de ambii poli.
+
+</details>
+
+---
+
+## 2. Măsurători cu dinamometrul
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-montaj-electromagnet.png"
+  lat={404}
+  inalt={395}
+  latime={300}
+  eticheta="Un dinamometru suspendat, de care atârnă o tijă cu un disc de fier; sub disc se află o bobină cu miez, legată la o sursă printr-un întrerupător"
+  legenda="Montajul de măsurare a forței."
+/>
+
+Un elev face patru măsurători cu montajul de mai sus și obține tabelul:
+
+| Nr. | Miez | Spire | Tensiunea sursei | Forța citită |
+|---|---|---|---|---|
+| 1 | aer | $200$ | $4{,}5\ \text{V}$ | $0{,}1\ \text{N}$ |
+| 2 | fier | $200$ | $4{,}5\ \text{V}$ | $2{,}4\ \text{N}$ |
+| 3 | fier | $400$ | $4{,}5\ \text{V}$ | $4{,}6\ \text{N}$ |
+| 4 | fier | $200$ | $9\ \text{V}$ | $4{,}8\ \text{N}$ |
+
+**1.** Ce se compară între măsurătorile $1$ și $2$? Ce concluzie tragi?
+
+**2.** Ce se compară între $2$ și $3$? Dar între $2$ și $4$?
+
+**3.** De câte ori crește forța în fiecare caz?
+
+**4.** De ce, la fiecare comparație, s-a schimbat **un singur** lucru?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se compară **miezul**: aer față de fier, restul identic. Forța crește de
+la $0{,}1$ la $2{,}4\ \text{N}$ — de **24 de ori**. Miezul de fier este factorul
+cel mai important.
+
+**2.** Între $2$ și $3$ se compară **numărul de spire** ($200$ față de $400$):
+forța crește de la $2{,}4$ la $4{,}6\ \text{N}$, adică de circa $1{,}9$ ori.
+
+Între $2$ și $4$ se compară **tensiunea**, deci curentul ($4{,}5$ față de
+$9\ \text{V}$): forța crește de la $2{,}4$ la $4{,}8\ \text{N}$, adică de $2$
+ori.
+
+**3.**
+
+| Comparația | Ce s-a schimbat | De câte ori crește forța |
+|---|---|---|
+| $1 \rightarrow 2$ | miezul | $24$ |
+| $2 \rightarrow 3$ | spirele, dublate | $\approx 1{,}9$ |
+| $2 \rightarrow 4$ | curentul, dublat | $2$ |
+
+**4.** Fiindcă altfel n-ai ști **cui** se datorează schimbarea. Dacă ai schimba
+deodată și miezul, și numărul de spire, ai vedea că forța a crescut, dar n-ai
+putea spune cât se datorează fiecăruia.
+
+Regula asta — **schimbi un singur factor odată** — stă la temelia oricărui
+experiment.
+
+</details>
+
+---
+
+## 3. Un electromagnet de proiectat
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Trebuie construit un electromagnet care să ridice o piesă de fier de
+$5\ \text{kg}$. Se ia $g = 10\ \text{N/kg}$.
+
+**1.** Ce forță minimă trebuie să dezvolte electromagnetul?
+
+**2.** Enumeră, în ordinea importanței, cele patru lucruri pe care le-ai face ca
+forța să fie cât mai mare.
+
+**3.** Sârma bobinei are rezistența $R = 3\ \Omega$, iar sursa dă
+$U = 12\ \text{V}$. Calculează curentul și puterea disipată în bobină.
+
+**4.** Dacă s-ar dubla tensiunea, cât ar deveni puterea disipată? Ce risc
+apare?
+
+**5.** De ce miezul trebuie să fie din fier **moale**, și nu din oțel călit?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Forța trebuie să depășească greutatea piesei:
+
+$$
+G = m g = 5 \times 10 = 50\ \text{N}
+$$
+
+Deci $F > 50\ \text{N}$ — în practică se lasă și o rezervă, de pildă
+$70\ \text{N}$.
+
+**2.** În ordinea importanței:
+
+1. **miez de fier** — factorul cel mai puternic;
+2. **circuit magnetic închis**, în formă de U, pe care piesa să-l completeze;
+3. **cât mai multe spire**, strânse pe o bobină scurtă;
+4. **curent cât mai intens**, cât suportă sârma fără să se supraîncălzească.
+
+**3.**
+
+$$
+I = \frac{U}{R} = \frac{12}{3} = 4\ \text{A}
+$$
+
+$$
+P = R I^2 = 3 \times 16 = 48\ \text{W}
+$$
+
+**4.** Curentul s-ar dubla la $8\ \text{A}$, iar puterea:
+
+$$
+P' = 3 \times 64 = 192\ \text{W}
+$$
+
+De **patru ori** mai mult. Riscul: sârma se încălzește puternic, izolația se
+poate topi, spirele se scurtcircuitează între ele — iar electromagnetul se
+strică tocmai când e mai încărcat.
+
+**5.** Fiindcă fierul moale se **demagnetizează** îndată ce curentul se
+întrerupe. Oțelul călit ar rămâne magnetizat și piesa nu s-ar mai desprinde de
+electromagnet — ceea ce, pentru o macara, ar însemna că nu mai poate lăsa
+încărcătura jos.
+
+</details>

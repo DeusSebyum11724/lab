@@ -1,0 +1,146 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Forța exercitată de un electromagnet"
+slug: /f8/magnetic/s2
+title: "S2 — Forța exercitată de un electromagnet"
+description: "Suport de curs: tabelul dependențelor forței electromagnetului, cum se proiectează un electromagnet puternic și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Forța exercitată de un electromagnet
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Forța exercitată de un electromagnet](./04-curs-forta-electromagnetului.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP2](./06-lp-forta-electromagnetului.mdx)**.
+
+:::
+
+---
+
+## 1. Tabelul dependențelor
+
+| Dacă crește… | forța electromagnetului… |
+|---|---|
+| numărul de spire $N$ | **crește** |
+| intensitatea curentului $I$ | **crește** |
+| lungimea bobinei $l$, la același $N$ | **scade** |
+| se adaugă miez de fier | **crește mult** |
+| circuitul magnetic se închide | **crește și mai mult** |
+| se inversează sensul curentului | **rămâne aceeași** — se inversează doar polii |
+
+---
+
+## 2. Cum se face un electromagnet puternic
+
+| Vrei | Fă |
+|---|---|
+| forță mare | multe spire, strânse, pe o bobină scurtă |
+| forță mare | miez de fier moale, cât mai gros |
+| forță mare | curent cât mai intens, cât suportă sârma |
+| pierderi mici | sârmă groasă, ca rezistența să fie mică |
+| circuit magnetic bun | miez care se închide, în formă de U sau de inel |
+
+:::warning De ce nu se poate mări curentul oricât
+
+Sârma se încălzește prin efect Joule, cu $P = R I^2$. Curent de două ori mai
+mare înseamnă încălzire de patru ori mai mare — iar izolația sârmei se topește.
+
+:::
+
+---
+
+## 3. De reținut
+
+- Forța electromagnetului nu are o formulă simplă la nivelul acesta; se studiază
+  **calitativ**, prin comparații.
+- Ca să compari două bobine, trebuie să le legi **în serie**: numai așa ești
+  sigur că le străbate același curent.
+- Miezul trebuie să fie din **fier moale**, care se magnetizează și se
+  demagnetizează repede. Oțelul călit ar rămâne magnetizat și după oprirea
+  curentului.
+- Bobina fără miez are un câmp mult mai slab — de aceea în experiment
+  dinamometrul aproape că nu se mișcă.
+- Inversarea sensului curentului schimbă polii, nu forța.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un atelier trebuie să construiască un electromagnet pentru o macara mică. Sunt
+la dispoziție: sârmă izolată de cupru, miezuri de fier moale de grosimi diferite
+și o sursă de tensiune reglabilă.
+
+**a)** Elevul A propune o bobină lungă, cu spirele rărite. Elevul B propune una
+scurtă, cu spirele strânse, cu același număr de spire. Care are dreptate?
+
+**b)** Elevul C spune că se poate renunța la miez, dacă se dublează numărul de
+spire. Are dreptate?
+
+**c)** Se dublează tensiunea sursei. Ce se întâmplă cu forța? Dar cu încălzirea
+sârmei, dacă $P = R I^2$?
+
+**d)** Ce formă trebuie să aibă miezul, ca forța să fie cât mai mare?
+
+### Pasul 1 — Punctul a)
+
+Are dreptate **elevul B**. La același număr de spire, o bobină **mai scurtă**
+concentrează câmpul magnetic pe o lungime mai mică, iar forța crește. Asta a
+arătat experimentul cu cele două bobine de lungimi diferite.
+
+### Pasul 2 — Punctul b)
+
+**Nu are dreptate.** Deosebirea dintre bobina cu aer și cea cu miez de fier nu
+este de câteva procente, ci de **zeci sau sute de ori**: în experiment,
+dinamometrul aproape că nu se mișca fără miez.
+
+Dublând spirele, forța crește de vreo două ori. Ar rămâne cu mult sub ce dă
+miezul de fier.
+
+### Pasul 3 — Punctul c)
+
+Tensiunea dublă înseamnă, prin legea lui Ohm, **curent dublu** — rezistența
+bobinei nu se schimbă. Deci forța **crește**.
+
+Încălzirea, în schimb:
+
+$$
+P' = R (2I)^2 = 4 R I^2 = 4 P
+$$
+
+crește de **patru ori**. Aici e limita practică: sârma se poate încălzi până la
+topirea izolației.
+
+### Pasul 4 — Punctul d)
+
+Miezul trebuie să formeze un **circuit magnetic închis** — de pildă în formă de
+U sau de potcoavă, cu piesa de ridicat închizând conturul.
+
+Experimentul cu cadrul deschis și cel închis a arătat exact asta: cu circuitul
+închis, tija se desprindea mult mai greu.
+
+### Pasul 5 — Verificarea
+
+Toate cele patru răspunsuri se sprijină pe același tabel de dependențe:
+**multe spire, bobină scurtă, miez de fier, circuit închis, curent cât suportă
+sârma**.
+
+### Răspuns
+
+**a)** elevul B; **b)** nu — miezul e de neînlocuit; **c)** forța crește, dar
+încălzirea crește de patru ori; **d)** miez în formă de U, cu circuit magnetic
+închis.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Forța electromagnetului](./06-lp-forta-electromagnetului.mdx).** Trei
+probe, în total 32 de minute.
+
+:::

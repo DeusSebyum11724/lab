@@ -1,0 +1,139 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Aplicații ale electromagneților"
+slug: /f8/magnetic/s3
+title: "S3 — Aplicații ale electromagneților"
+description: "Suport de curs: tabelul aplicațiilor electromagnetului, magnet permanent față de electromagnet și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Aplicații ale electromagneților
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Aplicații ale electromagneților](./07-curs-aplicatii-electromagneti.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP3](./09-lp-aplicatii-electromagneti.mdx)**.
+
+:::
+
+---
+
+## 1. Tabelul aplicațiilor
+
+| Dispozitivul | Ce face electromagnetul în el | Ce însușire folosește |
+|---|---|---|
+| **soneria electrică** | atrage o lamelă care lovește clopotul și rupe circuitul | pornire-oprire rapidă |
+| **încuietoarea electromagnetică** | ține placa metalică lipită de toc | forță mare, comandă electrică |
+| **releul** | închide sau deschide alt circuit, cu un curent mic | comandă la distanță |
+| **siguranța automată** | rupe circuitul la curent prea mare | forța crește cu curentul |
+| **macaraua electromagnetică** | ridică și eliberează fier vechi | poate fi oprit |
+| **trenul Maglev** | ridică trenul deasupra șinei | forță mare, reglabilă |
+
+---
+
+## 2. Magnet permanent sau electromagnet
+
+| | Magnet permanent | Electromagnet |
+|---|---|---|
+| Poate fi oprit? | **nu** | **da** |
+| Forța se poate regla? | nu | da, din curent |
+| Polii se pot inversa? | nu | da, din sensul curentului |
+| Are nevoie de sursă? | nu | da |
+| Se demagnetizează? | greu | îndată ce se oprește curentul |
+
+Toate aplicațiile din lecție cer cel puțin una dintre însușirile din coloana a
+doua — de asta niciuna nu s-ar putea face cu un magnet permanent.
+
+---
+
+## 3. De reținut
+
+- Un electromagnet e un magnet **pe care îl poți porni și opri**. Aici stă tot
+  folosul lui.
+- Soneria zbârnâie fiindcă lamela **rupe singură** circuitul care a atras-o.
+- Releul separă două circuite: unul de comandă, cu curent mic, și unul de
+  putere, cu curent mare.
+- Siguranța automată este un releu care se declanșează la curent prea mare.
+- Macaraua electromagnetică eliberează încărcătura **oprind curentul** — de asta
+  se folosește electromagnet, nu magnet permanent.
+- Într-un tren Maglev, lipsa contactului cu șina desființează frecarea de
+  rostogolire; rămâne doar rezistența aerului.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O uzină are nevoie de un sistem care să oprească automat alimentarea unui utilaj
+atunci când curentul depășește $20\ \text{A}$, iar comanda de pornire să se dea
+de la un pupitru aflat la $30\ \text{m}$ depărtare, printr-un buton alimentat la
+$12\ \text{V}$.
+
+**a)** Ce dispozitiv rezolvă comanda de la distanță? Cum funcționează?
+
+**b)** Ce dispozitiv rezolvă oprirea automată la curent prea mare?
+
+**c)** De ce nu se trage pur și simplu un fir de la pupitru până la utilaj,
+pentru butonul de pornire?
+
+**d)** De ce nu se poate folosi un magnet permanent în niciunul din cele două
+dispozitive?
+
+### Pasul 1 — Punctul a)
+
+Un **releu electromagnetic**. Butonul de la pupitru închide un circuit de
+comandă, cu tensiune mică și curent mic. Prin acest circuit trece curent prin
+bobina releului, care atrage o piesă metalică mobilă. Piesa închide **contactele
+circuitului de putere**, prin care se alimentează utilajul.
+
+### Pasul 2 — Punctul b)
+
+O **siguranță electrică automată**, adică un releu construit anume pentru asta.
+Bobina ei este străbătută chiar de curentul utilajului. Când acesta depășește
+valoarea la care e reglată siguranța, forța electromagnetului devine destul de
+mare ca să deschidă contactul, iar circuitul se rupe.
+
+### Pasul 3 — Punctul c)
+
+Fiindcă prin firul acela ar trebui să treacă **tot curentul utilajului**. Ar fi
+nevoie de un cablu gros pe $30\ \text{m}$, scump și greu, iar butonul de la
+pupitru ar fi străbătut de curenți primejdioși pentru omul care îl apasă.
+
+Cu releul, prin firul lung trece doar curentul mic de comandă. Curentul mare
+rămâne în cablul scurt de lângă utilaj.
+
+### Pasul 4 — Punctul d)
+
+Fiindcă un magnet permanent **nu poate fi pornit și oprit**. Amândouă
+dispozitivele au nevoie exact de asta:
+
+- releul trebuie să atragă piesa **numai** când se apasă butonul;
+- siguranța trebuie să acționeze **numai** când curentul depășește pragul.
+
+Un magnet permanent ar atrage tot timpul, la fel de tare — deci n-ar comanda
+nimic.
+
+### Pasul 5 — Verificarea
+
+Cele două dispozitive folosesc aceeași piesă — un electromagnet cu contacte —
+dar în roluri diferite: unul comandat **din afară**, celălalt comandat de
+**curentul pe care îl supraveghează**.
+
+### Răspuns
+
+**a)** un releu electromagnetic; **b)** o siguranță electrică automată;
+**c)** ca prin firul lung să treacă doar curentul mic de comandă; **d)** fiindcă
+un magnet permanent nu poate fi oprit.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Aplicații ale electromagneților](./09-lp-aplicatii-electromagneti.mdx).**
+Trei probe, în total 32 de minute.
+
+:::
