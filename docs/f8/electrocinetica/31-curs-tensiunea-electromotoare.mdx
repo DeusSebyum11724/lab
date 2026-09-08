@@ -1,0 +1,211 @@
+---
+sidebar_position: 31
+sidebar_label: "C11 — Tensiunea electromotoare"
+slug: /f8/electrocinetica/c11
+title: "C11 — Tensiunea electromotoare"
+description: "Tensiunea nominală, tensiunea electromotoare a unei surse, tensiunea la borne și tensiunea internă."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C11 — Tensiunea electromotoare
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Tensiunea nominală
+3. Experiment: cu întrerupătorul deschis și închis
+4. Tensiunea electromotoare
+5. Tensiunea la borne
+6. Tensiunea internă
+7. Cum se măsoară fiecare
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+Cum luminează becul din montajul de mai jos, dacă este alimentat de la diferite
+baterii electrice? Lumina becului depinde de „cât de puternică" este bateria?
+S-ar putea „arde" becul, sau să nu lumineze normal?
+
+<FiguraManual
+  src="ro8-bec-in-circuit.png"
+  lat={300}
+  inalt={200}
+  latime={300}
+  eticheta="Un bec cu incandescență desenat cu raze în jur, legat prin fire la o baterie cu bornele plus și minus"
+  legenda="Bec electric în circuit."
+/>
+
+---
+
+## 2. Tensiunea nominală
+
+Un consumator electric funcționează **normal** dacă produce efectul specificat
+de fabricant atunci când prin el trece curent electric.
+
+:::danger Definiția 1
+
+**Tensiunea nominală** este tensiunea electrică pe care generatorul trebuie să
+o asigure la bornele unui consumator, pentru ca acesta să funcționeze normal.
+
+:::
+
+| Dacă tensiunea de la borne este… | Consumatorul… |
+|---|---|
+| **mai mică** decât cea nominală | luminează slab sau deloc — e **subtensionat** |
+| egală cu cea nominală | funcționează normal |
+| **mai mare** decât cea nominală | se poate „arde" — e **supratensionat** |
+
+:::note Ce înseamnă „se arde"
+
+Expresia e din limbajul obișnuit. Fizic, filamentul becului se topește: prin el
+trece un curent prea mare, se încălzește peste temperatura pe care o suportă și
+se rupe.
+
+:::
+
+---
+
+## 3. Experiment: cu întrerupătorul deschis și închis
+
+**Scop:** determinarea tensiunii electromotoare a unei surse.
+
+**Materiale:** baterie electrică, conductori, două becuri diferite, voltmetru,
+întrerupător.
+
+<FiguraManual
+  src="ro8-schema-tem.png"
+  lat={830}
+  inalt={232}
+  latime={620}
+  eticheta="Schemă de circuit: între punctele A și C sunt legate în serie becurile B1 și B2, cu punctul B între ele; bateria e legată între M și N, iar un voltmetru V e conectat la bornele ei"
+  legenda="Schema electrică a experimentului."
+/>
+
+**Mod de lucru.**
+
+1. Realizează circuitul din schemă, astfel încât becul $B_2$ să lumineze mai
+   slab decât $B_1$.
+2. Măsoară tensiunea între $M$ și $N$ cu întrerupătorul **deschis**, apoi cu el
+   **închis**.
+3. Conectează voltmetrul între $A$ și $B$, închide întrerupătorul și
+   înregistrează $U_1$.
+4. Repetă cu voltmetrul între $B$ și $C$ și notează $U_2$.
+5. Înlătură becul $B_1$ din circuit și măsoară din nou.
+
+**Constatări.** Tensiunea măsurată între $M$ și $N$ cu întrerupătorul deschis
+este **mai mare** decât cea măsurată cu el închis. Iar suma $U_1 + U_2$ este
+egală cu tensiunea $U_{MN}$ măsurată cu circuitul închis.
+
+---
+
+## 4. Tensiunea electromotoare
+
+Tensiunea măsurată cu întrerupătorul **deschis** are un nume propriu.
+
+:::danger Definiția 2
+
+**Tensiunea electromotoare** a sursei, prescurtat **t.e.m.**, notată $E$, este
+mărimea fizică specifică generatorului electric, definită prin raportul dintre
+lucrul mecanic efectuat pentru a deplasa sarcina electrică prin **întreg
+circuitul** și valoarea acelei sarcini:
+
+$$
+E = \frac{L_{\text{total}}}{q} \qquad [E]_{SI} = \text{V}
+$$
+
+:::
+
+T.e.m. arată **capacitatea generatorului de a pune în mișcare electronii** — la
+fel cum curentul unei cascade este cu atât mai puternic cu cât înălțimea de
+cădere e mai mare.
+
+Ea este o caracteristică a generatorului, pe care acesta o menține **constantă**,
+indiferent de circuitul exterior.
+
+---
+
+## 5. Tensiunea la borne
+
+Când închizi circuitul, tensiunea măsurată între $M$ și $N$ este **mai mică**
+decât $E$.
+
+:::danger Definiția 3
+
+**Tensiunea la bornele sursei**, notată $U_b$ sau $U$, este tensiunea dintre
+bornele circuitului **exterior**.
+
+:::
+
+Experimentul a arătat că ea se împarte între consumatori:
+
+$$
+U = U_1 + U_2
+$$
+
+Tensiunea la borne **depinde de circuitul exterior**: schimbi becurile, se
+schimbă și ea.
+
+---
+
+## 6. Tensiunea internă
+
+Deplasarea sarcinii electrice prin **circuitul interior** al sursei cere și ea
+lucru mecanic. Tensiunea care îi corespunde se numește **tensiune internă**,
+notată $u$.
+
+Cum lucrul mecanic total este suma celor două, se obține relația fundamentală a
+lecției:
+
+:::danger Relația fundamentală
+
+$$
+E = U + u
+$$
+
+:::
+
+Tensiunea electromotoare se împarte, așadar, între ce ajunge la consumatori
+($U$) și ce se pierde chiar în sursă ($u$).
+
+:::tip De ce becul luminează mai slab cu o baterie veche
+
+Fiindcă o baterie descărcată are tensiunea internă $u$ mai mare. Chiar dacă
+$E$ rămâne aproape aceeași, la borne mai ajunge mult mai puțin.
+
+:::
+
+---
+
+## 7. Cum se măsoară fiecare
+
+| Mărimea | Cum se măsoară |
+|---|---|
+| $E$ — t.e.m. | cu voltmetrul la bornele sursei, cu **circuitul deschis** |
+| $U$ — tensiunea la borne | cu voltmetrul la bornele sursei, cu **circuitul închis** |
+| $u$ — tensiunea internă | **nu se poate măsura direct**; se calculează din $u = E - U$ |
+
+<FiguraManual
+  src="ro8-bec-in-circuit.png"
+  lat={300}
+  inalt={200}
+  latime={260}
+  eticheta="Un bec cu incandescență legat prin fire la o baterie cu bornele plus și minus"
+  legenda="Becul se aprinde numai când circuitul e închis — și abia atunci apare tensiunea internă."
+/>
+
+---
+
+:::note Ora următoare
+
+**LP11 — Tensiunea electromotoare.** Trei probe: cele trei tensiuni deosebite,
+un montaj de citit și o baterie de judecat.
+
+Înainte de ea, treci prin
+**[S11 — Tensiunea electromotoare](./32-s-tensiunea-electromotoare.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

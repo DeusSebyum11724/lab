@@ -1,0 +1,214 @@
+---
+sidebar_position: 42
+sidebar_label: "LP14 — Gruparea generatoarelor"
+slug: /f8/electrocinetica/lp14
+title: "LP14 — Gruparea generatoarelor"
+description: "Lucrare practică: enunțuri de judecat, becul de 6 V alimentat cu baterii și o baterie băgată invers."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP14 — Gruparea generatoarelor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C14 — Gruparea generatoarelor identice](./40-curs-gruparea-generatoarelor.mdx)**,
+cu formulele din **[S14](./41-s-gruparea-generatoarelor.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Adevărat sau fals | — | 8 min |
+| 2 | Becul de 6 volți | ★ | 10 min |
+| 3 | Bateria băgată invers | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Adevărat sau fals
+
+— &nbsp;·&nbsp; **8 minute**
+
+Apreciază cu **A** sau **F** și corectează enunțurile false.
+
+**I. Gruparea serie a generatoarelor electrice:**
+
+**a)** se folosește pentru a obține un curent de intensitate mai mare decât cel
+dat de un singur generator;
+
+**b)** este utilă fiindcă tensiunea la borne crește față de cea a unui singur
+generator.
+
+**II. Gruparea paralel a generatoarelor electrice:**
+
+**c)** se folosește pentru a obține o tensiune electromotoare mai mare decât cea
+a unui generator;
+
+**d)** este utilă fiindcă rezistența internă a grupării scade față de cea a unei
+singure surse.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) F.** Gruparea serie se folosește pentru a obține o **tensiune** mai mare.
+Ea mărește și rezistența internă, deci nu e calea către curenți mari.
+
+**b) A.** T.e.m. echivalentă este $E_s = nE$, deci și tensiunea la borne crește.
+
+**c) F.** La gruparea paralel, t.e.m. **rămâne aceeași**: $E_p = E$. Patru
+baterii de $1{,}5\ \text{V}$ legate în paralel dau tot $1{,}5\ \text{V}$.
+
+**d) A.** $r_p = r/n$, deci rezistența internă scade de $n$ ori. De aici vin și
+curentul mai mare, și descărcarea mai lentă a fiecărei baterii.
+
+</details>
+
+---
+
+## 2. Becul de 6 volți
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-baterii-bec.png"
+  lat={466}
+  inalt={253}
+  latime={400}
+  eticheta="Un bec de 6 V legat printr-un circuit la patru baterii de 1,5 V așezate una după alta"
+  legenda="Becul de 6 V și cele patru baterii."
+/>
+
+Becul are tensiunea nominală de $6\ \text{V}$ și rezistența
+$R = 12\ \Omega$. Bateriile au fiecare $E = 1{,}5\ \text{V}$ și
+$r = 0{,}25\ \Omega$.
+
+**1.** Cum trebuie legate bateriile? Câte sunt necesare?
+
+**2.** Calculează t.e.m. și rezistența internă ale grupării.
+
+**3.** Calculează intensitatea curentului și tensiunea la bornele becului.
+Funcționează el normal?
+
+**4.** Ce s-ar întâmpla dacă cele patru baterii s-ar lega în paralel?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În **serie**, fiindcă numai așa cresc tensiunile. Sunt necesare:
+
+$$
+n = \frac{6}{1{,}5} = 4 \text{ baterii}
+$$
+
+**2.**
+
+$$
+E_s = 4 \times 1{,}5 = 6\ \text{V} \qquad r_s = 4 \times 0{,}25 = 1\ \Omega
+$$
+
+**3.**
+
+$$
+I = \frac{E_s}{R + r_s} = \frac{6}{12 + 1} = \frac{6}{13} \approx 0{,}46\ \text{A}
+$$
+
+$$
+U = R I = 12 \times 0{,}46 \approx 5{,}54\ \text{V}
+$$
+
+Becul primește $5{,}54\ \text{V}$ în loc de $6\ \text{V}$: e ușor
+**subtensionat** și luminează puțin mai slab decât ar trebui. Diferența de
+$0{,}46\ \text{V}$ se pierde pe rezistența internă a celor patru baterii.
+
+**4.** În paralel, $E_p = 1{,}5\ \text{V}$ și $r_p = 0{,}0625\ \Omega$:
+
+$$
+I = \frac{1{,}5}{12 + 0{,}0625} \approx 0{,}124\ \text{A} \qquad U \approx 1{,}49\ \text{V}
+$$
+
+Becul ar primi numai un sfert din tensiunea lui nominală: ar lumina foarte slab
+sau deloc.
+
+</details>
+
+---
+
+## 3. Bateria băgată invers
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+Într-o jucărie se pun **trei** baterii identice, în serie, fiecare cu
+$E = 1{,}5\ \text{V}$ și $r = 0{,}2\ \Omega$. Motorașul jucăriei are
+$R = 3\ \Omega$.
+
+**1.** Calculează intensitatea curentului când toate bateriile sunt așezate
+corect.
+
+**2.** Un copil bagă a treia baterie **invers**. Ce devine t.e.m. echivalentă?
+Dar rezistența internă?
+
+**3.** Calculează noua intensitate a curentului.
+
+**4.** De câte ori scade curentul? Cum se comportă jucăria?
+
+**5.** Ce s-ar întâmpla dacă ar fi băgate invers **două** din cele trei?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+E_s = 3 \times 1{,}5 = 4{,}5\ \text{V} \qquad r_s = 3 \times 0{,}2 = 0{,}6\ \Omega
+$$
+
+$$
+I = \frac{4{,}5}{3 + 0{,}6} = \frac{4{,}5}{3{,}6} = 1{,}25\ \text{A}
+$$
+
+**2.** O baterie băgată invers **se opune** celorlalte: t.e.m. ei se scade în
+loc să se adune.
+
+$$
+E' = 1{,}5 + 1{,}5 - 1{,}5 = 1{,}5\ \text{V}
+$$
+
+Rezistența internă **nu se schimbă**: curentul trece tot prin toate trei, deci
+$r' = 0{,}6\ \Omega$.
+
+**3.**
+
+$$
+I' = \frac{1{,}5}{3 + 0{,}6} = \frac{1{,}5}{3{,}6} \approx 0{,}42\ \text{A}
+$$
+
+**4.**
+
+$$
+\frac{I}{I'} = \frac{1{,}25}{0{,}42} \approx 3
+$$
+
+Curentul scade de **trei ori**, iar jucăria abia se mișcă sau nu pornește deloc.
+
+Observă că raportul e chiar raportul tensiunilor electromotoare, $4{,}5 : 1{,}5$
+— rezistența totală a rămas aceeași.
+
+**5.** Cu două baterii invers:
+
+$$
+E'' = 1{,}5 - 1{,}5 - 1{,}5 = -1{,}5\ \text{V}
+$$
+
+T.e.m. iese negativă, ceea ce înseamnă că **sensul curentului se inversează**:
+motorașul s-ar învârti în sensul opus, cu aceeași intensitate ca la punctul
+**3**.
+
+*De asta pe capacul bateriilor sunt desenate întotdeauna semnele plus și minus:
+o baterie așezată greșit nu doar că nu ajută — ea lucrează împotriva
+celorlalte.*
+
+</details>

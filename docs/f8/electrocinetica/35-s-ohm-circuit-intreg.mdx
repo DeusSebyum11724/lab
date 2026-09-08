@@ -1,0 +1,144 @@
+---
+sidebar_position: 35
+sidebar_label: "S12 — Legea lui Ohm pentru un circuit întreg"
+slug: /f8/electrocinetica/s12
+title: "S12 — Legea lui Ohm pentru un circuit întreg"
+description: "Suport de curs: formulele legii lui Ohm pentru întregul circuit, cele trei moduri de funcționare și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S12 — Legea lui Ohm pentru un circuit întreg
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C12 — Legea lui Ohm pentru un circuit întreg](./34-curs-ohm-circuit-intreg.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP12](./36-lp-ohm-circuit-intreg.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Legea lui Ohm, circuit întreg | $I$ | $I = \dfrac{E}{R + r}$ | amper, $\text{A}$ |
+| Legea lui Ohm, porțiune de circuit | $I$ | $I = \dfrac{U}{R}$ | amper, $\text{A}$ |
+| Tensiunea la borne | $U$ | $U = E - r I = R I$ | volt, $\text{V}$ |
+| Rezistența internă | $r$ | $r = \dfrac{E - U}{I}$ | ohm, $\Omega$ |
+| Intensitatea de scurtcircuit | $I_{sc}$ | $I_{sc} = \dfrac{E}{r}$ | amper, $\text{A}$ |
+| Rezistența totală | $R_t$ | $R_t = R + r$ | ohm, $\Omega$ |
+
+---
+
+## 2. Cele trei moduri de funcționare
+
+| Modul | Condiția | $I$ | $U$ |
+|---|---|---|---|
+| **în gol** | circuit deschis | $0$ | $E$ |
+| **în sarcină** | $0 < R < \infty$ | $0 < I < I_{sc}$ | $0 < U < E$ |
+| **în scurtcircuit** | $R \approx 0$ | $I_{sc} = \dfrac{E}{r}$ | $\approx 0$ |
+
+---
+
+## 3. De reținut
+
+- $E$ nu se schimbă niciodată; $U$ și $I$ da, după circuitul exterior.
+- Cu cât $R$ e mai mare, cu atât $I$ e mai mic și $U$ mai aproape de $E$.
+- Rezistența internă $r$ nu se poate măsura direct: se calculează din
+  $r = (E - U)/I$.
+- Ca să afli $r$, îți trebuie **două** măsurători: t.e.m. cu circuitul deschis
+  și perechea $U$, $I$ cu el închis.
+- Un scurtcircuit nu „consumă mai puțin" fiindcă n-are consumator — dimpotrivă,
+  curentul e maxim și toată energia se pierde în căldură.
+- Rezistențele se trec în ohmi, tensiunile în volți, intensitățile în amperi.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O sursă de curent continuu cu $E = 3\ \text{V}$ alimentează un bec cu rezistența
+electrică $R = 9\ \Omega$, la bornele căruia se măsoară tensiunea nominală de
+$2{,}8\ \text{V}$. Se neglijează rezistența conductoarelor de legătură.
+
+**a)** Calculează intensitatea curentului prin circuit.
+
+**b)** Calculează rezistența internă a sursei.
+
+**c)** Ce intensitate ar avea curentul dacă bornele sursei ar fi
+scurtcircuitate?
+
+**d)** De câte ori e mai mare curentul de scurtcircuit decât cel din
+funcționarea normală?
+
+### Pasul 1 — Ce se dă
+
+- $E = 3\ \text{V}$;
+- $R = 9\ \Omega$;
+- $U = 2{,}8\ \text{V}$.
+
+### Pasul 2 — Intensitatea curentului
+
+Pe porțiunea exterioară de circuit se aplică legea lui Ohm în forma știută:
+
+$$
+I = \frac{U}{R} = \frac{2{,}8}{9} \approx 0{,}31\ \text{A}
+$$
+
+### Pasul 3 — Tensiunea internă
+
+$$
+u = E - U = 3 - 2{,}8 = 0{,}2\ \text{V}
+$$
+
+### Pasul 4 — Rezistența internă
+
+$$
+r = \frac{u}{I} = \frac{0{,}2}{0{,}31} \approx 0{,}64\ \Omega
+$$
+
+### Pasul 5 — Curentul de scurtcircuit
+
+$$
+I_{sc} = \frac{E}{r} = \frac{3}{0{,}64} \approx 4{,}7\ \text{A}
+$$
+
+### Pasul 6 — Raportul
+
+$$
+\frac{I_{sc}}{I} = \frac{4{,}7}{0{,}31} \approx 15
+$$
+
+De aproape **cincisprezece ori** mai mare.
+
+### Pasul 7 — Verificarea
+
+Verificăm cu legea pentru circuitul întreg:
+
+$$
+I = \frac{E}{R + r} = \frac{3}{9 + 0{,}64} = \frac{3}{9{,}64} \approx 0{,}31\ \text{A}
+$$
+
+Aceeași valoare — deci calculul e bun.
+
+Observă și că $r$ e mult mai mică decât $R$: de asta $U$ e aproape cât $E$. Într-un
+scurtcircuit, $R$ dispare și rămâne numai $r$ — de aici saltul curentului.
+
+### Răspuns
+
+**a)** $I \approx 0{,}31\ \text{A}$; **b)** $r \approx 0{,}64\ \Omega$;
+**c)** $I_{sc} \approx 4{,}7\ \text{A}$; **d)** de circa $15$ ori.
+
+---
+
+:::note Ora următoare
+
+**[LP12 — Legea lui Ohm pentru circuitul întreg](./36-lp-ohm-circuit-intreg.mdx).**
+Trei probe, în total 34 de minute.
+
+:::

@@ -1,0 +1,172 @@
+---
+sidebar_position: 38
+sidebar_label: "S13 — Gruparea rezistoarelor"
+slug: /f8/electrocinetica/s13
+title: "S13 — Gruparea rezistoarelor"
+description: "Suport de curs: formulele grupărilor serie și paralel, cum se rezolvă o grupare mixtă și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S13 — Gruparea rezistoarelor
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C13 — Gruparea rezistoarelor](./37-curs-gruparea-rezistoarelor.mdx)**, strâns
+la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când
+lucrezi la **[LP13](./39-lp-gruparea-rezistoarelor.mdx)**.
+
+:::
+
+---
+
+## 1. Cele două grupări, față în față
+
+| | Gruparea **serie** | Gruparea **paralel** |
+|---|---|---|
+| Intensitatea | aceeași peste tot: $I = I_1 = I_2$ | se împarte: $I = I_1 + I_2$ |
+| Tensiunea | se împarte: $U = U_1 + U_2$ | aceeași peste tot: $U = U_1 = U_2$ |
+| Rezistența echivalentă | $R_s = R_1 + R_2$ | $\dfrac{1}{R_p} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$ |
+| Cât iese | **mai mare** decât fiecare | **mai mică** decât fiecare |
+| Se numește | divizor de **tensiune** | divizor de **curent** |
+| Dacă un element se arde | se oprește toată gruparea | celelalte merg mai departe |
+
+Pentru **două** rezistoare în paralel:
+
+$$
+R_p = \frac{R_1 R_2}{R_1 + R_2}
+$$
+
+Pentru $n$ rezistoare **identice** de rezistență $R$:
+
+$$
+R_s = n R \qquad R_p = \frac{R}{n}
+$$
+
+---
+
+## 2. Cum se rezolvă o grupare mixtă
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Identifici grupările simple: care rezistoare sunt în serie, care în paralel |
+| 2 | Începi **dinspre interior**: înlocuiești fiecare grupare simplă cu rezistența ei echivalentă |
+| 3 | Redesenezi circuitul simplificat |
+| 4 | Repeți până rămâne un singur rezistor |
+| 5 | Afli curentul total cu $I = \dfrac{E}{R_t + r}$ |
+| 6 | Te întorci înapoi, aflând tensiunile și curenții pe fiecare element |
+
+---
+
+## 3. De reținut
+
+- În serie contează **suma**; în paralel contează suma **inverselor**.
+- La paralel, nu uita să **inversezi la sfârșit**: $1/R_p$ nu e $R_p$. E cea mai
+  deasă greșeală.
+- Verificare rapidă: $R_p$ trebuie să iasă mai mică decât cea mai mică rezistență
+  din grupare.
+- Un fir de legătură legat peste un rezistor îl **scurtcircuitează**: prin el nu
+  mai trece curent, iar rezistența acelei porțiuni devine zero.
+- Consumatorii casnici se leagă **în paralel**, ca fiecare să primească
+  tensiunea nominală și ca defectarea unuia să nu-i oprească pe ceilalți.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+O sursă cu $E = 12\ \text{V}$ și rezistență internă neglijabilă alimentează trei
+rezistoare: $R_1 = 6\ \Omega$ legat în serie cu gruparea paralel formată din
+$R_2 = 12\ \Omega$ și $R_3 = 4\ \Omega$.
+
+**a)** Calculează rezistența echivalentă a circuitului.
+
+**b)** Calculează intensitatea curentului prin $R_1$.
+
+**c)** Calculează tensiunea la bornele grupării paralel.
+
+**d)** Calculează intensitățile prin $R_2$ și prin $R_3$ și verifică.
+
+### Pasul 1 — Ce se dă
+
+- $E = 12\ \text{V}$, $r \approx 0$;
+- $R_1 = 6\ \Omega$ în serie cu $R_2 \parallel R_3$;
+- $R_2 = 12\ \Omega$, $R_3 = 4\ \Omega$.
+
+### Pasul 2 — Gruparea paralel
+
+$$
+R_p = \frac{R_2 R_3}{R_2 + R_3} = \frac{12 \times 4}{12 + 4} = \frac{48}{16} = 3\ \Omega
+$$
+
+Verificare: $3\ \Omega$ e mai mic decât $4\ \Omega$, cea mai mică din grupare.
+Bun.
+
+### Pasul 3 — Rezistența echivalentă totală
+
+$R_1$ e în serie cu $R_p$:
+
+$$
+R_e = R_1 + R_p = 6 + 3 = 9\ \Omega
+$$
+
+### Pasul 4 — Curentul principal
+
+$$
+I = \frac{E}{R_e} = \frac{12}{9} \approx 1{,}33\ \text{A}
+$$
+
+Prin $R_1$ trece tot curentul, fiindcă el e legat în serie:
+$I_1 = 1{,}33\ \text{A}$.
+
+### Pasul 5 — Tensiunile
+
+$$
+U_1 = R_1 I = 6 \times 1{,}33 = 8\ \text{V}
+$$
+
+$$
+U_p = E - U_1 = 12 - 8 = 4\ \text{V}
+$$
+
+Aceeași valoare se obține și direct: $U_p = R_p I = 3 \times 1{,}33 = 4\ \text{V}$.
+
+### Pasul 6 — Curenții din ramuri
+
+Cele două rezistoare din paralel au **aceeași** tensiune la borne,
+$U_p = 4\ \text{V}$:
+
+$$
+I_2 = \frac{U_p}{R_2} = \frac{4}{12} \approx 0{,}33\ \text{A}
+$$
+
+$$
+I_3 = \frac{U_p}{R_3} = \frac{4}{4} = 1\ \text{A}
+$$
+
+### Pasul 7 — Verificarea
+
+$$
+I_2 + I_3 = 0{,}33 + 1 = 1{,}33\ \text{A} = I
+$$
+
+Curenții din ramuri se adună și dau curentul principal — cum trebuie.
+
+Observă și că prin $R_3$, cel mai mic, trece cel mai mare curent: gruparea
+paralel împarte curentul **invers proporțional** cu rezistențele.
+
+### Răspuns
+
+**a)** $R_e = 9\ \Omega$; **b)** $I = 1{,}33\ \text{A}$; **c)**
+$U_p = 4\ \text{V}$; **d)** $I_2 = 0{,}33\ \text{A}$, $I_3 = 1\ \text{A}$.
+
+---
+
+:::note Ora următoare
+
+**[LP13 — Gruparea rezistoarelor](./39-lp-gruparea-rezistoarelor.mdx).** Trei
+probe, în total 34 de minute.
+
+:::

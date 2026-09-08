@@ -1,0 +1,133 @@
+---
+sidebar_position: 32
+sidebar_label: "S11 — Tensiunea electromotoare"
+slug: /f8/electrocinetica/s11
+title: "S11 — Tensiunea electromotoare"
+description: "Suport de curs: cele trei tensiuni ale unui circuit, cum se măsoară fiecare și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S11 — Tensiunea electromotoare
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C11 — Tensiunea electromotoare](./31-curs-tensiunea-electromotoare.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP11](./33-lp-tensiunea-electromotoare.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Tensiunea electromotoare | $E$ | $E = U + u$ | volt, $\text{V}$ |
+| Tensiunea la borne | $U$ | $U = E - u$ | volt, $\text{V}$ |
+| Tensiunea internă | $u$ | $u = E - U$ | volt, $\text{V}$ |
+| T.e.m., din lucru mecanic | $E$ | $E = \dfrac{L_{\text{total}}}{q}$ | volt, $\text{V}$ |
+| Lucrul mecanic total | $L$ | $L = E \cdot q$ | joule, $\text{J}$ |
+| Aditivitatea tensiunilor | $U$ | $U = U_1 + U_2 + \dots$ | volt, $\text{V}$ |
+
+---
+
+## 2. Cele trei tensiuni, alături
+
+| Tensiunea | Unde „lucrează" | Depinde de | Se măsoară? |
+|---|---|---|---|
+| $E$ | tot circuitul | numai de sursă | da, cu circuitul **deschis** |
+| $U$ | circuitul **exterior** | de consumatori | da, cu circuitul **închis** |
+| $u$ | circuitul **interior** | de sursă și de curent | **nu** — se calculează |
+
+Cu circuitul deschis, prin el nu trece curent, deci nu se pierde nimic în
+interiorul sursei: voltmetrul arată chiar $E$.
+
+---
+
+## 3. De reținut
+
+- $E$ este întotdeauna **mai mare** decât $U$, cât timp prin circuit trece
+  curent.
+- Cu circuitul deschis, $u = 0$ și $U = E$.
+- Cu cât bateria e mai uzată, cu atât $u$ e mai mare și $U$ mai mic.
+- Tensiunile consumatorilor legați în serie **se adună** și dau $U$.
+- $1\ \text{V}$ înseamnă $1\ \text{J}$ de lucru mecanic pentru fiecare
+  $1\ \text{C}$ de sarcină deplasată.
+- Sarcinile se trec în coulombi: $1\ \text{mC} = 10^{-3}\ \text{C}$.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Tensiunea la bornele unei baterii electrice este $U = 8{,}1\ \text{V}$, ceea ce
+reprezintă $90\%$ din t.e.m. a acestui generator. Sarcina totală transportată
+prin circuit este $q = 500\ \text{mC}$.
+
+**a)** Află tensiunea electromotoare a sursei.
+
+**b)** Află tensiunea internă.
+
+**c)** Află lucrul mecanic pentru deplasarea sarcinii prin întreg circuitul.
+
+### Pasul 1 — Ce se dă
+
+- $U = 8{,}1\ \text{V}$, adică $90\%$ din $E$;
+- $q = 500\ \text{mC} = 0{,}5\ \text{C}$.
+
+### Pasul 2 — Tensiunea electromotoare
+
+$$
+U = 0{,}9 \, E \quad\Longrightarrow\quad E = \frac{U}{0{,}9} = \frac{8{,}1}{0{,}9} = 9\ \text{V}
+$$
+
+### Pasul 3 — Tensiunea internă
+
+$$
+u = E - U = 9 - 8{,}1 = 0{,}9\ \text{V}
+$$
+
+Se putea și direct: dacă $U$ e $90\%$ din $E$, atunci $u$ e restul de $10\%$,
+adică $0{,}9\ \text{V}$.
+
+### Pasul 4 — Lucrul mecanic total
+
+Din definiția t.e.m.:
+
+$$
+E = \frac{L}{q} \quad\Longrightarrow\quad L = E \cdot q = 9 \times 0{,}5 = 4{,}5\ \text{J}
+$$
+
+### Pasul 5 — Verificarea
+
+Verificăm și pe cealaltă cale: lucrul mecanic din circuitul exterior este
+$U q = 8{,}1 \times 0{,}5 = 4{,}05\ \text{J}$, iar cel din interiorul sursei
+$u q = 0{,}9 \times 0{,}5 = 0{,}45\ \text{J}$. Suma:
+
+$$
+4{,}05 + 0{,}45 = 4{,}5\ \text{J}
+$$
+
+Se potrivește — cum trebuie, fiindcă $E = U + u$ înmulțită cu $q$ dă chiar
+împărțirea lucrului mecanic.
+
+Din fiecare $10\ \text{J}$ produși de baterie, $9$ ajung la consumatori și
+$1$ se pierde chiar în ea.
+
+### Răspuns
+
+**a)** $E = 9\ \text{V}$; **b)** $u = 0{,}9\ \text{V}$; **c)**
+$L = 4{,}5\ \text{J}$.
+
+---
+
+:::note Ora următoare
+
+**[LP11 — Tensiunea electromotoare](./33-lp-tensiunea-electromotoare.mdx).**
+Trei probe, în total 32 de minute.
+
+:::

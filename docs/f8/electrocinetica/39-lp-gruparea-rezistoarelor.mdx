@@ -1,0 +1,226 @@
+---
+sidebar_position: 39
+sidebar_label: "LP13 — Gruparea rezistoarelor"
+slug: /f8/electrocinetica/lp13
+title: "LP13 — Gruparea rezistoarelor"
+description: "Lucrare practică: rezistențe echivalente de calculat, instalația de Crăciun și un circuit mixt."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP13 — Gruparea rezistoarelor
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C13 — Gruparea rezistoarelor](./37-curs-gruparea-rezistoarelor.mdx)**, cu
+formulele din **[S13](./38-s-gruparea-rezistoarelor.mdx)** la îndemână. Trei
+probe; în total 34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Rezistențe echivalente | — | 10 min |
+| 2 | Lustra și instalația de Crăciun | ★ | 10 min |
+| 3 | Un circuit mixt | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Rezistențe echivalente
+
+— &nbsp;·&nbsp; **10 minute**
+
+Calculează rezistența echivalentă în fiecare caz.
+
+**a)** $R_1 = 10\ \Omega$ și $R_2 = 15\ \Omega$, în serie;
+**b)** aceleași două, în paralel;
+**c)** trei rezistoare de câte $9\ \Omega$, în serie;
+**d)** trei rezistoare de câte $9\ \Omega$, în paralel;
+**e)** $R_1 = 2\ \Omega$, $R_2 = 3\ \Omega$ și $R_3 = 6\ \Omega$, toate în
+paralel;
+**f)** un rezistor de $20\ \Omega$ scurtcircuitat printr-un fir de rezistență
+neglijabilă.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a)** $R_s = 10 + 15 = 25\ \Omega$.
+
+**b)** $R_p = \dfrac{10 \times 15}{10 + 15} = \dfrac{150}{25} = 6\ \Omega$.
+Mai mic decât $10$ — corect.
+
+**c)** $R_s = 3 \times 9 = 27\ \Omega$.
+
+**d)** $R_p = \dfrac{9}{3} = 3\ \Omega$.
+
+**e)**
+
+$$
+\frac{1}{R_p} = \frac{1}{2} + \frac{1}{3} + \frac{1}{6} = \frac{3 + 2 + 1}{6} = 1
+$$
+
+$$
+R_p = 1\ \Omega
+$$
+
+Atenție: rezultatul e $1\ \Omega$, nu $1/1$. După ce aduni inversele, trebuie să
+**inversezi la loc**.
+
+**f)** $R = 0$. Curentul trece prin fir, care nu opune rezistență, și ocolește
+rezistorul.
+
+</details>
+
+---
+
+## 2. Lustra și instalația de Crăciun
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-instalatie-craciun.png"
+  lat={450}
+  inalt={181}
+  latime={380}
+  eticheta="O ghirlandă de beculețe aprinse, întinsă pe o suprafață de lemn întunecată"
+  legenda="Instalație pentru pomul de Crăciun."
+/>
+
+**1.** Cum sunt legate becurile unei lustre, dacă arderea unuia nu le stinge pe
+celelalte?
+
+**2.** O instalație veche de Crăciun se stinge toată când se arde un singur
+bec. Cum sunt legate becurile ei?
+
+**3.** O instalație nouă se stinge doar pe grupe. Ce fel de grupare este?
+
+**4.** O instalație are $20$ de beculețe identice legate în serie, alimentate la
+$230\ \text{V}$. Ce tensiune revine fiecăruia? Ce s-ar întâmpla dacă am lega
+numai $10$?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** În **paralel**. Fiecare bec are propria lui ramură, iar întreruperea
+uneia nu afectează celelalte ramuri.
+
+**2.** În **serie**. Becul ars joacă rolul unui întrerupător deschis și oprește
+tot circuitul.
+
+**3.** O grupare **mixtă**: becurile sunt legate în serie în interiorul fiecărei
+grupe, iar grupele sunt legate în paralel între ele. Se stinge doar grupa din
+care făcea parte becul ars.
+
+**4.** Gruparea serie e un divizor de tensiune, iar becurile fiind identice,
+tensiunea se împarte în părți egale:
+
+$$
+U_{\text{bec}} = \frac{230}{20} = 11{,}5\ \text{V}
+$$
+
+Cu numai $10$ becuri:
+
+$$
+U_{\text{bec}}' = \frac{230}{10} = 23\ \text{V}
+$$
+
+Fiecare bec ar fi **supratensionat** — ar primi de două ori tensiunea nominală și
+s-ar arde repede. De asta la instalațiile de tip serie nu se scot becuri: ele se
+înlocuiesc.
+
+</details>
+
+---
+
+## 3. Un circuit mixt
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+O sursă cu $E = 24\ \text{V}$ și $r = 1\ \Omega$ alimentează un circuit în care
+$R_1 = 4\ \Omega$ este legat în serie cu gruparea paralel a rezistoarelor
+$R_2 = 6\ \Omega$ și $R_3 = 3\ \Omega$.
+
+**1.** Calculează rezistența echivalentă a grupării paralel, apoi pe cea a
+circuitului exterior.
+
+**2.** Calculează intensitatea curentului prin sursă.
+
+**3.** Calculează tensiunea la bornele sursei și pe fiecare porțiune.
+
+**4.** Calculează curenții prin $R_2$ și $R_3$ și verifică suma.
+
+**5.** Ce s-ar întâmpla dacă $R_3$ s-ar arde?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+R_p = \frac{R_2 R_3}{R_2 + R_3} = \frac{6 \times 3}{9} = 2\ \Omega
+$$
+
+$$
+R = R_1 + R_p = 4 + 2 = 6\ \Omega
+$$
+
+**2.**
+
+$$
+I = \frac{E}{R + r} = \frac{24}{6 + 1} = \frac{24}{7} \approx 3{,}43\ \text{A}
+$$
+
+**3.**
+
+$$
+U = R I = 6 \times 3{,}43 \approx 20{,}57\ \text{V}
+$$
+
+$$
+U_1 = R_1 I = 4 \times 3{,}43 \approx 13{,}71\ \text{V}
+$$
+
+$$
+U_p = R_p I = 2 \times 3{,}43 \approx 6{,}86\ \text{V}
+$$
+
+Verificare: $13{,}71 + 6{,}86 = 20{,}57\ \text{V} = U$. Iar tensiunea internă
+este $u = r I = 1 \times 3{,}43 = 3{,}43\ \text{V}$, deci
+$U + u = 24\ \text{V} = E$.
+
+**4.**
+
+$$
+I_2 = \frac{U_p}{R_2} = \frac{6{,}86}{6} \approx 1{,}14\ \text{A}
+$$
+
+$$
+I_3 = \frac{U_p}{R_3} = \frac{6{,}86}{3} \approx 2{,}29\ \text{A}
+$$
+
+$$
+I_2 + I_3 \approx 3{,}43\ \text{A} = I
+$$
+
+**5.** Ramura lui $R_3$ s-ar întrerupe, deci ar rămâne numai $R_2$:
+
+$$
+R' = R_1 + R_2 = 4 + 6 = 10\ \Omega
+$$
+
+$$
+I' = \frac{24}{10 + 1} = \frac{24}{11} \approx 2{,}18\ \text{A}
+$$
+
+Rezistența totală **crește**, deci curentul **scade**. Prin $R_2$ ar trece acum
+$2{,}18\ \text{A}$ în loc de $1{,}14\ \text{A}$ — aproape dublu — iar tensiunea
+la bornele lui ar urca la $R_2 I' = 6 \times 2{,}18 \approx 13\ \text{V}$.
+
+*Ce se învață:* într-o grupare paralel, dispariția unei ramuri **nu lasă
+neschimbate** celelalte ramuri, ci le schimbă regimul — chiar dacă ele continuă
+să funcționeze.
+
+</details>

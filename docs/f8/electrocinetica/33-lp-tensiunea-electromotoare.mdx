@@ -1,0 +1,199 @@
+---
+sidebar_position: 33
+sidebar_label: "LP11 — Tensiunea electromotoare"
+slug: /f8/electrocinetica/lp11
+title: "LP11 — Tensiunea electromotoare"
+description: "Lucrare practică: cele trei tensiuni deosebite, un montaj cu două becuri și lucrul mecanic al unei baterii."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP11 — Tensiunea electromotoare
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C11 — Tensiunea electromotoare](./31-curs-tensiunea-electromotoare.mdx)**, cu
+formulele din **[S11](./32-s-tensiunea-electromotoare.mdx)** la îndemână. Trei
+probe; în total 32 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Care tensiune e care | — | 8 min |
+| 2 | Montajul cu două becuri | ★ | 12 min |
+| 3 | Bateria care se descarcă | ★★ | 12 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Care tensiune e care
+
+— &nbsp;·&nbsp; **8 minute**
+
+Notează **A** sau **F** și corectează enunțurile false.
+
+**a)** Tensiunea electromotoare se măsoară cu voltmetrul, cu circuitul închis.
+
+**b)** Tensiunea la borne este întotdeauna mai mică decât t.e.m., cât timp prin
+circuit trece curent.
+
+**c)** Tensiunea internă se poate măsura direct cu voltmetrul.
+
+**d)** T.e.m. depinde de becurile legate în circuit.
+
+**e)** Un bec alimentat la o tensiune mai mare decât cea nominală este
+subtensionat.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) F.** T.e.m. se măsoară cu circuitul **deschis**. Cu circuitul închis,
+voltmetrul arată tensiunea la borne, care e mai mică.
+
+**b) A.** Din $E = U + u$, cu $u > 0$ atunci când circulă curent, rezultă
+$U < E$.
+
+**c) F.** Tensiunea internă **nu se poate măsura direct** — voltmetrul n-are
+unde se lega, în interiorul sursei. Ea se calculează: $u = E - U$.
+
+**d) F.** T.e.m. este o caracteristică a **generatorului**, pe care el o menține
+constantă indiferent de circuitul exterior. Ce depinde de becuri e tensiunea la
+borne.
+
+**e) F.** E **supratensionat** — și riscă să se ardă. Subtensionat înseamnă
+alimentat sub tensiunea nominală, caz în care luminează slab.
+
+</details>
+
+---
+
+## 2. Montajul cu două becuri
+
+★ &nbsp;·&nbsp; **12 minute**
+
+<FiguraManual
+  src="ro8-schema-tem.png"
+  lat={830}
+  inalt={232}
+  latime={620}
+  eticheta="Schemă de circuit cu becurile B1 și B2 legate în serie între A și C, bateria între M și N și un voltmetru la bornele ei"
+  legenda="Montajul din experiment, cu punctele de măsură A, B, C, M și N."
+/>
+
+Cu întrerupătorul **deschis**, voltmetrul legat între $M$ și $N$ arată
+$4{,}5\ \text{V}$. Cu întrerupătorul **închis**, el arată $4{,}2\ \text{V}$.
+Voltmetrul legat între $A$ și $B$ arată $2{,}8\ \text{V}$.
+
+**1.** Cât este tensiunea electromotoare a bateriei?
+
+**2.** Cât este tensiunea internă a sursei?
+
+**3.** Cât este tensiunea la bornele becului $B_2$?
+
+**4.** Becul $B_2$ are tensiunea nominală de $2{,}5\ \text{V}$. Cum funcționează
+el?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Cu circuitul deschis, voltmetrul arată chiar t.e.m.:
+
+$$
+E = 4{,}5\ \text{V}
+$$
+
+**2.** Cu circuitul închis, voltmetrul arată tensiunea la borne,
+$U = 4{,}2\ \text{V}$:
+
+$$
+u = E - U = 4{,}5 - 4{,}2 = 0{,}3\ \text{V}
+$$
+
+**3.** Becurile sunt legate în serie, deci tensiunile lor se adună și dau
+tensiunea la borne:
+
+$$
+U = U_1 + U_2 \quad\Longrightarrow\quad U_2 = 4{,}2 - 2{,}8 = 1{,}4\ \text{V}
+$$
+
+**4.** $1{,}4\ \text{V}$ este **sub** tensiunea nominală de
+$2{,}5\ \text{V}$: becul $B_2$ este **subtensionat** și luminează slab.
+
+Asta explică și cerința din experiment, ca $B_2$ să lumineze mai slab decât
+$B_1$: el primește mai puțin din tensiunea disponibilă.
+
+</details>
+
+---
+
+## 3. Bateria care se descarcă
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+O baterie nouă are $E = 1{,}5\ \text{V}$. Legată la o lanternă, ea dă la borne
+$U = 1{,}45\ \text{V}$. După câteva luni de folosire, aceeași baterie, legată la
+aceeași lanternă, dă la borne numai $U' = 1{,}05\ \text{V}$, iar t.e.m. măsurată
+cu circuitul deschis a rămas $1{,}5\ \text{V}$.
+
+**1.** Cât era tensiunea internă la început? Dar după câteva luni?
+
+**2.** Ce s-a schimbat în baterie?
+
+**3.** Prin lanternă trece o sarcină de $3\ \text{C}$. Ce lucru mecanic total
+efectuează bateria? Cât din el ajunge la bec, în cele două situații?
+
+**4.** De ce lanterna luminează mai slab, deși t.e.m. a rămas aceeași?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** La început:
+
+$$
+u = 1{,}5 - 1{,}45 = 0{,}05\ \text{V}
+$$
+
+După câteva luni:
+
+$$
+u' = 1{,}5 - 1{,}05 = 0{,}45\ \text{V}
+$$
+
+De nouă ori mai mult.
+
+**2.** A crescut **tensiunea internă**, ceea ce înseamnă că a crescut rezistența
+interioară a bateriei: substanțele chimice din ea s-au consumat, iar sarcina
+trece prin interiorul ei mult mai greu.
+
+**3.** Lucrul mecanic total nu depinde de starea bateriei, ci numai de $E$:
+
+$$
+L = E \cdot q = 1{,}5 \times 3 = 4{,}5\ \text{J}
+$$
+
+Din el ajunge la bec:
+
+$$
+L_1 = U \cdot q = 1{,}45 \times 3 = 4{,}35\ \text{J} \qquad\text{la început}
+$$
+
+$$
+L_2 = U' \cdot q = 1{,}05 \times 3 = 3{,}15\ \text{J} \qquad\text{după câteva luni}
+$$
+
+Diferența de $1{,}2\ \text{J}$ se pierde acum **în interiorul bateriei**, unde
+se transformă în căldură.
+
+**4.** Fiindcă ce contează pentru bec **nu** este t.e.m., ci tensiunea care îi
+ajunge **la borne**. Aceasta a scăzut de la $1{,}45$ la $1{,}05\ \text{V}$,
+adică sub tensiunea nominală: becul e subtensionat.
+
+*Ce se învață:* o baterie „moartă" nu e una care și-a pierdut tensiunea
+electromotoare, ci una care nu mai poate livra curent fără să piardă aproape tot
+în interiorul ei. De asta o baterie descărcată poate arăta $1{,}5\ \text{V}$ la
+voltmetru și totuși să nu aprindă lanterna.
+
+</details>

@@ -1,0 +1,159 @@
+---
+sidebar_position: 41
+sidebar_label: "S14 — Gruparea generatoarelor identice"
+slug: /f8/electrocinetica/s14
+title: "S14 — Gruparea generatoarelor identice"
+description: "Suport de curs: formulele generatorului echivalent la grupările serie și paralel și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S14 — Gruparea generatoarelor identice
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C14 — Gruparea generatoarelor identice](./40-curs-gruparea-generatoarelor.mdx)**,
+strâns la un loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă
+când lucrezi la **[LP14](./42-lp-gruparea-generatoarelor.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Gruparea | T.e.m. echivalentă | Rezistența internă echivalentă | Intensitatea |
+|---|---|---|---|
+| **serie**, $n$ surse | $E_s = n E$ | $r_s = n r$ | $I = \dfrac{n E}{R + n r}$ |
+| **paralel**, $n$ surse | $E_p = E$ | $r_p = \dfrac{r}{n}$ | $I = \dfrac{E}{R + \dfrac{r}{n}}$ |
+
+---
+
+## 2. Cum se leagă bornele
+
+| Gruparea | Cum se cuplează |
+|---|---|
+| **serie** | plus la minus, una după alta, ca un lanț |
+| **paralel** | toate bornele plus împreună, toate bornele minus împreună |
+
+Într-o lanternă, bateriile așezate una după alta, toate în același sens, sunt
+legate **în serie** — de asta trebuie băgate cu grijă la polaritate.
+
+---
+
+## 3. De reținut
+
+- Gruparea serie mărește **tensiunea**; gruparea paralel mărește **curentul**
+  care se poate scoate.
+- Formulele merg numai pentru generatoare **identice**.
+- La gruparea paralel, $E$ **nu** se schimbă. E greșeala cea mai deasă: patru
+  baterii de $1{,}5\ \text{V}$ în paralel dau tot $1{,}5\ \text{V}$.
+- Dacă o baterie e băgată invers într-o grupare serie, t.e.m. ei se **scade** în
+  loc să se adune.
+- Curentul de scurtcircuit al grupării serie este $I_{sc} = \dfrac{nE}{nr} = \dfrac{E}{r}$,
+  adică **același** ca al unei singure surse. Cel al grupării paralel este de
+  $n$ ori mai mare.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Se dau patru generatoare identice, fiecare cu $E = 1{,}5\ \text{V}$ și
+$r = 0{,}5\ \Omega$. Ele alimentează un rezistor cu $R = 4\ \Omega$.
+
+**a)** Calculează intensitatea curentului dacă generatoarele sunt grupate **în
+serie**.
+
+**b)** Calculează intensitatea dacă sunt grupate **în paralel**.
+
+**c)** Care grupare dă curentul mai mare? Care dă tensiunea la borne mai mare?
+
+**d)** Ce s-ar întâmpla dacă rezistorul ar fi $R = 0{,}1\ \Omega$?
+
+### Pasul 1 — Ce se dă
+
+- $n = 4$, $E = 1{,}5\ \text{V}$, $r = 0{,}5\ \Omega$;
+- $R = 4\ \Omega$.
+
+### Pasul 2 — Gruparea serie
+
+$$
+E_s = 4 \times 1{,}5 = 6\ \text{V} \qquad r_s = 4 \times 0{,}5 = 2\ \Omega
+$$
+
+$$
+I_s = \frac{E_s}{R + r_s} = \frac{6}{4 + 2} = \frac{6}{6} = 1\ \text{A}
+$$
+
+Tensiunea la borne:
+
+$$
+U_s = R I_s = 4 \times 1 = 4\ \text{V}
+$$
+
+### Pasul 3 — Gruparea paralel
+
+$$
+E_p = 1{,}5\ \text{V} \qquad r_p = \frac{0{,}5}{4} = 0{,}125\ \Omega
+$$
+
+$$
+I_p = \frac{1{,}5}{4 + 0{,}125} = \frac{1{,}5}{4{,}125} \approx 0{,}36\ \text{A}
+$$
+
+$$
+U_p = 4 \times 0{,}36 \approx 1{,}45\ \text{V}
+$$
+
+### Pasul 4 — Comparația
+
+Aici gruparea **serie** dă și curentul mai mare ($1\ \text{A}$ față de
+$0{,}36\ \text{A}$), și tensiunea mai mare ($4\ \text{V}$ față de
+$1{,}45\ \text{V}$).
+
+Motivul: rezistorul are $R = 4\ \Omega$, mult mai mare decât rezistențele
+interne. Când $R$ e mare, ce contează e t.e.m., iar seria câștigă.
+
+### Pasul 5 — Cu un rezistor mic
+
+Cu $R = 0{,}1\ \Omega$:
+
+$$
+I_s = \frac{6}{0{,}1 + 2} = \frac{6}{2{,}1} \approx 2{,}86\ \text{A}
+$$
+
+$$
+I_p = \frac{1{,}5}{0{,}1 + 0{,}125} = \frac{1{,}5}{0{,}225} \approx 6{,}67\ \text{A}
+$$
+
+Acum **gruparea paralel** dă curentul mai mare, de peste două ori.
+
+### Pasul 6 — Verificarea și înțelesul
+
+Rezultatul nu e o contradicție, ci chiar regula lecției:
+
+- când $R$ este **mare** față de rezistențele interne, contează t.e.m. — deci
+  gruparea **serie**;
+- când $R$ este **mic**, contează rezistența internă — deci gruparea
+  **paralel**, care o micșorează.
+
+De asta o lanternă are bateriile în serie (becul are rezistență mare), iar
+bateriile de pornire ale automobilelor sunt construite din celule legate în așa
+fel încât să dea curenți uriași la demaraj.
+
+### Răspuns
+
+**a)** $I_s = 1\ \text{A}$; **b)** $I_p \approx 0{,}36\ \text{A}$; **c)**
+seria, în ambele privințe; **d)** cu $R$ mic, paralelul devine mai bun.
+
+---
+
+:::note Ora următoare
+
+**[LP14 — Gruparea generatoarelor](./42-lp-gruparea-generatoarelor.mdx).** Trei
+probe, în total 32 de minute.
+
+:::

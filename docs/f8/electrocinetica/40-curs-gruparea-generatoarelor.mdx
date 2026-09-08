@@ -1,0 +1,237 @@
+---
+sidebar_position: 40
+sidebar_label: "C14 — Gruparea generatoarelor identice"
+slug: /f8/electrocinetica/c14
+title: "C14 — Gruparea generatoarelor identice"
+description: "Generatorul echivalent, gruparea serie și gruparea paralel a generatoarelor identice și la ce folosește fiecare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C14 — Gruparea generatoarelor identice
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Generatorul echivalent
+3. Experiment: gruparea serie
+4. Caracteristicile grupării serie
+5. Experiment: gruparea paralel
+6. Caracteristicile grupării paralel
+7. Care grupare, la ce
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Becul din circuitul de mai jos are înscrisă tensiunea nominală de
+$6\ \text{V}$. Cum au fost cuplate bateriile de $1{,}5\ \text{V}$, ca becul să
+funcționeze normal?
+
+<FiguraManual
+  src="ro8-baterii-bec.png"
+  lat={466}
+  inalt={253}
+  latime={400}
+  eticheta="Un bec de 6 V legat printr-un circuit la patru baterii de 1,5 V așezate una după alta"
+  legenda="Circuit cu grupare de baterii și bec."
+/>
+
+**2.** O lanternă sau un aparat radio pot avea nevoie de mai multe baterii. Vor
+funcționa indiferent de felul în care sunt conectate bateriile?
+
+<FiguraManual
+  src="ro8-lanterna.png"
+  lat={435}
+  inalt={253}
+  latime={330}
+  eticheta="O lanternă albastră de mână, cu reflector"
+  legenda="Lanternă."
+/>
+
+<FiguraManual
+  src="ro8-radio.png"
+  lat={460}
+  inalt={253}
+  latime={330}
+  eticheta="Un aparat de radio portabil, cu cadran și buton rotativ"
+  legenda="Aparat radio."
+/>
+
+---
+
+## 2. Generatorul echivalent
+
+Pentru a funcționa normal, diferiți consumatori trebuie alimentați la tensiunile
+lor nominale. În cazul construcției circuitelor, generatoarele se grupează în
+serie sau în paralel, ca să acopere o gamă largă de tensiuni de alimentare.
+
+:::danger Definiția 1
+
+Un generator electric este **echivalent** cu o grupare de generatoare dacă,
+alimentând același circuit, determină un curent de aceeași intensitate ca
+gruparea.
+
+:::
+
+---
+
+## 3. Experiment: gruparea serie
+
+**Scop:** realizarea unui montaj serie de generatoare și determinarea
+caracteristicilor $E$ și $r$ ale generatorului echivalent.
+
+<FiguraManual
+  src="ro8-circuit-serie-generatoare.png"
+  lat={444}
+  inalt={275}
+  latime={430}
+  eticheta="Schemă: trei surse identice, fiecare cu E și r, legate una după alta între punctele A și B, cu borna plus a uneia la borna minus a următoarei; voltmetrul V între A și B, iar în circuit întrerupătorul K, rezistorul R și ampermetrul A"
+  legenda="Circuit serie de generatoare."
+/>
+
+**Mod de lucru.**
+
+1. Realizează circuitul din schemă.
+2. Măsoară cu voltmetrul tensiunea între $A$ și $B$, cu întrerupătorul deschis,
+   apoi cu el închis.
+3. Măsoară intensitatea curentului cu întrerupătorul închis.
+
+**Constatări.** Bornele se cuplează **plus la minus**: borna pozitivă a unei
+surse la borna negativă a următoarei. Tensiunea măsurată cu circuitul deschis
+este **suma** tensiunilor electromotoare ale celor trei surse.
+
+---
+
+## 4. Caracteristicile grupării serie
+
+<FiguraManual
+  src="ro8-grupare-serie-baterii.png"
+  lat={357}
+  inalt={267}
+  latime={320}
+  eticheta="Patru baterii așezate una după alta în același sens, legate în serie; la capete, bornele plus și minus, cu indicația 6 V"
+  legenda="Grupare serie de baterii. Patru baterii de 1,5 V dau împreună 6 V."
+/>
+
+:::danger Definiția 2
+
+Prin gruparea în **serie** a $n$ generatoare identice, fiecare cu tensiunea
+electromotoare $E$ și rezistența internă $r$, se obține un generator echivalent
+cu:
+
+$$
+E_s = n E \qquad\qquad r_s = n r
+$$
+
+:::
+
+Intensitatea curentului prin circuit devine:
+
+$$
+I = \frac{n E}{R + n r}
+$$
+
+:::tip Când e de folos
+
+Prin gruparea în serie se obțin **tensiuni electromotoare mai mari** — de asta
+patru baterii de $1{,}5\ \text{V}$ aprind un bec de $6\ \text{V}$.
+
+În același timp crește însă și rezistența internă. Gruparea e avantajoasă numai
+dacă $n r$ rămâne suficient de mic față de $R$.
+
+:::
+
+Exemple: jucăriile electrice, lanterna, radioul portabil.
+
+---
+
+## 5. Experiment: gruparea paralel
+
+**Scop:** realizarea unui montaj paralel de generatoare și determinarea
+caracteristicilor generatorului echivalent.
+
+<FiguraManual
+  src="ro8-circuit-paralel-generatoare.png"
+  lat={435}
+  inalt={367}
+  latime={430}
+  eticheta="Schemă: trei surse identice legate în paralel între punctele A și B, cu toate bornele pozitive cuplate împreună și toate cele negative la fel; în circuit, întrerupătorul K, rezistorul R, ampermetrul A și voltmetrul V"
+  legenda="Circuit paralel de generatoare."
+/>
+
+**Constatări.** Bornele pozitive se cuplează împreună și, la fel, cele negative.
+Tensiunea măsurată între $A$ și $B$ cu circuitul deschis este **identică** cu
+t.e.m. a unui singur generator.
+
+---
+
+## 6. Caracteristicile grupării paralel
+
+<FiguraManual
+  src="ro8-grupare-serie-baterii.png"
+  lat={357}
+  inalt={267}
+  latime={300}
+  eticheta="Patru baterii așezate una lângă alta, cu bornele de același fel legate împreună"
+  legenda="La gruparea paralel, tensiunea rămâne cea a unei singure baterii — aici, 1,5 V."
+/>
+
+:::danger Definiția 3
+
+Prin gruparea în **paralel** a $n$ generatoare identice, fiecare cu $E$ și $r$,
+se obține un generator echivalent cu:
+
+$$
+E_p = E \qquad\qquad r_p = \frac{r}{n}
+$$
+
+:::
+
+Intensitatea curentului devine:
+
+$$
+I = \frac{E}{R + \dfrac{r}{n}}
+$$
+
+:::tip Când e de folos
+
+Chiar dacă tensiunea rămâne cea a unui singur generator, gruparea paralel are
+avantajul de a da un **curent de intensitate mai mare**, fiindcă rezistența
+internă **scade** de $n$ ori.
+
+În plus, fiecare baterie se descarcă mai încet, dând doar o parte din curent.
+
+:::
+
+---
+
+## 7. Care grupare, la ce
+
+| Gruparea | $E$ | $r$ | La ce folosește |
+|---|---|---|---|
+| **serie** | $n E$ — crește | $n r$ — crește | tensiuni mai mari |
+| **paralel** | $E$ — neschimbată | $r/n$ — scade | curenți mai mari, durată mai lungă |
+
+:::warning Numai generatoare identice
+
+Toate formulele de mai sus sunt scrise pentru generatoare **identice**. Bateriile
+de tipuri sau vârste diferite, legate în paralel, se descarcă una prin cealaltă
+— de asta pe aparate scrie să nu amesteci bateriile noi cu cele vechi.
+
+:::
+
+---
+
+:::note Ora următoare
+
+**LP14 — Gruparea generatoarelor.** Trei probe: enunțuri de judecat, lanterna de
+alimentat și o comparație între grupări.
+
+Înainte de ea, treci prin
+**[S14 — Gruparea generatoarelor identice](./41-s-gruparea-generatoarelor.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

@@ -1,0 +1,148 @@
+---
+sidebar_position: 5
+sidebar_label: "S2 — Legea lui Coulomb"
+slug: /f8/electrostatica/s2
+title: "S2 — Legea lui Coulomb"
+description: "Suport de curs: formula lui Coulomb, cum se schimbă forța cu sarcinile și cu distanța, și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S2 — Legea lui Coulomb
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C2 — Legea lui Coulomb](./04-curs-legea-lui-coulomb.mdx)**, strâns la un loc,
+și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi la
+**[LP2](./06-lp-legea-lui-coulomb.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula | Unitatea în SI |
+|---|---|---|---|
+| Forța electrostatică | $F$ | $F = k \dfrac{q_1 q_2}{r^2}$ | newton, $\text{N}$ |
+| Sarcina electrică | $q$ | $q = \dfrac{F r^2}{k \, q_2}$ | coulomb, $\text{C}$ |
+| Distanța | $r$ | $r^2 = \dfrac{k \, q_1 q_2}{F}$ | metru, $\text{m}$ |
+| Constanta electrostatică, în aer | $k$ | $k = 9 \times 10^9$ | $\dfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$ |
+
+---
+
+## 2. Cum se schimbă forța
+
+| Dacă… | forța… |
+|---|---|
+| una din sarcini se dublează | se dublează |
+| amândouă sarcinile se dublează | crește de $4$ ori |
+| distanța se dublează | scade de $4$ ori |
+| distanța se triplează | scade de $9$ ori |
+| distanța se înjumătățește | crește de $4$ ori |
+
+Regula: **cu sarcinile, direct; cu distanța, invers și la pătrat.**
+
+---
+
+## 3. De reținut
+
+- Formula merge numai pentru sarcini **punctiforme**, adică pentru corpuri mici
+  față de distanța dintre ele.
+- Sarcinile **de același fel** se resping, cele **de feluri diferite** se atrag.
+  Formula dă valoarea; sensul se stabilește după semne.
+- Sarcina se trece în **coulombi**:
+  $1\ \text{mC} = 10^{-3}\ \text{C}$,
+  $1\ \mu\text{C} = 10^{-6}\ \text{C}$,
+  $1\ \text{nC} = 10^{-9}\ \text{C}$.
+- Distanța se trece în **metri** înainte de a fi ridicată la pătrat.
+- Constanta $k$ **depinde de mediu**: în apă, forța electrostatică e de zeci de
+  ori mai mică decât în aer, la aceleași sarcini și aceeași distanță.
+- Cele două forțe formează o pereche acțiune – reacțiune: egale în modul, opuse
+  ca sens, aplicate la corpuri diferite.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Forța de atracție în apă a sarcinilor electrice punctiforme
+$q_1 = 0{,}003\ \text{mC}$ și $q_2 = 3\ \mu\text{C}$, aflate în aer la distanța
+$r = 1{,}8\ \text{m}$, este $1{,}23\%$ din forța de interacțiune în aer.
+Calculează constanta electrostatică a apei.
+
+### Pasul 1 — Ce se dă
+
+- $q_1 = 0{,}003\ \text{mC}$;
+- $q_2 = 3\ \mu\text{C}$;
+- $r = 1{,}8\ \text{m}$;
+- $F_{\text{apă}} = 1{,}23\%$ din $F_{\text{aer}}$;
+- $k_{\text{aer}} = 9 \times 10^9\ \dfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$.
+
+### Pasul 2 — Trecem sarcinile în coulombi
+
+$$
+q_1 = 0{,}003\ \text{mC} = 0{,}003 \times 10^{-3} = 3 \times 10^{-6}\ \text{C}
+$$
+
+$$
+q_2 = 3\ \mu\text{C} = 3 \times 10^{-6}\ \text{C}
+$$
+
+Cele două sarcini sunt, de fapt, **egale** — deosebirea era numai în felul cum
+au fost scrise.
+
+### Pasul 3 — Forța în aer
+
+$$
+F_{\text{aer}} = k_{\text{aer}} \cdot \frac{q_1 q_2}{r^2} = 9 \times 10^9 \cdot \frac{3 \times 10^{-6} \times 3 \times 10^{-6}}{1{,}8^2}
+$$
+
+$$
+q_1 q_2 = 9 \times 10^{-12} \qquad r^2 = 3{,}24
+$$
+
+$$
+F_{\text{aer}} = \frac{9 \times 10^9 \times 9 \times 10^{-12}}{3{,}24} = \frac{81 \times 10^{-3}}{3{,}24} = 0{,}025\ \text{N}
+$$
+
+### Pasul 4 — Forța în apă
+
+$$
+F_{\text{apă}} = 0{,}0123 \times F_{\text{aer}} = 0{,}0123 \times 0{,}025 \approx 3{,}08 \times 10^{-4}\ \text{N}
+$$
+
+### Pasul 5 — Constanta apei
+
+Distanța și sarcinile sunt aceleași, deci raportul forțelor este chiar raportul
+constantelor:
+
+$$
+\frac{F_{\text{apă}}}{F_{\text{aer}}} = \frac{k_{\text{apă}}}{k_{\text{aer}}} = 0{,}0123
+$$
+
+$$
+k_{\text{apă}} = 0{,}0123 \times 9 \times 10^9 \approx 1{,}1 \times 10^8 \ \frac{\text{N} \cdot \text{m}^2}{\text{C}^2}
+$$
+
+### Pasul 6 — Verificarea
+
+Constanta apei a ieșit de circa $81$ de ori mai mică decât cea a aerului. Se
+potrivește cu ce se știe: apa **slăbește** puternic interacțiunea electrică
+dintre sarcini — motiv pentru care sărurile se dizolvă atât de ușor în ea,
+ionii desprinzându-se unii de alții.
+
+### Răspuns
+
+$k_{\text{apă}} \approx 1{,}1 \times 10^8\ \dfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$.
+
+---
+
+:::note Ora următoare
+
+**[LP2 — Legea lui Coulomb](./06-lp-legea-lui-coulomb.mdx).** Trei probe, în
+total 32 de minute.
+
+:::

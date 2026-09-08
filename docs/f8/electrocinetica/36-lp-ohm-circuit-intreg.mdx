@@ -1,0 +1,213 @@
+---
+sidebar_position: 36
+sidebar_label: "LP12 — Legea lui Ohm pentru circuitul întreg"
+slug: /f8/electrocinetica/lp12
+title: "LP12 — Legea lui Ohm pentru circuitul întreg"
+description: "Lucrare practică: un montaj cu două întrerupătoare, o rezistență internă de aflat și curentul de scurtcircuit."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP12 — Legea lui Ohm pentru circuitul întreg
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C12 — Legea lui Ohm pentru un circuit întreg](./34-curs-ohm-circuit-intreg.mdx)**,
+cu formulele din **[S12](./35-s-ohm-circuit-intreg.mdx)** la îndemână. Trei
+probe; în total 34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Ce arată aparatele | — | 10 min |
+| 2 | Rezistența internă de aflat | ★ | 10 min |
+| 3 | Scurtcircuitul | ★★ | 14 min |
+
+Rezolvarea fiecărei probe e ascunsă sub ea.
+
+:::
+
+---
+
+## 1. Ce arată aparatele
+
+— &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-circuit-ohm.png"
+  lat={466}
+  inalt={197}
+  latime={430}
+  eticheta="Schemă de circuit simplu cu sursa E și r, întrerupătorul K, ampermetrul A, rezistorul R și voltmetrul V la bornele sursei"
+  legenda="Circuitul, cu întrerupătorul K în serie."
+/>
+
+În circuitul de mai sus s-a adăugat un al doilea întrerupător, $K_1$, legat
+**direct la bornele sursei**, alături de rezistorul $R$. Sursa are
+$E = 4{,}5\ \text{V}$ și $r = 0{,}5\ \Omega$, iar $R = 4\ \Omega$.
+
+Ce indică ampermetrul și voltmetrul pentru fiecare situație?
+
+**a)** $K$ deschis, $K_1$ deschis;
+**b)** $K$ închis, $K_1$ deschis;
+**c)** $K$ închis, $K_1$ închis.
+
+<details>
+<summary>Rezolvare</summary>
+
+**a) Funcționare în gol.** Circuitul e întrerupt, deci:
+
+$$
+I = 0 \qquad U = E = 4{,}5\ \text{V}
+$$
+
+Ampermetrul arată zero, voltmetrul arată chiar t.e.m.
+
+**b) Funcționare în sarcină.**
+
+$$
+I = \frac{E}{R + r} = \frac{4{,}5}{4 + 0{,}5} = \frac{4{,}5}{4{,}5} = 1\ \text{A}
+$$
+
+$$
+U = R I = 4 \times 1 = 4\ \text{V}
+$$
+
+**c) Funcționare în scurtcircuit.** Întrerupătorul $K_1$ leagă bornele sursei
+printr-un fir de rezistență neglijabilă, iar curentul ocolește rezistorul:
+
+$$
+I_{sc} = \frac{E}{r} = \frac{4{,}5}{0{,}5} = 9\ \text{A}
+$$
+
+$$
+U \approx 0\ \text{V}
+$$
+
+Curentul crește de **nouă ori** față de funcționarea normală, iar la borne nu mai
+rămâne nimic: toată t.e.m. se pierde pe rezistența internă.
+
+</details>
+
+---
+
+## 2. Rezistența internă de aflat
+
+★ &nbsp;·&nbsp; **10 minute**
+
+Un rezistor cu $R = 40\ \Omega$ este legat la o sursă cu $E = 5\ \text{V}$.
+Tensiunea măsurată pe rezistor este $U = 4\ \text{V}$.
+
+**1.** Calculează intensitatea curentului prin circuit.
+
+**2.** Calculează rezistența internă a sursei.
+
+**3.** Determină intensitatea de scurtcircuit.
+
+**4.** Calculează raportul $I_{sc} / I$.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+I = \frac{U}{R} = \frac{4}{40} = 0{,}1\ \text{A}
+$$
+
+**2.**
+
+$$
+u = E - U = 5 - 4 = 1\ \text{V} \qquad r = \frac{u}{I} = \frac{1}{0{,}1} = 10\ \Omega
+$$
+
+**3.**
+
+$$
+I_{sc} = \frac{E}{r} = \frac{5}{10} = 0{,}5\ \text{A}
+$$
+
+**4.**
+
+$$
+\frac{I_{sc}}{I} = \frac{0{,}5}{0{,}1} = 5
+$$
+
+Se putea și fără cifre: $\dfrac{I_{sc}}{I} = \dfrac{E/r}{E/(R+r)} = \dfrac{R+r}{r} = \dfrac{50}{10} = 5$.
+
+*Observă:* aici $r = 10\ \Omega$ este destul de mare — o sursă „slabă". De aceea
+curentul de scurtcircuit e doar de cinci ori mai mare decât cel normal, nu de
+zeci de ori.
+
+</details>
+
+---
+
+## 3. Scurtcircuitul
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+O baterie de automobil are $E = 12\ \text{V}$ și rezistența internă
+$r = 0{,}02\ \Omega$.
+
+**1.** Ce intensitate are curentul dacă la bornele ei se leagă un far cu
+$R = 4\ \Omega$? Cât este tensiunea la borne?
+
+**2.** Ce intensitate ar avea curentul dacă bornele ar fi legate printr-o cheie
+metalică, de rezistență neglijabilă?
+
+**3.** De câte ori e mai mare acest curent?
+
+**4.** Puterea disipată în interiorul bateriei este $P = r I^2$. Calculeaz-o în
+cele două situații și explică de ce scurtcircuitul e primejdios.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+I = \frac{E}{R + r} = \frac{12}{4 + 0{,}02} = \frac{12}{4{,}02} \approx 2{,}99\ \text{A}
+$$
+
+$$
+U = R I = 4 \times 2{,}99 \approx 11{,}94\ \text{V}
+$$
+
+Aproape cât t.e.m. — fiindcă $r$ e neînsemnată față de $R$.
+
+**2.**
+
+$$
+I_{sc} = \frac{E}{r} = \frac{12}{0{,}02} = 600\ \text{A}
+$$
+
+**3.**
+
+$$
+\frac{600}{2{,}99} \approx 200
+$$
+
+De **două sute de ori** mai mare.
+
+**4.** În funcționare normală:
+
+$$
+P = r I^2 = 0{,}02 \times 2{,}99^2 \approx 0{,}18\ \text{W}
+$$
+
+În scurtcircuit:
+
+$$
+P_{sc} = 0{,}02 \times 600^2 = 0{,}02 \times 360\,000 = 7200\ \text{W}
+$$
+
+**De patruzeci de mii de ori mai mult** — cât șaptezeci de becuri de o sută de
+wați, toată această putere fiind eliberată sub formă de căldură **în interiorul
+bateriei** și în cheia metalică.
+
+De aceea cheia se înroșește în câteva secunde, iar bateria se poate umfla sau
+exploda. Puterea crește cu **pătratul** curentului, așa că un curent de $200$ de
+ori mai mare înseamnă o încălzire de $40\,000$ de ori mai puternică.
+
+</details>

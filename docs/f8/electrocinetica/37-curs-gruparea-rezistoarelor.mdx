@@ -1,0 +1,240 @@
+---
+sidebar_position: 37
+sidebar_label: "C13 — Gruparea rezistoarelor"
+slug: /f8/electrocinetica/c13
+title: "C13 — Gruparea rezistoarelor"
+description: "Gruparea serie, paralel și mixtă, rezistența echivalentă, divizorul de tensiune și divizorul de curent."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C13 — Gruparea rezistoarelor
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Cele trei tipuri de grupare
+3. Experiment: gruparea serie
+4. Rezistența echivalentă serie
+5. Experiment: gruparea paralel
+6. Rezistența echivalentă paralel
+7. Supratensionat și subtensionat
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+**1.** Mai funcționează becurile din circuitul unei lustre, dacă unul dintre ele
+s-a ars?
+
+<FiguraManual
+  src="ro8-lustra.png"
+  lat={450}
+  inalt={181}
+  latime={330}
+  eticheta="O lustră aurie cu patru brațe, fiecare cu becul lui aprins"
+  legenda="Lustră."
+/>
+
+**2.** Cum explici faptul că becurile din instalația pentru pomul de Crăciun se
+aprind pe grupe? Dacă un bec se arde, instalația mai funcționează?
+
+<FiguraManual
+  src="ro8-instalatie-craciun.png"
+  lat={450}
+  inalt={181}
+  latime={330}
+  eticheta="O ghirlandă de beculețe aprinse, întinsă pe o suprafață de lemn întunecată"
+  legenda="Instalație pentru pomul de Crăciun."
+/>
+
+**3.** Cum sunt conectate prizele din locuința ta, astfel încât mai mulți
+consumatori să poată fi alimentați în același timp cu aceeași tensiune
+nominală?
+
+<FiguraManual
+  src="ro8-prize.png"
+  lat={444}
+  inalt={181}
+  latime={330}
+  eticheta="O mână introduce ștecărul unui aparat într-o priză de perete"
+  legenda="Prize electrice."
+/>
+
+---
+
+## 2. Cele trei tipuri de grupare
+
+| Gruparea | Cum se leagă rezistoarele |
+|---|---|
+| **serie** | unul în continuarea celuilalt, pe același traseu |
+| **paralel** | cu bornele cuplate, pe trasee paralele între ele |
+| **mixtă** | același circuit conține și grupări serie, și grupări paralel |
+
+---
+
+## 3. Experiment: gruparea serie
+
+**Scop:** determinarea rezistenței echivalente a unei grupări serie.
+
+**Materiale:** baterie electrică, două becuri $B_1$ și $B_2$, un ampermetru,
+trei voltmetre, un întrerupător, conductori.
+
+<FiguraManual
+  src="ro8-circuit-serie.png"
+  lat={444}
+  inalt={398}
+  latime={420}
+  eticheta="Schemă de circuit: sursa cu E și r, întrerupătorul K, ampermetrul A în serie cu becurile B1 și B2; voltmetrul V la bornele sursei, iar V1 și V2 la bornele fiecărui bec"
+  legenda="Circuit cu două becuri grupate în serie."
+/>
+
+**Mod de lucru.**
+
+1. Realizează circuitul.
+2. Închide întrerupătorul și înregistrează valorile măsurate.
+3. Măsoară intensitatea curentului **în mai multe locuri** ale grupării: înainte,
+   între cele două becuri și după ele.
+4. Scurtcircuitează becul $B_2$ și notează noile valori.
+5. Deconectează becul $B_2$ și notează din nou.
+
+**Constatări.** Intensitatea are **aceeași valoare** oriunde în gruparea serie.
+Iar tensiunea la bornele sursei este egală cu suma tensiunilor de pe cele două
+becuri:
+
+$$
+U = U_1 + U_2
+$$
+
+Dacă un bec se **arde**, el joacă rolul unui întrerupător deschis: se stinge
+toată gruparea. Ăsta e răspunsul la întrebarea despre instalația de Crăciun.
+
+---
+
+## 4. Rezistența echivalentă serie
+
+Aplicând legea lui Ohm fiecărei porțiuni și ținând seama că $I$ e același:
+
+$$
+U = R I \qquad U_1 = R_1 I \qquad U_2 = R_2 I
+$$
+
+$$
+R I = R_1 I + R_2 I \quad\Longrightarrow\quad R_s = R_1 + R_2
+$$
+
+:::danger Definiția 1
+
+**Rezistența echivalentă** a unei grupări este rezistența unui singur rezistor
+care poate înlocui gruparea în circuit, fără ca funcționarea circuitului să se
+modifice.
+
+Pentru $n$ rezistoare grupate în **serie**:
+
+$$
+R_s = R_1 + R_2 + \dots + R_n
+$$
+
+:::
+
+Cum $U = U_1 + U_2 + \dots + U_n$, se spune că gruparea serie este un **divizor
+de tensiune electrică**: ea împarte tensiunea între rezistoare.
+
+---
+
+## 5. Experiment: gruparea paralel
+
+**Scop:** determinarea rezistenței echivalente a unei grupări paralel.
+
+**Materiale:** baterie electrică, două becuri identice, trei ampermetre, un
+voltmetru, un întrerupător, fire.
+
+<FiguraManual
+  src="ro8-circuit-paralel.png"
+  lat={435}
+  inalt={413}
+  latime={420}
+  eticheta="Schemă de circuit: sursa alimentează două becuri B1 și B2 legate în paralel între punctele C și D; ampermetrele A1 și A2 măsoară curenții prin fiecare ramură, A măsoară curentul total, iar voltmetrul V tensiunea comună"
+  legenda="Circuit cu două becuri grupate în paralel."
+/>
+
+**Constatări.** Tensiunea are **aceeași valoare** la bornele fiecărui rezistor,
+iar intensitățile se adună:
+
+$$
+U = U_1 = U_2 \qquad I = I_1 + I_2
+$$
+
+Întreruperea unuia dintre becuri **nu afectează** funcționarea celorlalte — de
+aceea iluminatul casnic și public, precum și prizele, sunt legate în paralel.
+
+:::warning Scurtcircuitarea unei ramuri
+
+Dacă legi printr-un fir bornele unui bec din gruparea paralel, scurtcircuitezi
+**întreaga grupare**, iar generatorul ajunge să funcționeze în scurtcircuit.
+
+:::
+
+---
+
+## 6. Rezistența echivalentă paralel
+
+Aplicând legea lui Ohm fiecărei ramuri, cu $U$ comun:
+
+$$
+\frac{U}{R_p} = \frac{U}{R_1} + \frac{U}{R_2}
+$$
+
+:::danger Definiția 2
+
+Pentru $n$ rezistoare grupate în **paralel**:
+
+$$
+\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}
+$$
+
+:::
+
+Cum $I = I_1 + I_2 + \dots + I_n$, gruparea paralel este un **divizor de curent
+electric**.
+
+:::tip De reținut
+
+$R_s$ este mai mare decât oricare dintre rezistențe.
+$R_p$ este mai **mică** decât cea mai mică dintre ele.
+
+Pentru **două** rezistoare în paralel se folosește adesea forma:
+
+$$
+R_p = \frac{R_1 R_2}{R_1 + R_2}
+$$
+
+:::
+
+---
+
+## 7. Supratensionat și subtensionat
+
+Dacă unui consumator i se aplică o tensiune **mai mare** decât cea nominală, se
+spune că este **supratensionat**; dacă tensiunea de la borne e **sub** cea
+nominală, consumatorul este **subtensionat**. În amândouă cazurile el nu
+funcționează normal.
+
+Ăsta e și rostul practic al grupărilor: legând becuri în serie, fiecare capătă
+mai puțin din tensiune; legându-le în paralel, fiecare capătă tensiunea
+întreagă.
+
+---
+
+:::note Ora următoare
+
+**LP13 — Gruparea rezistoarelor.** Trei probe: rezistențe echivalente, o grupare
+mixtă și instalația de Crăciun.
+
+Înainte de ea, treci prin
+**[S13 — Gruparea rezistoarelor](./38-s-gruparea-rezistoarelor.mdx)**: formulele
+lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

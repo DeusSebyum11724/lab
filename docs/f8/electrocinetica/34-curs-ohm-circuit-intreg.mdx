@@ -1,0 +1,194 @@
+---
+sidebar_position: 34
+sidebar_label: "C12 — Legea lui Ohm pentru un circuit întreg"
+slug: /f8/electrocinetica/c12
+title: "C12 — Legea lui Ohm pentru un circuit întreg"
+description: "Rezistența internă a sursei, căderile de tensiune, legea lui Ohm pentru întregul circuit și cele trei moduri de funcționare."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# C12 — Legea lui Ohm pentru un circuit întreg
+
+:::info Planul orei
+
+1. Din experiența ta
+2. Experiment: circuitul simplu
+3. Căderile de tensiune
+4. Legea lui Ohm pentru circuitul întreg
+5. Funcționarea în sarcină
+6. Funcționarea în scurtcircuit
+7. Funcționarea în gol
+
+:::
+
+---
+
+## 1. Din experiența ta
+
+Ce asemănări găsești între componența și funcționarea unui restaurant cu
+autoservire și cele ale unui circuit electric?
+
+<FiguraManual
+  src="ro8-restaurant.png"
+  lat={635}
+  inalt={270}
+  latime={430}
+  eticheta="Un bufet de restaurant cu autoservire, cu tăvi de mâncare aliniate pe o linie caldă"
+  legenda="Restaurant cu autoservire."
+/>
+
+| În restaurant | În circuit |
+|---|---|
+| mâncarea preparată la bucătărie | sarcina electrică pusă în mișcare |
+| capacitatea de a trimite mâncarea în tot restaurantul | tensiunea electromotoare $E$ |
+| pofta bucătarilor de a gusta din ce prepară | tensiunea internă $u$ |
+| pofta de mâncare a clienților | rezistența exterioară $R$ |
+| cantitatea de mâncare care circulă în unitatea de timp | intensitatea $I$ |
+
+---
+
+## 2. Experiment: circuitul simplu
+
+**Scop:** stabilirea relației dintre t.e.m. a unei surse, intensitatea
+curentului, rezistența externă și rezistența internă.
+
+**Materiale:** baterie electrică, rezistor cu rezistență cunoscută, ampermetru,
+voltmetru, întrerupător, fire de legătură.
+
+<FiguraManual
+  src="ro8-circuit-ohm.png"
+  lat={466}
+  inalt={197}
+  latime={430}
+  eticheta="Schemă de circuit simplu: sursa cu t.e.m. E și rezistență internă r, întrerupătorul K, ampermetrul A în serie și rezistorul R; voltmetrul V e legat la bornele sursei"
+  legenda="Circuit electric simplu, cu rezistorul R legat la bornele sursei."
+/>
+
+**Mod de lucru.**
+
+1. Realizează circuitul din schemă.
+2. Măsoară t.e.m. a bateriei, cu întrerupătorul **deschis**.
+3. Închide circuitul. Măsoară tensiunea la bornele sursei și intensitatea
+   curentului.
+4. Înregistrează valorile.
+
+**Constatări.** Poți determina tensiunea internă și apoi rezistența internă a
+sursei? Găsești o relație între $E$, $I$, $R$ și $r$?
+
+---
+
+## 3. Căderile de tensiune
+
+Relația știută de la ora trecută:
+
+$$
+E = U + u
+$$
+
+Din tensiunea corespunzătoare întregului circuit, o parte revine circuitului
+**exterior** și se numește **cădere de tensiune pe rezistor**, iar altă parte
+revine circuitului **interior** și se numește **cădere de tensiune pe sursă**.
+
+Împărțim relația, membru cu membru, la intensitatea $I$ și folosim definițiile
+rezistențelor, $R = U/I$ și $r = u/I$:
+
+$$
+\frac{E}{I} = \frac{U}{I} + \frac{u}{I} = R + r
+$$
+
+---
+
+## 4. Legea lui Ohm pentru circuitul întreg
+
+:::danger Legea lui Ohm pentru un circuit întreg
+
+Intensitatea curentului electric printr-un circuit simplu este **direct
+proporțională cu t.e.m.** a generatorului și **invers proporțională cu
+rezistența totală** a circuitului:
+
+$$
+I = \frac{E}{R + r}
+$$
+
+:::
+
+Mărimea $R_t = R + r$ se numește **rezistența totală a circuitului**.
+
+:::tip Ce s-a schimbat față de legea știută
+
+Legea lui Ohm pentru o **porțiune** de circuit, $I = U/R$, ține seama numai de
+ce se petrece în afara sursei. Legea pentru **întregul** circuit adaugă și ce se
+petrece **în sursă** — adică rezistența ei internă $r$.
+
+:::
+
+Prin aplicarea acestei legi, circuitul poate avea trei moduri de funcționare.
+
+---
+
+## 5. Funcționarea în sarcină
+
+Un circuit funcționează **în sarcină** dacă rezistența externă nu este nici
+zero, nici foarte mare:
+
+$$
+0 < R < \infty
+$$
+
+Intensitatea curentului este atunci cuprinsă între zero și valoarea de
+scurtcircuit. E cazul obișnuit: un bec, un rezistor, un motor legat la baterie.
+
+---
+
+## 6. Funcționarea în scurtcircuit
+
+Dacă bornele sursei se leagă printr-un conductor de rezistență neglijabilă,
+$R \approx 0$, se spune că sursa este **scurtcircuitată**.
+
+Intensitatea devine **maximă**, limitată doar de rezistența internă:
+
+$$
+I_{sc} = \frac{E}{r}
+$$
+
+:::warning De ce e primejdios
+
+Cu $r$ foarte mic — cum e la o baterie bună sau la rețeaua casnică —
+$I_{sc}$ iese uriaș. Conductoarele se încălzesc puternic prin efect Joule și pot
+lua foc. De aceea instalațiile au siguranțe.
+
+:::
+
+---
+
+## 7. Funcționarea „în gol"
+
+Un circuit **deschis** se comportă ca și cum rezistența exterioară ar fi devenit
+foarte mare. Atunci:
+
+$$
+I = 0 \qquad\text{și}\qquad U = E
+$$
+
+Se spune că sursa funcționează **în gol**. Voltmetrul legat la bornele ei arată
+chiar tensiunea electromotoare — și de aceea așa se măsoară $E$.
+
+| Modul de funcționare | $R$ | $I$ | $U$ |
+|---|---|---|---|
+| în gol | foarte mare | $0$ | $E$ |
+| în sarcină | între cele două | între $0$ și $I_{sc}$ | între $0$ și $E$ |
+| în scurtcircuit | $\approx 0$ | $I_{sc} = \dfrac{E}{r}$ | $\approx 0$ |
+
+---
+
+:::note Ora următoare
+
+**LP12 — Legea lui Ohm pentru circuitul întreg.** Trei probe: un montaj cu două
+întrerupătoare, o rezistență internă de aflat și scurtcircuitul.
+
+Înainte de ea, treci prin
+**[S12 — Legea lui Ohm pentru un circuit întreg](./35-s-ohm-circuit-intreg.mdx)**:
+formulele lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

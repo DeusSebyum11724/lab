@@ -1,0 +1,185 @@
+---
+sidebar_position: 6
+sidebar_label: "LP2 — Legea lui Coulomb"
+slug: /f8/electrostatica/lp2
+title: "LP2 — Legea lui Coulomb"
+description: "Lucrare practică: cum se schimbă forța electrostatică, experimentul cu baloanele și forța din atomul de hidrogen."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP2 — Legea lui Coulomb
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C2 — Legea lui Coulomb](./04-curs-legea-lui-coulomb.mdx)**, cu formulele din
+**[S2](./05-s-legea-lui-coulomb.mdx)** la îndemână. Trei probe; în total 34 de
+minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Cum se schimbă forța | — | 10 min |
+| 2 | Baloanele electrizate | ★ | 10 min |
+| 3 | Atomul de hidrogen | ★★ | 14 min |
+
+Peste tot $k = 9 \times 10^9\ \dfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$.
+
+:::
+
+---
+
+## 1. Cum se schimbă forța
+
+— &nbsp;·&nbsp; **10 minute**
+
+Două sarcini punctiforme se resping cu forța $F = 0{,}4\ \text{N}$. Spune, în
+fiecare caz, ce devine forța dacă:
+
+**a)** una dintre sarcini se triplează;
+**b)** amândouă sarcinile se dublează;
+**c)** distanța dintre ele se dublează;
+**d)** distanța se împarte la trei;
+**e)** amândouă sarcinile se dublează **și** distanța se dublează;
+**f)** cele două sarcini se scufundă în apă, unde $k$ este de $81$ de ori mai
+mic.
+
+<details>
+<summary>Rezolvare</summary>
+
+Pornim mereu de la $F = k \dfrac{q_1 q_2}{r^2}$.
+
+**a)** $F' = 3F = 1{,}2\ \text{N}$.
+
+**b)** Produsul sarcinilor crește de $2 \times 2 = 4$ ori:
+$F' = 4F = 1{,}6\ \text{N}$.
+
+**c)** Distanța la pătrat crește de $4$ ori, deci forța scade de $4$ ori:
+$F' = 0{,}1\ \text{N}$.
+
+**d)** $r^2$ scade de $9$ ori, deci forța crește de $9$ ori:
+$F' = 3{,}6\ \text{N}$.
+
+**e)** Sarcinile o cresc de $4$ ori, distanța o scade de $4$ ori — cele două se
+compensează: $F' = F = 0{,}4\ \text{N}$.
+
+**f)** $F' = \dfrac{0{,}4}{81} \approx 0{,}005\ \text{N}$.
+
+*Ce se învață din e):* dacă mărești sarcinile de $n$ ori și, în același timp,
+distanța de $n$ ori, forța rămâne neschimbată.
+
+</details>
+
+---
+
+## 2. Baloanele electrizate
+
+★ &nbsp;·&nbsp; **10 minute**
+
+<FiguraManual
+  src="ro8-baloane.png"
+  lat={265}
+  inalt={167}
+  latime={300}
+  eticheta="Două baloane umflate, unul verde și unul roșu, atârnate de ațe legate de o tijă orizontală; ațele sunt înclinate față de verticală"
+  legenda="Cele două baloane electrizate, atârnate de tija-suport."
+/>
+
+Reia experimentul din curs și răspunde.
+
+**1.** De ce se depărtează ațele de verticală, când baloanele sunt apropiate?
+
+**2.** De ce se depărtează **mai mult** dacă frecarea a fost mai îndelungată?
+
+**3.** De ce balonul umflat mai mult acumulează mai multă sarcină, deși e frecat
+la fel?
+
+**4.** De ce experimentul cere să stai la distanță de baloane cu propriul corp?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Baloanele, electrizate în același fel, au **sarcini de același semn** și
+se **resping**. Fiecare balon e supus la trei forțe: greutatea, tensiunea din
+ață și forța electrostatică orizontală. Ca ele să se echilibreze, ața trebuie să
+se încline.
+
+Cu cât forța de respingere e mai mare, cu atât înclinarea e mai mare — ața
+devine astfel un instrument de măsură.
+
+**2.** Frecarea mai îndelungată desprinde mai mulți electroni, deci sarcina
+fiecărui balon **crește**. Cum $F$ e direct proporțională cu produsul
+sarcinilor, forța crește și ea.
+
+**3.** Fiindcă sarcina electrizată prin frecare se distribuie pe **suprafața**
+corpului. Balonul mai voluminos are aria mai mare, deci poate acumula mai multă
+electricitate statică prin același procedeu.
+
+**4.** Fiindcă și corpul tău poate fi electrizat, sau poate atrage sarcinile de
+pe baloane prin influență. El ar modifica interacțiunea studiată, iar
+măsurătoarea n-ar mai fi curată.
+
+</details>
+
+---
+
+## 3. Atomul de hidrogen
+
+★★ &nbsp;·&nbsp; **14 minute**
+
+În atomul de hidrogen, electronul se mișcă pe un cerc cu raza de aproximativ
+$r = 10^{-10}\ \text{m}$ în jurul nucleului. Sarcina electronului este
+$q_e = 1{,}6 \times 10^{-19}\ \text{C}$, iar cea a protonului din nucleu este
+egală în modul.
+
+**1.** Ce valoare are forța electrică de atracție dintre ele?
+
+**2.** Masa electronului este $m_e = 9{,}1 \times 10^{-31}\ \text{kg}$, iar cea
+a protonului $m_p = 1{,}67 \times 10^{-27}\ \text{kg}$. Știind că forța de
+atracție gravitațională dintre ele, la aceeași distanță, este de aproximativ
+$10^{-47}\ \text{N}$, calculează de câte ori e mai mare forța electrică.
+
+**3.** Ce concluzie tragi despre ce ține electronul lângă nucleu?
+
+**4.** De ce, atunci, la scara planetelor, gravitația e cea care hotărăște?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.**
+
+$$
+F = k \frac{q_e^2}{r^2} = 9 \times 10^9 \cdot \frac{(1{,}6 \times 10^{-19})^2}{(10^{-10})^2}
+$$
+
+$$
+(1{,}6 \times 10^{-19})^2 = 2{,}56 \times 10^{-38} \qquad (10^{-10})^2 = 10^{-20}
+$$
+
+$$
+F = \frac{9 \times 10^9 \times 2{,}56 \times 10^{-38}}{10^{-20}} = 2{,}3 \times 10^{-8}\ \text{N}
+$$
+
+O forță foarte mică în cifre — dar aplicată unui corp de o masă neînchipuit de
+mică.
+
+**2.**
+
+$$
+\frac{F_{\text{electric}}}{F_{\text{gravitațional}}} = \frac{2{,}3 \times 10^{-8}}{10^{-47}} \approx 2 \times 10^{39}
+$$
+
+De vreo **două mii de miliarde de miliarde de miliarde de miliarde** de ori mai
+mare.
+
+**3.** Electronul e ținut lângă nucleu de **forța electrostatică**. Gravitația,
+la scara atomului, e cu totul neînsemnată — se poate neglija fără nicio grijă.
+
+**4.** Fiindcă la scară mare corpurile sunt, în general, **neutre din punct de
+vedere electric**: au tot atâția protoni câți electroni, iar forțele
+electrostatice se anulează aproape complet.
+
+Masa, în schimb, nu se anulează niciodată: ea se adună mereu. Așa se face că o
+forță de miliarde de ori mai slabă ajunge să conducă mișcarea planetelor.
+
+</details>
