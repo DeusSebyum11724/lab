@@ -1,0 +1,159 @@
+---
+sidebar_position: 8
+sidebar_label: "S3 — Erorile de măsurare"
+slug: /f6/marimi/s3
+title: "S3 — Erorile de măsurare"
+description: "Suport de curs: formulele erorilor, pașii prelucrării datelor experimentale și un exercițiu rezolvat pas cu pas."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# S3 — Erorile de măsurare
+
+:::info Suportul lecției
+
+Tot ce trebuie reținut din
+**[C3 — Erorile de măsurare](./07-curs-erorile-de-masurare.mdx)**, strâns la un
+loc, și un exercițiu rezolvat cap-coadă. Ține foaia asta deschisă când lucrezi
+la **[LP3](./09-lp-erorile-de-masurare.mdx)**.
+
+:::
+
+---
+
+## 1. Formulele lecției
+
+| Mărimea | Simbol | Formula |
+|---|---|---|
+| Valoarea medie | $L_{\text{medie}}$ | $L_{\text{medie}} = \dfrac{L_1 + L_2 + \dots + L_n}{n}$ |
+| Eroarea absolută | $\Delta L$ | $\Delta L = \lvert L - L_{\text{medie}} \rvert$ |
+| Eroarea absolută medie | $(\Delta L)_{\text{medie}}$ | media aritmetică a erorilor absolute |
+| Rezultatul | $L$ | $L = L_{\text{medie}} \pm (\Delta L)_{\text{medie}}$ |
+| Intervalul valorii reale | — | $L_{\text{medie}} - (\Delta L)_{\text{medie}} \le L \le L_{\text{medie}} + (\Delta L)_{\text{medie}}$ |
+
+---
+
+## 2. Pașii prelucrării datelor
+
+| Pasul | Ce faci |
+|---|---|
+| 1 | Treci toate valorile măsurate în coloana a doua a tabelului |
+| 2 | Cauți **erorile grosolane** — valorile mult diferite de celelalte — și le tai |
+| 3 | Calculezi media aritmetică a valorilor rămase |
+| 4 | Calculezi eroarea absolută pentru fiecare determinare rămasă |
+| 5 | Calculezi media erorilor absolute |
+| 6 | Scrii rezultatul, cu același număr de zecimale peste tot |
+
+---
+
+## 3. De reținut
+
+- $\Delta$ (delta) e un **simbol**, nu o mărime: el arată o **diferență**.
+- Eroarea absolută se ia întotdeauna **pozitivă**: scazi valoarea mai mică din
+  cea mai mare.
+- Eroarea grosolană se scrie în tabel, dar se **taie**. Nu intră nici la medie,
+  nici la erori.
+- Eroarea se măsoară în **aceeași unitate** ca mărimea măsurată.
+- Rezultatul se scrie cu același număr de zecimale la medie și la eroare.
+- O eroare medie mică înseamnă o măsurătoare **precisă**, nu neapărat una
+  **corectă**: dacă rigla e strâmbă, toate valorile ies deopotrivă de greșite.
+
+---
+
+## 4. Exercițiu rezolvat cap-coadă
+
+### Enunțul
+
+Un elev a măsurat de șase ori lungimea unei laturi a unei cărți și a găsit
+valorile: $16{,}5\ \text{cm}$; $16{,}4\ \text{cm}$; $16{,}6\ \text{cm}$;
+$15{,}3\ \text{cm}$; $16{,}5\ \text{cm}$; $16{,}6\ \text{cm}$.
+
+**a)** Completează un tabel de date experimentale.
+
+**b)** Determină lungimea măsurată.
+
+### Pasul 1 — Căutăm erorile grosolane
+
+Cinci dintre valori sunt între $16{,}4$ și $16{,}6\ \text{cm}$. Una singură,
+$15{,}3\ \text{cm}$, se depărtează cu peste un centimetru de celelalte: este o
+**eroare grosolană** și se **taie**.
+
+Rămân cinci valori: $16{,}5$; $16{,}4$; $16{,}6$; $16{,}5$; $16{,}6$.
+
+### Pasul 2 — Media aritmetică
+
+$$
+L_{\text{medie}} = \frac{16{,}5 + 16{,}4 + 16{,}6 + 16{,}5 + 16{,}6}{5} = \frac{82{,}6}{5} = 16{,}52\ \text{cm}
+$$
+
+### Pasul 3 — Erorile absolute
+
+$$
+\Delta L_1 = \lvert 16{,}5 - 16{,}52 \rvert = 0{,}02\ \text{cm}
+$$
+
+$$
+\Delta L_2 = \lvert 16{,}4 - 16{,}52 \rvert = 0{,}12\ \text{cm}
+$$
+
+$$
+\Delta L_3 = \lvert 16{,}6 - 16{,}52 \rvert = 0{,}08\ \text{cm}
+$$
+
+$$
+\Delta L_5 = 0{,}02\ \text{cm} \qquad \Delta L_6 = 0{,}08\ \text{cm}
+$$
+
+### Pasul 4 — Tabelul
+
+| Nr. det. | $L$ ($\text{cm}$) | $L_{\text{medie}}$ ($\text{cm}$) | $\Delta L$ ($\text{cm}$) | $(\Delta L)_{\text{medie}}$ ($\text{cm}$) |
+|---|---|---|---|---|
+| 1 | $16{,}5$ | | $0{,}02$ | |
+| 2 | $16{,}4$ | | $0{,}12$ | |
+| 3 | $16{,}6$ | $16{,}52$ | $0{,}08$ | $0{,}064$ |
+| 4 | $15{,}3$ — tăiată | | — | |
+| 5 | $16{,}5$ | | $0{,}02$ | |
+| 6 | $16{,}6$ | | $0{,}08$ | |
+
+### Pasul 5 — Eroarea absolută medie
+
+$$
+(\Delta L)_{\text{medie}} = \frac{0{,}02 + 0{,}12 + 0{,}08 + 0{,}02 + 0{,}08}{5} = \frac{0{,}32}{5} = 0{,}064\ \text{cm}
+$$
+
+### Pasul 6 — Rezultatul
+
+Rotunjim la două zecimale:
+
+$$
+L = 16{,}52\ \text{cm} \pm 0{,}06\ \text{cm}
+$$
+
+adică:
+
+$$
+16{,}46\ \text{cm} \le L \le 16{,}58\ \text{cm}
+$$
+
+### Pasul 7 — Verificarea
+
+Toate cele cinci valori păstrate cad în intervalul găsit — semn că prelucrarea
+e bună. Valoarea tăiată, $15{,}3\ \text{cm}$, cade cu mult în afara lui: dovadă
+că a fost, într-adevăr, o eroare grosolană.
+
+Dacă n-am fi tăiat-o, media ar fi ieșit $16{,}32\ \text{cm}$, iar eroarea medie
+$0{,}25\ \text{cm}$ — de patru ori mai mare. O singură măsurătoare greșită
+strică tot rezultatul.
+
+### Răspuns
+
+$L = (16{,}52 \pm 0{,}06)\ \text{cm}$.
+
+---
+
+:::note Ora următoare
+
+**[LP3 — Erorile de măsurare](./09-lp-erorile-de-masurare.mdx).** Trei probe, în
+total 34 de minute.
+
+:::

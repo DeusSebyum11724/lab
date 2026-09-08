@@ -1,0 +1,225 @@
+---
+sidebar_position: 7
+sidebar_label: "C3 — Multiplii, submultiplii și puterile lui zece"
+slug: /f6/introducere/c3
+title: "C3 — Multiplii, submultiplii și puterile lui zece"
+description: "Puterile lui zece și regulile lor de calcul, tabelul prefixelor de la giga la nano și scrierea științifică a unei măsurători."
+---
+
+# C3 — Multiplii, submultiplii și puterile lui zece
+
+:::info Planul orei
+
+1. Introducere
+2. Puterile lui zece
+3. Regulile de calcul
+4. Prefixele
+5. Notația științifică
+6. Rezolvarea exercițiului-tip
+
+:::
+
+---
+
+## 1. Introducere
+
+**Ca să fie scrisă o măsurătoare sau rezultatul unui calcul în sistemul
+internațional, se folosesc puterile lui zece, notația științifică și
+prefixele.**
+
+**1.** Scrie $10^4$ și $10^{-3}$ ca numere obișnuite.
+
+**2.** Calculează $10^4 \times 10^2$, apoi $\dfrac{10^5}{10^2}$.
+
+**3.** Preschimbă $15$ microsecunde în secunde, scriind rezultatul în notație
+științifică.
+
+**4.** Scrie $230$ de volți și $0{,}32$ amperi în notație științifică.
+
+Îl lăsăm deocamdată deoparte și îl reluăm la sfârșitul orei.
+
+---
+
+## 2. Puterile lui zece
+
+Dacă $n$ este un număr întreg natural:
+
+$$
+10^n = \underbrace{10 \times 10 \times \dots \times 10}_{n \text{ factori}}
+= \underbrace{100\dots0}_{n \text{ zerouri după cifra } 1}
+$$
+
+$$
+10^{-n} = \frac{1}{10^n} = \underbrace{0{,}0\dots01}_{n \text{ cifre după virgulă}}
+$$
+
+| Scrierea cu putere | Numărul |
+|---|---|
+| $10^0$ | 1 |
+| $10^1$ | 10 |
+| $10^3$ | 1 000 |
+| $10^6$ | 1 000 000 |
+| $10^{-1}$ | 0,1 |
+| $10^{-3}$ | 0,001 |
+| $10^{-6}$ | 0,000 001 |
+
+---
+
+## 3. Regulile de calcul
+
+**La înmulțire se adună exponenții:**
+
+$$
+10^4 \times 10^2 = 10 \times 10 \times 10 \times 10 \times 10 \times 10
+= 10^{4+2} = 10^6
+$$
+
+**La împărțire se scad exponenții:**
+
+$$
+\frac{10^5}{10^2} = \frac{10 \times 10 \times 10 \times 10 \times 10}{10 \times 10}
+= 10^{5-2} = 10^3
+$$
+
+**La ridicarea la putere se înmulțesc exponenții:**
+
+$$
+(10^5)^3 = 10^5 \times 10^5 \times 10^5 = 10^{5 \times 3} = 10^{15}
+$$
+
+:::tip De reținut
+
+Trei reguli de scriere:
+
+1. exponentul se scrie cu **litere mai mici**, sus;
+2. puterile se calculează **deosebit** de restul numărului;
+3. nu confunda **majuscula cu minuscula** în simbolurile prefixelor.
+
+:::
+
+---
+
+## 4. Prefixele
+
+Se folosesc multipli și submultipli ai unității ca să fie scrise mai simplu
+anumite valori.
+
+| Prefixul | Simbolul | Puterea lui zece |
+|---|---|---|
+| giga | $\text{G}$ | $10^{9}$ |
+| mega | $\text{M}$ | $10^{6}$ |
+| kilo | $\text{k}$ | $10^{3}$ |
+| hecto | $\text{h}$ | $10^{2}$ |
+| deca | $\text{da}$ | $10^{1}$ |
+| **unitatea** | — | $10^{0}$ |
+| deci | $\text{d}$ | $10^{-1}$ |
+| centi | $\text{c}$ | $10^{-2}$ |
+| mili | $\text{m}$ | $10^{-3}$ |
+| micro | $\mu$ | $10^{-6}$ |
+| nano | $\text{n}$ | $10^{-9}$ |
+
+Ia seama la deosebirea dintre majusculă și minusculă: $\text{M}$ înseamnă
+**mega**, iar $\text{m}$ înseamnă **mili** — una este de un miliard de ori mai
+mare decât cealaltă.
+
+**De știut:**
+
+$$
+1\ \text{mg} = 0{,}001\ \text{g} = 10^{-3}\ \text{g}
+$$
+
+$$
+1\ \text{mL} = 0{,}001\ \text{L} = 10^{-3}\ \text{L}
+\qquad
+1\ \text{mA} = 0{,}001\ \text{A} = 10^{-3}\ \text{A}
+$$
+
+:::tip De reținut
+
+Prefixele au **întotdeauna același înțeles**, oricare ar fi mărimea. „Mili”
+înseamnă a mia parte, fie că e vorba de grame, de litri sau de amperi.
+
+:::
+
+---
+
+## 5. Notația științifică
+
+:::danger Definiția 1
+
+**Notația științifică** este singura scriere de forma
+
+$$
+a \times 10^{n}
+$$
+
+în care $a$ este un număr zecimal cu $1 \le a < 10$, iar $n$ un număr întreg.
+
+:::
+
+| Valoarea | În notație științifică |
+|---|---|
+| $230\ \text{V}$ | $2{,}3 \times 10^{2}\ \text{V}$ |
+| $0{,}32\ \text{A}$ | $3{,}2 \times 10^{-1}\ \text{A}$ |
+| $15\ \mu\text{s}$ | $1{,}5 \times 10^{-5}\ \text{s}$ |
+
+Condiția $1 \le a < 10$ este cea care face scrierea **unică**: fără ea, același
+număr s-ar putea scrie în o mie de feluri.
+
+---
+
+## 6. Rezolvarea exercițiului-tip
+
+**1.**
+
+$$
+10^4 = 10\,000
+\qquad
+10^{-3} = \frac{1}{10^3} = 0{,}001
+$$
+
+**2.**
+
+$$
+10^4 \times 10^2 = 10^{4+2} = 10^6
+\qquad
+\frac{10^5}{10^2} = 10^{5-2} = 10^3
+$$
+
+**3.** Prefixul „micro” înseamnă $10^{-6}$, deci:
+
+$$
+15\ \mu\text{s} = 15 \times 10^{-6}\ \text{s}
+$$
+
+Dar $15$ nu este cuprins între $1$ și $10$, deci scrierea nu e încă științifică.
+Se scrie $15 = 1{,}5 \times 10^1$:
+
+$$
+15 \times 10^{-6}\ \text{s} = 1{,}5 \times 10^{1} \times 10^{-6}\ \text{s}
+= 1{,}5 \times 10^{-5}\ \text{s}
+$$
+
+**4.**
+
+$$
+230\ \text{V} = 2{,}3 \times 10^{2}\ \text{V}
+\qquad
+0{,}32\ \text{A} = 3{,}2 \times 10^{-1}\ \text{A}
+$$
+
+În amândouă cazurile numărul din față a fost adus între $1$ și $10$, iar
+puterea lui zece a fost potrivită așa încât valoarea să nu se schimbe.
+
+---
+
+:::note Ora următoare
+
+**LP3 — Multiplii, submultiplii și puterile lui zece.** Patru probe: puterile
+lui zece, prefixele, preschimbările și notația științifică.
+
+Înainte de ea, treci prin
+**[S3 — Multiplii, submultiplii și puterile lui zece](./08-s-multipli-si-submultipli.mdx)**:
+noțiunile lecției strânse la un loc și un exercițiu rezolvat pas cu pas.
+
+:::

@@ -1,0 +1,207 @@
+---
+sidebar_position: 9
+sidebar_label: "LP3 — Erorile de măsurare"
+slug: /f6/marimi/lp3
+title: "LP3 — Erorile de măsurare"
+description: "Lucrare practică: un tabel de completat, măsurarea deschiderii palmei și etalonarea pasului."
+---
+
+import { FiguraManual, Et } from '@site/src/components/Schema/FiguraManual';
+
+# LP3 — Erorile de măsurare
+
+:::info Ora de lucru practic
+
+Se lucrează pe noțiunile din
+**[C3 — Erorile de măsurare](./07-curs-erorile-de-masurare.mdx)**, cu formulele
+din **[S3](./08-s-erorile-de-masurare.mdx)** la îndemână. Trei probe; în total
+34 de minute.
+
+| # | Proba | Dificultate | Timp |
+|---|-------|-------------|------|
+| 1 | Un tabel de completat | — | 10 min |
+| 2 | Deschiderea palmei | ★ | 12 min |
+| 3 | Etalonarea pasului | ★★ | 12 min |
+
+Ai nevoie de riglă și de un loc unde poți merge drept vreo zece pași.
+
+:::
+
+---
+
+## 1. Un tabel de completat
+
+— &nbsp;·&nbsp; **10 minute**
+
+Un elev a măsurat de cinci ori lățimea caietului și a obținut:
+$20{,}4\ \text{cm}$; $20{,}6\ \text{cm}$; $20{,}5\ \text{cm}$;
+$20{,}5\ \text{cm}$; $20{,}5\ \text{cm}$.
+
+**1.** Sunt erori grosolane printre aceste valori?
+
+**2.** Calculează lățimea medie.
+
+**3.** Calculează erorile absolute și eroarea absolută medie.
+
+**4.** Scrie rezultatul și intervalul în care se află valoarea reală.
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** **Nu.** Toate cele cinci valori sunt apropiate între ele, într-un
+interval de $0{,}2\ \text{cm}$. Nu se taie niciuna.
+
+**2.**
+
+$$
+\ell_{\text{medie}} = \frac{20{,}4 + 20{,}6 + 20{,}5 + 20{,}5 + 20{,}5}{5} = \frac{102{,}5}{5} = 20{,}5\ \text{cm}
+$$
+
+**3.**
+
+| Nr. | $\ell$ ($\text{cm}$) | $\Delta \ell$ ($\text{cm}$) |
+|---|---|---|
+| 1 | $20{,}4$ | $0{,}1$ |
+| 2 | $20{,}6$ | $0{,}1$ |
+| 3 | $20{,}5$ | $0$ |
+| 4 | $20{,}5$ | $0$ |
+| 5 | $20{,}5$ | $0$ |
+
+$$
+(\Delta \ell)_{\text{medie}} = \frac{0{,}1 + 0{,}1 + 0 + 0 + 0}{5} = \frac{0{,}2}{5} = 0{,}04\ \text{cm}
+$$
+
+**4.**
+
+$$
+\ell = 20{,}50\ \text{cm} \pm 0{,}04\ \text{cm}
+$$
+
+$$
+20{,}46\ \text{cm} \le \ell \le 20{,}54\ \text{cm}
+$$
+
+*Observă:* eroarea medie e mică fiindcă trei din cinci măsurători au dat exact
+media. Cu cât valorile sunt mai strânse, cu atât rezultatul e mai precis.
+
+</details>
+
+---
+
+## 2. Deschiderea palmei
+
+★ &nbsp;·&nbsp; **12 minute**
+
+<FiguraManual
+  src="ro6-mana.png"
+  lat={170}
+  inalt={240}
+  latime={200}
+  eticheta="O palmă deschisă, cu degetele răsfirate; o linie roșie unește vârful degetului mare cu vârful degetului mic"
+  legenda="Deschiderea palmei, măsurată de la degetul mare la degetul mic."
+/>
+
+Măsoară de cel puțin cinci ori distanța dintre vârful degetului mare și vârful
+degetului mic, atunci când palma e deschisă la maximum.
+
+**1.** Realizează un tabel de date experimentale, după modelul din curs.
+
+**2.** Calculează media și eroarea absolută medie.
+
+**3.** Scrie rezultatul măsurătorii.
+
+**4.** De ce, aici, valorile ies mai împrăștiate decât la măsurarea unui creion?
+
+**5.** Cum ai putea micșora împrăștierea?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1., 2., 3.** Rezultatele depind de mâna ta. Prelucrarea e aceeași ca în curs:
+media, erorile absolute, media lor, apoi
+$d = d_{\text{medie}} \pm (\Delta d)_{\text{medie}}$.
+
+**4.** Fiindcă mâna **nu se deschide de fiecare dată la fel**. La creion, obiectul
+măsurat e neschimbat, iar împrăștierea vine numai din felul cum citești rigla.
+Aici, se adaugă și o împrăștiere a **obiectului însuși**.
+
+Aceasta este o sursă de erori mai greu de înlăturat decât cele care țin de
+instrument.
+
+**5.** Deschizând palma cât se poate de tare de fiecare dată, așezând mâna în
+același fel pe riglă și rugând un coleg să citească, ca să nu miști mâna în timp
+ce te uiți. Și, mai ales, **făcând mai multe măsurători**.
+
+</details>
+
+---
+
+## 3. Etalonarea pasului
+
+★★ &nbsp;·&nbsp; **12 minute**
+
+Operația prin care se determină lungimea pasului se numește **etalonarea
+pasului**.
+
+**Mod de lucru.**
+
+1. Găsește o suprafață orizontală pe care te poți deplasa normal, în linie
+   dreaptă.
+2. Măsoară cu ruleta sau cu metrul distanța $d$ pe care o vei parcurge.
+3. Fă un număr $n$ de pași pe această distanță, numărându-i.
+4. Lungimea pasului va fi:
+
+$$
+L = \frac{d}{n}
+$$
+
+5. Repetă de cel puțin cinci ori și completează tabelul.
+
+| Nr. det. | $d$ ($\text{m}$) | $n$ | $L$ ($\text{m}$) | $L_{\text{medie}}$ | $\Delta L$ | $(\Delta L)_{\text{medie}}$ |
+|---|---|---|---|---|---|---|
+| 1 | | | | | | |
+| 2 | | | | | | |
+| 3 | | | | | | |
+
+**1.** Scrie rezultatul măsurătorii sub forma știută.
+
+**2.** Numește trei surse de erori din această determinare.
+
+**3.** Folosind valoarea medie a pasului tău, determină lungimea și lățimea
+terenului de sport al școlii, **fără** ruletă.
+
+**4.** De ce e mai bine să faci zece pași și să împarți, decât să măsori un
+singur pas?
+
+<details>
+<summary>Rezolvare</summary>
+
+**1.** Se procedează ca la orice serie de măsurători: media, erorile absolute,
+media lor, apoi $L = L_{\text{medie}} \pm (\Delta L)_{\text{medie}}$.
+
+**2.** Trei surse de erori:
+
+- **pașii nu sunt egali** între ei — unii mai lungi, alții mai scurți;
+- **numărătoarea** poate greși, mai ales pe distanțe lungi;
+- **măsurarea distanței** $d$ cu ruleta are și ea eroarea ei.
+
+La acestea se adaugă mersul care nu e perfect în linie dreaptă.
+
+**3.** Numeri pașii pe lungimea terenului, $n_L$, și pe lățimea lui, $n_\ell$,
+apoi:
+
+$$
+L_{\text{teren}} = n_L \cdot L_{\text{medie}} \qquad \ell_{\text{teren}} = n_\ell \cdot L_{\text{medie}}
+$$
+
+Este o **măsurare indirectă**: nu ai măsurat direct terenul, ci ai calculat din
+altceva măsurat.
+
+**4.** Fiindcă un singur pas e greu de măsurat exact — nu se știe unde începe și
+unde se termină. Făcând zece pași și împărțind la zece, eroarea de la capete se
+**împarte și ea la zece**.
+
+E un truc general în fizică: măsoară mai multe deodată și împarte, ori de câte
+ori mărimea singură e prea mică pentru instrumentul tău.
+
+</details>
